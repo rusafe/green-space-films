@@ -65,15 +65,15 @@ namespace ProyectoGreenSpace
             }
         }
 
-        public static User InfoUser(MySqlConnection conexion, string username)
+        public static User InfoUser(MySqlConnection connection, string username)
         {
-            string consulta = "SELECT * FROM users WHERE username LIKE @username";
-            MySqlCommand comando = new MySqlCommand(consulta, conexion);
-            comando.Parameters.AddWithValue("@username", username);
+            string query = "SELECT * FROM users WHERE username LIKE @username";
+            MySqlCommand command = new MySqlCommand(query, connection);
+            command.Parameters.AddWithValue("@username", username);
 
             User user = null;
 
-            using (MySqlDataReader reader = comando.ExecuteReader()) // Abrir y cerrar la conexión del dataReader --> Tabla virtual
+            using (MySqlDataReader reader = command.ExecuteReader()) // Abrir y cerrar la conexión del dataReader --> Tabla virtual
             {
                 while (reader.Read())
                 {
