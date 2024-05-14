@@ -27,7 +27,7 @@ namespace ProyectoGreenSpace
 
             try
             {
-                if (bdata.AbrirConexion())
+                if (bdata.OpenConnection())
                 {
                     user.Username = txtUsername.Text;
                     user.Password = txtPassword.Text;
@@ -46,7 +46,7 @@ namespace ProyectoGreenSpace
                         this.Close();
                     }
                 }
-                bdata.CerrarConexion();
+                bdata.CloseConnection();
             }
             catch (Exception ex)
             {
@@ -54,7 +54,7 @@ namespace ProyectoGreenSpace
             }
             finally
             {
-                bdata.CerrarConexion();
+                bdata.CloseConnection();
             }
         }
 
@@ -62,6 +62,13 @@ namespace ProyectoGreenSpace
         {
             FrmRegister frmLogin = new FrmRegister();
             frmLogin.Show();
+            this.Close();
+        }
+
+        private void lkllblRecoverPassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FrmRecoverPassword fromRecover = new FrmRecoverPassword();
+            fromRecover.Show();
             this.Close();
         }
 
@@ -94,5 +101,7 @@ namespace ProyectoGreenSpace
             ControlPaint.DrawBorder(e.Graphics, grpLogin.ClientRectangle, Color.Black, ButtonBorderStyle.Solid);
         }
         #endregion
+
+        
     }
 }

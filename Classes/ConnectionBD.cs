@@ -39,7 +39,7 @@ namespace ProyectoGreenSpace
 
         // Método que se encarga de abrir la conexión
         // Devuelve true/false dependiendo si la conexión se ha abierto con éxito o no
-        public bool AbrirConexion()
+        public bool OpenConnection()
         {
             // Controlamos la expeción si es true, se ha abierto correctamente,
             // sino ya teníamos abierta la conexión o tenemos un error.
@@ -56,7 +56,7 @@ namespace ProyectoGreenSpace
 
         // Método que se encarga de cerrar la conexión (evitar dejar conexiones abiertas)
         // Devuelve true/false dependiendo si la conexión se ha cerrado con éxito
-        public bool CerrarConexion()
+        public bool CloseConnection()
         {
             try
             {

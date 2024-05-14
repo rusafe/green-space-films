@@ -28,7 +28,7 @@ namespace ProyectoGreenSpace
             {
                 try
                 {
-                    if (bdata.AbrirConexion())
+                    if (bdata.OpenConnection())
                     {
                         user.Username = txtUsername.Text;
                         user.Password = txtPassword.Text;
@@ -48,7 +48,7 @@ namespace ProyectoGreenSpace
                             Mail enviarMail = new Mail();
                             if (ValidarDatos())
                             {
-                                int code = enviarMail.Enviar("floadm123@gmail.com", "AdminFlo123", user.Mail);
+                                int code = enviarMail.SendVerificationCode("floadm123@gmail.com", "AdminFlo123", user.Mail);
                                 if (code != -1)
                                 {
                                     LimpiarDatos();
@@ -63,7 +63,7 @@ namespace ProyectoGreenSpace
                             }
                         }
                     }
-                    bdata.CerrarConexion();
+                    bdata.CloseConnection();
                 }
                 catch (Exception ex)
                 {
@@ -71,7 +71,7 @@ namespace ProyectoGreenSpace
                 }
                 finally
                 {
-                    bdata.CerrarConexion();
+                    bdata.CloseConnection();
                 }
             }
         }
