@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="Classes\ConnectionBD.cs" />
     <Compile Include="Classes\Controller.cs" />
+    <Compile Include="Classes\Film.cs" />
     <Compile Include="Classes\Mail.cs" />
     <Compile Include="Classes\Program.cs" />
     <Compile Include="Classes\Session.cs" />

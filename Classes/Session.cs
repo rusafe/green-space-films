@@ -13,12 +13,12 @@ namespace ProyectoGreenSpace
         private static int id;
         private static string username;
         private static string password;
-        private static int idType;
+        private static bool admin;
 
         public static int Id { get { return id; } set { id = value; } }
         public static string Username { get { return username; } set { username = value; } }
         public static string Password { get { return password; } set { password = value; } }
-        public static int IdType { get { return idType; } set { idType = value; } }
+        public static bool Admin { get { return admin; } set { admin = value; } }
 
     }
 }

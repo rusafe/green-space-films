@@ -6,7 +6,6 @@ namespace ProyectoGreenSpace
 {
     public partial class FrmLogin : Form
     {
-        ConnectionBD bdata = new ConnectionBD();
         public FrmLogin()
         {
             InitializeComponent();
@@ -27,34 +26,27 @@ namespace ProyectoGreenSpace
 
             try
             {
-                if (bdata.OpenConnection())
+                user.Username = txtUsername.Text;
+                user.Password = txtPassword.Text;
+
+                Controller control = new Controller();
+                string respuesta = control.ControllerLogin(user);
+
+                if (respuesta.Length > 0)
                 {
-                    user.Username = txtUsername.Text;
-                    user.Password = txtPassword.Text;
-
-                    Controller control = new Controller();
-                    string respuesta = control.ControllerLogin(bdata.Connection, user);
-
-                    if (respuesta.Length > 0)
-                    {
-                        MessageBox.Show(respuesta, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    } else
-                    {
-                        MessageBox.Show("Bienvenido/a Green Space Films!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        FrmPrincipal formPrincipal = new FrmPrincipal();
-                        formPrincipal.Show();
-                        this.Close();
-                    }
+                    MessageBox.Show(respuesta, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
-                bdata.CloseConnection();
+                else
+                {
+                    MessageBox.Show("Bienvenido/a Green Space Films!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    FrmPrincipal formPrincipal = new FrmPrincipal();
+                    formPrincipal.Show();
+                    this.Close();
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message + "\n" + ex.StackTrace);
-            }
-            finally
-            {
-                bdata.CloseConnection();
             }
         }
 
@@ -102,6 +94,6 @@ namespace ProyectoGreenSpace
         }
         #endregion
 
-        
+
     }
 }

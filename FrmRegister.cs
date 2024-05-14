@@ -6,7 +6,6 @@ namespace ProyectoGreenSpace
 {
     public partial class FrmRegister : Form
     {
-        ConnectionBD bdata = new ConnectionBD();
         public FrmRegister()
         {
             InitializeComponent();
@@ -28,50 +27,42 @@ namespace ProyectoGreenSpace
             {
                 try
                 {
-                    if (bdata.OpenConnection())
+                    user.Username = txtUsername.Text;
+                    user.Password = txtPassword.Text;
+                    user.RepeatPassword = txtRepeat.Text;
+                    user.Mail = txtMail.Text;
+
+                    Controller control = new Controller();
+                    string respuesta = control.ControllerRegister(user);
+
+                    if (respuesta.Length > 0)
                     {
-                        user.Username = txtUsername.Text;
-                        user.Password = txtPassword.Text;
-                        user.RepeatPassword = txtRepeat.Text;
-                        user.Mail = txtMail.Text;
-
-                        Controller control = new Controller();
-                        string respuesta = control.ControllerRegister(bdata.Connection, user);
-
-                        if (respuesta.Length > 0)
+                        MessageBox.Show(respuesta, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Usuario registrado", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Mail enviarMail = new Mail();
+                        if (ValidarDatos())
                         {
-                            MessageBox.Show(respuesta, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        }
-                        else
-                        {
-                            MessageBox.Show("Usuario registrado", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            Mail enviarMail = new Mail();
-                            if (ValidarDatos())
+                            int code = enviarMail.SendVerificationCode("floadm123@gmail.com", "AdminFlo123", user.Mail);
+                            if (code != -1)
                             {
-                                int code = enviarMail.SendVerificationCode("floadm123@gmail.com", "AdminFlo123", user.Mail);
-                                if (code != -1)
-                                {
-                                    LimpiarDatos();
-                                    FrmInsertCode frmInsertCode = new FrmInsertCode(code);
-                                    frmInsertCode.Show();
-                                    this.Hide();
-                                }
-                                else
-                                {
-                                    MessageBox.Show("Código no enviado", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                                }
+                                LimpiarDatos();
+                                FrmInsertCode frmInsertCode = new FrmInsertCode(code);
+                                frmInsertCode.Show();
+                                this.Hide();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Código no enviado", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             }
                         }
                     }
-                    bdata.CloseConnection();
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message + "\n" + ex.StackTrace);
-                }
-                finally
-                {
-                    bdata.CloseConnection();
                 }
             }
         }
@@ -105,7 +96,7 @@ namespace ProyectoGreenSpace
         private bool ValidarDatos()
         {
             bool ok = true;
-            if (String.IsNullOrEmpty(txtUsername.Text)) 
+            if (String.IsNullOrEmpty(txtUsername.Text))
             {
                 ok = false;
                 errorProvider1.SetError(txtUsername, "Introduzca un nombre de usuario.");

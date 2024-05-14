@@ -12,7 +12,7 @@ namespace ProyectoGreenSpace
         /// <param name="connection"> Conexión a la base de datos. </param>
         /// <param name="user"> Objeto cargado con la información de la interface para registrarlo. </param>
         /// <returns> Un mensaje con el usuario registrado o la falta de una validación. </returns>
-        public string ControllerRegister(MySqlConnection connection, User user)
+        public string ControllerRegister(User user)
         {
 
             string respuesta = "";
@@ -31,14 +31,14 @@ namespace ProyectoGreenSpace
                 }
                 else
                 {
-                    if (User.ExistUser(connection, user.Username))
+                    if (User.ExistUser(user.Username))
                     {
                         respuesta = "El usuario ya existe.";
                     }
                     else
                     {
                         user.Password = GenerateSHA1(user.Password);
-                        user.RegisterUser(connection);
+                        user.RegisterUser();
                     }
                 }
             }
@@ -51,7 +51,7 @@ namespace ProyectoGreenSpace
         /// <param name="connection"> Conexión a la base de datos. </param>
         /// <param name="user"> Objeto cargado con el nombre de usuario y la contraseña con la información de la interface para registrarlo. </param>
         /// <returns> Un mensaje con el usuario iniciado o la falta de una validación. </returns>
-        public string ControllerLogin(MySqlConnection connection, User user)
+        public string ControllerLogin(User user)
         {
 
             string respuesta = "";
@@ -61,8 +61,8 @@ namespace ProyectoGreenSpace
             }
             else
             {
-               User data = User.InfoUser(connection, user.Username); // Cargar toda la información del usuario.
-                if (!User.ExistUser(connection, user.Username))
+               User data = User.InfoUser(user.Username); // Cargar toda la información del usuario.
+                if (!User.ExistUser(user.Username))
                 {
                     respuesta = "El usuario no existe";
                 }
@@ -76,7 +76,7 @@ namespace ProyectoGreenSpace
                         Session.Id = data.Id;
                         Session.Username = data.Username;
                         Session.Password = data.Password;
-                        Session.IdType = data.IdType;
+                        Session.Admin = data.Admin;
                     }
                 }
             }

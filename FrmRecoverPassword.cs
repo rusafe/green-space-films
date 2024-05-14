@@ -6,8 +6,6 @@ namespace ProyectoGreenSpace
 {
     public partial class FrmRecoverPassword : Form
     {
-        ConnectionBD bdata = new ConnectionBD();
-
         public FrmRecoverPassword()
         {
             InitializeComponent();
@@ -28,24 +26,16 @@ namespace ProyectoGreenSpace
 
             try
             {
-                if (bdata.OpenConnection())
-                {
-                    user.Username = txtUsername.Text;
-                    password.RecoverPassword(bdata.Connection, user.Username);
+                user.Username = txtUsername.Text;
+                password.RecoverPassword(user.Username);
 
-                    FrmLogin frmLogin = new FrmLogin();
-                    frmLogin.ShowDialog();
-                    this.Close();
-                }
-                bdata.OpenConnection();
+                FrmLogin frmLogin = new FrmLogin();
+                frmLogin.ShowDialog();
+                this.Close();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message + "\n" + ex.StackTrace);
-            }
-            finally
-            {
-                bdata.CloseConnection();
             }
         }
     }

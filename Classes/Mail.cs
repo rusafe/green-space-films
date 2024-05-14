@@ -8,8 +8,6 @@ namespace ProyectoGreenSpace
 {
     class Mail
     {
-        ConnectionBD bdata = new ConnectionBD();
-
         /// <summary>
         /// Envio de correo de verificación a un usuario con código de verificación aleatorio para comprobar que el correo es el correcto.
         /// </summary>
@@ -81,10 +79,12 @@ namespace ProyectoGreenSpace
             }
         }
 
-        public void RecoverPassword(MySqlConnection connection, string username)
+        public void RecoverPassword(string username)
         {
             string query = "SELECT mail, password FROM users WHERE username = @username";
-            MySqlCommand command = new MySqlCommand(query, connection);
+
+            ConnectionBD.OpenConnection();
+            MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
             command.Parameters.AddWithValue("@username", username);
             using (MySqlDataReader reader = command.ExecuteReader())
             {
@@ -98,7 +98,7 @@ namespace ProyectoGreenSpace
 
                     // Actualizar la nueva contraseña en la bbdd
                     string updateQuery = "UPDATE users SET password = @newPassword WHERE username = @username";
-                    MySqlCommand updateCommand = new MySqlCommand(updateQuery, connection);
+                    MySqlCommand updateCommand = new MySqlCommand(updateQuery, ConnectionBD.Connection);
                     updateCommand.Parameters.AddWithValue("@newPassword", newPassword);
                     updateCommand.Parameters.AddWithValue("@username", username);
                     reader.Close();
@@ -112,6 +112,7 @@ namespace ProyectoGreenSpace
                     Console.WriteLine("Usuario no encontrado.");
                 }
             }
+            ConnectionBD.CloseConnection();
         }
 
         private string GenerateRandomPassword()
