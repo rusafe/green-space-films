@@ -76,10 +76,10 @@
             // lklblLogin
             // 
             this.lklblLogin.AutoSize = true;
-            this.lklblLogin.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lklblLogin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lklblLogin.Location = new System.Drawing.Point(301, 424);
             this.lklblLogin.Name = "lklblLogin";
-            this.lklblLogin.Size = new System.Drawing.Size(133, 23);
+            this.lklblLogin.Size = new System.Drawing.Size(129, 23);
             this.lklblLogin.TabIndex = 39;
             this.lklblLogin.TabStop = true;
             this.lklblLogin.Text = "Iniciar sesión";
@@ -88,10 +88,10 @@
             // lblInfoLogin
             // 
             this.lblInfoLogin.AutoSize = true;
-            this.lblInfoLogin.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInfoLogin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblInfoLogin.Location = new System.Drawing.Point(59, 424);
             this.lblInfoLogin.Name = "lblInfoLogin";
-            this.lblInfoLogin.Size = new System.Drawing.Size(223, 23);
+            this.lblInfoLogin.Size = new System.Drawing.Size(244, 23);
             this.lblInfoLogin.TabIndex = 38;
             this.lblInfoLogin.Text = "¿Ya tienes una cuenta?";
             // 
@@ -107,7 +107,7 @@
             // 
             // btnUpload
             // 
-            this.btnUpload.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpload.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpload.Location = new System.Drawing.Point(295, 298);
             this.btnUpload.Name = "btnUpload";
             this.btnUpload.Size = new System.Drawing.Size(178, 38);
@@ -118,16 +118,16 @@
             // lblUsername
             // 
             this.lblUsername.AutoSize = true;
-            this.lblUsername.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsername.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsername.Location = new System.Drawing.Point(59, 38);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(83, 23);
+            this.lblUsername.Size = new System.Drawing.Size(79, 23);
             this.lblUsername.TabIndex = 35;
             this.lblUsername.Text = "Usuario";
             // 
             // btnRegister
             // 
-            this.btnRegister.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegister.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegister.ForeColor = System.Drawing.Color.White;
             this.btnRegister.Location = new System.Drawing.Point(63, 366);
             this.btnRegister.Name = "btnRegister";
@@ -140,7 +140,7 @@
             // 
             // txtMail
             // 
-            this.txtMail.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMail.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMail.Location = new System.Drawing.Point(63, 142);
             this.txtMail.Name = "txtMail";
             this.txtMail.Size = new System.Drawing.Size(204, 32);
@@ -151,7 +151,7 @@
             // 
             // txtRepeat
             // 
-            this.txtRepeat.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRepeat.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRepeat.Location = new System.Drawing.Point(63, 304);
             this.txtRepeat.Name = "txtRepeat";
             this.txtRepeat.PasswordChar = '*';
@@ -163,7 +163,7 @@
             // 
             // txtPassword
             // 
-            this.txtPassword.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.Location = new System.Drawing.Point(63, 215);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
@@ -175,7 +175,7 @@
             // 
             // txtUsername
             // 
-            this.txtUsername.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsername.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername.Location = new System.Drawing.Point(63, 64);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(204, 32);
@@ -187,30 +187,30 @@
             // lblMail
             // 
             this.lblMail.AutoSize = true;
-            this.lblMail.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMail.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMail.Location = new System.Drawing.Point(59, 116);
             this.lblMail.Name = "lblMail";
-            this.lblMail.Size = new System.Drawing.Size(177, 23);
+            this.lblMail.Size = new System.Drawing.Size(194, 23);
             this.lblMail.TabIndex = 32;
             this.lblMail.Text = "Correo electrónico";
             // 
             // lblRepeat
             // 
             this.lblRepeat.AutoSize = true;
-            this.lblRepeat.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRepeat.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRepeat.Location = new System.Drawing.Point(59, 269);
             this.lblRepeat.Name = "lblRepeat";
-            this.lblRepeat.Size = new System.Drawing.Size(190, 23);
+            this.lblRepeat.Size = new System.Drawing.Size(199, 23);
             this.lblRepeat.TabIndex = 30;
             this.lblRepeat.Text = "Repetir Contraseña";
             // 
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPassword.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassword.Location = new System.Drawing.Point(59, 189);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(116, 23);
+            this.lblPassword.Size = new System.Drawing.Size(125, 23);
             this.lblPassword.TabIndex = 28;
             this.lblPassword.Text = "Contraseña";
             // 
@@ -220,7 +220,7 @@
             // 
             // cmbLanguages
             // 
-            this.cmbLanguages.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbLanguages.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbLanguages.FormattingEnabled = true;
             this.cmbLanguages.Items.AddRange(new object[] {
             "Castellano",

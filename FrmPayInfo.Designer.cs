@@ -270,7 +270,7 @@
             this.txtMovie.Multiline = true;
             this.txtMovie.Name = "txtMovie";
             this.txtMovie.ReadOnly = true;
-            this.txtMovie.Size = new System.Drawing.Size(348, 43);
+            this.txtMovie.Size = new System.Drawing.Size(294, 43);
             this.txtMovie.TabIndex = 27;
             this.txtMovie.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -343,7 +343,7 @@
             this.lblTypeHall.AutoSize = true;
             this.lblTypeHall.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTypeHall.ForeColor = System.Drawing.Color.White;
-            this.lblTypeHall.Location = new System.Drawing.Point(424, 82);
+            this.lblTypeHall.Location = new System.Drawing.Point(401, 82);
             this.lblTypeHall.Name = "lblTypeHall";
             this.lblTypeHall.Size = new System.Drawing.Size(137, 23);
             this.lblTypeHall.TabIndex = 20;
