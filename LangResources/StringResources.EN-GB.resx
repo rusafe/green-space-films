@@ -117,10 +117,40 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="errorProvider1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>133, 17</value>
-  </metadata>
+  <data name="buttonLogin" xml:space="preserve">
+    <value>Log in</value>
+  </data>
+  <data name="buttonRegister" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="buttonUpload" xml:space="preserve">
+    <value>Upload picture</value>
+  </data>
+  <data name="labelForgottenPassword" xml:space="preserve">
+    <value>Have you forgotten the password?</value>
+  </data>
+  <data name="labelMail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="labelPassword" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="labelRegister" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="labelRepetPassword" xml:space="preserve">
+    <value>Repeat password</value>
+  </data>
+  <data name="labelUser" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="lblQuestion" xml:space="preserve">
+    <value>Do you already have an account?</value>
+  </data>
+  <data name="lblQuestionRegister" xml:space="preserve">
+    <value>You still do not have an account?</value>
+  </data>
+  <data name="linkLogin" xml:space="preserve">
+    <value>Log in</value>
+  </data>
 </root>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoGreenSpace.LangResources;
+using System;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -11,11 +12,23 @@ namespace ProyectoGreenSpace
             InitializeComponent();
         }
 
+        private void AplicarIdioma()
+        {
+            lblUsername.Text = StringResources.labelUser;
+            lblPassword.Text = StringResources.labelPassword;
+            lkllblRecoverPassword.Text = StringResources.labelForgottenPassword;
+            btnLogin.Text = StringResources.buttonLogin;
+            lblInfoRegister.Text = StringResources.lblQuestionRegister;
+            lklblRegister.Text = StringResources.linkLogin;
+        }
+
         private void FrmLogin_Load(object sender, EventArgs e)
         {
             this.BackColor = Color.FromArgb(168, 228, 116);
             btnLogin.BackColor = Color.FromArgb(76, 80, 144);
             grpLogin.BackColor = Color.FromArgb(176, 164, 180);
+
+            AplicarIdioma();
 
             txtUsername.Focus();
         }
