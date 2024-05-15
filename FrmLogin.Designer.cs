@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.grpLogin = new System.Windows.Forms.GroupBox();
+            this.lkllblRecoverPassword = new System.Windows.Forms.LinkLabel();
             this.lklblRegister = new System.Windows.Forms.LinkLabel();
             this.btnLogin = new System.Windows.Forms.Button();
             this.txtPassword = new System.Windows.Forms.TextBox();
@@ -38,7 +39,6 @@
             this.lblPassword = new System.Windows.Forms.Label();
             this.lblUsername = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.lkllblRecoverPassword = new System.Windows.Forms.LinkLabel();
             this.grpLogin.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,7 +52,7 @@
             this.grpLogin.Controls.Add(this.lblInfoRegister);
             this.grpLogin.Controls.Add(this.lblPassword);
             this.grpLogin.Controls.Add(this.lblUsername);
-            this.grpLogin.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpLogin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpLogin.Location = new System.Drawing.Point(38, 40);
             this.grpLogin.Name = "grpLogin";
             this.grpLogin.Size = new System.Drawing.Size(532, 389);
@@ -60,12 +60,24 @@
             this.grpLogin.TabStop = false;
             this.grpLogin.Paint += new System.Windows.Forms.PaintEventHandler(this.grpLogin_Paint);
             // 
+            // lkllblRecoverPassword
+            // 
+            this.lkllblRecoverPassword.AutoSize = true;
+            this.lkllblRecoverPassword.Location = new System.Drawing.Point(41, 203);
+            this.lkllblRecoverPassword.Name = "lkllblRecoverPassword";
+            this.lkllblRecoverPassword.Size = new System.Drawing.Size(308, 23);
+            this.lkllblRecoverPassword.TabIndex = 9;
+            this.lkllblRecoverPassword.TabStop = true;
+            this.lkllblRecoverPassword.Text = "¿Has olvidado la contraseña?";
+            this.toolTip1.SetToolTip(this.lkllblRecoverPassword, "Recuperar la contraseña");
+            this.lkllblRecoverPassword.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lkllblRecoverPassword_LinkClicked);
+            // 
             // lklblRegister
             // 
             this.lklblRegister.AutoSize = true;
             this.lklblRegister.Location = new System.Drawing.Point(346, 310);
             this.lklblRegister.Name = "lklblRegister";
-            this.lklblRegister.Size = new System.Drawing.Size(116, 23);
+            this.lklblRegister.Size = new System.Drawing.Size(113, 23);
             this.lklblRegister.TabIndex = 8;
             this.lklblRegister.TabStop = true;
             this.lklblRegister.Text = "Registrarse";
@@ -108,7 +120,7 @@
             this.lblInfoRegister.AutoSize = true;
             this.lblInfoRegister.Location = new System.Drawing.Point(41, 310);
             this.lblInfoRegister.Name = "lblInfoRegister";
-            this.lblInfoRegister.Size = new System.Drawing.Size(299, 23);
+            this.lblInfoRegister.Size = new System.Drawing.Size(329, 23);
             this.lblInfoRegister.TabIndex = 3;
             this.lblInfoRegister.Text = "¿Todavía no tienes una cuenta?";
             // 
@@ -117,7 +129,7 @@
             this.lblPassword.AutoSize = true;
             this.lblPassword.Location = new System.Drawing.Point(41, 123);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(154, 23);
+            this.lblPassword.Size = new System.Drawing.Size(144, 23);
             this.lblPassword.TabIndex = 1;
             this.lblPassword.Text = "CONTRASEÑA";
             // 
@@ -126,21 +138,9 @@
             this.lblUsername.AutoSize = true;
             this.lblUsername.Location = new System.Drawing.Point(41, 43);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(107, 23);
+            this.lblUsername.Size = new System.Drawing.Size(95, 23);
             this.lblUsername.TabIndex = 0;
             this.lblUsername.Text = "USUARIO";
-            // 
-            // lkllblRecoverPassword
-            // 
-            this.lkllblRecoverPassword.AutoSize = true;
-            this.lkllblRecoverPassword.Location = new System.Drawing.Point(41, 203);
-            this.lkllblRecoverPassword.Name = "lkllblRecoverPassword";
-            this.lkllblRecoverPassword.Size = new System.Drawing.Size(277, 23);
-            this.lkllblRecoverPassword.TabIndex = 9;
-            this.lkllblRecoverPassword.TabStop = true;
-            this.lkllblRecoverPassword.Text = "¿Has olvidado la contraseña?";
-            this.toolTip1.SetToolTip(this.lkllblRecoverPassword, "Recuperar la contraseña");
-            this.lkllblRecoverPassword.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lkllblRecoverPassword_LinkClicked);
             // 
             // FrmLogin
             // 

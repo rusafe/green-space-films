@@ -39,7 +39,7 @@
             // 
             // btnSend
             // 
-            this.btnSend.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSend.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSend.Location = new System.Drawing.Point(257, 237);
             this.btnSend.Name = "btnSend";
             this.btnSend.Size = new System.Drawing.Size(228, 65);

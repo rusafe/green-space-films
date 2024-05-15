@@ -48,10 +48,10 @@
             // 
             // btnLink
             // 
-            this.btnLink.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLink.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLink.Location = new System.Drawing.Point(149, 315);
             this.btnLink.Name = "btnLink";
-            this.btnLink.Size = new System.Drawing.Size(198, 47);
+            this.btnLink.Size = new System.Drawing.Size(198, 73);
             this.btnLink.TabIndex = 3;
             this.btnLink.Text = "Enviar enlace";
             this.btnLink.UseVisualStyleBackColor = true;
@@ -59,7 +59,7 @@
             // 
             // txtUsername
             // 
-            this.txtUsername.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsername.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername.Location = new System.Drawing.Point(89, 260);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(326, 32);
@@ -67,10 +67,10 @@
             // 
             // rtbInformation
             // 
-            this.rtbInformation.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtbInformation.Location = new System.Drawing.Point(89, 165);
+            this.rtbInformation.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbInformation.Location = new System.Drawing.Point(89, 139);
             this.rtbInformation.Name = "rtbInformation";
-            this.rtbInformation.Size = new System.Drawing.Size(326, 76);
+            this.rtbInformation.Size = new System.Drawing.Size(326, 102);
             this.rtbInformation.TabIndex = 1;
             this.rtbInformation.Text = "Introduce tú nombre de usuario, recibirás en tú correo electrónico una contraseña" +
     " nueva.";
