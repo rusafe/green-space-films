@@ -58,6 +58,12 @@
     <Compile Include="Classes\Program.cs" />
     <Compile Include="Classes\Session.cs" />
     <Compile Include="Classes\User.cs" />
+    <Compile Include="FrmFilms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFilms.Designer.cs">
+      <DependentUpon>FrmFilms.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmInsertCode.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +75,18 @@
     </Compile>
     <Compile Include="FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMovieTheater.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMovieTheater.Designer.cs">
+      <DependentUpon>FrmMovieTheater.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPayInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPayInfo.Designer.cs">
+      <DependentUpon>FrmPayInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmPrincipal.cs">
       <SubType>Form</SubType>
@@ -99,11 +117,20 @@
       <DependentUpon>StringResources.EN-GB.resx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmFilms.resx">
+      <DependentUpon>FrmFilms.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmInsertCode.resx">
       <DependentUpon>FrmInsertCode.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMovieTheater.resx">
+      <DependentUpon>FrmMovieTheater.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPayInfo.resx">
+      <DependentUpon>FrmPayInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
@@ -130,6 +157,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -144,6 +172,56 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\menu-three-outlined-rounded-lines-symbol_icon-icons.com_73215.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\informacion %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\silla %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\silla.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people_wheelchair_accessible_icon_148382.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu-three-outlined-rounded-lines-symbol_icon-icons.com_732151.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1492617364-13-setting-configure-repair-support-optimization-google_83447.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4092564-about-mobile-ui-profile-ui-user-website_114033.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\development_concept_growth_improvement_progress_cognitive_icon_230442.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3709731-level-point-satisfaction-scoring-star_108079.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ticket_86147.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cinema130_41703.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_picture_icon_143003.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\galeria-de-imagenes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people_wheelchair_accessible_icon_1483821.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\silla1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\silla %284%291.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
