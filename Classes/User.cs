@@ -1,4 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
+using ProyectoGreenSpace.Classes;
 using System;
 using System.Drawing;
 
@@ -26,6 +27,16 @@ namespace ProyectoGreenSpace
 
         // Constructores
         public User() { }
+
+        public User(int id, string username, string password, string mail, Image pfp, bool admin)
+        {
+            this.id = id;
+            this.username = username;
+            this.password = password;
+            this.mail = mail;
+            this.pfp = pfp;
+            this.admin = admin;
+        }
 
         /// <summary>
         /// Nos permite registrar un usuario a la base de datos.
@@ -97,6 +108,33 @@ namespace ProyectoGreenSpace
                     user.password = reader["password"].ToString();
                     user.mail = reader["mail"].ToString();
                     user.admin = Convert.ToBoolean(reader["admin"]);
+                }
+            }
+            ConnectionBD.CloseConnection();
+            return user;
+        }
+
+        public static User InfoUser(int id)
+        {
+            string query = "SELECT * FROM users WHERE id LIKE @id";
+            MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
+            command.Parameters.AddWithValue("@id", id);
+
+            User user = null;
+
+            ConnectionBD.OpenConnection();
+            using (MySqlDataReader reader = command.ExecuteReader()) // Abrir y cerrar la conexión del dataReader --> Tabla virtual
+            {
+                while (reader.Read())
+                {
+                    user = new User(
+                        Convert.ToInt32(reader["id"]),
+                        reader["username"].ToString(),
+                        reader["password"].ToString(),
+                        reader["mail"].ToString(),
+                        ImagesDB.BytesToImage((byte[])reader["pfp"]),
+                        Convert.ToBoolean(reader["admin"])
+                    );
                 }
             }
             ConnectionBD.CloseConnection();
