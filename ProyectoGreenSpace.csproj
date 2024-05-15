@@ -108,6 +108,8 @@
     <Compile Include="FrmRegister.Designer.cs">
       <DependentUpon>FrmRegister.cs</DependentUpon>
     </Compile>
+    <Compile Include="LangResources\StringResources.Designer.cs" />
+    <Compile Include="LangResources\StringResources.EN-GB.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmFilms.resx">
       <DependentUpon>FrmFilms.cs</DependentUpon>
@@ -133,6 +135,8 @@
     <EmbeddedResource Include="FrmRegister.resx">
       <DependentUpon>FrmRegister.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LangResources\StringResources.EN-GB.resx" />
+    <EmbeddedResource Include="LangResources\StringResources.resx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
