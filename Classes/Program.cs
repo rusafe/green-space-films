@@ -16,7 +16,7 @@ namespace ProyectoGreenSpace
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmPayInfo());
+            Application.Run(new FrmRegister());
         }
     }
 }
