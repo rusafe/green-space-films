@@ -34,6 +34,16 @@ namespace ProyectoGreenSpace.Classes
             this.discount = discount;
         }
 
+        public User getUser()
+        {
+            return User.InfoUser(userId);
+        }
+
+        public Film getFilm()
+        {
+            return Film.InfoFilm(filmId);
+        }
+
         public static List<Ticket> Tickets(int userId)
         {
             List<Ticket> tickets = new List<Ticket>();

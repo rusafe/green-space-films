@@ -50,6 +50,36 @@ namespace ProyectoGreenSpace.Classes
             return score;
         }
 
+        public static Film InfoFilm(int id)
+        {
+            string query = "SELECT * FROM films WHERE id LIKE @id";
+            MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
+            command.Parameters.AddWithValue("@id", id);
+
+            Film film = null;
+
+            ConnectionBD.OpenConnection();
+            using (MySqlDataReader reader = command.ExecuteReader()) // Abrir y cerrar la conexión del dataReader --> Tabla virtual
+            {
+                while (reader.Read())
+                {
+                    film = new Film(
+                        reader.GetInt32(0),
+                        reader.GetString(1),
+                        reader.GetString(2),
+                        ImagesDB.BytesToImage((byte[])reader.GetValue(3)),
+                        reader.GetTimeSpan(4),
+                        reader.GetInt32(5),
+                        reader.GetDouble(6),
+                        reader.GetString(7).Split(','),
+                        reader.GetBoolean(8)
+                    );
+                }
+            }
+            ConnectionBD.CloseConnection();
+            return film;
+        }
+
         public static List<Film> ObtainAllPremiering()
         {
             List<Film> premiering = new List<Film>();
