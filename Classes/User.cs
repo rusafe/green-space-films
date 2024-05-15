@@ -102,5 +102,16 @@ namespace ProyectoGreenSpace
             ConnectionBD.CloseConnection();
             return user;
         }
+
+        public void UpdatePassword(string newPassword, MySqlDataReader reader)
+        {
+            string updateQuery = "UPDATE users SET password = @newPassword WHERE username = @username";
+            MySqlCommand updateCommand = new MySqlCommand(updateQuery, ConnectionBD.Connection);
+            
+            updateCommand.Parameters.AddWithValue("@newPassword", newPassword);
+            updateCommand.Parameters.AddWithValue("@username", Username);
+            reader.Close();
+            updateCommand.ExecuteNonQuery();
+        }
     }
 }

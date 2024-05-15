@@ -81,31 +81,26 @@ namespace ProyectoGreenSpace
 
         public void RecoverPassword(string username)
         {
-            string query = "SELECT mail, password FROM users WHERE username = @username";
+            User recoverPassword = new User();
+            recoverPassword.Username = username;
 
+            Controller cifratePassword = new Controller();
+
+            string query = "SELECT mail, password FROM users WHERE username = @username";
             ConnectionBD.OpenConnection();
             MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
             command.Parameters.AddWithValue("@username", username);
+            
             using (MySqlDataReader reader = command.ExecuteReader())
             {
                 if (reader.Read())
                 {
-                    // Obtener el mail del usuario
                     string mail = reader["mail"].ToString();
+                    string password = GenerateRandomPassword(); // Generar nueva contraseña
+                    string newPassword = Convert.ToString(cifratePassword.GenerateSHA1(password));
 
-                    // Nueva contraseña generada
-                    string newPassword = GenerateRandomPassword();
-
-                    // Actualizar la nueva contraseña en la bbdd
-                    string updateQuery = "UPDATE users SET password = @newPassword WHERE username = @username";
-                    MySqlCommand updateCommand = new MySqlCommand(updateQuery, ConnectionBD.Connection);
-                    updateCommand.Parameters.AddWithValue("@newPassword", newPassword);
-                    updateCommand.Parameters.AddWithValue("@username", username);
-                    reader.Close();
-                    updateCommand.ExecuteNonQuery();
-
-                    // Enviar la nueva contraseña por correo electrónico
-                    SendRecoveryPassword("floadm123@gmail.com", newPassword, mail);
+                    recoverPassword.UpdatePassword(newPassword, reader); // Actualizar contraseña
+                    SendRecoveryPassword("floadm123@gmail.com", password, mail); // Mandar una nueva contraseña
                 }
                 else
                 {

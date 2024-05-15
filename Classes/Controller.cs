@@ -53,7 +53,6 @@ namespace ProyectoGreenSpace
         /// <returns> Un mensaje con el usuario iniciado o la falta de una validación. </returns>
         public string ControllerLogin(User user)
         {
-
             string respuesta = "";
             if (string.IsNullOrEmpty(user.Username) || string.IsNullOrEmpty(user.Password))
             {
@@ -64,7 +63,7 @@ namespace ProyectoGreenSpace
                User data = User.InfoUser(user.Username); // Cargar toda la información del usuario.
                 if (!User.ExistUser(user.Username))
                 {
-                    respuesta = "El usuario no existe";
+                    respuesta = "El usuario no existe.";
                 }
                 else
                 {
@@ -88,7 +87,7 @@ namespace ProyectoGreenSpace
         /// </summary>
         /// <param name="password"> Contraseña que vamos a cifrar. </param>
         /// <returns> Contraseña cifrada en código hexadecimal. </returns>
-        private string GenerateSHA1(string password)
+        public string GenerateSHA1(string password)
         {
             // Instanciamos un objeto de la clase UTF8Encoding,
             // necesario para convertir la cadena que pasamos por parámetro en bytes formato UTF-8.
