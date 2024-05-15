@@ -45,6 +45,7 @@
             this.lblPassword = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.cmbLanguages = new System.Windows.Forms.ComboBox();
             this.grpRegister.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pibImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -217,11 +218,26 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // cmbLanguages
+            // 
+            this.cmbLanguages.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbLanguages.FormattingEnabled = true;
+            this.cmbLanguages.Items.AddRange(new object[] {
+            "Castellano",
+            "Inglés"});
+            this.cmbLanguages.Location = new System.Drawing.Point(728, 42);
+            this.cmbLanguages.Name = "cmbLanguages";
+            this.cmbLanguages.Size = new System.Drawing.Size(158, 31);
+            this.cmbLanguages.TabIndex = 28;
+            this.cmbLanguages.Text = "Castellano";
+            this.cmbLanguages.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
             // FrmRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(932, 653);
+            this.Controls.Add(this.cmbLanguages);
             this.Controls.Add(this.grpRegister);
             this.Name = "FrmRegister";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -253,5 +269,6 @@
         private System.Windows.Forms.Label lblInfoLogin;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.ComboBox cmbLanguages;
     }
 }

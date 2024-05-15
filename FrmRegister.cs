@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
+using ProyectoGreenSpace.LangResources;
+using System.Globalization;
+using System.Threading;
 
 namespace ProyectoGreenSpace
 {
@@ -11,13 +14,44 @@ namespace ProyectoGreenSpace
             InitializeComponent();
         }
 
+        private void AplicarIdioma()
+        {
+            lblUsername.Text = StringResources.labelUser;
+            lblMail.Text = StringResources.labelMail;
+            lblPassword.Text = StringResources.labelPassword;
+            lblRepeat.Text = StringResources.labelRepeatPassword;
+            btnUpload.Text = StringResources.buttonUpload;
+            btnRegister.Text = StringResources.buttonRegister;
+            lblInfoLogin.Text = StringResources.lblQuestion;
+            lklblLogin.Text = StringResources.linkLogin;
+        }
+
         private void FrmRegister_Load(object sender, EventArgs e)
         {
             this.BackColor = Color.FromArgb(168, 228, 116);
             btnRegister.BackColor = Color.FromArgb(76, 80, 144);
             grpRegister.BackColor = Color.FromArgb(176, 164, 180);
 
+            AplicarIdioma();
+
             txtUsername.Focus();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string culture = "";
+            switch (cmbLanguages.Text)
+            {
+                case "Castellano":
+                    culture = "ES-ES";
+                    break;
+                case "Inglés":
+                    culture = "EN-GB";
+                    break;
+            }
+            MessageBox.Show("Nombre de la referencia cultural en .NET: " + culture);
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(culture);
+            AplicarIdioma();
         }
 
         private void btnRegister_Click(object sender, EventArgs e)
@@ -185,5 +219,7 @@ namespace ProyectoGreenSpace
             }
         }
         #endregion
+
+
     }
 }

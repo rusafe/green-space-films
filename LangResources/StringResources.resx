@@ -117,10 +117,40 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="errorProvider1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>133, 17</value>
-  </metadata>
+  <data name="buttonLogin" xml:space="preserve">
+    <value>Iniciar sesión</value>
+  </data>
+  <data name="buttonRegister" xml:space="preserve">
+    <value>Registrarse</value>
+  </data>
+  <data name="buttonUpload" xml:space="preserve">
+    <value>Cargar foto</value>
+  </data>
+  <data name="labelForgottenPassword" xml:space="preserve">
+    <value>¿Has olvidado la contraseña?</value>
+  </data>
+  <data name="labelMail" xml:space="preserve">
+    <value>Correo electrónico</value>
+  </data>
+  <data name="labelPassword" xml:space="preserve">
+    <value>Contraseña</value>
+  </data>
+  <data name="labelRegister" xml:space="preserve">
+    <value>Registrarse</value>
+  </data>
+  <data name="labelRepeatPassword" xml:space="preserve">
+    <value>Repetir Contraseña</value>
+  </data>
+  <data name="labelUser" xml:space="preserve">
+    <value>Usuario</value>
+  </data>
+  <data name="lblQuestion" xml:space="preserve">
+    <value>¿Ya tienes una cuenta?</value>
+  </data>
+  <data name="lblQuestionRegister" xml:space="preserve">
+    <value>¿Todavía no tienes una cuenta?</value>
+  </data>
+  <data name="linkLogin" xml:space="preserve">
+    <value>Iniciar sesión</value>
+  </data>
 </root>
