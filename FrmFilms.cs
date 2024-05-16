@@ -118,5 +118,17 @@ namespace ProyectoGreenSpace
         }
 
         
+
+        private void btnSettings_Click(object sender, EventArgs e)
+        {
+            FrmAccount frmAccount = new FrmAccount();
+            frmAccount.ShowDialog();
+        }
+
+        private void grbMovie1_Enter(object sender, EventArgs e)
+        {
+            FrmFilms ndknd = new FrmFilms();
+
+        }
     }
 }

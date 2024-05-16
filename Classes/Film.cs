@@ -21,8 +21,9 @@ namespace ProyectoGreenSpace.Classes
         private double price;
         private string[] genres;
         private bool premiering;
+        private bool nextPremiering;
 
-        public Film(int id, string name, string synopsis, Image cover, TimeSpan duration, int minAge, double price, string[] genres, bool premiering)
+        public Film(int id, string name, string synopsis, Image cover, TimeSpan duration, int minAge, double price, string[] genres, bool premiering, bool nextPremiering)
         {
             this.id = id;
             this.name = name;
@@ -33,6 +34,7 @@ namespace ProyectoGreenSpace.Classes
             this.price = price;
             this.genres = genres;
             this.premiering = premiering;
+            this.nextPremiering = nextPremiering;
         }
 
         public double TotalScore()
@@ -72,7 +74,8 @@ namespace ProyectoGreenSpace.Classes
                         reader.GetInt32(5),
                         reader.GetDouble(6),
                         reader.GetString(7).Split(','),
-                        reader.GetBoolean(8)
+                        reader.GetBoolean(8),
+                        reader.GetBoolean(9)
                     );
                 }
             }
@@ -84,7 +87,7 @@ namespace ProyectoGreenSpace.Classes
         {
             List<Film> premiering = new List<Film>();
 
-            string query = "SELECT * FROM films WHERE premiering = 1";
+            string query = "SELECT * FROM films WHERE premiering = '1'";
 
             MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
 
@@ -103,7 +106,42 @@ namespace ProyectoGreenSpace.Classes
                         reader.GetInt32(5),
                         reader.GetDouble(6),
                         reader.GetString(7).Split(','),
-                        reader.GetBoolean(8)
+                        reader.GetBoolean(8),
+                        reader.GetBoolean(9)
+                    ));
+                }
+            }
+
+            ConnectionBD.CloseConnection();
+
+            return premiering;
+        }
+
+        public static List<Film> ObtainAllNextPremiering()
+        {
+            List<Film> premiering = new List<Film>();
+
+            string query = "SELECT * FROM films WHERE next_premiering = '1'";
+
+            MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
+
+            ConnectionBD.OpenConnection();
+
+            using (MySqlDataReader reader = command.ExecuteReader()) // Abrir y cerrar la conexión del dataReader --> Tabla virtual
+            {
+                while (reader.Read())
+                {
+                    premiering.Add(new Film(
+                        reader.GetInt32(0),
+                        reader.GetString(1),
+                        reader.GetString(2),
+                        ImagesDB.BytesToImage((byte[])reader.GetValue(3)),
+                        reader.GetTimeSpan(4),
+                        reader.GetInt32(5),
+                        reader.GetDouble(6),
+                        reader.GetString(7).Split(','),
+                        reader.GetBoolean(8),
+                        reader.GetBoolean(9)
                     ));
                 }
             }

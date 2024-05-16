@@ -45,5 +45,75 @@ namespace ProyectoGreenSpace
                 MessageBox.Show("El código de verificación no coincide.", "VERIFICACIÓN", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        private void mtbDigit1_TextChanged(object sender, EventArgs e)
+        {
+            mtbDigit2.Focus();
+        }
+
+        private void mtbDigit2_TextChanged(object sender, EventArgs e)
+        {
+            mtbDigit3.Focus();
+        }
+
+        private void mtbDigit3_TextChanged(object sender, EventArgs e)
+        {
+            mtbDigit4.Focus();
+        }
+
+        private void mtbDigit4_TextChanged(object sender, EventArgs e)
+        {
+            mtbDigit5.Focus();
+        }
+
+        private void mtbDigit5_TextChanged(object sender, EventArgs e)
+        {
+            mtbDigit6.Focus();
+        }
+
+        private void mtbDigit6_TextChanged(object sender, EventArgs e)
+        {
+            btnSend.Focus();
+        }
+
+        private void mtbDigit2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (mtbDigit2.Text == "_")
+            {
+                mtbDigit1.Focus();
+            }
+        }
+
+        private void mtbDigit3_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (mtbDigit3.Text == "_")
+            {
+                mtbDigit2.Focus();
+            }
+        }
+
+        private void mtbDigit4_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (mtbDigit4.Text == "_")
+            {
+                mtbDigit3.Focus();
+            }
+        }
+
+        private void mtbDigit5_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (mtbDigit5.Text == "_")
+            {
+                mtbDigit4.Focus();
+            }
+        }
+
+        private void mtbDigit6_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (mtbDigit6.Text == "_")
+            {
+                mtbDigit5.Focus();
+            }
+        }
     }
 }

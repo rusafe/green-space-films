@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ProyectoGreenSpace
 {
-    class Session
+    class UserSession
     {
         private static int id;
         private static string username;

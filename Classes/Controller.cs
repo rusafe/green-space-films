@@ -72,10 +72,10 @@ namespace ProyectoGreenSpace
                         respuesta = "El usuario y/o contraseña no coinciden.";
                     } else
                     {
-                        Session.Id = data.Id;
-                        Session.Username = data.Username;
-                        Session.Password = data.Password;
-                        Session.Admin = data.Admin;
+                        UserSession.Id = data.Id;
+                        UserSession.Username = data.Username;
+                        UserSession.Password = data.Password;
+                        UserSession.Admin = data.Admin;
                     }
                 }
             }
