@@ -3,6 +3,8 @@ using MySql.Data.MySqlClient;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -212,10 +214,8 @@ namespace ProyectoGreenSpace.Classes
         /// </summary>
         /// <param name="userId">El ID del usuario</param>
         /// <returns>Cantidad de tickets</returns>
-        public static List<Ticket> AmountActualTickets(int userId)
+        public static int AmountActualTickets(int userId)
         {
-            List<Ticket> tickets = new List<Ticket>();
-
             string query = "SELECT COUNT(*) FROM tickets WHERE userId = @userId AND dateFilm >= @date";
 
             MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
@@ -228,7 +228,29 @@ namespace ProyectoGreenSpace.Classes
 
             ConnectionBD.CloseConnection();
 
-            return tickets;
+            return amount;
+        }
+
+        /// <summary>
+        /// Obtiene la cantidad de tickets pasados que tiene un usuario
+        /// </summary>
+        /// <param name="userId">El ID del usuario</param>
+        /// <returns>Cantidad de tickets</returns>
+        public static int AmountPastTickets(int userId)
+        {
+            string query = "SELECT COUNT(*) FROM tickets WHERE userId = @userId AND dateFilm < @date";
+
+            MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
+            command.Parameters.AddWithValue("@userId", userId);
+            command.Parameters.AddWithValue("@date", DateTime.Now.ToString("yyyy-MM-dd"));
+
+            ConnectionBD.OpenConnection();
+
+            int amount = Convert.ToInt32(command.ExecuteScalar());
+
+            ConnectionBD.CloseConnection();
+            
+            return amount;
         }
     }
 }
