@@ -32,7 +32,6 @@
             this.grpRegister = new System.Windows.Forms.GroupBox();
             this.lklblLogin = new System.Windows.Forms.LinkLabel();
             this.lblInfoLogin = new System.Windows.Forms.Label();
-            this.pibImage = new System.Windows.Forms.PictureBox();
             this.btnUpload = new System.Windows.Forms.Button();
             this.lblUsername = new System.Windows.Forms.Label();
             this.btnRegister = new System.Windows.Forms.Button();
@@ -45,10 +44,14 @@
             this.lblPassword = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.cmbLanguages = new System.Windows.Forms.ComboBox();
+            this.pibBritish = new System.Windows.Forms.PictureBox();
+            this.pibSpanish = new System.Windows.Forms.PictureBox();
+            this.pibImage = new System.Windows.Forms.PictureBox();
             this.grpRegister.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pibImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibBritish)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibSpanish)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibImage)).BeginInit();
             this.SuspendLayout();
             // 
             // grpRegister
@@ -66,7 +69,7 @@
             this.grpRegister.Controls.Add(this.lblMail);
             this.grpRegister.Controls.Add(this.lblRepeat);
             this.grpRegister.Controls.Add(this.lblPassword);
-            this.grpRegister.Location = new System.Drawing.Point(57, 42);
+            this.grpRegister.Location = new System.Drawing.Point(26, 26);
             this.grpRegister.Name = "grpRegister";
             this.grpRegister.Size = new System.Drawing.Size(532, 482);
             this.grpRegister.TabIndex = 27;
@@ -77,7 +80,7 @@
             // 
             this.lklblLogin.AutoSize = true;
             this.lklblLogin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lklblLogin.Location = new System.Drawing.Point(301, 424);
+            this.lklblLogin.Location = new System.Drawing.Point(327, 424);
             this.lklblLogin.Name = "lklblLogin";
             this.lklblLogin.Size = new System.Drawing.Size(129, 23);
             this.lklblLogin.TabIndex = 39;
@@ -94,16 +97,6 @@
             this.lblInfoLogin.Size = new System.Drawing.Size(244, 23);
             this.lblInfoLogin.TabIndex = 38;
             this.lblInfoLogin.Text = "¿Ya tienes una cuenta?";
-            // 
-            // pibImage
-            // 
-            this.pibImage.Location = new System.Drawing.Point(295, 64);
-            this.pibImage.Name = "pibImage";
-            this.pibImage.Size = new System.Drawing.Size(178, 228);
-            this.pibImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pibImage.TabIndex = 36;
-            this.pibImage.TabStop = false;
-            this.pibImage.Paint += new System.Windows.Forms.PaintEventHandler(this.pibImage_Paint);
             // 
             // btnUpload
             // 
@@ -218,26 +211,47 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // cmbLanguages
+            // pibBritish
             // 
-            this.cmbLanguages.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbLanguages.FormattingEnabled = true;
-            this.cmbLanguages.Items.AddRange(new object[] {
-            "Castellano",
-            "Inglés"});
-            this.cmbLanguages.Location = new System.Drawing.Point(728, 42);
-            this.cmbLanguages.Name = "cmbLanguages";
-            this.cmbLanguages.Size = new System.Drawing.Size(158, 31);
-            this.cmbLanguages.TabIndex = 28;
-            this.cmbLanguages.Text = "Castellano";
-            this.cmbLanguages.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.pibBritish.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pibBritish.Image = global::ProyectoGreenSpace.Properties.Resources.united_kingdom;
+            this.pibBritish.Location = new System.Drawing.Point(655, 26);
+            this.pibBritish.Name = "pibBritish";
+            this.pibBritish.Size = new System.Drawing.Size(70, 60);
+            this.pibBritish.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pibBritish.TabIndex = 30;
+            this.pibBritish.TabStop = false;
+            this.pibBritish.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pibSpanish
+            // 
+            this.pibSpanish.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pibSpanish.Image = global::ProyectoGreenSpace.Properties.Resources.spain;
+            this.pibSpanish.Location = new System.Drawing.Point(579, 26);
+            this.pibSpanish.Name = "pibSpanish";
+            this.pibSpanish.Size = new System.Drawing.Size(70, 60);
+            this.pibSpanish.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pibSpanish.TabIndex = 29;
+            this.pibSpanish.TabStop = false;
+            this.pibSpanish.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // pibImage
+            // 
+            this.pibImage.Location = new System.Drawing.Point(295, 64);
+            this.pibImage.Name = "pibImage";
+            this.pibImage.Size = new System.Drawing.Size(178, 228);
+            this.pibImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pibImage.TabIndex = 36;
+            this.pibImage.TabStop = false;
+            this.pibImage.Paint += new System.Windows.Forms.PaintEventHandler(this.pibImage_Paint);
             // 
             // FrmRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(932, 653);
-            this.Controls.Add(this.cmbLanguages);
+            this.ClientSize = new System.Drawing.Size(747, 539);
+            this.Controls.Add(this.pibBritish);
+            this.Controls.Add(this.pibSpanish);
             this.Controls.Add(this.grpRegister);
             this.Name = "FrmRegister";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -245,8 +259,10 @@
             this.Load += new System.EventHandler(this.FrmRegister_Load);
             this.grpRegister.ResumeLayout(false);
             this.grpRegister.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pibImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibBritish)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibSpanish)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibImage)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -269,6 +285,7 @@
         private System.Windows.Forms.Label lblInfoLogin;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.ErrorProvider errorProvider1;
-        private System.Windows.Forms.ComboBox cmbLanguages;
+        private System.Windows.Forms.PictureBox pibBritish;
+        private System.Windows.Forms.PictureBox pibSpanish;
     }
 }

@@ -163,6 +163,16 @@ namespace ProyectoGreenSpace.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap password {
+            get {
+                object obj = ResourceManager.GetObject("password", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap people_wheelchair_accessible_icon_148382 {
             get {
                 object obj = ResourceManager.GetObject("people_wheelchair_accessible_icon_148382", resourceCulture);
@@ -223,9 +233,39 @@ namespace ProyectoGreenSpace.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap spain {
+            get {
+                object obj = ResourceManager.GetObject("spain", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ticket_86147 {
             get {
                 object obj = ResourceManager.GetObject("ticket_86147", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap turn_back {
+            get {
+                object obj = ResourceManager.GetObject("turn_back", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap united_kingdom {
+            get {
+                object obj = ResourceManager.GetObject("united_kingdom", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

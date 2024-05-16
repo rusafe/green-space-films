@@ -167,5 +167,16 @@ namespace ProyectoGreenSpace.LangResources {
                 return ResourceManager.GetString("linkLogin", resourceCulture);
             }
         }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Registrarse.
+        /// </summary>
+        internal static string linkRegister
+        {
+            get
+            {
+                return ResourceManager.GetString("linkRegister", resourceCulture);
+            }
+        }
     }
 }

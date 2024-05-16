@@ -153,4 +153,7 @@
   <data name="linkLogin" xml:space="preserve">
     <value>Log in</value>
   </data>
+  <data name="linkRegister" xml:space="preserve">
+    <value>Register</value>
+  </data>
 </root>

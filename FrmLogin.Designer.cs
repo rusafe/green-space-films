@@ -53,7 +53,7 @@
             this.grpLogin.Controls.Add(this.lblPassword);
             this.grpLogin.Controls.Add(this.lblUsername);
             this.grpLogin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpLogin.Location = new System.Drawing.Point(38, 40);
+            this.grpLogin.Location = new System.Drawing.Point(27, 33);
             this.grpLogin.Name = "grpLogin";
             this.grpLogin.Size = new System.Drawing.Size(532, 389);
             this.grpLogin.TabIndex = 0;
@@ -75,7 +75,7 @@
             // lklblRegister
             // 
             this.lklblRegister.AutoSize = true;
-            this.lklblRegister.Location = new System.Drawing.Point(346, 310);
+            this.lklblRegister.Location = new System.Drawing.Point(386, 310);
             this.lklblRegister.Name = "lklblRegister";
             this.lklblRegister.Size = new System.Drawing.Size(113, 23);
             this.lklblRegister.TabIndex = 8;
@@ -146,7 +146,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(932, 653);
+            this.ClientSize = new System.Drawing.Size(595, 455);
             this.Controls.Add(this.grpLogin);
             this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

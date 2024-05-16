@@ -37,18 +37,17 @@ namespace ProyectoGreenSpace
             txtUsername.Focus();
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
-            string culture = "";
-            switch (cmbLanguages.Text)
-            {
-                case "Castellano":
-                    culture = "ES-ES";
-                    break;
-                case "Inglés":
-                    culture = "EN-GB";
-                    break;
-            }
+            string culture = "ES-ES";
+            MessageBox.Show("Nombre de la referencia cultural en .NET: " + culture);
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(culture);
+            AplicarIdioma();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            string culture = "EN-GB";
             MessageBox.Show("Nombre de la referencia cultural en .NET: " + culture);
             Thread.CurrentThread.CurrentUICulture = new CultureInfo(culture);
             AplicarIdioma();
@@ -218,8 +217,9 @@ namespace ProyectoGreenSpace
                 pibImage.Image = Image.FromFile(ofdSeleccionar.FileName); // Agregar el archivo seleccionado y mostrarlo en el cuadro.
             }
         }
+
         #endregion
 
-
+       
     }
 }
