@@ -75,5 +75,45 @@ namespace ProyectoGreenSpace
         {
             btnSend.Focus();
         }
+
+        private void mtbDigit2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (mtbDigit2.Text == "_")
+            {
+                mtbDigit1.Focus();
+            }
+        }
+
+        private void mtbDigit3_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (mtbDigit3.Text == "_")
+            {
+                mtbDigit2.Focus();
+            }
+        }
+
+        private void mtbDigit4_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (mtbDigit4.Text == "_")
+            {
+                mtbDigit3.Focus();
+            }
+        }
+
+        private void mtbDigit5_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (mtbDigit5.Text == "_")
+            {
+                mtbDigit4.Focus();
+            }
+        }
+
+        private void mtbDigit6_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (mtbDigit6.Text == "_")
+            {
+                mtbDigit5.Focus();
+            }
+        }
     }
 }

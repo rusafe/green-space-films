@@ -69,6 +69,7 @@
             this.mtbDigit2.TabIndex = 1;
             this.mtbDigit2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.mtbDigit2.TextChanged += new System.EventHandler(this.mtbDigit2_TextChanged);
+            this.mtbDigit2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.mtbDigit2_KeyPress);
             // 
             // mtbDigit3
             // 
@@ -80,6 +81,7 @@
             this.mtbDigit3.TabIndex = 2;
             this.mtbDigit3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.mtbDigit3.TextChanged += new System.EventHandler(this.mtbDigit3_TextChanged);
+            this.mtbDigit3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.mtbDigit3_KeyPress);
             // 
             // mtbDigit4
             // 
@@ -91,6 +93,7 @@
             this.mtbDigit4.TabIndex = 3;
             this.mtbDigit4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.mtbDigit4.TextChanged += new System.EventHandler(this.mtbDigit4_TextChanged);
+            this.mtbDigit4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.mtbDigit4_KeyPress);
             // 
             // mtbDigit5
             // 
@@ -102,6 +105,7 @@
             this.mtbDigit5.TabIndex = 4;
             this.mtbDigit5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.mtbDigit5.TextChanged += new System.EventHandler(this.mtbDigit5_TextChanged);
+            this.mtbDigit5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.mtbDigit5_KeyPress);
             // 
             // mtbDigit6
             // 
@@ -113,6 +117,7 @@
             this.mtbDigit6.TabIndex = 5;
             this.mtbDigit6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.mtbDigit6.TextChanged += new System.EventHandler(this.mtbDigit6_TextChanged);
+            this.mtbDigit6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.mtbDigit6_KeyPress);
             // 
             // FrmInsertCode
             // 
