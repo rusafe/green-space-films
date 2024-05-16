@@ -19,7 +19,7 @@ namespace ProyectoGreenSpace
             lkllblRecoverPassword.Text = StringResources.labelForgottenPassword;
             btnLogin.Text = StringResources.buttonLogin;
             lblInfoRegister.Text = StringResources.lblQuestionRegister;
-            lklblRegister.Text = StringResources.linkLogin;
+            lklblRegister.Text = StringResources.linkRegister;
         }
 
         private void FrmLogin_Load(object sender, EventArgs e)
@@ -52,8 +52,8 @@ namespace ProyectoGreenSpace
                 else
                 {
                     MessageBox.Show("Bienvenido/a Green Space Films!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    FrmPrincipal formPrincipal = new FrmPrincipal();
-                    formPrincipal.Show();
+                    FrmMovieTheater frmMovieTheater = new FrmMovieTheater();
+                    frmMovieTheater.Show();
                     this.Close();
                 }
             }
