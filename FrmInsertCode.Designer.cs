@@ -57,6 +57,7 @@
             this.mtbDigit1.Size = new System.Drawing.Size(68, 104);
             this.mtbDigit1.TabIndex = 0;
             this.mtbDigit1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.mtbDigit1.TextChanged += new System.EventHandler(this.mtbDigit1_TextChanged);
             // 
             // mtbDigit2
             // 
@@ -67,6 +68,7 @@
             this.mtbDigit2.Size = new System.Drawing.Size(68, 104);
             this.mtbDigit2.TabIndex = 1;
             this.mtbDigit2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.mtbDigit2.TextChanged += new System.EventHandler(this.mtbDigit2_TextChanged);
             // 
             // mtbDigit3
             // 
@@ -77,6 +79,7 @@
             this.mtbDigit3.Size = new System.Drawing.Size(68, 104);
             this.mtbDigit3.TabIndex = 2;
             this.mtbDigit3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.mtbDigit3.TextChanged += new System.EventHandler(this.mtbDigit3_TextChanged);
             // 
             // mtbDigit4
             // 
@@ -87,6 +90,7 @@
             this.mtbDigit4.Size = new System.Drawing.Size(68, 104);
             this.mtbDigit4.TabIndex = 3;
             this.mtbDigit4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.mtbDigit4.TextChanged += new System.EventHandler(this.mtbDigit4_TextChanged);
             // 
             // mtbDigit5
             // 
@@ -97,6 +101,7 @@
             this.mtbDigit5.Size = new System.Drawing.Size(68, 104);
             this.mtbDigit5.TabIndex = 4;
             this.mtbDigit5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.mtbDigit5.TextChanged += new System.EventHandler(this.mtbDigit5_TextChanged);
             // 
             // mtbDigit6
             // 
@@ -107,6 +112,7 @@
             this.mtbDigit6.Size = new System.Drawing.Size(68, 104);
             this.mtbDigit6.TabIndex = 5;
             this.mtbDigit6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.mtbDigit6.TextChanged += new System.EventHandler(this.mtbDigit6_TextChanged);
             // 
             // FrmInsertCode
             // 

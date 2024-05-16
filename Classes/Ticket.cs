@@ -34,14 +34,58 @@ namespace ProyectoGreenSpace.Classes
             this.discount = discount;
         }
 
+        /// <summary>
+        /// Obtiene el usuario del ticket
+        /// </summary>
+        /// <returns>Un objeto ticket</returns>
         public User getUser()
         {
             return User.InfoUser(userId);
         }
 
+        /// <summary>
+        /// Obtiene la pelicula del ticket
+        /// </summary>
+        /// <returns>Un objeto pelicula</returns>
         public Film getFilm()
         {
             return Film.InfoFilm(filmId);
+        }
+
+        /// <summary>
+        /// Obtiene un ticket de la base de datos en base a su ID
+        /// </summary>
+        /// <param name="id">El ID del ticket</param>
+        /// <returns>Un objeto ticket</returns>
+        public Ticket Obtain(int id)
+        {
+            string query = "SELECT * FROM users WHERE id LIKE @id";
+
+            MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
+            command.Parameters.AddWithValue("@id", id);
+
+            Ticket ticket = null;
+
+            ConnectionBD.OpenConnection();
+            using (MySqlDataReader reader = command.ExecuteReader()) // Abrir y cerrar la conexión del dataReader --> Tabla virtual
+            {
+                while (reader.Read())
+                {
+                    ticket = new Ticket(
+                        reader.GetInt32(0),
+                        reader.GetInt32(1),
+                        reader.GetInt32(2),
+                        reader.GetInt32(3),
+                        reader.GetDateTime(4),
+                        reader.GetDateTime(5),
+                        reader.GetInt32(6),
+                        reader.GetDouble(7),
+                        reader.GetDouble(8)
+                    );
+                }
+            }
+            ConnectionBD.CloseConnection();
+            return ticket;
         }
 
         /// <summary>
