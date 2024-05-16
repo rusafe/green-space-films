@@ -16,7 +16,7 @@ namespace ProyectoGreenSpace
         public FrmFilms()
         {
             InitializeComponent();
-
+    
             grbMovie1.BackColor = Color.FromArgb(176, 164, 180);
             grbMovie2.BackColor = Color.FromArgb(176, 164, 180);
             grbMovie3.BackColor = Color.FromArgb(176, 164, 180);
@@ -25,6 +25,15 @@ namespace ProyectoGreenSpace
             grbMovie6.BackColor = Color.FromArgb(168, 228, 116);
             grbMovie7.BackColor = Color.FromArgb(168, 228, 116);
             grbMovie8.BackColor = Color.FromArgb(168, 228, 116);
+            grbNextMovie1.BackColor = Color.FromArgb(176, 164, 180);
+            grbNextMovie2.BackColor = Color.FromArgb(176, 164, 180);
+            grbNextMovie3.BackColor = Color.FromArgb(176, 164, 180);
+            grbNextMovie3.BackColor = Color.FromArgb(176, 164, 180);
+            grbNextMovie4.BackColor = Color.FromArgb(176, 164, 180);
+            grbNextMovie5.BackColor = Color.FromArgb(168, 228, 116);
+            grbNextMovie6.BackColor = Color.FromArgb(168, 228, 116);
+            grbNextMovie7.BackColor = Color.FromArgb(168, 228, 116);
+            grbNextMovie8.BackColor = Color.FromArgb(168, 228, 116);
 
             pcbMovie1.BackColor = Color.FromArgb(168, 228, 116);
             pcbMovie2.BackColor = Color.FromArgb(168, 228, 116);
@@ -34,6 +43,14 @@ namespace ProyectoGreenSpace
             pcbMovie6.BackColor = Color.FromArgb(176, 164, 180);
             pcbMovie7.BackColor = Color.FromArgb(176, 164, 180);
             pcbMovie8.BackColor = Color.FromArgb(176, 164, 180);
+            pcbNextMovie1.BackColor = Color.FromArgb(168, 228, 116);
+            pcbNextMovie2.BackColor = Color.FromArgb(168, 228, 116);
+            pcbNextMovie3.BackColor = Color.FromArgb(168, 228, 116);
+            pcbNextMovie4.BackColor = Color.FromArgb(168, 228, 116);
+            pcbNextMovie5.BackColor = Color.FromArgb(176, 164, 180);
+            pcbNextMovie6.BackColor = Color.FromArgb(176, 164, 180);
+            pcbNextMovie7.BackColor = Color.FromArgb(176, 164, 180);
+            pcbNextMovie8.BackColor = Color.FromArgb(176, 164, 180);
 
             sidebar.BackColor = Color.FromArgb(168, 228, 116);
             btnMenu.BackColor = Color.FromArgb(168, 228, 116);
@@ -43,7 +60,7 @@ namespace ProyectoGreenSpace
             btnUser.BackColor = Color.FromArgb(168, 228, 116);
             btnSettings.BackColor = Color.FromArgb(168, 228, 116);
             btnDeveloping.BackColor = Color.FromArgb(168, 228, 116);
-
+         
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -86,5 +103,20 @@ namespace ProyectoGreenSpace
                 }
             }
         }
+
+        private void sidebar_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void vsbFilms_Scroll(object sender, ScrollEventArgs e)
+        {
+            //pnlFilms.AutoScroll = false;
+            //pnlFilms.VerticalScroll.Value = vsbFilms.Value;
+            pnlFilms.AutoScrollPosition = new Point(0, e.NewValue);
+           
+        }
+
+        
     }
 }

@@ -143,6 +143,16 @@ namespace ProyectoGreenSpace.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap lupa {
+            get {
+                object obj = ResourceManager.GetObject("lupa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap menu_three_outlined_rounded_lines_symbol_icon_icons_com_73215 {
             get {
                 object obj = ResourceManager.GetObject("menu-three-outlined-rounded-lines-symbol_icon-icons.com_73215", resourceCulture);
