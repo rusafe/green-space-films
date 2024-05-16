@@ -44,6 +44,11 @@ namespace ProyectoGreenSpace.Classes
             return Film.InfoFilm(filmId);
         }
 
+        /// <summary>
+        /// Recupera todos los tickets de un usuario
+        /// </summary>
+        /// <param name="userId">El ID del usuario</param>
+        /// <returns>Lista con todos los tickets</returns>
         public static List<Ticket> Tickets(int userId)
         {
             List<Ticket> tickets = new List<Ticket>();
@@ -78,6 +83,11 @@ namespace ProyectoGreenSpace.Classes
             return tickets;
         }
 
+        /// <summary>
+        /// Recupera todos los tickets de un usuario de las peliculas que todavia no han pasado la fecha de visualizacion
+        /// </summary>
+        /// <param name="userId">El ID del usuario</param>
+        /// <returns>Lista con todos los tickets</returns>
         public static List<Ticket> ActualTickets(int userId)
         {
             List<Ticket> tickets = new List<Ticket>();
@@ -113,6 +123,11 @@ namespace ProyectoGreenSpace.Classes
             return tickets;
         }
 
+        /// <summary>
+        /// Recupera todos los tickets de un usuario de las peliculas que ya han pasado la fecha de visualizacion
+        /// </summary>
+        /// <param name="userId">El ID del usuario</param>
+        /// <returns>Lista con todos los tickets</returns>
         public static List<Ticket> PastTickets(int userId)
         {
             List<Ticket> tickets = new List<Ticket>();
@@ -148,7 +163,12 @@ namespace ProyectoGreenSpace.Classes
             return tickets;
         }
 
-        public static List<Ticket> AmountTickets(int userId)
+        /// <summary>
+        /// Obtiene la cantidad de tickets actuales que tiene un usuario
+        /// </summary>
+        /// <param name="userId">El ID del usuario</param>
+        /// <returns>Cantidad de tickets</returns>
+        public static List<Ticket> AmountActualTickets(int userId)
         {
             List<Ticket> tickets = new List<Ticket>();
 
