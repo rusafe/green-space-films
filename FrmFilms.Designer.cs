@@ -277,6 +277,7 @@
             this.btnSettings.TabIndex = 24;
             this.btnSettings.Text = "          Configuración";
             this.btnSettings.UseVisualStyleBackColor = true;
+            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
             // sidebarTimer
             // 
@@ -508,6 +509,7 @@
             this.grbMovie1.Size = new System.Drawing.Size(200, 219);
             this.grbMovie1.TabIndex = 31;
             this.grbMovie1.TabStop = false;
+            this.grbMovie1.Enter += new System.EventHandler(this.grbMovie1_Enter);
             // 
             // pcbMovie1
             // 

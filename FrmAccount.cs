@@ -17,15 +17,25 @@ namespace ProyectoGreenSpace
             InitializeComponent();
         }
 
-        private void btnUser_Click(object sender, EventArgs e)
-        {
-            //
-        }
-
         private void btnAdmin_Click(object sender, EventArgs e)
         {
             FrmAdmin for3 = new FrmAdmin();
             for3.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void pibLightMode_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Color.FromArgb(168, 228, 116);
+        }
+
+        private void pibDarkMode_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Color.FromArgb(32, 146, 14);
         }
     }
 }
