@@ -147,5 +147,24 @@ namespace ProyectoGreenSpace.Classes
 
             return tickets;
         }
+
+        public static List<Ticket> AmountTickets(int userId)
+        {
+            List<Ticket> tickets = new List<Ticket>();
+
+            string query = "SELECT COUNT(*) FROM tickets WHERE userId = @userId AND dateFilm >= @date";
+
+            MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
+            command.Parameters.AddWithValue("@userId", userId);
+            command.Parameters.AddWithValue("@date", DateTime.Now.ToString("yyyy-MM-dd"));
+
+            ConnectionBD.OpenConnection();
+
+            int amount = Convert.ToInt32(command.ExecuteScalar());
+
+            ConnectionBD.CloseConnection();
+
+            return tickets;
+        }
     }
 }
