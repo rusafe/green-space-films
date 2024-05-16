@@ -87,7 +87,7 @@ namespace ProyectoGreenSpace.Classes
         {
             List<Film> premiering = new List<Film>();
 
-            string query = "SELECT * FROM films WHERE premiering = 1";
+            string query = "SELECT * FROM films WHERE premiering = '1'";
 
             MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
 
@@ -121,7 +121,7 @@ namespace ProyectoGreenSpace.Classes
         {
             List<Film> premiering = new List<Film>();
 
-            string query = "SELECT * FROM films WHERE next_premiering = 1";
+            string query = "SELECT * FROM films WHERE next_premiering = '1'";
 
             MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
 
