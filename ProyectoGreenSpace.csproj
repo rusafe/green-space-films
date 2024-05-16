@@ -126,6 +126,18 @@
     <Compile Include="FrmUser.Designer.cs">
       <DependentUpon>FrmUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmReviews.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReviews.Designer.cs">
+      <DependentUpon>FrmReviews.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTickets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTickets.Designer.cs">
+      <DependentUpon>FrmTickets.cs</DependentUpon>
+    </Compile>
     <Compile Include="LangResources\StringResources.Designer.cs" />
     <Compile Include="LangResources\StringResources.EN-GB.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -158,6 +170,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmRegister.resx">
       <DependentUpon>FrmRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReviews.resx">
+      <DependentUpon>FrmReviews.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTickets.resx">
+      <DependentUpon>FrmTickets.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmUser.resx">
       <DependentUpon>FrmUser.cs</DependentUpon>
@@ -249,6 +267,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\spain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lupa.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\moon.png" />
