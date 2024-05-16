@@ -3,6 +3,8 @@ using MySql.Data.MySqlClient;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -212,10 +214,8 @@ namespace ProyectoGreenSpace.Classes
         /// </summary>
         /// <param name="userId">El ID del usuario</param>
         /// <returns>Cantidad de tickets</returns>
-        public static List<Ticket> AmountActualTickets(int userId)
+        public static int AmountActualTickets(int userId)
         {
-            List<Ticket> tickets = new List<Ticket>();
-
             string query = "SELECT COUNT(*) FROM tickets WHERE userId = @userId AND dateFilm >= @date";
 
             MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
@@ -228,7 +228,7 @@ namespace ProyectoGreenSpace.Classes
 
             ConnectionBD.CloseConnection();
 
-            return tickets;
+            return amount;
         }
 
         /// <summary>
@@ -236,10 +236,8 @@ namespace ProyectoGreenSpace.Classes
         /// </summary>
         /// <param name="userId">El ID del usuario</param>
         /// <returns>Cantidad de tickets</returns>
-        public static List<Ticket> AmountPastTickets(int userId)
+        public static int AmountPastTickets(int userId)
         {
-            List<Ticket> tickets = new List<Ticket>();
-
             string query = "SELECT COUNT(*) FROM tickets WHERE userId = @userId AND dateFilm < @date";
 
             MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
@@ -252,7 +250,7 @@ namespace ProyectoGreenSpace.Classes
 
             ConnectionBD.CloseConnection();
 
-            return tickets;
+            return amount;
         }
     }
 }
