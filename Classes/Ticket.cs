@@ -249,7 +249,7 @@ namespace ProyectoGreenSpace.Classes
             int amount = Convert.ToInt32(command.ExecuteScalar());
 
             ConnectionBD.CloseConnection();
-
+            
             return amount;
         }
     }
