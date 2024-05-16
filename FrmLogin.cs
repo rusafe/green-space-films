@@ -52,8 +52,8 @@ namespace ProyectoGreenSpace
                 else
                 {
                     MessageBox.Show("Bienvenido/a Green Space Films!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    FrmMovieTheater frmMovieTheater = new FrmMovieTheater();
-                    frmMovieTheater.Show();
+                    FrmFilms frmFilms = new FrmFilms();
+                    frmFilms.Show();
                     this.Close();
                 }
             }

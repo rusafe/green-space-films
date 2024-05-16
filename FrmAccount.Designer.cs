@@ -34,8 +34,6 @@
             this.btnAdmin = new System.Windows.Forms.Button();
             this.btnUser = new System.Windows.Forms.Button();
             this.gBoxSwitchNightDay = new System.Windows.Forms.GroupBox();
-            this.btnDayMode = new System.Windows.Forms.Button();
-            this.btnNightMode = new System.Windows.Forms.Button();
             this.lblDeleteAccount = new System.Windows.Forms.Label();
             this.btnDeleteAccount = new System.Windows.Forms.Button();
             this.lblDeleteUser = new System.Windows.Forms.Label();
@@ -44,13 +42,19 @@
             this.btnEnglish = new System.Windows.Forms.Button();
             this.btnEspanol = new System.Windows.Forms.Button();
             this.lblChangeLanguage = new System.Windows.Forms.Label();
-            this.pictBoxIcono = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.pictBoxIcono = new System.Windows.Forms.PictureBox();
+            this.pibLightMode = new System.Windows.Forms.PictureBox();
+            this.pibDarkMode = new System.Windows.Forms.PictureBox();
+            this.pibLightDark = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.gBoxSwitchNightDay.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictBoxIcono)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibLightMode)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibDarkMode)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibLightDark)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -96,40 +100,20 @@
             this.btnUser.TabIndex = 12;
             this.btnUser.Text = "Usuario";
             this.btnUser.UseVisualStyleBackColor = false;
-            this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
             // 
             // gBoxSwitchNightDay
             // 
-            this.gBoxSwitchNightDay.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.gBoxSwitchNightDay.Controls.Add(this.btnDayMode);
-            this.gBoxSwitchNightDay.Controls.Add(this.btnNightMode);
+            this.gBoxSwitchNightDay.BackColor = System.Drawing.Color.Transparent;
+            this.gBoxSwitchNightDay.Controls.Add(this.pibLightDark);
+            this.gBoxSwitchNightDay.Controls.Add(this.pibDarkMode);
+            this.gBoxSwitchNightDay.Controls.Add(this.pibLightMode);
             this.gBoxSwitchNightDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gBoxSwitchNightDay.Location = new System.Drawing.Point(411, 234);
+            this.gBoxSwitchNightDay.Location = new System.Drawing.Point(411, 204);
             this.gBoxSwitchNightDay.Name = "gBoxSwitchNightDay";
-            this.gBoxSwitchNightDay.Size = new System.Drawing.Size(438, 121);
+            this.gBoxSwitchNightDay.Size = new System.Drawing.Size(327, 150);
             this.gBoxSwitchNightDay.TabIndex = 34;
             this.gBoxSwitchNightDay.TabStop = false;
             this.gBoxSwitchNightDay.Text = "Elige el tipo de modo:";
-            // 
-            // btnDayMode
-            // 
-            this.btnDayMode.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btnDayMode.Location = new System.Drawing.Point(0, 47);
-            this.btnDayMode.Name = "btnDayMode";
-            this.btnDayMode.Size = new System.Drawing.Size(215, 72);
-            this.btnDayMode.TabIndex = 6;
-            this.btnDayMode.Text = "Modo Diurno";
-            this.btnDayMode.UseVisualStyleBackColor = false;
-            // 
-            // btnNightMode
-            // 
-            this.btnNightMode.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btnNightMode.Location = new System.Drawing.Point(214, 47);
-            this.btnNightMode.Name = "btnNightMode";
-            this.btnNightMode.Size = new System.Drawing.Size(224, 74);
-            this.btnNightMode.TabIndex = 7;
-            this.btnNightMode.Text = "Modo Noche";
-            this.btnNightMode.UseVisualStyleBackColor = false;
             // 
             // lblDeleteAccount
             // 
@@ -219,6 +203,29 @@
             this.lblChangeLanguage.TabIndex = 29;
             this.lblChangeLanguage.Text = "Cambiar Idioma:";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button1.Location = new System.Drawing.Point(411, 555);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(168, 53);
+            this.button1.TabIndex = 26;
+            this.button1.Text = "Salir\r\n";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Cyan;
+            this.button2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button2.Location = new System.Drawing.Point(633, 553);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(168, 53);
+            this.button2.TabIndex = 27;
+            this.button2.Text = "Guardar ";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
             // pictBoxIcono
             // 
             this.pictBoxIcono.BackColor = System.Drawing.Color.Transparent;
@@ -231,27 +238,37 @@
             this.pictBoxIcono.TabIndex = 28;
             this.pictBoxIcono.TabStop = false;
             // 
-            // button1
+            // pibLightMode
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button1.Location = new System.Drawing.Point(411, 555);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(168, 53);
-            this.button1.TabIndex = 26;
-            this.button1.Text = "Salir\r\n";
-            this.button1.UseVisualStyleBackColor = false;
+            this.pibLightMode.Image = global::ProyectoGreenSpace.Properties.Resources.day_mode;
+            this.pibLightMode.Location = new System.Drawing.Point(27, 54);
+            this.pibLightMode.Name = "pibLightMode";
+            this.pibLightMode.Size = new System.Drawing.Size(71, 63);
+            this.pibLightMode.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pibLightMode.TabIndex = 0;
+            this.pibLightMode.TabStop = false;
+            this.pibLightMode.Click += new System.EventHandler(this.pibLightMode_Click);
             // 
-            // button2
+            // pibDarkMode
             // 
-            this.button2.BackColor = System.Drawing.Color.Cyan;
-            this.button2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button2.Location = new System.Drawing.Point(633, 553);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(168, 53);
-            this.button2.TabIndex = 27;
-            this.button2.Text = "Guardar ";
-            this.button2.UseVisualStyleBackColor = false;
+            this.pibDarkMode.Image = global::ProyectoGreenSpace.Properties.Resources.moon;
+            this.pibDarkMode.Location = new System.Drawing.Point(233, 54);
+            this.pibDarkMode.Name = "pibDarkMode";
+            this.pibDarkMode.Size = new System.Drawing.Size(73, 63);
+            this.pibDarkMode.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pibDarkMode.TabIndex = 1;
+            this.pibDarkMode.TabStop = false;
+            this.pibDarkMode.Click += new System.EventHandler(this.pibDarkMode_Click);
+            // 
+            // pibLightDark
+            // 
+            this.pibLightDark.Image = global::ProyectoGreenSpace.Properties.Resources.light_mode;
+            this.pibLightDark.Location = new System.Drawing.Point(115, 44);
+            this.pibLightDark.Name = "pibLightDark";
+            this.pibLightDark.Size = new System.Drawing.Size(100, 80);
+            this.pibLightDark.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pibLightDark.TabIndex = 2;
+            this.pibLightDark.TabStop = false;
             // 
             // FrmAccount
             // 
@@ -274,6 +291,9 @@
             this.gBoxSwitchNightDay.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictBoxIcono)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibLightMode)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibDarkMode)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibLightDark)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -286,8 +306,6 @@
         private System.Windows.Forms.Button btnAdmin;
         private System.Windows.Forms.Button btnUser;
         private System.Windows.Forms.GroupBox gBoxSwitchNightDay;
-        private System.Windows.Forms.Button btnDayMode;
-        private System.Windows.Forms.Button btnNightMode;
         private System.Windows.Forms.Label lblDeleteAccount;
         private System.Windows.Forms.Button btnDeleteAccount;
         private System.Windows.Forms.Label lblDeleteUser;
@@ -299,5 +317,8 @@
         private System.Windows.Forms.PictureBox pictBoxIcono;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.PictureBox pibLightDark;
+        private System.Windows.Forms.PictureBox pibDarkMode;
+        private System.Windows.Forms.PictureBox pibLightMode;
     }
 }

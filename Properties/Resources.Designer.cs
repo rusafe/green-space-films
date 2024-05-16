@@ -103,6 +103,16 @@ namespace ProyectoGreenSpace.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap day_mode {
+            get {
+                object obj = ResourceManager.GetObject("day_mode", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap development_concept_growth_improvement_progress_cognitive_icon_230442 {
             get {
                 object obj = ResourceManager.GetObject("development_concept_growth_improvement_progress_cognitive_icon_230442", resourceCulture);
@@ -143,6 +153,16 @@ namespace ProyectoGreenSpace.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap light_mode {
+            get {
+                object obj = ResourceManager.GetObject("light_mode", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap menu_three_outlined_rounded_lines_symbol_icon_icons_com_73215 {
             get {
                 object obj = ResourceManager.GetObject("menu-three-outlined-rounded-lines-symbol_icon-icons.com_73215", resourceCulture);
@@ -156,6 +176,16 @@ namespace ProyectoGreenSpace.Properties {
         internal static System.Drawing.Bitmap menu_three_outlined_rounded_lines_symbol_icon_icons1 {
             get {
                 object obj = ResourceManager.GetObject("menu-three-outlined-rounded-lines-symbol_icon-icons1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap moon {
+            get {
+                object obj = ResourceManager.GetObject("moon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
