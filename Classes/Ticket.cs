@@ -77,5 +77,75 @@ namespace ProyectoGreenSpace.Classes
 
             return tickets;
         }
+
+        public static List<Ticket> ActualTickets(int userId)
+        {
+            List<Ticket> tickets = new List<Ticket>();
+
+            string query = "SELECT * FROM tickets WHERE userId = @userId AND dateFilm >= @date";
+
+            MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
+            command.Parameters.AddWithValue("@userId", userId);
+            command.Parameters.AddWithValue("@date", DateTime.Now.ToString("yyyy-MM-dd"));
+
+            ConnectionBD.OpenConnection();
+
+            using (MySqlDataReader reader = command.ExecuteReader()) // Abrir y cerrar la conexión del dataReader --> Tabla virtual
+            {
+                while (reader.Read())
+                {
+                    tickets.Add(new Ticket(
+                        reader.GetInt32(0),
+                        reader.GetInt32(1),
+                        reader.GetInt32(2),
+                        reader.GetInt32(3),
+                        reader.GetDateTime(4),
+                        reader.GetDateTime(5),
+                        reader.GetInt32(6),
+                        reader.GetDouble(7),
+                        reader.GetDouble(8)
+                    ));
+                }
+            }
+
+            ConnectionBD.CloseConnection();
+
+            return tickets;
+        }
+
+        public static List<Ticket> PastTickets(int userId)
+        {
+            List<Ticket> tickets = new List<Ticket>();
+
+            string query = "SELECT * FROM tickets WHERE userId = @userId AND dateFilm < @date";
+
+            MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
+            command.Parameters.AddWithValue("@userId", userId);
+            command.Parameters.AddWithValue("@date", DateTime.Now.ToString("yyyy-MM-dd"));
+
+            ConnectionBD.OpenConnection();
+
+            using (MySqlDataReader reader = command.ExecuteReader()) // Abrir y cerrar la conexión del dataReader --> Tabla virtual
+            {
+                while (reader.Read())
+                {
+                    tickets.Add(new Ticket(
+                        reader.GetInt32(0),
+                        reader.GetInt32(1),
+                        reader.GetInt32(2),
+                        reader.GetInt32(3),
+                        reader.GetDateTime(4),
+                        reader.GetDateTime(5),
+                        reader.GetInt32(6),
+                        reader.GetDouble(7),
+                        reader.GetDouble(8)
+                    ));
+                }
+            }
+
+            ConnectionBD.CloseConnection();
+
+            return tickets;
+        }
     }
 }
