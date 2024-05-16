@@ -27,16 +27,32 @@ namespace ProyectoGreenSpace
             try
             {
                 user.Username = txtUsername.Text;
-                password.RecoverPassword(user.Username);
-
-                FrmLogin frmLogin = new FrmLogin();
-                frmLogin.ShowDialog();
-                this.Close();
+                if (User.ExistUser(user.Username))
+                {
+                    password.RecoverPassword(user.Username);
+                    MessageBox.Show("Contraseña generada con éxito.", "Cambio de contraseña", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    OpenLogin();
+                } else
+                {
+                    MessageBox.Show("Usuario no existente en la base de datos.", "Aviso", MessageBoxButtons.OK,MessageBoxIcon.Error);
+                    txtUsername.Text = String.Empty;
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message + "\n" + ex.StackTrace);
             }
+        }
+
+        private void pibReturn_Click(object sender, EventArgs e)
+        {
+            OpenLogin();
+        }
+        private void OpenLogin()
+        {
+            FrmLogin frmLogin = new FrmLogin();
+            frmLogin.ShowDialog();
+            this.Close();
         }
     }
 }

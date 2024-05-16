@@ -35,28 +35,42 @@
             this.btnMenu = new System.Windows.Forms.Button();
             this.lblMenu = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnTicketOffice = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnReviewTickets = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.btnReviews = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.btnDeveloping = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.btnUser = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.btnSettings = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.pctBusy5 = new System.Windows.Forms.PictureBox();
+            this.pctFree5 = new System.Windows.Forms.PictureBox();
             this.txtSeats5 = new System.Windows.Forms.TextBox();
             this.txtTypeHall5 = new System.Windows.Forms.TextBox();
             this.txtHall5 = new System.Windows.Forms.TextBox();
             this.txtHour5 = new System.Windows.Forms.TextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.pctBusy4 = new System.Windows.Forms.PictureBox();
+            this.pctFree4 = new System.Windows.Forms.PictureBox();
             this.txtSeats4 = new System.Windows.Forms.TextBox();
             this.txtTypeHall4 = new System.Windows.Forms.TextBox();
             this.txtHall4 = new System.Windows.Forms.TextBox();
             this.txtHour4 = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.pctBusy3 = new System.Windows.Forms.PictureBox();
+            this.pctFree3 = new System.Windows.Forms.PictureBox();
             this.txtSeats3 = new System.Windows.Forms.TextBox();
             this.txtTypeHall3 = new System.Windows.Forms.TextBox();
             this.txtHall3 = new System.Windows.Forms.TextBox();
             this.txtHour3 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pctBusy2 = new System.Windows.Forms.PictureBox();
+            this.pctFree2 = new System.Windows.Forms.PictureBox();
             this.txtSeats2 = new System.Windows.Forms.TextBox();
             this.txtTypeHall2 = new System.Windows.Forms.TextBox();
             this.txtHall2 = new System.Windows.Forms.TextBox();
@@ -65,6 +79,8 @@
             this.btnAccessRevews = new System.Windows.Forms.Button();
             this.btnQuestion = new System.Windows.Forms.Button();
             this.grpInfo1 = new System.Windows.Forms.GroupBox();
+            this.pctBusy1 = new System.Windows.Forms.PictureBox();
+            this.pctFree1 = new System.Windows.Forms.PictureBox();
             this.txtSeats1 = new System.Windows.Forms.TextBox();
             this.txtTypeHall1 = new System.Windows.Forms.TextBox();
             this.txtHall1 = new System.Windows.Forms.TextBox();
@@ -77,25 +93,9 @@
             this.lblTitulo = new System.Windows.Forms.Label();
             this.txtInfoMovie = new System.Windows.Forms.TextBox();
             this.grbMovie1 = new System.Windows.Forms.GroupBox();
-            this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
-            this.pctBusy5 = new System.Windows.Forms.PictureBox();
-            this.pctFree5 = new System.Windows.Forms.PictureBox();
-            this.pctBusy4 = new System.Windows.Forms.PictureBox();
-            this.pctFree4 = new System.Windows.Forms.PictureBox();
-            this.pctBusy3 = new System.Windows.Forms.PictureBox();
-            this.pctFree3 = new System.Windows.Forms.PictureBox();
-            this.pctBusy2 = new System.Windows.Forms.PictureBox();
-            this.pctFree2 = new System.Windows.Forms.PictureBox();
-            this.pctBusy1 = new System.Windows.Forms.PictureBox();
-            this.pctFree1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pcbMovie1 = new System.Windows.Forms.PictureBox();
-            this.btnTicketOffice = new System.Windows.Forms.Button();
-            this.btnReviewTickets = new System.Windows.Forms.Button();
-            this.btnReviews = new System.Windows.Forms.Button();
-            this.btnDeveloping = new System.Windows.Forms.Button();
-            this.btnUser = new System.Windows.Forms.Button();
-            this.btnSettings = new System.Windows.Forms.Button();
+            this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.sidebar.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -105,23 +105,23 @@
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.grpInfo1.SuspendLayout();
-            this.grbMovie1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctBusy5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctFree5)).BeginInit();
+            this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctBusy4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctFree4)).BeginInit();
+            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctBusy3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctFree3)).BeginInit();
+            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctBusy2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctFree2)).BeginInit();
+            this.grpInfo1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctBusy1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctFree1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.grbMovie1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbMovie1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // sidebar
@@ -184,6 +184,18 @@
             this.panel1.Size = new System.Drawing.Size(239, 61);
             this.panel1.TabIndex = 1;
             // 
+            // btnTicketOffice
+            // 
+            this.btnTicketOffice.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTicketOffice.Image = ((System.Drawing.Image)(resources.GetObject("btnTicketOffice.Image")));
+            this.btnTicketOffice.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTicketOffice.Location = new System.Drawing.Point(10, 3);
+            this.btnTicketOffice.Name = "btnTicketOffice";
+            this.btnTicketOffice.Size = new System.Drawing.Size(226, 52);
+            this.btnTicketOffice.TabIndex = 22;
+            this.btnTicketOffice.Text = "               Taquilla";
+            this.btnTicketOffice.UseVisualStyleBackColor = true;
+            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.btnReviewTickets);
@@ -191,6 +203,18 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(239, 54);
             this.panel3.TabIndex = 2;
+            // 
+            // btnReviewTickets
+            // 
+            this.btnReviewTickets.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReviewTickets.Image = ((System.Drawing.Image)(resources.GetObject("btnReviewTickets.Image")));
+            this.btnReviewTickets.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReviewTickets.Location = new System.Drawing.Point(9, 1);
+            this.btnReviewTickets.Name = "btnReviewTickets";
+            this.btnReviewTickets.Size = new System.Drawing.Size(227, 53);
+            this.btnReviewTickets.TabIndex = 23;
+            this.btnReviewTickets.Text = "          Revisar Tickets";
+            this.btnReviewTickets.UseVisualStyleBackColor = true;
             // 
             // panel4
             // 
@@ -200,6 +224,18 @@
             this.panel4.Size = new System.Drawing.Size(239, 62);
             this.panel4.TabIndex = 3;
             // 
+            // btnReviews
+            // 
+            this.btnReviews.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReviews.Image = ((System.Drawing.Image)(resources.GetObject("btnReviews.Image")));
+            this.btnReviews.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReviews.Location = new System.Drawing.Point(8, 5);
+            this.btnReviews.Name = "btnReviews";
+            this.btnReviews.Size = new System.Drawing.Size(228, 54);
+            this.btnReviews.TabIndex = 24;
+            this.btnReviews.Text = "               Reseñas";
+            this.btnReviews.UseVisualStyleBackColor = true;
+            // 
             // panel5
             // 
             this.panel5.Controls.Add(this.btnDeveloping);
@@ -207,6 +243,18 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(239, 68);
             this.panel5.TabIndex = 4;
+            // 
+            // btnDeveloping
+            // 
+            this.btnDeveloping.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeveloping.Image = ((System.Drawing.Image)(resources.GetObject("btnDeveloping.Image")));
+            this.btnDeveloping.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDeveloping.Location = new System.Drawing.Point(9, 7);
+            this.btnDeveloping.Name = "btnDeveloping";
+            this.btnDeveloping.Size = new System.Drawing.Size(227, 58);
+            this.btnDeveloping.TabIndex = 24;
+            this.btnDeveloping.Text = "          En Desarrollo";
+            this.btnDeveloping.UseVisualStyleBackColor = true;
             // 
             // panel6
             // 
@@ -223,6 +271,18 @@
             this.panel7.Size = new System.Drawing.Size(239, 56);
             this.panel7.TabIndex = 6;
             // 
+            // btnUser
+            // 
+            this.btnUser.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUser.Image = ((System.Drawing.Image)(resources.GetObject("btnUser.Image")));
+            this.btnUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUser.Location = new System.Drawing.Point(9, 2);
+            this.btnUser.Name = "btnUser";
+            this.btnUser.Size = new System.Drawing.Size(227, 52);
+            this.btnUser.TabIndex = 24;
+            this.btnUser.Text = "               Usuario";
+            this.btnUser.UseVisualStyleBackColor = true;
+            // 
             // panel8
             // 
             this.panel8.Controls.Add(this.btnSettings);
@@ -230,6 +290,18 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(239, 64);
             this.panel8.TabIndex = 7;
+            // 
+            // btnSettings
+            // 
+            this.btnSettings.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSettings.Image = ((System.Drawing.Image)(resources.GetObject("btnSettings.Image")));
+            this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSettings.Location = new System.Drawing.Point(9, 3);
+            this.btnSettings.Name = "btnSettings";
+            this.btnSettings.Size = new System.Drawing.Size(227, 52);
+            this.btnSettings.TabIndex = 24;
+            this.btnSettings.Text = "         Configuración";
+            this.btnSettings.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
@@ -245,6 +317,28 @@
             this.groupBox3.Size = new System.Drawing.Size(295, 166);
             this.groupBox3.TabIndex = 50;
             this.groupBox3.TabStop = false;
+            // 
+            // pctBusy5
+            // 
+            this.pctBusy5.BackColor = System.Drawing.Color.Silver;
+            this.pctBusy5.Image = global::ProyectoGreenSpace.Properties.Resources.silla__4_1;
+            this.pctBusy5.Location = new System.Drawing.Point(247, 96);
+            this.pctBusy5.Name = "pctBusy5";
+            this.pctBusy5.Size = new System.Drawing.Size(42, 46);
+            this.pctBusy5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctBusy5.TabIndex = 26;
+            this.pctBusy5.TabStop = false;
+            // 
+            // pctFree5
+            // 
+            this.pctFree5.BackColor = System.Drawing.Color.Silver;
+            this.pctFree5.Image = global::ProyectoGreenSpace.Properties.Resources.silla1;
+            this.pctFree5.Location = new System.Drawing.Point(247, 10);
+            this.pctFree5.Name = "pctFree5";
+            this.pctFree5.Size = new System.Drawing.Size(42, 46);
+            this.pctFree5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctFree5.TabIndex = 26;
+            this.pctFree5.TabStop = false;
             // 
             // txtSeats5
             // 
@@ -316,6 +410,28 @@
             this.groupBox4.TabIndex = 49;
             this.groupBox4.TabStop = false;
             // 
+            // pctBusy4
+            // 
+            this.pctBusy4.BackColor = System.Drawing.Color.Silver;
+            this.pctBusy4.Image = global::ProyectoGreenSpace.Properties.Resources.silla__4_1;
+            this.pctBusy4.Location = new System.Drawing.Point(247, 96);
+            this.pctBusy4.Name = "pctBusy4";
+            this.pctBusy4.Size = new System.Drawing.Size(42, 46);
+            this.pctBusy4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctBusy4.TabIndex = 26;
+            this.pctBusy4.TabStop = false;
+            // 
+            // pctFree4
+            // 
+            this.pctFree4.BackColor = System.Drawing.Color.Silver;
+            this.pctFree4.Image = global::ProyectoGreenSpace.Properties.Resources.silla1;
+            this.pctFree4.Location = new System.Drawing.Point(247, 10);
+            this.pctFree4.Name = "pctFree4";
+            this.pctFree4.Size = new System.Drawing.Size(42, 46);
+            this.pctFree4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctFree4.TabIndex = 26;
+            this.pctFree4.TabStop = false;
+            // 
             // txtSeats4
             // 
             this.txtSeats4.BackColor = System.Drawing.Color.Silver;
@@ -386,6 +502,28 @@
             this.groupBox2.TabIndex = 48;
             this.groupBox2.TabStop = false;
             // 
+            // pctBusy3
+            // 
+            this.pctBusy3.BackColor = System.Drawing.Color.Silver;
+            this.pctBusy3.Image = global::ProyectoGreenSpace.Properties.Resources.silla__4_1;
+            this.pctBusy3.Location = new System.Drawing.Point(247, 96);
+            this.pctBusy3.Name = "pctBusy3";
+            this.pctBusy3.Size = new System.Drawing.Size(42, 46);
+            this.pctBusy3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctBusy3.TabIndex = 26;
+            this.pctBusy3.TabStop = false;
+            // 
+            // pctFree3
+            // 
+            this.pctFree3.BackColor = System.Drawing.Color.Silver;
+            this.pctFree3.Image = global::ProyectoGreenSpace.Properties.Resources.silla1;
+            this.pctFree3.Location = new System.Drawing.Point(247, 10);
+            this.pctFree3.Name = "pctFree3";
+            this.pctFree3.Size = new System.Drawing.Size(42, 46);
+            this.pctFree3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctFree3.TabIndex = 26;
+            this.pctFree3.TabStop = false;
+            // 
             // txtSeats3
             // 
             this.txtSeats3.BackColor = System.Drawing.Color.Silver;
@@ -455,6 +593,28 @@
             this.groupBox1.Size = new System.Drawing.Size(295, 166);
             this.groupBox1.TabIndex = 47;
             this.groupBox1.TabStop = false;
+            // 
+            // pctBusy2
+            // 
+            this.pctBusy2.BackColor = System.Drawing.Color.Silver;
+            this.pctBusy2.Image = global::ProyectoGreenSpace.Properties.Resources.silla__4_1;
+            this.pctBusy2.Location = new System.Drawing.Point(247, 96);
+            this.pctBusy2.Name = "pctBusy2";
+            this.pctBusy2.Size = new System.Drawing.Size(42, 46);
+            this.pctBusy2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctBusy2.TabIndex = 26;
+            this.pctBusy2.TabStop = false;
+            // 
+            // pctFree2
+            // 
+            this.pctFree2.BackColor = System.Drawing.Color.Silver;
+            this.pctFree2.Image = global::ProyectoGreenSpace.Properties.Resources.silla1;
+            this.pctFree2.Location = new System.Drawing.Point(247, 10);
+            this.pctFree2.Name = "pctFree2";
+            this.pctFree2.Size = new System.Drawing.Size(42, 46);
+            this.pctFree2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctFree2.TabIndex = 26;
+            this.pctFree2.TabStop = false;
             // 
             // txtSeats2
             // 
@@ -558,6 +718,28 @@
             this.grpInfo1.Size = new System.Drawing.Size(295, 166);
             this.grpInfo1.TabIndex = 43;
             this.grpInfo1.TabStop = false;
+            // 
+            // pctBusy1
+            // 
+            this.pctBusy1.BackColor = System.Drawing.Color.Silver;
+            this.pctBusy1.Image = global::ProyectoGreenSpace.Properties.Resources.silla__4_1;
+            this.pctBusy1.Location = new System.Drawing.Point(247, 96);
+            this.pctBusy1.Name = "pctBusy1";
+            this.pctBusy1.Size = new System.Drawing.Size(42, 46);
+            this.pctBusy1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctBusy1.TabIndex = 26;
+            this.pctBusy1.TabStop = false;
+            // 
+            // pctFree1
+            // 
+            this.pctFree1.BackColor = System.Drawing.Color.Silver;
+            this.pctFree1.Image = global::ProyectoGreenSpace.Properties.Resources.silla1;
+            this.pctFree1.Location = new System.Drawing.Point(247, 10);
+            this.pctFree1.Name = "pctFree1";
+            this.pctFree1.Size = new System.Drawing.Size(42, 46);
+            this.pctFree1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctFree1.TabIndex = 26;
+            this.pctFree1.TabStop = false;
             // 
             // txtSeats1
             // 
@@ -715,121 +897,21 @@
             this.grbMovie1.TabIndex = 34;
             this.grbMovie1.TabStop = false;
             // 
+            // pcbMovie1
+            // 
+            this.pcbMovie1.Image = global::ProyectoGreenSpace.Properties.Resources.galeria_de_imagenes;
+            this.pcbMovie1.Location = new System.Drawing.Point(29, 21);
+            this.pcbMovie1.Name = "pcbMovie1";
+            this.pcbMovie1.Size = new System.Drawing.Size(273, 216);
+            this.pcbMovie1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbMovie1.TabIndex = 9;
+            this.pcbMovie1.TabStop = false;
+            // 
             // sidebarTimer
             // 
             this.sidebarTimer.Enabled = true;
             this.sidebarTimer.Interval = 10;
             this.sidebarTimer.Tick += new System.EventHandler(this.sidebarTimer_Tick);
-            // 
-            // pctBusy5
-            // 
-            this.pctBusy5.BackColor = System.Drawing.Color.Silver;
-            this.pctBusy5.Image = global::ProyectoGreenSpace.Properties.Resources.silla__4_1;
-            this.pctBusy5.Location = new System.Drawing.Point(247, 96);
-            this.pctBusy5.Name = "pctBusy5";
-            this.pctBusy5.Size = new System.Drawing.Size(42, 46);
-            this.pctBusy5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctBusy5.TabIndex = 26;
-            this.pctBusy5.TabStop = false;
-            // 
-            // pctFree5
-            // 
-            this.pctFree5.BackColor = System.Drawing.Color.Silver;
-            this.pctFree5.Image = global::ProyectoGreenSpace.Properties.Resources.silla1;
-            this.pctFree5.Location = new System.Drawing.Point(247, 10);
-            this.pctFree5.Name = "pctFree5";
-            this.pctFree5.Size = new System.Drawing.Size(42, 46);
-            this.pctFree5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctFree5.TabIndex = 26;
-            this.pctFree5.TabStop = false;
-            // 
-            // pctBusy4
-            // 
-            this.pctBusy4.BackColor = System.Drawing.Color.Silver;
-            this.pctBusy4.Image = global::ProyectoGreenSpace.Properties.Resources.silla__4_1;
-            this.pctBusy4.Location = new System.Drawing.Point(247, 96);
-            this.pctBusy4.Name = "pctBusy4";
-            this.pctBusy4.Size = new System.Drawing.Size(42, 46);
-            this.pctBusy4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctBusy4.TabIndex = 26;
-            this.pctBusy4.TabStop = false;
-            // 
-            // pctFree4
-            // 
-            this.pctFree4.BackColor = System.Drawing.Color.Silver;
-            this.pctFree4.Image = global::ProyectoGreenSpace.Properties.Resources.silla1;
-            this.pctFree4.Location = new System.Drawing.Point(247, 10);
-            this.pctFree4.Name = "pctFree4";
-            this.pctFree4.Size = new System.Drawing.Size(42, 46);
-            this.pctFree4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctFree4.TabIndex = 26;
-            this.pctFree4.TabStop = false;
-            // 
-            // pctBusy3
-            // 
-            this.pctBusy3.BackColor = System.Drawing.Color.Silver;
-            this.pctBusy3.Image = global::ProyectoGreenSpace.Properties.Resources.silla__4_1;
-            this.pctBusy3.Location = new System.Drawing.Point(247, 96);
-            this.pctBusy3.Name = "pctBusy3";
-            this.pctBusy3.Size = new System.Drawing.Size(42, 46);
-            this.pctBusy3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctBusy3.TabIndex = 26;
-            this.pctBusy3.TabStop = false;
-            // 
-            // pctFree3
-            // 
-            this.pctFree3.BackColor = System.Drawing.Color.Silver;
-            this.pctFree3.Image = global::ProyectoGreenSpace.Properties.Resources.silla1;
-            this.pctFree3.Location = new System.Drawing.Point(247, 10);
-            this.pctFree3.Name = "pctFree3";
-            this.pctFree3.Size = new System.Drawing.Size(42, 46);
-            this.pctFree3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctFree3.TabIndex = 26;
-            this.pctFree3.TabStop = false;
-            // 
-            // pctBusy2
-            // 
-            this.pctBusy2.BackColor = System.Drawing.Color.Silver;
-            this.pctBusy2.Image = global::ProyectoGreenSpace.Properties.Resources.silla__4_1;
-            this.pctBusy2.Location = new System.Drawing.Point(247, 96);
-            this.pctBusy2.Name = "pctBusy2";
-            this.pctBusy2.Size = new System.Drawing.Size(42, 46);
-            this.pctBusy2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctBusy2.TabIndex = 26;
-            this.pctBusy2.TabStop = false;
-            // 
-            // pctFree2
-            // 
-            this.pctFree2.BackColor = System.Drawing.Color.Silver;
-            this.pctFree2.Image = global::ProyectoGreenSpace.Properties.Resources.silla1;
-            this.pctFree2.Location = new System.Drawing.Point(247, 10);
-            this.pctFree2.Name = "pctFree2";
-            this.pctFree2.Size = new System.Drawing.Size(42, 46);
-            this.pctFree2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctFree2.TabIndex = 26;
-            this.pctFree2.TabStop = false;
-            // 
-            // pctBusy1
-            // 
-            this.pctBusy1.BackColor = System.Drawing.Color.Silver;
-            this.pctBusy1.Image = global::ProyectoGreenSpace.Properties.Resources.silla__4_1;
-            this.pctBusy1.Location = new System.Drawing.Point(247, 96);
-            this.pctBusy1.Name = "pctBusy1";
-            this.pctBusy1.Size = new System.Drawing.Size(42, 46);
-            this.pctBusy1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctBusy1.TabIndex = 26;
-            this.pctBusy1.TabStop = false;
-            // 
-            // pctFree1
-            // 
-            this.pctFree1.BackColor = System.Drawing.Color.Silver;
-            this.pctFree1.Image = global::ProyectoGreenSpace.Properties.Resources.silla1;
-            this.pctFree1.Location = new System.Drawing.Point(247, 10);
-            this.pctFree1.Name = "pctFree1";
-            this.pctFree1.Size = new System.Drawing.Size(42, 46);
-            this.pctFree1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctFree1.TabIndex = 26;
-            this.pctFree1.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -841,88 +923,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 42;
             this.pictureBox1.TabStop = false;
-            // 
-            // pcbMovie1
-            // 
-            this.pcbMovie1.Image = global::ProyectoGreenSpace.Properties.Resources.galeria_de_imagenes;
-            this.pcbMovie1.Location = new System.Drawing.Point(29, 21);
-            this.pcbMovie1.Name = "pcbMovie1";
-            this.pcbMovie1.Size = new System.Drawing.Size(273, 216);
-            this.pcbMovie1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcbMovie1.TabIndex = 9;
-            this.pcbMovie1.TabStop = false;
-            // 
-            // btnTicketOffice
-            // 
-            this.btnTicketOffice.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTicketOffice.Image = ((System.Drawing.Image)(resources.GetObject("btnTicketOffice.Image")));
-            this.btnTicketOffice.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTicketOffice.Location = new System.Drawing.Point(10, 3);
-            this.btnTicketOffice.Name = "btnTicketOffice";
-            this.btnTicketOffice.Size = new System.Drawing.Size(226, 52);
-            this.btnTicketOffice.TabIndex = 22;
-            this.btnTicketOffice.Text = "               Taquilla";
-            this.btnTicketOffice.UseVisualStyleBackColor = true;
-            // 
-            // btnReviewTickets
-            // 
-            this.btnReviewTickets.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReviewTickets.Image = ((System.Drawing.Image)(resources.GetObject("btnReviewTickets.Image")));
-            this.btnReviewTickets.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReviewTickets.Location = new System.Drawing.Point(9, 1);
-            this.btnReviewTickets.Name = "btnReviewTickets";
-            this.btnReviewTickets.Size = new System.Drawing.Size(227, 53);
-            this.btnReviewTickets.TabIndex = 23;
-            this.btnReviewTickets.Text = "          Revisar Tickets";
-            this.btnReviewTickets.UseVisualStyleBackColor = true;
-            // 
-            // btnReviews
-            // 
-            this.btnReviews.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReviews.Image = ((System.Drawing.Image)(resources.GetObject("btnReviews.Image")));
-            this.btnReviews.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReviews.Location = new System.Drawing.Point(8, 5);
-            this.btnReviews.Name = "btnReviews";
-            this.btnReviews.Size = new System.Drawing.Size(228, 54);
-            this.btnReviews.TabIndex = 24;
-            this.btnReviews.Text = "               Reseñas";
-            this.btnReviews.UseVisualStyleBackColor = true;
-            // 
-            // btnDeveloping
-            // 
-            this.btnDeveloping.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeveloping.Image = ((System.Drawing.Image)(resources.GetObject("btnDeveloping.Image")));
-            this.btnDeveloping.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDeveloping.Location = new System.Drawing.Point(9, 7);
-            this.btnDeveloping.Name = "btnDeveloping";
-            this.btnDeveloping.Size = new System.Drawing.Size(227, 58);
-            this.btnDeveloping.TabIndex = 24;
-            this.btnDeveloping.Text = "          En Desarrollo";
-            this.btnDeveloping.UseVisualStyleBackColor = true;
-            // 
-            // btnUser
-            // 
-            this.btnUser.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUser.Image = ((System.Drawing.Image)(resources.GetObject("btnUser.Image")));
-            this.btnUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUser.Location = new System.Drawing.Point(9, 2);
-            this.btnUser.Name = "btnUser";
-            this.btnUser.Size = new System.Drawing.Size(227, 52);
-            this.btnUser.TabIndex = 24;
-            this.btnUser.Text = "               Usuario";
-            this.btnUser.UseVisualStyleBackColor = true;
-            // 
-            // btnSettings
-            // 
-            this.btnSettings.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSettings.Image = ((System.Drawing.Image)(resources.GetObject("btnSettings.Image")));
-            this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSettings.Location = new System.Drawing.Point(9, 3);
-            this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Size = new System.Drawing.Size(227, 52);
-            this.btnSettings.TabIndex = 24;
-            this.btnSettings.Text = "         Configuración";
-            this.btnSettings.UseVisualStyleBackColor = true;
             // 
             // FrmMovieTheater
             // 
@@ -960,27 +960,27 @@
             this.panel8.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.grpInfo1.ResumeLayout(false);
-            this.grpInfo1.PerformLayout();
-            this.grbMovie1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pctBusy5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctFree5)).EndInit();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctBusy4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctFree4)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctBusy3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctFree3)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctBusy2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctFree2)).EndInit();
+            this.grpInfo1.ResumeLayout(false);
+            this.grpInfo1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctBusy1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctFree1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.grbMovie1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pcbMovie1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
