@@ -41,8 +41,13 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnReviews = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.btnDeveloping = new System.Windows.Forms.Button();
+            this.btnWriteReview = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.lblLogOut = new System.Windows.Forms.Label();
+            this.txtJoinApp = new System.Windows.Forms.TextBox();
+            this.lblJoinApp = new System.Windows.Forms.Label();
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.lblUsername = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.btnUser = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
@@ -70,11 +75,11 @@
             this.pcbMovie2 = new System.Windows.Forms.PictureBox();
             this.lblInfo2 = new System.Windows.Forms.Label();
             this.grbMovie1 = new System.Windows.Forms.GroupBox();
+            this.lblInfor1 = new System.Windows.Forms.Label();
             this.pcbMovie1 = new System.Windows.Forms.PictureBox();
             this.lblInfo1 = new System.Windows.Forms.Label();
             this.lblTitleMonth = new System.Windows.Forms.Label();
             this.pnlFilms = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.grbNextMovie8 = new System.Windows.Forms.GroupBox();
             this.lblNextInfo8 = new System.Windows.Forms.Label();
             this.pcbNextMovie8 = new System.Windows.Forms.PictureBox();
@@ -100,12 +105,15 @@
             this.grbNextMovie5 = new System.Windows.Forms.GroupBox();
             this.pcbNextMovie5 = new System.Windows.Forms.PictureBox();
             this.lblNextInfo5 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.sidebar.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
             this.grbMovie8.SuspendLayout();
@@ -125,7 +133,6 @@
             this.grbMovie1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbMovie1)).BeginInit();
             this.pnlFilms.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.grbNextMovie8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbNextMovie8)).BeginInit();
             this.grbNextMovie1.SuspendLayout();
@@ -142,6 +149,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pcbNextMovie3)).BeginInit();
             this.grbNextMovie5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbNextMovie5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // sidebar
@@ -256,37 +265,92 @@
             this.btnReviews.Name = "btnReviews";
             this.btnReviews.Size = new System.Drawing.Size(233, 54);
             this.btnReviews.TabIndex = 24;
-            this.btnReviews.Text = "               Reseñas";
+            this.btnReviews.Text = "            Ver Reseñas";
             this.btnReviews.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnReviews.UseVisualStyleBackColor = true;
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.btnDeveloping);
+            this.panel5.Controls.Add(this.btnWriteReview);
             this.panel5.Location = new System.Drawing.Point(3, 324);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(239, 68);
             this.panel5.TabIndex = 4;
             // 
-            // btnDeveloping
+            // btnWriteReview
             // 
-            this.btnDeveloping.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeveloping.Image = ((System.Drawing.Image)(resources.GetObject("btnDeveloping.Image")));
-            this.btnDeveloping.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDeveloping.Location = new System.Drawing.Point(3, 7);
-            this.btnDeveloping.Name = "btnDeveloping";
-            this.btnDeveloping.Size = new System.Drawing.Size(233, 58);
-            this.btnDeveloping.TabIndex = 24;
-            this.btnDeveloping.Text = "          En Desarrollo";
-            this.btnDeveloping.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnDeveloping.UseVisualStyleBackColor = true;
+            this.btnWriteReview.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnWriteReview.Image = ((System.Drawing.Image)(resources.GetObject("btnWriteReview.Image")));
+            this.btnWriteReview.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnWriteReview.Location = new System.Drawing.Point(3, 7);
+            this.btnWriteReview.Name = "btnWriteReview";
+            this.btnWriteReview.Size = new System.Drawing.Size(233, 58);
+            this.btnWriteReview.TabIndex = 24;
+            this.btnWriteReview.Text = "          Escribir reseñas";
+            this.btnWriteReview.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnWriteReview.UseVisualStyleBackColor = true;
             // 
             // panel6
             // 
+            this.panel6.Controls.Add(this.lblLogOut);
+            this.panel6.Controls.Add(this.txtJoinApp);
+            this.panel6.Controls.Add(this.lblJoinApp);
+            this.panel6.Controls.Add(this.txtUsername);
+            this.panel6.Controls.Add(this.lblUsername);
             this.panel6.Location = new System.Drawing.Point(3, 398);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(239, 224);
             this.panel6.TabIndex = 5;
+            // 
+            // lblLogOut
+            // 
+            this.lblLogOut.AutoSize = true;
+            this.lblLogOut.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLogOut.Location = new System.Drawing.Point(85, 176);
+            this.lblLogOut.Name = "lblLogOut";
+            this.lblLogOut.Size = new System.Drawing.Size(134, 23);
+            this.lblLogOut.TabIndex = 4;
+            this.lblLogOut.Text = "Cerrar sesión";
+            // 
+            // txtJoinApp
+            // 
+            this.txtJoinApp.Enabled = false;
+            this.txtJoinApp.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtJoinApp.Location = new System.Drawing.Point(28, 124);
+            this.txtJoinApp.Name = "txtJoinApp";
+            this.txtJoinApp.ReadOnly = true;
+            this.txtJoinApp.Size = new System.Drawing.Size(182, 32);
+            this.txtJoinApp.TabIndex = 3;
+            // 
+            // lblJoinApp
+            // 
+            this.lblJoinApp.AutoSize = true;
+            this.lblJoinApp.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblJoinApp.Location = new System.Drawing.Point(24, 89);
+            this.lblJoinApp.Name = "lblJoinApp";
+            this.lblJoinApp.Size = new System.Drawing.Size(176, 23);
+            this.lblJoinApp.TabIndex = 2;
+            this.lblJoinApp.Text = "Miembros desde:";
+            // 
+            // txtUsername
+            // 
+            this.txtUsername.Enabled = false;
+            this.txtUsername.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsername.Location = new System.Drawing.Point(28, 44);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.ReadOnly = true;
+            this.txtUsername.Size = new System.Drawing.Size(182, 32);
+            this.txtUsername.TabIndex = 1;
+            // 
+            // lblUsername
+            // 
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsername.Location = new System.Drawing.Point(24, 14);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(119, 23);
+            this.lblUsername.TabIndex = 0;
+            this.lblUsername.Text = "Username: ";
             // 
             // panel7
             // 
@@ -308,6 +372,7 @@
             this.btnUser.Text = "               Usuario";
             this.btnUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnUser.UseVisualStyleBackColor = true;
+            this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
             // 
             // panel8
             // 
@@ -553,35 +618,40 @@
             // 
             // grbMovie1
             // 
-            this.grbMovie1.BackColor = System.Drawing.Color.White;
+            this.grbMovie1.Controls.Add(this.lblInfor1);
             this.grbMovie1.Controls.Add(this.pcbMovie1);
-            this.grbMovie1.Controls.Add(this.lblInfo1);
             this.grbMovie1.Location = new System.Drawing.Point(43, 75);
             this.grbMovie1.Name = "grbMovie1";
-            this.grbMovie1.Size = new System.Drawing.Size(200, 219);
-            this.grbMovie1.TabIndex = 31;
+            this.grbMovie1.Size = new System.Drawing.Size(200, 216);
+            this.grbMovie1.TabIndex = 47;
             this.grbMovie1.TabStop = false;
-            this.grbMovie1.Enter += new System.EventHandler(this.grbMovie1_Enter);
+            // 
+            // lblInfor1
+            // 
+            this.lblInfor1.AutoSize = true;
+            this.lblInfor1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInfor1.Location = new System.Drawing.Point(46, 171);
+            this.lblInfor1.Name = "lblInfor1";
+            this.lblInfor1.Size = new System.Drawing.Size(116, 23);
+            this.lblInfor1.TabIndex = 10;
+            this.lblInfor1.Text = "Titulo peli 1";
             // 
             // pcbMovie1
             // 
             this.pcbMovie1.Image = global::ProyectoGreenSpace.Properties.Resources.image_picture_icon_143003;
-            this.pcbMovie1.Location = new System.Drawing.Point(35, 21);
+            this.pcbMovie1.Location = new System.Drawing.Point(34, 21);
             this.pcbMovie1.Name = "pcbMovie1";
             this.pcbMovie1.Size = new System.Drawing.Size(127, 114);
             this.pcbMovie1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcbMovie1.TabIndex = 9;
+            this.pcbMovie1.TabIndex = 10;
             this.pcbMovie1.TabStop = false;
             // 
             // lblInfo1
             // 
-            this.lblInfo1.AutoSize = true;
-            this.lblInfo1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInfo1.Location = new System.Drawing.Point(45, 171);
+            this.lblInfo1.Location = new System.Drawing.Point(0, 0);
             this.lblInfo1.Name = "lblInfo1";
-            this.lblInfo1.Size = new System.Drawing.Size(116, 23);
-            this.lblInfo1.TabIndex = 7;
-            this.lblInfo1.Text = "Titulo peli 1";
+            this.lblInfo1.Size = new System.Drawing.Size(100, 23);
+            this.lblInfo1.TabIndex = 0;
             // 
             // lblTitleMonth
             // 
@@ -621,15 +691,6 @@
             this.pnlFilms.Name = "pnlFilms";
             this.pnlFilms.Size = new System.Drawing.Size(1039, 796);
             this.pnlFilms.TabIndex = 39;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(423, 1178);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(127, 49);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 46;
-            this.pictureBox1.TabStop = false;
             // 
             // grbNextMovie8
             // 
@@ -886,6 +947,25 @@
             this.lblNextInfo5.TabIndex = 9;
             this.lblNextInfo5.Text = "Titulo peli 5";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::ProyectoGreenSpace.Properties.Resources.image_picture_icon_143003;
+            this.pictureBox2.Location = new System.Drawing.Point(35, 21);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(127, 114);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 10;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(423, 1553);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(127, 49);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 46;
+            this.pictureBox1.TabStop = false;
+            // 
             // FrmFilms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -904,6 +984,8 @@
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.grbMovie8.ResumeLayout(false);
@@ -932,7 +1014,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pcbMovie1)).EndInit();
             this.pnlFilms.ResumeLayout(false);
             this.pnlFilms.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.grbNextMovie8.ResumeLayout(false);
             this.grbNextMovie8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbNextMovie8)).EndInit();
@@ -957,6 +1038,8 @@
             this.grbNextMovie5.ResumeLayout(false);
             this.grbNextMovie5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbNextMovie5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -974,7 +1057,7 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button btnReviews;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button btnDeveloping;
+        private System.Windows.Forms.Button btnWriteReview;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Button btnUser;
@@ -1003,7 +1086,6 @@
         private System.Windows.Forms.PictureBox pcbMovie2;
         private System.Windows.Forms.Label lblInfo2;
         private System.Windows.Forms.GroupBox grbMovie1;
-        private System.Windows.Forms.PictureBox pcbMovie1;
         private System.Windows.Forms.Label lblInfo1;
         private System.Windows.Forms.Label lblTitleMonth;
         private System.Windows.Forms.Panel pnlFilms;
@@ -1032,6 +1114,14 @@
         private System.Windows.Forms.GroupBox grbNextMovie5;
         private System.Windows.Forms.PictureBox pcbNextMovie5;
         private System.Windows.Forms.Label lblNextInfo5;
+        private System.Windows.Forms.TextBox txtJoinApp;
+        private System.Windows.Forms.Label lblJoinApp;
+        private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.Label lblUsername;
+        private System.Windows.Forms.Label lblLogOut;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label lblInfor1;
+        private System.Windows.Forms.PictureBox pcbMovie1;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

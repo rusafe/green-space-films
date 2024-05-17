@@ -120,9 +120,6 @@
   <data name="buttonConfiguration" xml:space="preserve">
     <value>Settings</value>
   </data>
-  <data name="buttonDeveloping" xml:space="preserve">
-    <value>In process</value>
-  </data>
   <data name="buttonLink" xml:space="preserve">
     <value>Send link</value>
   </data>
@@ -149,6 +146,9 @@
   </data>
   <data name="buttonUser" xml:space="preserve">
     <value>User</value>
+  </data>
+  <data name="buttonWriteReview" xml:space="preserve">
+    <value>Write a review</value>
   </data>
   <data name="labelDiscount" xml:space="preserve">
     <value>DISCOUNT:</value>
