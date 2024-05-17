@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoGreenSpace.LangResources;
+using System;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -11,10 +12,18 @@ namespace ProyectoGreenSpace
             InitializeComponent();
         }
 
+        private void AplicarIdioma()
+        {
+            rtbInformation.Text = StringResources.rtbInfo;
+            btnLink.Text = StringResources.buttonLink;
+        }
+
         private void FrmRecoverPassword_Load(object sender, EventArgs e)
         {
             this.BackColor = Color.FromArgb(168, 228, 116);
             grpRecover.BackColor = Color.FromArgb(176, 164, 180);
+
+            AplicarIdioma();
 
             txtUsername.Focus();
         }
@@ -27,14 +36,19 @@ namespace ProyectoGreenSpace
             try
             {
                 user.Username = txtUsername.Text;
-                if (User.ExistUser(user.Username))
+                if (txtUsername.Text == "")
+                {
+                    MessageBox.Show("Introduce un nombre de usuario", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else if (User.ExistUser(user.Username))
                 {
                     password.RecoverPassword(user.Username);
                     MessageBox.Show("Contraseña generada con éxito.", "Cambio de contraseña", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     OpenLogin();
-                } else
+                }
+                else
                 {
-                    MessageBox.Show("Usuario no existente en la base de datos.", "Aviso", MessageBoxButtons.OK,MessageBoxIcon.Error);
+                    MessageBox.Show("Usuario no existente en la base de datos.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txtUsername.Text = String.Empty;
                 }
             }

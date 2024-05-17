@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoGreenSpace.LangResources;
+using System;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -12,6 +13,10 @@ namespace ProyectoGreenSpace
             InitializeComponent();
             verificationCode = code;
         }
+        private void AplicarIdioma()
+        {
+            btnSend.Text = StringResources.buttonSend;
+        }
 
         private void FrmInsertCode_Load(object sender, EventArgs e)
         {
@@ -24,6 +29,8 @@ namespace ProyectoGreenSpace
 
             this.BackColor = Color.FromArgb(168, 228, 116);
             btnSend.BackColor = Color.FromArgb(76, 80, 144);
+            
+            AplicarIdioma();
 
             mtbDigit1.Focus();
         }
@@ -78,42 +85,23 @@ namespace ProyectoGreenSpace
 
         private void mtbDigit2_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (mtbDigit2.Text == "_")
-            {
-                mtbDigit1.Focus();
-            }
         }
 
         private void mtbDigit3_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (mtbDigit3.Text == "_")
-            {
-                mtbDigit2.Focus();
-            }
+            
         }
 
         private void mtbDigit4_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (mtbDigit4.Text == "_")
-            {
-                mtbDigit3.Focus();
-            }
         }
 
         private void mtbDigit5_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (mtbDigit5.Text == "_")
-            {
-                mtbDigit4.Focus();
-            }
         }
 
         private void mtbDigit6_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (mtbDigit6.Text == "_")
-            {
-                mtbDigit5.Focus();
-            }
         }
     }
 }

@@ -74,32 +74,32 @@
             this.lblInfo1 = new System.Windows.Forms.Label();
             this.lblTitleMonth = new System.Windows.Forms.Label();
             this.pnlFilms = new System.Windows.Forms.Panel();
-            this.lblTitleNextMonth = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.grbNextMovie8 = new System.Windows.Forms.GroupBox();
+            this.lblNextInfo8 = new System.Windows.Forms.Label();
+            this.pcbNextMovie8 = new System.Windows.Forms.PictureBox();
             this.grbNextMovie1 = new System.Windows.Forms.GroupBox();
             this.pcbNextMovie1 = new System.Windows.Forms.PictureBox();
             this.lblNextInfo1 = new System.Windows.Forms.Label();
             this.grbNextMovie4 = new System.Windows.Forms.GroupBox();
             this.pcbNextMovie4 = new System.Windows.Forms.PictureBox();
             this.lblNextInfo4 = new System.Windows.Forms.Label();
+            this.grbNextMovie7 = new System.Windows.Forms.GroupBox();
+            this.lblNextInfo7 = new System.Windows.Forms.Label();
+            this.pcbNextMovie7 = new System.Windows.Forms.PictureBox();
+            this.lblTitleNextMonth = new System.Windows.Forms.Label();
             this.grbNextMovie2 = new System.Windows.Forms.GroupBox();
             this.pcbNextMovie2 = new System.Windows.Forms.PictureBox();
             this.lbNextlInfo2 = new System.Windows.Forms.Label();
+            this.grbNextMovie6 = new System.Windows.Forms.GroupBox();
+            this.pcbNextMovie6 = new System.Windows.Forms.PictureBox();
+            this.lblNextInfo6 = new System.Windows.Forms.Label();
             this.grbNextMovie3 = new System.Windows.Forms.GroupBox();
             this.pcbNextMovie3 = new System.Windows.Forms.PictureBox();
             this.lblNextInfo3 = new System.Windows.Forms.Label();
             this.grbNextMovie5 = new System.Windows.Forms.GroupBox();
             this.pcbNextMovie5 = new System.Windows.Forms.PictureBox();
             this.lblNextInfo5 = new System.Windows.Forms.Label();
-            this.grbNextMovie6 = new System.Windows.Forms.GroupBox();
-            this.pcbNextMovie6 = new System.Windows.Forms.PictureBox();
-            this.lblNextInfo6 = new System.Windows.Forms.Label();
-            this.grbNextMovie7 = new System.Windows.Forms.GroupBox();
-            this.lblNextInfo7 = new System.Windows.Forms.Label();
-            this.pcbNextMovie7 = new System.Windows.Forms.PictureBox();
-            this.grbNextMovie8 = new System.Windows.Forms.GroupBox();
-            this.lblNextInfo8 = new System.Windows.Forms.Label();
-            this.pcbNextMovie8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.sidebar.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -125,23 +125,23 @@
             this.grbMovie1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbMovie1)).BeginInit();
             this.pnlFilms.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.grbNextMovie8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbNextMovie8)).BeginInit();
             this.grbNextMovie1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbNextMovie1)).BeginInit();
             this.grbNextMovie4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbNextMovie4)).BeginInit();
+            this.grbNextMovie7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbNextMovie7)).BeginInit();
             this.grbNextMovie2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbNextMovie2)).BeginInit();
+            this.grbNextMovie6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbNextMovie6)).BeginInit();
             this.grbNextMovie3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbNextMovie3)).BeginInit();
             this.grbNextMovie5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbNextMovie5)).BeginInit();
-            this.grbNextMovie6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbNextMovie6)).BeginInit();
-            this.grbNextMovie7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbNextMovie7)).BeginInit();
-            this.grbNextMovie8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbNextMovie8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // sidebar
@@ -215,6 +215,7 @@
             this.btnTicketOffice.Size = new System.Drawing.Size(233, 52);
             this.btnTicketOffice.TabIndex = 22;
             this.btnTicketOffice.Text = "               Taquilla";
+            this.btnTicketOffice.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTicketOffice.UseVisualStyleBackColor = true;
             // 
             // panel3
@@ -235,6 +236,7 @@
             this.btnReviewTickets.Size = new System.Drawing.Size(233, 53);
             this.btnReviewTickets.TabIndex = 23;
             this.btnReviewTickets.Text = "          Revisar Tickets";
+            this.btnReviewTickets.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnReviewTickets.UseVisualStyleBackColor = true;
             // 
             // panel4
@@ -255,6 +257,7 @@
             this.btnReviews.Size = new System.Drawing.Size(233, 54);
             this.btnReviews.TabIndex = 24;
             this.btnReviews.Text = "               Reseñas";
+            this.btnReviews.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnReviews.UseVisualStyleBackColor = true;
             // 
             // panel5
@@ -275,6 +278,7 @@
             this.btnDeveloping.Size = new System.Drawing.Size(233, 58);
             this.btnDeveloping.TabIndex = 24;
             this.btnDeveloping.Text = "          En Desarrollo";
+            this.btnDeveloping.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDeveloping.UseVisualStyleBackColor = true;
             // 
             // panel6
@@ -302,6 +306,7 @@
             this.btnUser.Size = new System.Drawing.Size(233, 52);
             this.btnUser.TabIndex = 24;
             this.btnUser.Text = "               Usuario";
+            this.btnUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnUser.UseVisualStyleBackColor = true;
             // 
             // panel8
@@ -322,6 +327,7 @@
             this.btnSettings.Size = new System.Drawing.Size(233, 48);
             this.btnSettings.TabIndex = 24;
             this.btnSettings.Text = "          Configuración";
+            this.btnSettings.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSettings.UseVisualStyleBackColor = true;
             this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
@@ -616,15 +622,44 @@
             this.pnlFilms.Size = new System.Drawing.Size(1039, 796);
             this.pnlFilms.TabIndex = 39;
             // 
-            // lblTitleNextMonth
+            // pictureBox1
             // 
-            this.lblTitleNextMonth.AutoSize = true;
-            this.lblTitleNextMonth.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitleNextMonth.Location = new System.Drawing.Point(237, 650);
-            this.lblTitleNextMonth.Name = "lblTitleNextMonth";
-            this.lblTitleNextMonth.Size = new System.Drawing.Size(634, 34);
-            this.lblTitleNextMonth.TabIndex = 40;
-            this.lblTitleNextMonth.Text = "PRÓXIMOS ESTRENOS - PELÍCULAS JUNIO 2024";
+            this.pictureBox1.Location = new System.Drawing.Point(423, 1178);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(127, 49);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 46;
+            this.pictureBox1.TabStop = false;
+            // 
+            // grbNextMovie8
+            // 
+            this.grbNextMovie8.Controls.Add(this.lblNextInfo8);
+            this.grbNextMovie8.Controls.Add(this.pcbNextMovie8);
+            this.grbNextMovie8.Location = new System.Drawing.Point(753, 962);
+            this.grbNextMovie8.Name = "grbNextMovie8";
+            this.grbNextMovie8.Size = new System.Drawing.Size(200, 209);
+            this.grbNextMovie8.TabIndex = 45;
+            this.grbNextMovie8.TabStop = false;
+            // 
+            // lblNextInfo8
+            // 
+            this.lblNextInfo8.AutoSize = true;
+            this.lblNextInfo8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNextInfo8.Location = new System.Drawing.Point(41, 171);
+            this.lblNextInfo8.Name = "lblNextInfo8";
+            this.lblNextInfo8.Size = new System.Drawing.Size(116, 23);
+            this.lblNextInfo8.TabIndex = 8;
+            this.lblNextInfo8.Text = "Titulo peli 8";
+            // 
+            // pcbNextMovie8
+            // 
+            this.pcbNextMovie8.Image = global::ProyectoGreenSpace.Properties.Resources.image_picture_icon_143003;
+            this.pcbNextMovie8.Location = new System.Drawing.Point(30, 21);
+            this.pcbNextMovie8.Name = "pcbNextMovie8";
+            this.pcbNextMovie8.Size = new System.Drawing.Size(127, 114);
+            this.pcbNextMovie8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbNextMovie8.TabIndex = 8;
+            this.pcbNextMovie8.TabStop = false;
             // 
             // grbNextMovie1
             // 
@@ -688,6 +723,46 @@
             this.lblNextInfo4.TabIndex = 8;
             this.lblNextInfo4.Text = "Titulo peli 4";
             // 
+            // grbNextMovie7
+            // 
+            this.grbNextMovie7.Controls.Add(this.lblNextInfo7);
+            this.grbNextMovie7.Controls.Add(this.pcbNextMovie7);
+            this.grbNextMovie7.Location = new System.Drawing.Point(519, 962);
+            this.grbNextMovie7.Name = "grbNextMovie7";
+            this.grbNextMovie7.Size = new System.Drawing.Size(200, 209);
+            this.grbNextMovie7.TabIndex = 44;
+            this.grbNextMovie7.TabStop = false;
+            // 
+            // lblNextInfo7
+            // 
+            this.lblNextInfo7.AutoSize = true;
+            this.lblNextInfo7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNextInfo7.Location = new System.Drawing.Point(37, 171);
+            this.lblNextInfo7.Name = "lblNextInfo7";
+            this.lblNextInfo7.Size = new System.Drawing.Size(116, 23);
+            this.lblNextInfo7.TabIndex = 8;
+            this.lblNextInfo7.Text = "Titulo peli 7";
+            // 
+            // pcbNextMovie7
+            // 
+            this.pcbNextMovie7.Image = global::ProyectoGreenSpace.Properties.Resources.image_picture_icon_143003;
+            this.pcbNextMovie7.Location = new System.Drawing.Point(41, 21);
+            this.pcbNextMovie7.Name = "pcbNextMovie7";
+            this.pcbNextMovie7.Size = new System.Drawing.Size(127, 114);
+            this.pcbNextMovie7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbNextMovie7.TabIndex = 8;
+            this.pcbNextMovie7.TabStop = false;
+            // 
+            // lblTitleNextMonth
+            // 
+            this.lblTitleNextMonth.AutoSize = true;
+            this.lblTitleNextMonth.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitleNextMonth.Location = new System.Drawing.Point(237, 650);
+            this.lblTitleNextMonth.Name = "lblTitleNextMonth";
+            this.lblTitleNextMonth.Size = new System.Drawing.Size(634, 34);
+            this.lblTitleNextMonth.TabIndex = 40;
+            this.lblTitleNextMonth.Text = "PRÓXIMOS ESTRENOS - PELÍCULAS JUNIO 2024";
+            // 
             // grbNextMovie2
             // 
             this.grbNextMovie2.BackColor = System.Drawing.Color.White;
@@ -718,6 +793,36 @@
             this.lbNextlInfo2.Size = new System.Drawing.Size(116, 23);
             this.lbNextlInfo2.TabIndex = 8;
             this.lbNextlInfo2.Text = "Titulo peli 2";
+            // 
+            // grbNextMovie6
+            // 
+            this.grbNextMovie6.Controls.Add(this.pcbNextMovie6);
+            this.grbNextMovie6.Controls.Add(this.lblNextInfo6);
+            this.grbNextMovie6.Location = new System.Drawing.Point(285, 962);
+            this.grbNextMovie6.Name = "grbNextMovie6";
+            this.grbNextMovie6.Size = new System.Drawing.Size(200, 209);
+            this.grbNextMovie6.TabIndex = 43;
+            this.grbNextMovie6.TabStop = false;
+            // 
+            // pcbNextMovie6
+            // 
+            this.pcbNextMovie6.Image = global::ProyectoGreenSpace.Properties.Resources.image_picture_icon_143003;
+            this.pcbNextMovie6.Location = new System.Drawing.Point(32, 21);
+            this.pcbNextMovie6.Name = "pcbNextMovie6";
+            this.pcbNextMovie6.Size = new System.Drawing.Size(127, 114);
+            this.pcbNextMovie6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbNextMovie6.TabIndex = 9;
+            this.pcbNextMovie6.TabStop = false;
+            // 
+            // lblNextInfo6
+            // 
+            this.lblNextInfo6.AutoSize = true;
+            this.lblNextInfo6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNextInfo6.Location = new System.Drawing.Point(43, 171);
+            this.lblNextInfo6.Name = "lblNextInfo6";
+            this.lblNextInfo6.Size = new System.Drawing.Size(116, 23);
+            this.lblNextInfo6.TabIndex = 9;
+            this.lblNextInfo6.Text = "Titulo peli 6";
             // 
             // grbNextMovie3
             // 
@@ -781,105 +886,6 @@
             this.lblNextInfo5.TabIndex = 9;
             this.lblNextInfo5.Text = "Titulo peli 5";
             // 
-            // grbNextMovie6
-            // 
-            this.grbNextMovie6.Controls.Add(this.pcbNextMovie6);
-            this.grbNextMovie6.Controls.Add(this.lblNextInfo6);
-            this.grbNextMovie6.Location = new System.Drawing.Point(285, 962);
-            this.grbNextMovie6.Name = "grbNextMovie6";
-            this.grbNextMovie6.Size = new System.Drawing.Size(200, 209);
-            this.grbNextMovie6.TabIndex = 43;
-            this.grbNextMovie6.TabStop = false;
-            // 
-            // pcbNextMovie6
-            // 
-            this.pcbNextMovie6.Image = global::ProyectoGreenSpace.Properties.Resources.image_picture_icon_143003;
-            this.pcbNextMovie6.Location = new System.Drawing.Point(32, 21);
-            this.pcbNextMovie6.Name = "pcbNextMovie6";
-            this.pcbNextMovie6.Size = new System.Drawing.Size(127, 114);
-            this.pcbNextMovie6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcbNextMovie6.TabIndex = 9;
-            this.pcbNextMovie6.TabStop = false;
-            // 
-            // lblNextInfo6
-            // 
-            this.lblNextInfo6.AutoSize = true;
-            this.lblNextInfo6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNextInfo6.Location = new System.Drawing.Point(43, 171);
-            this.lblNextInfo6.Name = "lblNextInfo6";
-            this.lblNextInfo6.Size = new System.Drawing.Size(116, 23);
-            this.lblNextInfo6.TabIndex = 9;
-            this.lblNextInfo6.Text = "Titulo peli 6";
-            // 
-            // grbNextMovie7
-            // 
-            this.grbNextMovie7.Controls.Add(this.lblNextInfo7);
-            this.grbNextMovie7.Controls.Add(this.pcbNextMovie7);
-            this.grbNextMovie7.Location = new System.Drawing.Point(519, 962);
-            this.grbNextMovie7.Name = "grbNextMovie7";
-            this.grbNextMovie7.Size = new System.Drawing.Size(200, 209);
-            this.grbNextMovie7.TabIndex = 44;
-            this.grbNextMovie7.TabStop = false;
-            // 
-            // lblNextInfo7
-            // 
-            this.lblNextInfo7.AutoSize = true;
-            this.lblNextInfo7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNextInfo7.Location = new System.Drawing.Point(37, 171);
-            this.lblNextInfo7.Name = "lblNextInfo7";
-            this.lblNextInfo7.Size = new System.Drawing.Size(116, 23);
-            this.lblNextInfo7.TabIndex = 8;
-            this.lblNextInfo7.Text = "Titulo peli 7";
-            // 
-            // pcbNextMovie7
-            // 
-            this.pcbNextMovie7.Image = global::ProyectoGreenSpace.Properties.Resources.image_picture_icon_143003;
-            this.pcbNextMovie7.Location = new System.Drawing.Point(41, 21);
-            this.pcbNextMovie7.Name = "pcbNextMovie7";
-            this.pcbNextMovie7.Size = new System.Drawing.Size(127, 114);
-            this.pcbNextMovie7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcbNextMovie7.TabIndex = 8;
-            this.pcbNextMovie7.TabStop = false;
-            // 
-            // grbNextMovie8
-            // 
-            this.grbNextMovie8.Controls.Add(this.lblNextInfo8);
-            this.grbNextMovie8.Controls.Add(this.pcbNextMovie8);
-            this.grbNextMovie8.Location = new System.Drawing.Point(753, 962);
-            this.grbNextMovie8.Name = "grbNextMovie8";
-            this.grbNextMovie8.Size = new System.Drawing.Size(200, 209);
-            this.grbNextMovie8.TabIndex = 45;
-            this.grbNextMovie8.TabStop = false;
-            // 
-            // lblNextInfo8
-            // 
-            this.lblNextInfo8.AutoSize = true;
-            this.lblNextInfo8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNextInfo8.Location = new System.Drawing.Point(41, 171);
-            this.lblNextInfo8.Name = "lblNextInfo8";
-            this.lblNextInfo8.Size = new System.Drawing.Size(116, 23);
-            this.lblNextInfo8.TabIndex = 8;
-            this.lblNextInfo8.Text = "Titulo peli 8";
-            // 
-            // pcbNextMovie8
-            // 
-            this.pcbNextMovie8.Image = global::ProyectoGreenSpace.Properties.Resources.image_picture_icon_143003;
-            this.pcbNextMovie8.Location = new System.Drawing.Point(30, 21);
-            this.pcbNextMovie8.Name = "pcbNextMovie8";
-            this.pcbNextMovie8.Size = new System.Drawing.Size(127, 114);
-            this.pcbNextMovie8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcbNextMovie8.TabIndex = 8;
-            this.pcbNextMovie8.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(423, 1178);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(127, 49);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 46;
-            this.pictureBox1.TabStop = false;
-            // 
             // FrmFilms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -888,7 +894,9 @@
             this.Controls.Add(this.pnlFilms);
             this.Controls.Add(this.sidebar);
             this.Name = "FrmFilms";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.FrmFilms_Load);
             this.sidebar.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -924,31 +932,31 @@
             ((System.ComponentModel.ISupportInitialize)(this.pcbMovie1)).EndInit();
             this.pnlFilms.ResumeLayout(false);
             this.pnlFilms.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.grbNextMovie8.ResumeLayout(false);
+            this.grbNextMovie8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbNextMovie8)).EndInit();
             this.grbNextMovie1.ResumeLayout(false);
             this.grbNextMovie1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbNextMovie1)).EndInit();
             this.grbNextMovie4.ResumeLayout(false);
             this.grbNextMovie4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbNextMovie4)).EndInit();
+            this.grbNextMovie7.ResumeLayout(false);
+            this.grbNextMovie7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbNextMovie7)).EndInit();
             this.grbNextMovie2.ResumeLayout(false);
             this.grbNextMovie2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbNextMovie2)).EndInit();
+            this.grbNextMovie6.ResumeLayout(false);
+            this.grbNextMovie6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbNextMovie6)).EndInit();
             this.grbNextMovie3.ResumeLayout(false);
             this.grbNextMovie3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbNextMovie3)).EndInit();
             this.grbNextMovie5.ResumeLayout(false);
             this.grbNextMovie5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbNextMovie5)).EndInit();
-            this.grbNextMovie6.ResumeLayout(false);
-            this.grbNextMovie6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbNextMovie6)).EndInit();
-            this.grbNextMovie7.ResumeLayout(false);
-            this.grbNextMovie7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbNextMovie7)).EndInit();
-            this.grbNextMovie8.ResumeLayout(false);
-            this.grbNextMovie8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbNextMovie8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

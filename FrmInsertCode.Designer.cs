@@ -40,9 +40,9 @@
             // btnSend
             // 
             this.btnSend.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSend.Location = new System.Drawing.Point(257, 237);
+            this.btnSend.Location = new System.Drawing.Point(244, 221);
             this.btnSend.Name = "btnSend";
-            this.btnSend.Size = new System.Drawing.Size(228, 65);
+            this.btnSend.Size = new System.Drawing.Size(255, 65);
             this.btnSend.TabIndex = 6;
             this.btnSend.Text = "Enviar código de verificación";
             this.btnSend.UseVisualStyleBackColor = true;

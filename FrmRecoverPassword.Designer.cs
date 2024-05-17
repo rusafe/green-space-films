@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.grpRecover = new System.Windows.Forms.GroupBox();
+            this.pibReturn = new System.Windows.Forms.PictureBox();
+            this.pibPassword = new System.Windows.Forms.PictureBox();
             this.btnLink = new System.Windows.Forms.Button();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.rtbInformation = new System.Windows.Forms.RichTextBox();
-            this.pibReturn = new System.Windows.Forms.PictureBox();
-            this.pibPassword = new System.Windows.Forms.PictureBox();
             this.grpRecover.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pibReturn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pibPassword)).BeginInit();
@@ -51,36 +51,6 @@
             this.grpRecover.Size = new System.Drawing.Size(532, 482);
             this.grpRecover.TabIndex = 0;
             this.grpRecover.TabStop = false;
-            // 
-            // btnLink
-            // 
-            this.btnLink.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLink.Location = new System.Drawing.Point(161, 362);
-            this.btnLink.Name = "btnLink";
-            this.btnLink.Size = new System.Drawing.Size(198, 40);
-            this.btnLink.TabIndex = 3;
-            this.btnLink.Text = "Enviar enlace";
-            this.btnLink.UseVisualStyleBackColor = true;
-            this.btnLink.Click += new System.EventHandler(this.btnLink_Click);
-            // 
-            // txtUsername
-            // 
-            this.txtUsername.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.Location = new System.Drawing.Point(126, 305);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(276, 32);
-            this.txtUsername.TabIndex = 2;
-            // 
-            // rtbInformation
-            // 
-            this.rtbInformation.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtbInformation.Location = new System.Drawing.Point(98, 201);
-            this.rtbInformation.Name = "rtbInformation";
-            this.rtbInformation.ReadOnly = true;
-            this.rtbInformation.Size = new System.Drawing.Size(339, 83);
-            this.rtbInformation.TabIndex = 1;
-            this.rtbInformation.Text = "Introduce tú nombre de usuario, recibirás en tú correo electrónico una contraseña" +
-    " nueva.";
             // 
             // pibReturn
             // 
@@ -103,6 +73,37 @@
             this.pibPassword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pibPassword.TabIndex = 4;
             this.pibPassword.TabStop = false;
+            // 
+            // btnLink
+            // 
+            this.btnLink.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLink.Location = new System.Drawing.Point(161, 362);
+            this.btnLink.Name = "btnLink";
+            this.btnLink.Size = new System.Drawing.Size(198, 40);
+            this.btnLink.TabIndex = 3;
+            this.btnLink.Text = "Enviar enlace";
+            this.btnLink.UseVisualStyleBackColor = true;
+            this.btnLink.Click += new System.EventHandler(this.btnLink_Click);
+            // 
+            // txtUsername
+            // 
+            this.txtUsername.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsername.Location = new System.Drawing.Point(126, 305);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(276, 32);
+            this.txtUsername.TabIndex = 2;
+            // 
+            // rtbInformation
+            // 
+            this.rtbInformation.Enabled = false;
+            this.rtbInformation.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbInformation.Location = new System.Drawing.Point(98, 201);
+            this.rtbInformation.Name = "rtbInformation";
+            this.rtbInformation.ReadOnly = true;
+            this.rtbInformation.Size = new System.Drawing.Size(339, 83);
+            this.rtbInformation.TabIndex = 1;
+            this.rtbInformation.Text = "Introduce tú nombre de usuario, recibirás en tú correo electrónico una contraseña" +
+    " nueva.";
             // 
             // FrmRecoverPassword
             // 
