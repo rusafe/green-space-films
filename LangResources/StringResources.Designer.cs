@@ -235,13 +235,13 @@ namespace ProyectoGreenSpace.LangResources {
         }
 
         /// <summary>
-        ///   Busca una cadena traducida similar a En Desarrollo.
+        ///   Busca una cadena traducida similar a Ecribir reseña.
         /// </summary>
-        internal static string buttonDeveloping
+        internal static string buttonWriteReview
         {
             get
             {
-                return ResourceManager.GetString("buttonDeveloping", resourceCulture);
+                return ResourceManager.GetString("buttonWriteReview", resourceCulture);
             }
         }
 

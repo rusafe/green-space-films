@@ -26,7 +26,7 @@ namespace ProyectoGreenSpace
             btnTicketOffice.Text = StringResources.buttonTicketOffice;
             btnReviewTickets.Text = StringResources.buttonReviewTickets;
             btnReviews.Text = StringResources.buttonReviews;
-            btnDeveloping.Text = StringResources.buttonDeveloping;
+            btnWriteReview.Text = StringResources.buttonWriteReview;
             btnUser.Text = StringResources.buttonUser;
             btnSettings.Text = StringResources.buttonConfiguration;
             lblTitleMonth.Text = StringResources.labelTitle;
@@ -35,6 +35,14 @@ namespace ProyectoGreenSpace
 
         private void FrmFilms_Load(object sender, EventArgs e)
         {
+            lblUsername.Visible = false;
+            txtUsername.Visible = false;
+            lblJoinApp.Visible = false;
+            txtJoinApp.Visible = false;
+            lblLogOut.Visible = false;
+
+            txtUsername.Text = UserSession.Username;
+
             ApplyLanguage();
         }
 
@@ -94,12 +102,6 @@ namespace ProyectoGreenSpace
             this.Close();
         }
 
-        private void grbMovie1_Enter(object sender, EventArgs e)
-        {
-            FrmFilms ndknd = new FrmFilms();
-
-        }
-
         private void ApplyTheme()
         {
             if (ThemeMode.Light == true)
@@ -146,7 +148,7 @@ namespace ProyectoGreenSpace
                 btnReviews.BackColor = Color.FromArgb(168, 228, 116);
                 btnUser.BackColor = Color.FromArgb(168, 228, 116);
                 btnSettings.BackColor = Color.FromArgb(168, 228, 116);
-                btnDeveloping.BackColor = Color.FromArgb(168, 228, 116);
+                btnWriteReview.BackColor = Color.FromArgb(168, 228, 116);
             }
             else
             {
@@ -192,9 +194,18 @@ namespace ProyectoGreenSpace
                 btnReviews.BackColor = Color.FromArgb(176, 164, 180);
                 btnUser.BackColor = Color.FromArgb(176, 164, 180);
                 btnSettings.BackColor = Color.FromArgb(176, 164, 180);
-                btnDeveloping.BackColor = Color.FromArgb(176, 164, 180);
+                btnWriteReview.BackColor = Color.FromArgb(176, 164, 180);
                 pnlFilms.BackColor = Color.FromArgb(32, 146, 14);
             }
+        }
+
+        private void btnUser_Click(object sender, EventArgs e)
+        {
+            lblUsername.Visible = true;
+            txtUsername.Visible = true;
+            lblJoinApp.Visible = true;
+            txtJoinApp.Visible = true;
+            lblLogOut.Visible = true;
         }
     }
 }
