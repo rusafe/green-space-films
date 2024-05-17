@@ -34,6 +34,9 @@
             this.btnAdmin = new System.Windows.Forms.Button();
             this.btnUser = new System.Windows.Forms.Button();
             this.gBoxSwitchNightDay = new System.Windows.Forms.GroupBox();
+            this.pibLightDark = new System.Windows.Forms.PictureBox();
+            this.pibDarkMode = new System.Windows.Forms.PictureBox();
+            this.pibLightMode = new System.Windows.Forms.PictureBox();
             this.lblDeleteAccount = new System.Windows.Forms.Label();
             this.btnDeleteAccount = new System.Windows.Forms.Button();
             this.lblDeleteUser = new System.Windows.Forms.Label();
@@ -45,16 +48,13 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.pictBoxIcono = new System.Windows.Forms.PictureBox();
-            this.pibLightMode = new System.Windows.Forms.PictureBox();
-            this.pibDarkMode = new System.Windows.Forms.PictureBox();
-            this.pibLightDark = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.gBoxSwitchNightDay.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pibLightDark)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibDarkMode)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibLightMode)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictBoxIcono)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pibLightMode)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pibDarkMode)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pibLightDark)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -114,6 +114,40 @@
             this.gBoxSwitchNightDay.TabIndex = 34;
             this.gBoxSwitchNightDay.TabStop = false;
             this.gBoxSwitchNightDay.Text = "Elige el tipo de modo:";
+            // 
+            // pibLightDark
+            // 
+            this.pibLightDark.Image = global::ProyectoGreenSpace.Properties.Resources.light_mode;
+            this.pibLightDark.Location = new System.Drawing.Point(115, 44);
+            this.pibLightDark.Name = "pibLightDark";
+            this.pibLightDark.Size = new System.Drawing.Size(100, 80);
+            this.pibLightDark.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pibLightDark.TabIndex = 2;
+            this.pibLightDark.TabStop = false;
+            // 
+            // pibDarkMode
+            // 
+            this.pibDarkMode.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pibDarkMode.Image = global::ProyectoGreenSpace.Properties.Resources.moon;
+            this.pibDarkMode.Location = new System.Drawing.Point(233, 54);
+            this.pibDarkMode.Name = "pibDarkMode";
+            this.pibDarkMode.Size = new System.Drawing.Size(73, 63);
+            this.pibDarkMode.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pibDarkMode.TabIndex = 1;
+            this.pibDarkMode.TabStop = false;
+            this.pibDarkMode.Click += new System.EventHandler(this.pibDarkMode_Click);
+            // 
+            // pibLightMode
+            // 
+            this.pibLightMode.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pibLightMode.Image = global::ProyectoGreenSpace.Properties.Resources.day_mode;
+            this.pibLightMode.Location = new System.Drawing.Point(27, 54);
+            this.pibLightMode.Name = "pibLightMode";
+            this.pibLightMode.Size = new System.Drawing.Size(71, 63);
+            this.pibLightMode.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pibLightMode.TabIndex = 0;
+            this.pibLightMode.TabStop = false;
+            this.pibLightMode.Click += new System.EventHandler(this.pibLightMode_Click);
             // 
             // lblDeleteAccount
             // 
@@ -238,38 +272,6 @@
             this.pictBoxIcono.TabIndex = 28;
             this.pictBoxIcono.TabStop = false;
             // 
-            // pibLightMode
-            // 
-            this.pibLightMode.Image = global::ProyectoGreenSpace.Properties.Resources.day_mode;
-            this.pibLightMode.Location = new System.Drawing.Point(27, 54);
-            this.pibLightMode.Name = "pibLightMode";
-            this.pibLightMode.Size = new System.Drawing.Size(71, 63);
-            this.pibLightMode.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pibLightMode.TabIndex = 0;
-            this.pibLightMode.TabStop = false;
-            this.pibLightMode.Click += new System.EventHandler(this.pibLightMode_Click);
-            // 
-            // pibDarkMode
-            // 
-            this.pibDarkMode.Image = global::ProyectoGreenSpace.Properties.Resources.moon;
-            this.pibDarkMode.Location = new System.Drawing.Point(233, 54);
-            this.pibDarkMode.Name = "pibDarkMode";
-            this.pibDarkMode.Size = new System.Drawing.Size(73, 63);
-            this.pibDarkMode.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pibDarkMode.TabIndex = 1;
-            this.pibDarkMode.TabStop = false;
-            this.pibDarkMode.Click += new System.EventHandler(this.pibDarkMode_Click);
-            // 
-            // pibLightDark
-            // 
-            this.pibLightDark.Image = global::ProyectoGreenSpace.Properties.Resources.light_mode;
-            this.pibLightDark.Location = new System.Drawing.Point(115, 44);
-            this.pibLightDark.Name = "pibLightDark";
-            this.pibLightDark.Size = new System.Drawing.Size(100, 80);
-            this.pibLightDark.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pibLightDark.TabIndex = 2;
-            this.pibLightDark.TabStop = false;
-            // 
             // FrmAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -286,14 +288,15 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
             this.Name = "FrmAccount";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmCuenta";
             this.panel1.ResumeLayout(false);
             this.gBoxSwitchNightDay.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pibLightDark)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibDarkMode)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibLightMode)).EndInit();
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictBoxIcono)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pibLightMode)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pibDarkMode)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pibLightDark)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
