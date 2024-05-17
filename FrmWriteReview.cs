@@ -1,5 +1,4 @@
-﻿using ProyectoGreenSpace.LangResources;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,10 +10,10 @@ using System.Windows.Forms;
 
 namespace ProyectoGreenSpace
 {
-    public partial class FrmMovieTheater : Form
+    public partial class FrmWriteReview : Form
     {
         bool sidebarExpand;
-        public FrmMovieTheater()
+        public FrmWriteReview()
         {
             InitializeComponent();
             sidebar.BackColor = Color.FromArgb(168, 228, 116);
@@ -25,27 +24,13 @@ namespace ProyectoGreenSpace
             btnUser.BackColor = Color.FromArgb(168, 228, 116);
             btnSettings.BackColor = Color.FromArgb(168, 228, 116);
             btnWriteReview.BackColor = Color.FromArgb(168, 228, 116);
-            txtInfoMovie.BackColor = Color.FromArgb(176, 164, 180);
-        }
-        private void AplicarIdioma()
-        {
-            lblMenu.Text = StringResources.labelMenu;
-            btnTicketOffice.Text = StringResources.buttonTicketOffice;
-            btnReviewTickets.Text = StringResources.buttonReviewTickets;
-            btnReviews.Text = StringResources.buttonReviews;
-            btnDeveloping.Text = StringResources.buttonWriteReview;
-            btnUser.Text = StringResources.buttonUser;
-            btnSettings.Text = StringResources.buttonConfiguration;
-            lblSynopsis.Text = StringResources.labelSynopsis;
-        }
-
-        private void FrmMovieTheater_Load(object sender, EventArgs e)
-        {
-            AplicarIdioma();
+            pnlReviews.BackColor = Color.FromArgb(176, 164, 180);
+            grpReview.BackColor = Color.White;
         }
 
         private void sidebarTimer_Tick(object sender, EventArgs e)
         {
+
             if (sidebarExpand)
             {
                 sidebar.Width -= 10;
@@ -76,6 +61,25 @@ namespace ProyectoGreenSpace
         private void btnMenu_MouseClick(object sender, MouseEventArgs e)
         {
             sidebarTimer.Start();
+        }
+
+        private void lblTitleReview_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cklStars_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            if (e.NewValue == CheckState.Checked)
+            {
+                for (int i = 0; i < cklStars.Items.Count; i++)
+                {
+                    if (i != e.Index)
+                    {
+                        cklStars.SetItemChecked(i, false);
+                    }
+                }
+            }
         }
     }
 }

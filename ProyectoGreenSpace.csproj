@@ -140,6 +140,12 @@
     <Compile Include="FrmTickets.Designer.cs">
       <DependentUpon>FrmTickets.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmWriteReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWriteReview.Designer.cs">
+      <DependentUpon>FrmWriteReview.cs</DependentUpon>
+    </Compile>
     <Compile Include="LangResources\StringResources.Designer.cs" />
     <Compile Include="LangResources\StringResources.EN-GB.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -181,6 +187,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmUser.resx">
       <DependentUpon>FrmUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWriteReview.resx">
+      <DependentUpon>FrmWriteReview.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LangResources\StringResources.EN-GB.resx" />
     <EmbeddedResource Include="LangResources\StringResources.resx" />
@@ -284,6 +293,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\silueta-de-estrella-negra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\estrella.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\estrella1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\estrella %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\estrella %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\garrapata.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\borrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\borrar %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

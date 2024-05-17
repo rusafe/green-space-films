@@ -23,7 +23,7 @@ namespace ProyectoGreenSpace
             btnReviews.BackColor = Color.FromArgb(168, 228, 116);
             btnUser.BackColor = Color.FromArgb(168, 228, 116);
             btnSettings.BackColor = Color.FromArgb(168, 228, 116);
-            btnDeveloping.BackColor = Color.FromArgb(168, 228, 116);
+            btnWriteReview.BackColor = Color.FromArgb(168, 228, 116);
         }
 
         private void sidebarTimer_Tick(object sender, EventArgs e)

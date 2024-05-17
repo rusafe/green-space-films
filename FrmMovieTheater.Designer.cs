@@ -41,7 +41,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnReviews = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.btnDeveloping = new System.Windows.Forms.Button();
+            this.btnWriteReview = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.btnUser = new System.Windows.Forms.Button();
@@ -233,28 +233,28 @@
             this.btnReviews.Name = "btnReviews";
             this.btnReviews.Size = new System.Drawing.Size(228, 54);
             this.btnReviews.TabIndex = 24;
-            this.btnReviews.Text = "               Reseñas";
+            this.btnReviews.Text = "            Ver Reseñas";
             this.btnReviews.UseVisualStyleBackColor = true;
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.btnDeveloping);
+            this.panel5.Controls.Add(this.btnWriteReview);
             this.panel5.Location = new System.Drawing.Point(3, 304);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(239, 68);
             this.panel5.TabIndex = 4;
             // 
-            // btnDeveloping
+            // btnWriteReview
             // 
-            this.btnDeveloping.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeveloping.Image = ((System.Drawing.Image)(resources.GetObject("btnDeveloping.Image")));
-            this.btnDeveloping.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDeveloping.Location = new System.Drawing.Point(9, 7);
-            this.btnDeveloping.Name = "btnDeveloping";
-            this.btnDeveloping.Size = new System.Drawing.Size(227, 58);
-            this.btnDeveloping.TabIndex = 24;
-            this.btnDeveloping.Text = "          En Desarrollo";
-            this.btnDeveloping.UseVisualStyleBackColor = true;
+            this.btnWriteReview.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnWriteReview.Image = ((System.Drawing.Image)(resources.GetObject("btnWriteReview.Image")));
+            this.btnWriteReview.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnWriteReview.Location = new System.Drawing.Point(9, 7);
+            this.btnWriteReview.Name = "btnWriteReview";
+            this.btnWriteReview.Size = new System.Drawing.Size(227, 58);
+            this.btnWriteReview.TabIndex = 24;
+            this.btnWriteReview.Text = "          Escribir Reseña";
+            this.btnWriteReview.UseVisualStyleBackColor = true;
             // 
             // panel6
             // 
@@ -1001,7 +1001,7 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button btnReviews;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button btnDeveloping;
+        private System.Windows.Forms.Button btnWriteReview;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Button btnUser;
