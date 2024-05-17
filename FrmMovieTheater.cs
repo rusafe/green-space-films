@@ -33,7 +33,7 @@ namespace ProyectoGreenSpace
             btnTicketOffice.Text = StringResources.buttonTicketOffice;
             btnReviewTickets.Text = StringResources.buttonReviewTickets;
             btnReviews.Text = StringResources.buttonReviews;
-            btnWriteReview.Text = StringResources.buttonDeveloping;
+            btnDeveloping.Text = StringResources.buttonWriteReview;
             btnUser.Text = StringResources.buttonUser;
             btnSettings.Text = StringResources.buttonConfiguration;
             lblSynopsis.Text = StringResources.labelSynopsis;
