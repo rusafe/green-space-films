@@ -127,23 +127,29 @@
   <data name="menu-three-outlined-rounded-lines-symbol_icon-icons.com_73215" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menu-three-outlined-rounded-lines-symbol_icon-icons.com_73215.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ticket_86147" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ticket_86147.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="people_wheelchair_accessible_icon_1483821" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\people_wheelchair_accessible_icon_1483821.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="silla" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\silla.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="4092564-about-mobile-ui-profile-ui-user-website_114033" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\4092564-about-mobile-ui-profile-ui-user-website_114033.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="lupa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lupa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="turn_back" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\turn-back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="light_mode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\light-mode.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="password" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\password.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="day_mode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\day-mode.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="galeria-de-imagenes" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\galeria-de-imagenes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="people_wheelchair_accessible_icon_148382" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\people_wheelchair_accessible_icon_148382.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="united_kingdom" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\united-kingdom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,11 +163,14 @@
   <data name="cinema130_41703" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cinema130_41703.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="moon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\moon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="password" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\password.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="3709731-level-point-satisfaction-scoring-star_108079" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3709731-level-point-satisfaction-scoring-star_108079.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="informacion (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\informacion (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="silla1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\silla1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,25 +181,19 @@
   <data name="silla (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\silla (4).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="informacion (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\informacion (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="image_picture_icon_143003" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\image_picture_icon_143003.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="people_wheelchair_accessible_icon_148382" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\people_wheelchair_accessible_icon_148382.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="turn_back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\turn-back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ticket_86147" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ticket_86147.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="4092564-about-mobile-ui-profile-ui-user-website_114033" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4092564-about-mobile-ui-profile-ui-user-website_114033.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="lupa" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lupa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="day_mode" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\day-mode.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="light_mode" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\light-mode.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="moon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\moon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="silueta-de-estrella-negra" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\silueta-de-estrella-negra.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -281,5 +281,8 @@
   <ItemGroup>
     <None Include="Resources\light-mode.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\silueta-de-estrella-negra.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -26,6 +26,11 @@ namespace ProyectoGreenSpace
             btnSettings.BackColor = Color.FromArgb(168, 228, 116);
             btnDeveloping.BackColor = Color.FromArgb(168, 228, 116);
             pnlReviews.BackColor = Color.FromArgb(176, 164, 180);
+
+            grpReview1.BackColor = Color.White;
+            grpReview2.BackColor = Color.White;
+            grpReview3.BackColor = Color.White;
+            grpReview4.BackColor = Color.White;
         }
 
         private void sidebarTimer_Tick(object sender, EventArgs e)
@@ -69,6 +74,11 @@ namespace ProyectoGreenSpace
         }
 
         private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
