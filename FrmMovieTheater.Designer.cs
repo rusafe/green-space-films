@@ -90,7 +90,7 @@
             this.txtGender1 = new System.Windows.Forms.TextBox();
             this.txtAge = new System.Windows.Forms.TextBox();
             this.txtDuration = new System.Windows.Forms.TextBox();
-            this.lblTitulo = new System.Windows.Forms.Label();
+            this.lblSynopsis = new System.Windows.Forms.Label();
             this.txtInfoMovie = new System.Windows.Forms.TextBox();
             this.grbMovie1 = new System.Windows.Forms.GroupBox();
             this.pcbMovie1 = new System.Windows.Forms.PictureBox();
@@ -864,15 +864,15 @@
             this.txtDuration.Text = "Duración";
             this.txtDuration.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // lblTitulo
+            // lblSynopsis
             // 
-            this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(272, 347);
-            this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(138, 34);
-            this.lblTitulo.TabIndex = 36;
-            this.lblTitulo.Text = "SINOPSIS:";
+            this.lblSynopsis.AutoSize = true;
+            this.lblSynopsis.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSynopsis.Location = new System.Drawing.Point(272, 347);
+            this.lblSynopsis.Name = "lblSynopsis";
+            this.lblSynopsis.Size = new System.Drawing.Size(138, 34);
+            this.lblSynopsis.TabIndex = 36;
+            this.lblSynopsis.Text = "SINOPSIS:";
             // 
             // txtInfoMovie
             // 
@@ -943,12 +943,14 @@
             this.Controls.Add(this.txtGender1);
             this.Controls.Add(this.txtAge);
             this.Controls.Add(this.txtDuration);
-            this.Controls.Add(this.lblTitulo);
+            this.Controls.Add(this.lblSynopsis);
             this.Controls.Add(this.txtInfoMovie);
             this.Controls.Add(this.grbMovie1);
             this.Controls.Add(this.sidebar);
             this.Name = "FrmMovieTheater";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmMovieTheater";
+            this.Load += new System.EventHandler(this.FrmMovieTheater_Load);
             this.sidebar.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -1049,7 +1051,7 @@
         private System.Windows.Forms.TextBox txtGender1;
         private System.Windows.Forms.TextBox txtAge;
         private System.Windows.Forms.TextBox txtDuration;
-        private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.Label lblSynopsis;
         private System.Windows.Forms.TextBox txtInfoMovie;
         private System.Windows.Forms.GroupBox grbMovie1;
         private System.Windows.Forms.PictureBox pcbMovie1;

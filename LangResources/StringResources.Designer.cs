@@ -31,7 +31,7 @@ namespace ProyectoGreenSpace.LangResources {
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
         internal StringResources() {
         }
-        
+
         /// <summary>
         ///   Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
         /// </summary>
@@ -176,6 +176,270 @@ namespace ProyectoGreenSpace.LangResources {
             get
             {
                 return ResourceManager.GetString("linkRegister", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Enviar código de verificación.
+        /// </summary>
+        internal static string buttonSend
+        {
+            get
+            {
+                return ResourceManager.GetString("buttonSend", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a MENU.
+        /// </summary>
+        internal static string labelMenu
+        {
+            get
+            {
+                return ResourceManager.GetString("labelMenu", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Taquilla.
+        /// </summary>
+        internal static string buttonTicketOffice
+        {
+            get
+            {
+                return ResourceManager.GetString("buttonTicketOffice", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Revisar Tickets.
+        /// </summary>
+        internal static string buttonReviewTickets
+        {
+            get
+            {
+                return ResourceManager.GetString("buttonReviewTickets", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Reseñas.
+        /// </summary>
+        internal static string buttonReviews
+        {
+            get
+            {
+                return ResourceManager.GetString("buttonReviews", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a En Desarrollo.
+        /// </summary>
+        internal static string buttonDeveloping
+        {
+            get
+            {
+                return ResourceManager.GetString("buttonDeveloping", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Usuario.
+        /// </summary>
+        internal static string buttonUser
+        {
+            get
+            {
+                return ResourceManager.GetString("buttonUser", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Configuración.
+        /// </summary>
+        internal static string buttonConfiguration
+        {
+            get
+            {
+                return ResourceManager.GetString("buttonConfiguration", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a ESTRENOS - PELÍCULAS MAYO 2024.
+        /// </summary>
+        internal static string labelTitle
+        {
+            get
+            {
+                return ResourceManager.GetString("labelTitle", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a PRÓXIMOS ESTRENOS - PELÍCULAS JUNIO 2024.
+        /// </summary>
+        internal static string labelNextTitle
+        {
+            get
+            {
+                return ResourceManager.GetString("labelNextTitle", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Introduce tú nombre de usuario, recibirás en tú correo...
+        /// </summary>
+        internal static string rtbInfo
+        {
+            get
+            {
+                return ResourceManager.GetString("rtbInfo", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Enviar enlace
+        /// </summary>
+        internal static string buttonLink
+        {
+            get
+            {
+                return ResourceManager.GetString("buttonLink", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a PELÍCULAS
+        /// </summary>
+        internal static string labelFilm
+        {
+            get
+            {
+                return ResourceManager.GetString("labelFilm", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a TIPO DE SALA
+        /// </summary>
+        internal static string labelTypeHall
+        {
+            get
+            {
+                return ResourceManager.GetString("labelTypeHall", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a NOMBRE
+        /// </summary>
+        internal static string labelName
+        {
+            get
+            {
+                return ResourceManager.GetString("labelName", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a HORARIO
+        /// </summary>
+        internal static string labelSchedule
+        {
+            get
+            {
+                return ResourceManager.GetString("labelSchedule", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a DURACIÓN
+        /// </summary>
+        internal static string labelDuration
+        {
+            get
+            {
+                return ResourceManager.GetString("labelDuration", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a TICKETS:
+        /// </summary>
+        internal static string labelTickets
+        {
+            get
+            {
+                return ResourceManager.GetString("labelTickets", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a DESCUENTOS:
+        /// </summary>
+        internal static string labelDiscounts
+        {
+            get
+            {
+                return ResourceManager.GetString("labelDiscounts", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a DESCUENTO:
+        /// </summary>
+        internal static string labelDiscount
+        {
+            get
+            {
+                return ResourceManager.GetString("labelDiscount", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a TOTAL:
+        /// </summary>
+        internal static string labelTotal
+        {
+            get
+            {
+                return ResourceManager.GetString("labelTotal", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a TOTAL APLICADO:
+        /// </summary>
+        internal static string labelTotalApplied
+        {
+            get
+            {
+                return ResourceManager.GetString("labelTotalApplied", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a BUTACAS
+        /// </summary>
+        internal static string labelSeating
+        {
+            get
+            {
+                return ResourceManager.GetString("labelSeating", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a SINOPSIS
+        /// </summary>
+        internal static string labelSynopsis
+        {
+            get
+            {
+                return ResourceManager.GetString("labelSynopsis", resourceCulture);
             }
         }
     }

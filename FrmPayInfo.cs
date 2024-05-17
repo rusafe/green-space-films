@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoGreenSpace.LangResources;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +20,23 @@ namespace ProyectoGreenSpace
             txtSeating.BackColor = Color.FromArgb(168, 228, 116);
         }
 
-        private void grpInfo_Enter(object sender, EventArgs e)
+        private void AplicarIdioma()
+        {
+            lblTitle.Text = StringResources.labelTitle;
+            lblMovie.Text = StringResources.labelFilm;
+            lblTypeHall.Text = StringResources.labelTypeHall;
+            lblName.Text = StringResources.labelName;
+            lblShedule.Text = StringResources.labelSchedule;
+            lblDuration.Text = StringResources.labelDuration;
+            lblTickets.Text = StringResources.labelTickets;
+            lblSeating.Text = StringResources.labelSeating;
+            lblDiscounts.Text = StringResources.labelDiscounts;
+            lblDiscount.Text = StringResources.labelDiscount;
+            lblTotal.Text = StringResources.labelTotal;
+            lblTotalApplied.Text = StringResources.labelTotalApplied;
+        }
+
+        private void FrmPayInfo_Load(object sender, EventArgs e)
         {
 
         }

@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.grpRegister = new System.Windows.Forms.GroupBox();
             this.lklblLogin = new System.Windows.Forms.LinkLabel();
-            this.lblInfoLogin = new System.Windows.Forms.Label();
+            this.pibImage = new System.Windows.Forms.PictureBox();
             this.btnUpload = new System.Windows.Forms.Button();
             this.lblUsername = new System.Windows.Forms.Label();
             this.btnRegister = new System.Windows.Forms.Button();
@@ -46,18 +46,16 @@
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.pibBritish = new System.Windows.Forms.PictureBox();
             this.pibSpanish = new System.Windows.Forms.PictureBox();
-            this.pibImage = new System.Windows.Forms.PictureBox();
             this.grpRegister.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pibImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pibBritish)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pibSpanish)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pibImage)).BeginInit();
             this.SuspendLayout();
             // 
             // grpRegister
             // 
             this.grpRegister.Controls.Add(this.lklblLogin);
-            this.grpRegister.Controls.Add(this.lblInfoLogin);
             this.grpRegister.Controls.Add(this.pibImage);
             this.grpRegister.Controls.Add(this.btnUpload);
             this.grpRegister.Controls.Add(this.lblUsername);
@@ -71,7 +69,7 @@
             this.grpRegister.Controls.Add(this.lblPassword);
             this.grpRegister.Location = new System.Drawing.Point(26, 26);
             this.grpRegister.Name = "grpRegister";
-            this.grpRegister.Size = new System.Drawing.Size(532, 482);
+            this.grpRegister.Size = new System.Drawing.Size(532, 486);
             this.grpRegister.TabIndex = 27;
             this.grpRegister.TabStop = false;
             this.grpRegister.Paint += new System.Windows.Forms.PaintEventHandler(this.grpRegister_Paint);
@@ -80,30 +78,30 @@
             // 
             this.lklblLogin.AutoSize = true;
             this.lklblLogin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lklblLogin.Location = new System.Drawing.Point(327, 424);
+            this.lklblLogin.Location = new System.Drawing.Point(59, 426);
             this.lklblLogin.Name = "lklblLogin";
-            this.lklblLogin.Size = new System.Drawing.Size(129, 23);
+            this.lklblLogin.Size = new System.Drawing.Size(363, 23);
             this.lklblLogin.TabIndex = 39;
             this.lklblLogin.TabStop = true;
-            this.lklblLogin.Text = "Iniciar sesión";
+            this.lklblLogin.Text = "¿Ya tienes una cuenta? Inicia sesión";
             this.lklblLogin.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lklblLogin_LinkClicked);
             // 
-            // lblInfoLogin
+            // pibImage
             // 
-            this.lblInfoLogin.AutoSize = true;
-            this.lblInfoLogin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInfoLogin.Location = new System.Drawing.Point(59, 424);
-            this.lblInfoLogin.Name = "lblInfoLogin";
-            this.lblInfoLogin.Size = new System.Drawing.Size(244, 23);
-            this.lblInfoLogin.TabIndex = 38;
-            this.lblInfoLogin.Text = "¿Ya tienes una cuenta?";
+            this.pibImage.Location = new System.Drawing.Point(295, 64);
+            this.pibImage.Name = "pibImage";
+            this.pibImage.Size = new System.Drawing.Size(201, 228);
+            this.pibImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pibImage.TabIndex = 36;
+            this.pibImage.TabStop = false;
+            this.pibImage.Paint += new System.Windows.Forms.PaintEventHandler(this.pibImage_Paint);
             // 
             // btnUpload
             // 
             this.btnUpload.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpload.Location = new System.Drawing.Point(295, 298);
             this.btnUpload.Name = "btnUpload";
-            this.btnUpload.Size = new System.Drawing.Size(178, 38);
+            this.btnUpload.Size = new System.Drawing.Size(201, 38);
             this.btnUpload.TabIndex = 37;
             this.btnUpload.Text = "Cargar foto";
             this.btnUpload.UseVisualStyleBackColor = true;
@@ -124,7 +122,7 @@
             this.btnRegister.ForeColor = System.Drawing.Color.White;
             this.btnRegister.Location = new System.Drawing.Point(63, 366);
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(410, 38);
+            this.btnRegister.Size = new System.Drawing.Size(433, 38);
             this.btnRegister.TabIndex = 34;
             this.btnRegister.Text = "Registrarse";
             this.btnRegister.UseVisualStyleBackColor = true;
@@ -221,7 +219,7 @@
             this.pibBritish.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pibBritish.TabIndex = 30;
             this.pibBritish.TabStop = false;
-            this.pibBritish.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.pibBritish.Click += new System.EventHandler(this.pibBritish_Click);
             // 
             // pibSpanish
             // 
@@ -233,17 +231,7 @@
             this.pibSpanish.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pibSpanish.TabIndex = 29;
             this.pibSpanish.TabStop = false;
-            this.pibSpanish.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // pibImage
-            // 
-            this.pibImage.Location = new System.Drawing.Point(295, 64);
-            this.pibImage.Name = "pibImage";
-            this.pibImage.Size = new System.Drawing.Size(178, 228);
-            this.pibImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pibImage.TabIndex = 36;
-            this.pibImage.TabStop = false;
-            this.pibImage.Paint += new System.Windows.Forms.PaintEventHandler(this.pibImage_Paint);
+            this.pibSpanish.Click += new System.EventHandler(this.pibSpanish_Click);
             // 
             // FrmRegister
             // 
@@ -259,10 +247,10 @@
             this.Load += new System.EventHandler(this.FrmRegister_Load);
             this.grpRegister.ResumeLayout(false);
             this.grpRegister.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pibImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pibBritish)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pibSpanish)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pibImage)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -282,7 +270,6 @@
         private System.Windows.Forms.Label lblRepeat;
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.LinkLabel lklblLogin;
-        private System.Windows.Forms.Label lblInfoLogin;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.PictureBox pibBritish;

@@ -4,6 +4,7 @@ using System.Windows.Forms;
 using ProyectoGreenSpace.LangResources;
 using System.Globalization;
 using System.Threading;
+using ProyectoGreenSpace.Classes;
 
 namespace ProyectoGreenSpace
 {
@@ -22,7 +23,6 @@ namespace ProyectoGreenSpace
             lblRepeat.Text = StringResources.labelRepeatPassword;
             btnUpload.Text = StringResources.buttonUpload;
             btnRegister.Text = StringResources.buttonRegister;
-            lblInfoLogin.Text = StringResources.lblQuestion;
             lklblLogin.Text = StringResources.linkLogin;
         }
 
@@ -36,20 +36,15 @@ namespace ProyectoGreenSpace
 
             txtUsername.Focus();
         }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void pibSpanish_Click(object sender, EventArgs e)
         {
-            string culture = "ES-ES";
-            MessageBox.Show("Nombre de la referencia cultural en .NET: " + culture);
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo(culture);
+            Language.LanguageSpanish();
             AplicarIdioma();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void pibBritish_Click(object sender, EventArgs e)
         {
-            string culture = "EN-GB";
-            MessageBox.Show("Nombre de la referencia cultural en .NET: " + culture);
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo(culture);
+            Language.LanguageBritish();
             AplicarIdioma();
         }
 
@@ -84,7 +79,6 @@ namespace ProyectoGreenSpace
                                 LimpiarDatos();
                                 FrmInsertCode frmInsertCode = new FrmInsertCode(code);
                                 frmInsertCode.Show();
-                                this.Hide();
                             }
                             else
                             {
@@ -218,8 +212,7 @@ namespace ProyectoGreenSpace
             }
         }
 
-        #endregion
 
-       
+        #endregion
     }
 }

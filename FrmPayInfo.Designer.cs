@@ -50,11 +50,11 @@
             this.lblDiscounts = new System.Windows.Forms.Label();
             this.lblTickets = new System.Windows.Forms.Label();
             this.lblDuration = new System.Windows.Forms.Label();
-            this.lblsShedule = new System.Windows.Forms.Label();
+            this.lblShedule = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
             this.lblTypeHall = new System.Windows.Forms.Label();
             this.lblMovie = new System.Windows.Forms.Label();
-            this.lblTitulo = new System.Windows.Forms.Label();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.pctMovie = new System.Windows.Forms.PictureBox();
             this.grpInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctMovie)).BeginInit();
@@ -170,18 +170,17 @@
             this.grpInfo.Controls.Add(this.lblDiscounts);
             this.grpInfo.Controls.Add(this.lblTickets);
             this.grpInfo.Controls.Add(this.lblDuration);
-            this.grpInfo.Controls.Add(this.lblsShedule);
+            this.grpInfo.Controls.Add(this.lblShedule);
             this.grpInfo.Controls.Add(this.lblName);
             this.grpInfo.Controls.Add(this.lblTypeHall);
             this.grpInfo.Controls.Add(this.lblMovie);
-            this.grpInfo.Controls.Add(this.lblTitulo);
+            this.grpInfo.Controls.Add(this.lblTitle);
             this.grpInfo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpInfo.Location = new System.Drawing.Point(530, 36);
             this.grpInfo.Name = "grpInfo";
             this.grpInfo.Size = new System.Drawing.Size(631, 395);
             this.grpInfo.TabIndex = 44;
             this.grpInfo.TabStop = false;
-            this.grpInfo.Enter += new System.EventHandler(this.grpInfo_Enter);
             // 
             // txtSeating
             // 
@@ -316,16 +315,16 @@
             this.lblDuration.TabIndex = 23;
             this.lblDuration.Text = "DURACIÓN";
             // 
-            // lblsShedule
+            // lblShedule
             // 
-            this.lblsShedule.AutoSize = true;
-            this.lblsShedule.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblsShedule.ForeColor = System.Drawing.Color.White;
-            this.lblsShedule.Location = new System.Drawing.Point(231, 199);
-            this.lblsShedule.Name = "lblsShedule";
-            this.lblsShedule.Size = new System.Drawing.Size(103, 23);
-            this.lblsShedule.TabIndex = 22;
-            this.lblsShedule.Text = "HORARIO";
+            this.lblShedule.AutoSize = true;
+            this.lblShedule.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblShedule.ForeColor = System.Drawing.Color.White;
+            this.lblShedule.Location = new System.Drawing.Point(231, 199);
+            this.lblShedule.Name = "lblShedule";
+            this.lblShedule.Size = new System.Drawing.Size(103, 23);
+            this.lblShedule.TabIndex = 22;
+            this.lblShedule.Text = "HORARIO";
             // 
             // lblName
             // 
@@ -360,15 +359,15 @@
             this.lblMovie.TabIndex = 11;
             this.lblMovie.Text = "PELÍCULA";
             // 
-            // lblTitulo
+            // lblTitle
             // 
-            this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(36, 28);
-            this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(482, 34);
-            this.lblTitulo.TabIndex = 19;
-            this.lblTitulo.Text = "ESTRENOS - PELÍCULAS MAYO 2024";
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Location = new System.Drawing.Point(36, 28);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(482, 34);
+            this.lblTitle.TabIndex = 19;
+            this.lblTitle.Text = "ESTRENOS - PELÍCULAS MAYO 2024";
             // 
             // pctMovie
             // 
@@ -398,6 +397,7 @@
             this.Controls.Add(this.pctMovie);
             this.Name = "FrmPayInfo";
             this.Text = "FrmPayInfo";
+            this.Load += new System.EventHandler(this.FrmPayInfo_Load);
             this.grpInfo.ResumeLayout(false);
             this.grpInfo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctMovie)).EndInit();
@@ -430,11 +430,11 @@
         private System.Windows.Forms.Label lblDiscounts;
         private System.Windows.Forms.Label lblTickets;
         private System.Windows.Forms.Label lblDuration;
-        private System.Windows.Forms.Label lblsShedule;
+        private System.Windows.Forms.Label lblShedule;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label lblTypeHall;
         private System.Windows.Forms.Label lblMovie;
-        private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.PictureBox pctMovie;
     }
 }

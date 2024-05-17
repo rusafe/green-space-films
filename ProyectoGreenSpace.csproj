@@ -55,6 +55,7 @@
     <Compile Include="Classes\Controller.cs" />
     <Compile Include="Classes\Film.cs" />
     <Compile Include="Classes\ImagesDB.cs" />
+    <Compile Include="Classes\Language.cs" />
     <Compile Include="Classes\Mail.cs" />
     <Compile Include="Classes\Program.cs" />
     <Compile Include="Classes\UserSession.cs" />

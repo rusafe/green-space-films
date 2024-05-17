@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoGreenSpace.LangResources;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -60,15 +61,25 @@ namespace ProyectoGreenSpace
             btnUser.BackColor = Color.FromArgb(168, 228, 116);
             btnSettings.BackColor = Color.FromArgb(168, 228, 116);
             btnDeveloping.BackColor = Color.FromArgb(168, 228, 116);
-         
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void AplicarIdioma()
         {
-
+            lblMenu.Text = StringResources.labelMenu;
+            btnTicketOffice.Text = StringResources.buttonTicketOffice;
+            btnReviewTickets.Text = StringResources.buttonReviewTickets;
+            btnReviews.Text = StringResources.buttonReviews;
+            btnDeveloping.Text = StringResources.buttonDeveloping;
+            btnUser.Text = StringResources.buttonUser;
+            btnSettings.Text = StringResources.buttonConfiguration;
+            lblTitleMonth.Text = StringResources.labelTitle;
+            lblTitleNextMonth.Text = StringResources.labelNextTitle;
         }
 
-
+        private void FrmFilms_Load(object sender, EventArgs e)
+        {
+            AplicarIdioma();
+        }
 
         private void btnMenu_Click_1(object sender, EventArgs e)
         {

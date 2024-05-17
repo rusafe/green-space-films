@@ -1,4 +1,5 @@
-﻿using ProyectoGreenSpace.LangResources;
+﻿using ProyectoGreenSpace.Classes;
+using ProyectoGreenSpace.LangResources;
 using System;
 using System.Drawing;
 using System.Windows.Forms;
@@ -33,6 +34,18 @@ namespace ProyectoGreenSpace
             txtUsername.Focus();
         }
 
+        private void pibSpanish_Click(object sender, EventArgs e)
+        {
+            Language.LanguageSpanish();
+            AplicarIdioma();
+        }
+
+        private void pibBritish_Click(object sender, EventArgs e)
+        {
+            Language.LanguageBritish();
+            AplicarIdioma();
+        }
+
         private void btnLogin_Click(object sender, EventArgs e)
         {
             User user = new User();
@@ -52,9 +65,9 @@ namespace ProyectoGreenSpace
                 else
                 {
                     MessageBox.Show("Bienvenido/a Green Space Films!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Hide();
                     FrmFilms frmFilms = new FrmFilms();
                     frmFilms.Show();
-                    this.Close();
                 }
             }
             catch (Exception ex)
@@ -65,16 +78,15 @@ namespace ProyectoGreenSpace
 
         private void lklblRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            FrmRegister frmLogin = new FrmRegister();
-            frmLogin.Show();
-            this.Close();
+            FrmRegister frmRegister = new FrmRegister();
+            frmRegister.Show();
         }
 
         private void lkllblRecoverPassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            this.Hide();
             FrmRecoverPassword fromRecover = new FrmRecoverPassword();
             fromRecover.Show();
-            this.Close();
         }
 
         #region Diseño de interface
@@ -105,8 +117,7 @@ namespace ProyectoGreenSpace
         {
             ControlPaint.DrawBorder(e.Graphics, grpLogin.ClientRectangle, Color.Black, ButtonBorderStyle.Solid);
         }
+
         #endregion
-
-
     }
 }

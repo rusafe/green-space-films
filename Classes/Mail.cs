@@ -25,7 +25,7 @@ namespace ProyectoGreenSpace
             message.Subject = "Correo de verificación.";
             message.SubjectEncoding = Encoding.UTF8; // Necesario declara UTF8.
             message.Body = "Estimado/a usuario/a,\n\rPara completar el registro en Green Space Films, introduzca el siguiente código de verificación " +
-                "dentro de la aplicación:\n\rSu código de verificación es: " + randomCode + ".\n\rGracias por elegir Green Space Films." +
+                "dentro de la aplicación:\n\rSu código de verificación es: " + randomCode + "\n\rGracias por elegirnos." +
                 "\n\rAtentamente,\n\tEl equipo de Green Space Films";
             message.BodyEncoding = Encoding.UTF8;
             message.IsBodyHtml = false;
@@ -56,7 +56,7 @@ namespace ProyectoGreenSpace
             message.Subject = "Correo de recuperación de contraseña.";
             message.SubjectEncoding = Encoding.UTF8; // Necesario declara UTF8.
             message.Body = "Estimado/a usuario/a, \n\rHa solicitado recuperar su contraseña. " +
-                "Su nueva contraseña generada es: " + password + ".\n\rGracias por elegir Green Space Films." +
+                "Su nueva contraseña generada es: " + password + "\n\rGracias por elegir a nuestro equipo." +
                 "\n\rAtentamente,\n\tEl equipo de Green Space Films";
             message.BodyEncoding = Encoding.UTF8;
             message.IsBodyHtml = false;
