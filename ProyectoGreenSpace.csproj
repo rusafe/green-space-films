@@ -142,6 +142,7 @@
     <Compile Include="LangResources\StringResources.Designer.cs" />
     <Compile Include="LangResources\StringResources.EN-GB.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThemeMode.cs" />
     <EmbeddedResource Include="FrmAccount.resx">
       <DependentUpon>FrmAccount.cs</DependentUpon>
     </EmbeddedResource>
