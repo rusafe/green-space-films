@@ -103,6 +103,7 @@
             // 
             this.txtPassword.Location = new System.Drawing.Point(45, 149);
             this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(316, 32);
             this.txtPassword.TabIndex = 6;
             this.toolTip1.SetToolTip(this.txtPassword, "Introduce tú contraseña.");

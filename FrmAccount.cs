@@ -26,16 +26,26 @@ namespace ProyectoGreenSpace
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+            FrmFilms frmFilms = new FrmFilms();
+            frmFilms.Show();
         }
 
         private void pibLightMode_Click(object sender, EventArgs e)
         {
-            this.BackColor = Color.FromArgb(168, 228, 116);
+            ThemeMode.UseThemeLight();
+            if (ThemeMode.Light)
+            {
+                this.BackColor = Color.FromArgb(168, 228, 116);
+            }
         }
 
         private void pibDarkMode_Click(object sender, EventArgs e)
         {
-            this.BackColor = Color.FromArgb(32, 146, 14);
+            ThemeMode.UseThemeDark();
+            if (ThemeMode.Light == false)
+            {
+                this.BackColor = Color.FromArgb(32, 146, 14);
+            }
         }
     }
 }

@@ -17,53 +17,10 @@ namespace ProyectoGreenSpace
         public FrmFilms()
         {
             InitializeComponent();
-    
-            grbMovie1.BackColor = Color.FromArgb(176, 164, 180);
-            grbMovie2.BackColor = Color.FromArgb(176, 164, 180);
-            grbMovie3.BackColor = Color.FromArgb(176, 164, 180);
-            grbMovie4.BackColor = Color.FromArgb(176, 164, 180);
-            grbMovie5.BackColor = Color.FromArgb(168, 228, 116);
-            grbMovie6.BackColor = Color.FromArgb(168, 228, 116);
-            grbMovie7.BackColor = Color.FromArgb(168, 228, 116);
-            grbMovie8.BackColor = Color.FromArgb(168, 228, 116);
-            grbNextMovie1.BackColor = Color.FromArgb(176, 164, 180);
-            grbNextMovie2.BackColor = Color.FromArgb(176, 164, 180);
-            grbNextMovie3.BackColor = Color.FromArgb(176, 164, 180);
-            grbNextMovie3.BackColor = Color.FromArgb(176, 164, 180);
-            grbNextMovie4.BackColor = Color.FromArgb(176, 164, 180);
-            grbNextMovie5.BackColor = Color.FromArgb(168, 228, 116);
-            grbNextMovie6.BackColor = Color.FromArgb(168, 228, 116);
-            grbNextMovie7.BackColor = Color.FromArgb(168, 228, 116);
-            grbNextMovie8.BackColor = Color.FromArgb(168, 228, 116);
-
-            pcbMovie1.BackColor = Color.FromArgb(168, 228, 116);
-            pcbMovie2.BackColor = Color.FromArgb(168, 228, 116);
-            pcbMovie3.BackColor = Color.FromArgb(168, 228, 116);
-            pcbMovie4.BackColor = Color.FromArgb(168, 228, 116);
-            pcbMovie5.BackColor = Color.FromArgb(176, 164, 180);
-            pcbMovie6.BackColor = Color.FromArgb(176, 164, 180);
-            pcbMovie7.BackColor = Color.FromArgb(176, 164, 180);
-            pcbMovie8.BackColor = Color.FromArgb(176, 164, 180);
-            pcbNextMovie1.BackColor = Color.FromArgb(168, 228, 116);
-            pcbNextMovie2.BackColor = Color.FromArgb(168, 228, 116);
-            pcbNextMovie3.BackColor = Color.FromArgb(168, 228, 116);
-            pcbNextMovie4.BackColor = Color.FromArgb(168, 228, 116);
-            pcbNextMovie5.BackColor = Color.FromArgb(176, 164, 180);
-            pcbNextMovie6.BackColor = Color.FromArgb(176, 164, 180);
-            pcbNextMovie7.BackColor = Color.FromArgb(176, 164, 180);
-            pcbNextMovie8.BackColor = Color.FromArgb(176, 164, 180);
-
-            sidebar.BackColor = Color.FromArgb(168, 228, 116);
-            btnMenu.BackColor = Color.FromArgb(168, 228, 116);
-            btnTicketOffice.BackColor = Color.FromArgb(168, 228, 116);
-            btnReviewTickets.BackColor = Color.FromArgb(168, 228, 116);
-            btnReviews.BackColor = Color.FromArgb(168, 228, 116);
-            btnUser.BackColor = Color.FromArgb(168, 228, 116);
-            btnSettings.BackColor = Color.FromArgb(168, 228, 116);
-            btnDeveloping.BackColor = Color.FromArgb(168, 228, 116);
+            ApplyTheme();
         }
 
-        private void AplicarIdioma()
+        private void ApplyLanguage()
         {
             lblMenu.Text = StringResources.labelMenu;
             btnTicketOffice.Text = StringResources.buttonTicketOffice;
@@ -78,7 +35,7 @@ namespace ProyectoGreenSpace
 
         private void FrmFilms_Load(object sender, EventArgs e)
         {
-            AplicarIdioma();
+            ApplyLanguage();
         }
 
         private void btnMenu_Click_1(object sender, EventArgs e)
@@ -134,12 +91,110 @@ namespace ProyectoGreenSpace
         {
             FrmAccount frmAccount = new FrmAccount();
             frmAccount.ShowDialog();
+            this.Close();
         }
 
         private void grbMovie1_Enter(object sender, EventArgs e)
         {
             FrmFilms ndknd = new FrmFilms();
 
+        }
+
+        private void ApplyTheme()
+        {
+            if (ThemeMode.Light == true)
+            {
+                grbMovie1.BackColor = Color.FromArgb(176, 164, 180);
+                grbMovie2.BackColor = Color.FromArgb(176, 164, 180);
+                grbMovie3.BackColor = Color.FromArgb(176, 164, 180);
+                grbMovie4.BackColor = Color.FromArgb(176, 164, 180);
+                grbMovie5.BackColor = Color.FromArgb(168, 228, 116);
+                grbMovie6.BackColor = Color.FromArgb(168, 228, 116);
+                grbMovie7.BackColor = Color.FromArgb(168, 228, 116);
+                grbMovie8.BackColor = Color.FromArgb(168, 228, 116);
+                grbNextMovie1.BackColor = Color.FromArgb(176, 164, 180);
+                grbNextMovie2.BackColor = Color.FromArgb(176, 164, 180);
+                grbNextMovie3.BackColor = Color.FromArgb(176, 164, 180);
+                grbNextMovie3.BackColor = Color.FromArgb(176, 164, 180);
+                grbNextMovie4.BackColor = Color.FromArgb(176, 164, 180);
+                grbNextMovie5.BackColor = Color.FromArgb(168, 228, 116);
+                grbNextMovie6.BackColor = Color.FromArgb(168, 228, 116);
+                grbNextMovie7.BackColor = Color.FromArgb(168, 228, 116);
+                grbNextMovie8.BackColor = Color.FromArgb(168, 228, 116);
+
+                pcbMovie1.BackColor = Color.FromArgb(168, 228, 116);
+                pcbMovie2.BackColor = Color.FromArgb(168, 228, 116);
+                pcbMovie3.BackColor = Color.FromArgb(168, 228, 116);
+                pcbMovie4.BackColor = Color.FromArgb(168, 228, 116);
+                pcbMovie5.BackColor = Color.FromArgb(176, 164, 180);
+                pcbMovie6.BackColor = Color.FromArgb(176, 164, 180);
+                pcbMovie7.BackColor = Color.FromArgb(176, 164, 180);
+                pcbMovie8.BackColor = Color.FromArgb(176, 164, 180);
+                pcbNextMovie1.BackColor = Color.FromArgb(168, 228, 116);
+                pcbNextMovie2.BackColor = Color.FromArgb(168, 228, 116);
+                pcbNextMovie3.BackColor = Color.FromArgb(168, 228, 116);
+                pcbNextMovie4.BackColor = Color.FromArgb(168, 228, 116);
+                pcbNextMovie5.BackColor = Color.FromArgb(176, 164, 180);
+                pcbNextMovie6.BackColor = Color.FromArgb(176, 164, 180);
+                pcbNextMovie7.BackColor = Color.FromArgb(176, 164, 180);
+                pcbNextMovie8.BackColor = Color.FromArgb(176, 164, 180);
+
+                sidebar.BackColor = Color.FromArgb(168, 228, 116);
+                btnMenu.BackColor = Color.FromArgb(168, 228, 116);
+                btnTicketOffice.BackColor = Color.FromArgb(168, 228, 116);
+                btnReviewTickets.BackColor = Color.FromArgb(168, 228, 116);
+                btnReviews.BackColor = Color.FromArgb(168, 228, 116);
+                btnUser.BackColor = Color.FromArgb(168, 228, 116);
+                btnSettings.BackColor = Color.FromArgb(168, 228, 116);
+                btnDeveloping.BackColor = Color.FromArgb(168, 228, 116);
+            }
+            else
+            {
+                grbMovie1.BackColor = Color.FromArgb(176, 164, 180);
+                grbMovie2.BackColor = Color.FromArgb(176, 164, 180);
+                grbMovie3.BackColor = Color.FromArgb(176, 164, 180);
+                grbMovie4.BackColor = Color.FromArgb(176, 164, 180);
+                grbMovie5.BackColor = Color.FromArgb(176, 164, 180);
+                grbMovie6.BackColor = Color.FromArgb(176, 164, 180);
+                grbMovie7.BackColor = Color.FromArgb(176, 164, 180);
+                grbMovie8.BackColor = Color.FromArgb(176, 164, 180);
+                grbNextMovie1.BackColor = Color.FromArgb(176, 164, 180);
+                grbNextMovie2.BackColor = Color.FromArgb(176, 164, 180);
+                grbNextMovie3.BackColor = Color.FromArgb(176, 164, 180);
+                grbNextMovie3.BackColor = Color.FromArgb(176, 164, 180);
+                grbNextMovie4.BackColor = Color.FromArgb(176, 164, 180);
+                grbNextMovie5.BackColor = Color.FromArgb(176, 164, 180);
+                grbNextMovie6.BackColor = Color.FromArgb(176, 164, 180);
+                grbNextMovie7.BackColor = Color.FromArgb(176, 164, 180);
+                grbNextMovie8.BackColor = Color.FromArgb(176, 164, 180);
+
+                pcbMovie1.BackColor = Color.FromArgb(168, 228, 116);
+                pcbMovie2.BackColor = Color.FromArgb(168, 228, 116);
+                pcbMovie3.BackColor = Color.FromArgb(168, 228, 116);
+                pcbMovie4.BackColor = Color.FromArgb(168, 228, 116);
+                pcbMovie5.BackColor = Color.FromArgb(168, 228, 116);
+                pcbMovie6.BackColor = Color.FromArgb(168, 228, 116);
+                pcbMovie7.BackColor = Color.FromArgb(168, 228, 116);
+                pcbMovie8.BackColor = Color.FromArgb(168, 228, 116);
+                pcbNextMovie1.BackColor = Color.FromArgb(168, 228, 116);
+                pcbNextMovie2.BackColor = Color.FromArgb(168, 228, 116);
+                pcbNextMovie3.BackColor = Color.FromArgb(168, 228, 116);
+                pcbNextMovie4.BackColor = Color.FromArgb(168, 228, 116);
+                pcbNextMovie5.BackColor = Color.FromArgb(168, 228, 116);
+                pcbNextMovie6.BackColor = Color.FromArgb(168, 228, 116);
+                pcbNextMovie7.BackColor = Color.FromArgb(168, 228, 116);
+                pcbNextMovie8.BackColor = Color.FromArgb(168, 228, 116);
+
+                sidebar.BackColor = Color.FromArgb(176, 164, 180);
+                btnMenu.BackColor = Color.FromArgb(176, 164, 180);
+                btnTicketOffice.BackColor = Color.FromArgb(176, 164, 180);
+                btnReviewTickets.BackColor = Color.FromArgb(176, 164, 180);
+                btnReviews.BackColor = Color.FromArgb(176, 164, 180);
+                btnUser.BackColor = Color.FromArgb(176, 164, 180);
+                btnSettings.BackColor = Color.FromArgb(176, 164, 180);
+                btnDeveloping.BackColor = Color.FromArgb(176, 164, 180);
+                pnlFilms.BackColor = Color.FromArgb(32, 146, 14);
+            }
         }
     }
 }
