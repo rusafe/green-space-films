@@ -157,6 +157,7 @@
             this.btnTicketOffice.TabIndex = 22;
             this.btnTicketOffice.Text = "               Taquilla";
             this.btnTicketOffice.UseVisualStyleBackColor = true;
+            this.btnTicketOffice.Click += new System.EventHandler(this.btnTicketOffice_Click);
             // 
             // panel3
             // 
@@ -177,6 +178,7 @@
             this.btnReviewTickets.TabIndex = 23;
             this.btnReviewTickets.Text = "          Revisar Tickets";
             this.btnReviewTickets.UseVisualStyleBackColor = true;
+            this.btnReviewTickets.Click += new System.EventHandler(this.btnReviewTickets_Click);
             // 
             // panel4
             // 
@@ -197,6 +199,7 @@
             this.btnReviews.TabIndex = 24;
             this.btnReviews.Text = "            Ver Reseñas";
             this.btnReviews.UseVisualStyleBackColor = true;
+            this.btnReviews.Click += new System.EventHandler(this.btnReviews_Click);
             // 
             // panel5
             // 
@@ -217,6 +220,7 @@
             this.btnWriteReview.TabIndex = 24;
             this.btnWriteReview.Text = "          Escribir Reseña";
             this.btnWriteReview.UseVisualStyleBackColor = true;
+            this.btnWriteReview.Click += new System.EventHandler(this.btnWriteReview_Click);
             // 
             // panel6
             // 
@@ -264,6 +268,7 @@
             this.btnSettings.TabIndex = 24;
             this.btnSettings.Text = "          Configuración";
             this.btnSettings.UseVisualStyleBackColor = true;
+            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
             // sidebarTimer
             // 
@@ -280,7 +285,6 @@
             this.lblActualTickets.Size = new System.Drawing.Size(175, 23);
             this.lblActualTickets.TabIndex = 31;
             this.lblActualTickets.Text = "Tickets actuales: ";
-            this.lblActualTickets.Click += new System.EventHandler(this.label1_Click);
             // 
             // lblNumActualTickets
             // 
@@ -329,7 +333,6 @@
             this.btnSearch.Size = new System.Drawing.Size(53, 50);
             this.btnSearch.TabIndex = 36;
             this.btnSearch.UseVisualStyleBackColor = false;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // dgvActualTickets
             // 
@@ -535,6 +538,7 @@
             this.Controls.Add(this.lblActualTickets);
             this.Controls.Add(this.sidebar);
             this.Name = "FrmTickets";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmTickets";
             this.sidebar.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

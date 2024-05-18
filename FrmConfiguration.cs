@@ -14,15 +14,7 @@ namespace ProyectoGreenSpace
     {
         public FrmConfiguration()
         {
-
-            timer1.Start();
             InitializeComponent();
-        }
-
-        private void btnUser_Click(object sender, EventArgs e)
-        {
-            FrmUser user = new FrmUser();
-            user.ShowDialog();
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -38,10 +30,17 @@ namespace ProyectoGreenSpace
             }
         }
 
+        private void btnUser_Click(object sender, EventArgs e)
+        {
+            FrmUser user = new FrmUser();
+            user.Show();
+            this.Close();
+        }
+
         private void btnAdmin_Click(object sender, EventArgs e)
         {
             FrmAdmin admin = new FrmAdmin();
-            admin.ShowDialog();
+            admin.Show();
             this.Close();
         }
 
@@ -54,6 +53,8 @@ namespace ProyectoGreenSpace
 
         private void btnExit_Click(object sender, EventArgs e)
         {
+            FrmFilms frmFilms = new FrmFilms();
+            frmFilms.Show();
             this.Close();
         }
 

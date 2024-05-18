@@ -147,6 +147,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictBoxIcono);
             this.Name = "FrmConfiguration";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmConfiguration";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictBoxIcono)).EndInit();

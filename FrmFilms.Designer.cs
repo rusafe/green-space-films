@@ -80,6 +80,7 @@
             this.lblInfo1 = new System.Windows.Forms.Label();
             this.lblTitleMonth = new System.Windows.Forms.Label();
             this.pnlFilms = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.grbNextMovie8 = new System.Windows.Forms.GroupBox();
             this.lblNextInfo8 = new System.Windows.Forms.Label();
             this.pcbNextMovie8 = new System.Windows.Forms.PictureBox();
@@ -106,7 +107,6 @@
             this.pcbNextMovie5 = new System.Windows.Forms.PictureBox();
             this.lblNextInfo5 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.sidebar.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -133,6 +133,7 @@
             this.grbMovie1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbMovie1)).BeginInit();
             this.pnlFilms.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.grbNextMovie8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbNextMovie8)).BeginInit();
             this.grbNextMovie1.SuspendLayout();
@@ -150,7 +151,6 @@
             this.grbNextMovie5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbNextMovie5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // sidebar
@@ -226,6 +226,7 @@
             this.btnTicketOffice.Text = "               Taquilla";
             this.btnTicketOffice.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTicketOffice.UseVisualStyleBackColor = true;
+            this.btnTicketOffice.Click += new System.EventHandler(this.btnTicketOffice_Click);
             // 
             // panel3
             // 
@@ -247,6 +248,7 @@
             this.btnReviewTickets.Text = "          Revisar Tickets";
             this.btnReviewTickets.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnReviewTickets.UseVisualStyleBackColor = true;
+            this.btnReviewTickets.Click += new System.EventHandler(this.btnReviewTickets_Click);
             // 
             // panel4
             // 
@@ -268,6 +270,7 @@
             this.btnReviews.Text = "            Ver Reseñas";
             this.btnReviews.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnReviews.UseVisualStyleBackColor = true;
+            this.btnReviews.Click += new System.EventHandler(this.btnReviews_Click);
             // 
             // panel5
             // 
@@ -289,6 +292,7 @@
             this.btnWriteReview.Text = "          Escribir reseñas";
             this.btnWriteReview.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnWriteReview.UseVisualStyleBackColor = true;
+            this.btnWriteReview.Click += new System.EventHandler(this.btnWriteReview_Click);
             // 
             // panel6
             // 
@@ -424,6 +428,7 @@
             // 
             // pcbMovie8
             // 
+            this.pcbMovie8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pcbMovie8.Image = global::ProyectoGreenSpace.Properties.Resources.image_picture_icon_143003;
             this.pcbMovie8.Location = new System.Drawing.Point(30, 21);
             this.pcbMovie8.Name = "pcbMovie8";
@@ -431,6 +436,7 @@
             this.pcbMovie8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbMovie8.TabIndex = 8;
             this.pcbMovie8.TabStop = false;
+            this.pcbMovie8.Click += new System.EventHandler(this.pcbMovie8_Click);
             // 
             // grbMovie4
             // 
@@ -445,6 +451,7 @@
             // 
             // pcbMovie4
             // 
+            this.pcbMovie4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pcbMovie4.Image = global::ProyectoGreenSpace.Properties.Resources.image_picture_icon_143003;
             this.pcbMovie4.Location = new System.Drawing.Point(30, 21);
             this.pcbMovie4.Name = "pcbMovie4";
@@ -452,6 +459,7 @@
             this.pcbMovie4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbMovie4.TabIndex = 11;
             this.pcbMovie4.TabStop = false;
+            this.pcbMovie4.Click += new System.EventHandler(this.pcbMovie4_Click);
             // 
             // lblInfo4
             // 
@@ -485,6 +493,7 @@
             // 
             // pcbMovie7
             // 
+            this.pcbMovie7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pcbMovie7.Image = global::ProyectoGreenSpace.Properties.Resources.image_picture_icon_143003;
             this.pcbMovie7.Location = new System.Drawing.Point(41, 21);
             this.pcbMovie7.Name = "pcbMovie7";
@@ -492,6 +501,7 @@
             this.pcbMovie7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbMovie7.TabIndex = 8;
             this.pcbMovie7.TabStop = false;
+            this.pcbMovie7.Click += new System.EventHandler(this.pcbMovie7_Click);
             // 
             // grbMovie6
             // 
@@ -505,6 +515,7 @@
             // 
             // pcbMovie6
             // 
+            this.pcbMovie6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pcbMovie6.Image = global::ProyectoGreenSpace.Properties.Resources.image_picture_icon_143003;
             this.pcbMovie6.Location = new System.Drawing.Point(32, 21);
             this.pcbMovie6.Name = "pcbMovie6";
@@ -512,6 +523,7 @@
             this.pcbMovie6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbMovie6.TabIndex = 9;
             this.pcbMovie6.TabStop = false;
+            this.pcbMovie6.Click += new System.EventHandler(this.pcbMovie6_Click);
             // 
             // lblInfo6
             // 
@@ -536,6 +548,7 @@
             // 
             // pcbMovie5
             // 
+            this.pcbMovie5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pcbMovie5.Image = global::ProyectoGreenSpace.Properties.Resources.image_picture_icon_143003;
             this.pcbMovie5.Location = new System.Drawing.Point(34, 21);
             this.pcbMovie5.Name = "pcbMovie5";
@@ -543,6 +556,7 @@
             this.pcbMovie5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbMovie5.TabIndex = 10;
             this.pcbMovie5.TabStop = false;
+            this.pcbMovie5.Click += new System.EventHandler(this.pcbMovie5_Click);
             // 
             // lblInfo5
             // 
@@ -567,6 +581,7 @@
             // 
             // pcbMovie3
             // 
+            this.pcbMovie3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pcbMovie3.Image = global::ProyectoGreenSpace.Properties.Resources.image_picture_icon_143003;
             this.pcbMovie3.Location = new System.Drawing.Point(41, 21);
             this.pcbMovie3.Name = "pcbMovie3";
@@ -574,6 +589,7 @@
             this.pcbMovie3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbMovie3.TabIndex = 11;
             this.pcbMovie3.TabStop = false;
+            this.pcbMovie3.Click += new System.EventHandler(this.pcbMovie3_Click);
             // 
             // lblInfo3
             // 
@@ -598,6 +614,7 @@
             // 
             // pcbMovie2
             // 
+            this.pcbMovie2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pcbMovie2.Image = global::ProyectoGreenSpace.Properties.Resources.image_picture_icon_143003;
             this.pcbMovie2.Location = new System.Drawing.Point(32, 21);
             this.pcbMovie2.Name = "pcbMovie2";
@@ -605,6 +622,7 @@
             this.pcbMovie2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbMovie2.TabIndex = 9;
             this.pcbMovie2.TabStop = false;
+            this.pcbMovie2.Click += new System.EventHandler(this.pcbMovie2_Click);
             // 
             // lblInfo2
             // 
@@ -638,6 +656,7 @@
             // 
             // pcbMovie1
             // 
+            this.pcbMovie1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pcbMovie1.Image = global::ProyectoGreenSpace.Properties.Resources.image_picture_icon_143003;
             this.pcbMovie1.Location = new System.Drawing.Point(34, 21);
             this.pcbMovie1.Name = "pcbMovie1";
@@ -645,6 +664,7 @@
             this.pcbMovie1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbMovie1.TabIndex = 10;
             this.pcbMovie1.TabStop = false;
+            this.pcbMovie1.Click += new System.EventHandler(this.pcbMovie1_Click);
             // 
             // lblInfo1
             // 
@@ -692,6 +712,15 @@
             this.pnlFilms.Size = new System.Drawing.Size(1039, 796);
             this.pnlFilms.TabIndex = 39;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(423, 1553);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(127, 49);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 46;
+            this.pictureBox1.TabStop = false;
+            // 
             // grbNextMovie8
             // 
             this.grbNextMovie8.Controls.Add(this.lblNextInfo8);
@@ -714,6 +743,7 @@
             // 
             // pcbNextMovie8
             // 
+            this.pcbNextMovie8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pcbNextMovie8.Image = global::ProyectoGreenSpace.Properties.Resources.image_picture_icon_143003;
             this.pcbNextMovie8.Location = new System.Drawing.Point(30, 21);
             this.pcbNextMovie8.Name = "pcbNextMovie8";
@@ -721,6 +751,7 @@
             this.pcbNextMovie8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbNextMovie8.TabIndex = 8;
             this.pcbNextMovie8.TabStop = false;
+            this.pcbNextMovie8.Click += new System.EventHandler(this.pcbNextMovie8_Click);
             // 
             // grbNextMovie1
             // 
@@ -735,6 +766,7 @@
             // 
             // pcbNextMovie1
             // 
+            this.pcbNextMovie1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pcbNextMovie1.Image = global::ProyectoGreenSpace.Properties.Resources.image_picture_icon_143003;
             this.pcbNextMovie1.Location = new System.Drawing.Point(35, 21);
             this.pcbNextMovie1.Name = "pcbNextMovie1";
@@ -742,6 +774,7 @@
             this.pcbNextMovie1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbNextMovie1.TabIndex = 9;
             this.pcbNextMovie1.TabStop = false;
+            this.pcbNextMovie1.Click += new System.EventHandler(this.pcbNextMovie1_Click);
             // 
             // lblNextInfo1
             // 
@@ -766,6 +799,7 @@
             // 
             // pcbNextMovie4
             // 
+            this.pcbNextMovie4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pcbNextMovie4.Image = global::ProyectoGreenSpace.Properties.Resources.image_picture_icon_143003;
             this.pcbNextMovie4.Location = new System.Drawing.Point(30, 21);
             this.pcbNextMovie4.Name = "pcbNextMovie4";
@@ -773,6 +807,7 @@
             this.pcbNextMovie4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbNextMovie4.TabIndex = 11;
             this.pcbNextMovie4.TabStop = false;
+            this.pcbNextMovie4.Click += new System.EventHandler(this.pcbNextMovie4_Click);
             // 
             // lblNextInfo4
             // 
@@ -806,6 +841,7 @@
             // 
             // pcbNextMovie7
             // 
+            this.pcbNextMovie7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pcbNextMovie7.Image = global::ProyectoGreenSpace.Properties.Resources.image_picture_icon_143003;
             this.pcbNextMovie7.Location = new System.Drawing.Point(41, 21);
             this.pcbNextMovie7.Name = "pcbNextMovie7";
@@ -813,6 +849,7 @@
             this.pcbNextMovie7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbNextMovie7.TabIndex = 8;
             this.pcbNextMovie7.TabStop = false;
+            this.pcbNextMovie7.Click += new System.EventHandler(this.pcbNextMovie7_Click);
             // 
             // lblTitleNextMonth
             // 
@@ -837,6 +874,7 @@
             // 
             // pcbNextMovie2
             // 
+            this.pcbNextMovie2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pcbNextMovie2.Image = global::ProyectoGreenSpace.Properties.Resources.image_picture_icon_143003;
             this.pcbNextMovie2.Location = new System.Drawing.Point(32, 21);
             this.pcbNextMovie2.Name = "pcbNextMovie2";
@@ -844,6 +882,7 @@
             this.pcbNextMovie2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbNextMovie2.TabIndex = 9;
             this.pcbNextMovie2.TabStop = false;
+            this.pcbNextMovie2.Click += new System.EventHandler(this.pcbNextMovie2_Click);
             // 
             // lbNextlInfo2
             // 
@@ -867,6 +906,7 @@
             // 
             // pcbNextMovie6
             // 
+            this.pcbNextMovie6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pcbNextMovie6.Image = global::ProyectoGreenSpace.Properties.Resources.image_picture_icon_143003;
             this.pcbNextMovie6.Location = new System.Drawing.Point(32, 21);
             this.pcbNextMovie6.Name = "pcbNextMovie6";
@@ -874,6 +914,7 @@
             this.pcbNextMovie6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbNextMovie6.TabIndex = 9;
             this.pcbNextMovie6.TabStop = false;
+            this.pcbNextMovie6.Click += new System.EventHandler(this.pcbNextMovie6_Click);
             // 
             // lblNextInfo6
             // 
@@ -898,6 +939,7 @@
             // 
             // pcbNextMovie3
             // 
+            this.pcbNextMovie3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pcbNextMovie3.Image = global::ProyectoGreenSpace.Properties.Resources.image_picture_icon_143003;
             this.pcbNextMovie3.Location = new System.Drawing.Point(41, 21);
             this.pcbNextMovie3.Name = "pcbNextMovie3";
@@ -905,6 +947,7 @@
             this.pcbNextMovie3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbNextMovie3.TabIndex = 11;
             this.pcbNextMovie3.TabStop = false;
+            this.pcbNextMovie3.Click += new System.EventHandler(this.pcbNextMovie3_Click);
             // 
             // lblNextInfo3
             // 
@@ -929,6 +972,7 @@
             // 
             // pcbNextMovie5
             // 
+            this.pcbNextMovie5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pcbNextMovie5.Image = global::ProyectoGreenSpace.Properties.Resources.image_picture_icon_143003;
             this.pcbNextMovie5.Location = new System.Drawing.Point(34, 21);
             this.pcbNextMovie5.Name = "pcbNextMovie5";
@@ -936,6 +980,7 @@
             this.pcbNextMovie5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbNextMovie5.TabIndex = 10;
             this.pcbNextMovie5.TabStop = false;
+            this.pcbNextMovie5.Click += new System.EventHandler(this.pcbNextMovie5_Click);
             // 
             // lblNextInfo5
             // 
@@ -956,15 +1001,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 10;
             this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(423, 1553);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(127, 49);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 46;
-            this.pictureBox1.TabStop = false;
             // 
             // FrmFilms
             // 
@@ -1014,6 +1050,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pcbMovie1)).EndInit();
             this.pnlFilms.ResumeLayout(false);
             this.pnlFilms.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.grbNextMovie8.ResumeLayout(false);
             this.grbNextMovie8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbNextMovie8)).EndInit();
@@ -1039,7 +1076,6 @@
             this.grbNextMovie5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbNextMovie5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

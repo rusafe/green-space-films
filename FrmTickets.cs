@@ -60,14 +60,41 @@ namespace ProyectoGreenSpace
             sidebarTimer.Start();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        #region Acceso a formularios desde menú desplegable
+        private void btnTicketOffice_Click(object sender, EventArgs e)
         {
-
+            FrmFilms frmFilms = new FrmFilms();
+            frmFilms.Show();
+            this.Close();
         }
 
-        private void btnSearch_Click(object sender, EventArgs e)
+        private void btnReviewTickets_Click(object sender, EventArgs e)
         {
-
+            FrmTickets frmTickets = new FrmTickets();
+            frmTickets.Show();
+            this.Close();
         }
+
+        private void btnReviews_Click(object sender, EventArgs e)
+        {
+            FrmReviews frmReviews = new FrmReviews();
+            frmReviews.Show();
+            this.Close();
+        }
+
+        private void btnWriteReview_Click(object sender, EventArgs e)
+        {
+            FrmWriteReview frmWriteReview = new FrmWriteReview();
+            frmWriteReview.Show();
+            this.Close();
+        }
+
+        private void btnSettings_Click(object sender, EventArgs e)
+        {
+            FrmConfiguration frmConfiguration = new FrmConfiguration();
+            frmConfiguration.Show();
+            this.Close();
+        }
+        #endregion
     }
 }
