@@ -91,7 +91,7 @@ namespace ProyectoGreenSpace
 
         private void btnSettings_Click(object sender, EventArgs e)
         {
-            FrmConfiguration frmConfiguration = new FrmConfiguration();
+            FrmAdmin frmConfiguration = new FrmAdmin();
             frmConfiguration.Show();
             this.Close();
         }

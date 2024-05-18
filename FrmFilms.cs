@@ -311,9 +311,8 @@ namespace ProyectoGreenSpace
 
         private void btnSettings_Click(object sender, EventArgs e)
         {
-            FrmAccount frmAccount = new FrmAccount();
-            frmAccount.ShowDialog();
-            this.Close();
+            FrmUser frmUser = new FrmUser();
+            frmUser.Show();
         }
 
         private void AccessMovieTheater()
