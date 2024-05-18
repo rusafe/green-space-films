@@ -19,20 +19,29 @@ namespace ProyectoGreenSpace
 
         private void btnUser_Click(object sender, EventArgs e)
         {
-            //
+            FrmUser frmUser = new FrmUser();
+            frmUser.Show();
+            this.Close();
         }
 
-        private void btnAdmin_Click(object sender, System.EventArgs e)
+        private void btnAdmin_Click_1(object sender, EventArgs e)
         {
-            FrmAdmin form3 = new FrmAdmin();
-            form3.ShowDialog();
-
+            FrmAdmin frmAdmin = new FrmAdmin();
+            frmAdmin.Show();
+            this.Close();
         }
 
-        private void btnAccount_Click(object sender, System.EventArgs e)
+        private void btnAccount_Click_1(object sender, EventArgs e)
         {
-            FrmAccount form4 = new FrmAccount();
-            form4.ShowDialog();
+            FrmAccount frmAccount = new FrmAccount();
+            frmAccount.Show();
+            this.Close();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
         }
     }
 }

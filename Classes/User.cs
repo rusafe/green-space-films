@@ -2,6 +2,7 @@
 using ProyectoGreenSpace.Classes;
 using System;
 using System.Drawing;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace ProyectoGreenSpace
 {
@@ -56,11 +57,11 @@ namespace ProyectoGreenSpace
                 command.Parameters.AddWithValue("@username", username);
                 command.Parameters.AddWithValue("@password", password);
                 command.Parameters.AddWithValue("@mail", mail);
-                                                                            // (2) Para registrar como usuario del sistema.
+                // (2) Para registrar como usuario del sistema.
                 result = command.ExecuteNonQuery();
             }
             ConnectionBD.CloseConnection();
-            
+
             return result;
         }
 
@@ -145,11 +146,54 @@ namespace ProyectoGreenSpace
         {
             string updateQuery = "UPDATE users SET password = @newPassword WHERE username = @username";
             MySqlCommand updateCommand = new MySqlCommand(updateQuery, ConnectionBD.Connection);
-            
+
             updateCommand.Parameters.AddWithValue("@newPassword", newPassword);
             updateCommand.Parameters.AddWithValue("@username", Username);
             reader.Close();
             updateCommand.ExecuteNonQuery();
         }
-    }
+
+        public static bool CheckPassword(string username, string password)
+        {
+            bool check = false;
+
+            string query = String.Format("SELECT password FROM users WHERE username = @username");
+            MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
+            command.Parameters.AddWithValue("@username", username);
+
+            ConnectionBD.OpenConnection();
+            using (MySqlDataReader reader = command.ExecuteReader())
+            {
+                if (reader.Read())
+                {
+                    Controller passwordCifrated = new Controller();
+                    if (reader["password"].ToString() == password)
+                    {
+                        check = true;
+                    }
+                }
+            }
+            ConnectionBD.CloseConnection();
+            return check;
+        }
+
+        public static bool IsAdministrator(string username)
+        {
+            bool isAdmin = false;
+            string query = String.Format("SELECT admin FROM users WHERE username = @username");
+            MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
+            command.Parameters.AddWithValue("@username", username);
+
+            ConnectionBD.OpenConnection();
+            using (MySqlDataReader reader = command.ExecuteReader())
+            {
+                if (reader.Read())
+                {
+                    isAdmin = Convert.ToBoolean(reader["admin"]);
+                }
+            }
+            ConnectionBD.CloseConnection();
+            return isAdmin;
+        }
+}
 }

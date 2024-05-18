@@ -41,7 +41,6 @@
             this.pictBoxPhotoPerfil = new System.Windows.Forms.PictureBox();
             this.btnChangePassword = new System.Windows.Forms.Button();
             this.lblNameUser = new System.Windows.Forms.Label();
-            this.btnSave = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.pictBoxIcono = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
@@ -69,6 +68,7 @@
             this.btnAccount.TabIndex = 13;
             this.btnAccount.Text = "Cuenta";
             this.btnAccount.UseVisualStyleBackColor = false;
+            this.btnAccount.Click += new System.EventHandler(this.btnAccount_Click_1);
             // 
             // btnAdmin
             // 
@@ -80,6 +80,7 @@
             this.btnAdmin.TabIndex = 13;
             this.btnAdmin.Text = "Admin";
             this.btnAdmin.UseVisualStyleBackColor = false;
+            this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click_1);
             // 
             // btnUser
             // 
@@ -179,27 +180,17 @@
             this.lblNameUser.TabIndex = 33;
             this.lblNameUser.Text = "Nombre de Usuario:";
             // 
-            // btnSave
-            // 
-            this.btnSave.BackColor = System.Drawing.Color.Cyan;
-            this.btnSave.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnSave.Location = new System.Drawing.Point(585, 555);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(168, 53);
-            this.btnSave.TabIndex = 32;
-            this.btnSave.Text = "Guardar";
-            this.btnSave.UseVisualStyleBackColor = false;
-            // 
             // btnExit
             // 
             this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnExit.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnExit.Location = new System.Drawing.Point(363, 557);
+            this.btnExit.Location = new System.Drawing.Point(632, 596);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(168, 53);
             this.btnExit.TabIndex = 31;
-            this.btnExit.Text = "Volver";
+            this.btnExit.Text = "Salir";
             this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // pictBoxIcono
             // 
@@ -227,7 +218,6 @@
             this.Controls.Add(this.pictBoxPhotoPerfil);
             this.Controls.Add(this.btnChangePassword);
             this.Controls.Add(this.lblNameUser);
-            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.pictBoxIcono);
             this.Name = "FrmUser";
@@ -255,7 +245,6 @@
         private System.Windows.Forms.PictureBox pictBoxPhotoPerfil;
         private System.Windows.Forms.Button btnChangePassword;
         private System.Windows.Forms.Label lblNameUser;
-        private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.PictureBox pictBoxIcono;
     }
