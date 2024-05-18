@@ -23,6 +23,22 @@ namespace ProyectoGreenSpace.Classes
         private bool premiering;
         private bool nextPremiering;
 
+        public string Name { get { return name; } }
+        public TimeSpan Duration { get { return duration; } }
+
+        public Film(string name, string synopsis, Image cover, TimeSpan duration, int minAge, double price, string[] genres, bool premiering, bool nextPremiering)
+        {
+            this.name = name;
+            this.synopsis = synopsis;
+            this.cover = cover;
+            this.duration = duration;
+            this.minAge = minAge;
+            this.price = price;
+            this.genres = genres;
+            this.premiering = premiering;
+            this.nextPremiering = nextPremiering;
+        }
+
         public Film(int id, string name, string synopsis, Image cover, TimeSpan duration, int minAge, double price, string[] genres, bool premiering, bool nextPremiering)
         {
             this.id = id;
@@ -37,13 +53,35 @@ namespace ProyectoGreenSpace.Classes
             this.nextPremiering = nextPremiering;
         }
 
+        public void Create()
+        {
+            string query = "INSERT INTO (name, synopsis, cover, duration, minAge, price, genres, premiering, next_premiering) VALUES (@name, @synopsis, @cover, @duration, @minAge, @price, @genres, @premiering, @nextPremiering)";
+
+            MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
+            command.Parameters.AddWithValue("@name", name);
+            command.Parameters.AddWithValue("@synopsis", synopsis);
+            command.Parameters.AddWithValue("@cover", ImagesDB.ImageToBytes(cover));
+            command.Parameters.AddWithValue("@duration", duration);
+            command.Parameters.AddWithValue("@minAge", minAge);
+            command.Parameters.AddWithValue("@price", price);
+            command.Parameters.AddWithValue("@genres", genres);
+            command.Parameters.AddWithValue("@premiering", premiering);
+            command.Parameters.AddWithValue("@nextPremiering", nextPremiering);
+
+            ConnectionBD.OpenConnection();
+            
+            command.ExecuteNonQuery();
+
+            ConnectionBD.CloseConnection();
+        }
+
         public double TotalScore()
         {
-            string queryString = "SELECT AVG(score) FROM reviews WHERE fimlId = @film";
+            string query = "SELECT AVG(score) FROM reviews WHERE fimlId = @film";
 
             ConnectionBD.OpenConnection();
 
-            MySqlCommand command = new MySqlCommand(queryString, ConnectionBD.Connection);
+            MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
             command.Parameters.AddWithValue("@film", id);
             double score = Convert.ToDouble(command.ExecuteScalar());
 

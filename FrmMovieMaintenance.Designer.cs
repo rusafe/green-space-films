@@ -59,6 +59,7 @@
             this.premiering = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnBack = new System.Windows.Forms.Button();
             this.ofdSelect = new System.Windows.Forms.OpenFileDialog();
+            this.chbNextPremiering = new System.Windows.Forms.CheckBox();
             this.grpMaintenance.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudMinAge)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pibImage)).BeginInit();
@@ -68,6 +69,7 @@
             // 
             // grpMaintenance
             // 
+            this.grpMaintenance.Controls.Add(this.chbNextPremiering);
             this.grpMaintenance.Controls.Add(this.chbPremiering);
             this.grpMaintenance.Controls.Add(this.cmbGenre);
             this.grpMaintenance.Controls.Add(this.lblGenre);
@@ -99,7 +101,7 @@
             this.chbPremiering.Location = new System.Drawing.Point(30, 467);
             this.chbPremiering.Margin = new System.Windows.Forms.Padding(2);
             this.chbPremiering.Name = "chbPremiering";
-            this.chbPremiering.Size = new System.Drawing.Size(190, 25);
+            this.chbPremiering.Size = new System.Drawing.Size(160, 23);
             this.chbPremiering.TabIndex = 15;
             this.chbPremiering.Text = "Estreno de película";
             this.chbPremiering.UseVisualStyleBackColor = true;
@@ -120,7 +122,7 @@
             this.cmbGenre.Location = new System.Drawing.Point(314, 416);
             this.cmbGenre.Margin = new System.Windows.Forms.Padding(2);
             this.cmbGenre.Name = "cmbGenre";
-            this.cmbGenre.Size = new System.Drawing.Size(102, 29);
+            this.cmbGenre.Size = new System.Drawing.Size(102, 27);
             this.cmbGenre.TabIndex = 13;
             // 
             // lblGenre
@@ -129,7 +131,7 @@
             this.lblGenre.Location = new System.Drawing.Point(269, 382);
             this.lblGenre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblGenre.Name = "lblGenre";
-            this.lblGenre.Size = new System.Drawing.Size(85, 21);
+            this.lblGenre.Size = new System.Drawing.Size(70, 19);
             this.lblGenre.TabIndex = 12;
             this.lblGenre.Text = "Géneros:";
             // 
@@ -138,7 +140,7 @@
             this.txtPrice.Location = new System.Drawing.Point(30, 415);
             this.txtPrice.Margin = new System.Windows.Forms.Padding(2);
             this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(205, 28);
+            this.txtPrice.Size = new System.Drawing.Size(205, 24);
             this.txtPrice.TabIndex = 11;
             // 
             // lblPrice
@@ -147,7 +149,7 @@
             this.lblPrice.Location = new System.Drawing.Point(26, 382);
             this.lblPrice.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(66, 21);
+            this.lblPrice.Size = new System.Drawing.Size(55, 19);
             this.lblPrice.TabIndex = 10;
             this.lblPrice.Text = "Precio:";
             // 
@@ -156,7 +158,7 @@
             this.nudMinAge.Location = new System.Drawing.Point(346, 330);
             this.nudMinAge.Margin = new System.Windows.Forms.Padding(2);
             this.nudMinAge.Name = "nudMinAge";
-            this.nudMinAge.Size = new System.Drawing.Size(69, 28);
+            this.nudMinAge.Size = new System.Drawing.Size(69, 24);
             this.nudMinAge.TabIndex = 9;
             // 
             // lblMinAge
@@ -165,7 +167,7 @@
             this.lblMinAge.Location = new System.Drawing.Point(269, 295);
             this.lblMinAge.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblMinAge.Name = "lblMinAge";
-            this.lblMinAge.Size = new System.Drawing.Size(125, 21);
+            this.lblMinAge.Size = new System.Drawing.Size(104, 19);
             this.lblMinAge.TabIndex = 8;
             this.lblMinAge.Text = "Años mínimos:";
             // 
@@ -174,7 +176,7 @@
             this.txtDuration.Location = new System.Drawing.Point(30, 329);
             this.txtDuration.Margin = new System.Windows.Forms.Padding(2);
             this.txtDuration.Name = "txtDuration";
-            this.txtDuration.Size = new System.Drawing.Size(205, 28);
+            this.txtDuration.Size = new System.Drawing.Size(205, 24);
             this.txtDuration.TabIndex = 7;
             // 
             // lblDuration
@@ -183,7 +185,7 @@
             this.lblDuration.Location = new System.Drawing.Point(26, 295);
             this.lblDuration.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDuration.Name = "lblDuration";
-            this.lblDuration.Size = new System.Drawing.Size(90, 21);
+            this.lblDuration.Size = new System.Drawing.Size(76, 19);
             this.lblDuration.TabIndex = 6;
             this.lblDuration.Text = "Duración:";
             // 
@@ -224,7 +226,7 @@
             this.lblSynopsis.Location = new System.Drawing.Point(26, 131);
             this.lblSynopsis.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSynopsis.Name = "lblSynopsis";
-            this.lblSynopsis.Size = new System.Drawing.Size(76, 21);
+            this.lblSynopsis.Size = new System.Drawing.Size(64, 19);
             this.lblSynopsis.TabIndex = 2;
             this.lblSynopsis.Text = "Sinopsis:";
             // 
@@ -233,7 +235,7 @@
             this.txtFilm.Location = new System.Drawing.Point(30, 80);
             this.txtFilm.Margin = new System.Windows.Forms.Padding(2);
             this.txtFilm.Name = "txtFilm";
-            this.txtFilm.Size = new System.Drawing.Size(205, 28);
+            this.txtFilm.Size = new System.Drawing.Size(205, 24);
             this.txtFilm.TabIndex = 1;
             // 
             // lblFilm
@@ -242,7 +244,7 @@
             this.lblFilm.Location = new System.Drawing.Point(26, 46);
             this.lblFilm.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFilm.Name = "lblFilm";
-            this.lblFilm.Size = new System.Drawing.Size(78, 21);
+            this.lblFilm.Size = new System.Drawing.Size(67, 19);
             this.lblFilm.TabIndex = 0;
             this.lblFilm.Text = "Película:";
             // 
@@ -252,7 +254,7 @@
             this.lblClock.Location = new System.Drawing.Point(35, 41);
             this.lblClock.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblClock.Name = "lblClock";
-            this.lblClock.Size = new System.Drawing.Size(60, 21);
+            this.lblClock.Size = new System.Drawing.Size(52, 19);
             this.lblClock.TabIndex = 2;
             this.lblClock.Text = "label3";
             // 
@@ -262,7 +264,7 @@
             this.lblDate.Location = new System.Drawing.Point(169, 41);
             this.lblDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(60, 21);
+            this.lblDate.Size = new System.Drawing.Size(52, 19);
             this.lblDate.TabIndex = 3;
             this.lblDate.Text = "label4";
             // 
@@ -381,9 +383,20 @@
             // 
             this.ofdSelect.FileName = "ofdSeleccionar";
             // 
+            // chbNextPremiering
+            // 
+            this.chbNextPremiering.AutoSize = true;
+            this.chbNextPremiering.Location = new System.Drawing.Point(30, 494);
+            this.chbNextPremiering.Margin = new System.Windows.Forms.Padding(2);
+            this.chbNextPremiering.Name = "chbNextPremiering";
+            this.chbNextPremiering.Size = new System.Drawing.Size(134, 23);
+            this.chbNextPremiering.TabIndex = 16;
+            this.chbNextPremiering.Text = "Proximo Estreno";
+            this.chbNextPremiering.UseVisualStyleBackColor = true;
+            // 
             // FrmMovieMaintenance
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1359, 599);
             this.Controls.Add(this.btnBack);
@@ -439,5 +452,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn premiering;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.OpenFileDialog ofdSelect;
+        private System.Windows.Forms.CheckBox chbNextPremiering;
     }
 }
