@@ -32,21 +32,25 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmWriteReview));
             this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnMenu = new System.Windows.Forms.Button();
             this.lblMenu = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnTicketOffice = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnReviewTickets = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.btnReviews = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.btnWriteReview = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.btnUser = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.btnSettings = new System.Windows.Forms.Button();
             this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
             this.pnlReviews = new System.Windows.Forms.Panel();
-            this.grpReview = new System.Windows.Forms.GroupBox();
-            this.lblTitleReview = new System.Windows.Forms.Label();
-            this.rtxReview1 = new System.Windows.Forms.RichTextBox();
-            this.cklStars = new System.Windows.Forms.CheckedListBox();
             this.pctSpace = new System.Windows.Forms.PictureBox();
+            this.grpReview = new System.Windows.Forms.GroupBox();
             this.btnResset = new System.Windows.Forms.Button();
             this.pctStar15 = new System.Windows.Forms.PictureBox();
             this.pctStar14 = new System.Windows.Forms.PictureBox();
@@ -64,13 +68,9 @@
             this.pctStar2 = new System.Windows.Forms.PictureBox();
             this.pctStar1 = new System.Windows.Forms.PictureBox();
             this.btnSend = new System.Windows.Forms.Button();
-            this.btnMenu = new System.Windows.Forms.Button();
-            this.btnTicketOffice = new System.Windows.Forms.Button();
-            this.btnReviewTickets = new System.Windows.Forms.Button();
-            this.btnReviews = new System.Windows.Forms.Button();
-            this.btnWriteReview = new System.Windows.Forms.Button();
-            this.btnUser = new System.Windows.Forms.Button();
-            this.btnSettings = new System.Windows.Forms.Button();
+            this.cklStars = new System.Windows.Forms.CheckedListBox();
+            this.lblTitleReview = new System.Windows.Forms.Label();
+            this.rtxReview1 = new System.Windows.Forms.RichTextBox();
             this.sidebar.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -80,8 +80,8 @@
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
             this.pnlReviews.SuspendLayout();
-            this.grpReview.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctSpace)).BeginInit();
+            this.grpReview.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctStar15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctStar14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctStar13)).BeginInit();
@@ -126,6 +126,21 @@
             this.panel2.Size = new System.Drawing.Size(239, 100);
             this.panel2.TabIndex = 0;
             // 
+            // btnMenu
+            // 
+            this.btnMenu.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnMenu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMenu.Image = global::ProyectoGreenSpace.Properties.Resources.menu_three_outlined_rounded_lines_symbol_icon_icons_com_73215;
+            this.btnMenu.Location = new System.Drawing.Point(9, 24);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(54, 53);
+            this.btnMenu.TabIndex = 23;
+            this.btnMenu.Text = "   ";
+            this.btnMenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMenu.UseVisualStyleBackColor = true;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
+            this.btnMenu.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnMenu_MouseClick);
+            // 
             // lblMenu
             // 
             this.lblMenu.AutoSize = true;
@@ -144,6 +159,19 @@
             this.panel1.Size = new System.Drawing.Size(239, 61);
             this.panel1.TabIndex = 1;
             // 
+            // btnTicketOffice
+            // 
+            this.btnTicketOffice.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTicketOffice.Image = ((System.Drawing.Image)(resources.GetObject("btnTicketOffice.Image")));
+            this.btnTicketOffice.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTicketOffice.Location = new System.Drawing.Point(3, 3);
+            this.btnTicketOffice.Name = "btnTicketOffice";
+            this.btnTicketOffice.Size = new System.Drawing.Size(233, 52);
+            this.btnTicketOffice.TabIndex = 22;
+            this.btnTicketOffice.Text = "               Taquilla";
+            this.btnTicketOffice.UseVisualStyleBackColor = true;
+            this.btnTicketOffice.Click += new System.EventHandler(this.btnTicketOffice_Click);
+            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.btnReviewTickets);
@@ -151,6 +179,19 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(239, 54);
             this.panel3.TabIndex = 2;
+            // 
+            // btnReviewTickets
+            // 
+            this.btnReviewTickets.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReviewTickets.Image = ((System.Drawing.Image)(resources.GetObject("btnReviewTickets.Image")));
+            this.btnReviewTickets.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReviewTickets.Location = new System.Drawing.Point(3, 0);
+            this.btnReviewTickets.Name = "btnReviewTickets";
+            this.btnReviewTickets.Size = new System.Drawing.Size(233, 53);
+            this.btnReviewTickets.TabIndex = 23;
+            this.btnReviewTickets.Text = "          Revisar Tickets";
+            this.btnReviewTickets.UseVisualStyleBackColor = true;
+            this.btnReviewTickets.Click += new System.EventHandler(this.btnReviewTickets_Click);
             // 
             // panel4
             // 
@@ -160,6 +201,19 @@
             this.panel4.Size = new System.Drawing.Size(239, 62);
             this.panel4.TabIndex = 3;
             // 
+            // btnReviews
+            // 
+            this.btnReviews.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReviews.Image = ((System.Drawing.Image)(resources.GetObject("btnReviews.Image")));
+            this.btnReviews.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReviews.Location = new System.Drawing.Point(3, 5);
+            this.btnReviews.Name = "btnReviews";
+            this.btnReviews.Size = new System.Drawing.Size(233, 54);
+            this.btnReviews.TabIndex = 24;
+            this.btnReviews.Text = "          Ver  Reseñas";
+            this.btnReviews.UseVisualStyleBackColor = true;
+            this.btnReviews.Click += new System.EventHandler(this.btnReviews_Click);
+            // 
             // panel5
             // 
             this.panel5.Controls.Add(this.btnWriteReview);
@@ -167,6 +221,19 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(239, 68);
             this.panel5.TabIndex = 4;
+            // 
+            // btnWriteReview
+            // 
+            this.btnWriteReview.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnWriteReview.Image = ((System.Drawing.Image)(resources.GetObject("btnWriteReview.Image")));
+            this.btnWriteReview.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnWriteReview.Location = new System.Drawing.Point(3, 7);
+            this.btnWriteReview.Name = "btnWriteReview";
+            this.btnWriteReview.Size = new System.Drawing.Size(233, 58);
+            this.btnWriteReview.TabIndex = 24;
+            this.btnWriteReview.Text = "          Escribir Reseña";
+            this.btnWriteReview.UseVisualStyleBackColor = true;
+            this.btnWriteReview.Click += new System.EventHandler(this.btnWriteReview_Click);
             // 
             // panel6
             // 
@@ -183,6 +250,18 @@
             this.panel7.Size = new System.Drawing.Size(239, 56);
             this.panel7.TabIndex = 6;
             // 
+            // btnUser
+            // 
+            this.btnUser.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUser.Image = ((System.Drawing.Image)(resources.GetObject("btnUser.Image")));
+            this.btnUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUser.Location = new System.Drawing.Point(3, 2);
+            this.btnUser.Name = "btnUser";
+            this.btnUser.Size = new System.Drawing.Size(233, 52);
+            this.btnUser.TabIndex = 24;
+            this.btnUser.Text = "               Usuario";
+            this.btnUser.UseVisualStyleBackColor = true;
+            // 
             // panel8
             // 
             this.panel8.Controls.Add(this.btnSettings);
@@ -190,6 +269,19 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(239, 54);
             this.panel8.TabIndex = 7;
+            // 
+            // btnSettings
+            // 
+            this.btnSettings.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSettings.Image = ((System.Drawing.Image)(resources.GetObject("btnSettings.Image")));
+            this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSettings.Location = new System.Drawing.Point(3, 3);
+            this.btnSettings.Name = "btnSettings";
+            this.btnSettings.Size = new System.Drawing.Size(233, 48);
+            this.btnSettings.TabIndex = 24;
+            this.btnSettings.Text = "          Configuración";
+            this.btnSettings.UseVisualStyleBackColor = true;
+            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
             // sidebarTimer
             // 
@@ -208,6 +300,15 @@
             this.pnlReviews.Name = "pnlReviews";
             this.pnlReviews.Size = new System.Drawing.Size(1079, 716);
             this.pnlReviews.TabIndex = 41;
+            // 
+            // pctSpace
+            // 
+            this.pctSpace.Location = new System.Drawing.Point(461, 831);
+            this.pctSpace.Name = "pctSpace";
+            this.pctSpace.Size = new System.Drawing.Size(127, 22);
+            this.pctSpace.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctSpace.TabIndex = 46;
+            this.pctSpace.TabStop = false;
             // 
             // grpReview
             // 
@@ -238,52 +339,6 @@
             this.grpReview.TabIndex = 61;
             this.grpReview.TabStop = false;
             // 
-            // lblTitleReview
-            // 
-            this.lblTitleReview.AutoSize = true;
-            this.lblTitleReview.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitleReview.Location = new System.Drawing.Point(359, 47);
-            this.lblTitleReview.Name = "lblTitleReview";
-            this.lblTitleReview.Size = new System.Drawing.Size(275, 27);
-            this.lblTitleReview.TabIndex = 65;
-            this.lblTitleReview.Text = "Escribe aquí tu reseña...";
-            this.lblTitleReview.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTitleReview.Click += new System.EventHandler(this.lblTitleReview_Click);
-            // 
-            // rtxReview1
-            // 
-            this.rtxReview1.Location = new System.Drawing.Point(47, 101);
-            this.rtxReview1.Name = "rtxReview1";
-            this.rtxReview1.Size = new System.Drawing.Size(830, 329);
-            this.rtxReview1.TabIndex = 47;
-            this.rtxReview1.Text = "";
-            // 
-            // cklStars
-            // 
-            this.cklStars.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.cklStars.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cklStars.FormattingEnabled = true;
-            this.cklStars.Items.AddRange(new object[] {
-            "5 ",
-            "4 ",
-            "3 ",
-            "2 ",
-            "1 "});
-            this.cklStars.Location = new System.Drawing.Point(58, 446);
-            this.cklStars.Name = "cklStars";
-            this.cklStars.Size = new System.Drawing.Size(297, 216);
-            this.cklStars.TabIndex = 66;
-            this.cklStars.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.cklStars_ItemCheck);
-            // 
-            // pctSpace
-            // 
-            this.pctSpace.Location = new System.Drawing.Point(461, 831);
-            this.pctSpace.Name = "pctSpace";
-            this.pctSpace.Size = new System.Drawing.Size(127, 22);
-            this.pctSpace.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctSpace.TabIndex = 46;
-            this.pctSpace.TabStop = false;
-            // 
             // btnResset
             // 
             this.btnResset.BackColor = System.Drawing.Color.LightCoral;
@@ -296,6 +351,7 @@
             this.btnResset.Text = "Reestablecer ";
             this.btnResset.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnResset.UseVisualStyleBackColor = false;
+            this.btnResset.Click += new System.EventHandler(this.btnResset_Click);
             // 
             // pctStar15
             // 
@@ -458,93 +514,43 @@
             this.btnSend.TabIndex = 67;
             this.btnSend.Text = "Enviar";
             this.btnSend.UseVisualStyleBackColor = false;
+            this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
-            // btnMenu
+            // cklStars
             // 
-            this.btnMenu.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnMenu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMenu.Image = global::ProyectoGreenSpace.Properties.Resources.menu_three_outlined_rounded_lines_symbol_icon_icons_com_73215;
-            this.btnMenu.Location = new System.Drawing.Point(9, 24);
-            this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(54, 53);
-            this.btnMenu.TabIndex = 23;
-            this.btnMenu.Text = "   ";
-            this.btnMenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMenu.UseVisualStyleBackColor = true;
-            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
-            this.btnMenu.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnMenu_MouseClick);
+            this.cklStars.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.cklStars.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cklStars.FormattingEnabled = true;
+            this.cklStars.Items.AddRange(new object[] {
+            "5 ",
+            "4 ",
+            "3 ",
+            "2 ",
+            "1 "});
+            this.cklStars.Location = new System.Drawing.Point(58, 446);
+            this.cklStars.Name = "cklStars";
+            this.cklStars.Size = new System.Drawing.Size(297, 216);
+            this.cklStars.TabIndex = 66;
+            this.cklStars.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.cklStars_ItemCheck);
             // 
-            // btnTicketOffice
+            // lblTitleReview
             // 
-            this.btnTicketOffice.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTicketOffice.Image = ((System.Drawing.Image)(resources.GetObject("btnTicketOffice.Image")));
-            this.btnTicketOffice.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTicketOffice.Location = new System.Drawing.Point(3, 3);
-            this.btnTicketOffice.Name = "btnTicketOffice";
-            this.btnTicketOffice.Size = new System.Drawing.Size(233, 52);
-            this.btnTicketOffice.TabIndex = 22;
-            this.btnTicketOffice.Text = "               Taquilla";
-            this.btnTicketOffice.UseVisualStyleBackColor = true;
+            this.lblTitleReview.AutoSize = true;
+            this.lblTitleReview.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitleReview.Location = new System.Drawing.Point(359, 47);
+            this.lblTitleReview.Name = "lblTitleReview";
+            this.lblTitleReview.Size = new System.Drawing.Size(275, 27);
+            this.lblTitleReview.TabIndex = 65;
+            this.lblTitleReview.Text = "Escribe aquí tu reseña...";
+            this.lblTitleReview.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnReviewTickets
+            // rtxReview1
             // 
-            this.btnReviewTickets.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReviewTickets.Image = ((System.Drawing.Image)(resources.GetObject("btnReviewTickets.Image")));
-            this.btnReviewTickets.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReviewTickets.Location = new System.Drawing.Point(3, 0);
-            this.btnReviewTickets.Name = "btnReviewTickets";
-            this.btnReviewTickets.Size = new System.Drawing.Size(233, 53);
-            this.btnReviewTickets.TabIndex = 23;
-            this.btnReviewTickets.Text = "          Revisar Tickets";
-            this.btnReviewTickets.UseVisualStyleBackColor = true;
-            // 
-            // btnReviews
-            // 
-            this.btnReviews.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReviews.Image = ((System.Drawing.Image)(resources.GetObject("btnReviews.Image")));
-            this.btnReviews.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReviews.Location = new System.Drawing.Point(3, 5);
-            this.btnReviews.Name = "btnReviews";
-            this.btnReviews.Size = new System.Drawing.Size(233, 54);
-            this.btnReviews.TabIndex = 24;
-            this.btnReviews.Text = "          Ver  Reseñas";
-            this.btnReviews.UseVisualStyleBackColor = true;
-            // 
-            // btnWriteReview
-            // 
-            this.btnWriteReview.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnWriteReview.Image = ((System.Drawing.Image)(resources.GetObject("btnWriteReview.Image")));
-            this.btnWriteReview.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnWriteReview.Location = new System.Drawing.Point(3, 7);
-            this.btnWriteReview.Name = "btnWriteReview";
-            this.btnWriteReview.Size = new System.Drawing.Size(233, 58);
-            this.btnWriteReview.TabIndex = 24;
-            this.btnWriteReview.Text = "          Escribir Reseña";
-            this.btnWriteReview.UseVisualStyleBackColor = true;
-            // 
-            // btnUser
-            // 
-            this.btnUser.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUser.Image = ((System.Drawing.Image)(resources.GetObject("btnUser.Image")));
-            this.btnUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUser.Location = new System.Drawing.Point(3, 2);
-            this.btnUser.Name = "btnUser";
-            this.btnUser.Size = new System.Drawing.Size(233, 52);
-            this.btnUser.TabIndex = 24;
-            this.btnUser.Text = "               Usuario";
-            this.btnUser.UseVisualStyleBackColor = true;
-            // 
-            // btnSettings
-            // 
-            this.btnSettings.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSettings.Image = ((System.Drawing.Image)(resources.GetObject("btnSettings.Image")));
-            this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSettings.Location = new System.Drawing.Point(3, 3);
-            this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Size = new System.Drawing.Size(233, 48);
-            this.btnSettings.TabIndex = 24;
-            this.btnSettings.Text = "          Configuración";
-            this.btnSettings.UseVisualStyleBackColor = true;
+            this.rtxReview1.Location = new System.Drawing.Point(47, 101);
+            this.rtxReview1.Name = "rtxReview1";
+            this.rtxReview1.Size = new System.Drawing.Size(830, 329);
+            this.rtxReview1.TabIndex = 47;
+            this.rtxReview1.Text = "";
             // 
             // FrmWriteReview
             // 
@@ -554,6 +560,7 @@
             this.Controls.Add(this.pnlReviews);
             this.Controls.Add(this.sidebar);
             this.Name = "FrmWriteReview";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmWriteReview";
             this.sidebar.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -565,9 +572,9 @@
             this.panel7.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.pnlReviews.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pctSpace)).EndInit();
             this.grpReview.ResumeLayout(false);
             this.grpReview.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pctSpace)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctStar15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctStar14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctStar13)).EndInit();

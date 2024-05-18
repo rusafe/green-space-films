@@ -70,6 +70,7 @@
             this.btnBack.TabIndex = 53;
             this.btnBack.Text = "Atrás";
             this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // btnCancel
             // 
@@ -81,6 +82,7 @@
             this.btnCancel.TabIndex = 52;
             this.btnCancel.Text = "Cancelar";
             this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnPay
             // 
@@ -92,6 +94,7 @@
             this.btnPay.TabIndex = 51;
             this.btnPay.Text = "Pagar";
             this.btnPay.UseVisualStyleBackColor = false;
+            this.btnPay.Click += new System.EventHandler(this.btnPay_Click);
             // 
             // lblTotalApplied
             // 
@@ -191,7 +194,6 @@
             this.txtSeating.Location = new System.Drawing.Point(405, 322);
             this.txtSeating.Multiline = true;
             this.txtSeating.Name = "txtSeating";
-            this.txtSeating.ReadOnly = true;
             this.txtSeating.Size = new System.Drawing.Size(200, 67);
             this.txtSeating.TabIndex = 34;
             this.txtSeating.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -199,79 +201,72 @@
             // txtDiscounts
             // 
             this.txtDiscounts.BackColor = System.Drawing.Color.White;
+            this.txtDiscounts.Enabled = false;
             this.txtDiscounts.Location = new System.Drawing.Point(17, 333);
             this.txtDiscounts.Multiline = true;
             this.txtDiscounts.Name = "txtDiscounts";
-            this.txtDiscounts.ReadOnly = true;
             this.txtDiscounts.Size = new System.Drawing.Size(232, 43);
             this.txtDiscounts.TabIndex = 33;
-            this.txtDiscounts.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtTypeHall
             // 
             this.txtTypeHall.BackColor = System.Drawing.Color.White;
+            this.txtTypeHall.Enabled = false;
             this.txtTypeHall.Location = new System.Drawing.Point(412, 108);
             this.txtTypeHall.Multiline = true;
             this.txtTypeHall.Name = "txtTypeHall";
-            this.txtTypeHall.ReadOnly = true;
             this.txtTypeHall.Size = new System.Drawing.Size(193, 43);
             this.txtTypeHall.TabIndex = 32;
-            this.txtTypeHall.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.White;
+            this.textBox1.Enabled = false;
             this.textBox1.Location = new System.Drawing.Point(17, 225);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(170, 43);
             this.textBox1.TabIndex = 31;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtShedule
             // 
             this.txtShedule.BackColor = System.Drawing.Color.White;
+            this.txtShedule.Enabled = false;
             this.txtShedule.Location = new System.Drawing.Point(235, 225);
             this.txtShedule.Multiline = true;
             this.txtShedule.Name = "txtShedule";
-            this.txtShedule.ReadOnly = true;
             this.txtShedule.Size = new System.Drawing.Size(93, 43);
             this.txtShedule.TabIndex = 30;
-            this.txtShedule.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtDuration
             // 
             this.txtDuration.BackColor = System.Drawing.Color.White;
+            this.txtDuration.Enabled = false;
             this.txtDuration.Location = new System.Drawing.Point(386, 221);
             this.txtDuration.Multiline = true;
             this.txtDuration.Name = "txtDuration";
-            this.txtDuration.ReadOnly = true;
             this.txtDuration.Size = new System.Drawing.Size(93, 43);
             this.txtDuration.TabIndex = 29;
-            this.txtDuration.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtTickets
             // 
             this.txtTickets.BackColor = System.Drawing.Color.White;
+            this.txtTickets.Enabled = false;
             this.txtTickets.Location = new System.Drawing.Point(524, 221);
             this.txtTickets.Multiline = true;
             this.txtTickets.Name = "txtTickets";
-            this.txtTickets.ReadOnly = true;
             this.txtTickets.Size = new System.Drawing.Size(81, 43);
             this.txtTickets.TabIndex = 28;
-            this.txtTickets.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtMovie
             // 
             this.txtMovie.BackColor = System.Drawing.Color.White;
+            this.txtMovie.Enabled = false;
             this.txtMovie.Location = new System.Drawing.Point(17, 112);
             this.txtMovie.Multiline = true;
             this.txtMovie.Name = "txtMovie";
-            this.txtMovie.ReadOnly = true;
             this.txtMovie.Size = new System.Drawing.Size(294, 43);
             this.txtMovie.TabIndex = 27;
-            this.txtMovie.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblSeating
             // 
@@ -396,6 +391,7 @@
             this.Controls.Add(this.grpInfo);
             this.Controls.Add(this.pctMovie);
             this.Name = "FrmPayInfo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmPayInfo";
             this.Load += new System.EventHandler(this.FrmPayInfo_Load);
             this.grpInfo.ResumeLayout(false);

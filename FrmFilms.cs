@@ -93,15 +93,6 @@ namespace ProyectoGreenSpace
            
         }
 
-        
-
-        private void btnSettings_Click(object sender, EventArgs e)
-        {
-            FrmAccount frmAccount = new FrmAccount();
-            frmAccount.ShowDialog();
-            this.Close();
-        }
-
         private void ApplyTheme()
         {
             if (ThemeMode.Light == true)
@@ -207,5 +198,131 @@ namespace ProyectoGreenSpace
             txtJoinApp.Visible = true;
             lblLogOut.Visible = true;
         }
+
+        #region Acceso a formularios desde menú desplegable
+
+        private void pcbMovie1_Click(object sender, EventArgs e)
+        {
+            AccessMovieTheater();
+        }
+
+        private void pcbMovie2_Click(object sender, EventArgs e)
+        {
+            AccessMovieTheater();
+        }
+
+        private void pcbMovie3_Click(object sender, EventArgs e)
+        {
+            AccessMovieTheater();
+        }
+
+        private void pcbMovie4_Click(object sender, EventArgs e)
+        {
+            AccessMovieTheater();
+        }
+
+        private void pcbMovie5_Click(object sender, EventArgs e)
+        {
+            AccessMovieTheater();
+        }
+
+        private void pcbMovie6_Click(object sender, EventArgs e)
+        {
+            AccessMovieTheater();
+        }
+
+        private void pcbMovie7_Click(object sender, EventArgs e)
+        {
+            AccessMovieTheater();
+        }
+
+        private void pcbMovie8_Click(object sender, EventArgs e)
+        {
+            AccessMovieTheater();
+        }
+
+        private void pcbNextMovie1_Click(object sender, EventArgs e)
+        {
+            AccessMovieTheater();
+        }
+
+        private void pcbNextMovie2_Click(object sender, EventArgs e)
+        {
+            AccessMovieTheater();
+        }
+
+        private void pcbNextMovie3_Click(object sender, EventArgs e)
+        {
+            AccessMovieTheater();
+        }
+
+        private void pcbNextMovie4_Click(object sender, EventArgs e)
+        {
+            AccessMovieTheater();
+        }
+
+        private void pcbNextMovie5_Click(object sender, EventArgs e)
+        {
+            AccessMovieTheater();
+        }
+
+        private void pcbNextMovie6_Click(object sender, EventArgs e)
+        {
+            AccessMovieTheater();
+        }
+
+        private void pcbNextMovie7_Click(object sender, EventArgs e)
+        {
+            AccessMovieTheater();
+        }
+
+        private void pcbNextMovie8_Click(object sender, EventArgs e)
+        {
+            AccessMovieTheater();
+        }
+
+        private void btnReviewTickets_Click(object sender, EventArgs e)
+        {
+            FrmTickets frmTickets = new FrmTickets();
+            frmTickets.Show();
+            this.Close();
+        }
+
+        private void btnTicketOffice_Click(object sender, EventArgs e)
+        {
+            FrmFilms frmFilms = new FrmFilms();
+            frmFilms.Show();
+            this.Close();
+        }
+
+        private void btnReviews_Click(object sender, EventArgs e)
+        {
+            FrmReviews frmReviews = new FrmReviews();
+            frmReviews.Show();
+            this.Close();
+        }
+
+        private void btnWriteReview_Click(object sender, EventArgs e)
+        {
+            FrmWriteReview frmWriteReview = new FrmWriteReview();
+            frmWriteReview.Show();
+            this.Close();
+        }
+
+        private void btnSettings_Click(object sender, EventArgs e)
+        {
+            FrmAccount frmAccount = new FrmAccount();
+            frmAccount.ShowDialog();
+            this.Close();
+        }
+
+        private void AccessMovieTheater()
+        {
+            FrmMovieTheater frmMovieTheater = new FrmMovieTheater();
+            frmMovieTheater.Show();
+            this.Close();
+        }
+        #endregion
+
     }
 }

@@ -40,5 +40,24 @@ namespace ProyectoGreenSpace
         {
 
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            FrmMovieTheater frmMovieTheater = new FrmMovieTheater();
+            frmMovieTheater.Show();
+            this.Close();
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            FrmFilms frmFilms = new FrmFilms();
+            frmFilms.Show();
+            this.Dispose();
+        }
+
+        private void btnPay_Click(object sender, EventArgs e)
+        {
+            // Pago de la película
+        }
     }
 }

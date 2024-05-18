@@ -33,7 +33,7 @@ namespace ProyectoGreenSpace
             btnTicketOffice.Text = StringResources.buttonTicketOffice;
             btnReviewTickets.Text = StringResources.buttonReviewTickets;
             btnReviews.Text = StringResources.buttonReviews;
-            btnDeveloping.Text = StringResources.buttonWriteReview;
+            btnWriteReview.Text = StringResources.buttonWriteReview;
             btnUser.Text = StringResources.buttonUser;
             btnSettings.Text = StringResources.buttonConfiguration;
             lblSynopsis.Text = StringResources.labelSynopsis;
@@ -77,5 +77,94 @@ namespace ProyectoGreenSpace
         {
             sidebarTimer.Start();
         }
+
+        #region Acceso a formularios desde menú desplegable
+        private void btnTicketOffice_Click(object sender, EventArgs e)
+        {
+            AccessFilms();
+        }
+
+        private void btnReviewTickets_Click(object sender, EventArgs e)
+        {
+            FrmTickets frmTickets = new FrmTickets();
+            frmTickets.Show();
+            this.Close();
+        }
+
+        private void btnReviews_Click(object sender, EventArgs e)
+        {
+            AccessReviews();
+        }
+
+        private void btnWriteReview_Click(object sender, EventArgs e)
+        {
+            FrmWriteReview frmWriteReview = new FrmWriteReview();
+            frmWriteReview.Show();
+            this.Close();
+        }
+
+        private void btnSettings_Click(object sender, EventArgs e)
+        {
+            FrmConfiguration frmConfiguration = new FrmConfiguration();
+            frmConfiguration.Show();
+            this.Close();
+        }
+
+        private void btnAccessRevews_Click(object sender, EventArgs e)
+        {
+            AccessReviews();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            AccessFilms();
+        }
+
+        private void AccessFilms ()
+        {
+            FrmFilms frmFilms = new FrmFilms();
+            frmFilms.Show();
+            this.Close();
+        }
+
+        private void AccessReviews()
+        {
+            FrmReviews frmReviews = new FrmReviews();
+            frmReviews.Show();
+            this.Close();
+        }
+
+        private void grpInfo1_Enter(object sender, EventArgs e)
+        {
+            AccessPayInfo();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+            AccessPayInfo();
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+            AccessPayInfo();
+        }
+
+        private void groupBox4_Enter(object sender, EventArgs e)
+        {
+            AccessPayInfo();
+        }
+
+        private void groupBox3_Enter(object sender, EventArgs e)
+        {
+            AccessPayInfo();
+        }
+        private void AccessPayInfo()
+        {
+            FrmPayInfo frmPayInfo = new FrmPayInfo();
+            frmPayInfo.Show();
+            this.Close();
+        }
+        #endregion
+
     }
 }

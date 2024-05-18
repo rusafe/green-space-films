@@ -212,6 +212,7 @@
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnExit);
             this.Name = "FrmAdmin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmAdmin";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictBoxIcono)).EndInit();

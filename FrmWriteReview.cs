@@ -63,11 +63,6 @@ namespace ProyectoGreenSpace
             sidebarTimer.Start();
         }
 
-        private void lblTitleReview_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void cklStars_ItemCheck(object sender, ItemCheckEventArgs e)
         {
             if (e.NewValue == CheckState.Checked)
@@ -80,6 +75,53 @@ namespace ProyectoGreenSpace
                     }
                 }
             }
+        }
+
+        #region Acceso a formularios desde menú desplegable
+        private void btnTicketOffice_Click(object sender, EventArgs e)
+        {
+            FrmFilms frmFilms = new FrmFilms();
+            frmFilms.Show();
+            this.Close();
+        }
+
+        private void btnReviewTickets_Click(object sender, EventArgs e)
+        {
+            FrmTickets frmTickets = new FrmTickets();
+            frmTickets.Show();
+            this.Close();
+        }
+
+        private void btnReviews_Click(object sender, EventArgs e)
+        {
+            FrmReviews frmReviews = new FrmReviews();
+            frmReviews.Show();
+            this.Close();
+        }
+
+        private void btnWriteReview_Click(object sender, EventArgs e)
+        {
+            FrmWriteReview frmWriteReview = new FrmWriteReview();
+            frmWriteReview.Show();
+            this.Close();
+        }
+
+        private void btnSettings_Click(object sender, EventArgs e)
+        {
+            FrmConfiguration frmConfiguration = new FrmConfiguration();
+            frmConfiguration.Show();
+            this.Close();
+        }
+        #endregion
+
+        private void btnResset_Click(object sender, EventArgs e)
+        {
+            rtxReview1.Text = string.Empty;
+        }
+
+        private void btnSend_Click(object sender, EventArgs e)
+        {
+            // Enviar a la base de datos
         }
     }
 }

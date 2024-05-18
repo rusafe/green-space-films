@@ -194,7 +194,9 @@
             this.btnTicketOffice.Size = new System.Drawing.Size(226, 52);
             this.btnTicketOffice.TabIndex = 22;
             this.btnTicketOffice.Text = "               Taquilla";
+            this.btnTicketOffice.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTicketOffice.UseVisualStyleBackColor = true;
+            this.btnTicketOffice.Click += new System.EventHandler(this.btnTicketOffice_Click);
             // 
             // panel3
             // 
@@ -214,7 +216,9 @@
             this.btnReviewTickets.Size = new System.Drawing.Size(227, 53);
             this.btnReviewTickets.TabIndex = 23;
             this.btnReviewTickets.Text = "          Revisar Tickets";
+            this.btnReviewTickets.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnReviewTickets.UseVisualStyleBackColor = true;
+            this.btnReviewTickets.Click += new System.EventHandler(this.btnReviewTickets_Click);
             // 
             // panel4
             // 
@@ -234,7 +238,9 @@
             this.btnReviews.Size = new System.Drawing.Size(228, 54);
             this.btnReviews.TabIndex = 24;
             this.btnReviews.Text = "            Ver Reseñas";
+            this.btnReviews.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnReviews.UseVisualStyleBackColor = true;
+            this.btnReviews.Click += new System.EventHandler(this.btnReviews_Click);
             // 
             // panel5
             // 
@@ -254,7 +260,9 @@
             this.btnWriteReview.Size = new System.Drawing.Size(227, 58);
             this.btnWriteReview.TabIndex = 24;
             this.btnWriteReview.Text = "          Escribir Reseña";
+            this.btnWriteReview.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnWriteReview.UseVisualStyleBackColor = true;
+            this.btnWriteReview.Click += new System.EventHandler(this.btnWriteReview_Click);
             // 
             // panel6
             // 
@@ -281,6 +289,7 @@
             this.btnUser.Size = new System.Drawing.Size(227, 52);
             this.btnUser.TabIndex = 24;
             this.btnUser.Text = "               Usuario";
+            this.btnUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnUser.UseVisualStyleBackColor = true;
             // 
             // panel8
@@ -301,7 +310,9 @@
             this.btnSettings.Size = new System.Drawing.Size(227, 52);
             this.btnSettings.TabIndex = 24;
             this.btnSettings.Text = "         Configuración";
+            this.btnSettings.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSettings.UseVisualStyleBackColor = true;
+            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
             // groupBox3
             // 
@@ -312,11 +323,13 @@
             this.groupBox3.Controls.Add(this.txtTypeHall5);
             this.groupBox3.Controls.Add(this.txtHall5);
             this.groupBox3.Controls.Add(this.txtHour5);
+            this.groupBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox3.Location = new System.Drawing.Point(991, 401);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(295, 166);
             this.groupBox3.TabIndex = 50;
             this.groupBox3.TabStop = false;
+            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
             // pctBusy5
             // 
@@ -404,11 +417,13 @@
             this.groupBox4.Controls.Add(this.txtTypeHall4);
             this.groupBox4.Controls.Add(this.txtHall4);
             this.groupBox4.Controls.Add(this.txtHour4);
+            this.groupBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox4.Location = new System.Drawing.Point(991, 226);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(295, 166);
             this.groupBox4.TabIndex = 49;
             this.groupBox4.TabStop = false;
+            this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
             // 
             // pctBusy4
             // 
@@ -496,11 +511,13 @@
             this.groupBox2.Controls.Add(this.txtTypeHall3);
             this.groupBox2.Controls.Add(this.txtHall3);
             this.groupBox2.Controls.Add(this.txtHour3);
+            this.groupBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox2.Location = new System.Drawing.Point(650, 501);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(295, 166);
             this.groupBox2.TabIndex = 48;
             this.groupBox2.TabStop = false;
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // pctBusy3
             // 
@@ -588,11 +605,13 @@
             this.groupBox1.Controls.Add(this.txtTypeHall2);
             this.groupBox1.Controls.Add(this.txtHall2);
             this.groupBox1.Controls.Add(this.txtHour2);
+            this.groupBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox1.Location = new System.Drawing.Point(650, 326);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(295, 166);
             this.groupBox1.TabIndex = 47;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // pctBusy2
             // 
@@ -681,6 +700,7 @@
             this.btnBack.TabIndex = 46;
             this.btnBack.Text = "Atrás";
             this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // btnAccessRevews
             // 
@@ -692,6 +712,7 @@
             this.btnAccessRevews.TabIndex = 45;
             this.btnAccessRevews.Text = "Reseñas";
             this.btnAccessRevews.UseVisualStyleBackColor = false;
+            this.btnAccessRevews.Click += new System.EventHandler(this.btnAccessRevews_Click);
             // 
             // btnQuestion
             // 
@@ -713,11 +734,13 @@
             this.grpInfo1.Controls.Add(this.txtTypeHall1);
             this.grpInfo1.Controls.Add(this.txtHall1);
             this.grpInfo1.Controls.Add(this.txtHour1);
+            this.grpInfo1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.grpInfo1.Location = new System.Drawing.Point(650, 153);
             this.grpInfo1.Name = "grpInfo1";
             this.grpInfo1.Size = new System.Drawing.Size(295, 166);
             this.grpInfo1.TabIndex = 43;
             this.grpInfo1.TabStop = false;
+            this.grpInfo1.Enter += new System.EventHandler(this.grpInfo1_Enter);
             // 
             // pctBusy1
             // 

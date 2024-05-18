@@ -184,6 +184,7 @@
             this.btnTicketOffice.TabIndex = 22;
             this.btnTicketOffice.Text = "               Taquilla";
             this.btnTicketOffice.UseVisualStyleBackColor = true;
+            this.btnTicketOffice.Click += new System.EventHandler(this.btnTicketOffice_Click);
             // 
             // panel3
             // 
@@ -204,6 +205,7 @@
             this.btnReviewTickets.TabIndex = 23;
             this.btnReviewTickets.Text = "          Revisar Tickets";
             this.btnReviewTickets.UseVisualStyleBackColor = true;
+            this.btnReviewTickets.Click += new System.EventHandler(this.btnReviewTickets_Click);
             // 
             // panel4
             // 
@@ -224,6 +226,7 @@
             this.btnReviews.TabIndex = 24;
             this.btnReviews.Text = "            Ver Reseñas";
             this.btnReviews.UseVisualStyleBackColor = true;
+            this.btnReviews.Click += new System.EventHandler(this.btnReviews_Click);
             // 
             // panel5
             // 
@@ -244,6 +247,7 @@
             this.btnWriteReview.TabIndex = 24;
             this.btnWriteReview.Text = "          Escribir Reseña";
             this.btnWriteReview.UseVisualStyleBackColor = true;
+            this.btnWriteReview.Click += new System.EventHandler(this.btnWriteReview_Click);
             // 
             // panel6
             // 
@@ -291,6 +295,7 @@
             this.btnSettings.TabIndex = 24;
             this.btnSettings.Text = "          Configuración";
             this.btnSettings.UseVisualStyleBackColor = true;
+            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
             // sidebarTimer
             // 
@@ -647,7 +652,6 @@
             this.rtxReview1.Size = new System.Drawing.Size(710, 207);
             this.rtxReview1.TabIndex = 47;
             this.rtxReview1.Text = "";
-            this.rtxReview1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // grpReview2
             // 
@@ -748,6 +752,7 @@
             this.Controls.Add(this.pnlReviews);
             this.Controls.Add(this.sidebar);
             this.Name = "FrmReviews";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmReviews";
             this.sidebar.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

@@ -231,6 +231,7 @@
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.pictBoxIcono);
             this.Name = "FrmUser";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmUser";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictBoxPhotoPerfil)).EndInit();
