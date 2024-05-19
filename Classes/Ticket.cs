@@ -5,9 +5,11 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace ProyectoGreenSpace.Classes
 {
@@ -22,6 +24,18 @@ namespace ProyectoGreenSpace.Classes
         private int quantity;
         private double totalPrice;
         private double discount;
+
+        public Ticket(int userId, int filmId, int roomId, DateTime dateBought, DateTime dateFilm, int quantity, double totalPrice, double discount)
+        {
+            this.userId = userId;
+            this.filmId = filmId;
+            this.roomId = roomId;
+            this.dateBought = dateBought;
+            this.dateFilm = dateFilm;
+            this.quantity = quantity;
+            this.totalPrice = totalPrice;
+            this.discount = discount;
+        }
 
         public Ticket(int id, int userId, int filmId, int roomId, DateTime dateBought, DateTime dateFilm, int quantity, double totalPrice, double discount)
         {
@@ -55,11 +69,34 @@ namespace ProyectoGreenSpace.Classes
         }
 
         /// <summary>
+        /// Inserts the Ticket into the Database
+        /// </summary>
+        public void Create()
+        {
+            string query = "INSERT INTO films (userId, filmId, roomId, dateBought, dateFilm, quantity, total_price, discount) VALUES (@userId, @filmId, @roomId, @dateBought, @dateFilm, @quantity, @totalPrice, @discount)";
+
+            MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
+            command.Parameters.AddWithValue("@userId", userId);
+            command.Parameters.AddWithValue("@filmId", filmId);
+            command.Parameters.AddWithValue("@roomId", roomId);
+            command.Parameters.AddWithValue("@dateBought", dateBought);
+            command.Parameters.AddWithValue("@dateFilm", dateFilm);
+            command.Parameters.AddWithValue("@totalPrice", totalPrice);
+            command.Parameters.AddWithValue("@discount", discount);
+
+            ConnectionBD.OpenConnection();
+
+            command.ExecuteNonQuery();
+
+            ConnectionBD.CloseConnection();
+        }
+
+        /// <summary>
         /// Obtiene un ticket de la base de datos en base a su ID
         /// </summary>
         /// <param name="id">El ID del ticket</param>
         /// <returns>Un objeto ticket</returns>
-        public Ticket Obtain(int id)
+        public static Ticket Obtain(int id)
         {
             string query = "SELECT * FROM users WHERE id LIKE @id";
 
