@@ -65,6 +65,10 @@ namespace ProyectoGreenSpace
             return result;
         }
 
+        /// <summary>
+        /// Delete a user from the database given its Id
+        /// </summary>
+        /// <param name="id">The user Id</param>
         public static void Delete(int id)
         {
             string query = "DELETE FROM users WHERE id = @id";

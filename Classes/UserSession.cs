@@ -21,5 +21,10 @@ namespace ProyectoGreenSpace
         public static string Password { get { return password; } set { password = value; } }
         public static bool Admin { get { return admin; } set { admin = value; } }
         public static string Mail { get { return mail; } set { mail = value; } }
+
+        public static void DeleteUser()
+        {
+            User.Delete(id);
+        }
     }
 }

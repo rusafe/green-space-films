@@ -62,6 +62,41 @@ namespace ProyectoGreenSpace.Classes
         }
 
         #region Metodos de interfaz
+        /// <summary>
+        /// Gets all the identifying fields (id and name) of the films and return them as a list of tuples that contain the identifying information for each film
+        /// </summary>
+        /// <returns>List of tuples containing the film id and name</returns>
+        public List<(int id, string name)> GetIdentifyingInfo()
+        {
+            List<(int id, string name)> list = new List<(int id, string name)>();
+
+            string query = "SELECT id, name FROM films";
+
+            MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
+
+            ConnectionBD.OpenConnection();
+
+            using (MySqlDataReader reader = command.ExecuteReader()) // Abrir y cerrar la conexión del dataReader --> Tabla virtual
+            {
+                while (reader.Read())
+                {
+                    list.Add(
+                        (
+                            reader.GetInt32(0),
+                            reader.GetString(1)
+                        )
+                    );
+                }
+            }
+
+            ConnectionBD.CloseConnection();
+
+            return list;
+        }
+
+        /// <summary>
+        /// Inserts the Film into the Database
+        /// </summary>
         public void Create()
         {
             string query = "INSERT INTO films (name, synopsis, cover, duration, minAge, price, genres, premiering, next_premiering) VALUES (@name, @synopsis, @cover, @duration, @minAge, @price, @genres, @premiering, @nextPremiering)";
@@ -79,6 +114,49 @@ namespace ProyectoGreenSpace.Classes
 
             ConnectionBD.OpenConnection();
             
+            command.ExecuteNonQuery();
+
+            ConnectionBD.CloseConnection();
+        }
+
+        /// <summary>
+        /// Updates the Film with the Id attribute value with the info in its attributes
+        /// </summary>
+        public void Update()
+        {
+            string query = "UPDATE films SET name = @name, synopsis = @synopsis, cover = @cover, duration = @duration, minAge = @minAge, price = @price, genres = @genres, premiering = @premiering, next_premiering = @nextPremiering WHERE id = @id)";
+
+            MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
+            command.Parameters.AddWithValue("@id", id);
+            command.Parameters.AddWithValue("@name", name);
+            command.Parameters.AddWithValue("@synopsis", synopsis);
+            command.Parameters.AddWithValue("@cover", ImagesDB.ImageToBytes(cover));
+            command.Parameters.AddWithValue("@duration", duration);
+            command.Parameters.AddWithValue("@minAge", minAge);
+            command.Parameters.AddWithValue("@price", price);
+            command.Parameters.AddWithValue("@genres", GenresToString());
+            command.Parameters.AddWithValue("@premiering", premiering);
+            command.Parameters.AddWithValue("@nextPremiering", nextPremiering);
+
+            ConnectionBD.OpenConnection();
+
+            command.ExecuteNonQuery();
+
+            ConnectionBD.CloseConnection();
+        }
+
+        /// <summary>
+        /// Deletes the Film from the Database
+        /// </summary>
+        public void Delete()
+        {
+            string query = "DELETE FROM films WHERE id = @id";
+
+            MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
+            command.Parameters.AddWithValue("@id", id);
+
+            ConnectionBD.OpenConnection();
+
             command.ExecuteNonQuery();
 
             ConnectionBD.CloseConnection();

@@ -25,6 +25,12 @@ namespace ProyectoGreenSpace.Classes
         private double totalPrice;
         private double discount;
 
+        public DateTime DateBought { get { return dateBought; } }
+        public DateTime DateFilm { get { return dateFilm; } }
+        public int Quantity { get { return quantity; } }
+        public double TotalPrice { get { return totalPrice; } }
+        public double Discount { get { return discount; } }
+
         public Ticket(int userId, int filmId, int roomId, DateTime dateBought, DateTime dateFilm, int quantity, double totalPrice, double discount)
         {
             this.userId = userId;
@@ -53,7 +59,7 @@ namespace ProyectoGreenSpace.Classes
         /// <summary>
         /// Obtiene el usuario del ticket
         /// </summary>
-        /// <returns>Un objeto ticket</returns>
+        /// <returns>Un objeto usuario</returns>
         public User getUser()
         {
             return User.InfoUser(userId);
@@ -69,11 +75,20 @@ namespace ProyectoGreenSpace.Classes
         }
 
         /// <summary>
+        /// Obtiene la sala del ticket
+        /// </summary>
+        /// <returns>Un objeto sala</returns>
+        public Room getRoom()
+        {
+            return Room.InfoRoom(roomId);
+        }
+
+        /// <summary>
         /// Inserts the Ticket into the Database
         /// </summary>
         public void Create()
         {
-            string query = "INSERT INTO films (userId, filmId, roomId, dateBought, dateFilm, quantity, total_price, discount) VALUES (@userId, @filmId, @roomId, @dateBought, @dateFilm, @quantity, @totalPrice, @discount)";
+            string query = "INSERT INTO tickets (userId, filmId, roomId, dateBought, dateFilm, quantity, total_price, discount) VALUES (@userId, @filmId, @roomId, @dateBought, @dateFilm, @quantity, @totalPrice, @discount)";
 
             MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
             command.Parameters.AddWithValue("@userId", userId);
@@ -98,7 +113,7 @@ namespace ProyectoGreenSpace.Classes
         /// <returns>Un objeto ticket</returns>
         public static Ticket Obtain(int id)
         {
-            string query = "SELECT * FROM users WHERE id LIKE @id";
+            string query = "SELECT * FROM tickets WHERE id LIKE @id";
 
             MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
             command.Parameters.AddWithValue("@id", id);
