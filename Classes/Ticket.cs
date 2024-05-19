@@ -25,6 +25,12 @@ namespace ProyectoGreenSpace.Classes
         private double totalPrice;
         private double discount;
 
+        public DateTime DateBought { get { return dateBought; } }
+        public DateTime DateFilm { get { return dateFilm; } }
+        public int Quantity { get { return quantity; } }
+        public double TotalPrice { get { return totalPrice; } }
+        public double Discount { get { return discount; } }
+
         public Ticket(int userId, int filmId, int roomId, DateTime dateBought, DateTime dateFilm, int quantity, double totalPrice, double discount)
         {
             this.userId = userId;

@@ -12,6 +12,8 @@ namespace ProyectoGreenSpace.Classes
         int id;
         string type;
 
+        public string Type { get { return type; } }
+
         public Room(int id, string type)
         {
             this.id = id;
