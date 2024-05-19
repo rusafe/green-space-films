@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoGreenSpace.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,6 +20,32 @@ namespace ProyectoGreenSpace
             grpModify.BackColor = Color.FromArgb(168, 228, 116);
         }
 
+        #region Cargar Valores
+        private void SetFilmsIdentifyingValues()
+        {
+            foreach (var values in Film.GetIdentifyingInfo())
+            {
+                cmbFilmsIds.Items.Add(values.id);
+                cmbFilms.Items.Add(values.name);
+            }
+        }
+
+        private void UpdateInputFields(Film film)
+        {
+            cmbFilmsIds.Text = film.Id.ToString();
+            cmbFilms.Text = film.Name;
+            pibImage.Image = film.Cover;
+            rtbSynopsis.Text = film.Synopsis;
+            nudMinAge.Value = film.MinAge;
+            txtDuration.Text = film.Duration.ToString();
+            txtPrice.Text = film.Price.ToString();
+            chbPremiering.Checked = film.Premiering;
+            chbNextPremiering.Checked = film.NextPremiering;
+            cmbGenre1.Text = film.Genres[0];
+            cmbGenre2.Text = film.Genres[1];
+        }
+        #endregion
+
         private void FrmMovieModify_Load(object sender, EventArgs e)
         {
             timerClock.Enabled = true;
@@ -27,6 +54,8 @@ namespace ProyectoGreenSpace
 
             lblClock.Text = DateTime.Now.ToString("HH:mm:ss");
             lblDate.Text = DateTime.Now.ToString("dd/MM/yyyy");
+
+            SetFilmsIdentifyingValues();
         }
 
         private void timerClock_Tick(object sender, EventArgs e)
@@ -74,5 +103,58 @@ namespace ProyectoGreenSpace
         }
         #endregion
 
+        private void cmbFilmsIds_SelectedValueChanged(object sender, EventArgs e)
+        {
+            UpdateInputFields(Film.InfoFilm(Convert.ToInt32(cmbFilmsIds.Text)));
+        }
+
+        private void cmbFilms_SelectedValueChanged(object sender, EventArgs e)
+        {
+            UpdateInputFields(Film.InfoFilm(cmbFilms.Text));
+        }
+
+        private void btnUpload_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofdSelect = new OpenFileDialog();
+            ofdSelect.Filter = "Imagenes|*.jpg; *.png"; // Imagenes --> Leyenda|Filtrar solo por estas extensiones 
+            ofdSelect.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures); // Directorio donde cogemos las imágenes
+            ofdSelect.Title = "Seleccionar imagen";
+
+            if (ofdSelect.ShowDialog() == DialogResult.OK)
+            {
+                pibImage.Image = Image.FromFile(ofdSelect.FileName); // Agregar el archivo seleccionado y mostrarlo en el cuadro.
+            }
+        }
+
+        private void btnModify_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string[] genres = new string[]
+                {
+                    cmbGenre1.Text,
+                    cmbGenre2.Text
+                };
+
+                Film film = new Film(
+                    Convert.ToInt32(cmbFilmsIds.Text),
+                    cmbFilms.Text,
+                    rtbSynopsis.Text,
+                    pibImage.Image,
+                    TimeSpan.Parse(txtDuration.Text),
+                    (int)nudMinAge.Value,
+                    Convert.ToDouble(txtPrice.Text),
+                    genres,
+                    chbPremiering.Checked,
+                    chbNextPremiering.Checked
+                );
+
+                film.Update();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

@@ -66,7 +66,7 @@ namespace ProyectoGreenSpace.Classes
         /// Gets all the identifying fields (id and name) of the films and return them as a list of tuples that contain the identifying information for each film
         /// </summary>
         /// <returns>List of tuples containing the film id and name</returns>
-        public List<(int id, string name)> GetIdentifyingInfo()
+        public static List<(int id, string name)> GetIdentifyingInfo()
         {
             List<(int id, string name)> list = new List<(int id, string name)>();
 
@@ -124,7 +124,7 @@ namespace ProyectoGreenSpace.Classes
         /// </summary>
         public void Update()
         {
-            string query = "UPDATE films SET name = @name, synopsis = @synopsis, cover = @cover, duration = @duration, minAge = @minAge, price = @price, genres = @genres, premiering = @premiering, next_premiering = @nextPremiering WHERE id = @id)";
+            string query = "UPDATE films SET name = @name, synopsis = @synopsis, cover = @cover, duration = @duration, minAge = @minAge, price = @price, genres = @genres, premiering = @premiering, next_premiering = @nextPremiering WHERE id = @id";
 
             MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
             command.Parameters.AddWithValue("@id", id);
@@ -179,7 +179,7 @@ namespace ProyectoGreenSpace.Classes
 
         public static Film InfoFilm(int id)
         {
-            string query = "SELECT * FROM films WHERE id LIKE @id";
+            string query = "SELECT * FROM films WHERE id = @id";
             MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
             command.Parameters.AddWithValue("@id", id);
 
@@ -210,7 +210,7 @@ namespace ProyectoGreenSpace.Classes
 
         public static Film InfoFilm(string name)
         {
-            string query = "SELECT * FROM films WHERE name LIKE @name";
+            string query = "SELECT * FROM films WHERE name = @name";
             MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
             command.Parameters.AddWithValue("@name", name);
 
