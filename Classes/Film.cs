@@ -153,6 +153,55 @@ namespace ProyectoGreenSpace.Classes
             return film;
         }
 
+        public static List<Film> ObtainAll()
+        {
+            List<Film> premiering = new List<Film>();
+
+            string query = "SELECT * FROM films";
+
+            MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
+
+            ConnectionBD.OpenConnection();
+
+            using (MySqlDataReader reader = command.ExecuteReader()) // Abrir y cerrar la conexión del dataReader --> Tabla virtual
+            {
+                while (reader.Read())
+                {
+                    premiering.Add(new Film(
+                        reader.GetInt32(0),
+                        reader.GetString(1),
+                        reader.GetString(2),
+                        ImagesDB.BytesToImage((byte[])reader.GetValue(3)),
+                        reader.GetTimeSpan(4),
+                        reader.GetInt32(5),
+                        reader.GetDouble(6),
+                        GenresStringToArray(reader.GetString(7)),
+                        reader.GetBoolean(8),
+                        reader.GetBoolean(9)
+                    ));
+                }
+            }
+
+            ConnectionBD.CloseConnection();
+
+            return premiering;
+        }
+
+        public static int Amount()
+        {
+            string query = "SELECT COUNT(*) FROM films";
+
+            MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
+
+            ConnectionBD.OpenConnection();
+
+            int amount = Convert.ToInt32(command.ExecuteScalar());
+
+            ConnectionBD.CloseConnection();
+
+            return amount;
+        }
+
         public static List<Film> ObtainAllPremiering()
         {
             List<Film> premiering = new List<Film>();

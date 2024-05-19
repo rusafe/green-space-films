@@ -65,6 +65,20 @@ namespace ProyectoGreenSpace
             return result;
         }
 
+        public static void Delete(int id)
+        {
+            string query = "DELETE FROM users WHERE id = @id";
+
+            MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
+            command.Parameters.AddWithValue("@id", id);
+
+            ConnectionBD.OpenConnection();
+
+            command.ExecuteNonQuery();
+
+            ConnectionBD.CloseConnection();
+        }
+
         /// <summary>
         /// Nos permite comprobar la existencia del usuario mediante el nombre de usuario.
         /// </summary>
