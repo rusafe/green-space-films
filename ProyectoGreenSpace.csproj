@@ -92,11 +92,23 @@
     <Compile Include="FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmMovieDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMovieDelete.Designer.cs">
+      <DependentUpon>FrmMovieDelete.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMovieMaintenance.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmMovieMaintenance.Designer.cs">
       <DependentUpon>FrmMovieMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMovieModify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMovieModify.Designer.cs">
+      <DependentUpon>FrmMovieModify.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmMovieTheater.cs">
       <SubType>Form</SubType>
@@ -166,6 +178,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMovieMaintenance.resx">
       <DependentUpon>FrmMovieMaintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMovieModify.resx">
+      <DependentUpon>FrmMovieModify.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMovieTheater.resx">
       <DependentUpon>FrmMovieTheater.cs</DependentUpon>
@@ -314,6 +329,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\borrar %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
