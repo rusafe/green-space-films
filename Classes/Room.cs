@@ -9,8 +9,8 @@ namespace ProyectoGreenSpace.Classes
 {
     internal class Room
     {
-        int id;
-        string type;
+        private int id;
+        private string type;
 
         public string Type { get { return type; } }
 

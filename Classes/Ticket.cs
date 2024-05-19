@@ -59,7 +59,7 @@ namespace ProyectoGreenSpace.Classes
         /// <summary>
         /// Obtiene el usuario del ticket
         /// </summary>
-        /// <returns>Un objeto ticket</returns>
+        /// <returns>Un objeto usuario</returns>
         public User getUser()
         {
             return User.InfoUser(userId);
@@ -72,6 +72,15 @@ namespace ProyectoGreenSpace.Classes
         public Film getFilm()
         {
             return Film.InfoFilm(filmId);
+        }
+
+        /// <summary>
+        /// Obtiene la sala del ticket
+        /// </summary>
+        /// <returns>Un objeto sala</returns>
+        public Room getRoom()
+        {
+            return Room.InfoRoom(roomId);
         }
 
         /// <summary>

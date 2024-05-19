@@ -59,6 +59,7 @@
     <Compile Include="Classes\Mail.cs" />
     <Compile Include="Classes\Program.cs" />
     <Compile Include="Classes\Room.cs" />
+    <Compile Include="Classes\Session.cs" />
     <Compile Include="Classes\ThemeMode.cs" />
     <Compile Include="Classes\UserSession.cs" />
     <Compile Include="Classes\Ticket.cs" />
