@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoGreenSpace.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -35,6 +36,36 @@ namespace ProyectoGreenSpace
             if (ofdSelect.ShowDialog() == DialogResult.OK)
             {
                 pibImage.Image = Image.FromFile(ofdSelect.FileName); // Agregar el archivo seleccionado y mostrarlo en el cuadro.
+            }
+        }
+
+        private void btnInsert_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string[] genres = new string[]
+                {
+                    cmbGenre1.Text,
+                    cmbGenre2.Text
+                };
+
+                Film film = new Film(
+                    txtFilm.Text,
+                    rtbSynopsis.Text,
+                    pibImage.Image,
+                    TimeSpan.Parse(txtDuration.Text),
+                    (int)nudMinAge.Value,
+                    Convert.ToDouble(txtPrice.Text),
+                    genres,
+                    chbPremiering.Checked,
+                    chbNextPremiering.Checked
+                );
+
+                film.Create();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
 

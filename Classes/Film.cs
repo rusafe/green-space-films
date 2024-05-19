@@ -53,9 +53,10 @@ namespace ProyectoGreenSpace.Classes
             this.nextPremiering = nextPremiering;
         }
 
+        #region Metodos de interfaz
         public void Create()
         {
-            string query = "INSERT INTO (name, synopsis, cover, duration, minAge, price, genres, premiering, next_premiering) VALUES (@name, @synopsis, @cover, @duration, @minAge, @price, @genres, @premiering, @nextPremiering)";
+            string query = "INSERT INTO films (name, synopsis, cover, duration, minAge, price, genres, premiering, next_premiering) VALUES (@name, @synopsis, @cover, @duration, @minAge, @price, @genres, @premiering, @nextPremiering)";
 
             MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
             command.Parameters.AddWithValue("@name", name);
@@ -64,7 +65,7 @@ namespace ProyectoGreenSpace.Classes
             command.Parameters.AddWithValue("@duration", duration);
             command.Parameters.AddWithValue("@minAge", minAge);
             command.Parameters.AddWithValue("@price", price);
-            command.Parameters.AddWithValue("@genres", genres);
+            command.Parameters.AddWithValue("@genres", GenresToString());
             command.Parameters.AddWithValue("@premiering", premiering);
             command.Parameters.AddWithValue("@nextPremiering", nextPremiering);
 
@@ -111,7 +112,38 @@ namespace ProyectoGreenSpace.Classes
                         reader.GetTimeSpan(4),
                         reader.GetInt32(5),
                         reader.GetDouble(6),
-                        reader.GetString(7).Split(','),
+                        GenresStringToArray(reader.GetString(7)),
+                        reader.GetBoolean(8),
+                        reader.GetBoolean(9)
+                    );
+                }
+            }
+            ConnectionBD.CloseConnection();
+            return film;
+        }
+
+        public static Film InfoFilm(string name)
+        {
+            string query = "SELECT * FROM films WHERE name LIKE @name";
+            MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
+            command.Parameters.AddWithValue("@name", name);
+
+            Film film = null;
+
+            ConnectionBD.OpenConnection();
+            using (MySqlDataReader reader = command.ExecuteReader()) // Abrir y cerrar la conexión del dataReader --> Tabla virtual
+            {
+                while (reader.Read())
+                {
+                    film = new Film(
+                        reader.GetInt32(0),
+                        reader.GetString(1),
+                        reader.GetString(2),
+                        ImagesDB.BytesToImage((byte[])reader.GetValue(3)),
+                        reader.GetTimeSpan(4),
+                        reader.GetInt32(5),
+                        reader.GetDouble(6),
+                        GenresStringToArray(reader.GetString(7)),
                         reader.GetBoolean(8),
                         reader.GetBoolean(9)
                     );
@@ -143,7 +175,7 @@ namespace ProyectoGreenSpace.Classes
                         reader.GetTimeSpan(4),
                         reader.GetInt32(5),
                         reader.GetDouble(6),
-                        reader.GetString(7).Split(','),
+                        GenresStringToArray(reader.GetString(7)),
                         reader.GetBoolean(8),
                         reader.GetBoolean(9)
                     ));
@@ -153,6 +185,22 @@ namespace ProyectoGreenSpace.Classes
             ConnectionBD.CloseConnection();
 
             return premiering;
+        }
+
+        public static int AmountPremiering()
+        {
+            string query = "SELECT COUNT(*) FROM films WHERE premiering = @premiering";
+
+            MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
+            command.Parameters.AddWithValue("@premiering", true);
+
+            ConnectionBD.OpenConnection();
+
+            int amount = Convert.ToInt32(command.ExecuteScalar());
+
+            ConnectionBD.CloseConnection();
+
+            return amount;
         }
 
         public static List<Film> ObtainAllNextPremiering()
@@ -177,7 +225,7 @@ namespace ProyectoGreenSpace.Classes
                         reader.GetTimeSpan(4),
                         reader.GetInt32(5),
                         reader.GetDouble(6),
-                        reader.GetString(7).Split(','),
+                        GenresStringToArray(reader.GetString(7)),
                         reader.GetBoolean(8),
                         reader.GetBoolean(9)
                     ));
@@ -188,5 +236,41 @@ namespace ProyectoGreenSpace.Classes
 
             return premiering;
         }
+
+        public static int AmountNextPremiering()
+        {
+            string query = "SELECT COUNT(*) FROM films WHERE next_premiering = @next_premiering";
+
+            MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
+            command.Parameters.AddWithValue("@next_premiering", true);
+
+            ConnectionBD.OpenConnection();
+
+            int amount = Convert.ToInt32(command.ExecuteScalar());
+
+            ConnectionBD.CloseConnection();
+
+            return amount;
+        }
+        #endregion
+
+        #region Metodos de implementacion
+        private string GenresToString()
+        {
+            string genresString = "";
+            foreach (string genre in this.genres)
+            {
+                genresString += $"{genre},";
+            }
+            genresString = genresString.Remove(genresString.Length - 1, 1);
+
+            return genresString;
+        }
+
+        private static string[] GenresStringToArray(string genresString)
+        {
+            return genresString.Split(',');
+        }
+        #endregion
     }
 }

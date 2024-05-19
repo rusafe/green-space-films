@@ -29,8 +29,9 @@
         private void InitializeComponent()
         {
             this.grpMaintenance = new System.Windows.Forms.GroupBox();
+            this.chbNextPremiering = new System.Windows.Forms.CheckBox();
             this.chbPremiering = new System.Windows.Forms.CheckBox();
-            this.cmbGenre = new System.Windows.Forms.ComboBox();
+            this.cmbGenre1 = new System.Windows.Forms.ComboBox();
             this.lblGenre = new System.Windows.Forms.Label();
             this.txtPrice = new System.Windows.Forms.TextBox();
             this.lblPrice = new System.Windows.Forms.Label();
@@ -59,7 +60,8 @@
             this.premiering = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnBack = new System.Windows.Forms.Button();
             this.ofdSelect = new System.Windows.Forms.OpenFileDialog();
-            this.chbNextPremiering = new System.Windows.Forms.CheckBox();
+            this.cmbGenre2 = new System.Windows.Forms.ComboBox();
+            this.btnInsert = new System.Windows.Forms.Button();
             this.grpMaintenance.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudMinAge)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pibImage)).BeginInit();
@@ -69,9 +71,11 @@
             // 
             // grpMaintenance
             // 
+            this.grpMaintenance.Controls.Add(this.btnInsert);
+            this.grpMaintenance.Controls.Add(this.cmbGenre2);
             this.grpMaintenance.Controls.Add(this.chbNextPremiering);
             this.grpMaintenance.Controls.Add(this.chbPremiering);
-            this.grpMaintenance.Controls.Add(this.cmbGenre);
+            this.grpMaintenance.Controls.Add(this.cmbGenre1);
             this.grpMaintenance.Controls.Add(this.lblGenre);
             this.grpMaintenance.Controls.Add(this.txtPrice);
             this.grpMaintenance.Controls.Add(this.lblPrice);
@@ -89,11 +93,22 @@
             this.grpMaintenance.Margin = new System.Windows.Forms.Padding(2);
             this.grpMaintenance.Name = "grpMaintenance";
             this.grpMaintenance.Padding = new System.Windows.Forms.Padding(2);
-            this.grpMaintenance.Size = new System.Drawing.Size(446, 542);
+            this.grpMaintenance.Size = new System.Drawing.Size(446, 579);
             this.grpMaintenance.TabIndex = 1;
             this.grpMaintenance.TabStop = false;
             this.grpMaintenance.Text = "INSERTAR PELÍCULAS";
             this.grpMaintenance.Paint += new System.Windows.Forms.PaintEventHandler(this.grpMaintenance_Paint);
+            // 
+            // chbNextPremiering
+            // 
+            this.chbNextPremiering.AutoSize = true;
+            this.chbNextPremiering.Location = new System.Drawing.Point(30, 494);
+            this.chbNextPremiering.Margin = new System.Windows.Forms.Padding(2);
+            this.chbNextPremiering.Name = "chbNextPremiering";
+            this.chbNextPremiering.Size = new System.Drawing.Size(134, 23);
+            this.chbNextPremiering.TabIndex = 16;
+            this.chbNextPremiering.Text = "Proximo Estreno";
+            this.chbNextPremiering.UseVisualStyleBackColor = true;
             // 
             // chbPremiering
             // 
@@ -106,10 +121,10 @@
             this.chbPremiering.Text = "Estreno de película";
             this.chbPremiering.UseVisualStyleBackColor = true;
             // 
-            // cmbGenre
+            // cmbGenre1
             // 
-            this.cmbGenre.FormattingEnabled = true;
-            this.cmbGenre.Items.AddRange(new object[] {
+            this.cmbGenre1.FormattingEnabled = true;
+            this.cmbGenre1.Items.AddRange(new object[] {
             "Accion",
             "Aventura",
             "Misterio",
@@ -119,11 +134,11 @@
             "Terror",
             "Suspense",
             "Comedia"});
-            this.cmbGenre.Location = new System.Drawing.Point(314, 416);
-            this.cmbGenre.Margin = new System.Windows.Forms.Padding(2);
-            this.cmbGenre.Name = "cmbGenre";
-            this.cmbGenre.Size = new System.Drawing.Size(102, 27);
-            this.cmbGenre.TabIndex = 13;
+            this.cmbGenre1.Location = new System.Drawing.Point(314, 416);
+            this.cmbGenre1.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbGenre1.Name = "cmbGenre1";
+            this.cmbGenre1.Size = new System.Drawing.Size(102, 27);
+            this.cmbGenre1.TabIndex = 13;
             // 
             // lblGenre
             // 
@@ -297,7 +312,7 @@
             this.price,
             this.genres,
             this.premiering});
-            this.dgvFilms.Location = new System.Drawing.Point(511, 185);
+            this.dgvFilms.Location = new System.Drawing.Point(511, 210);
             this.dgvFilms.Margin = new System.Windows.Forms.Padding(2);
             this.dgvFilms.Name = "dgvFilms";
             this.dgvFilms.ReadOnly = true;
@@ -372,7 +387,7 @@
             // btnBack
             // 
             this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnBack.Location = new System.Drawing.Point(1189, 532);
+            this.btnBack.Location = new System.Drawing.Point(1189, 569);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(144, 39);
             this.btnBack.TabIndex = 16;
@@ -383,22 +398,41 @@
             // 
             this.ofdSelect.FileName = "ofdSeleccionar";
             // 
-            // chbNextPremiering
+            // cmbGenre2
             // 
-            this.chbNextPremiering.AutoSize = true;
-            this.chbNextPremiering.Location = new System.Drawing.Point(30, 494);
-            this.chbNextPremiering.Margin = new System.Windows.Forms.Padding(2);
-            this.chbNextPremiering.Name = "chbNextPremiering";
-            this.chbNextPremiering.Size = new System.Drawing.Size(134, 23);
-            this.chbNextPremiering.TabIndex = 16;
-            this.chbNextPremiering.Text = "Proximo Estreno";
-            this.chbNextPremiering.UseVisualStyleBackColor = true;
+            this.cmbGenre2.FormattingEnabled = true;
+            this.cmbGenre2.Items.AddRange(new object[] {
+            "Accion",
+            "Aventura",
+            "Misterio",
+            "Ciencia Ficción",
+            "Drama",
+            "Fantasía",
+            "Terror",
+            "Suspense",
+            "Comedia"});
+            this.cmbGenre2.Location = new System.Drawing.Point(314, 463);
+            this.cmbGenre2.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbGenre2.Name = "cmbGenre2";
+            this.cmbGenre2.Size = new System.Drawing.Size(102, 27);
+            this.cmbGenre2.TabIndex = 17;
+            // 
+            // btnInsert
+            // 
+            this.btnInsert.Location = new System.Drawing.Point(22, 531);
+            this.btnInsert.Margin = new System.Windows.Forms.Padding(2);
+            this.btnInsert.Name = "btnInsert";
+            this.btnInsert.Size = new System.Drawing.Size(394, 32);
+            this.btnInsert.TabIndex = 18;
+            this.btnInsert.Text = "Insertar";
+            this.btnInsert.UseVisualStyleBackColor = true;
+            this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
             // 
             // FrmMovieMaintenance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1359, 599);
+            this.ClientSize = new System.Drawing.Size(1359, 657);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.dgvFilms);
             this.Controls.Add(this.grpClock);
@@ -435,7 +469,7 @@
         private System.Windows.Forms.PictureBox pibImage;
         private System.Windows.Forms.Button btnUpload;
         private System.Windows.Forms.CheckBox chbPremiering;
-        private System.Windows.Forms.ComboBox cmbGenre;
+        private System.Windows.Forms.ComboBox cmbGenre1;
         private System.Windows.Forms.Label lblGenre;
         private System.Windows.Forms.TextBox txtPrice;
         private System.Windows.Forms.Label lblPrice;
@@ -453,5 +487,7 @@
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.OpenFileDialog ofdSelect;
         private System.Windows.Forms.CheckBox chbNextPremiering;
+        private System.Windows.Forms.ComboBox cmbGenre2;
+        private System.Windows.Forms.Button btnInsert;
     }
 }
