@@ -73,7 +73,7 @@ namespace ProyectoGreenSpace.Classes
         /// </summary>
         public void Create()
         {
-            string query = "INSERT INTO films (userId, filmId, roomId, dateBought, dateFilm, quantity, total_price, discount) VALUES (@userId, @filmId, @roomId, @dateBought, @dateFilm, @quantity, @totalPrice, @discount)";
+            string query = "INSERT INTO tickets (userId, filmId, roomId, dateBought, dateFilm, quantity, total_price, discount) VALUES (@userId, @filmId, @roomId, @dateBought, @dateFilm, @quantity, @totalPrice, @discount)";
 
             MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
             command.Parameters.AddWithValue("@userId", userId);
@@ -98,7 +98,7 @@ namespace ProyectoGreenSpace.Classes
         /// <returns>Un objeto ticket</returns>
         public static Ticket Obtain(int id)
         {
-            string query = "SELECT * FROM users WHERE id LIKE @id";
+            string query = "SELECT * FROM tickets WHERE id LIKE @id";
 
             MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
             command.Parameters.AddWithValue("@id", id);
