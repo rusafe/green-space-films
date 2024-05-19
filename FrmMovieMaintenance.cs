@@ -22,9 +22,22 @@ namespace ProyectoGreenSpace
 
         private void FrmMovieMaintenance_Load(object sender, EventArgs e)
         {
+            timerClock.Enabled = true;
+            timerClock.Interval = 1000;
+            timerClock.Start();
 
+            LoadListMovies();
+
+            lblClock.Text = DateTime.Now.ToString("HH:mm:ss");
+            lblDate.Text = DateTime.Now.ToString("dd/MM/yyyy");
+
+            txtFilm.Focus();
         }
 
+        private void LoadListMovies()
+        {
+            dgvFilms.DataSource = Film.ObtainAll();
+        }
 
         private void btnUpload_Click(object sender, EventArgs e)
         {
@@ -62,6 +75,7 @@ namespace ProyectoGreenSpace
                 );
 
                 film.Create();
+                LoadListMovies();
             }
             catch (Exception ex)
             {
@@ -86,5 +100,24 @@ namespace ProyectoGreenSpace
             ControlPaint.DrawBorder(e.Graphics, pibImage.ClientRectangle, Color.Black, ButtonBorderStyle.Solid);
         }
         #endregion
+
+        private void timerClock_Tick(object sender, EventArgs e)
+        {
+            lblClock.Text = DateTime.Now.ToString("HH:mm:ss");
+        }
+
+        private void btnModifyFrm_Click(object sender, EventArgs e)
+        {
+            FrmMovieModify frmMovieModify = new FrmMovieModify();
+            frmMovieModify.Show();
+            this.Close();
+        }
+
+        private void btnDeleteFrm_Click(object sender, EventArgs e)
+        {
+            FrmMovieDelete frmMovieDelete = new FrmMovieDelete();
+            frmMovieDelete.Show();
+            this.Close();
+        }
     }
 }

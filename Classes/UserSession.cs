@@ -14,11 +14,13 @@ namespace ProyectoGreenSpace
         private static string username;
         private static string password;
         private static bool admin;
+        private static string mail;
 
         public static int Id { get { return id; } set { id = value; } }
         public static string Username { get { return username; } set { username = value; } }
         public static string Password { get { return password; } set { password = value; } }
         public static bool Admin { get { return admin; } set { admin = value; } }
+        public static string Mail { get { return mail; } set { mail = value; } }
 
         public static void DeleteUser()
         {
