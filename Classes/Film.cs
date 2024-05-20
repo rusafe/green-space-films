@@ -23,7 +23,7 @@ namespace ProyectoGreenSpace.Classes
         private bool premiering;
         private bool nextPremiering;
 
-        public int Id { get { return id; } }
+        public int Id { get { return id; } set { id = value; } }
         public string Name { get { return name; } }
         public string Synopsis { get { return synopsis; } }
         public Image Cover { get { return cover; } }
@@ -33,6 +33,8 @@ namespace ProyectoGreenSpace.Classes
         public string[] Genres { get { return genres; } }
         public bool Premiering { get { return premiering; } }
         public bool NextPremiering { get { return nextPremiering; } }
+
+        public Film() { }
 
         public Film(string name, string synopsis, Image cover, TimeSpan duration, int minAge, double price, string[] genres, bool premiering, bool nextPremiering)
         {
