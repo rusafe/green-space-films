@@ -58,6 +58,7 @@
     <Compile Include="Classes\Language.cs" />
     <Compile Include="Classes\Mail.cs" />
     <Compile Include="Classes\Program.cs" />
+    <Compile Include="Classes\Review.cs" />
     <Compile Include="Classes\Room.cs" />
     <Compile Include="Classes\Session.cs" />
     <Compile Include="Classes\ThemeMode.cs" />
