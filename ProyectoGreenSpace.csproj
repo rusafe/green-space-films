@@ -178,6 +178,9 @@
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmMovieDelete.resx">
+      <DependentUpon>FrmMovieDelete.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMovieMaintenance.resx">
       <DependentUpon>FrmMovieMaintenance.cs</DependentUpon>
     </EmbeddedResource>

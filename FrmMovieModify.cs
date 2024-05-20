@@ -20,6 +20,61 @@ namespace ProyectoGreenSpace
             grpModify.BackColor = Color.FromArgb(168, 228, 116);
         }
 
+        private void FrmMovieModify_Load(object sender, EventArgs e)
+        {
+            timerClock.Enabled = true;
+            timerClock.Interval = 1000;
+            timerClock.Start();
+
+            LoadListMovies();
+
+            lblClock.Text = DateTime.Now.ToString("HH:mm:ss");
+            lblDate.Text = DateTime.Now.ToString("dd/MM/yyyy");
+
+            SetFilmsIdentifyingValues();
+
+            cmbFilmsIds.Focus();
+        }
+        private void LoadListMovies()
+        {
+            dgvFilms.DataSource = Film.ObtainAll();
+        }
+
+        private void timerClock_Tick(object sender, EventArgs e)
+        {
+            lblClock.Text = DateTime.Now.ToString("HH:mm:ss");
+        }
+        private void btnModify_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string[] genres = new string[]
+                {
+                    cmbGenre1.Text,
+                    cmbGenre2.Text
+                };
+
+                Film film = new Film(
+                    Convert.ToInt32(cmbFilmsIds.Text),
+                    cmbFilms.Text,
+                    rtbSynopsis.Text,
+                    pibImage.Image,
+                    TimeSpan.Parse(txtDuration.Text),
+                    (int)nudMinAge.Value,
+                    Convert.ToDouble(txtPrice.Text),
+                    genres,
+                    chbPremiering.Checked,
+                    chbNextPremiering.Checked
+                );
+
+                film.Update();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
         #region Cargar Valores
         private void SetFilmsIdentifyingValues()
         {
@@ -45,23 +100,6 @@ namespace ProyectoGreenSpace
             cmbGenre2.Text = film.Genres[1];
         }
         #endregion
-
-        private void FrmMovieModify_Load(object sender, EventArgs e)
-        {
-            timerClock.Enabled = true;
-            timerClock.Interval = 1000;
-            timerClock.Start();
-
-            lblClock.Text = DateTime.Now.ToString("HH:mm:ss");
-            lblDate.Text = DateTime.Now.ToString("dd/MM/yyyy");
-
-            SetFilmsIdentifyingValues();
-        }
-
-        private void timerClock_Tick(object sender, EventArgs e)
-        {
-            lblClock.Text = DateTime.Now.ToString("HH:mm:ss");
-        }
 
         #region Acceso a formularios de administración
         private void btnBack_Click(object sender, EventArgs e)
@@ -123,37 +161,6 @@ namespace ProyectoGreenSpace
             if (ofdSelect.ShowDialog() == DialogResult.OK)
             {
                 pibImage.Image = Image.FromFile(ofdSelect.FileName); // Agregar el archivo seleccionado y mostrarlo en el cuadro.
-            }
-        }
-
-        private void btnModify_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                string[] genres = new string[]
-                {
-                    cmbGenre1.Text,
-                    cmbGenre2.Text
-                };
-
-                Film film = new Film(
-                    Convert.ToInt32(cmbFilmsIds.Text),
-                    cmbFilms.Text,
-                    rtbSynopsis.Text,
-                    pibImage.Image,
-                    TimeSpan.Parse(txtDuration.Text),
-                    (int)nudMinAge.Value,
-                    Convert.ToDouble(txtPrice.Text),
-                    genres,
-                    chbPremiering.Checked,
-                    chbNextPremiering.Checked
-                );
-
-                film.Update();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
             }
         }
     }
