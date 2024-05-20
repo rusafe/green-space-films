@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="Classes\ConnectionBD.cs" />
     <Compile Include="Classes\Controller.cs" />
+    <Compile Include="Classes\ExtensionMethods.cs" />
     <Compile Include="Classes\Film.cs" />
     <Compile Include="Classes\ImagesDB.cs" />
     <Compile Include="Classes\Language.cs" />
