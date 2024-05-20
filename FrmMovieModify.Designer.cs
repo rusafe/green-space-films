@@ -59,6 +59,7 @@
             this.lblFilm = new System.Windows.Forms.Label();
             this.timerClock = new System.Windows.Forms.Timer(this.components);
             this.ofdSelect = new System.Windows.Forms.OpenFileDialog();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFilms)).BeginInit();
             this.grpClock.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -406,11 +407,22 @@
             // 
             this.ofdSelect.FileName = "ofdSeleccionar";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(1558, 361);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(31, 16);
+            this.label1.TabIndex = 25;
+            this.label1.Text = "        ";
+            // 
             // FrmMovieModify
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1587, 716);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(1604, 716);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnDeleteFrm);
             this.Controls.Add(this.btnInsertFrm);
             this.Controls.Add(this.btnBack);
@@ -431,6 +443,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudMinAge)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pibImage)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -466,5 +479,6 @@
         private System.Windows.Forms.OpenFileDialog ofdSelect;
         private System.Windows.Forms.ComboBox cmbFilms;
         private System.Windows.Forms.ComboBox cmbFilmsIds;
+        private System.Windows.Forms.Label label1;
     }
 }

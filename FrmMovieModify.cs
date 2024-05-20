@@ -68,6 +68,8 @@ namespace ProyectoGreenSpace
                 );
 
                 film.Update();
+                LoadListMovies();
+                CleanData();
             }
             catch (Exception ex)
             {
@@ -98,6 +100,16 @@ namespace ProyectoGreenSpace
             chbNextPremiering.Checked = film.NextPremiering;
             cmbGenre1.Text = film.Genres[0];
             cmbGenre2.Text = film.Genres[1];
+        }
+
+        private void cmbFilmsIds_SelectedValueChanged(object sender, EventArgs e)
+        {
+            UpdateInputFields(Film.InfoFilm(Convert.ToInt32(cmbFilmsIds.Text)));
+        }
+
+        private void cmbFilms_SelectedValueChanged(object sender, EventArgs e)
+        {
+            UpdateInputFields(Film.InfoFilm(cmbFilms.Text));
         }
         #endregion
 
@@ -141,15 +153,7 @@ namespace ProyectoGreenSpace
         }
         #endregion
 
-        private void cmbFilmsIds_SelectedValueChanged(object sender, EventArgs e)
-        {
-            UpdateInputFields(Film.InfoFilm(Convert.ToInt32(cmbFilmsIds.Text)));
-        }
 
-        private void cmbFilms_SelectedValueChanged(object sender, EventArgs e)
-        {
-            UpdateInputFields(Film.InfoFilm(cmbFilms.Text));
-        }
 
         private void btnUpload_Click(object sender, EventArgs e)
         {
@@ -162,6 +166,20 @@ namespace ProyectoGreenSpace
             {
                 pibImage.Image = Image.FromFile(ofdSelect.FileName); // Agregar el archivo seleccionado y mostrarlo en el cuadro.
             }
+        }
+
+        private void CleanData()
+        {
+            cmbFilms.Text = string.Empty;
+            cmbFilmsIds.Text = string.Empty;
+            rtbSynopsis.Text = string.Empty;
+            txtDuration.Text = string.Empty;
+            txtPrice.Text = string.Empty;
+            nudMinAge.Value = 0;
+            cmbGenre1.Text = string.Empty;
+            cmbGenre2.Text = string.Empty;
+            chbPremiering.Checked = false;
+            chbNextPremiering.Checked = false;
         }
     }
 }

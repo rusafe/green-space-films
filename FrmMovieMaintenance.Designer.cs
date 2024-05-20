@@ -361,6 +361,7 @@
             this.btnBack.TabIndex = 16;
             this.btnBack.Text = "Salir";
             this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // ofdSelect
             // 
@@ -376,7 +377,7 @@
             this.btnModifyFrm.Name = "btnModifyFrm";
             this.btnModifyFrm.Size = new System.Drawing.Size(168, 52);
             this.btnModifyFrm.TabIndex = 17;
-            this.btnModifyFrm.Text = "Acceso modficaciones";
+            this.btnModifyFrm.Text = "Acceso modificaciones";
             this.btnModifyFrm.UseVisualStyleBackColor = true;
             this.btnModifyFrm.Click += new System.EventHandler(this.btnModifyFrm_Click);
             // 

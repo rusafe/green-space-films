@@ -27,12 +27,15 @@ namespace ProyectoGreenSpace
             timerClock.Start();
 
             LoadListMovies();
+            SetFilmsIdentifyingValues();
 
             lblClock.Text = DateTime.Now.ToString("HH:mm:ss");
             lblDate.Text = DateTime.Now.ToString("dd/MM/yyyy");
 
             cmbFilmsIds.Focus();
         }
+
+        
 
         private void LoadListMovies()
         {
@@ -43,6 +46,67 @@ namespace ProyectoGreenSpace
         {
             lblClock.Text = DateTime.Now.ToString("HH:mm:ss");
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Film film = new Film();
+                film.Id = Convert.ToInt32(cmbFilmsIds.Text);
+                film.Delete();
+
+                CleanData();
+                LoadListMovies();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void CleanData()
+        {
+            cmbFilms.Text = string.Empty;
+            cmbFilmsIds.Text = string.Empty;
+            rtbSynopsis.Text = string.Empty;
+            lblDuration1.Text = string.Empty;
+            lblPrice1.Text = string.Empty;
+            lblMinAge1.Text = string.Empty;
+            lblGenre1.Text = string.Empty;
+            lblGenre2.Text = string.Empty;
+        }
+
+        #region Cargar valores  
+        private void cmbFilmsIds_SelectedValueChanged(object sender, EventArgs e)
+        {
+            UpdateInputFields(Film.InfoFilm(Convert.ToInt32(cmbFilmsIds.Text)));
+        }
+
+        private void cmbFilms_SelectedValueChanged(object sender, EventArgs e)
+        {
+            UpdateInputFields(Film.InfoFilm(cmbFilms.Text));
+        }
+        private void UpdateInputFields(Film film)
+        {
+            cmbFilmsIds.Text = film.Id.ToString();
+            cmbFilms.Text = film.Name;
+            pibImage.Image = film.Cover;
+            rtbSynopsis.Text = film.Synopsis;
+            lblMinAge1.Text = film.MinAge.ToString();
+            lblDuration1.Text = film.Duration.ToString();
+            lblPrice1.Text = film.Price.ToString();
+            lblGenre1.Text = film.Genres[0];
+            lblGenre2.Text = film.Genres[1];
+        }
+        private void SetFilmsIdentifyingValues()
+        {
+            foreach (var values in Film.GetIdentifyingInfo())
+            {
+                cmbFilmsIds.Items.Add(values.id);
+                cmbFilms.Items.Add(values.name);
+            }
+        }
+        #endregion
 
         #region Acceso a formularios de admininstración
         private void btnInsertFrm_Click(object sender, EventArgs e)

@@ -34,11 +34,6 @@ namespace ProyectoGreenSpace
             txtFilm.Focus();
         }
 
-        private void LoadListMovies()
-        {
-            dgvFilms.DataSource = Film.ObtainAll();
-        }
-
         private void btnUpload_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofdSelect = new OpenFileDialog();
@@ -76,11 +71,16 @@ namespace ProyectoGreenSpace
 
                 film.Create();
                 LoadListMovies();
+                CleanData();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+        private void timerClock_Tick(object sender, EventArgs e)
+        {
+            lblClock.Text = DateTime.Now.ToString("HH:mm:ss");
         }
 
         #region Diseño de interface
@@ -101,11 +101,7 @@ namespace ProyectoGreenSpace
         }
         #endregion
 
-        private void timerClock_Tick(object sender, EventArgs e)
-        {
-            lblClock.Text = DateTime.Now.ToString("HH:mm:ss");
-        }
-
+        #region Acceso a formularios de acceso
         private void btnModifyFrm_Click(object sender, EventArgs e)
         {
             FrmMovieModify frmMovieModify = new FrmMovieModify();
@@ -118,6 +114,32 @@ namespace ProyectoGreenSpace
             FrmMovieDelete frmMovieDelete = new FrmMovieDelete();
             frmMovieDelete.Show();
             this.Close();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            FrmAccount frmAccount = new FrmAccount();
+            frmAccount.Show();
+            this.Close();
+        }
+        #endregion
+
+        private void LoadListMovies()
+        {
+            dgvFilms.DataSource = Film.ObtainAll();
+        }
+
+        private void CleanData()
+        {
+            txtFilm.Text = string.Empty;
+            rtbSynopsis.Text = string.Empty;
+            txtDuration.Text = string.Empty;
+            txtPrice.Text = string.Empty;
+            nudMinAge.Value = 0;
+            cmbGenre1.Text = string.Empty;
+            cmbGenre2.Text = string.Empty;
+            chbPremiering.Checked = false;
+            chbNextPremiering.Checked = false;
         }
     }
 }

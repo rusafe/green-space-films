@@ -38,6 +38,11 @@
             this.lblClock = new System.Windows.Forms.Label();
             this.lblDate = new System.Windows.Forms.Label();
             this.grpDelete = new System.Windows.Forms.GroupBox();
+            this.lblDuration1 = new System.Windows.Forms.Label();
+            this.lblPrice1 = new System.Windows.Forms.Label();
+            this.lblGenre2 = new System.Windows.Forms.Label();
+            this.lblGenre1 = new System.Windows.Forms.Label();
+            this.lblMinAge1 = new System.Windows.Forms.Label();
             this.cmbFilmsIds = new System.Windows.Forms.ComboBox();
             this.cmbFilms = new System.Windows.Forms.ComboBox();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -51,11 +56,6 @@
             this.lblFilm = new System.Windows.Forms.Label();
             this.timerClock = new System.Windows.Forms.Timer(this.components);
             this.ofdSelect = new System.Windows.Forms.OpenFileDialog();
-            this.lblMinAge1 = new System.Windows.Forms.Label();
-            this.lblGenre1 = new System.Windows.Forms.Label();
-            this.lblGenre2 = new System.Windows.Forms.Label();
-            this.lblPrice1 = new System.Windows.Forms.Label();
-            this.lblDuration1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFilms)).BeginInit();
             this.grpClock.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -189,6 +189,51 @@
             this.grpDelete.Text = "ELIMINAR PELÍCULAS";
             this.grpDelete.Paint += new System.Windows.Forms.PaintEventHandler(this.grpDelete_Paint);
             // 
+            // lblDuration1
+            // 
+            this.lblDuration1.AutoSize = true;
+            this.lblDuration1.Location = new System.Drawing.Point(126, 334);
+            this.lblDuration1.Name = "lblDuration1";
+            this.lblDuration1.Size = new System.Drawing.Size(60, 21);
+            this.lblDuration1.TabIndex = 25;
+            this.lblDuration1.Text = "label1";
+            // 
+            // lblPrice1
+            // 
+            this.lblPrice1.AutoSize = true;
+            this.lblPrice1.Location = new System.Drawing.Point(126, 371);
+            this.lblPrice1.Name = "lblPrice1";
+            this.lblPrice1.Size = new System.Drawing.Size(51, 21);
+            this.lblPrice1.TabIndex = 24;
+            this.lblPrice1.Text = "label";
+            // 
+            // lblGenre2
+            // 
+            this.lblGenre2.AutoSize = true;
+            this.lblGenre2.Location = new System.Drawing.Point(441, 369);
+            this.lblGenre2.Name = "lblGenre2";
+            this.lblGenre2.Size = new System.Drawing.Size(60, 21);
+            this.lblGenre2.TabIndex = 23;
+            this.lblGenre2.Text = "label2";
+            // 
+            // lblGenre1
+            // 
+            this.lblGenre1.AutoSize = true;
+            this.lblGenre1.Location = new System.Drawing.Point(356, 369);
+            this.lblGenre1.Name = "lblGenre1";
+            this.lblGenre1.Size = new System.Drawing.Size(60, 21);
+            this.lblGenre1.TabIndex = 22;
+            this.lblGenre1.Text = "label1";
+            // 
+            // lblMinAge1
+            // 
+            this.lblMinAge1.AutoSize = true;
+            this.lblMinAge1.Location = new System.Drawing.Point(356, 334);
+            this.lblMinAge1.Name = "lblMinAge1";
+            this.lblMinAge1.Size = new System.Drawing.Size(60, 21);
+            this.lblMinAge1.TabIndex = 21;
+            this.lblMinAge1.Text = "label1";
+            // 
             // cmbFilmsIds
             // 
             this.cmbFilmsIds.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -198,6 +243,7 @@
             this.cmbFilmsIds.Name = "cmbFilmsIds";
             this.cmbFilmsIds.Size = new System.Drawing.Size(55, 29);
             this.cmbFilmsIds.TabIndex = 0;
+            this.cmbFilmsIds.SelectedValueChanged += new System.EventHandler(this.cmbFilmsIds_SelectedValueChanged);
             // 
             // cmbFilms
             // 
@@ -208,6 +254,7 @@
             this.cmbFilms.Name = "cmbFilms";
             this.cmbFilms.Size = new System.Drawing.Size(185, 29);
             this.cmbFilms.TabIndex = 1;
+            this.cmbFilms.SelectedValueChanged += new System.EventHandler(this.cmbFilms_SelectedValueChanged);
             // 
             // btnDelete
             // 
@@ -218,6 +265,7 @@
             this.btnDelete.TabIndex = 2;
             this.btnDelete.Text = "Eliminar";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // lblGenre
             // 
@@ -302,51 +350,6 @@
             // ofdSelect
             // 
             this.ofdSelect.FileName = "ofdSeleccionar";
-            // 
-            // lblMinAge1
-            // 
-            this.lblMinAge1.AutoSize = true;
-            this.lblMinAge1.Location = new System.Drawing.Point(356, 334);
-            this.lblMinAge1.Name = "lblMinAge1";
-            this.lblMinAge1.Size = new System.Drawing.Size(60, 21);
-            this.lblMinAge1.TabIndex = 21;
-            this.lblMinAge1.Text = "label1";
-            // 
-            // lblGenre1
-            // 
-            this.lblGenre1.AutoSize = true;
-            this.lblGenre1.Location = new System.Drawing.Point(356, 369);
-            this.lblGenre1.Name = "lblGenre1";
-            this.lblGenre1.Size = new System.Drawing.Size(60, 21);
-            this.lblGenre1.TabIndex = 22;
-            this.lblGenre1.Text = "label1";
-            // 
-            // lblGenre2
-            // 
-            this.lblGenre2.AutoSize = true;
-            this.lblGenre2.Location = new System.Drawing.Point(441, 369);
-            this.lblGenre2.Name = "lblGenre2";
-            this.lblGenre2.Size = new System.Drawing.Size(60, 21);
-            this.lblGenre2.TabIndex = 23;
-            this.lblGenre2.Text = "label2";
-            // 
-            // lblPrice1
-            // 
-            this.lblPrice1.AutoSize = true;
-            this.lblPrice1.Location = new System.Drawing.Point(126, 371);
-            this.lblPrice1.Name = "lblPrice1";
-            this.lblPrice1.Size = new System.Drawing.Size(51, 21);
-            this.lblPrice1.TabIndex = 24;
-            this.lblPrice1.Text = "label";
-            // 
-            // lblDuration1
-            // 
-            this.lblDuration1.AutoSize = true;
-            this.lblDuration1.Location = new System.Drawing.Point(126, 334);
-            this.lblDuration1.Name = "lblDuration1";
-            this.lblDuration1.Size = new System.Drawing.Size(60, 21);
-            this.lblDuration1.TabIndex = 25;
-            this.lblDuration1.Text = "label1";
             // 
             // FrmMovieDelete
             // 
