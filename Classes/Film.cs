@@ -163,6 +163,27 @@ namespace ProyectoGreenSpace.Classes
             ConnectionBD.CloseConnection();
         }
 
+        public static bool Exists(string name)
+        {
+            bool exists;
+            
+            string query = "SELECT id FROM films WHERE name = @name";
+
+            MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
+            command.Parameters.AddWithValue("@name", name);
+
+            ConnectionBD.OpenConnection();
+
+            using (MySqlDataReader reader = command.ExecuteReader())
+            {
+                exists = reader.HasRows;
+            }
+
+            ConnectionBD.CloseConnection();
+
+            return exists;
+        }
+
         public double TotalScore()
         {
             string query = "SELECT AVG(score) FROM reviews WHERE fimlId = @film";
