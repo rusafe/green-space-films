@@ -1,12 +1,6 @@
 ﻿using ProyectoGreenSpace.LangResources;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ProyectoGreenSpace
@@ -17,10 +11,10 @@ namespace ProyectoGreenSpace
         {
             InitializeComponent();
             grpInfo.BackColor = Color.FromArgb(168, 228, 116);
-            txtSeating.BackColor = Color.FromArgb(168, 228, 116);
+            nudSeat.BackColor = Color.FromArgb(168, 228, 116);
         }
 
-        private void AplicarIdioma()
+        private void ApplyLanguage()
         {
             lblTitle.Text = StringResources.labelTitle;
             lblMovie.Text = StringResources.labelFilm;
@@ -38,7 +32,7 @@ namespace ProyectoGreenSpace
 
         private void FrmPayInfo_Load(object sender, EventArgs e)
         {
-
+            ApplyLanguage();
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -57,7 +51,6 @@ namespace ProyectoGreenSpace
 
         private void btnPay_Click(object sender, EventArgs e)
         {
-            // Pago de la película
         }
     }
 }

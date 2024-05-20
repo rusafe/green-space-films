@@ -17,10 +17,16 @@ namespace ProyectoGreenSpace
         public FrmAdmin()
         {
             InitializeComponent();
+            btnUser.BackColor = Color.FromArgb(176, 164, 180);
+            btnAdmin.BackColor = Color.FromArgb(168, 228, 116);
+            btnAccount.BackColor = Color.FromArgb(176, 164, 180);
+            grpBoxAdmin.BackColor = Color.FromArgb(168, 228, 116);
+            btnAdmin.Focus();
         }
 
         private void btnAdmin_Click(object sender, EventArgs e)
         {
+            Focus();
         }
 
 
@@ -80,6 +86,22 @@ namespace ProyectoGreenSpace
         private void ErrorValidation(string message)
         {
             MessageBox.Show(message, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+        }
+
+        private void btnExit_ClientSizeChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void FrmAdmin_Load(object sender, EventArgs e)
+        {
+            this.ActiveControl = btnAdmin;
+            btnAdmin.Focus();
         }
     }
 }
