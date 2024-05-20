@@ -167,7 +167,7 @@ namespace ProyectoGreenSpace.Classes
         {
             bool exists;
             
-            string query = "SELECT id FROM films WHERE name = @name";
+            string query = "SELECT id FROM films WHERE name LIKE @name";
 
             MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
             command.Parameters.AddWithValue("@name", name);
