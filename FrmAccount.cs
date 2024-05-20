@@ -15,6 +15,10 @@ namespace ProyectoGreenSpace
         public FrmAccount()
         {
             InitializeComponent();
+            btnUser.BackColor = Color.FromArgb(176, 164, 180);
+            btnAdmin.BackColor = Color.FromArgb(176, 164, 180);
+            btnAccount.BackColor = Color.FromArgb(168, 228, 116);
+           
         }
 
         private void btnAdmin_Click(object sender, EventArgs e)
@@ -46,6 +50,17 @@ namespace ProyectoGreenSpace
             {
                 this.BackColor = Color.FromArgb(32, 146, 14);
             }
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void FrmAccount_Load(object sender, EventArgs e)
+        {
+            this.ActiveControl = btnAccount;
+            btnAccount.Focus();
         }
     }
 }
