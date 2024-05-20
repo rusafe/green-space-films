@@ -13,7 +13,7 @@ namespace ProyectoGreenSpace
             InitializeComponent();
         }
 
-        private void AplicarIdioma()
+        private void ApplyLanguage()
         {
             lblUsername.Text = StringResources.labelUser;
             lblPassword.Text = StringResources.labelPassword;
@@ -29,7 +29,7 @@ namespace ProyectoGreenSpace
             btnLogin.BackColor = Color.FromArgb(76, 80, 144);
             grpLogin.BackColor = Color.FromArgb(176, 164, 180);
 
-            AplicarIdioma();
+            ApplyLanguage();
 
             txtUsername.Focus();
         }
@@ -37,13 +37,13 @@ namespace ProyectoGreenSpace
         private void pibSpanish_Click(object sender, EventArgs e)
         {
             Language.LanguageSpanish();
-            AplicarIdioma();
+            ApplyLanguage();
         }
 
         private void pibBritish_Click(object sender, EventArgs e)
         {
             Language.LanguageBritish();
-            AplicarIdioma();
+            ApplyLanguage();
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
