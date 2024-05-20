@@ -16,6 +16,7 @@ namespace ProyectoGreenSpace
         private string mail;
         private Image pfp;
         private bool admin;
+        private DateTime creationDateTime;
 
         // Métodos de acceso 
         public int Id { get { return id; } set { id = value; } }
@@ -25,6 +26,7 @@ namespace ProyectoGreenSpace
         public string Mail { get { return mail; } set { mail = value; } }
         public Image Pfp { get { return pfp; } set { pfp = value; } }
         public bool Admin { get { return admin; } set { admin = value; } }
+        public DateTime CreationDateTime { get { return creationDateTime; } set { creationDateTime = value; } } 
 
         // Constructores
         public User() { }
@@ -127,6 +129,7 @@ namespace ProyectoGreenSpace
                     user.password = reader["password"].ToString();
                     user.mail = reader["mail"].ToString();
                     user.admin = Convert.ToBoolean(reader["admin"]);
+                    user.creationDateTime = Convert.ToDateTime(reader["creationDateTime"]);
                 }
             }
             ConnectionBD.CloseConnection();

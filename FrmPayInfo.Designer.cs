@@ -38,7 +38,7 @@
             this.lblTotalImport = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
             this.grpInfo = new System.Windows.Forms.GroupBox();
-            this.txtSeating = new System.Windows.Forms.TextBox();
+            this.nudSeat = new System.Windows.Forms.NumericUpDown();
             this.txtDiscounts = new System.Windows.Forms.TextBox();
             this.txtTypeHall = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -57,6 +57,7 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.pctMovie = new System.Windows.Forms.PictureBox();
             this.grpInfo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudSeat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctMovie)).BeginInit();
             this.SuspendLayout();
             // 
@@ -161,7 +162,7 @@
             // 
             // grpInfo
             // 
-            this.grpInfo.Controls.Add(this.txtSeating);
+            this.grpInfo.Controls.Add(this.nudSeat);
             this.grpInfo.Controls.Add(this.txtDiscounts);
             this.grpInfo.Controls.Add(this.txtTypeHall);
             this.grpInfo.Controls.Add(this.textBox1);
@@ -185,18 +186,23 @@
             this.grpInfo.TabIndex = 44;
             this.grpInfo.TabStop = false;
             // 
-            // txtSeating
+            // nudSeat
             // 
-            this.txtSeating.BackColor = System.Drawing.Color.White;
-            this.txtSeating.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtSeating.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSeating.ForeColor = System.Drawing.Color.White;
-            this.txtSeating.Location = new System.Drawing.Point(405, 322);
-            this.txtSeating.Multiline = true;
-            this.txtSeating.Name = "txtSeating";
-            this.txtSeating.Size = new System.Drawing.Size(200, 67);
-            this.txtSeating.TabIndex = 34;
-            this.txtSeating.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.nudSeat.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudSeat.Location = new System.Drawing.Point(485, 340);
+            this.nudSeat.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nudSeat.Name = "nudSeat";
+            this.nudSeat.Size = new System.Drawing.Size(120, 36);
+            this.nudSeat.TabIndex = 34;
+            this.nudSeat.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // txtDiscounts
             // 
@@ -271,9 +277,10 @@
             // lblSeating
             // 
             this.lblSeating.AutoSize = true;
-            this.lblSeating.Location = new System.Drawing.Point(481, 284);
+            this.lblSeating.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSeating.Location = new System.Drawing.Point(481, 307);
             this.lblSeating.Name = "lblSeating";
-            this.lblSeating.Size = new System.Drawing.Size(98, 23);
+            this.lblSeating.Size = new System.Drawing.Size(99, 23);
             this.lblSeating.TabIndex = 26;
             this.lblSeating.Text = "BUTACAS";
             // 
@@ -396,6 +403,7 @@
             this.Load += new System.EventHandler(this.FrmPayInfo_Load);
             this.grpInfo.ResumeLayout(false);
             this.grpInfo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudSeat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctMovie)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -414,7 +422,6 @@
         private System.Windows.Forms.Label lblTotalImport;
         private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.GroupBox grpInfo;
-        private System.Windows.Forms.TextBox txtSeating;
         private System.Windows.Forms.TextBox txtDiscounts;
         private System.Windows.Forms.TextBox txtTypeHall;
         private System.Windows.Forms.TextBox textBox1;
@@ -432,5 +439,6 @@
         private System.Windows.Forms.Label lblMovie;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.PictureBox pctMovie;
+        private System.Windows.Forms.NumericUpDown nudSeat;
     }
 }

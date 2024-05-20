@@ -35,6 +35,7 @@ namespace ProyectoGreenSpace
 
         private void FrmFilms_Load(object sender, EventArgs e)
         {
+            pibClose.Visible = false;
             lblUsername.Visible = false;
             txtUsername.Visible = false;
             lblJoinApp.Visible = false;
@@ -42,6 +43,7 @@ namespace ProyectoGreenSpace
             lblLogOut.Visible = false;
 
             txtUsername.Text = UserSession.Username;
+            txtJoinApp.Text = UserSession.CreationDateTime.ToString("dd/MM/yyyy");
 
             ApplyLanguage();
         }
@@ -192,6 +194,7 @@ namespace ProyectoGreenSpace
 
         private void btnUser_Click(object sender, EventArgs e)
         {
+            pibClose.Visible = true;
             lblUsername.Visible = true;
             txtUsername.Visible = true;
             lblJoinApp.Visible = true;
@@ -321,7 +324,24 @@ namespace ProyectoGreenSpace
             frmMovieTheater.Show();
             this.Close();
         }
+
+        private void lblLogOut_Click(object sender, EventArgs e)
+        {
+            FrmLogin frmLogin = new FrmLogin();
+            frmLogin.Show();
+            this.Close();
+        }
         #endregion
+
+        private void pibClose_Click(object sender, EventArgs e)
+        {
+            pibClose.Visible = false;
+            lblUsername.Visible = false;
+            txtUsername.Visible = false;
+            lblJoinApp.Visible = false;
+            txtJoinApp.Visible = false;
+            lblLogOut.Visible = false;
+        }
 
     }
 }
