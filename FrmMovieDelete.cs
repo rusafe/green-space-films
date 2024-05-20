@@ -51,9 +51,7 @@ namespace ProyectoGreenSpace
         {
             try
             {
-                Film film = new Film();
-                film.Id = Convert.ToInt32(cmbFilmsIds.Text);
-                film.Delete();
+                Film.Delete(Convert.ToInt32(cmbFilmsIds.Text));
 
                 CleanData();
                 LoadListMovies();

@@ -23,7 +23,7 @@ namespace ProyectoGreenSpace.Classes
         private bool premiering;
         private bool nextPremiering;
 
-        public int Id { get { return id; } set { id = value; } }
+        public int Id { get { return id; } }
         public string Name { get { return name; } }
         public string Synopsis { get { return synopsis; } }
         public Image Cover { get { return cover; } }
@@ -33,8 +33,6 @@ namespace ProyectoGreenSpace.Classes
         public string[] Genres { get { return genres; } }
         public bool Premiering { get { return premiering; } }
         public bool NextPremiering { get { return nextPremiering; } }
-
-        public Film() { }
 
         public Film(string name, string synopsis, Image cover, TimeSpan duration, int minAge, double price, string[] genres, bool premiering, bool nextPremiering)
         {
@@ -148,9 +146,10 @@ namespace ProyectoGreenSpace.Classes
         }
 
         /// <summary>
-        /// Deletes the Film from the Database
+        /// Deletes a Film from the Database
         /// </summary>
-        public void Delete()
+        /// <param name="id">The film Id</param>
+        public static void Delete(int id)
         {
             string query = "DELETE FROM films WHERE id = @id";
 
