@@ -319,7 +319,7 @@ namespace ProyectoGreenSpace.Classes
         {
             List<Film> premiering = new List<Film>();
 
-            string query = "SELECT * FROM films WHERE premiering = @primiering LIMIT $max_premiering";
+            string query = "SELECT * FROM films WHERE premiering = @premiering LIMIT @max_premiering";
 
             MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
             command.Parameters.AddWithValue("@premiering", true);

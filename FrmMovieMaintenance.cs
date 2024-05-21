@@ -21,6 +21,35 @@ namespace ProyectoGreenSpace
             grpMaintenance.BackColor = Color.FromArgb(168, 228, 116);
         }
 
+        #region Validaciones
+        private bool ValidateInputs()
+        {
+            bool valid = true;
+
+            if (EmptyGenres())
+            {
+                valid = false;
+                MessageBox.Show("Se tienen que introducir 2 generos");
+            }
+            else if (SameGenres())
+            {
+                valid = false;
+                MessageBox.Show("No se puede introducir el mismo genero varias veces");
+            }
+
+            return valid;
+        }
+
+        private bool SameGenres()
+        {
+            return cmbGenre1.Text.Equals(cmbGenre2.Text);
+        }
+        private bool EmptyGenres()
+        {
+            return string.IsNullOrEmpty(cmbGenre1.Text) || string.IsNullOrEmpty(cmbGenre2.Text);
+        }
+        #endregion
+
         private void LoadGenres()
         {
             string[] genres = Film.ObtainGenres();
@@ -61,6 +90,11 @@ namespace ProyectoGreenSpace
 
         private void btnInsert_Click(object sender, EventArgs e)
         {
+            if (!ValidateInputs())
+            {
+                return;
+            }
+
             try
             {
                 string[] genres = new string[]
