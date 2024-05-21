@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoGreenSpace.LangResources;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -26,6 +27,14 @@ namespace ProyectoGreenSpace
             btnWriteReview.BackColor = Color.FromArgb(168, 228, 116);
             pnlReviews.BackColor = Color.FromArgb(176, 164, 180);
             grpReview.BackColor = Color.White;
+        }
+        private void FrmWriteReview_Load(object sender, EventArgs e)
+        {
+            NotVisibleUserButtons();
+            ApplyLanguage();
+
+            txtUsername.Text = UserSession.Username;
+            txtJoinApp.Text = UserSession.CreationDateTime.ToString("dd/MM/yyyy");
         }
 
         private void sidebarTimer_Tick(object sender, EventArgs e)
@@ -77,6 +86,57 @@ namespace ProyectoGreenSpace
             }
         }
 
+        private void btnResset_Click(object sender, EventArgs e)
+        {
+            rtxReview1.Text = string.Empty;
+        }
+
+        private void btnSend_Click(object sender, EventArgs e)
+        {
+            // Enviar a la base de datos
+        }
+
+        private void ApplyLanguage()
+        {
+            lblMenu.Text = StringResources.labelMenu;
+            btnTicketOffice.Text = StringResources.buttonTicketOffice;
+            btnReviewTickets.Text = StringResources.buttonReviewTickets;
+            btnReviews.Text = StringResources.buttonReviews;
+            btnWriteReview.Text = StringResources.buttonWriteReview;
+            btnUser.Text = StringResources.buttonUser;
+            btnSettings.Text = StringResources.buttonConfiguration;
+            lblTitleReview.Text = StringResources.labelReviewTitle;
+            btnReset.Text = StringResources.buttonReset;
+            btnSend.Text = StringResources.buttonSendReview;
+            lblJoinApp.Text = StringResources.labelJoinApp;
+            lblLogOut.Text = StringResources.labelLogOut;
+            lblUsername.Text = StringResources.labelUser;
+        }
+        private void btnUser_Click(object sender, EventArgs e)
+        {
+            pibClose.Visible = true;
+            lblUsername.Visible = true;
+            txtUsername.Visible = true;
+            lblJoinApp.Visible = true;
+            txtJoinApp.Visible = true;
+            lblLogOut.Visible = true;
+        }
+
+        private void pibClose_Click(object sender, EventArgs e)
+        {
+            NotVisibleUserButtons();
+        }
+
+        private void NotVisibleUserButtons()
+        {
+            pibClose.Visible = false;
+            lblUsername.Visible = false;
+            txtUsername.Visible = false;
+            lblJoinApp.Visible = false;
+            txtJoinApp.Visible = false;
+            lblLogOut.Visible = false;
+        }
+
         #region Acceso a formularios desde menú desplegable
         private void btnTicketOffice_Click(object sender, EventArgs e)
         {
@@ -113,15 +173,5 @@ namespace ProyectoGreenSpace
             this.Close();
         }
         #endregion
-
-        private void btnResset_Click(object sender, EventArgs e)
-        {
-            rtxReview1.Text = string.Empty;
-        }
-
-        private void btnSend_Click(object sender, EventArgs e)
-        {
-            // Enviar a la base de datos
-        }
     }
 }

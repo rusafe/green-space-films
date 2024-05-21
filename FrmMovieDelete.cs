@@ -1,4 +1,5 @@
 ﻿using ProyectoGreenSpace.Classes;
+using ProyectoGreenSpace.LangResources;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -28,6 +29,7 @@ namespace ProyectoGreenSpace
 
             LoadListMovies();
             SetFilmsIdentifyingValues();
+            ApplyLanguage();
 
             lblClock.Text = DateTime.Now.ToString("HH:mm:ss");
             lblDate.Text = DateTime.Now.ToString("dd/MM/yyyy");
@@ -72,6 +74,18 @@ namespace ProyectoGreenSpace
             lblMinAge1.Text = string.Empty;
             lblGenre1.Text = string.Empty;
             lblGenre2.Text = string.Empty;
+        }
+
+        private void ApplyLanguage()
+        {
+            lblFilm.Text = StringResources.lblFilm;
+            lblSynopsis.Text = StringResources.lblSynopsis;
+            lblDuration.Text = StringResources.lblDuration;
+            lblMinAge.Text = StringResources.lblMinAge;
+            lblPrice.Text = StringResources.lblPrice;
+            lblGenre.Text = StringResources.lblGenre;
+            btnInsertFrm.Text = StringResources.btnInsertFrm;
+            grpDelete.Text = StringResources.groupBoxDelete;
         }
 
         #region Cargar valores  

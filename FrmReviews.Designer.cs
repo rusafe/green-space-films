@@ -43,6 +43,12 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.btnWriteReview = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.pibClose = new System.Windows.Forms.PictureBox();
+            this.lblLogOut = new System.Windows.Forms.Label();
+            this.txtJoinApp = new System.Windows.Forms.TextBox();
+            this.lblJoinApp = new System.Windows.Forms.Label();
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.lblUsername = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.btnUser = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
@@ -95,6 +101,8 @@
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pibClose)).BeginInit();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
             this.pnlReviews.SuspendLayout();
@@ -183,6 +191,7 @@
             this.btnTicketOffice.Size = new System.Drawing.Size(233, 52);
             this.btnTicketOffice.TabIndex = 22;
             this.btnTicketOffice.Text = "               Taquilla";
+            this.btnTicketOffice.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTicketOffice.UseVisualStyleBackColor = true;
             this.btnTicketOffice.Click += new System.EventHandler(this.btnTicketOffice_Click);
             // 
@@ -204,6 +213,7 @@
             this.btnReviewTickets.Size = new System.Drawing.Size(233, 53);
             this.btnReviewTickets.TabIndex = 23;
             this.btnReviewTickets.Text = "          Revisar Tickets";
+            this.btnReviewTickets.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnReviewTickets.UseVisualStyleBackColor = true;
             this.btnReviewTickets.Click += new System.EventHandler(this.btnReviewTickets_Click);
             // 
@@ -225,6 +235,7 @@
             this.btnReviews.Size = new System.Drawing.Size(233, 54);
             this.btnReviews.TabIndex = 24;
             this.btnReviews.Text = "            Ver Reseñas";
+            this.btnReviews.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnReviews.UseVisualStyleBackColor = true;
             this.btnReviews.Click += new System.EventHandler(this.btnReviews_Click);
             // 
@@ -246,15 +257,83 @@
             this.btnWriteReview.Size = new System.Drawing.Size(233, 58);
             this.btnWriteReview.TabIndex = 24;
             this.btnWriteReview.Text = "          Escribir Reseña";
+            this.btnWriteReview.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnWriteReview.UseVisualStyleBackColor = true;
             this.btnWriteReview.Click += new System.EventHandler(this.btnWriteReview_Click);
             // 
             // panel6
             // 
+            this.panel6.Controls.Add(this.pibClose);
+            this.panel6.Controls.Add(this.lblLogOut);
+            this.panel6.Controls.Add(this.txtJoinApp);
+            this.panel6.Controls.Add(this.lblJoinApp);
+            this.panel6.Controls.Add(this.txtUsername);
+            this.panel6.Controls.Add(this.lblUsername);
             this.panel6.Location = new System.Drawing.Point(3, 398);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(239, 210);
             this.panel6.TabIndex = 5;
+            // 
+            // pibClose
+            // 
+            this.pibClose.Image = global::ProyectoGreenSpace.Properties.Resources.cancel;
+            this.pibClose.Location = new System.Drawing.Point(189, 8);
+            this.pibClose.Name = "pibClose";
+            this.pibClose.Size = new System.Drawing.Size(35, 33);
+            this.pibClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pibClose.TabIndex = 11;
+            this.pibClose.TabStop = false;
+            this.pibClose.Click += new System.EventHandler(this.pibClose_Click);
+            // 
+            // lblLogOut
+            // 
+            this.lblLogOut.AutoSize = true;
+            this.lblLogOut.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLogOut.Location = new System.Drawing.Point(76, 179);
+            this.lblLogOut.Name = "lblLogOut";
+            this.lblLogOut.Size = new System.Drawing.Size(134, 23);
+            this.lblLogOut.TabIndex = 10;
+            this.lblLogOut.Text = "Cerrar sesión";
+            // 
+            // txtJoinApp
+            // 
+            this.txtJoinApp.Enabled = false;
+            this.txtJoinApp.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtJoinApp.Location = new System.Drawing.Point(19, 127);
+            this.txtJoinApp.Name = "txtJoinApp";
+            this.txtJoinApp.ReadOnly = true;
+            this.txtJoinApp.Size = new System.Drawing.Size(182, 32);
+            this.txtJoinApp.TabIndex = 9;
+            // 
+            // lblJoinApp
+            // 
+            this.lblJoinApp.AutoSize = true;
+            this.lblJoinApp.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblJoinApp.Location = new System.Drawing.Point(15, 92);
+            this.lblJoinApp.Name = "lblJoinApp";
+            this.lblJoinApp.Size = new System.Drawing.Size(176, 23);
+            this.lblJoinApp.TabIndex = 8;
+            this.lblJoinApp.Text = "Miembros desde:";
+            // 
+            // txtUsername
+            // 
+            this.txtUsername.Enabled = false;
+            this.txtUsername.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsername.Location = new System.Drawing.Point(19, 47);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.ReadOnly = true;
+            this.txtUsername.Size = new System.Drawing.Size(182, 32);
+            this.txtUsername.TabIndex = 7;
+            // 
+            // lblUsername
+            // 
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsername.Location = new System.Drawing.Point(15, 17);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(119, 23);
+            this.lblUsername.TabIndex = 6;
+            this.lblUsername.Text = "Username: ";
             // 
             // panel7
             // 
@@ -274,7 +353,9 @@
             this.btnUser.Size = new System.Drawing.Size(233, 52);
             this.btnUser.TabIndex = 24;
             this.btnUser.Text = "               Usuario";
+            this.btnUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnUser.UseVisualStyleBackColor = true;
+            this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
             // 
             // panel8
             // 
@@ -294,6 +375,7 @@
             this.btnSettings.Size = new System.Drawing.Size(233, 48);
             this.btnSettings.TabIndex = 24;
             this.btnSettings.Text = "          Configuración";
+            this.btnSettings.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSettings.UseVisualStyleBackColor = true;
             this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
@@ -754,6 +836,7 @@
             this.Name = "FrmReviews";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmReviews";
+            this.Load += new System.EventHandler(this.FrmReviews_Load);
             this.sidebar.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -761,6 +844,9 @@
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pibClose)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.pnlReviews.ResumeLayout(false);
@@ -846,5 +932,11 @@
         private System.Windows.Forms.Label lblAntiquityReview2;
         private System.Windows.Forms.Label lblNameReview2;
         private System.Windows.Forms.RichTextBox rtxReview2;
+        private System.Windows.Forms.PictureBox pibClose;
+        private System.Windows.Forms.Label lblLogOut;
+        private System.Windows.Forms.TextBox txtJoinApp;
+        private System.Windows.Forms.Label lblJoinApp;
+        private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.Label lblUsername;
     }
 }

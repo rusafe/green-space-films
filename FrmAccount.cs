@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoGreenSpace.LangResources;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,18 +21,12 @@ namespace ProyectoGreenSpace
             btnAccount.BackColor = Color.FromArgb(168, 228, 116);
            
         }
-
-        private void btnAdmin_Click(object sender, EventArgs e)
+        private void FrmAccount_Load(object sender, EventArgs e)
         {
-            FrmAdmin for3 = new FrmAdmin();
-            for3.ShowDialog();
-        }
+            this.ActiveControl = btnAccount;
+            btnAccount.Focus();
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            FrmFilms frmFilms = new FrmFilms();
-            frmFilms.Show();
+           ApplyLanguage();
         }
 
         private void pibLightMode_Click(object sender, EventArgs e)
@@ -55,12 +50,43 @@ namespace ProyectoGreenSpace
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+            FrmFilms frmFilms = new FrmFilms();
+            frmFilms.Show();
+        }
+        private void ApplyLanguage()
+        {
+            btnUser.Text = StringResources.labelUser;
+            btnAdmin.Text = StringResources.buttonAdmin;
+            btnAccount.Text = StringResources.buttonAccount;
+            btnExit.Text = StringResources.buttonExit;
+            btnDeleteAccount.Text = StringResources.buttonDeleteAccount;
+            lblDeleteUser.Text = StringResources.labelMailAssociated;
+            grpSwitchNightDay.Text = StringResources.grpSwitch;
+            btnPredet.Text = StringResources.buttonDefault;
+            lblChangeLanguage.Text = StringResources.labelChangeLanguage;
         }
 
-        private void FrmAccount_Load(object sender, EventArgs e)
+        #region Acceder a formularios de Configuración
+        private void btnAccount_Click(object sender, EventArgs e)
         {
-            this.ActiveControl = btnAccount;
-            btnAccount.Focus();
+            FrmAccount frmAccount = new FrmAccount();
+            frmAccount.Show();
+            this.Close();
         }
+
+        private void btnAdmin_Click(object sender, EventArgs e)
+        {
+            FrmAdmin frmAdmin = new FrmAdmin();
+            frmAdmin.Show();
+            this.Close();
+        }
+
+        private void btnUser_Click(object sender, EventArgs e)
+        {
+            FrmUser frmUser = new FrmUser();
+            frmUser.Show();
+            this.Close();
+        }
+        #endregion
     }
 }

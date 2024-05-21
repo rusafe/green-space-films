@@ -117,8 +117,53 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="btnDeleteFilm" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="btnDeleteFrm" xml:space="preserve">
+    <value>Acceso eliminaciones</value>
+  </data>
+  <data name="btnInsert" xml:space="preserve">
+    <value>Insertar</value>
+  </data>
+  <data name="btnInsertFrm" xml:space="preserve">
+    <value>Acceso inserciones</value>
+  </data>
+  <data name="btnModifyFrm" xml:space="preserve">
+    <value>Acceso modificaciones</value>
+  </data>
+  <data name="btnUpdateFilm" xml:space="preserve">
+    <value>Actualizar</value>
+  </data>
+  <data name="btnUpload" xml:space="preserve">
+    <value>Cargar imagen</value>
+  </data>
+  <data name="buttonAccount" xml:space="preserve">
+    <value>Cuenta</value>
+  </data>
+  <data name="buttonAdmin" xml:space="preserve">
+    <value>Admin.</value>
+  </data>
+  <data name="buttonChangeName" xml:space="preserve">
+    <value>Cambiar Nombre</value>
+  </data>
+  <data name="buttonChangePassword" xml:space="preserve">
+    <value>Cambiar Contraseña</value>
+  </data>
+  <data name="buttonChangePhoto" xml:space="preserve">
+    <value>Cambiar foto</value>
+  </data>
   <data name="buttonConfiguration" xml:space="preserve">
     <value>Configuración</value>
+  </data>
+  <data name="buttonDefault" xml:space="preserve">
+    <value>Predet.</value>
+  </data>
+  <data name="buttonDeleteAccount" xml:space="preserve">
+    <value>Eliminar cuenta</value>
+  </data>
+  <data name="buttonExit" xml:space="preserve">
+    <value>Salir</value>
   </data>
   <data name="buttonLink" xml:space="preserve">
     <value>Enviar enlace</value>
@@ -129,6 +174,9 @@
   <data name="buttonRegister" xml:space="preserve">
     <value>Registrarse</value>
   </data>
+  <data name="buttonReset" xml:space="preserve">
+    <value>Reestablecer</value>
+  </data>
   <data name="buttonReviews" xml:space="preserve">
     <value>Reseñas</value>
   </data>
@@ -137,6 +185,9 @@
   </data>
   <data name="buttonSend" xml:space="preserve">
     <value>Enviar código de verificación</value>
+  </data>
+  <data name="buttonSendReview" xml:space="preserve">
+    <value>Envíar</value>
   </data>
   <data name="buttonTicketOffice" xml:space="preserve">
     <value>Taquilla</value>
@@ -149,6 +200,36 @@
   </data>
   <data name="buttonWriteReview" xml:space="preserve">
     <value>Escribir Reseña</value>
+  </data>
+  <data name="chbNextPremiering" xml:space="preserve">
+    <value>Próximo Estreno</value>
+  </data>
+  <data name="chbPremiering" xml:space="preserve">
+    <value>Estreno de película</value>
+  </data>
+  <data name="comboMovies" xml:space="preserve">
+    <value>Películas</value>
+  </data>
+  <data name="comboOrder" xml:space="preserve">
+    <value>Ordenar por</value>
+  </data>
+  <data name="comboStars" xml:space="preserve">
+    <value>Estrellas</value>
+  </data>
+  <data name="groupBoxDelete" xml:space="preserve">
+    <value>Eliminar películas</value>
+  </data>
+  <data name="groupBoxModify" xml:space="preserve">
+    <value>Modificar películas</value>
+  </data>
+  <data name="grpSwitch" xml:space="preserve">
+    <value>Elige el tipo de modo:</value>
+  </data>
+  <data name="labelActualTickets" xml:space="preserve">
+    <value>Tickets actuales:</value>
+  </data>
+  <data name="labelChangeLanguage" xml:space="preserve">
+    <value>Cambiar idioma:</value>
   </data>
   <data name="labelDiscount" xml:space="preserve">
     <value>DESCUENTO:</value>
@@ -165,8 +246,17 @@
   <data name="labelForgottenPassword" xml:space="preserve">
     <value>¿Has olvidado la contraseña?</value>
   </data>
+  <data name="labelJoinApp" xml:space="preserve">
+    <value>Miembro desde</value>
+  </data>
+  <data name="labelLogOut" xml:space="preserve">
+    <value>Cerrar sesión</value>
+  </data>
   <data name="labelMail" xml:space="preserve">
     <value>Correo electrónico</value>
+  </data>
+  <data name="labelMailAssociated" xml:space="preserve">
+    <value>Cuenta asociada de correo:</value>
   </data>
   <data name="labelMenu" xml:space="preserve">
     <value>MENU</value>
@@ -174,11 +264,17 @@
   <data name="labelName" xml:space="preserve">
     <value>NOMBRE</value>
   </data>
+  <data name="labelNameUser" xml:space="preserve">
+    <value>Nombre de Usuario:</value>
+  </data>
   <data name="labelNextTitle" xml:space="preserve">
     <value>PRÓXIMOS ESTRENOS - PELÍCULAS JUNIO 2024</value>
   </data>
   <data name="labelPassword" xml:space="preserve">
     <value>Contraseña</value>
+  </data>
+  <data name="labelPastTickets" xml:space="preserve">
+    <value>Tickets pasados:</value>
   </data>
   <data name="labelRegister" xml:space="preserve">
     <value>Registrarse</value>
@@ -213,8 +309,29 @@
   <data name="labelUser" xml:space="preserve">
     <value>Usuario</value>
   </data>
+  <data name="lableReviewTitle" xml:space="preserve">
+    <value>Escribe aquí tu reseña</value>
+  </data>
+  <data name="lblDuration" xml:space="preserve">
+    <value>Duración:</value>
+  </data>
+  <data name="lblFilm" xml:space="preserve">
+    <value>Película:</value>
+  </data>
+  <data name="lblGenre" xml:space="preserve">
+    <value>Géneros:</value>
+  </data>
+  <data name="lblMinAge" xml:space="preserve">
+    <value>Años mínimos:</value>
+  </data>
+  <data name="lblPrice" xml:space="preserve">
+    <value>Precio:</value>
+  </data>
   <data name="lblQuestionRegister" xml:space="preserve">
     <value>¿Todavía no tienes una cuenta?</value>
+  </data>
+  <data name="lblSynopsis" xml:space="preserve">
+    <value>Sinopis:</value>
   </data>
   <data name="linkLogin" xml:space="preserve">
     <value>¿Ya tienes una cuenta? Iniciar sesión</value>

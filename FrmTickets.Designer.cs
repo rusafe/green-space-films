@@ -156,6 +156,7 @@
             this.btnTicketOffice.Size = new System.Drawing.Size(233, 52);
             this.btnTicketOffice.TabIndex = 22;
             this.btnTicketOffice.Text = "               Taquilla";
+            this.btnTicketOffice.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTicketOffice.UseVisualStyleBackColor = true;
             this.btnTicketOffice.Click += new System.EventHandler(this.btnTicketOffice_Click);
             // 
@@ -177,6 +178,7 @@
             this.btnReviewTickets.Size = new System.Drawing.Size(233, 53);
             this.btnReviewTickets.TabIndex = 23;
             this.btnReviewTickets.Text = "          Revisar Tickets";
+            this.btnReviewTickets.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnReviewTickets.UseVisualStyleBackColor = true;
             this.btnReviewTickets.Click += new System.EventHandler(this.btnReviewTickets_Click);
             // 
@@ -198,6 +200,7 @@
             this.btnReviews.Size = new System.Drawing.Size(233, 54);
             this.btnReviews.TabIndex = 24;
             this.btnReviews.Text = "            Ver Reseñas";
+            this.btnReviews.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnReviews.UseVisualStyleBackColor = true;
             this.btnReviews.Click += new System.EventHandler(this.btnReviews_Click);
             // 
@@ -219,6 +222,7 @@
             this.btnWriteReview.Size = new System.Drawing.Size(233, 58);
             this.btnWriteReview.TabIndex = 24;
             this.btnWriteReview.Text = "          Escribir Reseña";
+            this.btnWriteReview.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnWriteReview.UseVisualStyleBackColor = true;
             this.btnWriteReview.Click += new System.EventHandler(this.btnWriteReview_Click);
             // 
@@ -239,6 +243,7 @@
             // 
             // btnUser
             // 
+            this.btnUser.Enabled = false;
             this.btnUser.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUser.Image = ((System.Drawing.Image)(resources.GetObject("btnUser.Image")));
             this.btnUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -247,6 +252,7 @@
             this.btnUser.Size = new System.Drawing.Size(233, 52);
             this.btnUser.TabIndex = 24;
             this.btnUser.Text = "               Usuario";
+            this.btnUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnUser.UseVisualStyleBackColor = true;
             // 
             // panel8
@@ -267,6 +273,7 @@
             this.btnSettings.Size = new System.Drawing.Size(233, 48);
             this.btnSettings.TabIndex = 24;
             this.btnSettings.Text = "          Configuración";
+            this.btnSettings.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSettings.UseVisualStyleBackColor = true;
             this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
@@ -540,6 +547,7 @@
             this.Name = "FrmTickets";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmTickets";
+            this.Load += new System.EventHandler(this.FrmTickets_Load);
             this.sidebar.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

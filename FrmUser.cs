@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoGreenSpace.LangResources;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,6 +23,25 @@ namespace ProyectoGreenSpace
             btnUser.Focus();
         }
 
+        private void FrmUser_Load(object sender, EventArgs e)
+        {
+            ApplyLanguage();
+        }
+
+        private void ApplyLanguage()
+        {
+            btnUser.Text = StringResources.labelUser;
+            btnAdmin.Text = StringResources.buttonAdmin;
+            btnAccount.Text = StringResources.buttonAccount;
+            lblNameUser.Text = StringResources.labelNameUser;
+            btnChangeName.Text = StringResources.buttonChangeName;
+            btnChangePhoto.Text = StringResources.buttonChangePhoto;
+            lblMailAssociated.Text = StringResources.labelMailAssociated;
+            btnChangePassword.Text = StringResources.buttonChangePassword;
+            btnExit.Text = StringResources.buttonExit;
+        }
+
+        #region Acceso formularios configuración
         private void btnUser_Click(object sender, EventArgs e)
         {
             FrmUser frmUser = new FrmUser();
@@ -46,7 +66,9 @@ namespace ProyectoGreenSpace
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
-
+            FrmFilms frmFilms = new FrmFilms();
+            frmFilms.Show();
         }
+        #endregion
     }
 }

@@ -1,4 +1,5 @@
 ﻿using MySqlX.XDevAPI;
+using ProyectoGreenSpace.LangResources;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,24 +24,11 @@ namespace ProyectoGreenSpace
             grpBoxAdmin.BackColor = Color.FromArgb(168, 228, 116);
             btnAdmin.Focus();
         }
-
-        private void btnAdmin_Click(object sender, EventArgs e)
+        private void FrmAdmin_Load(object sender, EventArgs e)
         {
-            Focus();
-        }
-
-
-        private void btnUser_Click(object sender, EventArgs e)
-        {
-            FrmUser frmUser = new FrmUser();
-            frmUser.Show();
-
-        }
-
-        private void btnAccount_Click(object sender, EventArgs e)
-        {
-            FrmAccount frmAccount = new FrmAccount();
-            frmAccount.Show();
+            this.ActiveControl = btnAdmin;
+            btnAdmin.Focus();
+            ApplyLanguage();
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -55,7 +43,7 @@ namespace ProyectoGreenSpace
 
                 if (User.ExistUser(username))
                 {
-                    if (User.IsAdministrator(username))
+                    if (User.IsAdministrator(txtUser.Text))
                     {
                         if (User.CheckPassword(username, UserSession.Password))
                         {
@@ -88,20 +76,47 @@ namespace ProyectoGreenSpace
             MessageBox.Show(message, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Stop);
         }
 
-        private void btnExit_ClientSizeChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+            FrmFilms frmFilms = new FrmFilms();
+            frmFilms.Show();
         }
 
-        private void FrmAdmin_Load(object sender, EventArgs e)
+        private void ApplyLanguage()
         {
-            this.ActiveControl = btnAdmin;
-            btnAdmin.Focus();
+            btnUser.Text = StringResources.labelUser;
+            btnAdmin.Text = StringResources.buttonAdmin;
+            btnAccount.Text = StringResources.buttonAccount;
+            lblMailUser.Text = StringResources.labelUser;
+            lblPassword.Text = StringResources.labelPassword;
+            linklblForgotPass.Text = StringResources.labelForgottenPassword;
+            btnLogin.Text = StringResources.buttonLogin;
+            btnExit.Text = StringResources.buttonExit;
         }
+
+        #region Acceso a formularios de configuración
+        private void btnUser_Click_1(object sender, EventArgs e)
+        {
+            FrmUser frmUser = new FrmUser();
+            frmUser.Show();
+            this.Close();
+        }
+
+        private void btnAccount_Click_1(object sender, EventArgs e)
+        {
+            FrmAccount frmAccount = new FrmAccount();
+            frmAccount.Show();
+            this.Close();
+        }
+
+        private void btnAdmin_Click(object sender, EventArgs e)
+        {   FrmAdmin frmAdmin = new FrmAdmin();
+            frmAdmin.Show();
+            this.Close();
+            Focus();
+        }
+        #endregion
+
     }
 }

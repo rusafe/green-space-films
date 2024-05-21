@@ -31,16 +31,14 @@ namespace ProyectoGreenSpace
             btnSettings.Text = StringResources.buttonConfiguration;
             lblTitleMonth.Text = StringResources.labelTitle;
             lblTitleNextMonth.Text = StringResources.labelNextTitle;
+            lblJoinApp.Text = StringResources.labelJoinApp;
+            lblLogOut.Text = StringResources.labelLogOut;
+            lblUsername.Text = StringResources.labelUser;
         }
 
         private void FrmFilms_Load(object sender, EventArgs e)
         {
-            pibClose.Visible = false;
-            lblUsername.Visible = false;
-            txtUsername.Visible = false;
-            lblJoinApp.Visible = false;
-            txtJoinApp.Visible = false;
-            lblLogOut.Visible = false;
+            NotVisibleUserButtons();
 
             txtUsername.Text = UserSession.Username;
             txtJoinApp.Text = UserSession.CreationDateTime.ToString("dd/MM/yyyy");
@@ -82,17 +80,11 @@ namespace ProyectoGreenSpace
             }
         }
 
-        private void sidebar_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void vsbFilms_Scroll(object sender, ScrollEventArgs e)
         {
             //pnlFilms.AutoScroll = false;
             //pnlFilms.VerticalScroll.Value = vsbFilms.Value;
             pnlFilms.AutoScrollPosition = new Point(0, e.NewValue);
-           
         }
 
         private void ApplyTheme()
@@ -200,6 +192,20 @@ namespace ProyectoGreenSpace
             lblJoinApp.Visible = true;
             txtJoinApp.Visible = true;
             lblLogOut.Visible = true;
+        }
+        private void pibClose_Click(object sender, EventArgs e)
+        {
+            NotVisibleUserButtons();
+        }
+
+        private void NotVisibleUserButtons()
+        {
+            pibClose.Visible = false;
+            lblUsername.Visible = false;
+            txtUsername.Visible = false;
+            lblJoinApp.Visible = false;
+            txtJoinApp.Visible = false;
+            lblLogOut.Visible = false;
         }
 
         #region Acceso a formularios desde menú desplegable
@@ -316,6 +322,7 @@ namespace ProyectoGreenSpace
         {
             FrmUser frmUser = new FrmUser();
             frmUser.Show();
+            this.Close();
         }
 
         private void AccessMovieTheater()
@@ -332,16 +339,5 @@ namespace ProyectoGreenSpace
             this.Close();
         }
         #endregion
-
-        private void pibClose_Click(object sender, EventArgs e)
-        {
-            pibClose.Visible = false;
-            lblUsername.Visible = false;
-            txtUsername.Visible = false;
-            lblJoinApp.Visible = false;
-            txtJoinApp.Visible = false;
-            lblLogOut.Visible = false;
-        }
-
     }
 }
