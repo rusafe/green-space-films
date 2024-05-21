@@ -91,6 +91,12 @@
     <Compile Include="FrmInsertCode.Designer.cs">
       <DependentUpon>FrmInsertCode.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmInsertSession.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInsertSession.Designer.cs">
+      <DependentUpon>FrmInsertSession.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -177,6 +183,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmInsertCode.resx">
       <DependentUpon>FrmInsertCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInsertSession.resx">
+      <DependentUpon>FrmInsertSession.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
