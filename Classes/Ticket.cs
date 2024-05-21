@@ -21,29 +21,32 @@ namespace ProyectoGreenSpace.Classes
         private int roomId;
         private DateTime dateBought;
         private DateTime dateFilm;
+        private TimeSpan hourFilm;
         private int quantity;
-        private double totalPrice;
-        private double discount;
+        private double individualPrice;
+        private int discount;
 
         public DateTime DateBought { get { return dateBought; } }
         public DateTime DateFilm { get { return dateFilm; } }
+        public TimeSpan HourFilm { get { return hourFilm; } }
         public int Quantity { get { return quantity; } }
-        public double TotalPrice { get { return totalPrice; } }
-        public double Discount { get { return discount; } }
+        public double IndividualPrice { get { return individualPrice; } }
+        public int Discount { get { return discount; } }
 
-        public Ticket(int userId, int filmId, int roomId, DateTime dateBought, DateTime dateFilm, int quantity, double totalPrice, double discount)
+        public Ticket(int userId, int filmId, int roomId, DateTime dateBought, DateTime dateFilm, TimeSpan hourFilm, int quantity, double individualPrice, int discount)
         {
             this.userId = userId;
             this.filmId = filmId;
             this.roomId = roomId;
             this.dateBought = dateBought;
             this.dateFilm = dateFilm;
+            this.hourFilm = hourFilm;
             this.quantity = quantity;
-            this.totalPrice = totalPrice;
+            this.individualPrice = individualPrice;
             this.discount = discount;
         }
 
-        public Ticket(int id, int userId, int filmId, int roomId, DateTime dateBought, DateTime dateFilm, int quantity, double totalPrice, double discount)
+        public Ticket(int id, int userId, int filmId, int roomId, DateTime dateBought, DateTime dateFilm, TimeSpan hourFilm, int quantity, double individualPrice, int discount)
         {
             this.id = id;
             this.userId = userId;
@@ -51,8 +54,9 @@ namespace ProyectoGreenSpace.Classes
             this.roomId = roomId;
             this.dateBought = dateBought;
             this.dateFilm = dateFilm;
+            this.hourFilm = hourFilm;
             this.quantity = quantity;
-            this.totalPrice = totalPrice;
+            this.individualPrice = individualPrice;
             this.discount = discount;
         }
 
@@ -88,7 +92,7 @@ namespace ProyectoGreenSpace.Classes
         /// </summary>
         public void Create()
         {
-            string query = "INSERT INTO tickets (userId, filmId, roomId, dateBought, dateFilm, quantity, total_price, discount) VALUES (@userId, @filmId, @roomId, @dateBought, @dateFilm, @quantity, @totalPrice, @discount)";
+            string query = "INSERT INTO tickets (userId, filmId, roomId, dateBought, dateFilm, hourFilm, quantity, individual_price, discount) VALUES (@userId, @filmId, @roomId, @dateBought, @dateFilm, @hourFilm, @quantity, @individualPrice, @discount)";
 
             MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
             command.Parameters.AddWithValue("@userId", userId);
@@ -96,7 +100,8 @@ namespace ProyectoGreenSpace.Classes
             command.Parameters.AddWithValue("@roomId", roomId);
             command.Parameters.AddWithValue("@dateBought", dateBought);
             command.Parameters.AddWithValue("@dateFilm", dateFilm);
-            command.Parameters.AddWithValue("@totalPrice", totalPrice);
+            command.Parameters.AddWithValue("@hourFilm", hourFilm);
+            command.Parameters.AddWithValue("@individualPrice", individualPrice);
             command.Parameters.AddWithValue("@discount", discount);
 
             ConnectionBD.OpenConnection();
@@ -132,14 +137,36 @@ namespace ProyectoGreenSpace.Classes
                         reader.GetInt32(3),
                         reader.GetDateTime(4),
                         reader.GetDateTime(5),
-                        reader.GetInt32(6),
-                        reader.GetDouble(7),
-                        reader.GetDouble(8)
+                        reader.GetTimeSpan(6),
+                        reader.GetInt32(7),
+                        reader.GetDouble(8),
+                        reader.GetInt32(9)
                     );
                 }
             }
             ConnectionBD.CloseConnection();
             return ticket;
+        }
+
+        /// <summary>
+        /// Obtiene el precio total del ticket sin descuento, contando la cantidad comprada
+        /// </summary>
+        /// <returns>Precio total del ticket sin descuento</returns>
+        public double TotalPriceWithoutDiscount()
+        {
+            return individualPrice * quantity;
+        }
+
+        public double TotalPrice()
+        {
+            double price = TotalPriceWithoutDiscount();
+
+            return price - (price / DiscountDivided());
+        }
+
+        public double DiscountDivided()
+        {
+            return discount / 100;
         }
 
         /// <summary>
@@ -169,9 +196,10 @@ namespace ProyectoGreenSpace.Classes
                         reader.GetInt32(3),
                         reader.GetDateTime(4),
                         reader.GetDateTime(5),
-                        reader.GetInt32(6),
-                        reader.GetDouble(7),
-                        reader.GetDouble(8)
+                        reader.GetTimeSpan(6),
+                        reader.GetInt32(7),
+                        reader.GetDouble(8),
+                        reader.GetInt32(9)
                     ));
                 }
             }
@@ -209,9 +237,10 @@ namespace ProyectoGreenSpace.Classes
                         reader.GetInt32(3),
                         reader.GetDateTime(4),
                         reader.GetDateTime(5),
-                        reader.GetInt32(6),
-                        reader.GetDouble(7),
-                        reader.GetDouble(8)
+                        reader.GetTimeSpan(6),
+                        reader.GetInt32(7),
+                        reader.GetDouble(8),
+                        reader.GetInt32(9)
                     ));
                 }
             }
@@ -249,9 +278,10 @@ namespace ProyectoGreenSpace.Classes
                         reader.GetInt32(3),
                         reader.GetDateTime(4),
                         reader.GetDateTime(5),
-                        reader.GetInt32(6),
-                        reader.GetDouble(7),
-                        reader.GetDouble(8)
+                        reader.GetTimeSpan(6),
+                        reader.GetInt32(7),
+                        reader.GetDouble(8),
+                        reader.GetInt32(9)
                     ));
                 }
             }
@@ -306,28 +336,38 @@ namespace ProyectoGreenSpace.Classes
         }
 
         /// <summary>
-        /// Obtiene el porcentaje / 100 de descuento para la cantidad de tickets introducida (ejemplo: 0.15)
+        /// Obtiene el porcentaje de descuento para la cantidad de tickets introducida (ejemplo: 15)
         /// </summary>
         /// <param name="amountTickets">Cantidad de tickets que se van a comprar</param>
-        /// <returns>Porcentaje / 100 de descuento</returns>
-        public static double AmountDiscount(int amountTickets)
+        /// <returns>Porcentaje de descuento</returns>
+        public static int AmountDiscount(int amountTickets)
         {
             if (amountTickets == 2)
             {
-                return 0.1;
+                return 10;
             }
             else if (amountTickets == 3)
             {
-                return 0.15;
+                return 15;
             }
             else if (amountTickets >= 4)
             {
-                return 0.2;
+                return 20;
             }
             else
             {
                 return 0;
             }
+        }
+
+        /// <summary>
+        /// Obtiene el porcentaje / 100 de descuento para la cantidad de tickets introducida (ejemplo: 0.15)
+        /// </summary>
+        /// <param name="amountTickets">Cantidad de tickets que se van a comprar</param>
+        /// <returns>Porcentaje / 100 de descuento</returns>
+        public static double DiscountDivided(int amountTickets)
+        {
+            return AmountDiscount(amountTickets) / 100;
         }
 
         /// <summary>
@@ -340,7 +380,7 @@ namespace ProyectoGreenSpace.Classes
         {
             double priceTickets = filmPrice * amountTickets;
 
-            return priceTickets - (priceTickets * AmountDiscount(amountTickets));
+            return priceTickets - (priceTickets * DiscountDivided(amountTickets));
         }
     }
 }

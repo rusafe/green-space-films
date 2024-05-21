@@ -55,19 +55,21 @@
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.dgvActualTickets = new System.Windows.Forms.DataGridView();
+            this.dgvPastTickets = new System.Windows.Forms.DataGridView();
             this.numHall = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.user = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.movie = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.day = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.schedule = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.duration = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tickets = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.priceWithoutDiscount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.discount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.total = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvPastTickets = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pastTicketsDay = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -349,6 +351,7 @@
             this.numHall,
             this.user,
             this.movie,
+            this.day,
             this.schedule,
             this.duration,
             this.tickets,
@@ -362,6 +365,29 @@
             this.dgvActualTickets.RowTemplate.Height = 24;
             this.dgvActualTickets.Size = new System.Drawing.Size(1038, 210);
             this.dgvActualTickets.TabIndex = 37;
+            // 
+            // dgvPastTickets
+            // 
+            this.dgvPastTickets.AllowUserToDeleteRows = false;
+            this.dgvPastTickets.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPastTickets.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.pastTicketsDay,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9});
+            this.dgvPastTickets.Location = new System.Drawing.Point(262, 409);
+            this.dgvPastTickets.Name = "dgvPastTickets";
+            this.dgvPastTickets.ReadOnly = true;
+            this.dgvPastTickets.RowHeadersWidth = 51;
+            this.dgvPastTickets.RowTemplate.Height = 24;
+            this.dgvPastTickets.Size = new System.Drawing.Size(1038, 291);
+            this.dgvPastTickets.TabIndex = 38;
             // 
             // numHall
             // 
@@ -386,6 +412,14 @@
             this.movie.Name = "movie";
             this.movie.ReadOnly = true;
             this.movie.Width = 125;
+            // 
+            // day
+            // 
+            this.day.HeaderText = "Dia";
+            this.day.MinimumWidth = 6;
+            this.day.Name = "day";
+            this.day.ReadOnly = true;
+            this.day.Width = 125;
             // 
             // schedule
             // 
@@ -435,28 +469,6 @@
             this.total.ReadOnly = true;
             this.total.Width = 125;
             // 
-            // dgvPastTickets
-            // 
-            this.dgvPastTickets.AllowUserToDeleteRows = false;
-            this.dgvPastTickets.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPastTickets.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9});
-            this.dgvPastTickets.Location = new System.Drawing.Point(262, 409);
-            this.dgvPastTickets.Name = "dgvPastTickets";
-            this.dgvPastTickets.ReadOnly = true;
-            this.dgvPastTickets.RowHeadersWidth = 51;
-            this.dgvPastTickets.RowTemplate.Height = 24;
-            this.dgvPastTickets.Size = new System.Drawing.Size(1038, 291);
-            this.dgvPastTickets.TabIndex = 38;
-            // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.HeaderText = "Nº Sala";
@@ -480,6 +492,14 @@
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.ReadOnly = true;
             this.dataGridViewTextBoxColumn3.Width = 125;
+            // 
+            // pastTicketsDay
+            // 
+            this.pastTicketsDay.HeaderText = "Dia";
+            this.pastTicketsDay.MinimumWidth = 6;
+            this.pastTicketsDay.Name = "pastTicketsDay";
+            this.pastTicketsDay.ReadOnly = true;
+            this.pastTicketsDay.Width = 125;
             // 
             // dataGridViewTextBoxColumn4
             // 
@@ -591,19 +611,21 @@
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.DataGridView dgvActualTickets;
+        private System.Windows.Forms.DataGridView dgvPastTickets;
         private System.Windows.Forms.DataGridViewTextBoxColumn numHall;
         private System.Windows.Forms.DataGridViewTextBoxColumn user;
         private System.Windows.Forms.DataGridViewTextBoxColumn movie;
+        private System.Windows.Forms.DataGridViewTextBoxColumn day;
         private System.Windows.Forms.DataGridViewTextBoxColumn schedule;
         private System.Windows.Forms.DataGridViewTextBoxColumn duration;
         private System.Windows.Forms.DataGridViewTextBoxColumn tickets;
         private System.Windows.Forms.DataGridViewTextBoxColumn priceWithoutDiscount;
         private System.Windows.Forms.DataGridViewTextBoxColumn discount;
         private System.Windows.Forms.DataGridViewTextBoxColumn total;
-        private System.Windows.Forms.DataGridView dgvPastTickets;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pastTicketsDay;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;

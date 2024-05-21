@@ -1,4 +1,5 @@
-﻿using ProyectoGreenSpace.LangResources;
+﻿using ProyectoGreenSpace.Classes;
+using ProyectoGreenSpace.LangResources;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -27,9 +28,59 @@ namespace ProyectoGreenSpace
             btnWriteReview.BackColor = Color.FromArgb(168, 228, 116);
         }
 
+        #region DGVs
+        private void LoadActualTicketsDGV()
+        {
+            foreach (Ticket ticket in Ticket.ActualTickets(UserSession.Id))
+            {
+                User user = ticket.getUser();
+                Film film = ticket.getFilm();
+                Room room = ticket.getRoom();
+
+                dgvActualTickets.Rows.Add(
+                    $"Sala {room.Id}",
+                    user.Username,
+                    film.Name,
+                    ticket.HourFilm,
+                    ticket.DateFilm.ToShortDateString(),
+                    film.Duration,
+                    ticket.Quantity,
+                    ticket.IndividualPrice,
+                    ticket.Discount,
+                    ticket.TotalPrice()
+                );
+            }
+        }
+
+        private void LoadPastTicketsDGV()
+        {
+            foreach (Ticket ticket in Ticket.PastTickets(UserSession.Id))
+            {
+                User user = ticket.getUser();
+                Film film = ticket.getFilm();
+                Room room = ticket.getRoom();
+
+                dgvActualTickets.Rows.Add(
+                    $"Sala {room.Id}",
+                    user.Username,
+                    film.Name,
+                    ticket.HourFilm,
+                    ticket.DateFilm.ToShortDateString(),
+                    film.Duration,
+                    ticket.Quantity,
+                    ticket.IndividualPrice,
+                    ticket.Discount,
+                    ticket.TotalPrice()
+                );
+            }
+        }
+        #endregion
+
         private void FrmTickets_Load(object sender, EventArgs e)
         {
             ApplyLanguage();
+            LoadActualTicketsDGV();
+            LoadPastTicketsDGV();
         }
         private void ApplyLanguage()
         {
