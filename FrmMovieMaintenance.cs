@@ -118,6 +118,7 @@ namespace ProyectoGreenSpace
             btnUpload.Text = StringResources.btnUpload;
         }
 
+
         #region Diseño de interface
         private void grpMaintenance_Paint(object sender, PaintEventArgs e)
         {
