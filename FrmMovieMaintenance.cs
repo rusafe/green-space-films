@@ -1,4 +1,5 @@
 ﻿using ProyectoGreenSpace.Classes;
+using ProyectoGreenSpace.LangResources;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -27,11 +28,13 @@ namespace ProyectoGreenSpace
             timerClock.Start();
 
             LoadListMovies();
+            ApplyLanguage();
 
             lblClock.Text = DateTime.Now.ToString("HH:mm:ss");
             lblDate.Text = DateTime.Now.ToString("dd/MM/yyyy");
 
             txtFilm.Focus();
+
         }
 
         private void btnUpload_Click(object sender, EventArgs e)
@@ -82,6 +85,38 @@ namespace ProyectoGreenSpace
         {
             lblClock.Text = DateTime.Now.ToString("HH:mm:ss");
         }
+        private void LoadListMovies()
+        {
+            dgvFilms.DataSource = Film.ObtainAll();
+        }
+
+        private void CleanData()
+        {
+            txtFilm.Text = string.Empty;
+            rtbSynopsis.Text = string.Empty;
+            txtDuration.Text = string.Empty;
+            txtPrice.Text = string.Empty;
+            nudMinAge.Value = 0;
+            cmbGenre1.Text = string.Empty;
+            cmbGenre2.Text = string.Empty;
+            chbPremiering.Checked = false;
+            chbNextPremiering.Checked = false;
+        }
+        private void ApplyLanguage()
+        {
+            lblFilm.Text = StringResources.lblFilm;
+            lblSynopsis.Text = StringResources.lblSynopsis;
+            lblDuration.Text = StringResources.lblDuration;
+            lblMinAge.Text = StringResources.lblMinAge;
+            lblPrice.Text = StringResources.lblPrice;
+            lblGenre.Text = StringResources.lblGenre;
+            chbNextPremiering.Text = StringResources.chbNextPremiering;
+            chbPremiering.Text = StringResources.chbPremiering;
+            btnInsert.Text = StringResources.btnInsert;
+            btnModifyFrm.Text = StringResources.btnModifyFrm;
+            btnDeleteFrm.Text = StringResources.btnDeleteFrm;
+            btnUpload.Text = StringResources.btnUpload;
+        }
 
         #region Diseño de interface
         private void grpMaintenance_Paint(object sender, PaintEventArgs e)
@@ -123,23 +158,5 @@ namespace ProyectoGreenSpace
             this.Close();
         }
         #endregion
-
-        private void LoadListMovies()
-        {
-            dgvFilms.DataSource = Film.ObtainAll();
-        }
-
-        private void CleanData()
-        {
-            txtFilm.Text = string.Empty;
-            rtbSynopsis.Text = string.Empty;
-            txtDuration.Text = string.Empty;
-            txtPrice.Text = string.Empty;
-            nudMinAge.Value = 0;
-            cmbGenre1.Text = string.Empty;
-            cmbGenre2.Text = string.Empty;
-            chbPremiering.Checked = false;
-            chbNextPremiering.Checked = false;
-        }
     }
 }

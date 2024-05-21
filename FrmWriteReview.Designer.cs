@@ -51,7 +51,7 @@
             this.pnlReviews = new System.Windows.Forms.Panel();
             this.pctSpace = new System.Windows.Forms.PictureBox();
             this.grpReview = new System.Windows.Forms.GroupBox();
-            this.btnResset = new System.Windows.Forms.Button();
+            this.btnReset = new System.Windows.Forms.Button();
             this.pctStar15 = new System.Windows.Forms.PictureBox();
             this.pctStar14 = new System.Windows.Forms.PictureBox();
             this.pctStar13 = new System.Windows.Forms.PictureBox();
@@ -71,12 +71,19 @@
             this.cklStars = new System.Windows.Forms.CheckedListBox();
             this.lblTitleReview = new System.Windows.Forms.Label();
             this.rtxReview1 = new System.Windows.Forms.RichTextBox();
+            this.pibClose = new System.Windows.Forms.PictureBox();
+            this.lblLogOut = new System.Windows.Forms.Label();
+            this.txtJoinApp = new System.Windows.Forms.TextBox();
+            this.lblJoinApp = new System.Windows.Forms.Label();
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.lblUsername = new System.Windows.Forms.Label();
             this.sidebar.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
             this.pnlReviews.SuspendLayout();
@@ -97,6 +104,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pctStar3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctStar2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctStar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibClose)).BeginInit();
             this.SuspendLayout();
             // 
             // sidebar
@@ -169,6 +177,7 @@
             this.btnTicketOffice.Size = new System.Drawing.Size(233, 52);
             this.btnTicketOffice.TabIndex = 22;
             this.btnTicketOffice.Text = "               Taquilla";
+            this.btnTicketOffice.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTicketOffice.UseVisualStyleBackColor = true;
             this.btnTicketOffice.Click += new System.EventHandler(this.btnTicketOffice_Click);
             // 
@@ -190,6 +199,7 @@
             this.btnReviewTickets.Size = new System.Drawing.Size(233, 53);
             this.btnReviewTickets.TabIndex = 23;
             this.btnReviewTickets.Text = "          Revisar Tickets";
+            this.btnReviewTickets.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnReviewTickets.UseVisualStyleBackColor = true;
             this.btnReviewTickets.Click += new System.EventHandler(this.btnReviewTickets_Click);
             // 
@@ -211,6 +221,7 @@
             this.btnReviews.Size = new System.Drawing.Size(233, 54);
             this.btnReviews.TabIndex = 24;
             this.btnReviews.Text = "          Ver  Reseñas";
+            this.btnReviews.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnReviews.UseVisualStyleBackColor = true;
             this.btnReviews.Click += new System.EventHandler(this.btnReviews_Click);
             // 
@@ -232,11 +243,18 @@
             this.btnWriteReview.Size = new System.Drawing.Size(233, 58);
             this.btnWriteReview.TabIndex = 24;
             this.btnWriteReview.Text = "          Escribir Reseña";
+            this.btnWriteReview.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnWriteReview.UseVisualStyleBackColor = true;
             this.btnWriteReview.Click += new System.EventHandler(this.btnWriteReview_Click);
             // 
             // panel6
             // 
+            this.panel6.Controls.Add(this.pibClose);
+            this.panel6.Controls.Add(this.lblLogOut);
+            this.panel6.Controls.Add(this.txtJoinApp);
+            this.panel6.Controls.Add(this.lblJoinApp);
+            this.panel6.Controls.Add(this.txtUsername);
+            this.panel6.Controls.Add(this.lblUsername);
             this.panel6.Location = new System.Drawing.Point(3, 378);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(239, 210);
@@ -260,7 +278,9 @@
             this.btnUser.Size = new System.Drawing.Size(233, 52);
             this.btnUser.TabIndex = 24;
             this.btnUser.Text = "               Usuario";
+            this.btnUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnUser.UseVisualStyleBackColor = true;
+            this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
             // 
             // panel8
             // 
@@ -280,6 +300,7 @@
             this.btnSettings.Size = new System.Drawing.Size(233, 48);
             this.btnSettings.TabIndex = 24;
             this.btnSettings.Text = "          Configuración";
+            this.btnSettings.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSettings.UseVisualStyleBackColor = true;
             this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
@@ -312,7 +333,7 @@
             // 
             // grpReview
             // 
-            this.grpReview.Controls.Add(this.btnResset);
+            this.grpReview.Controls.Add(this.btnReset);
             this.grpReview.Controls.Add(this.pctStar15);
             this.grpReview.Controls.Add(this.pctStar14);
             this.grpReview.Controls.Add(this.pctStar13);
@@ -339,19 +360,19 @@
             this.grpReview.TabIndex = 61;
             this.grpReview.TabStop = false;
             // 
-            // btnResset
+            // btnReset
             // 
-            this.btnResset.BackColor = System.Drawing.Color.LightCoral;
-            this.btnResset.Image = global::ProyectoGreenSpace.Properties.Resources.borrar__1_;
-            this.btnResset.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnResset.Location = new System.Drawing.Point(426, 596);
-            this.btnResset.Name = "btnResset";
-            this.btnResset.Size = new System.Drawing.Size(208, 59);
-            this.btnResset.TabIndex = 83;
-            this.btnResset.Text = "Reestablecer ";
-            this.btnResset.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnResset.UseVisualStyleBackColor = false;
-            this.btnResset.Click += new System.EventHandler(this.btnResset_Click);
+            this.btnReset.BackColor = System.Drawing.Color.LightCoral;
+            this.btnReset.Image = global::ProyectoGreenSpace.Properties.Resources.borrar__1_;
+            this.btnReset.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnReset.Location = new System.Drawing.Point(426, 596);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(208, 59);
+            this.btnReset.TabIndex = 83;
+            this.btnReset.Text = "Reestablecer ";
+            this.btnReset.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnResset_Click);
             // 
             // pctStar15
             // 
@@ -513,6 +534,7 @@
             this.btnSend.Size = new System.Drawing.Size(208, 59);
             this.btnSend.TabIndex = 67;
             this.btnSend.Text = "Enviar";
+            this.btnSend.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSend.UseVisualStyleBackColor = false;
             this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
@@ -536,12 +558,12 @@
             // lblTitleReview
             // 
             this.lblTitleReview.AutoSize = true;
-            this.lblTitleReview.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitleReview.Location = new System.Drawing.Point(359, 47);
+            this.lblTitleReview.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitleReview.Location = new System.Drawing.Point(309, 42);
             this.lblTitleReview.Name = "lblTitleReview";
-            this.lblTitleReview.Size = new System.Drawing.Size(275, 27);
+            this.lblTitleReview.Size = new System.Drawing.Size(112, 34);
             this.lblTitleReview.TabIndex = 65;
-            this.lblTitleReview.Text = "Escribe aquí tu reseña...";
+            this.lblTitleReview.Text = "Escribe";
             this.lblTitleReview.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // rtxReview1
@@ -551,6 +573,67 @@
             this.rtxReview1.Size = new System.Drawing.Size(830, 329);
             this.rtxReview1.TabIndex = 47;
             this.rtxReview1.Text = "";
+            // 
+            // pibClose
+            // 
+            this.pibClose.Image = global::ProyectoGreenSpace.Properties.Resources.cancel;
+            this.pibClose.Location = new System.Drawing.Point(189, 8);
+            this.pibClose.Name = "pibClose";
+            this.pibClose.Size = new System.Drawing.Size(35, 33);
+            this.pibClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pibClose.TabIndex = 11;
+            this.pibClose.TabStop = false;
+            this.pibClose.Click += new System.EventHandler(this.pibClose_Click);
+            // 
+            // lblLogOut
+            // 
+            this.lblLogOut.AutoSize = true;
+            this.lblLogOut.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLogOut.Location = new System.Drawing.Point(76, 179);
+            this.lblLogOut.Name = "lblLogOut";
+            this.lblLogOut.Size = new System.Drawing.Size(134, 23);
+            this.lblLogOut.TabIndex = 10;
+            this.lblLogOut.Text = "Cerrar sesión";
+            // 
+            // txtJoinApp
+            // 
+            this.txtJoinApp.Enabled = false;
+            this.txtJoinApp.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtJoinApp.Location = new System.Drawing.Point(19, 127);
+            this.txtJoinApp.Name = "txtJoinApp";
+            this.txtJoinApp.ReadOnly = true;
+            this.txtJoinApp.Size = new System.Drawing.Size(182, 32);
+            this.txtJoinApp.TabIndex = 9;
+            // 
+            // lblJoinApp
+            // 
+            this.lblJoinApp.AutoSize = true;
+            this.lblJoinApp.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblJoinApp.Location = new System.Drawing.Point(15, 92);
+            this.lblJoinApp.Name = "lblJoinApp";
+            this.lblJoinApp.Size = new System.Drawing.Size(176, 23);
+            this.lblJoinApp.TabIndex = 8;
+            this.lblJoinApp.Text = "Miembros desde:";
+            // 
+            // txtUsername
+            // 
+            this.txtUsername.Enabled = false;
+            this.txtUsername.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsername.Location = new System.Drawing.Point(19, 47);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.ReadOnly = true;
+            this.txtUsername.Size = new System.Drawing.Size(182, 32);
+            this.txtUsername.TabIndex = 7;
+            // 
+            // lblUsername
+            // 
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsername.Location = new System.Drawing.Point(15, 17);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(119, 23);
+            this.lblUsername.TabIndex = 6;
+            this.lblUsername.Text = "Username: ";
             // 
             // FrmWriteReview
             // 
@@ -562,6 +645,7 @@
             this.Name = "FrmWriteReview";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmWriteReview";
+            this.Load += new System.EventHandler(this.FrmWriteReview_Load);
             this.sidebar.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -569,6 +653,8 @@
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.pnlReviews.ResumeLayout(false);
@@ -590,6 +676,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pctStar3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctStar2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctStar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibClose)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -636,6 +723,12 @@
         private System.Windows.Forms.PictureBox pctStar4;
         private System.Windows.Forms.PictureBox pctStar3;
         private System.Windows.Forms.PictureBox pctStar2;
-        private System.Windows.Forms.Button btnResset;
+        private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.PictureBox pibClose;
+        private System.Windows.Forms.Label lblLogOut;
+        private System.Windows.Forms.TextBox txtJoinApp;
+        private System.Windows.Forms.Label lblJoinApp;
+        private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.Label lblUsername;
     }
 }

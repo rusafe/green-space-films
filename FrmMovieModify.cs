@@ -1,10 +1,12 @@
 ﻿using ProyectoGreenSpace.Classes;
+using ProyectoGreenSpace.LangResources;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -27,6 +29,7 @@ namespace ProyectoGreenSpace
             timerClock.Start();
 
             LoadListMovies();
+            ApplyLanguage();
 
             lblClock.Text = DateTime.Now.ToString("HH:mm:ss");
             lblDate.Text = DateTime.Now.ToString("dd/MM/yyyy");
@@ -74,6 +77,48 @@ namespace ProyectoGreenSpace
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+        }
+        private void CleanData()
+        {
+            cmbFilms.Text = string.Empty;
+            cmbFilmsIds.Text = string.Empty;
+            rtbSynopsis.Text = string.Empty;
+            txtDuration.Text = string.Empty;
+            txtPrice.Text = string.Empty;
+            nudMinAge.Value = 0;
+            cmbGenre1.Text = string.Empty;
+            cmbGenre2.Text = string.Empty;
+            chbPremiering.Checked = false;
+            chbNextPremiering.Checked = false;
+        }
+
+        private void ApplyLanguage()
+        {
+            lblFilm.Text = StringResources.lblFilm;
+            lblSynopsis.Text = StringResources.lblSynopsis;
+            lblDuration.Text = StringResources.lblDuration;
+            lblMinAge.Text = StringResources.lblMinAge;
+            lblPrice.Text = StringResources.lblPrice;
+            lblGenre.Text = StringResources.lblGenre;
+            chbNextPremiering.Text = StringResources.chbNextPremiering;
+            chbPremiering.Text = StringResources.chbPremiering;
+            btnModify.Text = StringResources.btnUpdateFilm;
+            btnInsertFrm.Text = StringResources.btnInsertFrm;
+            btnDeleteFrm.Text = StringResources.btnDeleteFrm;
+            btnUpload.Text = StringResources.btnUpload;
+            grpModify.Text = StringResources.groupBoxModify;
+        }
+        private void btnUpload_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofdSelect = new OpenFileDialog();
+            ofdSelect.Filter = "Imagenes|*.jpg; *.png"; // Imagenes --> Leyenda|Filtrar solo por estas extensiones 
+            ofdSelect.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures); // Directorio donde cogemos las imágenes
+            ofdSelect.Title = "Seleccionar imagen";
+
+            if (ofdSelect.ShowDialog() == DialogResult.OK)
+            {
+                pibImage.Image = Image.FromFile(ofdSelect.FileName); // Agregar el archivo seleccionado y mostrarlo en el cuadro.
             }
         }
 
@@ -153,33 +198,5 @@ namespace ProyectoGreenSpace
         }
         #endregion
 
-
-
-        private void btnUpload_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog ofdSelect = new OpenFileDialog();
-            ofdSelect.Filter = "Imagenes|*.jpg; *.png"; // Imagenes --> Leyenda|Filtrar solo por estas extensiones 
-            ofdSelect.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures); // Directorio donde cogemos las imágenes
-            ofdSelect.Title = "Seleccionar imagen";
-
-            if (ofdSelect.ShowDialog() == DialogResult.OK)
-            {
-                pibImage.Image = Image.FromFile(ofdSelect.FileName); // Agregar el archivo seleccionado y mostrarlo en el cuadro.
-            }
-        }
-
-        private void CleanData()
-        {
-            cmbFilms.Text = string.Empty;
-            cmbFilmsIds.Text = string.Empty;
-            rtbSynopsis.Text = string.Empty;
-            txtDuration.Text = string.Empty;
-            txtPrice.Text = string.Empty;
-            nudMinAge.Value = 0;
-            cmbGenre1.Text = string.Empty;
-            cmbGenre2.Text = string.Empty;
-            chbPremiering.Checked = false;
-            chbNextPremiering.Checked = false;
-        }
     }
 }

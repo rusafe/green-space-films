@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoGreenSpace.LangResources;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,6 +25,23 @@ namespace ProyectoGreenSpace
             btnUser.BackColor = Color.FromArgb(168, 228, 116);
             btnSettings.BackColor = Color.FromArgb(168, 228, 116);
             btnWriteReview.BackColor = Color.FromArgb(168, 228, 116);
+        }
+
+        private void FrmTickets_Load(object sender, EventArgs e)
+        {
+            ApplyLanguage();
+        }
+        private void ApplyLanguage()
+        {
+            lblMenu.Text = StringResources.labelMenu;
+            btnTicketOffice.Text = StringResources.buttonTicketOffice;
+            btnReviewTickets.Text = StringResources.buttonReviewTickets;
+            btnReviews.Text = StringResources.buttonReviews;
+            btnWriteReview.Text = StringResources.buttonWriteReview;
+            btnUser.Text = StringResources.buttonUser;
+            btnSettings.Text = StringResources.buttonConfiguration;
+            lblActualTickets.Text = StringResources.labelActualTickets;
+            lblPastTickets.Text = StringResources.labelPastTickets;
         }
 
         private void sidebarTimer_Tick(object sender, EventArgs e)
@@ -96,5 +114,6 @@ namespace ProyectoGreenSpace
             this.Close();
         }
         #endregion
+
     }
 }

@@ -13,16 +13,6 @@ namespace ProyectoGreenSpace
             InitializeComponent();
         }
 
-        private void ApplyLanguage()
-        {
-            lblUsername.Text = StringResources.labelUser;
-            lblPassword.Text = StringResources.labelPassword;
-            lkllblRecoverPassword.Text = StringResources.labelForgottenPassword;
-            btnLogin.Text = StringResources.buttonLogin;
-            lblInfoRegister.Text = StringResources.lblQuestionRegister;
-            lklblRegister.Text = StringResources.linkRegister;
-        }
-
         private void FrmLogin_Load(object sender, EventArgs e)
         {
             this.BackColor = Color.FromArgb(168, 228, 116);
@@ -87,6 +77,15 @@ namespace ProyectoGreenSpace
             this.Hide();
             FrmRecoverPassword fromRecover = new FrmRecoverPassword();
             fromRecover.Show();
+        }
+        private void ApplyLanguage()
+        {
+            lblUsername.Text = StringResources.labelUser;
+            lblPassword.Text = StringResources.labelPassword;
+            lkllblRecoverPassword.Text = StringResources.labelForgottenPassword;
+            btnLogin.Text = StringResources.buttonLogin;
+            lblInfoRegister.Text = StringResources.lblQuestionRegister;
+            lklblRegister.Text = StringResources.linkRegister;
         }
 
         #region Diseño de interface

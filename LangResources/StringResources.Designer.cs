@@ -442,5 +442,433 @@ namespace ProyectoGreenSpace.LangResources {
                 return ResourceManager.GetString("labelSynopsis", resourceCulture);
             }
         }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Estrellas
+        /// </summary>
+        internal static string comboStars
+        {
+            get
+            {
+                return ResourceManager.GetString("comboStars", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Películas
+        /// </summary>
+        internal static string comboMovies
+        {
+            get
+            {
+                return ResourceManager.GetString("comboMovies", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Ordenar por
+        /// </summary>
+        internal static string comboOrder
+        {
+            get
+            {
+                return ResourceManager.GetString("comboOrder", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Reestablecer
+        /// </summary>
+        internal static string buttonReset
+        {
+            get
+            {
+                return ResourceManager.GetString("buttonReset", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Escribe aquí tu reseña...
+        /// </summary>
+        internal static string labelReviewTitle
+        {
+            get
+            {
+                return ResourceManager.GetString("labelReviewTitle", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Envíar
+        /// </summary>
+        internal static string buttonSendReview
+        {
+            get
+            {
+                return ResourceManager.GetString("buttonSendReview", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Cerrar sesión
+        /// </summary>
+        internal static string labelLogOut
+        {
+            get
+            {
+                return ResourceManager.GetString("labelLogOut", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Miembro desde
+        /// </summary>
+        internal static string labelJoinApp
+        {
+            get
+            {
+                return ResourceManager.GetString("labelJoinApp", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Tickets actuales
+        /// </summary>
+        internal static string labelActualTickets
+        {
+            get
+            {
+                return ResourceManager.GetString("labelActualTickets", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Tickets pasados
+        /// </summary>
+        internal static string labelPastTickets
+        {
+            get
+            {
+                return ResourceManager.GetString("labelPastTickets", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Admin.
+        /// </summary>
+        internal static string buttonAdmin
+        {
+            get
+            {
+                return ResourceManager.GetString("buttonAdmin", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Cuenta
+        /// </summary>
+        internal static string buttonAccount
+        {
+            get
+            {
+                return ResourceManager.GetString("buttonAccount", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Nombre de usuario
+        /// </summary>
+        internal static string labelNameUser
+        {
+            get
+            {
+                return ResourceManager.GetString("labelNameUser", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Cambiar Nombre
+        /// </summary>
+        internal static string buttonChangeName
+        {
+            get
+            {
+                return ResourceManager.GetString("buttonChangeName", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Cambiar foto
+        /// </summary>
+        internal static string buttonChangePhoto
+        {
+            get
+            {
+                return ResourceManager.GetString("buttonChangePhoto", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Cuenta asociada de correo
+        /// </summary>
+        internal static string labelMailAssociated
+        {
+            get
+            {
+                return ResourceManager.GetString("labelMailAssociated", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Cambiar contraseña
+        /// </summary>
+        internal static string buttonChangePassword
+        {
+            get
+            {
+                return ResourceManager.GetString("buttonChangePassword", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Eliminar cuenta
+        /// </summary>
+        internal static string buttonDeleteAccount
+        {
+            get
+            {
+                return ResourceManager.GetString("buttonDeleteAccount", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Salir
+        /// </summary>
+        internal static string buttonExit
+        {
+            get
+            {
+                return ResourceManager.GetString("buttonExit", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Elige el tipo de modo:
+        /// </summary>
+        internal static string grpSwitch
+        {
+            get
+            {
+                return ResourceManager.GetString("grpSwitch", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Cambiar idioma:
+        /// </summary>
+        internal static string labelChangeLanguage
+        {
+            get
+            {
+                return ResourceManager.GetString("labelChangeLanguage", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Predet.
+        /// </summary>
+        internal static string buttonDefault
+        {
+            get
+            {
+                return ResourceManager.GetString("buttonDefault", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Películas
+        /// </summary>
+        internal static string lblFilm
+        {
+            get
+            {
+                return ResourceManager.GetString("lblFilm", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Sinopsis
+        /// </summary>
+        internal static string lblSynopsis
+        {
+            get
+            {
+                return ResourceManager.GetString("lblSynopsis", resourceCulture);
+            }
+        }
+        /// <summary>
+        ///   Busca una cadena traducida similar a Duración
+        /// </summary>
+        internal static string lblDuration
+        {
+            get
+            {
+                return ResourceManager.GetString("lblDuration", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Precio
+        /// </summary>
+        internal static string lblPrice
+        {
+            get
+            {
+                return ResourceManager.GetString("lblPrice", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Años mínimos
+        /// </summary>
+        internal static string lblMinAge
+        {
+            get
+            {
+                return ResourceManager.GetString("lblMinAge", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Cargar imagen
+        /// </summary>
+        internal static string btnUpload
+        {
+            get
+            {
+                return ResourceManager.GetString("btnUpload", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Géneros
+        /// </summary>
+        internal static string lblGenre
+        {
+            get
+            {
+                return ResourceManager.GetString("lblGenre", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Próximo estreno
+        /// </summary>
+        internal static string chbPremiering
+        {
+            get
+            {
+                return ResourceManager.GetString("chbPremiering", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Insertar
+        /// </summary>
+        internal static string btnInsert
+        {
+            get
+            {
+                return ResourceManager.GetString("btnInsert", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Acceso modificaciones
+        /// </summary>
+        internal static string btnModifyFrm
+        {
+            get
+            {
+                return ResourceManager.GetString("btnModifyFrm", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Acceso inserciones
+        /// </summary>
+        internal static string btnInsertFrm
+        {
+            get
+            {
+                return ResourceManager.GetString("btnInsertFrm", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Acceso eliminaciones
+        /// </summary>
+        internal static string btnDeleteFrm
+        {
+            get
+            {
+                return ResourceManager.GetString("btnDeleteFrm", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Próximos extrenos
+        /// </summary>
+        internal static string chbNextPremiering
+        {
+            get
+            {
+                return ResourceManager.GetString("chbNextPremiering", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a AActualizar
+        /// </summary>
+        internal static string btnUpdateFilm
+        {
+            get
+            {
+                return ResourceManager.GetString("btnUpdateFilm", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Eliminar
+        /// </summary>
+        internal static string btnDeleteFilm
+        {
+            get
+            {
+                return ResourceManager.GetString("btnDeleteFilm", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Modificar películas
+        /// </summary>
+        internal static string groupBoxModify
+        {
+            get
+            {
+                return ResourceManager.GetString("groupBoxModify", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Eliminar películas
+        /// </summary>
+        internal static string groupBoxDelete
+        {
+            get
+            {
+                return ResourceManager.GetString("groupBoxDelete", resourceCulture);
+            }
+        }
     }
 }

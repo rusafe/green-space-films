@@ -32,9 +32,9 @@
             this.btnAccount = new System.Windows.Forms.Button();
             this.btnAdmin = new System.Windows.Forms.Button();
             this.btnUser = new System.Windows.Forms.Button();
-            this.btnChange = new System.Windows.Forms.Button();
+            this.btnChangeName = new System.Windows.Forms.Button();
             this.btnChangePhoto = new System.Windows.Forms.Button();
-            this.lblMail = new System.Windows.Forms.Label();
+            this.lblMailAssociated = new System.Windows.Forms.Label();
             this.pictBoxPhotoPerfil = new System.Windows.Forms.PictureBox();
             this.btnChangePassword = new System.Windows.Forms.Button();
             this.lblNameUser = new System.Windows.Forms.Label();
@@ -85,48 +85,48 @@
             this.btnUser.UseVisualStyleBackColor = false;
             this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
             // 
-            // btnChange
+            // btnChangeName
             // 
-            this.btnChange.BackColor = System.Drawing.Color.White;
-            this.btnChange.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChange.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnChange.Location = new System.Drawing.Point(663, 21);
-            this.btnChange.Name = "btnChange";
-            this.btnChange.Size = new System.Drawing.Size(117, 53);
-            this.btnChange.TabIndex = 39;
-            this.btnChange.Text = "Cambiar";
-            this.btnChange.UseVisualStyleBackColor = false;
+            this.btnChangeName.BackColor = System.Drawing.Color.White;
+            this.btnChangeName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChangeName.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnChangeName.Location = new System.Drawing.Point(553, 147);
+            this.btnChangeName.Name = "btnChangeName";
+            this.btnChangeName.Size = new System.Drawing.Size(206, 53);
+            this.btnChangeName.TabIndex = 39;
+            this.btnChangeName.Text = "Cambiar nombre";
+            this.btnChangeName.UseVisualStyleBackColor = false;
             // 
             // btnChangePhoto
             // 
             this.btnChangePhoto.BackColor = System.Drawing.Color.White;
             this.btnChangePhoto.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChangePhoto.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnChangePhoto.Location = new System.Drawing.Point(604, 147);
+            this.btnChangePhoto.Location = new System.Drawing.Point(553, 227);
             this.btnChangePhoto.Name = "btnChangePhoto";
-            this.btnChangePhoto.Size = new System.Drawing.Size(176, 53);
+            this.btnChangePhoto.Size = new System.Drawing.Size(206, 53);
             this.btnChangePhoto.TabIndex = 38;
             this.btnChangePhoto.Text = "Cambiar Foto";
             this.btnChangePhoto.UseVisualStyleBackColor = false;
             // 
-            // lblMail
+            // lblMailAssociated
             // 
-            this.lblMail.AutoSize = true;
-            this.lblMail.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMail.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.lblMail.Location = new System.Drawing.Point(316, 320);
-            this.lblMail.Name = "lblMail";
-            this.lblMail.Size = new System.Drawing.Size(297, 23);
-            this.lblMail.TabIndex = 36;
-            this.lblMail.Text = "Cuenta asociada de correo: ";
+            this.lblMailAssociated.AutoSize = true;
+            this.lblMailAssociated.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMailAssociated.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.lblMailAssociated.Location = new System.Drawing.Point(260, 339);
+            this.lblMailAssociated.Name = "lblMailAssociated";
+            this.lblMailAssociated.Size = new System.Drawing.Size(297, 23);
+            this.lblMailAssociated.TabIndex = 36;
+            this.lblMailAssociated.Text = "Cuenta asociada de correo: ";
             // 
             // pictBoxPhotoPerfil
             // 
             this.pictBoxPhotoPerfil.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.pictBoxPhotoPerfil.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictBoxPhotoPerfil.Location = new System.Drawing.Point(329, 94);
+            this.pictBoxPhotoPerfil.Location = new System.Drawing.Point(332, 36);
             this.pictBoxPhotoPerfil.Name = "pictBoxPhotoPerfil";
-            this.pictBoxPhotoPerfil.Size = new System.Drawing.Size(235, 174);
+            this.pictBoxPhotoPerfil.Size = new System.Drawing.Size(168, 244);
             this.pictBoxPhotoPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictBoxPhotoPerfil.TabIndex = 35;
             this.pictBoxPhotoPerfil.TabStop = false;
@@ -136,9 +136,9 @@
             this.btnChangePassword.BackColor = System.Drawing.Color.White;
             this.btnChangePassword.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChangePassword.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnChangePassword.Location = new System.Drawing.Point(325, 402);
+            this.btnChangePassword.Location = new System.Drawing.Point(399, 414);
             this.btnChangePassword.Name = "btnChangePassword";
-            this.btnChangePassword.Size = new System.Drawing.Size(285, 53);
+            this.btnChangePassword.Size = new System.Drawing.Size(236, 53);
             this.btnChangePassword.TabIndex = 34;
             this.btnChangePassword.Text = "Cambiar Contraseña";
             this.btnChangePassword.UseVisualStyleBackColor = false;
@@ -148,7 +148,7 @@
             this.lblNameUser.AutoSize = true;
             this.lblNameUser.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNameUser.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.lblNameUser.Location = new System.Drawing.Point(312, 36);
+            this.lblNameUser.Location = new System.Drawing.Point(530, 36);
             this.lblNameUser.Name = "lblNameUser";
             this.lblNameUser.Size = new System.Drawing.Size(203, 23);
             this.lblNameUser.TabIndex = 33;
@@ -183,7 +183,7 @@
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.lblName.Location = new System.Drawing.Point(522, 36);
+            this.lblName.Location = new System.Drawing.Point(549, 80);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(96, 23);
             this.lblName.TabIndex = 42;
@@ -194,7 +194,7 @@
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmail.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.lblEmail.Location = new System.Drawing.Point(379, 354);
+            this.lblEmail.Location = new System.Drawing.Point(425, 376);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(185, 23);
             this.lblEmail.TabIndex = 43;
@@ -211,9 +211,9 @@
             this.Controls.Add(this.btnAccount);
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.lblName);
-            this.Controls.Add(this.btnChange);
+            this.Controls.Add(this.btnChangeName);
             this.Controls.Add(this.btnChangePhoto);
-            this.Controls.Add(this.lblMail);
+            this.Controls.Add(this.lblMailAssociated);
             this.Controls.Add(this.pictBoxPhotoPerfil);
             this.Controls.Add(this.btnChangePassword);
             this.Controls.Add(this.lblNameUser);
@@ -222,6 +222,7 @@
             this.Name = "FrmUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmUser";
+            this.Load += new System.EventHandler(this.FrmUser_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictBoxPhotoPerfil)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictBoxIcono)).EndInit();
             this.ResumeLayout(false);
@@ -233,9 +234,9 @@
         private System.Windows.Forms.Button btnAccount;
         private System.Windows.Forms.Button btnAdmin;
         private System.Windows.Forms.Button btnUser;
-        private System.Windows.Forms.Button btnChange;
+        private System.Windows.Forms.Button btnChangeName;
         private System.Windows.Forms.Button btnChangePhoto;
-        private System.Windows.Forms.Label lblMail;
+        private System.Windows.Forms.Label lblMailAssociated;
         private System.Windows.Forms.PictureBox pictBoxPhotoPerfil;
         private System.Windows.Forms.Button btnChangePassword;
         private System.Windows.Forms.Label lblNameUser;
