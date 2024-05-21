@@ -111,16 +111,6 @@
             // cmbGenre2
             // 
             this.cmbGenre2.FormattingEnabled = true;
-            this.cmbGenre2.Items.AddRange(new object[] {
-            "Accion",
-            "Aventura",
-            "Misterio",
-            "Ciencia Ficción",
-            "Drama",
-            "Fantasía",
-            "Terror",
-            "Suspense",
-            "Comedia"});
             this.cmbGenre2.Location = new System.Drawing.Point(314, 463);
             this.cmbGenre2.Margin = new System.Windows.Forms.Padding(2);
             this.cmbGenre2.Name = "cmbGenre2";
@@ -152,16 +142,6 @@
             // cmbGenre1
             // 
             this.cmbGenre1.FormattingEnabled = true;
-            this.cmbGenre1.Items.AddRange(new object[] {
-            "Accion",
-            "Aventura",
-            "Misterio",
-            "Ciencia Ficción",
-            "Drama",
-            "Fantasía",
-            "Terror",
-            "Suspense",
-            "Comedia"});
             this.cmbGenre1.Location = new System.Drawing.Point(314, 416);
             this.cmbGenre1.Margin = new System.Windows.Forms.Padding(2);
             this.cmbGenre1.Name = "cmbGenre1";

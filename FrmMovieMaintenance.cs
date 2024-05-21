@@ -21,6 +21,14 @@ namespace ProyectoGreenSpace
             grpMaintenance.BackColor = Color.FromArgb(168, 228, 116);
         }
 
+        private void LoadGenres()
+        {
+            string[] genres = Film.ObtainGenres();
+
+            cmbGenre1.Items.AddRange(genres);
+            cmbGenre2.Items.AddRange(genres);
+        }
+
         private void FrmMovieMaintenance_Load(object sender, EventArgs e)
         {
             timerClock.Enabled = true;
@@ -35,6 +43,7 @@ namespace ProyectoGreenSpace
 
             txtFilm.Focus();
 
+            LoadGenres();
         }
 
         private void btnUpload_Click(object sender, EventArgs e)

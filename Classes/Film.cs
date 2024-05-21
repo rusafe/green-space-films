@@ -1,11 +1,13 @@
 ﻿using Microsoft.VisualBasic.ApplicationServices;
 using MySql.Data.MySqlClient;
 using System;
+using System.Activities.Expressions;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar;
 
 namespace ProyectoGreenSpace.Classes
@@ -409,6 +411,22 @@ namespace ProyectoGreenSpace.Classes
 
             return amount;
         }
+        public static string[] ObtainGenres()
+        {
+            string query = "SELECT COLUMN_TYPE AS genres FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = 'greenspacefilms' AND TABLE_NAME = 'films' AND COLUMN_NAME = 'genres'";
+
+            MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
+
+            ConnectionBD.OpenConnection();
+
+            string genres = (string)command.ExecuteScalar();
+
+            ConnectionBD.CloseConnection();
+
+            // Elimina la parte set( de la cadena que duvuelve la consulta, luego elimina el ) final,
+            // luego elimina todas las ' y por último crea un array separando el string por las ,
+            return genres.Remove(0, 4).Remove(genres.Length - 4 - 1, 1).Replace("'", string.Empty).Split(',');
+        }
         #endregion
 
         #region Metodos de implementacion
@@ -420,7 +438,6 @@ namespace ProyectoGreenSpace.Classes
                 genresString += $"{genre},";
             }
             genresString = genresString.Remove(genresString.Length - 1, 1);
-
             return genresString;
         }
 
