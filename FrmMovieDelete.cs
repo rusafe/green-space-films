@@ -37,7 +37,23 @@ namespace ProyectoGreenSpace
             cmbFilmsIds.Focus();
         }
 
-        
+        #region Validaciones
+        private bool ValidateInputs()
+        {
+            bool godrickElInjertado = true;
+            if (String.IsNullOrEmpty(cmbFilms.Text))
+            {
+                godrickElInjertado = false;
+                errorProvider1.SetError(cmbFilms, "Inserta una película.");
+            }
+            else if (String.IsNullOrEmpty(cmbFilmsIds.Text))
+            {
+                godrickElInjertado = false;
+                errorProvider1.SetError(cmbFilms, "Inserta una película.");
+            }
+            return godrickElInjertado;
+        }
+        #endregion
 
         private void LoadListMovies()
         {
@@ -51,6 +67,11 @@ namespace ProyectoGreenSpace
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+            if (!ValidateInputs())
+            {
+                return;
+            }
+
             try
             {
                 Film.Delete(Convert.ToInt32(cmbFilmsIds.Text));
@@ -141,6 +162,13 @@ namespace ProyectoGreenSpace
             frmAccount.Show();
             this.Close();
         }
+
+        private void btnInsertSessions_Click(object sender, EventArgs e)
+        {
+            FrmInsertSession frmInsertSession = new FrmInsertSession();
+            frmInsertSession.Show();
+            this.Close();
+        }
         #endregion
 
         #region Diseño de interface
@@ -159,5 +187,6 @@ namespace ProyectoGreenSpace
             ControlPaint.DrawBorder(e.Graphics, pibImage.ClientRectangle, Color.Black, ButtonBorderStyle.Solid);
         }
         #endregion
+
     }
 }
