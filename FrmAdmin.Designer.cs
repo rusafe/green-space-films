@@ -38,8 +38,8 @@
             this.lblPassword = new System.Windows.Forms.Label();
             this.lblMailUser = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
-            this.txtBoxContraseña = new System.Windows.Forms.TextBox();
-            this.txtboxCorreoUser = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.txtUser = new System.Windows.Forms.TextBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.btnExit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictBoxIcono)).BeginInit();
@@ -57,6 +57,7 @@
             this.btnAccount.TabIndex = 13;
             this.btnAccount.Text = "Cuenta";
             this.btnAccount.UseVisualStyleBackColor = false;
+            this.btnAccount.Click += new System.EventHandler(this.btnAccount_Click_1);
             // 
             // btnAdmin
             // 
@@ -82,6 +83,7 @@
             this.btnUser.TabIndex = 12;
             this.btnUser.Text = "Usuario";
             this.btnUser.UseVisualStyleBackColor = false;
+            this.btnUser.Click += new System.EventHandler(this.btnUser_Click_1);
             // 
             // pictBoxIcono
             // 
@@ -101,8 +103,8 @@
             this.grpBoxAdmin.Controls.Add(this.lblPassword);
             this.grpBoxAdmin.Controls.Add(this.lblMailUser);
             this.grpBoxAdmin.Controls.Add(this.btnLogin);
-            this.grpBoxAdmin.Controls.Add(this.txtBoxContraseña);
-            this.grpBoxAdmin.Controls.Add(this.txtboxCorreoUser);
+            this.grpBoxAdmin.Controls.Add(this.txtPassword);
+            this.grpBoxAdmin.Controls.Add(this.txtUser);
             this.grpBoxAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.grpBoxAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpBoxAdmin.Location = new System.Drawing.Point(351, 40);
@@ -158,19 +160,22 @@
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // txtBoxContraseña
+            // txtPassword
             // 
-            this.txtBoxContraseña.Location = new System.Drawing.Point(52, 159);
-            this.txtBoxContraseña.Name = "txtBoxContraseña";
-            this.txtBoxContraseña.Size = new System.Drawing.Size(363, 30);
-            this.txtBoxContraseña.TabIndex = 1;
+            this.txtPassword.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Location = new System.Drawing.Point(52, 159);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
+            this.txtPassword.Size = new System.Drawing.Size(363, 32);
+            this.txtPassword.TabIndex = 1;
             // 
-            // txtboxCorreoUser
+            // txtUser
             // 
-            this.txtboxCorreoUser.Location = new System.Drawing.Point(48, 70);
-            this.txtboxCorreoUser.Name = "txtboxCorreoUser";
-            this.txtboxCorreoUser.Size = new System.Drawing.Size(367, 30);
-            this.txtboxCorreoUser.TabIndex = 0;
+            this.txtUser.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUser.Location = new System.Drawing.Point(48, 70);
+            this.txtUser.Name = "txtUser";
+            this.txtUser.Size = new System.Drawing.Size(367, 32);
+            this.txtUser.TabIndex = 0;
             // 
             // btnExit
             // 
@@ -183,7 +188,6 @@
             this.btnExit.TabIndex = 45;
             this.btnExit.Text = "Salir";
             this.btnExit.UseVisualStyleBackColor = false;
-            this.btnExit.ClientSizeChanged += new System.EventHandler(this.btnExit_ClientSizeChanged);
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // FrmAdmin
@@ -219,8 +223,8 @@
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.Label lblMailUser;
         private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.TextBox txtBoxContraseña;
-        private System.Windows.Forms.TextBox txtboxCorreoUser;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.TextBox txtUser;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Button btnExit;
     }
