@@ -14,6 +14,9 @@ namespace ProyectoGreenSpace.Classes
 {
     internal class Film
     {
+        public const int MAX_PREMIERING = 8;
+        public const int MAX_NEXT_PREMIERING = 8;
+
         private int id;
         private string name;
         private string synopsis;
@@ -316,9 +319,11 @@ namespace ProyectoGreenSpace.Classes
         {
             List<Film> premiering = new List<Film>();
 
-            string query = "SELECT * FROM films WHERE premiering = '1'";
+            string query = "SELECT * FROM films WHERE premiering = @primiering LIMIT $max_premiering";
 
             MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
+            command.Parameters.AddWithValue("@premiering", true);
+            command.Parameters.AddWithValue("@max_premiering", MAX_PREMIERING);
 
             ConnectionBD.OpenConnection();
 
@@ -366,9 +371,11 @@ namespace ProyectoGreenSpace.Classes
         {
             List<Film> premiering = new List<Film>();
 
-            string query = "SELECT * FROM films WHERE next_premiering = '1'";
+            string query = "SELECT * FROM films WHERE next_premiering = @next_premiering LIMIT @max_next_premiering";
 
             MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
+            command.Parameters.AddWithValue("@next_premiering", true);
+            command.Parameters.AddWithValue("@max_next_premiering", MAX_NEXT_PREMIERING);
 
             ConnectionBD.OpenConnection();
 
