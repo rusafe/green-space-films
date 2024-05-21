@@ -256,82 +256,42 @@ namespace ProyectoGreenSpace
 
         private void pcbMovie1_Click(object sender, EventArgs e)
         {
-            AccessMovieTheater();
+            AccessMovieTheater(lblInfor1.Text);
         }
 
         private void pcbMovie2_Click(object sender, EventArgs e)
         {
-            AccessMovieTheater();
+            AccessMovieTheater(lblInfor2.Text);
         }
 
         private void pcbMovie3_Click(object sender, EventArgs e)
         {
-            AccessMovieTheater();
+            AccessMovieTheater(lblInfor3.Text);
         }
 
         private void pcbMovie4_Click(object sender, EventArgs e)
         {
-            AccessMovieTheater();
+            AccessMovieTheater(lblInfor4.Text);
         }
 
         private void pcbMovie5_Click(object sender, EventArgs e)
         {
-            AccessMovieTheater();
+            AccessMovieTheater(lblInfor5.Text);
         }
 
         private void pcbMovie6_Click(object sender, EventArgs e)
         {
-            AccessMovieTheater();
+            AccessMovieTheater(lblInfor6.Text);
         }
 
         private void pcbMovie7_Click(object sender, EventArgs e)
         {
-            AccessMovieTheater();
+            AccessMovieTheater(lblInfor7.Text);
         }
 
         private void pcbMovie8_Click(object sender, EventArgs e)
         {
-            AccessMovieTheater();
-        }
-
-        private void pcbNextMovie1_Click(object sender, EventArgs e)
-        {
-            AccessMovieTheater();
-        }
-
-        private void pcbNextMovie2_Click(object sender, EventArgs e)
-        {
-            AccessMovieTheater();
-        }
-
-        private void pcbNextMovie3_Click(object sender, EventArgs e)
-        {
-            AccessMovieTheater();
-        }
-
-        private void pcbNextMovie4_Click(object sender, EventArgs e)
-        {
-            AccessMovieTheater();
-        }
-
-        private void pcbNextMovie5_Click(object sender, EventArgs e)
-        {
-            AccessMovieTheater();
-        }
-
-        private void pcbNextMovie6_Click(object sender, EventArgs e)
-        {
-            AccessMovieTheater();
-        }
-
-        private void pcbNextMovie7_Click(object sender, EventArgs e)
-        {
-            AccessMovieTheater();
-        }
-
-        private void pcbNextMovie8_Click(object sender, EventArgs e)
-        {
-            AccessMovieTheater();
+            AccessMovieTheater(lblInfor8.Text);
         }
 
         private void btnReviewTickets_Click(object sender, EventArgs e)
@@ -369,9 +329,9 @@ namespace ProyectoGreenSpace
             this.Close();
         }
 
-        private void AccessMovieTheater()
+        private void AccessMovieTheater(string filmName)
         {
-            FrmMovieTheater frmMovieTheater = new FrmMovieTheater();
+            FrmMovieTheater frmMovieTheater = new FrmMovieTheater(filmName);
             frmMovieTheater.Show();
             this.Close();
         }

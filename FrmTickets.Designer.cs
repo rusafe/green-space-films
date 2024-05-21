@@ -55,7 +55,6 @@
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.dgvActualTickets = new System.Windows.Forms.DataGridView();
-            this.dgvPastTickets = new System.Windows.Forms.DataGridView();
             this.numHall = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.user = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.movie = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -66,6 +65,7 @@
             this.priceWithoutDiscount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.discount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.total = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvPastTickets = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -366,29 +366,6 @@
             this.dgvActualTickets.Size = new System.Drawing.Size(1038, 210);
             this.dgvActualTickets.TabIndex = 37;
             // 
-            // dgvPastTickets
-            // 
-            this.dgvPastTickets.AllowUserToDeleteRows = false;
-            this.dgvPastTickets.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPastTickets.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.pastTicketsDay,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9});
-            this.dgvPastTickets.Location = new System.Drawing.Point(262, 409);
-            this.dgvPastTickets.Name = "dgvPastTickets";
-            this.dgvPastTickets.ReadOnly = true;
-            this.dgvPastTickets.RowHeadersWidth = 51;
-            this.dgvPastTickets.RowTemplate.Height = 24;
-            this.dgvPastTickets.Size = new System.Drawing.Size(1038, 291);
-            this.dgvPastTickets.TabIndex = 38;
-            // 
             // numHall
             // 
             this.numHall.HeaderText = "Nº Sala";
@@ -468,6 +445,29 @@
             this.total.Name = "total";
             this.total.ReadOnly = true;
             this.total.Width = 125;
+            // 
+            // dgvPastTickets
+            // 
+            this.dgvPastTickets.AllowUserToDeleteRows = false;
+            this.dgvPastTickets.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPastTickets.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.pastTicketsDay,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9});
+            this.dgvPastTickets.Location = new System.Drawing.Point(262, 409);
+            this.dgvPastTickets.Name = "dgvPastTickets";
+            this.dgvPastTickets.ReadOnly = true;
+            this.dgvPastTickets.RowHeadersWidth = 51;
+            this.dgvPastTickets.RowTemplate.Height = 24;
+            this.dgvPastTickets.Size = new System.Drawing.Size(1038, 291);
+            this.dgvPastTickets.TabIndex = 38;
             // 
             // dataGridViewTextBoxColumn1
             // 

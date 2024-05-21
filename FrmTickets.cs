@@ -61,7 +61,7 @@ namespace ProyectoGreenSpace
                 Room room = ticket.getRoom();
 
                 dgvActualTickets.Rows.Add(
-                    $"Sala {room.Id}",
+                    room.Id,
                     user.Username,
                     film.Name,
                     ticket.HourFilm,

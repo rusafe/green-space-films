@@ -12,6 +12,8 @@ namespace ProyectoGreenSpace.Classes
 {
     internal class Session
     {
+        public const int MAX_SESSIONS_PER_FILM = 5;
+
         private int id;
         private int filmId;
         private int roomId;
@@ -20,6 +22,8 @@ namespace ProyectoGreenSpace.Classes
         private int occupiedSeats;
 
         public TimeSpan StartHour { get { return startHour; } }
+        public int TotalSeats { get { return totalSeats; } }
+        public int OccupiedSeats { get { return occupiedSeats; } }
 
         public Session(int id, int filmId, int roomId, TimeSpan startHour, int totalSeats, int occupiedSeats)
         {
@@ -147,6 +151,22 @@ namespace ProyectoGreenSpace.Classes
             ConnectionBD.CloseConnection();
 
             return sessions;
+        }
+
+        public static int AmountSessions(int filmId)
+        {
+            string query = "SELECT COUNT(*) FROM sessions WHERE filmId = @filmId";
+
+            MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
+            command.Parameters.AddWithValue("@filmId", filmId);
+
+            ConnectionBD.OpenConnection();
+
+            int amount = Convert.ToInt32(command.ExecuteScalar());
+
+            ConnectionBD.CloseConnection();
+
+            return amount;
         }
     }
 }

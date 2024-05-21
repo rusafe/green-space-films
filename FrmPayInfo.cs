@@ -37,7 +37,7 @@ namespace ProyectoGreenSpace
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            FrmMovieTheater frmMovieTheater = new FrmMovieTheater();
+            FrmMovieTheater frmMovieTheater = new FrmMovieTheater(txtMovie.Text);
             frmMovieTheater.Show();
             this.Close();
         }

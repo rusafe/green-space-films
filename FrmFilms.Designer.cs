@@ -783,7 +783,6 @@
             this.pcbNextMovie8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbNextMovie8.TabIndex = 8;
             this.pcbNextMovie8.TabStop = false;
-            this.pcbNextMovie8.Click += new System.EventHandler(this.pcbNextMovie8_Click);
             // 
             // grbNextMovie1
             // 
@@ -807,7 +806,6 @@
             this.pcbNextMovie1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbNextMovie1.TabIndex = 9;
             this.pcbNextMovie1.TabStop = false;
-            this.pcbNextMovie1.Click += new System.EventHandler(this.pcbNextMovie1_Click);
             // 
             // lblNextInfo1
             // 
@@ -842,7 +840,6 @@
             this.pcbNextMovie4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbNextMovie4.TabIndex = 11;
             this.pcbNextMovie4.TabStop = false;
-            this.pcbNextMovie4.Click += new System.EventHandler(this.pcbNextMovie4_Click);
             // 
             // lblNextInfo4
             // 
@@ -887,7 +884,6 @@
             this.pcbNextMovie7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbNextMovie7.TabIndex = 8;
             this.pcbNextMovie7.TabStop = false;
-            this.pcbNextMovie7.Click += new System.EventHandler(this.pcbNextMovie7_Click);
             // 
             // lblTitleNextMonth
             // 
@@ -921,7 +917,6 @@
             this.pcbNextMovie2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbNextMovie2.TabIndex = 9;
             this.pcbNextMovie2.TabStop = false;
-            this.pcbNextMovie2.Click += new System.EventHandler(this.pcbNextMovie2_Click);
             // 
             // lbNextlInfo2
             // 
@@ -955,7 +950,6 @@
             this.pcbNextMovie6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbNextMovie6.TabIndex = 9;
             this.pcbNextMovie6.TabStop = false;
-            this.pcbNextMovie6.Click += new System.EventHandler(this.pcbNextMovie6_Click);
             // 
             // lblNextInfo6
             // 
@@ -990,7 +984,6 @@
             this.pcbNextMovie3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbNextMovie3.TabIndex = 11;
             this.pcbNextMovie3.TabStop = false;
-            this.pcbNextMovie3.Click += new System.EventHandler(this.pcbNextMovie3_Click);
             // 
             // lblNextInfo3
             // 
@@ -1025,7 +1018,6 @@
             this.pcbNextMovie5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbNextMovie5.TabIndex = 10;
             this.pcbNextMovie5.TabStop = false;
-            this.pcbNextMovie5.Click += new System.EventHandler(this.pcbNextMovie5_Click);
             // 
             // lblNextInfo5
             // 

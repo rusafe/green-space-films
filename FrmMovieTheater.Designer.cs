@@ -47,38 +47,38 @@
             this.btnUser = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.btnSettings = new System.Windows.Forms.Button();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.grbInfo4 = new System.Windows.Forms.GroupBox();
             this.pctBusy5 = new System.Windows.Forms.PictureBox();
             this.pctFree5 = new System.Windows.Forms.PictureBox();
             this.txtSeats5 = new System.Windows.Forms.TextBox();
-            this.txtTypeHall5 = new System.Windows.Forms.TextBox();
-            this.txtHall5 = new System.Windows.Forms.TextBox();
-            this.txtHour5 = new System.Windows.Forms.TextBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.pctBusy4 = new System.Windows.Forms.PictureBox();
-            this.pctFree4 = new System.Windows.Forms.PictureBox();
-            this.txtSeats4 = new System.Windows.Forms.TextBox();
             this.txtTypeHall4 = new System.Windows.Forms.TextBox();
             this.txtHall4 = new System.Windows.Forms.TextBox();
             this.txtHour4 = new System.Windows.Forms.TextBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.pctBusy3 = new System.Windows.Forms.PictureBox();
-            this.pctFree3 = new System.Windows.Forms.PictureBox();
-            this.txtSeats3 = new System.Windows.Forms.TextBox();
-            this.txtTypeHall3 = new System.Windows.Forms.TextBox();
-            this.txtHall3 = new System.Windows.Forms.TextBox();
-            this.txtHour3 = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.pctBusy2 = new System.Windows.Forms.PictureBox();
-            this.pctFree2 = new System.Windows.Forms.PictureBox();
-            this.txtSeats2 = new System.Windows.Forms.TextBox();
+            this.grbInfo2 = new System.Windows.Forms.GroupBox();
+            this.pctBusy4 = new System.Windows.Forms.PictureBox();
+            this.pctFree4 = new System.Windows.Forms.PictureBox();
+            this.txtSeats4 = new System.Windows.Forms.TextBox();
             this.txtTypeHall2 = new System.Windows.Forms.TextBox();
             this.txtHall2 = new System.Windows.Forms.TextBox();
             this.txtHour2 = new System.Windows.Forms.TextBox();
+            this.grbInfo5 = new System.Windows.Forms.GroupBox();
+            this.pctBusy3 = new System.Windows.Forms.PictureBox();
+            this.pctFree3 = new System.Windows.Forms.PictureBox();
+            this.txtSeats3 = new System.Windows.Forms.TextBox();
+            this.txtTypeHall5 = new System.Windows.Forms.TextBox();
+            this.txtHall5 = new System.Windows.Forms.TextBox();
+            this.txtHour5 = new System.Windows.Forms.TextBox();
+            this.grbInfo3 = new System.Windows.Forms.GroupBox();
+            this.pctBusy2 = new System.Windows.Forms.PictureBox();
+            this.pctFree2 = new System.Windows.Forms.PictureBox();
+            this.txtSeats2 = new System.Windows.Forms.TextBox();
+            this.txtTypeHall3 = new System.Windows.Forms.TextBox();
+            this.txtHall3 = new System.Windows.Forms.TextBox();
+            this.txtHour3 = new System.Windows.Forms.TextBox();
             this.btnBack = new System.Windows.Forms.Button();
             this.btnAccessRevews = new System.Windows.Forms.Button();
             this.btnQuestion = new System.Windows.Forms.Button();
-            this.grpInfo1 = new System.Windows.Forms.GroupBox();
+            this.grbInfo1 = new System.Windows.Forms.GroupBox();
             this.pctBusy1 = new System.Windows.Forms.PictureBox();
             this.pctFree1 = new System.Windows.Forms.PictureBox();
             this.txtSeats1 = new System.Windows.Forms.TextBox();
@@ -86,7 +86,7 @@
             this.txtHall1 = new System.Windows.Forms.TextBox();
             this.txtHour1 = new System.Windows.Forms.TextBox();
             this.txtHandicapped = new System.Windows.Forms.TextBox();
-            this.txtGendre2 = new System.Windows.Forms.TextBox();
+            this.txtGender2 = new System.Windows.Forms.TextBox();
             this.txtGender1 = new System.Windows.Forms.TextBox();
             this.txtAge = new System.Windows.Forms.TextBox();
             this.txtDuration = new System.Windows.Forms.TextBox();
@@ -96,6 +96,16 @@
             this.pcbMovie1 = new System.Windows.Forms.PictureBox();
             this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblAmountFreeSeats1 = new System.Windows.Forms.Label();
+            this.lblAmountOccupiedSeats1 = new System.Windows.Forms.Label();
+            this.lblAmountOccupiedSeats2 = new System.Windows.Forms.Label();
+            this.lblAmountFreeSeats2 = new System.Windows.Forms.Label();
+            this.lblAmountOccupiedSeats3 = new System.Windows.Forms.Label();
+            this.lblAmountFreeSeats3 = new System.Windows.Forms.Label();
+            this.lblAmountOccupiedSeats4 = new System.Windows.Forms.Label();
+            this.lblAmountFreeSeats4 = new System.Windows.Forms.Label();
+            this.lblAmountOccupiedSeats5 = new System.Windows.Forms.Label();
+            this.lblAmountFreeSeats5 = new System.Windows.Forms.Label();
             this.sidebar.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -104,19 +114,19 @@
             this.panel5.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.grbInfo4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctBusy5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctFree5)).BeginInit();
-            this.groupBox4.SuspendLayout();
+            this.grbInfo2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctBusy4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctFree4)).BeginInit();
-            this.groupBox2.SuspendLayout();
+            this.grbInfo5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctBusy3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctFree3)).BeginInit();
-            this.groupBox1.SuspendLayout();
+            this.grbInfo3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctBusy2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctFree2)).BeginInit();
-            this.grpInfo1.SuspendLayout();
+            this.grbInfo1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctBusy1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctFree1)).BeginInit();
             this.grbMovie1.SuspendLayout();
@@ -314,22 +324,25 @@
             this.btnSettings.UseVisualStyleBackColor = true;
             this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
-            // groupBox3
+            // grbInfo4
             // 
-            this.groupBox3.BackColor = System.Drawing.Color.Black;
-            this.groupBox3.Controls.Add(this.pctBusy5);
-            this.groupBox3.Controls.Add(this.pctFree5);
-            this.groupBox3.Controls.Add(this.txtSeats5);
-            this.groupBox3.Controls.Add(this.txtTypeHall5);
-            this.groupBox3.Controls.Add(this.txtHall5);
-            this.groupBox3.Controls.Add(this.txtHour5);
-            this.groupBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.groupBox3.Location = new System.Drawing.Point(991, 401);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(295, 166);
-            this.groupBox3.TabIndex = 50;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
+            this.grbInfo4.BackColor = System.Drawing.Color.Black;
+            this.grbInfo4.Controls.Add(this.lblAmountOccupiedSeats4);
+            this.grbInfo4.Controls.Add(this.lblAmountFreeSeats4);
+            this.grbInfo4.Controls.Add(this.pctBusy5);
+            this.grbInfo4.Controls.Add(this.pctFree5);
+            this.grbInfo4.Controls.Add(this.txtSeats5);
+            this.grbInfo4.Controls.Add(this.txtTypeHall4);
+            this.grbInfo4.Controls.Add(this.txtHall4);
+            this.grbInfo4.Controls.Add(this.txtHour4);
+            this.grbInfo4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.grbInfo4.Location = new System.Drawing.Point(991, 401);
+            this.grbInfo4.Name = "grbInfo4";
+            this.grbInfo4.Size = new System.Drawing.Size(295, 166);
+            this.grbInfo4.TabIndex = 50;
+            this.grbInfo4.TabStop = false;
+            this.grbInfo4.Visible = false;
+            this.grbInfo4.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
             // pctBusy5
             // 
@@ -365,6 +378,200 @@
             this.txtSeats5.Size = new System.Drawing.Size(115, 159);
             this.txtSeats5.TabIndex = 29;
             this.txtSeats5.Text = "Libres\r\n\r\n\r\nOcu\r\npados";
+            // 
+            // txtTypeHall4
+            // 
+            this.txtTypeHall4.BackColor = System.Drawing.Color.Khaki;
+            this.txtTypeHall4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTypeHall4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTypeHall4.ForeColor = System.Drawing.Color.White;
+            this.txtTypeHall4.Location = new System.Drawing.Point(6, 114);
+            this.txtTypeHall4.Multiline = true;
+            this.txtTypeHall4.Name = "txtTypeHall4";
+            this.txtTypeHall4.Size = new System.Drawing.Size(168, 46);
+            this.txtTypeHall4.TabIndex = 28;
+            this.txtTypeHall4.Text = "Tipo Sala";
+            this.txtTypeHall4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtHall4
+            // 
+            this.txtHall4.BackColor = System.Drawing.Color.Black;
+            this.txtHall4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtHall4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHall4.ForeColor = System.Drawing.Color.White;
+            this.txtHall4.Location = new System.Drawing.Point(6, 73);
+            this.txtHall4.Multiline = true;
+            this.txtHall4.Name = "txtHall4";
+            this.txtHall4.Size = new System.Drawing.Size(147, 46);
+            this.txtHall4.TabIndex = 27;
+            this.txtHall4.Text = "nº sala";
+            this.txtHall4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtHour4
+            // 
+            this.txtHour4.BackColor = System.Drawing.Color.Black;
+            this.txtHour4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtHour4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHour4.ForeColor = System.Drawing.Color.White;
+            this.txtHour4.Location = new System.Drawing.Point(6, 21);
+            this.txtHour4.Multiline = true;
+            this.txtHour4.Name = "txtHour4";
+            this.txtHour4.Size = new System.Drawing.Size(147, 46);
+            this.txtHour4.TabIndex = 26;
+            this.txtHour4.Text = "Horario";
+            this.txtHour4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // grbInfo2
+            // 
+            this.grbInfo2.BackColor = System.Drawing.Color.Black;
+            this.grbInfo2.Controls.Add(this.lblAmountOccupiedSeats2);
+            this.grbInfo2.Controls.Add(this.lblAmountFreeSeats2);
+            this.grbInfo2.Controls.Add(this.pctBusy4);
+            this.grbInfo2.Controls.Add(this.pctFree4);
+            this.grbInfo2.Controls.Add(this.txtSeats4);
+            this.grbInfo2.Controls.Add(this.txtTypeHall2);
+            this.grbInfo2.Controls.Add(this.txtHall2);
+            this.grbInfo2.Controls.Add(this.txtHour2);
+            this.grbInfo2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.grbInfo2.Location = new System.Drawing.Point(991, 226);
+            this.grbInfo2.Name = "grbInfo2";
+            this.grbInfo2.Size = new System.Drawing.Size(295, 166);
+            this.grbInfo2.TabIndex = 49;
+            this.grbInfo2.TabStop = false;
+            this.grbInfo2.Visible = false;
+            this.grbInfo2.Enter += new System.EventHandler(this.groupBox4_Enter);
+            // 
+            // pctBusy4
+            // 
+            this.pctBusy4.BackColor = System.Drawing.Color.Silver;
+            this.pctBusy4.Image = global::ProyectoGreenSpace.Properties.Resources.silla__4_1;
+            this.pctBusy4.Location = new System.Drawing.Point(247, 96);
+            this.pctBusy4.Name = "pctBusy4";
+            this.pctBusy4.Size = new System.Drawing.Size(42, 46);
+            this.pctBusy4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctBusy4.TabIndex = 26;
+            this.pctBusy4.TabStop = false;
+            // 
+            // pctFree4
+            // 
+            this.pctFree4.BackColor = System.Drawing.Color.Silver;
+            this.pctFree4.Image = global::ProyectoGreenSpace.Properties.Resources.silla1;
+            this.pctFree4.Location = new System.Drawing.Point(247, 10);
+            this.pctFree4.Name = "pctFree4";
+            this.pctFree4.Size = new System.Drawing.Size(42, 46);
+            this.pctFree4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctFree4.TabIndex = 26;
+            this.pctFree4.TabStop = false;
+            // 
+            // txtSeats4
+            // 
+            this.txtSeats4.BackColor = System.Drawing.Color.Silver;
+            this.txtSeats4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSeats4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSeats4.ForeColor = System.Drawing.Color.Black;
+            this.txtSeats4.Location = new System.Drawing.Point(180, 1);
+            this.txtSeats4.Multiline = true;
+            this.txtSeats4.Name = "txtSeats4";
+            this.txtSeats4.Size = new System.Drawing.Size(115, 159);
+            this.txtSeats4.TabIndex = 29;
+            this.txtSeats4.Text = "Libres\r\n\r\n\r\nOcu\r\npados";
+            // 
+            // txtTypeHall2
+            // 
+            this.txtTypeHall2.BackColor = System.Drawing.Color.Khaki;
+            this.txtTypeHall2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTypeHall2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTypeHall2.ForeColor = System.Drawing.Color.White;
+            this.txtTypeHall2.Location = new System.Drawing.Point(6, 114);
+            this.txtTypeHall2.Multiline = true;
+            this.txtTypeHall2.Name = "txtTypeHall2";
+            this.txtTypeHall2.Size = new System.Drawing.Size(168, 46);
+            this.txtTypeHall2.TabIndex = 28;
+            this.txtTypeHall2.Text = "Tipo Sala";
+            this.txtTypeHall2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtHall2
+            // 
+            this.txtHall2.BackColor = System.Drawing.Color.Black;
+            this.txtHall2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtHall2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHall2.ForeColor = System.Drawing.Color.White;
+            this.txtHall2.Location = new System.Drawing.Point(10, 62);
+            this.txtHall2.Multiline = true;
+            this.txtHall2.Name = "txtHall2";
+            this.txtHall2.Size = new System.Drawing.Size(147, 46);
+            this.txtHall2.TabIndex = 27;
+            this.txtHall2.Text = "nº sala";
+            this.txtHall2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtHour2
+            // 
+            this.txtHour2.BackColor = System.Drawing.Color.Black;
+            this.txtHour2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtHour2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHour2.ForeColor = System.Drawing.Color.White;
+            this.txtHour2.Location = new System.Drawing.Point(6, 21);
+            this.txtHour2.Multiline = true;
+            this.txtHour2.Name = "txtHour2";
+            this.txtHour2.Size = new System.Drawing.Size(147, 46);
+            this.txtHour2.TabIndex = 26;
+            this.txtHour2.Text = "Horario";
+            this.txtHour2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // grbInfo5
+            // 
+            this.grbInfo5.BackColor = System.Drawing.Color.Black;
+            this.grbInfo5.Controls.Add(this.lblAmountOccupiedSeats5);
+            this.grbInfo5.Controls.Add(this.lblAmountFreeSeats5);
+            this.grbInfo5.Controls.Add(this.pctBusy3);
+            this.grbInfo5.Controls.Add(this.pctFree3);
+            this.grbInfo5.Controls.Add(this.txtSeats3);
+            this.grbInfo5.Controls.Add(this.txtTypeHall5);
+            this.grbInfo5.Controls.Add(this.txtHall5);
+            this.grbInfo5.Controls.Add(this.txtHour5);
+            this.grbInfo5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.grbInfo5.Location = new System.Drawing.Point(650, 501);
+            this.grbInfo5.Name = "grbInfo5";
+            this.grbInfo5.Size = new System.Drawing.Size(295, 166);
+            this.grbInfo5.TabIndex = 48;
+            this.grbInfo5.TabStop = false;
+            this.grbInfo5.Visible = false;
+            this.grbInfo5.Enter += new System.EventHandler(this.groupBox2_Enter);
+            // 
+            // pctBusy3
+            // 
+            this.pctBusy3.BackColor = System.Drawing.Color.Silver;
+            this.pctBusy3.Image = global::ProyectoGreenSpace.Properties.Resources.silla__4_1;
+            this.pctBusy3.Location = new System.Drawing.Point(247, 96);
+            this.pctBusy3.Name = "pctBusy3";
+            this.pctBusy3.Size = new System.Drawing.Size(42, 46);
+            this.pctBusy3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctBusy3.TabIndex = 26;
+            this.pctBusy3.TabStop = false;
+            // 
+            // pctFree3
+            // 
+            this.pctFree3.BackColor = System.Drawing.Color.Silver;
+            this.pctFree3.Image = global::ProyectoGreenSpace.Properties.Resources.silla1;
+            this.pctFree3.Location = new System.Drawing.Point(247, 10);
+            this.pctFree3.Name = "pctFree3";
+            this.pctFree3.Size = new System.Drawing.Size(42, 46);
+            this.pctFree3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctFree3.TabIndex = 26;
+            this.pctFree3.TabStop = false;
+            // 
+            // txtSeats3
+            // 
+            this.txtSeats3.BackColor = System.Drawing.Color.Silver;
+            this.txtSeats3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSeats3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSeats3.ForeColor = System.Drawing.Color.Black;
+            this.txtSeats3.Location = new System.Drawing.Point(180, 1);
+            this.txtSeats3.Multiline = true;
+            this.txtSeats3.Name = "txtSeats3";
+            this.txtSeats3.Size = new System.Drawing.Size(115, 159);
+            this.txtSeats3.TabIndex = 29;
+            this.txtSeats3.Text = "Libres\r\n\r\n\r\nOcu\r\npados";
             // 
             // txtTypeHall5
             // 
@@ -408,151 +615,60 @@
             this.txtHour5.Text = "Horario";
             this.txtHour5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // groupBox4
+            // grbInfo3
             // 
-            this.groupBox4.BackColor = System.Drawing.Color.Black;
-            this.groupBox4.Controls.Add(this.pctBusy4);
-            this.groupBox4.Controls.Add(this.pctFree4);
-            this.groupBox4.Controls.Add(this.txtSeats4);
-            this.groupBox4.Controls.Add(this.txtTypeHall4);
-            this.groupBox4.Controls.Add(this.txtHall4);
-            this.groupBox4.Controls.Add(this.txtHour4);
-            this.groupBox4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.groupBox4.Location = new System.Drawing.Point(991, 226);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(295, 166);
-            this.groupBox4.TabIndex = 49;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
+            this.grbInfo3.BackColor = System.Drawing.Color.Black;
+            this.grbInfo3.Controls.Add(this.lblAmountOccupiedSeats3);
+            this.grbInfo3.Controls.Add(this.lblAmountFreeSeats3);
+            this.grbInfo3.Controls.Add(this.pctBusy2);
+            this.grbInfo3.Controls.Add(this.pctFree2);
+            this.grbInfo3.Controls.Add(this.txtSeats2);
+            this.grbInfo3.Controls.Add(this.txtTypeHall3);
+            this.grbInfo3.Controls.Add(this.txtHall3);
+            this.grbInfo3.Controls.Add(this.txtHour3);
+            this.grbInfo3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.grbInfo3.Location = new System.Drawing.Point(650, 326);
+            this.grbInfo3.Name = "grbInfo3";
+            this.grbInfo3.Size = new System.Drawing.Size(295, 166);
+            this.grbInfo3.TabIndex = 47;
+            this.grbInfo3.TabStop = false;
+            this.grbInfo3.Visible = false;
+            this.grbInfo3.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // pctBusy4
+            // pctBusy2
             // 
-            this.pctBusy4.BackColor = System.Drawing.Color.Silver;
-            this.pctBusy4.Image = global::ProyectoGreenSpace.Properties.Resources.silla__4_1;
-            this.pctBusy4.Location = new System.Drawing.Point(247, 96);
-            this.pctBusy4.Name = "pctBusy4";
-            this.pctBusy4.Size = new System.Drawing.Size(42, 46);
-            this.pctBusy4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctBusy4.TabIndex = 26;
-            this.pctBusy4.TabStop = false;
+            this.pctBusy2.BackColor = System.Drawing.Color.Silver;
+            this.pctBusy2.Image = global::ProyectoGreenSpace.Properties.Resources.silla__4_1;
+            this.pctBusy2.Location = new System.Drawing.Point(247, 96);
+            this.pctBusy2.Name = "pctBusy2";
+            this.pctBusy2.Size = new System.Drawing.Size(42, 46);
+            this.pctBusy2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctBusy2.TabIndex = 26;
+            this.pctBusy2.TabStop = false;
             // 
-            // pctFree4
+            // pctFree2
             // 
-            this.pctFree4.BackColor = System.Drawing.Color.Silver;
-            this.pctFree4.Image = global::ProyectoGreenSpace.Properties.Resources.silla1;
-            this.pctFree4.Location = new System.Drawing.Point(247, 10);
-            this.pctFree4.Name = "pctFree4";
-            this.pctFree4.Size = new System.Drawing.Size(42, 46);
-            this.pctFree4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctFree4.TabIndex = 26;
-            this.pctFree4.TabStop = false;
+            this.pctFree2.BackColor = System.Drawing.Color.Silver;
+            this.pctFree2.Image = global::ProyectoGreenSpace.Properties.Resources.silla1;
+            this.pctFree2.Location = new System.Drawing.Point(247, 10);
+            this.pctFree2.Name = "pctFree2";
+            this.pctFree2.Size = new System.Drawing.Size(42, 46);
+            this.pctFree2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctFree2.TabIndex = 26;
+            this.pctFree2.TabStop = false;
             // 
-            // txtSeats4
+            // txtSeats2
             // 
-            this.txtSeats4.BackColor = System.Drawing.Color.Silver;
-            this.txtSeats4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtSeats4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSeats4.ForeColor = System.Drawing.Color.Black;
-            this.txtSeats4.Location = new System.Drawing.Point(180, 1);
-            this.txtSeats4.Multiline = true;
-            this.txtSeats4.Name = "txtSeats4";
-            this.txtSeats4.Size = new System.Drawing.Size(115, 159);
-            this.txtSeats4.TabIndex = 29;
-            this.txtSeats4.Text = "Libres\r\n\r\n\r\nOcu\r\npados";
-            // 
-            // txtTypeHall4
-            // 
-            this.txtTypeHall4.BackColor = System.Drawing.Color.Khaki;
-            this.txtTypeHall4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTypeHall4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTypeHall4.ForeColor = System.Drawing.Color.White;
-            this.txtTypeHall4.Location = new System.Drawing.Point(6, 114);
-            this.txtTypeHall4.Multiline = true;
-            this.txtTypeHall4.Name = "txtTypeHall4";
-            this.txtTypeHall4.Size = new System.Drawing.Size(168, 46);
-            this.txtTypeHall4.TabIndex = 28;
-            this.txtTypeHall4.Text = "Tipo Sala";
-            this.txtTypeHall4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txtHall4
-            // 
-            this.txtHall4.BackColor = System.Drawing.Color.Black;
-            this.txtHall4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtHall4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHall4.ForeColor = System.Drawing.Color.White;
-            this.txtHall4.Location = new System.Drawing.Point(10, 62);
-            this.txtHall4.Multiline = true;
-            this.txtHall4.Name = "txtHall4";
-            this.txtHall4.Size = new System.Drawing.Size(147, 46);
-            this.txtHall4.TabIndex = 27;
-            this.txtHall4.Text = "nº sala";
-            this.txtHall4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txtHour4
-            // 
-            this.txtHour4.BackColor = System.Drawing.Color.Black;
-            this.txtHour4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtHour4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHour4.ForeColor = System.Drawing.Color.White;
-            this.txtHour4.Location = new System.Drawing.Point(6, 21);
-            this.txtHour4.Multiline = true;
-            this.txtHour4.Name = "txtHour4";
-            this.txtHour4.Size = new System.Drawing.Size(147, 46);
-            this.txtHour4.TabIndex = 26;
-            this.txtHour4.Text = "Horario";
-            this.txtHour4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.BackColor = System.Drawing.Color.Black;
-            this.groupBox2.Controls.Add(this.pctBusy3);
-            this.groupBox2.Controls.Add(this.pctFree3);
-            this.groupBox2.Controls.Add(this.txtSeats3);
-            this.groupBox2.Controls.Add(this.txtTypeHall3);
-            this.groupBox2.Controls.Add(this.txtHall3);
-            this.groupBox2.Controls.Add(this.txtHour3);
-            this.groupBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.groupBox2.Location = new System.Drawing.Point(650, 501);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(295, 166);
-            this.groupBox2.TabIndex = 48;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
-            // 
-            // pctBusy3
-            // 
-            this.pctBusy3.BackColor = System.Drawing.Color.Silver;
-            this.pctBusy3.Image = global::ProyectoGreenSpace.Properties.Resources.silla__4_1;
-            this.pctBusy3.Location = new System.Drawing.Point(247, 96);
-            this.pctBusy3.Name = "pctBusy3";
-            this.pctBusy3.Size = new System.Drawing.Size(42, 46);
-            this.pctBusy3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctBusy3.TabIndex = 26;
-            this.pctBusy3.TabStop = false;
-            // 
-            // pctFree3
-            // 
-            this.pctFree3.BackColor = System.Drawing.Color.Silver;
-            this.pctFree3.Image = global::ProyectoGreenSpace.Properties.Resources.silla1;
-            this.pctFree3.Location = new System.Drawing.Point(247, 10);
-            this.pctFree3.Name = "pctFree3";
-            this.pctFree3.Size = new System.Drawing.Size(42, 46);
-            this.pctFree3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctFree3.TabIndex = 26;
-            this.pctFree3.TabStop = false;
-            // 
-            // txtSeats3
-            // 
-            this.txtSeats3.BackColor = System.Drawing.Color.Silver;
-            this.txtSeats3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtSeats3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSeats3.ForeColor = System.Drawing.Color.Black;
-            this.txtSeats3.Location = new System.Drawing.Point(180, 1);
-            this.txtSeats3.Multiline = true;
-            this.txtSeats3.Name = "txtSeats3";
-            this.txtSeats3.Size = new System.Drawing.Size(115, 159);
-            this.txtSeats3.TabIndex = 29;
-            this.txtSeats3.Text = "Libres\r\n\r\n\r\nOcu\r\npados";
+            this.txtSeats2.BackColor = System.Drawing.Color.Silver;
+            this.txtSeats2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSeats2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSeats2.ForeColor = System.Drawing.Color.Black;
+            this.txtSeats2.Location = new System.Drawing.Point(180, 1);
+            this.txtSeats2.Multiline = true;
+            this.txtSeats2.Name = "txtSeats2";
+            this.txtSeats2.Size = new System.Drawing.Size(115, 159);
+            this.txtSeats2.TabIndex = 29;
+            this.txtSeats2.Text = "Libres\r\n\r\n\r\nOcu\r\npados";
             // 
             // txtTypeHall3
             // 
@@ -596,100 +712,6 @@
             this.txtHour3.Text = "Horario";
             this.txtHour3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.Color.Black;
-            this.groupBox1.Controls.Add(this.pctBusy2);
-            this.groupBox1.Controls.Add(this.pctFree2);
-            this.groupBox1.Controls.Add(this.txtSeats2);
-            this.groupBox1.Controls.Add(this.txtTypeHall2);
-            this.groupBox1.Controls.Add(this.txtHall2);
-            this.groupBox1.Controls.Add(this.txtHour2);
-            this.groupBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.groupBox1.Location = new System.Drawing.Point(650, 326);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(295, 166);
-            this.groupBox1.TabIndex = 47;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
-            // 
-            // pctBusy2
-            // 
-            this.pctBusy2.BackColor = System.Drawing.Color.Silver;
-            this.pctBusy2.Image = global::ProyectoGreenSpace.Properties.Resources.silla__4_1;
-            this.pctBusy2.Location = new System.Drawing.Point(247, 96);
-            this.pctBusy2.Name = "pctBusy2";
-            this.pctBusy2.Size = new System.Drawing.Size(42, 46);
-            this.pctBusy2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctBusy2.TabIndex = 26;
-            this.pctBusy2.TabStop = false;
-            // 
-            // pctFree2
-            // 
-            this.pctFree2.BackColor = System.Drawing.Color.Silver;
-            this.pctFree2.Image = global::ProyectoGreenSpace.Properties.Resources.silla1;
-            this.pctFree2.Location = new System.Drawing.Point(247, 10);
-            this.pctFree2.Name = "pctFree2";
-            this.pctFree2.Size = new System.Drawing.Size(42, 46);
-            this.pctFree2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctFree2.TabIndex = 26;
-            this.pctFree2.TabStop = false;
-            // 
-            // txtSeats2
-            // 
-            this.txtSeats2.BackColor = System.Drawing.Color.Silver;
-            this.txtSeats2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtSeats2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSeats2.ForeColor = System.Drawing.Color.Black;
-            this.txtSeats2.Location = new System.Drawing.Point(180, 1);
-            this.txtSeats2.Multiline = true;
-            this.txtSeats2.Name = "txtSeats2";
-            this.txtSeats2.Size = new System.Drawing.Size(115, 159);
-            this.txtSeats2.TabIndex = 29;
-            this.txtSeats2.Text = "Libres\r\n\r\n\r\nOcu\r\npados";
-            // 
-            // txtTypeHall2
-            // 
-            this.txtTypeHall2.BackColor = System.Drawing.Color.Khaki;
-            this.txtTypeHall2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTypeHall2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTypeHall2.ForeColor = System.Drawing.Color.White;
-            this.txtTypeHall2.Location = new System.Drawing.Point(6, 114);
-            this.txtTypeHall2.Multiline = true;
-            this.txtTypeHall2.Name = "txtTypeHall2";
-            this.txtTypeHall2.Size = new System.Drawing.Size(168, 46);
-            this.txtTypeHall2.TabIndex = 28;
-            this.txtTypeHall2.Text = "Tipo Sala";
-            this.txtTypeHall2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txtHall2
-            // 
-            this.txtHall2.BackColor = System.Drawing.Color.Black;
-            this.txtHall2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtHall2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHall2.ForeColor = System.Drawing.Color.White;
-            this.txtHall2.Location = new System.Drawing.Point(6, 73);
-            this.txtHall2.Multiline = true;
-            this.txtHall2.Name = "txtHall2";
-            this.txtHall2.Size = new System.Drawing.Size(147, 46);
-            this.txtHall2.TabIndex = 27;
-            this.txtHall2.Text = "nº sala";
-            this.txtHall2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txtHour2
-            // 
-            this.txtHour2.BackColor = System.Drawing.Color.Black;
-            this.txtHour2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtHour2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHour2.ForeColor = System.Drawing.Color.White;
-            this.txtHour2.Location = new System.Drawing.Point(6, 21);
-            this.txtHour2.Multiline = true;
-            this.txtHour2.Name = "txtHour2";
-            this.txtHour2.Size = new System.Drawing.Size(147, 46);
-            this.txtHour2.TabIndex = 26;
-            this.txtHour2.Text = "Horario";
-            this.txtHour2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // btnBack
             // 
             this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
@@ -725,22 +747,25 @@
             this.btnQuestion.Text = "¿Qué significa...?";
             this.btnQuestion.UseVisualStyleBackColor = false;
             // 
-            // grpInfo1
+            // grbInfo1
             // 
-            this.grpInfo1.BackColor = System.Drawing.Color.Black;
-            this.grpInfo1.Controls.Add(this.pctBusy1);
-            this.grpInfo1.Controls.Add(this.pctFree1);
-            this.grpInfo1.Controls.Add(this.txtSeats1);
-            this.grpInfo1.Controls.Add(this.txtTypeHall1);
-            this.grpInfo1.Controls.Add(this.txtHall1);
-            this.grpInfo1.Controls.Add(this.txtHour1);
-            this.grpInfo1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.grpInfo1.Location = new System.Drawing.Point(650, 153);
-            this.grpInfo1.Name = "grpInfo1";
-            this.grpInfo1.Size = new System.Drawing.Size(295, 166);
-            this.grpInfo1.TabIndex = 43;
-            this.grpInfo1.TabStop = false;
-            this.grpInfo1.Enter += new System.EventHandler(this.grpInfo1_Enter);
+            this.grbInfo1.BackColor = System.Drawing.Color.Black;
+            this.grbInfo1.Controls.Add(this.lblAmountOccupiedSeats1);
+            this.grbInfo1.Controls.Add(this.lblAmountFreeSeats1);
+            this.grbInfo1.Controls.Add(this.pctBusy1);
+            this.grbInfo1.Controls.Add(this.pctFree1);
+            this.grbInfo1.Controls.Add(this.txtSeats1);
+            this.grbInfo1.Controls.Add(this.txtTypeHall1);
+            this.grbInfo1.Controls.Add(this.txtHall1);
+            this.grbInfo1.Controls.Add(this.txtHour1);
+            this.grbInfo1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.grbInfo1.Location = new System.Drawing.Point(650, 153);
+            this.grbInfo1.Name = "grbInfo1";
+            this.grbInfo1.Size = new System.Drawing.Size(295, 166);
+            this.grbInfo1.TabIndex = 43;
+            this.grbInfo1.TabStop = false;
+            this.grbInfo1.Visible = false;
+            this.grbInfo1.Enter += new System.EventHandler(this.grpInfo1_Enter);
             // 
             // pctBusy1
             // 
@@ -831,19 +856,19 @@
             this.txtHandicapped.Size = new System.Drawing.Size(138, 48);
             this.txtHandicapped.TabIndex = 41;
             // 
-            // txtGendre2
+            // txtGender2
             // 
-            this.txtGendre2.BackColor = System.Drawing.Color.PaleGreen;
-            this.txtGendre2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGendre2.ForeColor = System.Drawing.Color.Black;
-            this.txtGendre2.Location = new System.Drawing.Point(1148, 12);
-            this.txtGendre2.Multiline = true;
-            this.txtGendre2.Name = "txtGendre2";
-            this.txtGendre2.ReadOnly = true;
-            this.txtGendre2.Size = new System.Drawing.Size(138, 46);
-            this.txtGendre2.TabIndex = 40;
-            this.txtGendre2.Text = "Genero 2";
-            this.txtGendre2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtGender2.BackColor = System.Drawing.Color.PaleGreen;
+            this.txtGender2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGender2.ForeColor = System.Drawing.Color.Black;
+            this.txtGender2.Location = new System.Drawing.Point(1148, 12);
+            this.txtGender2.Multiline = true;
+            this.txtGender2.Name = "txtGender2";
+            this.txtGender2.ReadOnly = true;
+            this.txtGender2.Size = new System.Drawing.Size(138, 46);
+            this.txtGender2.TabIndex = 40;
+            this.txtGender2.Text = "Genero 2";
+            this.txtGender2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtGender1
             // 
@@ -947,22 +972,122 @@
             this.pictureBox1.TabIndex = 42;
             this.pictureBox1.TabStop = false;
             // 
+            // lblAmountFreeSeats1
+            // 
+            this.lblAmountFreeSeats1.AutoSize = true;
+            this.lblAmountFreeSeats1.ForeColor = System.Drawing.Color.White;
+            this.lblAmountFreeSeats1.Location = new System.Drawing.Point(196, 40);
+            this.lblAmountFreeSeats1.Name = "lblAmountFreeSeats1";
+            this.lblAmountFreeSeats1.Size = new System.Drawing.Size(44, 16);
+            this.lblAmountFreeSeats1.TabIndex = 30;
+            this.lblAmountFreeSeats1.Text = "label1";
+            // 
+            // lblAmountOccupiedSeats1
+            // 
+            this.lblAmountOccupiedSeats1.AutoSize = true;
+            this.lblAmountOccupiedSeats1.ForeColor = System.Drawing.Color.White;
+            this.lblAmountOccupiedSeats1.Location = new System.Drawing.Point(196, 129);
+            this.lblAmountOccupiedSeats1.Name = "lblAmountOccupiedSeats1";
+            this.lblAmountOccupiedSeats1.Size = new System.Drawing.Size(44, 16);
+            this.lblAmountOccupiedSeats1.TabIndex = 31;
+            this.lblAmountOccupiedSeats1.Text = "label1";
+            // 
+            // lblAmountOccupiedSeats2
+            // 
+            this.lblAmountOccupiedSeats2.AutoSize = true;
+            this.lblAmountOccupiedSeats2.ForeColor = System.Drawing.Color.White;
+            this.lblAmountOccupiedSeats2.Location = new System.Drawing.Point(197, 126);
+            this.lblAmountOccupiedSeats2.Name = "lblAmountOccupiedSeats2";
+            this.lblAmountOccupiedSeats2.Size = new System.Drawing.Size(44, 16);
+            this.lblAmountOccupiedSeats2.TabIndex = 33;
+            this.lblAmountOccupiedSeats2.Text = "label1";
+            // 
+            // lblAmountFreeSeats2
+            // 
+            this.lblAmountFreeSeats2.AutoSize = true;
+            this.lblAmountFreeSeats2.ForeColor = System.Drawing.Color.White;
+            this.lblAmountFreeSeats2.Location = new System.Drawing.Point(197, 37);
+            this.lblAmountFreeSeats2.Name = "lblAmountFreeSeats2";
+            this.lblAmountFreeSeats2.Size = new System.Drawing.Size(44, 16);
+            this.lblAmountFreeSeats2.TabIndex = 32;
+            this.lblAmountFreeSeats2.Text = "label1";
+            // 
+            // lblAmountOccupiedSeats3
+            // 
+            this.lblAmountOccupiedSeats3.AutoSize = true;
+            this.lblAmountOccupiedSeats3.ForeColor = System.Drawing.Color.White;
+            this.lblAmountOccupiedSeats3.Location = new System.Drawing.Point(196, 125);
+            this.lblAmountOccupiedSeats3.Name = "lblAmountOccupiedSeats3";
+            this.lblAmountOccupiedSeats3.Size = new System.Drawing.Size(44, 16);
+            this.lblAmountOccupiedSeats3.TabIndex = 33;
+            this.lblAmountOccupiedSeats3.Text = "label1";
+            // 
+            // lblAmountFreeSeats3
+            // 
+            this.lblAmountFreeSeats3.AutoSize = true;
+            this.lblAmountFreeSeats3.ForeColor = System.Drawing.Color.White;
+            this.lblAmountFreeSeats3.Location = new System.Drawing.Point(196, 36);
+            this.lblAmountFreeSeats3.Name = "lblAmountFreeSeats3";
+            this.lblAmountFreeSeats3.Size = new System.Drawing.Size(44, 16);
+            this.lblAmountFreeSeats3.TabIndex = 32;
+            this.lblAmountFreeSeats3.Text = "label1";
+            // 
+            // lblAmountOccupiedSeats4
+            // 
+            this.lblAmountOccupiedSeats4.AutoSize = true;
+            this.lblAmountOccupiedSeats4.ForeColor = System.Drawing.Color.White;
+            this.lblAmountOccupiedSeats4.Location = new System.Drawing.Point(197, 128);
+            this.lblAmountOccupiedSeats4.Name = "lblAmountOccupiedSeats4";
+            this.lblAmountOccupiedSeats4.Size = new System.Drawing.Size(44, 16);
+            this.lblAmountOccupiedSeats4.TabIndex = 35;
+            this.lblAmountOccupiedSeats4.Text = "label1";
+            // 
+            // lblAmountFreeSeats4
+            // 
+            this.lblAmountFreeSeats4.AutoSize = true;
+            this.lblAmountFreeSeats4.ForeColor = System.Drawing.Color.White;
+            this.lblAmountFreeSeats4.Location = new System.Drawing.Point(197, 39);
+            this.lblAmountFreeSeats4.Name = "lblAmountFreeSeats4";
+            this.lblAmountFreeSeats4.Size = new System.Drawing.Size(44, 16);
+            this.lblAmountFreeSeats4.TabIndex = 34;
+            this.lblAmountFreeSeats4.Text = "label1";
+            // 
+            // lblAmountOccupiedSeats5
+            // 
+            this.lblAmountOccupiedSeats5.AutoSize = true;
+            this.lblAmountOccupiedSeats5.ForeColor = System.Drawing.Color.White;
+            this.lblAmountOccupiedSeats5.Location = new System.Drawing.Point(196, 129);
+            this.lblAmountOccupiedSeats5.Name = "lblAmountOccupiedSeats5";
+            this.lblAmountOccupiedSeats5.Size = new System.Drawing.Size(44, 16);
+            this.lblAmountOccupiedSeats5.TabIndex = 35;
+            this.lblAmountOccupiedSeats5.Text = "label1";
+            // 
+            // lblAmountFreeSeats5
+            // 
+            this.lblAmountFreeSeats5.AutoSize = true;
+            this.lblAmountFreeSeats5.ForeColor = System.Drawing.Color.White;
+            this.lblAmountFreeSeats5.Location = new System.Drawing.Point(196, 40);
+            this.lblAmountFreeSeats5.Name = "lblAmountFreeSeats5";
+            this.lblAmountFreeSeats5.Size = new System.Drawing.Size(44, 16);
+            this.lblAmountFreeSeats5.TabIndex = 34;
+            this.lblAmountFreeSeats5.Text = "label1";
+            // 
             // FrmMovieTheater
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1298, 722);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.grbInfo4);
+            this.Controls.Add(this.grbInfo2);
+            this.Controls.Add(this.grbInfo5);
+            this.Controls.Add(this.grbInfo3);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnAccessRevews);
             this.Controls.Add(this.btnQuestion);
-            this.Controls.Add(this.grpInfo1);
+            this.Controls.Add(this.grbInfo1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtHandicapped);
-            this.Controls.Add(this.txtGendre2);
+            this.Controls.Add(this.txtGender2);
             this.Controls.Add(this.txtGender1);
             this.Controls.Add(this.txtAge);
             this.Controls.Add(this.txtDuration);
@@ -983,24 +1108,24 @@
             this.panel5.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            this.grbInfo4.ResumeLayout(false);
+            this.grbInfo4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctBusy5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctFree5)).EndInit();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
+            this.grbInfo2.ResumeLayout(false);
+            this.grbInfo2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctBusy4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctFree4)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.grbInfo5.ResumeLayout(false);
+            this.grbInfo5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctBusy3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctFree3)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.grbInfo3.ResumeLayout(false);
+            this.grbInfo3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctBusy2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctFree2)).EndInit();
-            this.grpInfo1.ResumeLayout(false);
-            this.grpInfo1.PerformLayout();
+            this.grbInfo1.ResumeLayout(false);
+            this.grbInfo1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctBusy1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctFree1)).EndInit();
             this.grbMovie1.ResumeLayout(false);
@@ -1030,38 +1155,38 @@
         private System.Windows.Forms.Button btnUser;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Button btnSettings;
-        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox grbInfo4;
         private System.Windows.Forms.PictureBox pctBusy5;
         private System.Windows.Forms.PictureBox pctFree5;
         private System.Windows.Forms.TextBox txtSeats5;
-        private System.Windows.Forms.TextBox txtTypeHall5;
-        private System.Windows.Forms.TextBox txtHall5;
-        private System.Windows.Forms.TextBox txtHour5;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.PictureBox pctBusy4;
-        private System.Windows.Forms.PictureBox pctFree4;
-        private System.Windows.Forms.TextBox txtSeats4;
         private System.Windows.Forms.TextBox txtTypeHall4;
         private System.Windows.Forms.TextBox txtHall4;
         private System.Windows.Forms.TextBox txtHour4;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.PictureBox pctBusy3;
-        private System.Windows.Forms.PictureBox pctFree3;
-        private System.Windows.Forms.TextBox txtSeats3;
-        private System.Windows.Forms.TextBox txtTypeHall3;
-        private System.Windows.Forms.TextBox txtHall3;
-        private System.Windows.Forms.TextBox txtHour3;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.PictureBox pctBusy2;
-        private System.Windows.Forms.PictureBox pctFree2;
-        private System.Windows.Forms.TextBox txtSeats2;
+        private System.Windows.Forms.GroupBox grbInfo2;
+        private System.Windows.Forms.PictureBox pctBusy4;
+        private System.Windows.Forms.PictureBox pctFree4;
+        private System.Windows.Forms.TextBox txtSeats4;
         private System.Windows.Forms.TextBox txtTypeHall2;
         private System.Windows.Forms.TextBox txtHall2;
         private System.Windows.Forms.TextBox txtHour2;
+        private System.Windows.Forms.GroupBox grbInfo5;
+        private System.Windows.Forms.PictureBox pctBusy3;
+        private System.Windows.Forms.PictureBox pctFree3;
+        private System.Windows.Forms.TextBox txtSeats3;
+        private System.Windows.Forms.TextBox txtTypeHall5;
+        private System.Windows.Forms.TextBox txtHall5;
+        private System.Windows.Forms.TextBox txtHour5;
+        private System.Windows.Forms.GroupBox grbInfo3;
+        private System.Windows.Forms.PictureBox pctBusy2;
+        private System.Windows.Forms.PictureBox pctFree2;
+        private System.Windows.Forms.TextBox txtSeats2;
+        private System.Windows.Forms.TextBox txtTypeHall3;
+        private System.Windows.Forms.TextBox txtHall3;
+        private System.Windows.Forms.TextBox txtHour3;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Button btnAccessRevews;
         private System.Windows.Forms.Button btnQuestion;
-        private System.Windows.Forms.GroupBox grpInfo1;
+        private System.Windows.Forms.GroupBox grbInfo1;
         private System.Windows.Forms.PictureBox pctBusy1;
         private System.Windows.Forms.PictureBox pctFree1;
         private System.Windows.Forms.TextBox txtSeats1;
@@ -1070,7 +1195,7 @@
         private System.Windows.Forms.TextBox txtHour1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txtHandicapped;
-        private System.Windows.Forms.TextBox txtGendre2;
+        private System.Windows.Forms.TextBox txtGender2;
         private System.Windows.Forms.TextBox txtGender1;
         private System.Windows.Forms.TextBox txtAge;
         private System.Windows.Forms.TextBox txtDuration;
@@ -1079,5 +1204,15 @@
         private System.Windows.Forms.GroupBox grbMovie1;
         private System.Windows.Forms.PictureBox pcbMovie1;
         private System.Windows.Forms.Timer sidebarTimer;
+        private System.Windows.Forms.Label lblAmountOccupiedSeats4;
+        private System.Windows.Forms.Label lblAmountFreeSeats4;
+        private System.Windows.Forms.Label lblAmountOccupiedSeats2;
+        private System.Windows.Forms.Label lblAmountFreeSeats2;
+        private System.Windows.Forms.Label lblAmountOccupiedSeats5;
+        private System.Windows.Forms.Label lblAmountFreeSeats5;
+        private System.Windows.Forms.Label lblAmountOccupiedSeats3;
+        private System.Windows.Forms.Label lblAmountFreeSeats3;
+        private System.Windows.Forms.Label lblAmountOccupiedSeats1;
+        private System.Windows.Forms.Label lblAmountFreeSeats1;
     }
 }
