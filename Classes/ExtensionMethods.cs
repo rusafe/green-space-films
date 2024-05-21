@@ -25,7 +25,7 @@ namespace ProyectoGreenSpace.Classes
             }
             else
             {
-                return ImagesDB.BytesToImage((byte[])reader.GetValue(3));
+                return ImagesDB.BytesToImage((byte[])reader.GetValue(index));
             }
         }
     }
