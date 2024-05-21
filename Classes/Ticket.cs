@@ -301,8 +301,46 @@ namespace ProyectoGreenSpace.Classes
             int amount = Convert.ToInt32(command.ExecuteScalar());
 
             ConnectionBD.CloseConnection();
-            
+
             return amount;
+        }
+
+        /// <summary>
+        /// Obtiene el porcentaje / 100 de descuento para la cantidad de tickets introducida (ejemplo: 0.15)
+        /// </summary>
+        /// <param name="amountTickets">Cantidad de tickets que se van a comprar</param>
+        /// <returns>Porcentaje / 100 de descuento</returns>
+        public static double AmountDiscount(int amountTickets)
+        {
+            if (amountTickets == 2)
+            {
+                return 0.1;
+            }
+            else if (amountTickets == 3)
+            {
+                return 0.15;
+            }
+            else if (amountTickets >= 4)
+            {
+                return 0.2;
+            }
+            else
+            {
+                return 0;
+            }
+        }
+
+        /// <summary>
+        /// Obtiene el precio total del ticket en base al precio base de la pelicula, cantidad de tickets y el descuento aplicado
+        /// </summary>
+        /// <param name="filmPrice">El precio base de la pelicula</param>
+        /// <param name="amountTickets">Cantidad de tickets a comprar</param>
+        /// <returns>El precio total del ticket</returns>
+        public static double AmountTotalPrice(double filmPrice, int amountTickets)
+        {
+            double priceTickets = filmPrice * amountTickets;
+
+            return priceTickets - (priceTickets * AmountDiscount(amountTickets));
         }
     }
 }

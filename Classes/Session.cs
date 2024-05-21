@@ -1,10 +1,12 @@
-﻿using MySql.Data.MySqlClient;
+﻿using Microsoft.VisualBasic.ApplicationServices;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using static Mysqlx.Notice.Frame.Types;
 
 namespace ProyectoGreenSpace.Classes
 {
@@ -54,6 +56,25 @@ namespace ProyectoGreenSpace.Classes
         public int FreeSeats()
         {
             return totalSeats - occupiedSeats;
+        }
+
+        /// <summary>
+        /// Aumenta la cantidad de asientos ocupados de una sesión
+        /// </summary>
+        /// <param name="seats">Cantidad de asientos ocupados</param>
+        public void OccupySeats(int seats)
+        {
+            string query = "UPDATE session SET occupied_seats = occupied_seats + @seats WHERE id = @id";
+
+            MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
+            command.Parameters.AddWithValue("@id", id);
+            command.Parameters.AddWithValue("@seats", seats);
+
+            ConnectionBD.OpenConnection();
+
+            command.ExecuteNonQuery();
+
+            ConnectionBD.CloseConnection();
         }
 
         /// <summary>

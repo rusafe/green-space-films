@@ -1,4 +1,5 @@
-﻿using ProyectoGreenSpace.LangResources;
+﻿using ProyectoGreenSpace.Classes;
+using ProyectoGreenSpace.LangResources;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -36,6 +37,27 @@ namespace ProyectoGreenSpace
             lblUsername.Text = StringResources.labelUser;
         }
 
+        private void LoadPremieringFilms()
+        {
+            List<Film> premiering = Film.ObtainAllPremiering();
+
+            for (int i = 0; i < premiering.Count; i++)
+            {
+                string grbFilmName = $"grbMovie{i + 1}";
+                string pcbFilmName = $"pcbMovie{i + 1}";
+                string lblFilmName = $"lblInfor{i + 1}";
+
+                GroupBox grbFilm = (GroupBox)pnlFilms.Controls.Find(grbFilmName, true)[0];
+                grbFilm.Visible = true;
+
+                PictureBox pcbFilm = (PictureBox)grbFilm.Controls.Find(pcbFilmName, true)[0];
+                pcbFilm.Image = premiering[i].Cover;
+
+                Label lblFilm = (Label)grbFilm.Controls.Find(lblFilmName, true)[0];
+                lblFilm.Text = premiering[i].Name;
+            }
+        }
+
         private void FrmFilms_Load(object sender, EventArgs e)
         {
             NotVisibleUserButtons();
@@ -44,6 +66,7 @@ namespace ProyectoGreenSpace
             txtJoinApp.Text = UserSession.CreationDateTime.ToString("dd/MM/yyyy");
 
             ApplyLanguage();
+            LoadPremieringFilms();
         }
 
         private void btnMenu_Click_1(object sender, EventArgs e)
