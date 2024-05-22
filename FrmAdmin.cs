@@ -18,7 +18,6 @@ namespace ProyectoGreenSpace
         public FrmAdmin()
         {
             InitializeComponent();
-            this.FormClosed += new FormClosedEventHandler(AppKill);
         }
 
         private void FrmAdmin_Load(object sender, EventArgs e)
@@ -108,14 +107,6 @@ namespace ProyectoGreenSpace
             }
         }
         
-        private void AppKill(object sender, FormClosedEventArgs e)
-        {
-            if (e.CloseReason == CloseReason.UserClosing)
-            {
-                Application.Exit();
-            }
-        }
-
         #region Acceso a formularios de configuración
         private void btnUser_Click_1(object sender, EventArgs e)
         {
@@ -145,6 +136,5 @@ namespace ProyectoGreenSpace
             frmFilms.Show();
         }
         #endregion
-
     }
 }

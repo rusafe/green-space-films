@@ -11,7 +11,6 @@ namespace ProyectoGreenSpace
         public FrmLogin()
         {
             InitializeComponent();
-            this.FormClosed += new FormClosedEventHandler(AppKill);
         }
 
         private void FrmLogin_Load(object sender, EventArgs e)
@@ -56,14 +55,6 @@ namespace ProyectoGreenSpace
             btnLogin.Text = StringResources.buttonLogin;
             lblInfoRegister.Text = StringResources.lblQuestionRegister;
             lklblRegister.Text = StringResources.linkRegister;
-        }
-
-        private void AppKill(object sender, FormClosedEventArgs e)
-        {
-            if (e.CloseReason == CloseReason.UserClosing)
-            {
-                Application.Exit();
-            }
         }
 
         private void pibSpanish_Click(object sender, EventArgs e)

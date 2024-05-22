@@ -17,7 +17,6 @@ namespace ProyectoGreenSpace
         public FrmMovieMaintenance()
         {
             InitializeComponent();
-            this.FormClosed += new FormClosedEventHandler(AppKill);
 
             grpClock.BackColor = Color.FromArgb(168, 228, 116);
             grpMaintenance.BackColor = Color.FromArgb(168, 228, 116);
@@ -151,14 +150,6 @@ namespace ProyectoGreenSpace
             txtFilm.Focus();
 
             LoadGenres();
-        }
-
-        private void AppKill(object sender, FormClosedEventArgs e)
-        {
-            if (e.CloseReason == CloseReason.UserClosing)
-            {
-                Application.Exit();
-            }
         }
 
         private void btnUpload_Click(object sender, EventArgs e)
