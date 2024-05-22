@@ -19,7 +19,6 @@ namespace ProyectoGreenSpace
         {
             InitializeComponent();
             ApplyTheme();
-            this.FormClosed += new FormClosedEventHandler(AppKill);
         }
 
         private void ApplyLanguage()
@@ -228,14 +227,6 @@ namespace ProyectoGreenSpace
             //pnlFilms.AutoScroll = false;
             //pnlFilms.VerticalScroll.Value = vsbFilms.Value;
             pnlFilms.AutoScrollPosition = new Point(0, e.NewValue);
-        }
-
-        private void AppKill(object sender, FormClosedEventArgs e)
-        {
-            if (e.CloseReason == CloseReason.UserClosing)
-            {
-                Application.Exit();
-            }
         }
 
         private void btnUser_Click(object sender, EventArgs e)

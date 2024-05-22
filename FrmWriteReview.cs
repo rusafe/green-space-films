@@ -17,6 +17,7 @@ namespace ProyectoGreenSpace
         public FrmWriteReview()
         {
             InitializeComponent();
+
             ApplyTheme();
         }
 
@@ -80,6 +81,43 @@ namespace ProyectoGreenSpace
                 pctStar15.BackColor = Color.FromArgb(32, 146, 14);
                 cklStars.BackColor = Color.FromArgb(32, 146, 14);
             }
+        }
+
+        private void ApplyLanguage()
+        {
+            lblMenu.Text = StringResources.labelMenu;
+            btnTicketOffice.Text = StringResources.buttonTicketOffice;
+            btnReviewTickets.Text = StringResources.buttonReviewTickets;
+            btnReviews.Text = StringResources.buttonReviews;
+            btnWriteReview.Text = StringResources.buttonWriteReview;
+            btnUser.Text = StringResources.buttonUser;
+            btnSettings.Text = StringResources.buttonConfiguration;
+            lblTitleReview.Text = StringResources.labelReviewTitle;
+            btnReset.Text = StringResources.buttonReset;
+            btnSend.Text = StringResources.buttonSendReview;
+            lblJoinApp.Text = StringResources.labelJoinApp;
+            lblLogOut.Text = StringResources.labelLogOut;
+            lblUsername.Text = StringResources.labelUser;
+        }
+
+        private void NotVisibleUserButtons()
+        {
+            pibClose.Visible = false;
+            lblUsername.Visible = false;
+            txtUsername.Visible = false;
+            lblJoinApp.Visible = false;
+            txtJoinApp.Visible = false;
+            lblLogOut.Visible = false;
+        }
+
+        private void btnUser_Click(object sender, EventArgs e)
+        {
+            pibClose.Visible = true;
+            lblUsername.Visible = true;
+            txtUsername.Visible = true;
+            lblJoinApp.Visible = true;
+            txtJoinApp.Visible = true;
+            lblLogOut.Visible = true;
         }
 
         private void FrmWriteReview_Load(object sender, EventArgs e)
@@ -150,45 +188,9 @@ namespace ProyectoGreenSpace
             // Enviar a la base de datos
         }
 
-        private void ApplyLanguage()
-        {
-            lblMenu.Text = StringResources.labelMenu;
-            btnTicketOffice.Text = StringResources.buttonTicketOffice;
-            btnReviewTickets.Text = StringResources.buttonReviewTickets;
-            btnReviews.Text = StringResources.buttonReviews;
-            btnWriteReview.Text = StringResources.buttonWriteReview;
-            btnUser.Text = StringResources.buttonUser;
-            btnSettings.Text = StringResources.buttonConfiguration;
-            lblTitleReview.Text = StringResources.labelReviewTitle;
-            btnReset.Text = StringResources.buttonReset;
-            btnSend.Text = StringResources.buttonSendReview;
-            lblJoinApp.Text = StringResources.labelJoinApp;
-            lblLogOut.Text = StringResources.labelLogOut;
-            lblUsername.Text = StringResources.labelUser;
-        }
-        private void btnUser_Click(object sender, EventArgs e)
-        {
-            pibClose.Visible = true;
-            lblUsername.Visible = true;
-            txtUsername.Visible = true;
-            lblJoinApp.Visible = true;
-            txtJoinApp.Visible = true;
-            lblLogOut.Visible = true;
-        }
-
         private void pibClose_Click(object sender, EventArgs e)
         {
             NotVisibleUserButtons();
-        }
-
-        private void NotVisibleUserButtons()
-        {
-            pibClose.Visible = false;
-            lblUsername.Visible = false;
-            txtUsername.Visible = false;
-            lblJoinApp.Visible = false;
-            txtJoinApp.Visible = false;
-            lblLogOut.Visible = false;
         }
 
         #region Acceso a formularios desde menú desplegable

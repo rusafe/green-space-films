@@ -17,7 +17,6 @@ namespace ProyectoGreenSpace
         public FrmMovieDelete()
         {
             InitializeComponent();
-            this.FormClosed += new FormClosedEventHandler(AppKill);
 
             grpClock.BackColor = Color.FromArgb(168, 228, 116);
             grpDelete.BackColor = Color.FromArgb(168, 228, 116);
@@ -84,14 +83,6 @@ namespace ProyectoGreenSpace
             lblGenre.Text = StringResources.lblGenre;
             btnInsertFrm.Text = StringResources.btnInsertFrm;
             grpDelete.Text = StringResources.groupBoxDelete;
-        }
-
-        private void AppKill(object sender, FormClosedEventArgs e)
-        {
-            if (e.CloseReason == CloseReason.UserClosing)
-            {
-                Application.Exit();
-            }
         }
 
         private void timerClock_Tick(object sender, EventArgs e)

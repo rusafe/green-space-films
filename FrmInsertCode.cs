@@ -11,7 +11,6 @@ namespace ProyectoGreenSpace
         public FrmInsertCode(int code)
         {
             InitializeComponent();
-            this.FormClosed += new FormClosedEventHandler(AppKill);
 
             verificationCode = code;
             ApplyTheme();
@@ -49,14 +48,6 @@ namespace ProyectoGreenSpace
             {
                 this.BackColor = Color.FromArgb(32, 146, 14);
                 btnSend.BackColor = Color.FromArgb(168, 228, 116);
-            }
-        }
-
-        private void AppKill(object sender, FormClosedEventArgs e)
-        {
-            if (e.CloseReason == CloseReason.UserClosing)
-            {
-                Application.Exit();
             }
         }
 

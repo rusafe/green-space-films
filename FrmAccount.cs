@@ -16,8 +16,6 @@ namespace ProyectoGreenSpace
         public FrmAccount()
         {
             InitializeComponent();
-            this.FormClosed += new FormClosedEventHandler(AppKill);
-
             ApplyTheme();
         }
 
@@ -83,14 +81,6 @@ namespace ProyectoGreenSpace
             frmFilms.Show();
         }
         
-        private void AppKill(object sender, FormClosedEventArgs e)
-        {
-            if (e.CloseReason == CloseReason.UserClosing)
-            {
-                Application.Exit();
-            }
-        }
-
         #region Acceder a formularios de Configuración
         private void btnAccount_Click(object sender, EventArgs e)
         {
