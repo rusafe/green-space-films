@@ -17,17 +17,71 @@ namespace ProyectoGreenSpace
         public FrmWriteReview()
         {
             InitializeComponent();
-            sidebar.BackColor = Color.FromArgb(168, 228, 116);
-            btnMenu.BackColor = Color.FromArgb(168, 228, 116);
-            btnTicketOffice.BackColor = Color.FromArgb(168, 228, 116);
-            btnReviewTickets.BackColor = Color.FromArgb(168, 228, 116);
-            btnReviews.BackColor = Color.FromArgb(168, 228, 116);
-            btnUser.BackColor = Color.FromArgb(168, 228, 116);
-            btnSettings.BackColor = Color.FromArgb(168, 228, 116);
-            btnWriteReview.BackColor = Color.FromArgb(168, 228, 116);
-            pnlReviews.BackColor = Color.FromArgb(176, 164, 180);
-            grpReview.BackColor = Color.White;
+            ApplyTheme();
         }
+
+        private void ApplyTheme()
+        {
+            if (ThemeMode.Light)
+            {
+                sidebar.BackColor = Color.FromArgb(168, 228, 116);
+                btnMenu.BackColor = Color.FromArgb(168, 228, 116);
+                btnTicketOffice.BackColor = Color.FromArgb(168, 228, 116);
+                btnReviewTickets.BackColor = Color.FromArgb(168, 228, 116);
+                btnReviews.BackColor = Color.FromArgb(168, 228, 116);
+                btnUser.BackColor = Color.FromArgb(168, 228, 116);
+                btnSettings.BackColor = Color.FromArgb(168, 228, 116);
+                btnWriteReview.BackColor = Color.FromArgb(168, 228, 116);
+                grpReview.BackColor = Color.FromArgb(168, 228, 116);
+
+                pctStar1.BackColor = Color.FromArgb(168, 228, 116);
+                pctStar2.BackColor = Color.FromArgb(168, 228, 116);
+                pctStar3.BackColor = Color.FromArgb(168, 228, 116);
+                pctStar4.BackColor = Color.FromArgb(168, 228, 116);
+                pctStar5.BackColor = Color.FromArgb(168, 228, 116);
+                pctStar6.BackColor = Color.FromArgb(168, 228, 116);
+                pctStar7.BackColor = Color.FromArgb(168, 228, 116);
+                pctStar8.BackColor = Color.FromArgb(168, 228, 116);
+                pctStar9.BackColor = Color.FromArgb(168, 228, 116);
+                pctStar10.BackColor = Color.FromArgb(168, 228, 116);
+                pctStar11.BackColor = Color.FromArgb(168, 228, 116);
+                pctStar12.BackColor = Color.FromArgb(168, 228, 116);
+                pctStar13.BackColor = Color.FromArgb(168, 228, 116);
+                pctStar14.BackColor = Color.FromArgb(168, 228, 116);
+                pctStar15.BackColor = Color.FromArgb(168, 228, 116);
+                cklStars.BackColor = Color.FromArgb(168, 228, 116);
+            }
+            else
+            {
+                sidebar.BackColor = Color.FromArgb(176, 164, 180);
+                btnMenu.BackColor = Color.FromArgb(176, 164, 180);
+                btnTicketOffice.BackColor = Color.FromArgb(176, 164, 180);
+                btnReviewTickets.BackColor = Color.FromArgb(176, 164, 180);
+                btnReviews.BackColor = Color.FromArgb(176, 164, 180);
+                btnUser.BackColor = Color.FromArgb(176, 164, 180);
+                btnSettings.BackColor = Color.FromArgb(176, 164, 180);
+                btnWriteReview.BackColor = Color.FromArgb(176, 164, 180);
+                pnlReviews.BackColor = Color.FromArgb(32, 146, 14);
+
+                pctStar1.BackColor = Color.FromArgb(32, 146, 14);
+                pctStar2.BackColor = Color.FromArgb(32, 146, 14);
+                pctStar3.BackColor = Color.FromArgb(32, 146, 14);
+                pctStar4.BackColor = Color.FromArgb(32, 146, 14);
+                pctStar5.BackColor = Color.FromArgb(32, 146, 14);
+                pctStar6.BackColor = Color.FromArgb(32, 146, 14);
+                pctStar7.BackColor = Color.FromArgb(32, 146, 14);
+                pctStar8.BackColor = Color.FromArgb(32, 146, 14);
+                pctStar9.BackColor = Color.FromArgb(32, 146, 14);
+                pctStar10.BackColor = Color.FromArgb(32, 146, 14);
+                pctStar11.BackColor = Color.FromArgb(32, 146, 14);
+                pctStar12.BackColor = Color.FromArgb(32, 146, 14);
+                pctStar13.BackColor = Color.FromArgb(32, 146, 14);
+                pctStar14.BackColor = Color.FromArgb(32, 146, 14);
+                pctStar15.BackColor = Color.FromArgb(32, 146, 14);
+                cklStars.BackColor = Color.FromArgb(32, 146, 14);
+            }
+        }
+
         private void FrmWriteReview_Load(object sender, EventArgs e)
         {
             NotVisibleUserButtons();

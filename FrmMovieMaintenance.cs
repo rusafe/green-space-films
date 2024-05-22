@@ -17,6 +17,8 @@ namespace ProyectoGreenSpace
         public FrmMovieMaintenance()
         {
             InitializeComponent();
+            this.FormClosed += new FormClosedEventHandler(AppKill);
+
             grpClock.BackColor = Color.FromArgb(168, 228, 116);
             grpMaintenance.BackColor = Color.FromArgb(168, 228, 116);
         }
@@ -106,6 +108,34 @@ namespace ProyectoGreenSpace
             cmbGenre2.Items.AddRange(genres);
         }
 
+        private void CleanData()
+        {
+            txtFilm.Text = string.Empty;
+            rtbSynopsis.Text = string.Empty;
+            txtDuration.Text = string.Empty;
+            txtPrice.Text = string.Empty;
+            nudMinAge.Value = 0;
+            cmbGenre1.Text = string.Empty;
+            cmbGenre2.Text = string.Empty;
+            chbPremiering.Checked = false;
+            chbNextPremiering.Checked = false;
+        }
+        private void ApplyLanguage()
+        {
+            lblFilm.Text = StringResources.lblFilm;
+            lblSynopsis.Text = StringResources.lblSynopsis;
+            lblDuration.Text = StringResources.lblDuration;
+            lblMinAge.Text = StringResources.lblMinAge;
+            lblPrice.Text = StringResources.lblPrice;
+            lblGenre.Text = StringResources.lblGenre;
+            chbNextPremiering.Text = StringResources.chbNextPremiering;
+            chbPremiering.Text = StringResources.chbPremiering;
+            btnInsert.Text = StringResources.btnInsert;
+            btnModifyFrm.Text = StringResources.btnModifyFrm;
+            btnDeleteFrm.Text = StringResources.btnDeleteFrm;
+            btnUpload.Text = StringResources.btnUpload;
+        }
+
         private void FrmMovieMaintenance_Load(object sender, EventArgs e)
         {
             timerClock.Enabled = true;
@@ -121,6 +151,14 @@ namespace ProyectoGreenSpace
             txtFilm.Focus();
 
             LoadGenres();
+        }
+
+        private void AppKill(object sender, FormClosedEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                Application.Exit();
+            }
         }
 
         private void btnUpload_Click(object sender, EventArgs e)
@@ -181,34 +219,12 @@ namespace ProyectoGreenSpace
             dgvFilms.DataSource = Film.ObtainAll();
         }
 
-        private void CleanData()
+        private void btnInsertSessions_Click(object sender, EventArgs e)
         {
-            txtFilm.Text = string.Empty;
-            rtbSynopsis.Text = string.Empty;
-            txtDuration.Text = string.Empty;
-            txtPrice.Text = string.Empty;
-            nudMinAge.Value = 0;
-            cmbGenre1.Text = string.Empty;
-            cmbGenre2.Text = string.Empty;
-            chbPremiering.Checked = false;
-            chbNextPremiering.Checked = false;
+            FrmInsertSession frmInsertSession = new FrmInsertSession();
+            frmInsertSession.Show();
+            this.Close();
         }
-        private void ApplyLanguage()
-        {
-            lblFilm.Text = StringResources.lblFilm;
-            lblSynopsis.Text = StringResources.lblSynopsis;
-            lblDuration.Text = StringResources.lblDuration;
-            lblMinAge.Text = StringResources.lblMinAge;
-            lblPrice.Text = StringResources.lblPrice;
-            lblGenre.Text = StringResources.lblGenre;
-            chbNextPremiering.Text = StringResources.chbNextPremiering;
-            chbPremiering.Text = StringResources.chbPremiering;
-            btnInsert.Text = StringResources.btnInsert;
-            btnModifyFrm.Text = StringResources.btnModifyFrm;
-            btnDeleteFrm.Text = StringResources.btnDeleteFrm;
-            btnUpload.Text = StringResources.btnUpload;
-        }
-
 
         #region Diseño de interface
         private void grpMaintenance_Paint(object sender, PaintEventArgs e)
@@ -252,11 +268,5 @@ namespace ProyectoGreenSpace
 
         #endregion
 
-        private void btnInsertSessions_Click(object sender, EventArgs e)
-        {
-            FrmInsertSession frmInsertSession = new FrmInsertSession();
-            frmInsertSession.Show();
-            this.Close();
-        }
     }
 }

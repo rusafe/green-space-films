@@ -16,7 +16,22 @@ namespace ProyectoGreenSpace
         {
             InitializeComponent();
             ApplyTheme();
+            this.FormClosed += new FormClosedEventHandler(AppKill);
         }
+
+        private void FrmInsertSession_Load(object sender, EventArgs e)
+        {
+            dtpHour.Value = DateTime.Now;
+        }
+
+        private void AppKill(object sender, FormClosedEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                Application.Exit();
+            }
+        }
+
         private void ApplyTheme ()
         {
             if (ThemeMode.Light)
@@ -27,11 +42,6 @@ namespace ProyectoGreenSpace
                 btnModifyFrm.BackColor = Color.FromArgb(176, 164, 180);
                 btnDeleteFrm.BackColor = Color.FromArgb(176, 164, 180);
             }
-        }
-
-        private void FrmInsertSession_Load(object sender, EventArgs e)
-        {
-            dtpHour.Value = DateTime.Now;
         }
 
         #region Acceso a formularios de administración
