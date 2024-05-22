@@ -77,12 +77,13 @@
             // btnInsert
             // 
             this.btnInsert.Location = new System.Drawing.Point(49, 238);
-            this.btnInsert.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnInsert.Margin = new System.Windows.Forms.Padding(2);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(208, 32);
             this.btnInsert.TabIndex = 28;
             this.btnInsert.Text = "Insertar";
             this.btnInsert.UseVisualStyleBackColor = true;
+            this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
             // 
             // dtpHour
             // 
@@ -130,6 +131,7 @@
             this.cmbFilmsIds.Name = "cmbFilmsIds";
             this.cmbFilmsIds.Size = new System.Drawing.Size(55, 29);
             this.cmbFilmsIds.TabIndex = 23;
+            this.cmbFilmsIds.SelectedValueChanged += new System.EventHandler(this.cmbFilmsIds_SelectedValueChanged);
             // 
             // cmbFilms
             // 
@@ -140,6 +142,7 @@
             this.cmbFilms.Name = "cmbFilms";
             this.cmbFilms.Size = new System.Drawing.Size(185, 29);
             this.cmbFilms.TabIndex = 22;
+            this.cmbFilms.SelectedValueChanged += new System.EventHandler(this.cmbFilms_SelectedValueChanged);
             // 
             // lblFilm
             // 

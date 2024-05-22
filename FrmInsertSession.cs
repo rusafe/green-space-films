@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoGreenSpace.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -29,9 +30,35 @@ namespace ProyectoGreenSpace
             }
         }
 
+        private void SetFilmsIdentifyingValues()
+        {
+            foreach (var values in Film.GetIdentifyingInfoPremiering())
+            {
+                cmbFilmsIds.Items.Add(values.id);
+                cmbFilms.Items.Add(values.name);
+            }
+        }
+
+        private void SetRoomsIdentifyingValues()
+        {
+            foreach (int roomId in Room.GetIdentifyingInfo())
+            {
+                cmbRoomsFilms.Items.Add(roomId);
+            }
+        }
+
+        private void UpdateFilmInfoFields(Film film)
+        {
+            cmbFilmsIds.Text = film.Id.ToString();
+            cmbFilms.Text = film.Name;
+        }
+
         private void FrmInsertSession_Load(object sender, EventArgs e)
         {
             dtpHour.Value = DateTime.Now;
+
+            SetFilmsIdentifyingValues();
+            SetRoomsIdentifyingValues();
         }
 
         #region Acceso a formularios de administración
@@ -63,5 +90,31 @@ namespace ProyectoGreenSpace
             this.Close();
         }
         #endregion
+
+        private void btnInsert_Click(object sender, EventArgs e)
+        {
+            DateTime dt = dtpHour.Value;
+            int hour = dt.Hour;
+            int minute = dt.Minute;
+            int second = dt.Second;
+
+            Session session = new Session(
+                Convert.ToInt32(cmbFilmsIds.Text),
+                Convert.ToInt32(cmbRoomsFilms.Text),
+                new TimeSpan(hour, minute, second)
+            );
+
+            session.Create();
+        }
+
+        private void cmbFilmsIds_SelectedValueChanged(object sender, EventArgs e)
+        {
+            UpdateFilmInfoFields(Film.InfoFilm(Convert.ToInt32(cmbFilmsIds.Text)));
+        }
+
+        private void cmbFilms_SelectedValueChanged(object sender, EventArgs e)
+        {
+            UpdateFilmInfoFields(Film.InfoFilm(cmbFilms.Text));
+        }
     }
 }

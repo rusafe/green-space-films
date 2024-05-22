@@ -102,5 +102,10 @@ namespace ProyectoGreenSpace
         {
             SeatClicked(1, 3);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            seats.UploadSeatsStatus();
+        }
     }
 }

@@ -44,5 +44,30 @@ namespace ProyectoGreenSpace.Classes
 
             return room;
         }
+
+        public static List<int> GetIdentifyingInfo()
+        {
+            List<int> list = new List<int>();
+
+            string query = "SELECT id FROM rooms";
+
+            MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
+
+            ConnectionBD.OpenConnection();
+
+            using (MySqlDataReader reader = command.ExecuteReader()) // Abrir y cerrar la conexión del dataReader --> Tabla virtual
+            {
+                while (reader.Read())
+                {
+                    list.Add(
+                        reader.GetInt32(0)
+                    );
+                }
+            }
+
+            ConnectionBD.CloseConnection();
+
+            return list;
+        }
     }
 }

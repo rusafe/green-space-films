@@ -70,7 +70,7 @@ namespace ProyectoGreenSpace
                 GroupBox grbSession = (GroupBox)this.Controls.Find(grbSessionName, true)[0];
                 grbSession.Visible = true;
 
-                Label lblSessionId = (Label)grbSession.Controls.Find(txtHourName, true)[0];
+                Label lblSessionId = (Label)grbSession.Controls.Find(lblSessionIdName, true)[0];
                 lblSessionId.Text = sessions[i].Id.ToString();
 
                 TextBox txtSessionHour = (TextBox)grbSession.Controls.Find(txtHourName, true)[0];
@@ -201,33 +201,29 @@ namespace ProyectoGreenSpace
 
         private void grpInfo1_Enter(object sender, EventArgs e)
         {
-            //AccessPayInfo();
-            AccessSelectSeats(Convert.ToInt32(lblSessionId1));
+            AccessSelectSeats(Convert.ToInt32(lblSessionId1.Text));
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
+        private void grbInfo2_Enter(object sender, EventArgs e)
         {
-            //AccessPayInfo();
-            AccessSelectSeats(Convert.ToInt32(lblSessionId2));
+            AccessSelectSeats(Convert.ToInt32(lblSessionId2.Text));
         }
 
-        private void groupBox2_Enter(object sender, EventArgs e)
+        private void grbInfo3_Enter(object sender, EventArgs e)
         {
-            //AccessPayInfo();
-            AccessSelectSeats(Convert.ToInt32(lblSessionId3));
+            AccessSelectSeats(Convert.ToInt32(lblSessionId3.Text));
         }
 
-        private void groupBox4_Enter(object sender, EventArgs e)
+        private void grbInfo4_Enter(object sender, EventArgs e)
         {
-            //AccessPayInfo();
-            AccessSelectSeats(Convert.ToInt32(lblSessionId4));
+            AccessSelectSeats(Convert.ToInt32(lblSessionId4.Text));
         }
 
-        private void groupBox3_Enter(object sender, EventArgs e)
+        private void grbInfo5_Enter(object sender, EventArgs e)
         {
-            //AccessPayInfo();
-            AccessSelectSeats(Convert.ToInt32(lblSessionId5));
+            AccessSelectSeats(Convert.ToInt32(lblSessionId5.Text));
         }
+
         private void AccessPayInfo()
         {
             FrmPayInfo frmPayInfo = new FrmPayInfo();

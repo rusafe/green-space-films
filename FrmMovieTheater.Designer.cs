@@ -349,7 +349,7 @@
             this.grbInfo4.TabIndex = 50;
             this.grbInfo4.TabStop = false;
             this.grbInfo4.Visible = false;
-            this.grbInfo4.Enter += new System.EventHandler(this.groupBox3_Enter);
+            this.grbInfo4.Enter += new System.EventHandler(this.grbInfo4_Enter);
             // 
             // lblSessionId4
             // 
@@ -477,7 +477,7 @@
             this.grbInfo2.TabIndex = 49;
             this.grbInfo2.TabStop = false;
             this.grbInfo2.Visible = false;
-            this.grbInfo2.Enter += new System.EventHandler(this.groupBox4_Enter);
+            this.grbInfo2.Enter += new System.EventHandler(this.grbInfo2_Enter);
             // 
             // lblSessionId2
             // 
@@ -605,7 +605,7 @@
             this.grbInfo5.TabIndex = 48;
             this.grbInfo5.TabStop = false;
             this.grbInfo5.Visible = false;
-            this.grbInfo5.Enter += new System.EventHandler(this.groupBox2_Enter);
+            this.grbInfo5.Enter += new System.EventHandler(this.grbInfo5_Enter);
             // 
             // lblSessionId5
             // 
@@ -733,7 +733,7 @@
             this.grbInfo3.TabIndex = 47;
             this.grbInfo3.TabStop = false;
             this.grbInfo3.Visible = false;
-            this.grbInfo3.Enter += new System.EventHandler(this.groupBox1_Enter);
+            this.grbInfo3.Enter += new System.EventHandler(this.grbInfo3_Enter);
             // 
             // lblSessionId3
             // 

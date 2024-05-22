@@ -100,6 +100,39 @@ namespace ProyectoGreenSpace.Classes
         }
 
         /// <summary>
+        /// Gets all the identifying fields (id and name) of the films that are premiering and return them as a list of tuples that contain the identifying information for each film
+        /// </summary>
+        /// <returns>List of tuples containing the film id and name</returns>
+        public static List<(int id, string name)> GetIdentifyingInfoPremiering()
+        {
+            List<(int id, string name)> list = new List<(int id, string name)>();
+
+            string query = "SELECT id, name FROM films WHERE premiering = @premiering";
+
+            MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
+            command.Parameters.AddWithValue("@premiering", true);
+
+            ConnectionBD.OpenConnection();
+
+            using (MySqlDataReader reader = command.ExecuteReader()) // Abrir y cerrar la conexión del dataReader --> Tabla virtual
+            {
+                while (reader.Read())
+                {
+                    list.Add(
+                        (
+                            reader.GetInt32(0),
+                            reader.GetString(1)
+                        )
+                    );
+                }
+            }
+
+            ConnectionBD.CloseConnection();
+
+            return list;
+        }
+
+        /// <summary>
         /// Inserts the Film into the Database
         /// </summary>
         public void Create()

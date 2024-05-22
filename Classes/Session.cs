@@ -27,6 +27,13 @@ namespace ProyectoGreenSpace.Classes
         public int TotalSeats { get { return totalSeats; } }
         public int OccupiedSeats { get { return occupiedSeats; } }
 
+        public Session (int filmId, int roomId, TimeSpan startHour)
+        {
+            this.filmId = filmId;
+            this.roomId = roomId;
+            this.startHour = startHour;
+        }
+
         public Session(int id, int filmId, int roomId, TimeSpan startHour, int totalSeats, int occupiedSeats)
         {
             this.id = id;
@@ -74,6 +81,34 @@ namespace ProyectoGreenSpace.Classes
             ConnectionBD.CloseConnection();
         }
 
+        public static Session ObtainSession(int id)
+        {
+            string query = "SELECT * FROM sessions WHERE id = @id";
+            
+            MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
+            command.Parameters.AddWithValue("@id", id);
+
+            Session session = null;
+
+            ConnectionBD.OpenConnection();
+            using (MySqlDataReader reader = command.ExecuteReader()) // Abrir y cerrar la conexión del dataReader --> Tabla virtual
+            {
+                while (reader.Read())
+                {
+                    session = new Session(
+                        reader.GetInt32(0),
+                        reader.GetInt32(1),
+                        reader.GetInt32(2),
+                        reader.GetTimeSpan(3),
+                        reader.GetInt32(4),
+                        reader.GetInt32(5)
+                    );
+                }
+            }
+            ConnectionBD.CloseConnection();
+            return session;
+        }
+
         /// <summary>
         /// Obtain the number of free seats for the session
         /// </summary>
@@ -89,7 +124,7 @@ namespace ProyectoGreenSpace.Classes
         /// <param name="seats">Cantidad de asientos ocupados</param>
         public void OccupySeats(int seats)
         {
-            string query = "UPDATE session SET occupied_seats = occupied_seats + @seats WHERE id = @id";
+            string query = "UPDATE sessions SET occupied_seats = occupied_seats + @seats WHERE id = @id";
 
             MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
             command.Parameters.AddWithValue("@id", id);
