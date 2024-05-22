@@ -62,6 +62,8 @@
     <Compile Include="Classes\Program.cs" />
     <Compile Include="Classes\Review.cs" />
     <Compile Include="Classes\Room.cs" />
+    <Compile Include="Classes\Seat.cs" />
+    <Compile Include="Classes\Seats.cs" />
     <Compile Include="Classes\Session.cs" />
     <Compile Include="Classes\ThemeMode.cs" />
     <Compile Include="Classes\UserSession.cs" />
@@ -145,6 +147,12 @@
     <Compile Include="FrmRegister.Designer.cs">
       <DependentUpon>FrmRegister.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmSelectSeats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSelectSeats.Designer.cs">
+      <DependentUpon>FrmSelectSeats.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -213,6 +221,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmReviews.resx">
       <DependentUpon>FrmReviews.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSelectSeats.resx">
+      <DependentUpon>FrmSelectSeats.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTickets.resx">
       <DependentUpon>FrmTickets.cs</DependentUpon>
@@ -354,10 +365,23 @@
     <None Include="Resources\cancel.png" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <None Include="Resources\lock.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\back.png" />
+=======
+    <None Include="Resources\seat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seat_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seat_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seat_blue.png" />
+>>>>>>> a82409c74dd0905516167965b8d4ed46771fd73a
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
