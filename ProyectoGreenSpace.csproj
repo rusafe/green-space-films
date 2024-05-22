@@ -365,12 +365,10 @@
     <None Include="Resources\cancel.png" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <None Include="Resources\lock.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\back.png" />
-=======
     <None Include="Resources\seat.png" />
   </ItemGroup>
   <ItemGroup>
@@ -381,7 +379,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\seat_blue.png" />
->>>>>>> a82409c74dd0905516167965b8d4ed46771fd73a
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
