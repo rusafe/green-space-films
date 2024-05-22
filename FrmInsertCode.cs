@@ -11,24 +11,10 @@ namespace ProyectoGreenSpace
         public FrmInsertCode(int code)
         {
             InitializeComponent();
-            verificationCode = code;
-        }
-        private void ApplyTheme ()
-        {
-            if (ThemeMode.Light)
-            {
-                this.BackColor = Color.FromArgb(168, 228, 116);
-                btnSend.BackColor = Color.FromArgb(76, 80, 144);
-            } else
-            {
-                this.BackColor = Color.FromArgb(32, 146, 14);
-                btnSend.BackColor = Color.FromArgb(168, 228, 116);
-            }
-        }
+            this.FormClosed += new FormClosedEventHandler(AppKill);
 
-        private void ApplyLanguage()
-        {
-            btnSend.Text = StringResources.buttonSend;
+            verificationCode = code;
+            ApplyTheme();
         }
 
         private void FrmInsertCode_Load(object sender, EventArgs e)
@@ -42,9 +28,36 @@ namespace ProyectoGreenSpace
 
             this.BackColor = Color.FromArgb(168, 228, 116);
             btnSend.BackColor = Color.FromArgb(76, 80, 144);
-            
+
             ApplyLanguage();
             mtbDigit1.Focus();
+        }
+
+        private void ApplyLanguage()
+        {
+            btnSend.Text = StringResources.buttonSend;
+        }
+
+        private void ApplyTheme()
+        {
+            if (ThemeMode.Light)
+            {
+                this.BackColor = Color.FromArgb(168, 228, 116);
+                btnSend.BackColor = Color.FromArgb(76, 80, 144);
+            }
+            else
+            {
+                this.BackColor = Color.FromArgb(32, 146, 14);
+                btnSend.BackColor = Color.FromArgb(168, 228, 116);
+            }
+        }
+
+        private void AppKill(object sender, FormClosedEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                Application.Exit();
+            }
         }
 
         private void btnSend_Click(object sender, EventArgs e)
@@ -93,27 +106,6 @@ namespace ProyectoGreenSpace
         private void mtbDigit6_TextChanged(object sender, EventArgs e)
         {
             btnSend.Focus();
-        }
-
-        private void mtbDigit2_KeyPress(object sender, KeyPressEventArgs e)
-        {
-        }
-
-        private void mtbDigit3_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            
-        }
-
-        private void mtbDigit4_KeyPress(object sender, KeyPressEventArgs e)
-        {
-        }
-
-        private void mtbDigit5_KeyPress(object sender, KeyPressEventArgs e)
-        {
-        }
-
-        private void mtbDigit6_KeyPress(object sender, KeyPressEventArgs e)
-        {
         }
     }
 }

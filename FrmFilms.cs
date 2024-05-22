@@ -19,6 +19,7 @@ namespace ProyectoGreenSpace
         {
             InitializeComponent();
             ApplyTheme();
+            this.FormClosed += new FormClosedEventHandler(AppKill);
         }
 
         private void ApplyLanguage()
@@ -81,7 +82,7 @@ namespace ProyectoGreenSpace
 
         private void ApplyTheme()
         {
-            if (ThemeMode.Light == true)
+            if (ThemeMode.Light)
             {
                 grbMovie1.BackColor = Color.FromArgb(176, 164, 180);
                 grbMovie2.BackColor = Color.FromArgb(176, 164, 180);
@@ -229,7 +230,13 @@ namespace ProyectoGreenSpace
             pnlFilms.AutoScrollPosition = new Point(0, e.NewValue);
         }
 
-
+        private void AppKill(object sender, FormClosedEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                Application.Exit();
+            }
+        }
 
         private void btnUser_Click(object sender, EventArgs e)
         {

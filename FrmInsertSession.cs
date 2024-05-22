@@ -17,7 +17,22 @@ namespace ProyectoGreenSpace
         {
             InitializeComponent();
             ApplyTheme();
+            this.FormClosed += new FormClosedEventHandler(AppKill);
         }
+
+        private void FrmInsertSession_Load(object sender, EventArgs e)
+        {
+            dtpHour.Value = DateTime.Now;
+        }
+
+        private void AppKill(object sender, FormClosedEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                Application.Exit();
+            }
+        }
+
         private void ApplyTheme ()
         {
             if (ThemeMode.Light)

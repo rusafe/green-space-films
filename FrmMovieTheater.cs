@@ -43,6 +43,11 @@ namespace ProyectoGreenSpace
             this.Close();
         }
 
+        private void FrmMovieTheater_Load(object sender, EventArgs e)
+        {
+            ApplyLanguage();
+        }
+
         private void LoadFilmInfo(Film film)
         {
             pcbMovie1.Image = film.Cover;
@@ -92,7 +97,7 @@ namespace ProyectoGreenSpace
             }
         }
 
-        private void AplicarIdioma()
+        private void ApplyLanguage()
         {
             lblMenu.Text = StringResources.labelMenu;
             btnTicketOffice.Text = StringResources.buttonTicketOffice;
@@ -102,11 +107,6 @@ namespace ProyectoGreenSpace
             btnUser.Text = StringResources.buttonUser;
             btnSettings.Text = StringResources.buttonConfiguration;
             lblSynopsis.Text = StringResources.labelSynopsis;
-        }
-
-        private void FrmMovieTheater_Load(object sender, EventArgs e)
-        {
-            AplicarIdioma();
         }
 
         private void sidebarTimer_Tick(object sender, EventArgs e)

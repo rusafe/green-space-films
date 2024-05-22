@@ -18,14 +18,33 @@ namespace ProyectoGreenSpace
         public FrmTickets()
         {
             InitializeComponent();
-            sidebar.BackColor = Color.FromArgb(168, 228, 116);
-            btnMenu.BackColor = Color.FromArgb(168, 228, 116);
-            btnTicketOffice.BackColor = Color.FromArgb(168, 228, 116);
-            btnReviewTickets.BackColor = Color.FromArgb(168, 228, 116);
-            btnReviews.BackColor = Color.FromArgb(168, 228, 116);
-            btnUser.BackColor = Color.FromArgb(168, 228, 116);
-            btnSettings.BackColor = Color.FromArgb(168, 228, 116);
-            btnWriteReview.BackColor = Color.FromArgb(168, 228, 116);
+            ApplyTheme();
+        }
+        private void ApplyTheme()
+        {
+            if (ThemeMode.Light)
+            {
+                sidebar.BackColor = Color.FromArgb(168, 228, 116);
+                btnMenu.BackColor = Color.FromArgb(168, 228, 116);
+                btnTicketOffice.BackColor = Color.FromArgb(168, 228, 116);
+                btnReviewTickets.BackColor = Color.FromArgb(168, 228, 116);
+                btnReviews.BackColor = Color.FromArgb(168, 228, 116);
+                btnUser.BackColor = Color.FromArgb(168, 228, 116);
+                btnSettings.BackColor = Color.FromArgb(168, 228, 116);
+                btnWriteReview.BackColor = Color.FromArgb(168, 228, 116);
+            }
+            else
+            {
+                sidebar.BackColor = Color.FromArgb(176, 164, 180);
+                btnMenu.BackColor = Color.FromArgb(176, 164, 180);
+                btnTicketOffice.BackColor = Color.FromArgb(176, 164, 180);
+                btnReviewTickets.BackColor = Color.FromArgb(176, 164, 180);
+                btnReviews.BackColor = Color.FromArgb(176, 164, 180);
+                btnUser.BackColor = Color.FromArgb(176, 164, 180);
+                btnSettings.BackColor = Color.FromArgb(176, 164, 180);
+                btnWriteReview.BackColor = Color.FromArgb(176, 164, 180);
+                this.BackColor = Color.FromArgb(32, 146, 14);
+            }
         }
 
         #region DGVs

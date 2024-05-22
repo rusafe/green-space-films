@@ -17,6 +17,8 @@ namespace ProyectoGreenSpace
         public FrmMovieDelete()
         {
             InitializeComponent();
+            this.FormClosed += new FormClosedEventHandler(AppKill);
+
             grpClock.BackColor = Color.FromArgb(168, 228, 116);
             grpDelete.BackColor = Color.FromArgb(168, 228, 116);
         }
@@ -60,6 +62,38 @@ namespace ProyectoGreenSpace
             dgvFilms.DataSource = Film.ObtainAll();
         }
 
+        private void CleanData()
+        {
+            cmbFilms.Text = string.Empty;
+            cmbFilmsIds.Text = string.Empty;
+            rtbSynopsis.Text = string.Empty;
+            lblDuration1.Text = string.Empty;
+            lblPrice1.Text = string.Empty;
+            lblMinAge1.Text = string.Empty;
+            lblGenre1.Text = string.Empty;
+            lblGenre2.Text = string.Empty;
+        }
+
+        private void ApplyLanguage()
+        {
+            lblFilm.Text = StringResources.lblFilm;
+            lblSynopsis.Text = StringResources.lblSynopsis;
+            lblDuration.Text = StringResources.lblDuration;
+            lblMinAge.Text = StringResources.lblMinAge;
+            lblPrice.Text = StringResources.lblPrice;
+            lblGenre.Text = StringResources.lblGenre;
+            btnInsertFrm.Text = StringResources.btnInsertFrm;
+            grpDelete.Text = StringResources.groupBoxDelete;
+        }
+
+        private void AppKill(object sender, FormClosedEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                Application.Exit();
+            }
+        }
+
         private void timerClock_Tick(object sender, EventArgs e)
         {
             lblClock.Text = DateTime.Now.ToString("HH:mm:ss");
@@ -83,30 +117,6 @@ namespace ProyectoGreenSpace
             {
                 MessageBox.Show(ex.Message);
             }
-        }
-
-        private void CleanData()
-        {
-            cmbFilms.Text = string.Empty;
-            cmbFilmsIds.Text = string.Empty;
-            rtbSynopsis.Text = string.Empty;
-            lblDuration1.Text = string.Empty;
-            lblPrice1.Text = string.Empty;
-            lblMinAge1.Text = string.Empty;
-            lblGenre1.Text = string.Empty;
-            lblGenre2.Text = string.Empty;
-        }
-
-        private void ApplyLanguage()
-        {
-            lblFilm.Text = StringResources.lblFilm;
-            lblSynopsis.Text = StringResources.lblSynopsis;
-            lblDuration.Text = StringResources.lblDuration;
-            lblMinAge.Text = StringResources.lblMinAge;
-            lblPrice.Text = StringResources.lblPrice;
-            lblGenre.Text = StringResources.lblGenre;
-            btnInsertFrm.Text = StringResources.btnInsertFrm;
-            grpDelete.Text = StringResources.groupBoxDelete;
         }
 
         #region Cargar valores  

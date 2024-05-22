@@ -18,17 +18,52 @@ namespace ProyectoGreenSpace
         public FrmAdmin()
         {
             InitializeComponent();
-            btnUser.BackColor = Color.FromArgb(176, 164, 180);
-            btnAdmin.BackColor = Color.FromArgb(168, 228, 116);
-            btnAccount.BackColor = Color.FromArgb(176, 164, 180);
-            grpBoxAdmin.BackColor = Color.FromArgb(168, 228, 116);
-            btnAdmin.Focus();
+            this.FormClosed += new FormClosedEventHandler(AppKill);
         }
+
         private void FrmAdmin_Load(object sender, EventArgs e)
         {
+            ApplyLanguage();
+            ApplyTheme();
+
             this.ActiveControl = btnAdmin;
             btnAdmin.Focus();
-            ApplyLanguage();
+        }
+
+        private void ErrorValidation(string message)
+        {
+            MessageBox.Show(message, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+        }
+
+        private void ApplyLanguage()
+        {
+            btnUser.Text = StringResources.labelUser;
+            btnAdmin.Text = StringResources.buttonAdmin;
+            btnAccount.Text = StringResources.buttonAccount;
+            lblMailUser.Text = StringResources.labelUser;
+            lblPassword.Text = StringResources.labelPassword;
+            linklblForgotPass.Text = StringResources.labelForgottenPassword;
+            btnLogin.Text = StringResources.buttonLogin;
+            btnExit.Text = StringResources.buttonExit;
+        }
+        
+        private void ApplyTheme()
+        {
+            if (ThemeMode.Light)
+            {
+                btnUser.BackColor = Color.FromArgb(176, 164, 180);
+                btnAdmin.BackColor = Color.FromArgb(168, 228, 116);
+                btnAccount.BackColor = Color.FromArgb(176, 164, 180);
+                grpBoxAdmin.BackColor = Color.FromArgb(168, 228, 116);
+            }
+            else
+            {
+                btnUser.BackColor = Color.FromArgb(176, 164, 180);
+                btnAdmin.BackColor = Color.FromArgb(168, 228, 116);
+                btnAccount.BackColor = Color.FromArgb(176, 164, 180);
+                grpBoxAdmin.BackColor = Color.FromArgb(176, 164, 180);
+                this.BackColor = Color.FromArgb(32, 146, 14);
+            }
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -51,7 +86,8 @@ namespace ProyectoGreenSpace
                             this.Close();
                             FrmMovieMaintenance frmMaintenance = new FrmMovieMaintenance();
                             frmMaintenance.Show();
-                        } else
+                        }
+                        else
                         {
                             ErrorValidation("Contraseña incorrecta!");
                         }
@@ -71,28 +107,13 @@ namespace ProyectoGreenSpace
                 MessageBox.Show(ex.Message);
             }
         }
-        private void ErrorValidation(string message)
+        
+        private void AppKill(object sender, FormClosedEventArgs e)
         {
-            MessageBox.Show(message, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-        }
-
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            FrmFilms frmFilms = new FrmFilms();
-            frmFilms.Show();
-        }
-
-        private void ApplyLanguage()
-        {
-            btnUser.Text = StringResources.labelUser;
-            btnAdmin.Text = StringResources.buttonAdmin;
-            btnAccount.Text = StringResources.buttonAccount;
-            lblMailUser.Text = StringResources.labelUser;
-            lblPassword.Text = StringResources.labelPassword;
-            linklblForgotPass.Text = StringResources.labelForgottenPassword;
-            btnLogin.Text = StringResources.buttonLogin;
-            btnExit.Text = StringResources.buttonExit;
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                Application.Exit();
+            }
         }
 
         #region Acceso a formularios de configuración
@@ -111,10 +132,17 @@ namespace ProyectoGreenSpace
         }
 
         private void btnAdmin_Click(object sender, EventArgs e)
-        {   FrmAdmin frmAdmin = new FrmAdmin();
+        {
+            FrmAdmin frmAdmin = new FrmAdmin();
             frmAdmin.Show();
             this.Close();
             Focus();
+        }
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            FrmFilms frmFilms = new FrmFilms();
+            frmFilms.Show();
         }
         #endregion
 

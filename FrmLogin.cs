@@ -11,6 +11,7 @@ namespace ProyectoGreenSpace
         public FrmLogin()
         {
             InitializeComponent();
+            this.FormClosed += new FormClosedEventHandler(AppKill);
         }
 
         private void FrmLogin_Load(object sender, EventArgs e)
@@ -44,6 +45,24 @@ namespace ProyectoGreenSpace
                 grpLogin.BackColor = Color.FromArgb(32, 146, 14);
                 lklblRegister.LinkColor = Color.FromArgb(255, 255, 255);
                 lkllblRecoverPassword.LinkColor = Color.FromArgb(255, 255, 255);
+            }
+        }
+
+        private void ApplyLanguage()
+        {
+            lblUsername.Text = StringResources.labelUser;
+            lblPassword.Text = StringResources.labelPassword;
+            lkllblRecoverPassword.Text = StringResources.labelForgottenPassword;
+            btnLogin.Text = StringResources.buttonLogin;
+            lblInfoRegister.Text = StringResources.lblQuestionRegister;
+            lklblRegister.Text = StringResources.linkRegister;
+        }
+
+        private void AppKill(object sender, FormClosedEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                Application.Exit();
             }
         }
 
@@ -100,15 +119,6 @@ namespace ProyectoGreenSpace
             this.Hide();
             FrmRecoverPassword fromRecover = new FrmRecoverPassword();
             fromRecover.Show();
-        }
-        private void ApplyLanguage()
-        {
-            lblUsername.Text = StringResources.labelUser;
-            lblPassword.Text = StringResources.labelPassword;
-            lkllblRecoverPassword.Text = StringResources.labelForgottenPassword;
-            btnLogin.Text = StringResources.buttonLogin;
-            lblInfoRegister.Text = StringResources.lblQuestionRegister;
-            lklblRegister.Text = StringResources.linkRegister;
         }
 
         #region Diseño de interface

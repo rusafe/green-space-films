@@ -40,7 +40,6 @@
             this.btnLogin = new System.Windows.Forms.Button();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtUser = new System.Windows.Forms.TextBox();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.btnExit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictBoxIcono)).BeginInit();
             this.grpBoxAdmin.SuspendLayout();
@@ -204,7 +203,7 @@
             this.Controls.Add(this.grpBoxAdmin);
             this.Name = "FrmAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmAdmin";
+            this.Text = "GREEN SPACE FILMS";
             this.Load += new System.EventHandler(this.FrmAdmin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictBoxIcono)).EndInit();
             this.grpBoxAdmin.ResumeLayout(false);
@@ -225,7 +224,6 @@
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.TextBox txtUser;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Button btnExit;
     }
 }
