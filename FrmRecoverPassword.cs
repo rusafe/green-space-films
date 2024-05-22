@@ -34,6 +34,9 @@ namespace ProyectoGreenSpace
 
         private void FrmRecoverPassword_Load(object sender, EventArgs e)
         {
+            g2Bar.BackColor = Color.FromArgb(76, 80, 144);
+            g2lblTitle.ForeColor = Color.FromArgb(168, 228, 116);
+
             ApplyLanguage();
             txtUsername.Focus();
         }
@@ -83,5 +86,38 @@ namespace ProyectoGreenSpace
         {
             ControlPaint.DrawBorder(e.Graphics, grpRecover.ClientRectangle, Color.Black, ButtonBorderStyle.Solid);
         }
+
+        #region Diseño de barra minimizadora
+        private void pibMinimize_Click(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Normal)
+            {
+                this.WindowState = FormWindowState.Minimized;
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
+        }
+        private void pibMaximize_Click(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Normal)
+            {
+                this.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
+        }
+
+        private void pibClose_Click(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Normal)
+            {
+                Application.Exit();
+            }
+        }
+        #endregion
     }
 }

@@ -45,6 +45,9 @@ namespace ProyectoGreenSpace
 
         private void FrmMovieTheater_Load(object sender, EventArgs e)
         {
+            g2Bar.BackColor = Color.FromArgb(76, 80, 144);
+            g2lblTitle.ForeColor = Color.FromArgb(168, 228, 116);
+
             ApplyLanguage();
         }
 
@@ -133,7 +136,7 @@ namespace ProyectoGreenSpace
             }
         }
 
-        private void btnMenu_Click(object sender, EventArgs e)
+        private void btnMenu_Click_1(object sender, EventArgs e)
         {
             sidebarTimer.Start();
         }
@@ -144,36 +147,6 @@ namespace ProyectoGreenSpace
         }
 
         #region Acceso a formularios desde menú desplegable
-        private void btnTicketOffice_Click(object sender, EventArgs e)
-        {
-            AccessFilms();
-        }
-
-        private void btnReviewTickets_Click(object sender, EventArgs e)
-        {
-            FrmTickets frmTickets = new FrmTickets();
-            frmTickets.Show();
-            this.Close();
-        }
-
-        private void btnReviews_Click(object sender, EventArgs e)
-        {
-            AccessReviews();
-        }
-
-        private void btnWriteReview_Click(object sender, EventArgs e)
-        {
-            FrmWriteReview frmWriteReview = new FrmWriteReview();
-            frmWriteReview.Show();
-            this.Close();
-        }
-
-        private void btnSettings_Click(object sender, EventArgs e)
-        {
-            FrmAdmin frmConfiguration = new FrmAdmin();
-            frmConfiguration.Show();
-            this.Close();
-        }
 
         private void btnAccessRevews_Click(object sender, EventArgs e)
         {
@@ -230,6 +203,71 @@ namespace ProyectoGreenSpace
             frmPayInfo.Show();
             this.Close();
         }
+
+        private void btnTicketOffice_Click_1(object sender, EventArgs e)
+        {
+            AccessFilms();
+        }
+
+        private void btnReviewTickets_Click_1(object sender, EventArgs e)
+        {
+            FrmTickets frmTickets = new FrmTickets();
+            frmTickets.Show();
+            this.Close();
+        }
+
+        private void btnReviews_Click_1(object sender, EventArgs e)
+        {
+            AccessReviews();
+        }
+
+        private void btnWriteReview_Click_1(object sender, EventArgs e)
+        {
+            FrmWriteReview frmWriteReview = new FrmWriteReview();
+            frmWriteReview.Show();
+            this.Close();
+        }
+
+        private void btnSettings_Click_1(object sender, EventArgs e)
+        {
+            FrmAdmin frmConfiguration = new FrmAdmin();
+            frmConfiguration.Show();
+            this.Close();
+        }
         #endregion
+
+        #region Diseño de barra minimizadora
+        private void pibMinimize_Click(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Normal)
+            {
+                this.WindowState = FormWindowState.Minimized;
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
+        }
+        private void pibMaximize_Click(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Normal)
+            {
+                this.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
+        }
+
+        private void pibClose_Click(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Normal)
+            {
+                Application.Exit();
+            }
+        }
+        #endregion
+
     }
 }

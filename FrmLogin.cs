@@ -11,16 +11,15 @@ namespace ProyectoGreenSpace
         public FrmLogin()
         {
             InitializeComponent();
+            ApplyTheme();
         }
 
         private void FrmLogin_Load(object sender, EventArgs e)
         {
-            this.BackColor = Color.FromArgb(168, 228, 116);
-            btnLogin.BackColor = Color.FromArgb(76, 80, 144);
-            grpLogin.BackColor = Color.FromArgb(176, 164, 180);
+            g2Bar.BackColor = Color.FromArgb(76, 80, 144);
+            g2lblTitle.ForeColor = Color.FromArgb(168, 228, 116);
 
             ApplyLanguage();
-
             txtUsername.Focus();
         }
         protected override void OnShown(EventArgs e)
@@ -142,5 +141,38 @@ namespace ProyectoGreenSpace
         }
 
         #endregion
+
+        #region Diseño de barra minimizadora
+        private void pibMinimize_Click(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Normal)
+            {
+                this.WindowState = FormWindowState.Minimized;
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
+        }
+        private void pibMaximize_Click(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Normal)
+            {
+                this.WindowState = FormWindowState.Maximized;
+            } else
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
+        }
+
+        private void pibClose_Click(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Normal)
+            {
+                Application.Exit();
+            }
+        }
+        #endregion
+
     }
 }
