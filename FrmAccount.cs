@@ -16,25 +16,54 @@ namespace ProyectoGreenSpace
         public FrmAccount()
         {
             InitializeComponent();
-            btnUser.BackColor = Color.FromArgb(176, 164, 180);
-            btnAdmin.BackColor = Color.FromArgb(176, 164, 180);
-            btnAccount.BackColor = Color.FromArgb(168, 228, 116);
-           
+            this.FormClosed += new FormClosedEventHandler(AppKill);
+
+            ApplyTheme();
         }
+
         private void FrmAccount_Load(object sender, EventArgs e)
         {
-            this.ActiveControl = btnAccount;
+            ApplyLanguage();
             btnAccount.Focus();
-
-           ApplyLanguage();
         }
+
+        private void ApplyTheme()
+        {
+            if (ThemeMode.Light)
+            {
+                btnUser.BackColor = Color.FromArgb(176, 164, 180);
+                btnAdmin.BackColor = Color.FromArgb(176, 164, 180);
+                btnAccount.BackColor = Color.FromArgb(168, 228, 116);
+            }
+            else
+            {
+                btnUser.BackColor = Color.FromArgb(176, 164, 180);
+                btnAdmin.BackColor = Color.FromArgb(176, 164, 180);
+                btnAccount.BackColor = Color.FromArgb(168, 228, 116);
+                this.BackColor = Color.FromArgb(32, 146, 14);
+            }
+        }
+
+        private void ApplyLanguage()
+        {
+            btnUser.Text = StringResources.labelUser;
+            btnAdmin.Text = StringResources.buttonAdmin;
+            btnAccount.Text = StringResources.buttonAccount;
+            btnExit.Text = StringResources.buttonExit;
+            btnDeleteAccount.Text = StringResources.buttonDeleteAccount;
+            lblDeleteUser.Text = StringResources.labelMailAssociated;
+            grpSwitchNightDay.Text = StringResources.grpSwitch;
+            btnPredet.Text = StringResources.buttonDefault;
+            lblChangeLanguage.Text = StringResources.labelChangeLanguage;
+        }
+
 
         private void pibLightMode_Click(object sender, EventArgs e)
         {
             ThemeMode.UseThemeLight();
             if (ThemeMode.Light)
             {
-                this.BackColor = Color.FromArgb(168, 228, 116);
+                this.BackColor = Color.FromArgb(255, 255, 255);
             }
         }
 
@@ -53,17 +82,13 @@ namespace ProyectoGreenSpace
             FrmFilms frmFilms = new FrmFilms();
             frmFilms.Show();
         }
-        private void ApplyLanguage()
+        
+        private void AppKill(object sender, FormClosedEventArgs e)
         {
-            btnUser.Text = StringResources.labelUser;
-            btnAdmin.Text = StringResources.buttonAdmin;
-            btnAccount.Text = StringResources.buttonAccount;
-            btnExit.Text = StringResources.buttonExit;
-            btnDeleteAccount.Text = StringResources.buttonDeleteAccount;
-            lblDeleteUser.Text = StringResources.labelMailAssociated;
-            grpSwitchNightDay.Text = StringResources.grpSwitch;
-            btnPredet.Text = StringResources.buttonDefault;
-            lblChangeLanguage.Text = StringResources.labelChangeLanguage;
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                Application.Exit();
+            }
         }
 
         #region Acceder a formularios de Configuración

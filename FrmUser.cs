@@ -16,16 +16,30 @@ namespace ProyectoGreenSpace
         public FrmUser()
         {
             InitializeComponent();
-            btnUser.BackColor = Color.FromArgb(168, 228, 116);
-            btnAdmin.BackColor = Color.FromArgb(176, 164, 180);
-            btnAccount.BackColor = Color.FromArgb(176, 164, 180);
-            pictBoxPhotoPerfil.BackColor = Color.FromArgb(176, 164, 180);
+            ApplyTheme();
             btnUser.Focus();
         }
 
         private void FrmUser_Load(object sender, EventArgs e)
         {
             ApplyLanguage();
+        }
+
+        private void ApplyTheme()
+        {
+            if (ThemeMode.Light)
+            {
+                btnUser.BackColor = Color.FromArgb(168, 228, 116);
+                btnAdmin.BackColor = Color.FromArgb(176, 164, 180);
+                btnAccount.BackColor = Color.FromArgb(176, 164, 180);
+            }
+            else
+            {
+                btnUser.BackColor = Color.FromArgb(168, 228, 116);
+                btnAdmin.BackColor = Color.FromArgb(176, 164, 180);
+                btnAccount.BackColor = Color.FromArgb(176, 164, 180);
+                this.BackColor = Color.FromArgb(32, 146, 14);
+            }
         }
 
         private void ApplyLanguage()
