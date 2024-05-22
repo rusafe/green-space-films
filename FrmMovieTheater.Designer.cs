@@ -48,6 +48,8 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.btnSettings = new System.Windows.Forms.Button();
             this.grbInfo4 = new System.Windows.Forms.GroupBox();
+            this.lblAmountOccupiedSeats4 = new System.Windows.Forms.Label();
+            this.lblAmountFreeSeats4 = new System.Windows.Forms.Label();
             this.pctBusy5 = new System.Windows.Forms.PictureBox();
             this.pctFree5 = new System.Windows.Forms.PictureBox();
             this.txtSeats5 = new System.Windows.Forms.TextBox();
@@ -55,6 +57,8 @@
             this.txtHall4 = new System.Windows.Forms.TextBox();
             this.txtHour4 = new System.Windows.Forms.TextBox();
             this.grbInfo2 = new System.Windows.Forms.GroupBox();
+            this.lblAmountOccupiedSeats2 = new System.Windows.Forms.Label();
+            this.lblAmountFreeSeats2 = new System.Windows.Forms.Label();
             this.pctBusy4 = new System.Windows.Forms.PictureBox();
             this.pctFree4 = new System.Windows.Forms.PictureBox();
             this.txtSeats4 = new System.Windows.Forms.TextBox();
@@ -62,6 +66,8 @@
             this.txtHall2 = new System.Windows.Forms.TextBox();
             this.txtHour2 = new System.Windows.Forms.TextBox();
             this.grbInfo5 = new System.Windows.Forms.GroupBox();
+            this.lblAmountOccupiedSeats5 = new System.Windows.Forms.Label();
+            this.lblAmountFreeSeats5 = new System.Windows.Forms.Label();
             this.pctBusy3 = new System.Windows.Forms.PictureBox();
             this.pctFree3 = new System.Windows.Forms.PictureBox();
             this.txtSeats3 = new System.Windows.Forms.TextBox();
@@ -69,6 +75,8 @@
             this.txtHall5 = new System.Windows.Forms.TextBox();
             this.txtHour5 = new System.Windows.Forms.TextBox();
             this.grbInfo3 = new System.Windows.Forms.GroupBox();
+            this.lblAmountOccupiedSeats3 = new System.Windows.Forms.Label();
+            this.lblAmountFreeSeats3 = new System.Windows.Forms.Label();
             this.pctBusy2 = new System.Windows.Forms.PictureBox();
             this.pctFree2 = new System.Windows.Forms.PictureBox();
             this.txtSeats2 = new System.Windows.Forms.TextBox();
@@ -79,6 +87,8 @@
             this.btnAccessRevews = new System.Windows.Forms.Button();
             this.btnQuestion = new System.Windows.Forms.Button();
             this.grbInfo1 = new System.Windows.Forms.GroupBox();
+            this.lblAmountOccupiedSeats1 = new System.Windows.Forms.Label();
+            this.lblAmountFreeSeats1 = new System.Windows.Forms.Label();
             this.pctBusy1 = new System.Windows.Forms.PictureBox();
             this.pctFree1 = new System.Windows.Forms.PictureBox();
             this.txtSeats1 = new System.Windows.Forms.TextBox();
@@ -96,16 +106,6 @@
             this.pcbMovie1 = new System.Windows.Forms.PictureBox();
             this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lblAmountFreeSeats1 = new System.Windows.Forms.Label();
-            this.lblAmountOccupiedSeats1 = new System.Windows.Forms.Label();
-            this.lblAmountOccupiedSeats2 = new System.Windows.Forms.Label();
-            this.lblAmountFreeSeats2 = new System.Windows.Forms.Label();
-            this.lblAmountOccupiedSeats3 = new System.Windows.Forms.Label();
-            this.lblAmountFreeSeats3 = new System.Windows.Forms.Label();
-            this.lblAmountOccupiedSeats4 = new System.Windows.Forms.Label();
-            this.lblAmountFreeSeats4 = new System.Windows.Forms.Label();
-            this.lblAmountOccupiedSeats5 = new System.Windows.Forms.Label();
-            this.lblAmountFreeSeats5 = new System.Windows.Forms.Label();
             this.sidebar.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -344,6 +344,26 @@
             this.grbInfo4.Visible = false;
             this.grbInfo4.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
+            // lblAmountOccupiedSeats4
+            // 
+            this.lblAmountOccupiedSeats4.AutoSize = true;
+            this.lblAmountOccupiedSeats4.ForeColor = System.Drawing.Color.White;
+            this.lblAmountOccupiedSeats4.Location = new System.Drawing.Point(197, 128);
+            this.lblAmountOccupiedSeats4.Name = "lblAmountOccupiedSeats4";
+            this.lblAmountOccupiedSeats4.Size = new System.Drawing.Size(44, 16);
+            this.lblAmountOccupiedSeats4.TabIndex = 35;
+            this.lblAmountOccupiedSeats4.Text = "label1";
+            // 
+            // lblAmountFreeSeats4
+            // 
+            this.lblAmountFreeSeats4.AutoSize = true;
+            this.lblAmountFreeSeats4.ForeColor = System.Drawing.Color.White;
+            this.lblAmountFreeSeats4.Location = new System.Drawing.Point(197, 39);
+            this.lblAmountFreeSeats4.Name = "lblAmountFreeSeats4";
+            this.lblAmountFreeSeats4.Size = new System.Drawing.Size(44, 16);
+            this.lblAmountFreeSeats4.TabIndex = 34;
+            this.lblAmountFreeSeats4.Text = "label1";
+            // 
             // pctBusy5
             // 
             this.pctBusy5.BackColor = System.Drawing.Color.Silver;
@@ -440,6 +460,26 @@
             this.grbInfo2.TabStop = false;
             this.grbInfo2.Visible = false;
             this.grbInfo2.Enter += new System.EventHandler(this.groupBox4_Enter);
+            // 
+            // lblAmountOccupiedSeats2
+            // 
+            this.lblAmountOccupiedSeats2.AutoSize = true;
+            this.lblAmountOccupiedSeats2.ForeColor = System.Drawing.Color.White;
+            this.lblAmountOccupiedSeats2.Location = new System.Drawing.Point(197, 126);
+            this.lblAmountOccupiedSeats2.Name = "lblAmountOccupiedSeats2";
+            this.lblAmountOccupiedSeats2.Size = new System.Drawing.Size(44, 16);
+            this.lblAmountOccupiedSeats2.TabIndex = 33;
+            this.lblAmountOccupiedSeats2.Text = "label1";
+            // 
+            // lblAmountFreeSeats2
+            // 
+            this.lblAmountFreeSeats2.AutoSize = true;
+            this.lblAmountFreeSeats2.ForeColor = System.Drawing.Color.White;
+            this.lblAmountFreeSeats2.Location = new System.Drawing.Point(197, 37);
+            this.lblAmountFreeSeats2.Name = "lblAmountFreeSeats2";
+            this.lblAmountFreeSeats2.Size = new System.Drawing.Size(44, 16);
+            this.lblAmountFreeSeats2.TabIndex = 32;
+            this.lblAmountFreeSeats2.Text = "label1";
             // 
             // pctBusy4
             // 
@@ -538,6 +578,26 @@
             this.grbInfo5.Visible = false;
             this.grbInfo5.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
+            // lblAmountOccupiedSeats5
+            // 
+            this.lblAmountOccupiedSeats5.AutoSize = true;
+            this.lblAmountOccupiedSeats5.ForeColor = System.Drawing.Color.White;
+            this.lblAmountOccupiedSeats5.Location = new System.Drawing.Point(196, 129);
+            this.lblAmountOccupiedSeats5.Name = "lblAmountOccupiedSeats5";
+            this.lblAmountOccupiedSeats5.Size = new System.Drawing.Size(44, 16);
+            this.lblAmountOccupiedSeats5.TabIndex = 35;
+            this.lblAmountOccupiedSeats5.Text = "label1";
+            // 
+            // lblAmountFreeSeats5
+            // 
+            this.lblAmountFreeSeats5.AutoSize = true;
+            this.lblAmountFreeSeats5.ForeColor = System.Drawing.Color.White;
+            this.lblAmountFreeSeats5.Location = new System.Drawing.Point(196, 40);
+            this.lblAmountFreeSeats5.Name = "lblAmountFreeSeats5";
+            this.lblAmountFreeSeats5.Size = new System.Drawing.Size(44, 16);
+            this.lblAmountFreeSeats5.TabIndex = 34;
+            this.lblAmountFreeSeats5.Text = "label1";
+            // 
             // pctBusy3
             // 
             this.pctBusy3.BackColor = System.Drawing.Color.Silver;
@@ -634,6 +694,26 @@
             this.grbInfo3.TabStop = false;
             this.grbInfo3.Visible = false;
             this.grbInfo3.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // lblAmountOccupiedSeats3
+            // 
+            this.lblAmountOccupiedSeats3.AutoSize = true;
+            this.lblAmountOccupiedSeats3.ForeColor = System.Drawing.Color.White;
+            this.lblAmountOccupiedSeats3.Location = new System.Drawing.Point(196, 125);
+            this.lblAmountOccupiedSeats3.Name = "lblAmountOccupiedSeats3";
+            this.lblAmountOccupiedSeats3.Size = new System.Drawing.Size(44, 16);
+            this.lblAmountOccupiedSeats3.TabIndex = 33;
+            this.lblAmountOccupiedSeats3.Text = "label1";
+            // 
+            // lblAmountFreeSeats3
+            // 
+            this.lblAmountFreeSeats3.AutoSize = true;
+            this.lblAmountFreeSeats3.ForeColor = System.Drawing.Color.White;
+            this.lblAmountFreeSeats3.Location = new System.Drawing.Point(196, 36);
+            this.lblAmountFreeSeats3.Name = "lblAmountFreeSeats3";
+            this.lblAmountFreeSeats3.Size = new System.Drawing.Size(44, 16);
+            this.lblAmountFreeSeats3.TabIndex = 32;
+            this.lblAmountFreeSeats3.Text = "label1";
             // 
             // pctBusy2
             // 
@@ -766,6 +846,26 @@
             this.grbInfo1.TabStop = false;
             this.grbInfo1.Visible = false;
             this.grbInfo1.Enter += new System.EventHandler(this.grpInfo1_Enter);
+            // 
+            // lblAmountOccupiedSeats1
+            // 
+            this.lblAmountOccupiedSeats1.AutoSize = true;
+            this.lblAmountOccupiedSeats1.ForeColor = System.Drawing.Color.White;
+            this.lblAmountOccupiedSeats1.Location = new System.Drawing.Point(196, 129);
+            this.lblAmountOccupiedSeats1.Name = "lblAmountOccupiedSeats1";
+            this.lblAmountOccupiedSeats1.Size = new System.Drawing.Size(44, 16);
+            this.lblAmountOccupiedSeats1.TabIndex = 31;
+            this.lblAmountOccupiedSeats1.Text = "label1";
+            // 
+            // lblAmountFreeSeats1
+            // 
+            this.lblAmountFreeSeats1.AutoSize = true;
+            this.lblAmountFreeSeats1.ForeColor = System.Drawing.Color.White;
+            this.lblAmountFreeSeats1.Location = new System.Drawing.Point(196, 40);
+            this.lblAmountFreeSeats1.Name = "lblAmountFreeSeats1";
+            this.lblAmountFreeSeats1.Size = new System.Drawing.Size(44, 16);
+            this.lblAmountFreeSeats1.TabIndex = 30;
+            this.lblAmountFreeSeats1.Text = "label1";
             // 
             // pctBusy1
             // 
@@ -971,106 +1071,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 42;
             this.pictureBox1.TabStop = false;
-            // 
-            // lblAmountFreeSeats1
-            // 
-            this.lblAmountFreeSeats1.AutoSize = true;
-            this.lblAmountFreeSeats1.ForeColor = System.Drawing.Color.White;
-            this.lblAmountFreeSeats1.Location = new System.Drawing.Point(196, 40);
-            this.lblAmountFreeSeats1.Name = "lblAmountFreeSeats1";
-            this.lblAmountFreeSeats1.Size = new System.Drawing.Size(44, 16);
-            this.lblAmountFreeSeats1.TabIndex = 30;
-            this.lblAmountFreeSeats1.Text = "label1";
-            // 
-            // lblAmountOccupiedSeats1
-            // 
-            this.lblAmountOccupiedSeats1.AutoSize = true;
-            this.lblAmountOccupiedSeats1.ForeColor = System.Drawing.Color.White;
-            this.lblAmountOccupiedSeats1.Location = new System.Drawing.Point(196, 129);
-            this.lblAmountOccupiedSeats1.Name = "lblAmountOccupiedSeats1";
-            this.lblAmountOccupiedSeats1.Size = new System.Drawing.Size(44, 16);
-            this.lblAmountOccupiedSeats1.TabIndex = 31;
-            this.lblAmountOccupiedSeats1.Text = "label1";
-            // 
-            // lblAmountOccupiedSeats2
-            // 
-            this.lblAmountOccupiedSeats2.AutoSize = true;
-            this.lblAmountOccupiedSeats2.ForeColor = System.Drawing.Color.White;
-            this.lblAmountOccupiedSeats2.Location = new System.Drawing.Point(197, 126);
-            this.lblAmountOccupiedSeats2.Name = "lblAmountOccupiedSeats2";
-            this.lblAmountOccupiedSeats2.Size = new System.Drawing.Size(44, 16);
-            this.lblAmountOccupiedSeats2.TabIndex = 33;
-            this.lblAmountOccupiedSeats2.Text = "label1";
-            // 
-            // lblAmountFreeSeats2
-            // 
-            this.lblAmountFreeSeats2.AutoSize = true;
-            this.lblAmountFreeSeats2.ForeColor = System.Drawing.Color.White;
-            this.lblAmountFreeSeats2.Location = new System.Drawing.Point(197, 37);
-            this.lblAmountFreeSeats2.Name = "lblAmountFreeSeats2";
-            this.lblAmountFreeSeats2.Size = new System.Drawing.Size(44, 16);
-            this.lblAmountFreeSeats2.TabIndex = 32;
-            this.lblAmountFreeSeats2.Text = "label1";
-            // 
-            // lblAmountOccupiedSeats3
-            // 
-            this.lblAmountOccupiedSeats3.AutoSize = true;
-            this.lblAmountOccupiedSeats3.ForeColor = System.Drawing.Color.White;
-            this.lblAmountOccupiedSeats3.Location = new System.Drawing.Point(196, 125);
-            this.lblAmountOccupiedSeats3.Name = "lblAmountOccupiedSeats3";
-            this.lblAmountOccupiedSeats3.Size = new System.Drawing.Size(44, 16);
-            this.lblAmountOccupiedSeats3.TabIndex = 33;
-            this.lblAmountOccupiedSeats3.Text = "label1";
-            // 
-            // lblAmountFreeSeats3
-            // 
-            this.lblAmountFreeSeats3.AutoSize = true;
-            this.lblAmountFreeSeats3.ForeColor = System.Drawing.Color.White;
-            this.lblAmountFreeSeats3.Location = new System.Drawing.Point(196, 36);
-            this.lblAmountFreeSeats3.Name = "lblAmountFreeSeats3";
-            this.lblAmountFreeSeats3.Size = new System.Drawing.Size(44, 16);
-            this.lblAmountFreeSeats3.TabIndex = 32;
-            this.lblAmountFreeSeats3.Text = "label1";
-            // 
-            // lblAmountOccupiedSeats4
-            // 
-            this.lblAmountOccupiedSeats4.AutoSize = true;
-            this.lblAmountOccupiedSeats4.ForeColor = System.Drawing.Color.White;
-            this.lblAmountOccupiedSeats4.Location = new System.Drawing.Point(197, 128);
-            this.lblAmountOccupiedSeats4.Name = "lblAmountOccupiedSeats4";
-            this.lblAmountOccupiedSeats4.Size = new System.Drawing.Size(44, 16);
-            this.lblAmountOccupiedSeats4.TabIndex = 35;
-            this.lblAmountOccupiedSeats4.Text = "label1";
-            // 
-            // lblAmountFreeSeats4
-            // 
-            this.lblAmountFreeSeats4.AutoSize = true;
-            this.lblAmountFreeSeats4.ForeColor = System.Drawing.Color.White;
-            this.lblAmountFreeSeats4.Location = new System.Drawing.Point(197, 39);
-            this.lblAmountFreeSeats4.Name = "lblAmountFreeSeats4";
-            this.lblAmountFreeSeats4.Size = new System.Drawing.Size(44, 16);
-            this.lblAmountFreeSeats4.TabIndex = 34;
-            this.lblAmountFreeSeats4.Text = "label1";
-            // 
-            // lblAmountOccupiedSeats5
-            // 
-            this.lblAmountOccupiedSeats5.AutoSize = true;
-            this.lblAmountOccupiedSeats5.ForeColor = System.Drawing.Color.White;
-            this.lblAmountOccupiedSeats5.Location = new System.Drawing.Point(196, 129);
-            this.lblAmountOccupiedSeats5.Name = "lblAmountOccupiedSeats5";
-            this.lblAmountOccupiedSeats5.Size = new System.Drawing.Size(44, 16);
-            this.lblAmountOccupiedSeats5.TabIndex = 35;
-            this.lblAmountOccupiedSeats5.Text = "label1";
-            // 
-            // lblAmountFreeSeats5
-            // 
-            this.lblAmountFreeSeats5.AutoSize = true;
-            this.lblAmountFreeSeats5.ForeColor = System.Drawing.Color.White;
-            this.lblAmountFreeSeats5.Location = new System.Drawing.Point(196, 40);
-            this.lblAmountFreeSeats5.Name = "lblAmountFreeSeats5";
-            this.lblAmountFreeSeats5.Size = new System.Drawing.Size(44, 16);
-            this.lblAmountFreeSeats5.TabIndex = 34;
-            this.lblAmountFreeSeats5.Text = "label1";
             // 
             // FrmMovieTheater
             // 
