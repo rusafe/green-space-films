@@ -14,14 +14,13 @@ namespace ProyectoGreenSpace
 {
     public partial class FrmSelectSeats : Form
     {
-        Seats seats = new Seats(2);
-        int sessionId;
+        private Seats seats;
 
         public FrmSelectSeats(int sessionId)
         {
             InitializeComponent();
 
-            this.sessionId = sessionId;
+            this.seats = new Seats(sessionId);
             LoadSeatsPictures();
         }
 

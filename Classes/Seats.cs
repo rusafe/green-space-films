@@ -12,7 +12,11 @@ namespace ProyectoGreenSpace.Classes
 {
     internal class Seats
     {
-        private Seat[,] seatsArray = new Seat[2, 4];
+        public const int SEATS_PER_SESSION = 8;
+        public const int SEATS_ROW = 2;
+        public const int SEATS_COL = 4;
+
+        private Seat[,] seatsArray = new Seat[SEATS_ROW, SEATS_COL];
         private int sessionId;
 
         public Seat[,] SeatsArray { get { return seatsArray; } }
@@ -48,6 +52,21 @@ namespace ProyectoGreenSpace.Classes
             return seatsArray[seatRow, seatCol].Occupied;
         }
 
+        public static Bitmap CreateDefaultSeatsStatus()
+        {
+            Bitmap seatsStatus = new Bitmap(SEATS_ROW, SEATS_COL);
+
+            for (int i = 0; i < seatsStatus.Height; i++)
+            {
+                for (int j = 0; j < seatsStatus.Width; j++)
+                {
+                    seatsStatus.SetPixel(j, i, Color.Green);
+                }
+            }
+
+            return seatsStatus;
+        }
+
         private void LoadSeatsArray()
         {
             Bitmap seatsStatus = ObtainSessionImage();
@@ -81,7 +100,7 @@ namespace ProyectoGreenSpace.Classes
 
         private Bitmap CreateSeatsStatusImage()
         {
-            Bitmap seatsStatus = new Bitmap(4, 2);
+            Bitmap seatsStatus = new Bitmap(SEATS_ROW, SEATS_COL);
 
             for (int i = 0; i < seatsArray.GetLength(0); i++)
             {

@@ -6,6 +6,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 using static Mysqlx.Notice.Frame.Types;
 
 namespace ProyectoGreenSpace.Classes
@@ -21,6 +22,7 @@ namespace ProyectoGreenSpace.Classes
         private int totalSeats;
         private int occupiedSeats;
 
+        public int Id { get { return id; } }
         public TimeSpan StartHour { get { return startHour; } }
         public int TotalSeats { get { return totalSeats; } }
         public int OccupiedSeats { get { return occupiedSeats; } }
@@ -51,6 +53,25 @@ namespace ProyectoGreenSpace.Classes
         public Room getRoom()
         {
             return Room.InfoRoom(roomId);
+        }
+
+        public void Create()
+        {
+            string query = "INSERT INTO sessions (filmId, roomId, startHour, total_seats, occupied_seats, seats_status) VALUES (@filmId, @roomId, @startHour, @totalSeats, @occupiedSeats, @seatsStatus)";
+
+            MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
+            command.Parameters.AddWithValue("@filmId", filmId);
+            command.Parameters.AddWithValue("@roomId", roomId);
+            command.Parameters.AddWithValue("@startHour", startHour);
+            command.Parameters.AddWithValue("@totalSeats", Seats.SEATS_PER_SESSION);
+            command.Parameters.AddWithValue("@occupiedSeats", 0);
+            command.Parameters.AddWithValue("@seatsStatus", ImagesDB.BitmapToBytes(Seats.CreateDefaultSeatsStatus()));
+
+            ConnectionBD.OpenConnection();
+
+            command.ExecuteNonQuery();
+
+            ConnectionBD.CloseConnection();
         }
 
         /// <summary>

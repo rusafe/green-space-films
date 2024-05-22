@@ -36,6 +36,13 @@ namespace ProyectoGreenSpace
             LoadFilmSessions(film);
         }
 
+        private void AccessSelectSeats(int sessionId)
+        {
+            FrmSelectSeats frmSelectSeats = new FrmSelectSeats(sessionId);
+            frmSelectSeats.Show();
+            this.Close();
+        }
+
         private void LoadFilmInfo(Film film)
         {
             pcbMovie1.Image = film.Cover;
@@ -53,6 +60,7 @@ namespace ProyectoGreenSpace
             for (int i = 0; i < sessions.Count; i++)
             {
                 string grbSessionName = $"grbInfo{i + 1}";
+                string lblSessionIdName = $"lblSessionId{i + 1}";
                 string txtHourName = $"txtHour{i + 1}";
                 string txtHallName = $"txtHall{i + 1}";
                 string txtHallTypeName = $"txtTypeHall{i + 1}";
@@ -61,6 +69,9 @@ namespace ProyectoGreenSpace
 
                 GroupBox grbSession = (GroupBox)this.Controls.Find(grbSessionName, true)[0];
                 grbSession.Visible = true;
+
+                Label lblSessionId = (Label)grbSession.Controls.Find(txtHourName, true)[0];
+                lblSessionId.Text = sessions[i].Id.ToString();
 
                 TextBox txtSessionHour = (TextBox)grbSession.Controls.Find(txtHourName, true)[0];
                 txtSessionHour.Text = sessions[i].StartHour.ToString();
@@ -190,27 +201,32 @@ namespace ProyectoGreenSpace
 
         private void grpInfo1_Enter(object sender, EventArgs e)
         {
-            AccessPayInfo();
+            //AccessPayInfo();
+            AccessSelectSeats(Convert.ToInt32(lblSessionId1));
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
-            AccessPayInfo();
+            //AccessPayInfo();
+            AccessSelectSeats(Convert.ToInt32(lblSessionId2));
         }
 
         private void groupBox2_Enter(object sender, EventArgs e)
         {
-            AccessPayInfo();
+            //AccessPayInfo();
+            AccessSelectSeats(Convert.ToInt32(lblSessionId3));
         }
 
         private void groupBox4_Enter(object sender, EventArgs e)
         {
-            AccessPayInfo();
+            //AccessPayInfo();
+            AccessSelectSeats(Convert.ToInt32(lblSessionId4));
         }
 
         private void groupBox3_Enter(object sender, EventArgs e)
         {
-            AccessPayInfo();
+            //AccessPayInfo();
+            AccessSelectSeats(Convert.ToInt32(lblSessionId5));
         }
         private void AccessPayInfo()
         {
@@ -219,6 +235,5 @@ namespace ProyectoGreenSpace
             this.Close();
         }
         #endregion
-
     }
 }

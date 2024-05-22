@@ -48,6 +48,7 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.btnSettings = new System.Windows.Forms.Button();
             this.grbInfo4 = new System.Windows.Forms.GroupBox();
+            this.lblSessionId4 = new System.Windows.Forms.Label();
             this.lblAmountOccupiedSeats4 = new System.Windows.Forms.Label();
             this.lblAmountFreeSeats4 = new System.Windows.Forms.Label();
             this.pctBusy5 = new System.Windows.Forms.PictureBox();
@@ -57,6 +58,7 @@
             this.txtHall4 = new System.Windows.Forms.TextBox();
             this.txtHour4 = new System.Windows.Forms.TextBox();
             this.grbInfo2 = new System.Windows.Forms.GroupBox();
+            this.lblSessionId2 = new System.Windows.Forms.Label();
             this.lblAmountOccupiedSeats2 = new System.Windows.Forms.Label();
             this.lblAmountFreeSeats2 = new System.Windows.Forms.Label();
             this.pctBusy4 = new System.Windows.Forms.PictureBox();
@@ -66,6 +68,7 @@
             this.txtHall2 = new System.Windows.Forms.TextBox();
             this.txtHour2 = new System.Windows.Forms.TextBox();
             this.grbInfo5 = new System.Windows.Forms.GroupBox();
+            this.lblSessionId5 = new System.Windows.Forms.Label();
             this.lblAmountOccupiedSeats5 = new System.Windows.Forms.Label();
             this.lblAmountFreeSeats5 = new System.Windows.Forms.Label();
             this.pctBusy3 = new System.Windows.Forms.PictureBox();
@@ -75,6 +78,7 @@
             this.txtHall5 = new System.Windows.Forms.TextBox();
             this.txtHour5 = new System.Windows.Forms.TextBox();
             this.grbInfo3 = new System.Windows.Forms.GroupBox();
+            this.lblSessionId3 = new System.Windows.Forms.Label();
             this.lblAmountOccupiedSeats3 = new System.Windows.Forms.Label();
             this.lblAmountFreeSeats3 = new System.Windows.Forms.Label();
             this.pctBusy2 = new System.Windows.Forms.PictureBox();
@@ -87,6 +91,8 @@
             this.btnAccessRevews = new System.Windows.Forms.Button();
             this.btnQuestion = new System.Windows.Forms.Button();
             this.grbInfo1 = new System.Windows.Forms.GroupBox();
+            this.lblSessionId1 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.lblAmountOccupiedSeats1 = new System.Windows.Forms.Label();
             this.lblAmountFreeSeats1 = new System.Windows.Forms.Label();
             this.pctBusy1 = new System.Windows.Forms.PictureBox();
@@ -327,6 +333,7 @@
             // grbInfo4
             // 
             this.grbInfo4.BackColor = System.Drawing.Color.Black;
+            this.grbInfo4.Controls.Add(this.lblSessionId4);
             this.grbInfo4.Controls.Add(this.lblAmountOccupiedSeats4);
             this.grbInfo4.Controls.Add(this.lblAmountFreeSeats4);
             this.grbInfo4.Controls.Add(this.pctBusy5);
@@ -343,6 +350,16 @@
             this.grbInfo4.TabStop = false;
             this.grbInfo4.Visible = false;
             this.grbInfo4.Enter += new System.EventHandler(this.groupBox3_Enter);
+            // 
+            // lblSessionId4
+            // 
+            this.lblSessionId4.AutoSize = true;
+            this.lblSessionId4.Location = new System.Drawing.Point(94, 54);
+            this.lblSessionId4.Name = "lblSessionId4";
+            this.lblSessionId4.Size = new System.Drawing.Size(44, 16);
+            this.lblSessionId4.TabIndex = 36;
+            this.lblSessionId4.Text = "label2";
+            this.lblSessionId4.Visible = false;
             // 
             // lblAmountOccupiedSeats4
             // 
@@ -444,6 +461,7 @@
             // grbInfo2
             // 
             this.grbInfo2.BackColor = System.Drawing.Color.Black;
+            this.grbInfo2.Controls.Add(this.lblSessionId2);
             this.grbInfo2.Controls.Add(this.lblAmountOccupiedSeats2);
             this.grbInfo2.Controls.Add(this.lblAmountFreeSeats2);
             this.grbInfo2.Controls.Add(this.pctBusy4);
@@ -460,6 +478,16 @@
             this.grbInfo2.TabStop = false;
             this.grbInfo2.Visible = false;
             this.grbInfo2.Enter += new System.EventHandler(this.groupBox4_Enter);
+            // 
+            // lblSessionId2
+            // 
+            this.lblSessionId2.AutoSize = true;
+            this.lblSessionId2.Location = new System.Drawing.Point(94, 51);
+            this.lblSessionId2.Name = "lblSessionId2";
+            this.lblSessionId2.Size = new System.Drawing.Size(44, 16);
+            this.lblSessionId2.TabIndex = 34;
+            this.lblSessionId2.Text = "label2";
+            this.lblSessionId2.Visible = false;
             // 
             // lblAmountOccupiedSeats2
             // 
@@ -536,7 +564,7 @@
             this.txtHall2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtHall2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHall2.ForeColor = System.Drawing.Color.White;
-            this.txtHall2.Location = new System.Drawing.Point(10, 62);
+            this.txtHall2.Location = new System.Drawing.Point(6, 73);
             this.txtHall2.Multiline = true;
             this.txtHall2.Name = "txtHall2";
             this.txtHall2.Size = new System.Drawing.Size(147, 46);
@@ -561,6 +589,7 @@
             // grbInfo5
             // 
             this.grbInfo5.BackColor = System.Drawing.Color.Black;
+            this.grbInfo5.Controls.Add(this.lblSessionId5);
             this.grbInfo5.Controls.Add(this.lblAmountOccupiedSeats5);
             this.grbInfo5.Controls.Add(this.lblAmountFreeSeats5);
             this.grbInfo5.Controls.Add(this.pctBusy3);
@@ -577,6 +606,16 @@
             this.grbInfo5.TabStop = false;
             this.grbInfo5.Visible = false;
             this.grbInfo5.Enter += new System.EventHandler(this.groupBox2_Enter);
+            // 
+            // lblSessionId5
+            // 
+            this.lblSessionId5.AutoSize = true;
+            this.lblSessionId5.Location = new System.Drawing.Point(74, 54);
+            this.lblSessionId5.Name = "lblSessionId5";
+            this.lblSessionId5.Size = new System.Drawing.Size(44, 16);
+            this.lblSessionId5.TabIndex = 36;
+            this.lblSessionId5.Text = "label2";
+            this.lblSessionId5.Visible = false;
             // 
             // lblAmountOccupiedSeats5
             // 
@@ -678,6 +717,7 @@
             // grbInfo3
             // 
             this.grbInfo3.BackColor = System.Drawing.Color.Black;
+            this.grbInfo3.Controls.Add(this.lblSessionId3);
             this.grbInfo3.Controls.Add(this.lblAmountOccupiedSeats3);
             this.grbInfo3.Controls.Add(this.lblAmountFreeSeats3);
             this.grbInfo3.Controls.Add(this.pctBusy2);
@@ -694,6 +734,16 @@
             this.grbInfo3.TabStop = false;
             this.grbInfo3.Visible = false;
             this.grbInfo3.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // lblSessionId3
+            // 
+            this.lblSessionId3.AutoSize = true;
+            this.lblSessionId3.Location = new System.Drawing.Point(74, 54);
+            this.lblSessionId3.Name = "lblSessionId3";
+            this.lblSessionId3.Size = new System.Drawing.Size(44, 16);
+            this.lblSessionId3.TabIndex = 34;
+            this.lblSessionId3.Text = "label2";
+            this.lblSessionId3.Visible = false;
             // 
             // lblAmountOccupiedSeats3
             // 
@@ -830,6 +880,8 @@
             // grbInfo1
             // 
             this.grbInfo1.BackColor = System.Drawing.Color.Black;
+            this.grbInfo1.Controls.Add(this.lblSessionId1);
+            this.grbInfo1.Controls.Add(this.label1);
             this.grbInfo1.Controls.Add(this.lblAmountOccupiedSeats1);
             this.grbInfo1.Controls.Add(this.lblAmountFreeSeats1);
             this.grbInfo1.Controls.Add(this.pctBusy1);
@@ -846,6 +898,25 @@
             this.grbInfo1.TabStop = false;
             this.grbInfo1.Visible = false;
             this.grbInfo1.Enter += new System.EventHandler(this.grpInfo1_Enter);
+            // 
+            // lblSessionId1
+            // 
+            this.lblSessionId1.AutoSize = true;
+            this.lblSessionId1.Location = new System.Drawing.Point(74, 51);
+            this.lblSessionId1.Name = "lblSessionId1";
+            this.lblSessionId1.Size = new System.Drawing.Size(44, 16);
+            this.lblSessionId1.TabIndex = 33;
+            this.lblSessionId1.Text = "label2";
+            this.lblSessionId1.Visible = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(123, 39);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(44, 16);
+            this.label1.TabIndex = 32;
+            this.label1.Text = "label1";
             // 
             // lblAmountOccupiedSeats1
             // 
@@ -1214,5 +1285,11 @@
         private System.Windows.Forms.Label lblAmountFreeSeats3;
         private System.Windows.Forms.Label lblAmountOccupiedSeats1;
         private System.Windows.Forms.Label lblAmountFreeSeats1;
+        private System.Windows.Forms.Label lblSessionId2;
+        private System.Windows.Forms.Label lblSessionId1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblSessionId4;
+        private System.Windows.Forms.Label lblSessionId5;
+        private System.Windows.Forms.Label lblSessionId3;
     }
 }
