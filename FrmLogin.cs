@@ -23,6 +23,29 @@ namespace ProyectoGreenSpace
 
             txtUsername.Focus();
         }
+        protected override void OnShown(EventArgs e)
+        {
+            base.OnShown(e);
+            ApplyTheme();
+        }
+
+        private void ApplyTheme()
+        {
+            if (ThemeMode.Light == true)
+            {
+                this.BackColor = Color.FromArgb(168, 228, 116);
+                btnLogin.BackColor = Color.FromArgb(76, 80, 144);
+                grpLogin.BackColor = Color.FromArgb(176, 164, 180);
+            }
+            else
+            {
+                this.BackColor = Color.FromArgb(176, 164, 180);
+                btnLogin.BackColor = Color.FromArgb(168, 228, 116);
+                grpLogin.BackColor = Color.FromArgb(32, 146, 14);
+                lklblRegister.LinkColor = Color.FromArgb(255, 255, 255);
+                lkllblRecoverPassword.LinkColor = Color.FromArgb(255, 255, 255);
+            }
+        }
 
         private void pibSpanish_Click(object sender, EventArgs e)
         {
