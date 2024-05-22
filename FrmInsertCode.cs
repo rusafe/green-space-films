@@ -13,7 +13,20 @@ namespace ProyectoGreenSpace
             InitializeComponent();
             verificationCode = code;
         }
-        private void AplicarIdioma()
+        private void ApplyTheme ()
+        {
+            if (ThemeMode.Light)
+            {
+                this.BackColor = Color.FromArgb(168, 228, 116);
+                btnSend.BackColor = Color.FromArgb(76, 80, 144);
+            } else
+            {
+                this.BackColor = Color.FromArgb(32, 146, 14);
+                btnSend.BackColor = Color.FromArgb(168, 228, 116);
+            }
+        }
+
+        private void ApplyLanguage()
         {
             btnSend.Text = StringResources.buttonSend;
         }
@@ -30,8 +43,7 @@ namespace ProyectoGreenSpace
             this.BackColor = Color.FromArgb(168, 228, 116);
             btnSend.BackColor = Color.FromArgb(76, 80, 144);
             
-            AplicarIdioma();
-
+            ApplyLanguage();
             mtbDigit1.Focus();
         }
 

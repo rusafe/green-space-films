@@ -10,9 +10,23 @@ namespace ProyectoGreenSpace
         public FrmRecoverPassword()
         {
             InitializeComponent();
+            ApplyTheme();
+        }
+        private void ApplyTheme()
+        {
+            if (ThemeMode.Light)
+            {
+                this.BackColor = Color.FromArgb(168, 228, 116);
+                grpRecover.BackColor = Color.FromArgb(176, 164, 180);
+            } else
+            {
+                this.BackColor = Color.FromArgb(176, 164, 180);
+                grpRecover.BackColor = Color.FromArgb(32, 146, 14);
+                btnLink.BackColor = Color.FromArgb(168, 228, 116);
+            }
         }
 
-        private void AplicarIdioma()
+        private void ApplyLanguage()
         {
             rtbInformation.Text = StringResources.rtbInfo;
             btnLink.Text = StringResources.buttonLink;
@@ -20,11 +34,7 @@ namespace ProyectoGreenSpace
 
         private void FrmRecoverPassword_Load(object sender, EventArgs e)
         {
-            this.BackColor = Color.FromArgb(168, 228, 116);
-            grpRecover.BackColor = Color.FromArgb(176, 164, 180);
-
-            AplicarIdioma();
-
+            ApplyLanguage();
             txtUsername.Focus();
         }
 
@@ -67,6 +77,11 @@ namespace ProyectoGreenSpace
             FrmLogin frmLogin = new FrmLogin();
             frmLogin.ShowDialog();
             this.Close();
+        }
+
+        private void grpRecover_Paint(object sender, PaintEventArgs e)
+        {
+            ControlPaint.DrawBorder(e.Graphics, grpRecover.ClientRectangle, Color.Black, ButtonBorderStyle.Solid);
         }
     }
 }

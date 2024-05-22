@@ -365,6 +365,10 @@
     <None Include="Resources\cancel.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
     <None Include="Resources\seat.png" />
   </ItemGroup>
   <ItemGroup>

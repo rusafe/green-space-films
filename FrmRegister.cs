@@ -13,9 +13,10 @@ namespace ProyectoGreenSpace
         public FrmRegister()
         {
             InitializeComponent();
+            ApplyTheme();
         }
 
-        private void AplicarIdioma()
+        private void ApplyLanguage()
         {
             lblUsername.Text = StringResources.labelUser;
             lblMail.Text = StringResources.labelMail;
@@ -25,27 +26,40 @@ namespace ProyectoGreenSpace
             btnRegister.Text = StringResources.buttonRegister;
             lklblLogin.Text = StringResources.linkLogin;
         }
+        private void ApplyTheme()
+        {
+            if (ThemeMode.Light)
+            {
+                this.BackColor = Color.FromArgb(168, 228, 116);
+                btnRegister.BackColor = Color.FromArgb(76, 80, 144);
+                grpRegister.BackColor = Color.FromArgb(176, 164, 180);
+            }
+            else
+            {
+                this.BackColor = Color.FromArgb(176, 164, 180);
+                btnRegister.BackColor = Color.FromArgb(168, 228, 116);
+                grpRegister.BackColor = Color.FromArgb(32, 146, 14);
+                lklblLogin.LinkColor = Color.FromArgb(255, 255, 255);
+            }
+
+        }
 
         private void FrmRegister_Load(object sender, EventArgs e)
         {
-            this.BackColor = Color.FromArgb(168, 228, 116);
-            btnRegister.BackColor = Color.FromArgb(76, 80, 144);
-            grpRegister.BackColor = Color.FromArgb(176, 164, 180);
-
-            AplicarIdioma();
-
+            ApplyLanguage();
             txtUsername.Focus();
         }
+
         private void pibSpanish_Click(object sender, EventArgs e)
         {
             Language.LanguageSpanish();
-            AplicarIdioma();
+            ApplyLanguage();
         }
 
         private void pibBritish_Click(object sender, EventArgs e)
         {
             Language.LanguageBritish();
-            AplicarIdioma();
+            ApplyLanguage();
         }
 
         private void btnRegister_Click(object sender, EventArgs e)
