@@ -25,5 +25,20 @@ namespace ProyectoGreenSpace.Classes
 
             return Image.FromStream(memoryStream);
         }
+
+        public static Byte[] BitmapToBytes(Bitmap bitmap)
+        {
+            MemoryStream memoryStream = new MemoryStream();
+            bitmap.Save(memoryStream, ImageFormat.Png);
+
+            return memoryStream.ToArray();
+        }
+
+        public static Bitmap BytesToBitmap(byte[] bytes)
+        {
+            MemoryStream memoryStream = new MemoryStream(bytes);
+
+            return new Bitmap(memoryStream);
+        }
     }
 }

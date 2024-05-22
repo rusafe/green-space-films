@@ -58,12 +58,15 @@
             this.timerClock = new System.Windows.Forms.Timer(this.components);
             this.btnModifyFrm = new System.Windows.Forms.Button();
             this.btnDeleteFrm = new System.Windows.Forms.Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.btnInsertSessions = new System.Windows.Forms.Button();
             this.grpMaintenance.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudMinAge)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pibImage)).BeginInit();
             this.grpClock.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFilms)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // grpMaintenance
@@ -371,11 +374,28 @@
             this.btnDeleteFrm.UseVisualStyleBackColor = true;
             this.btnDeleteFrm.Click += new System.EventHandler(this.btnDeleteFrm_Click);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // btnInsertSessions
+            // 
+            this.btnInsertSessions.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInsertSessions.Location = new System.Drawing.Point(888, 44);
+            this.btnInsertSessions.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnInsertSessions.Name = "btnInsertSessions";
+            this.btnInsertSessions.Size = new System.Drawing.Size(152, 52);
+            this.btnInsertSessions.TabIndex = 30;
+            this.btnInsertSessions.Text = "Acceso sesiones";
+            this.btnInsertSessions.UseVisualStyleBackColor = true;
+            this.btnInsertSessions.Click += new System.EventHandler(this.btnInsertSessions_Click);
+            // 
             // FrmMovieMaintenance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1379, 657);
+            this.Controls.Add(this.btnInsertSessions);
             this.Controls.Add(this.btnDeleteFrm);
             this.Controls.Add(this.btnModifyFrm);
             this.Controls.Add(this.btnBack);
@@ -396,6 +416,7 @@
             this.grpClock.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFilms)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -430,5 +451,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnModifyFrm;
         private System.Windows.Forms.Button btnDeleteFrm;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.Button btnInsertSessions;
     }
 }

@@ -953,7 +953,7 @@
             this.txtHandicapped.Multiline = true;
             this.txtHandicapped.Name = "txtHandicapped";
             this.txtHandicapped.ReadOnly = true;
-            this.txtHandicapped.Size = new System.Drawing.Size(138, 48);
+            this.txtHandicapped.Size = new System.Drawing.Size(138, 53);
             this.txtHandicapped.TabIndex = 41;
             // 
             // txtGender2
@@ -965,7 +965,7 @@
             this.txtGender2.Multiline = true;
             this.txtGender2.Name = "txtGender2";
             this.txtGender2.ReadOnly = true;
-            this.txtGender2.Size = new System.Drawing.Size(138, 46);
+            this.txtGender2.Size = new System.Drawing.Size(138, 53);
             this.txtGender2.TabIndex = 40;
             this.txtGender2.Text = "Genero 2";
             this.txtGender2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -979,7 +979,7 @@
             this.txtGender1.Multiline = true;
             this.txtGender1.Name = "txtGender1";
             this.txtGender1.ReadOnly = true;
-            this.txtGender1.Size = new System.Drawing.Size(138, 46);
+            this.txtGender1.Size = new System.Drawing.Size(138, 53);
             this.txtGender1.TabIndex = 39;
             this.txtGender1.Text = "Genero 1";
             this.txtGender1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -993,7 +993,7 @@
             this.txtAge.Multiline = true;
             this.txtAge.Name = "txtAge";
             this.txtAge.ReadOnly = true;
-            this.txtAge.Size = new System.Drawing.Size(138, 46);
+            this.txtAge.Size = new System.Drawing.Size(138, 53);
             this.txtAge.TabIndex = 38;
             this.txtAge.Text = "Edad ";
             this.txtAge.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1007,7 +1007,7 @@
             this.txtDuration.Multiline = true;
             this.txtDuration.Name = "txtDuration";
             this.txtDuration.ReadOnly = true;
-            this.txtDuration.Size = new System.Drawing.Size(138, 46);
+            this.txtDuration.Size = new System.Drawing.Size(138, 53);
             this.txtDuration.TabIndex = 37;
             this.txtDuration.Text = "Duración";
             this.txtDuration.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;

@@ -57,6 +57,7 @@ namespace ProyectoGreenSpace
                 lblFilm.Text = premiering[i].Name;
             }
         }
+
         private void LoadNextPremieringFilms()
         {
             List<Film> premiering = Film.ObtainAllNextPremiering();
@@ -76,59 +77,6 @@ namespace ProyectoGreenSpace
                 Label lblFilm = (Label)grbFilm.Controls.Find(lblFilmName, true)[0];
                 lblFilm.Text = premiering[i].Name;
             }
-        }
-
-        private void FrmFilms_Load(object sender, EventArgs e)
-        {
-            NotVisibleUserButtons();
-
-            txtUsername.Text = UserSession.Username;
-            txtJoinApp.Text = UserSession.CreationDateTime.ToString("dd/MM/yyyy");
-
-            ApplyLanguage();
-            LoadPremieringFilms();
-            LoadNextPremieringFilms();
-        }
-
-        private void btnMenu_Click_1(object sender, EventArgs e)
-        {
-            sidebarTimer.Start();
-        }
-
-        private void btnMenu_MouseClick_1(object sender, MouseEventArgs e)
-        {
-            sidebarTimer.Start();
-        }
-
-        private void sidebarTimer_Tick_1(object sender, EventArgs e)
-        {
-            if (sidebarExpand)
-            {
-                sidebar.Width -= 10;
-                if (sidebar.Width <= sidebar.MinimumSize.Width)
-                {
-                    sidebar.Width = sidebar.MinimumSize.Width;
-                    sidebarTimer.Stop();
-                    sidebarExpand = false;
-                }
-            }
-            else
-            {
-                sidebar.Width += 10;
-                if (sidebar.Width >= sidebar.MaximumSize.Width)
-                {
-                    sidebar.Width = sidebar.MaximumSize.Width;
-                    sidebarTimer.Stop();
-                    sidebarExpand = true;
-                }
-            }
-        }
-
-        private void vsbFilms_Scroll(object sender, ScrollEventArgs e)
-        {
-            //pnlFilms.AutoScroll = false;
-            //pnlFilms.VerticalScroll.Value = vsbFilms.Value;
-            pnlFilms.AutoScrollPosition = new Point(0, e.NewValue);
         }
 
         private void ApplyTheme()
@@ -227,6 +175,61 @@ namespace ProyectoGreenSpace
                 pnlFilms.BackColor = Color.FromArgb(32, 146, 14);
             }
         }
+
+        private void FrmFilms_Load(object sender, EventArgs e)
+        {
+            NotVisibleUserButtons();
+
+            txtUsername.Text = UserSession.Username;
+            txtJoinApp.Text = UserSession.CreationDateTime.ToString("dd/MM/yyyy");
+
+            ApplyLanguage();
+            LoadPremieringFilms();
+            LoadNextPremieringFilms();
+        }
+
+        private void btnMenu_Click_1(object sender, EventArgs e)
+        {
+            sidebarTimer.Start();
+        }
+
+        private void btnMenu_MouseClick_1(object sender, MouseEventArgs e)
+        {
+            sidebarTimer.Start();
+        }
+
+        private void sidebarTimer_Tick_1(object sender, EventArgs e)
+        {
+            if (sidebarExpand)
+            {
+                sidebar.Width -= 10;
+                if (sidebar.Width <= sidebar.MinimumSize.Width)
+                {
+                    sidebar.Width = sidebar.MinimumSize.Width;
+                    sidebarTimer.Stop();
+                    sidebarExpand = false;
+                }
+            }
+            else
+            {
+                sidebar.Width += 10;
+                if (sidebar.Width >= sidebar.MaximumSize.Width)
+                {
+                    sidebar.Width = sidebar.MaximumSize.Width;
+                    sidebarTimer.Stop();
+                    sidebarExpand = true;
+                }
+            }
+        }
+
+        private void vsbFilms_Scroll(object sender, ScrollEventArgs e)
+        {
+            //pnlFilms.AutoScroll = false;
+            //pnlFilms.VerticalScroll.Value = vsbFilms.Value;
+            pnlFilms.AutoScrollPosition = new Point(0, e.NewValue);
+        }
+
+
 
         private void btnUser_Click(object sender, EventArgs e)
         {

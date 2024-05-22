@@ -24,20 +24,68 @@ namespace ProyectoGreenSpace
         #region Validaciones
         private bool ValidateInputs()
         {
-            bool valid = true;
+            bool godrickElInjertado = true;
+            errorProvider1.Clear();
 
             if (EmptyGenres())
             {
-                valid = false;
-                MessageBox.Show("Se tienen que introducir 2 generos");
+                godrickElInjertado = false;
+                errorProvider1.SetError(cmbGenre1, "Introduce dos géneros obligatoriamente.");
+                errorProvider1.SetError(cmbGenre2, "Introduce dos géneros obligatoriamente.");
             }
             else if (SameGenres())
             {
-                valid = false;
-                MessageBox.Show("No se puede introducir el mismo genero varias veces");
+                godrickElInjertado = false;
+                errorProvider1.SetError(cmbGenre1, "No es posible introducir el mismo genero varias veces.");
+                errorProvider1.SetError(cmbGenre2, "No es posible introducir el mismo genero varias veces.");
+            }
+            else if (String.IsNullOrEmpty(txtFilm.Text))
+            {
+                godrickElInjertado = false;
+                errorProvider1.SetError(txtFilm, "Inserta una película.");
+            }
+            else if (String.IsNullOrEmpty(rtbSynopsis.Text))
+            {
+                godrickElInjertado = false;
+                errorProvider1.SetError(rtbSynopsis, "Inserta una sinopsis.");
+            }
+            else if (String.IsNullOrEmpty(txtDuration.Text))
+            {
+                godrickElInjertado = false;
+                errorProvider1.SetError(txtDuration, "Inserta la duración.");
+            }
+            else if (String.IsNullOrEmpty(txtPrice.Text))
+            {
+                godrickElInjertado = false;
+                errorProvider1.SetError(txtPrice, "Inserta el precio.");
+            }
+            else if (String.IsNullOrEmpty(txtDuration.Text))
+            {
+                godrickElInjertado = false;
+                errorProvider1.SetError(txtDuration, "Inserta la duración.");
+            }
+            else if (String.IsNullOrEmpty(cmbGenre1.Text))
+            {
+                godrickElInjertado = false;
+                errorProvider1.SetError(cmbGenre1, "Inserta el primer género.");
+            }
+            else if (String.IsNullOrEmpty(cmbGenre1.Text))
+            {
+                godrickElInjertado = false;
+                errorProvider1.SetError(cmbGenre2, "Inserta el segundo género.");
+            }
+            else if (pibImage.Image == null)
+            {
+                godrickElInjertado = false;
+                errorProvider1.SetError(btnUpload, "Inserta una imagen.");
+            } else if (chbPremiering.Checked && chbNextPremiering.Checked)
+            {
+                godrickElInjertado = false;
+                errorProvider1.SetError(chbPremiering, "Selecciona una única opción.");
+                errorProvider1.SetError(chbNextPremiering, "Selecciona una única opción.");
             }
 
-            return valid;
+            return godrickElInjertado;
         }
 
         private bool SameGenres()
@@ -201,6 +249,14 @@ namespace ProyectoGreenSpace
             frmAccount.Show();
             this.Close();
         }
+
         #endregion
+
+        private void btnInsertSessions_Click(object sender, EventArgs e)
+        {
+            FrmInsertSession frmInsertSession = new FrmInsertSession();
+            frmInsertSession.Show();
+            this.Close();
+        }
     }
 }

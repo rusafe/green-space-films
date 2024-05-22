@@ -47,8 +47,97 @@ namespace ProyectoGreenSpace
         {
             lblClock.Text = DateTime.Now.ToString("HH:mm:ss");
         }
+
+        #region Validaciones
+        private bool ValidateInputs()
+        {
+            bool godrickElInjertado = true;
+            errorProvider1.Clear();
+
+            if (EmptyGenres())
+            {
+                godrickElInjertado = false;
+                errorProvider1.SetError(cmbGenre1, "Introduce dos géneros obligatoriamente.");
+                errorProvider1.SetError(cmbGenre2, "Introduce dos géneros obligatoriamente.");
+            }
+            else if (SameGenres())
+            {
+                godrickElInjertado = false;
+                errorProvider1.SetError(cmbGenre1, "No es posible introducir el mismo genero varias veces.");
+                errorProvider1.SetError(cmbGenre2, "No es posible introducir el mismo genero varias veces.");
+            }
+            else if (String.IsNullOrEmpty(cmbFilms.Text))
+            {
+                godrickElInjertado = false;
+                errorProvider1.SetError(cmbFilms, "Inserta una película.");
+            }
+            else if (String.IsNullOrEmpty(cmbFilmsIds.Text))
+            {
+                godrickElInjertado = false;
+                errorProvider1.SetError(cmbFilms, "Inserta una película.");
+            }
+            else if (String.IsNullOrEmpty(rtbSynopsis.Text))
+            {
+                godrickElInjertado = false;
+                errorProvider1.SetError(rtbSynopsis, "Inserta una sinopsis.");
+            }
+            else if (String.IsNullOrEmpty(txtDuration.Text))
+            {
+                godrickElInjertado = false;
+                errorProvider1.SetError(txtDuration, "Inserta la duración.");
+            }
+            else if (String.IsNullOrEmpty(txtPrice.Text))
+            {
+                godrickElInjertado = false;
+                errorProvider1.SetError(txtPrice, "Inserta el precio.");
+            }
+            else if (String.IsNullOrEmpty(txtDuration.Text))
+            {
+                godrickElInjertado = false;
+                errorProvider1.SetError(txtDuration, "Inserta la duración.");
+            }
+            else if (String.IsNullOrEmpty(cmbGenre1.Text))
+            {
+                godrickElInjertado = false;
+                errorProvider1.SetError(cmbGenre1, "Inserta el primer género.");
+            }
+            else if (String.IsNullOrEmpty(cmbGenre1.Text))
+            {
+                godrickElInjertado = false;
+                errorProvider1.SetError(cmbGenre2, "Inserta el segundo género.");
+            }
+            else if (pibImage.Image == null)
+            {
+                godrickElInjertado = false;
+                errorProvider1.SetError(btnUpload, "Inserta una imagen.");
+            }
+            else if (chbPremiering.Checked && chbNextPremiering.Checked)
+            {
+                godrickElInjertado = false;
+                errorProvider1.SetError(chbPremiering, "Selecciona una única opción.");
+                errorProvider1.SetError(chbNextPremiering, "Selecciona una única opción.");
+            }
+
+            return godrickElInjertado;
+        }
+
+        private bool SameGenres()
+        {
+            return cmbGenre1.Text.Equals(cmbGenre2.Text);
+        }
+        private bool EmptyGenres()
+        {
+            return string.IsNullOrEmpty(cmbGenre1.Text) || string.IsNullOrEmpty(cmbGenre2.Text);
+        }
+        #endregion
+
         private void btnModify_Click(object sender, EventArgs e)
         {
+            if (!ValidateInputs())
+            {
+                return;
+            }
+
             try
             {
                 string[] genres = new string[]
@@ -179,6 +268,13 @@ namespace ProyectoGreenSpace
             frmMovieDelete.Show();
             this.Close();
         }
+
+        private void btnInsertSessions_Click(object sender, EventArgs e)
+        {
+            FrmInsertSession frmInsertSession = new FrmInsertSession();
+            frmInsertSession.Show();
+            this.Close();
+        }
         #endregion
 
         #region Diseño de interface
@@ -197,6 +293,7 @@ namespace ProyectoGreenSpace
             ControlPaint.DrawBorder(e.Graphics, grpClock.ClientRectangle, Color.Black, ButtonBorderStyle.Solid);
         }
         #endregion
+
 
     }
 }
