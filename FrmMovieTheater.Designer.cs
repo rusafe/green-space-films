@@ -30,23 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMovieTheater));
-            this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnMenu = new System.Windows.Forms.Button();
-            this.lblMenu = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnTicketOffice = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.btnReviewTickets = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.btnReviews = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.btnWriteReview = new System.Windows.Forms.Button();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.btnUser = new System.Windows.Forms.Button();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.btnSettings = new System.Windows.Forms.Button();
             this.grbInfo4 = new System.Windows.Forms.GroupBox();
             this.lblSessionId4 = new System.Windows.Forms.Label();
             this.lblAmountOccupiedSeats4 = new System.Windows.Forms.Label();
@@ -112,14 +95,29 @@
             this.pcbMovie1 = new System.Windows.Forms.PictureBox();
             this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.sidebar.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel8.SuspendLayout();
+            this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnMenu = new System.Windows.Forms.Button();
+            this.lblMenu = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnTicketOffice = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.btnReviewTickets = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.btnReviews = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.btnWriteReview = new System.Windows.Forms.Button();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.btnUser = new System.Windows.Forms.Button();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.btnSettings = new System.Windows.Forms.Button();
+            this.g2Bar = new Guna.UI2.WinForms.Guna2Panel();
+            this.g2lblTitle = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.pibMinimize = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.pibMaximize = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.pibClose = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.grbInfo4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctBusy5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctFree5)).BeginInit();
@@ -138,197 +136,19 @@
             this.grbMovie1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbMovie1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.sidebar.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.g2Bar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pibMinimize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibMaximize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibClose)).BeginInit();
             this.SuspendLayout();
-            // 
-            // sidebar
-            // 
-            this.sidebar.Controls.Add(this.panel2);
-            this.sidebar.Controls.Add(this.panel1);
-            this.sidebar.Controls.Add(this.panel3);
-            this.sidebar.Controls.Add(this.panel4);
-            this.sidebar.Controls.Add(this.panel5);
-            this.sidebar.Controls.Add(this.panel6);
-            this.sidebar.Controls.Add(this.panel7);
-            this.sidebar.Controls.Add(this.panel8);
-            this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
-            this.sidebar.Location = new System.Drawing.Point(0, 0);
-            this.sidebar.MaximumSize = new System.Drawing.Size(242, 747);
-            this.sidebar.MinimumSize = new System.Drawing.Size(75, 747);
-            this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(242, 747);
-            this.sidebar.TabIndex = 1;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.btnMenu);
-            this.panel2.Controls.Add(this.lblMenu);
-            this.panel2.Location = new System.Drawing.Point(3, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(239, 100);
-            this.panel2.TabIndex = 0;
-            // 
-            // btnMenu
-            // 
-            this.btnMenu.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnMenu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMenu.Image = global::ProyectoGreenSpace.Properties.Resources.menu_three_outlined_rounded_lines_symbol_icon_icons_com_73215;
-            this.btnMenu.Location = new System.Drawing.Point(9, 24);
-            this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(54, 53);
-            this.btnMenu.TabIndex = 23;
-            this.btnMenu.Text = "   ";
-            this.btnMenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMenu.UseVisualStyleBackColor = true;
-            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
-            this.btnMenu.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnMenu_MouseClick);
-            // 
-            // lblMenu
-            // 
-            this.lblMenu.AutoSize = true;
-            this.lblMenu.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMenu.Location = new System.Drawing.Point(85, 39);
-            this.lblMenu.Name = "lblMenu";
-            this.lblMenu.Size = new System.Drawing.Size(66, 23);
-            this.lblMenu.TabIndex = 2;
-            this.lblMenu.Text = "MENU";
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.btnTicketOffice);
-            this.panel1.Location = new System.Drawing.Point(3, 109);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(239, 61);
-            this.panel1.TabIndex = 1;
-            // 
-            // btnTicketOffice
-            // 
-            this.btnTicketOffice.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTicketOffice.Image = ((System.Drawing.Image)(resources.GetObject("btnTicketOffice.Image")));
-            this.btnTicketOffice.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTicketOffice.Location = new System.Drawing.Point(10, 3);
-            this.btnTicketOffice.Name = "btnTicketOffice";
-            this.btnTicketOffice.Size = new System.Drawing.Size(226, 52);
-            this.btnTicketOffice.TabIndex = 22;
-            this.btnTicketOffice.Text = "               Taquilla";
-            this.btnTicketOffice.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnTicketOffice.UseVisualStyleBackColor = true;
-            this.btnTicketOffice.Click += new System.EventHandler(this.btnTicketOffice_Click);
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.btnReviewTickets);
-            this.panel3.Location = new System.Drawing.Point(3, 176);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(239, 54);
-            this.panel3.TabIndex = 2;
-            // 
-            // btnReviewTickets
-            // 
-            this.btnReviewTickets.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReviewTickets.Image = ((System.Drawing.Image)(resources.GetObject("btnReviewTickets.Image")));
-            this.btnReviewTickets.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReviewTickets.Location = new System.Drawing.Point(9, 1);
-            this.btnReviewTickets.Name = "btnReviewTickets";
-            this.btnReviewTickets.Size = new System.Drawing.Size(227, 53);
-            this.btnReviewTickets.TabIndex = 23;
-            this.btnReviewTickets.Text = "          Revisar Tickets";
-            this.btnReviewTickets.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnReviewTickets.UseVisualStyleBackColor = true;
-            this.btnReviewTickets.Click += new System.EventHandler(this.btnReviewTickets_Click);
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.btnReviews);
-            this.panel4.Location = new System.Drawing.Point(3, 236);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(239, 62);
-            this.panel4.TabIndex = 3;
-            // 
-            // btnReviews
-            // 
-            this.btnReviews.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReviews.Image = ((System.Drawing.Image)(resources.GetObject("btnReviews.Image")));
-            this.btnReviews.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReviews.Location = new System.Drawing.Point(8, 5);
-            this.btnReviews.Name = "btnReviews";
-            this.btnReviews.Size = new System.Drawing.Size(228, 54);
-            this.btnReviews.TabIndex = 24;
-            this.btnReviews.Text = "            Ver Reseñas";
-            this.btnReviews.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnReviews.UseVisualStyleBackColor = true;
-            this.btnReviews.Click += new System.EventHandler(this.btnReviews_Click);
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.btnWriteReview);
-            this.panel5.Location = new System.Drawing.Point(3, 304);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(239, 68);
-            this.panel5.TabIndex = 4;
-            // 
-            // btnWriteReview
-            // 
-            this.btnWriteReview.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnWriteReview.Image = ((System.Drawing.Image)(resources.GetObject("btnWriteReview.Image")));
-            this.btnWriteReview.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnWriteReview.Location = new System.Drawing.Point(9, 7);
-            this.btnWriteReview.Name = "btnWriteReview";
-            this.btnWriteReview.Size = new System.Drawing.Size(227, 58);
-            this.btnWriteReview.TabIndex = 24;
-            this.btnWriteReview.Text = "          Escribir Reseña";
-            this.btnWriteReview.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnWriteReview.UseVisualStyleBackColor = true;
-            this.btnWriteReview.Click += new System.EventHandler(this.btnWriteReview_Click);
-            // 
-            // panel6
-            // 
-            this.panel6.Location = new System.Drawing.Point(3, 378);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(239, 203);
-            this.panel6.TabIndex = 5;
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.btnUser);
-            this.panel7.Location = new System.Drawing.Point(3, 587);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(239, 56);
-            this.panel7.TabIndex = 6;
-            // 
-            // btnUser
-            // 
-            this.btnUser.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUser.Image = ((System.Drawing.Image)(resources.GetObject("btnUser.Image")));
-            this.btnUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUser.Location = new System.Drawing.Point(9, 2);
-            this.btnUser.Name = "btnUser";
-            this.btnUser.Size = new System.Drawing.Size(227, 52);
-            this.btnUser.TabIndex = 24;
-            this.btnUser.Text = "               Usuario";
-            this.btnUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnUser.UseVisualStyleBackColor = true;
-            // 
-            // panel8
-            // 
-            this.panel8.Controls.Add(this.btnSettings);
-            this.panel8.Location = new System.Drawing.Point(3, 649);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(239, 64);
-            this.panel8.TabIndex = 7;
-            // 
-            // btnSettings
-            // 
-            this.btnSettings.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSettings.Image = ((System.Drawing.Image)(resources.GetObject("btnSettings.Image")));
-            this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSettings.Location = new System.Drawing.Point(9, 3);
-            this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Size = new System.Drawing.Size(227, 52);
-            this.btnSettings.TabIndex = 24;
-            this.btnSettings.Text = "         Configuración";
-            this.btnSettings.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSettings.UseVisualStyleBackColor = true;
-            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
             // grbInfo4
             // 
@@ -343,7 +163,7 @@
             this.grbInfo4.Controls.Add(this.txtHall4);
             this.grbInfo4.Controls.Add(this.txtHour4);
             this.grbInfo4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.grbInfo4.Location = new System.Drawing.Point(991, 401);
+            this.grbInfo4.Location = new System.Drawing.Point(973, 457);
             this.grbInfo4.Name = "grbInfo4";
             this.grbInfo4.Size = new System.Drawing.Size(295, 166);
             this.grbInfo4.TabIndex = 50;
@@ -471,7 +291,7 @@
             this.grbInfo2.Controls.Add(this.txtHall2);
             this.grbInfo2.Controls.Add(this.txtHour2);
             this.grbInfo2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.grbInfo2.Location = new System.Drawing.Point(991, 226);
+            this.grbInfo2.Location = new System.Drawing.Point(973, 282);
             this.grbInfo2.Name = "grbInfo2";
             this.grbInfo2.Size = new System.Drawing.Size(295, 166);
             this.grbInfo2.TabIndex = 49;
@@ -599,7 +419,7 @@
             this.grbInfo5.Controls.Add(this.txtHall5);
             this.grbInfo5.Controls.Add(this.txtHour5);
             this.grbInfo5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.grbInfo5.Location = new System.Drawing.Point(650, 501);
+            this.grbInfo5.Location = new System.Drawing.Point(632, 557);
             this.grbInfo5.Name = "grbInfo5";
             this.grbInfo5.Size = new System.Drawing.Size(295, 166);
             this.grbInfo5.TabIndex = 48;
@@ -727,7 +547,7 @@
             this.grbInfo3.Controls.Add(this.txtHall3);
             this.grbInfo3.Controls.Add(this.txtHour3);
             this.grbInfo3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.grbInfo3.Location = new System.Drawing.Point(650, 326);
+            this.grbInfo3.Location = new System.Drawing.Point(632, 382);
             this.grbInfo3.Name = "grbInfo3";
             this.grbInfo3.Size = new System.Drawing.Size(295, 166);
             this.grbInfo3.TabIndex = 47;
@@ -846,7 +666,7 @@
             // 
             this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnBack.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(1143, 668);
+            this.btnBack.Location = new System.Drawing.Point(1125, 686);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(137, 45);
             this.btnBack.TabIndex = 46;
@@ -858,7 +678,7 @@
             // 
             this.btnAccessRevews.BackColor = System.Drawing.Color.Violet;
             this.btnAccessRevews.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAccessRevews.Location = new System.Drawing.Point(991, 668);
+            this.btnAccessRevews.Location = new System.Drawing.Point(973, 668);
             this.btnAccessRevews.Name = "btnAccessRevews";
             this.btnAccessRevews.Size = new System.Drawing.Size(138, 45);
             this.btnAccessRevews.TabIndex = 45;
@@ -870,7 +690,7 @@
             // 
             this.btnQuestion.BackColor = System.Drawing.Color.Khaki;
             this.btnQuestion.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQuestion.Location = new System.Drawing.Point(1012, 153);
+            this.btnQuestion.Location = new System.Drawing.Point(994, 209);
             this.btnQuestion.Name = "btnQuestion";
             this.btnQuestion.Size = new System.Drawing.Size(274, 39);
             this.btnQuestion.TabIndex = 44;
@@ -891,7 +711,7 @@
             this.grbInfo1.Controls.Add(this.txtHall1);
             this.grbInfo1.Controls.Add(this.txtHour1);
             this.grbInfo1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.grbInfo1.Location = new System.Drawing.Point(650, 153);
+            this.grbInfo1.Location = new System.Drawing.Point(632, 209);
             this.grbInfo1.Name = "grbInfo1";
             this.grbInfo1.Size = new System.Drawing.Size(295, 166);
             this.grbInfo1.TabIndex = 43;
@@ -1020,7 +840,7 @@
             this.txtHandicapped.BackColor = System.Drawing.Color.Turquoise;
             this.txtHandicapped.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHandicapped.ForeColor = System.Drawing.Color.Black;
-            this.txtHandicapped.Location = new System.Drawing.Point(680, 81);
+            this.txtHandicapped.Location = new System.Drawing.Point(662, 137);
             this.txtHandicapped.Multiline = true;
             this.txtHandicapped.Name = "txtHandicapped";
             this.txtHandicapped.ReadOnly = true;
@@ -1032,7 +852,7 @@
             this.txtGender2.BackColor = System.Drawing.Color.PaleGreen;
             this.txtGender2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGender2.ForeColor = System.Drawing.Color.Black;
-            this.txtGender2.Location = new System.Drawing.Point(1148, 12);
+            this.txtGender2.Location = new System.Drawing.Point(1130, 68);
             this.txtGender2.Multiline = true;
             this.txtGender2.Name = "txtGender2";
             this.txtGender2.ReadOnly = true;
@@ -1046,7 +866,7 @@
             this.txtGender1.BackColor = System.Drawing.Color.PaleGreen;
             this.txtGender1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGender1.ForeColor = System.Drawing.Color.Black;
-            this.txtGender1.Location = new System.Drawing.Point(991, 12);
+            this.txtGender1.Location = new System.Drawing.Point(973, 68);
             this.txtGender1.Multiline = true;
             this.txtGender1.Name = "txtGender1";
             this.txtGender1.ReadOnly = true;
@@ -1060,7 +880,7 @@
             this.txtAge.BackColor = System.Drawing.Color.LightSkyBlue;
             this.txtAge.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAge.ForeColor = System.Drawing.Color.Black;
-            this.txtAge.Location = new System.Drawing.Point(837, 12);
+            this.txtAge.Location = new System.Drawing.Point(819, 68);
             this.txtAge.Multiline = true;
             this.txtAge.Name = "txtAge";
             this.txtAge.ReadOnly = true;
@@ -1074,7 +894,7 @@
             this.txtDuration.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.txtDuration.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDuration.ForeColor = System.Drawing.Color.Black;
-            this.txtDuration.Location = new System.Drawing.Point(680, 12);
+            this.txtDuration.Location = new System.Drawing.Point(662, 68);
             this.txtDuration.Multiline = true;
             this.txtDuration.Name = "txtDuration";
             this.txtDuration.ReadOnly = true;
@@ -1087,7 +907,7 @@
             // 
             this.lblSynopsis.AutoSize = true;
             this.lblSynopsis.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSynopsis.Location = new System.Drawing.Point(272, 347);
+            this.lblSynopsis.Location = new System.Drawing.Point(248, 387);
             this.lblSynopsis.Name = "lblSynopsis";
             this.lblSynopsis.Size = new System.Drawing.Size(138, 34);
             this.lblSynopsis.TabIndex = 36;
@@ -1096,7 +916,7 @@
             // txtInfoMovie
             // 
             this.txtInfoMovie.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtInfoMovie.Location = new System.Drawing.Point(268, 396);
+            this.txtInfoMovie.Location = new System.Drawing.Point(254, 424);
             this.txtInfoMovie.Multiline = true;
             this.txtInfoMovie.Name = "txtInfoMovie";
             this.txtInfoMovie.ReadOnly = true;
@@ -1110,7 +930,7 @@
             // 
             this.grbMovie1.BackColor = System.Drawing.Color.White;
             this.grbMovie1.Controls.Add(this.pcbMovie1);
-            this.grbMovie1.Location = new System.Drawing.Point(268, 11);
+            this.grbMovie1.Location = new System.Drawing.Point(250, 67);
             this.grbMovie1.Name = "grbMovie1";
             this.grbMovie1.Size = new System.Drawing.Size(343, 271);
             this.grbMovie1.TabIndex = 34;
@@ -1136,18 +956,281 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Turquoise;
             this.pictureBox1.Image = global::ProyectoGreenSpace.Properties.Resources.people_wheelchair_accessible_icon_1483821;
-            this.pictureBox1.Location = new System.Drawing.Point(726, 83);
+            this.pictureBox1.Location = new System.Drawing.Point(708, 139);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(42, 46);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 42;
             this.pictureBox1.TabStop = false;
             // 
+            // sidebar
+            // 
+            this.sidebar.Controls.Add(this.panel2);
+            this.sidebar.Controls.Add(this.panel1);
+            this.sidebar.Controls.Add(this.panel3);
+            this.sidebar.Controls.Add(this.panel4);
+            this.sidebar.Controls.Add(this.panel5);
+            this.sidebar.Controls.Add(this.panel6);
+            this.sidebar.Controls.Add(this.panel7);
+            this.sidebar.Controls.Add(this.panel8);
+            this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
+            this.sidebar.Location = new System.Drawing.Point(0, 0);
+            this.sidebar.MaximumSize = new System.Drawing.Size(242, 747);
+            this.sidebar.MinimumSize = new System.Drawing.Size(75, 747);
+            this.sidebar.Name = "sidebar";
+            this.sidebar.Size = new System.Drawing.Size(242, 747);
+            this.sidebar.TabIndex = 53;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.btnMenu);
+            this.panel2.Controls.Add(this.lblMenu);
+            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(239, 100);
+            this.panel2.TabIndex = 0;
+            // 
+            // btnMenu
+            // 
+            this.btnMenu.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnMenu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMenu.Image = global::ProyectoGreenSpace.Properties.Resources.menu_three_outlined_rounded_lines_symbol_icon_icons_com_73215;
+            this.btnMenu.Location = new System.Drawing.Point(10, 39);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(54, 53);
+            this.btnMenu.TabIndex = 23;
+            this.btnMenu.Text = "   ";
+            this.btnMenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMenu.UseVisualStyleBackColor = true;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click_1);
+            // 
+            // lblMenu
+            // 
+            this.lblMenu.AutoSize = true;
+            this.lblMenu.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMenu.Location = new System.Drawing.Point(84, 51);
+            this.lblMenu.Name = "lblMenu";
+            this.lblMenu.Size = new System.Drawing.Size(66, 23);
+            this.lblMenu.TabIndex = 2;
+            this.lblMenu.Text = "MENU";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btnTicketOffice);
+            this.panel1.Location = new System.Drawing.Point(3, 109);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(239, 61);
+            this.panel1.TabIndex = 1;
+            // 
+            // btnTicketOffice
+            // 
+            this.btnTicketOffice.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTicketOffice.Image = ((System.Drawing.Image)(resources.GetObject("btnTicketOffice.Image")));
+            this.btnTicketOffice.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTicketOffice.Location = new System.Drawing.Point(10, 3);
+            this.btnTicketOffice.Name = "btnTicketOffice";
+            this.btnTicketOffice.Size = new System.Drawing.Size(226, 52);
+            this.btnTicketOffice.TabIndex = 22;
+            this.btnTicketOffice.Text = "               Taquilla";
+            this.btnTicketOffice.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnTicketOffice.UseVisualStyleBackColor = true;
+            this.btnTicketOffice.Click += new System.EventHandler(this.btnTicketOffice_Click_1);
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.btnReviewTickets);
+            this.panel3.Location = new System.Drawing.Point(3, 176);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(239, 54);
+            this.panel3.TabIndex = 2;
+            // 
+            // btnReviewTickets
+            // 
+            this.btnReviewTickets.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReviewTickets.Image = ((System.Drawing.Image)(resources.GetObject("btnReviewTickets.Image")));
+            this.btnReviewTickets.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReviewTickets.Location = new System.Drawing.Point(9, 1);
+            this.btnReviewTickets.Name = "btnReviewTickets";
+            this.btnReviewTickets.Size = new System.Drawing.Size(227, 53);
+            this.btnReviewTickets.TabIndex = 23;
+            this.btnReviewTickets.Text = "          Revisar Tickets";
+            this.btnReviewTickets.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnReviewTickets.UseVisualStyleBackColor = true;
+            this.btnReviewTickets.Click += new System.EventHandler(this.btnReviewTickets_Click_1);
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.btnReviews);
+            this.panel4.Location = new System.Drawing.Point(3, 236);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(239, 62);
+            this.panel4.TabIndex = 3;
+            // 
+            // btnReviews
+            // 
+            this.btnReviews.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReviews.Image = ((System.Drawing.Image)(resources.GetObject("btnReviews.Image")));
+            this.btnReviews.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReviews.Location = new System.Drawing.Point(8, 5);
+            this.btnReviews.Name = "btnReviews";
+            this.btnReviews.Size = new System.Drawing.Size(228, 54);
+            this.btnReviews.TabIndex = 24;
+            this.btnReviews.Text = "            Ver Reseñas";
+            this.btnReviews.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnReviews.UseVisualStyleBackColor = true;
+            this.btnReviews.Click += new System.EventHandler(this.btnReviews_Click_1);
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.btnWriteReview);
+            this.panel5.Location = new System.Drawing.Point(3, 304);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(239, 68);
+            this.panel5.TabIndex = 4;
+            // 
+            // btnWriteReview
+            // 
+            this.btnWriteReview.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnWriteReview.Image = ((System.Drawing.Image)(resources.GetObject("btnWriteReview.Image")));
+            this.btnWriteReview.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnWriteReview.Location = new System.Drawing.Point(9, 7);
+            this.btnWriteReview.Name = "btnWriteReview";
+            this.btnWriteReview.Size = new System.Drawing.Size(227, 58);
+            this.btnWriteReview.TabIndex = 24;
+            this.btnWriteReview.Text = "          Escribir Reseña";
+            this.btnWriteReview.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnWriteReview.UseVisualStyleBackColor = true;
+            this.btnWriteReview.Click += new System.EventHandler(this.btnWriteReview_Click_1);
+            // 
+            // panel6
+            // 
+            this.panel6.Location = new System.Drawing.Point(3, 378);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(239, 203);
+            this.panel6.TabIndex = 5;
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.btnUser);
+            this.panel7.Location = new System.Drawing.Point(3, 587);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(239, 56);
+            this.panel7.TabIndex = 6;
+            // 
+            // btnUser
+            // 
+            this.btnUser.Enabled = false;
+            this.btnUser.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUser.Image = ((System.Drawing.Image)(resources.GetObject("btnUser.Image")));
+            this.btnUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUser.Location = new System.Drawing.Point(9, 2);
+            this.btnUser.Name = "btnUser";
+            this.btnUser.Size = new System.Drawing.Size(227, 52);
+            this.btnUser.TabIndex = 24;
+            this.btnUser.Text = "               Usuario";
+            this.btnUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnUser.UseVisualStyleBackColor = true;
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.btnSettings);
+            this.panel8.Location = new System.Drawing.Point(3, 649);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(239, 64);
+            this.panel8.TabIndex = 7;
+            // 
+            // btnSettings
+            // 
+            this.btnSettings.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSettings.Image = ((System.Drawing.Image)(resources.GetObject("btnSettings.Image")));
+            this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSettings.Location = new System.Drawing.Point(9, 3);
+            this.btnSettings.Name = "btnSettings";
+            this.btnSettings.Size = new System.Drawing.Size(227, 52);
+            this.btnSettings.TabIndex = 24;
+            this.btnSettings.Text = "         Configuración";
+            this.btnSettings.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSettings.UseVisualStyleBackColor = true;
+            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click_1);
+            // 
+            // g2Bar
+            // 
+            this.g2Bar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.g2Bar.Controls.Add(this.g2lblTitle);
+            this.g2Bar.Controls.Add(this.pibMinimize);
+            this.g2Bar.Controls.Add(this.pibMaximize);
+            this.g2Bar.Controls.Add(this.pibClose);
+            this.g2Bar.Location = new System.Drawing.Point(0, 0);
+            this.g2Bar.Name = "g2Bar";
+            this.g2Bar.Size = new System.Drawing.Size(1299, 41);
+            this.g2Bar.TabIndex = 54;
+            // 
+            // g2lblTitle
+            // 
+            this.g2lblTitle.BackColor = System.Drawing.Color.Transparent;
+            this.g2lblTitle.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.g2lblTitle.Location = new System.Drawing.Point(13, 8);
+            this.g2lblTitle.Name = "g2lblTitle";
+            this.g2lblTitle.Size = new System.Drawing.Size(194, 25);
+            this.g2lblTitle.TabIndex = 36;
+            this.g2lblTitle.Text = "GREEN SPACE FILMS";
+            // 
+            // pibMinimize
+            // 
+            this.pibMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pibMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pibMinimize.Image = ((System.Drawing.Image)(resources.GetObject("pibMinimize.Image")));
+            this.pibMinimize.ImageRotate = 0F;
+            this.pibMinimize.Location = new System.Drawing.Point(1166, 8);
+            this.pibMinimize.Name = "pibMinimize";
+            this.pibMinimize.Size = new System.Drawing.Size(35, 25);
+            this.pibMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pibMinimize.TabIndex = 35;
+            this.pibMinimize.TabStop = false;
+            this.pibMinimize.Click += new System.EventHandler(this.pibMinimize_Click);
+            // 
+            // pibMaximize
+            // 
+            this.pibMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pibMaximize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pibMaximize.Image = global::ProyectoGreenSpace.Properties.Resources.maximizar;
+            this.pibMaximize.ImageRotate = 0F;
+            this.pibMaximize.Location = new System.Drawing.Point(1208, 8);
+            this.pibMaximize.Name = "pibMaximize";
+            this.pibMaximize.Size = new System.Drawing.Size(34, 25);
+            this.pibMaximize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pibMaximize.TabIndex = 34;
+            this.pibMaximize.TabStop = false;
+            this.pibMaximize.Click += new System.EventHandler(this.pibMaximize_Click);
+            // 
+            // pibClose
+            // 
+            this.pibClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pibClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pibClose.Image = ((System.Drawing.Image)(resources.GetObject("pibClose.Image")));
+            this.pibClose.ImageRotate = 0F;
+            this.pibClose.Location = new System.Drawing.Point(1247, 3);
+            this.pibClose.Name = "pibClose";
+            this.pibClose.Size = new System.Drawing.Size(39, 33);
+            this.pibClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pibClose.TabIndex = 33;
+            this.pibClose.TabStop = false;
+            this.pibClose.Click += new System.EventHandler(this.pibClose_Click);
+            // 
+            // guna2DragControl1
+            // 
+            this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl1.TargetControl = this.g2Bar;
+            this.guna2DragControl1.UseTransparentDrag = true;
+            // 
             // FrmMovieTheater
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1298, 722);
+            this.ClientSize = new System.Drawing.Size(1298, 747);
+            this.Controls.Add(this.g2Bar);
+            this.Controls.Add(this.sidebar);
             this.Controls.Add(this.grbInfo4);
             this.Controls.Add(this.grbInfo2);
             this.Controls.Add(this.grbInfo5);
@@ -1165,20 +1248,11 @@
             this.Controls.Add(this.lblSynopsis);
             this.Controls.Add(this.txtInfoMovie);
             this.Controls.Add(this.grbMovie1);
-            this.Controls.Add(this.sidebar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmMovieTheater";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmMovieTheater";
             this.Load += new System.EventHandler(this.FrmMovieTheater_Load);
-            this.sidebar.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
             this.grbInfo4.ResumeLayout(false);
             this.grbInfo4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctBusy5)).EndInit();
@@ -1202,30 +1276,26 @@
             this.grbMovie1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pcbMovie1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.sidebar.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
+            this.g2Bar.ResumeLayout(false);
+            this.g2Bar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pibMinimize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibMaximize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibClose)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.FlowLayoutPanel sidebar;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnMenu;
-        private System.Windows.Forms.Label lblMenu;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnTicketOffice;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button btnReviewTickets;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button btnReviews;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button btnWriteReview;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Button btnUser;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Button btnSettings;
         private System.Windows.Forms.GroupBox grbInfo4;
         private System.Windows.Forms.PictureBox pctBusy5;
         private System.Windows.Forms.PictureBox pctFree5;
@@ -1291,5 +1361,28 @@
         private System.Windows.Forms.Label lblSessionId4;
         private System.Windows.Forms.Label lblSessionId5;
         private System.Windows.Forms.Label lblSessionId3;
+        private System.Windows.Forms.FlowLayoutPanel sidebar;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btnMenu;
+        private System.Windows.Forms.Label lblMenu;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnTicketOffice;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button btnReviewTickets;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button btnReviews;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Button btnWriteReview;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Button btnUser;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Button btnSettings;
+        private Guna.UI2.WinForms.Guna2Panel g2Bar;
+        private Guna.UI2.WinForms.Guna2HtmlLabel g2lblTitle;
+        private Guna.UI2.WinForms.Guna2PictureBox pibMinimize;
+        private Guna.UI2.WinForms.Guna2PictureBox pibMaximize;
+        private Guna.UI2.WinForms.Guna2PictureBox pibClose;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
     }
 }
