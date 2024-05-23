@@ -81,6 +81,11 @@
             this.lblInfo1 = new System.Windows.Forms.Label();
             this.lblTitleMonth = new System.Windows.Forms.Label();
             this.pnlFilms = new System.Windows.Forms.Panel();
+            this.g2Bar = new Guna.UI2.WinForms.Guna2Panel();
+            this.g2lblTitle = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.pibMinimize = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.pibMaximize = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.pibCloseFrm = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.grbNextMovie8 = new System.Windows.Forms.GroupBox();
             this.lblNextInfo8 = new System.Windows.Forms.Label();
@@ -108,6 +113,7 @@
             this.pcbNextMovie5 = new System.Windows.Forms.PictureBox();
             this.lblNextInfo5 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.sidebar.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -135,6 +141,10 @@
             this.grbMovie1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbMovie1)).BeginInit();
             this.pnlFilms.SuspendLayout();
+            this.g2Bar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pibMinimize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibMaximize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibCloseFrm)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.grbNextMovie8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbNextMovie8)).BeginInit();
@@ -187,7 +197,7 @@
             this.btnMenu.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnMenu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMenu.Image = global::ProyectoGreenSpace.Properties.Resources.menu_three_outlined_rounded_lines_symbol_icon_icons_com_73215;
-            this.btnMenu.Location = new System.Drawing.Point(9, 24);
+            this.btnMenu.Location = new System.Drawing.Point(9, 51);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.Size = new System.Drawing.Size(54, 53);
             this.btnMenu.TabIndex = 23;
@@ -201,7 +211,7 @@
             // 
             this.lblMenu.AutoSize = true;
             this.lblMenu.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMenu.Location = new System.Drawing.Point(85, 39);
+            this.lblMenu.Location = new System.Drawing.Point(85, 63);
             this.lblMenu.Name = "lblMenu";
             this.lblMenu.Size = new System.Drawing.Size(66, 23);
             this.lblMenu.TabIndex = 2;
@@ -424,7 +434,7 @@
             // 
             this.grbMovie8.Controls.Add(this.lblInfor8);
             this.grbMovie8.Controls.Add(this.pcbMovie8);
-            this.grbMovie8.Location = new System.Drawing.Point(753, 377);
+            this.grbMovie8.Location = new System.Drawing.Point(753, 434);
             this.grbMovie8.Name = "grbMovie8";
             this.grbMovie8.Size = new System.Drawing.Size(200, 260);
             this.grbMovie8.TabIndex = 38;
@@ -459,7 +469,7 @@
             this.grbMovie4.BackColor = System.Drawing.Color.White;
             this.grbMovie4.Controls.Add(this.pcbMovie4);
             this.grbMovie4.Controls.Add(this.lblInfor4);
-            this.grbMovie4.Location = new System.Drawing.Point(753, 75);
+            this.grbMovie4.Location = new System.Drawing.Point(753, 132);
             this.grbMovie4.Name = "grbMovie4";
             this.grbMovie4.Size = new System.Drawing.Size(200, 260);
             this.grbMovie4.TabIndex = 37;
@@ -493,7 +503,7 @@
             // 
             this.grbMovie7.Controls.Add(this.lblInfor7);
             this.grbMovie7.Controls.Add(this.pcbMovie7);
-            this.grbMovie7.Location = new System.Drawing.Point(525, 377);
+            this.grbMovie7.Location = new System.Drawing.Point(525, 434);
             this.grbMovie7.Name = "grbMovie7";
             this.grbMovie7.Size = new System.Drawing.Size(200, 260);
             this.grbMovie7.TabIndex = 36;
@@ -527,7 +537,7 @@
             // 
             this.grbMovie6.Controls.Add(this.pcbMovie6);
             this.grbMovie6.Controls.Add(this.lblInfor6);
-            this.grbMovie6.Location = new System.Drawing.Point(285, 377);
+            this.grbMovie6.Location = new System.Drawing.Point(285, 434);
             this.grbMovie6.Name = "grbMovie6";
             this.grbMovie6.Size = new System.Drawing.Size(200, 260);
             this.grbMovie6.TabIndex = 35;
@@ -562,7 +572,7 @@
             this.grbMovie5.BackColor = System.Drawing.Color.White;
             this.grbMovie5.Controls.Add(this.pcbMovie5);
             this.grbMovie5.Controls.Add(this.lblInfor5);
-            this.grbMovie5.Location = new System.Drawing.Point(43, 377);
+            this.grbMovie5.Location = new System.Drawing.Point(43, 434);
             this.grbMovie5.Name = "grbMovie5";
             this.grbMovie5.Size = new System.Drawing.Size(200, 260);
             this.grbMovie5.TabIndex = 34;
@@ -597,7 +607,7 @@
             this.grbMovie3.BackColor = System.Drawing.Color.White;
             this.grbMovie3.Controls.Add(this.pcbMovie3);
             this.grbMovie3.Controls.Add(this.lblInfor3);
-            this.grbMovie3.Location = new System.Drawing.Point(519, 75);
+            this.grbMovie3.Location = new System.Drawing.Point(519, 132);
             this.grbMovie3.Name = "grbMovie3";
             this.grbMovie3.Size = new System.Drawing.Size(200, 260);
             this.grbMovie3.TabIndex = 32;
@@ -632,7 +642,7 @@
             this.grbMovie2.BackColor = System.Drawing.Color.White;
             this.grbMovie2.Controls.Add(this.pcbMovie2);
             this.grbMovie2.Controls.Add(this.lblInfor2);
-            this.grbMovie2.Location = new System.Drawing.Point(285, 75);
+            this.grbMovie2.Location = new System.Drawing.Point(285, 132);
             this.grbMovie2.Name = "grbMovie2";
             this.grbMovie2.Size = new System.Drawing.Size(200, 260);
             this.grbMovie2.TabIndex = 33;
@@ -666,7 +676,7 @@
             // 
             this.grbMovie1.Controls.Add(this.lblInfor1);
             this.grbMovie1.Controls.Add(this.pcbMovie1);
-            this.grbMovie1.Location = new System.Drawing.Point(43, 75);
+            this.grbMovie1.Location = new System.Drawing.Point(43, 132);
             this.grbMovie1.Name = "grbMovie1";
             this.grbMovie1.Size = new System.Drawing.Size(200, 260);
             this.grbMovie1.TabIndex = 47;
@@ -707,7 +717,7 @@
             // 
             this.lblTitleMonth.AutoSize = true;
             this.lblTitleMonth.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitleMonth.Location = new System.Drawing.Point(237, 9);
+            this.lblTitleMonth.Location = new System.Drawing.Point(237, 66);
             this.lblTitleMonth.Name = "lblTitleMonth";
             this.lblTitleMonth.Size = new System.Drawing.Size(482, 34);
             this.lblTitleMonth.TabIndex = 30;
@@ -717,6 +727,7 @@
             // 
             this.pnlFilms.AutoScroll = true;
             this.pnlFilms.BackColor = System.Drawing.Color.White;
+            this.pnlFilms.Controls.Add(this.g2Bar);
             this.pnlFilms.Controls.Add(this.pictureBox1);
             this.pnlFilms.Controls.Add(this.grbNextMovie8);
             this.pnlFilms.Controls.Add(this.grbNextMovie1);
@@ -742,6 +753,71 @@
             this.pnlFilms.Size = new System.Drawing.Size(1039, 796);
             this.pnlFilms.TabIndex = 39;
             // 
+            // g2Bar
+            // 
+            this.g2Bar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.g2Bar.Controls.Add(this.g2lblTitle);
+            this.g2Bar.Controls.Add(this.pibMinimize);
+            this.g2Bar.Controls.Add(this.pibMaximize);
+            this.g2Bar.Controls.Add(this.pibCloseFrm);
+            this.g2Bar.Location = new System.Drawing.Point(0, -2);
+            this.g2Bar.Name = "g2Bar";
+            this.g2Bar.Size = new System.Drawing.Size(1039, 42);
+            this.g2Bar.TabIndex = 49;
+            // 
+            // g2lblTitle
+            // 
+            this.g2lblTitle.BackColor = System.Drawing.Color.Transparent;
+            this.g2lblTitle.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.g2lblTitle.Location = new System.Drawing.Point(13, 8);
+            this.g2lblTitle.Name = "g2lblTitle";
+            this.g2lblTitle.Size = new System.Drawing.Size(194, 25);
+            this.g2lblTitle.TabIndex = 36;
+            this.g2lblTitle.Text = "GREEN SPACE FILMS";
+            // 
+            // pibMinimize
+            // 
+            this.pibMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pibMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pibMinimize.Image = ((System.Drawing.Image)(resources.GetObject("pibMinimize.Image")));
+            this.pibMinimize.ImageRotate = 0F;
+            this.pibMinimize.Location = new System.Drawing.Point(906, 8);
+            this.pibMinimize.Name = "pibMinimize";
+            this.pibMinimize.Size = new System.Drawing.Size(35, 25);
+            this.pibMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pibMinimize.TabIndex = 35;
+            this.pibMinimize.TabStop = false;
+            this.pibMinimize.Click += new System.EventHandler(this.pibMinimize_Click);
+            // 
+            // pibMaximize
+            // 
+            this.pibMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pibMaximize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pibMaximize.Image = global::ProyectoGreenSpace.Properties.Resources.maximizar;
+            this.pibMaximize.ImageRotate = 0F;
+            this.pibMaximize.Location = new System.Drawing.Point(948, 8);
+            this.pibMaximize.Name = "pibMaximize";
+            this.pibMaximize.Size = new System.Drawing.Size(34, 25);
+            this.pibMaximize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pibMaximize.TabIndex = 34;
+            this.pibMaximize.TabStop = false;
+            this.pibMaximize.Click += new System.EventHandler(this.pibMaximize_Click);
+            // 
+            // pibCloseFrm
+            // 
+            this.pibCloseFrm.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pibCloseFrm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pibCloseFrm.Image = ((System.Drawing.Image)(resources.GetObject("pibCloseFrm.Image")));
+            this.pibCloseFrm.ImageRotate = 0F;
+            this.pibCloseFrm.Location = new System.Drawing.Point(987, 3);
+            this.pibCloseFrm.Name = "pibCloseFrm";
+            this.pibCloseFrm.Size = new System.Drawing.Size(39, 33);
+            this.pibCloseFrm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pibCloseFrm.TabIndex = 33;
+            this.pibCloseFrm.TabStop = false;
+            this.pibCloseFrm.Click += new System.EventHandler(this.pibCloseFrm_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(423, 1553);
@@ -755,7 +831,7 @@
             // 
             this.grbNextMovie8.Controls.Add(this.lblNextInfo8);
             this.grbNextMovie8.Controls.Add(this.pcbNextMovie8);
-            this.grbNextMovie8.Location = new System.Drawing.Point(753, 1015);
+            this.grbNextMovie8.Location = new System.Drawing.Point(747, 1134);
             this.grbNextMovie8.Name = "grbNextMovie8";
             this.grbNextMovie8.Size = new System.Drawing.Size(200, 260);
             this.grbNextMovie8.TabIndex = 45;
@@ -789,7 +865,7 @@
             this.grbNextMovie1.BackColor = System.Drawing.Color.White;
             this.grbNextMovie1.Controls.Add(this.pcbNextMovie1);
             this.grbNextMovie1.Controls.Add(this.lblNextInfo1);
-            this.grbNextMovie1.Location = new System.Drawing.Point(43, 708);
+            this.grbNextMovie1.Location = new System.Drawing.Point(37, 827);
             this.grbNextMovie1.Name = "grbNextMovie1";
             this.grbNextMovie1.Size = new System.Drawing.Size(200, 260);
             this.grbNextMovie1.TabIndex = 38;
@@ -823,7 +899,7 @@
             this.grbNextMovie4.BackColor = System.Drawing.Color.White;
             this.grbNextMovie4.Controls.Add(this.pcbNextMovie4);
             this.grbNextMovie4.Controls.Add(this.lblNextInfo4);
-            this.grbNextMovie4.Location = new System.Drawing.Point(753, 705);
+            this.grbNextMovie4.Location = new System.Drawing.Point(747, 824);
             this.grbNextMovie4.Name = "grbNextMovie4";
             this.grbNextMovie4.Size = new System.Drawing.Size(200, 260);
             this.grbNextMovie4.TabIndex = 41;
@@ -856,7 +932,7 @@
             // 
             this.grbNextMovie7.Controls.Add(this.lblNextInfo7);
             this.grbNextMovie7.Controls.Add(this.pcbNextMovie7);
-            this.grbNextMovie7.Location = new System.Drawing.Point(519, 1015);
+            this.grbNextMovie7.Location = new System.Drawing.Point(513, 1134);
             this.grbNextMovie7.Name = "grbNextMovie7";
             this.grbNextMovie7.Size = new System.Drawing.Size(200, 260);
             this.grbNextMovie7.TabIndex = 44;
@@ -889,7 +965,7 @@
             // 
             this.lblTitleNextMonth.AutoSize = true;
             this.lblTitleNextMonth.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitleNextMonth.Location = new System.Drawing.Point(211, 665);
+            this.lblTitleNextMonth.Location = new System.Drawing.Point(205, 763);
             this.lblTitleNextMonth.Name = "lblTitleNextMonth";
             this.lblTitleNextMonth.Size = new System.Drawing.Size(634, 34);
             this.lblTitleNextMonth.TabIndex = 40;
@@ -900,7 +976,7 @@
             this.grbNextMovie2.BackColor = System.Drawing.Color.White;
             this.grbNextMovie2.Controls.Add(this.pcbNextMovie2);
             this.grbNextMovie2.Controls.Add(this.lbNextlInfo2);
-            this.grbNextMovie2.Location = new System.Drawing.Point(285, 708);
+            this.grbNextMovie2.Location = new System.Drawing.Point(279, 827);
             this.grbNextMovie2.Name = "grbNextMovie2";
             this.grbNextMovie2.Size = new System.Drawing.Size(200, 260);
             this.grbNextMovie2.TabIndex = 40;
@@ -933,7 +1009,7 @@
             // 
             this.grbNextMovie6.Controls.Add(this.pcbNextMovie6);
             this.grbNextMovie6.Controls.Add(this.lblNextInfo6);
-            this.grbNextMovie6.Location = new System.Drawing.Point(285, 1015);
+            this.grbNextMovie6.Location = new System.Drawing.Point(279, 1134);
             this.grbNextMovie6.Name = "grbNextMovie6";
             this.grbNextMovie6.Size = new System.Drawing.Size(200, 260);
             this.grbNextMovie6.TabIndex = 43;
@@ -967,7 +1043,7 @@
             this.grbNextMovie3.BackColor = System.Drawing.Color.White;
             this.grbNextMovie3.Controls.Add(this.pcbNextMovie3);
             this.grbNextMovie3.Controls.Add(this.lblNextInfo3);
-            this.grbNextMovie3.Location = new System.Drawing.Point(519, 705);
+            this.grbNextMovie3.Location = new System.Drawing.Point(513, 824);
             this.grbNextMovie3.Name = "grbNextMovie3";
             this.grbNextMovie3.Size = new System.Drawing.Size(200, 260);
             this.grbNextMovie3.TabIndex = 39;
@@ -1001,7 +1077,7 @@
             this.grbNextMovie5.BackColor = System.Drawing.Color.White;
             this.grbNextMovie5.Controls.Add(this.pcbNextMovie5);
             this.grbNextMovie5.Controls.Add(this.lblNextInfo5);
-            this.grbNextMovie5.Location = new System.Drawing.Point(43, 1015);
+            this.grbNextMovie5.Location = new System.Drawing.Point(37, 1134);
             this.grbNextMovie5.Name = "grbNextMovie5";
             this.grbNextMovie5.Size = new System.Drawing.Size(200, 260);
             this.grbNextMovie5.TabIndex = 42;
@@ -1040,6 +1116,12 @@
             this.pictureBox2.TabIndex = 10;
             this.pictureBox2.TabStop = false;
             // 
+            // guna2DragControl1
+            // 
+            this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl1.TargetControl = this.g2Bar;
+            this.guna2DragControl1.UseTransparentDrag = true;
+            // 
             // FrmFilms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1047,6 +1129,7 @@
             this.ClientSize = new System.Drawing.Size(1281, 796);
             this.Controls.Add(this.pnlFilms);
             this.Controls.Add(this.sidebar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmFilms";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GREEN SPACE FILMS (Página principal)";
@@ -1089,6 +1172,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pcbMovie1)).EndInit();
             this.pnlFilms.ResumeLayout(false);
             this.pnlFilms.PerformLayout();
+            this.g2Bar.ResumeLayout(false);
+            this.g2Bar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pibMinimize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibMaximize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibCloseFrm)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.grbNextMovie8.ResumeLayout(false);
             this.grbNextMovie8.PerformLayout();
@@ -1199,5 +1287,11 @@
         private System.Windows.Forms.PictureBox pcbMovie1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pibClose;
+        private Guna.UI2.WinForms.Guna2Panel g2Bar;
+        private Guna.UI2.WinForms.Guna2HtmlLabel g2lblTitle;
+        private Guna.UI2.WinForms.Guna2PictureBox pibMinimize;
+        private Guna.UI2.WinForms.Guna2PictureBox pibMaximize;
+        private Guna.UI2.WinForms.Guna2PictureBox pibCloseFrm;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
     }
 }
