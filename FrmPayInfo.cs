@@ -1,4 +1,5 @@
-﻿using ProyectoGreenSpace.LangResources;
+﻿using ProyectoGreenSpace.Classes;
+using ProyectoGreenSpace.LangResources;
 using System;
 using System.Drawing;
 using System.Windows.Forms;
@@ -7,11 +8,19 @@ namespace ProyectoGreenSpace
 {
     public partial class FrmPayInfo : Form
     {
-        public FrmPayInfo()
+        private Ticket ticket;
+        private Seats seats;
+        private int seatsSelected;
+
+        public FrmPayInfo(int sessionId, Bitmap seatsStatus, int seatsSelected)
         {
             InitializeComponent();
             grpInfo.BackColor = Color.FromArgb(168, 228, 116);
-            nudSeat.BackColor = Color.FromArgb(168, 228, 116);
+
+            this.seatsSelected = seatsSelected;
+            this.seats = new Seats(sessionId, Seats.CreateSeatsArrayFromBitmap(seatsStatus));
+            this.ticket = CreateTicket(Session.ObtainSession(sessionId), this.seatsSelected);
+            LoadTicketInfo(this.ticket);
         }
 
         private void ApplyLanguage()
@@ -22,12 +31,49 @@ namespace ProyectoGreenSpace
             lblName.Text = StringResources.labelName;
             lblShedule.Text = StringResources.labelSchedule;
             lblDuration.Text = StringResources.labelDuration;
-            lblTickets.Text = StringResources.labelTickets;
-            lblSeating.Text = StringResources.labelSeating;
+            lblSeats.Text = StringResources.labelTickets;
             lblDiscounts.Text = StringResources.labelDiscounts;
             lblDiscount.Text = StringResources.labelDiscount;
             lblTotal.Text = StringResources.labelTotal;
             lblTotalApplied.Text = StringResources.labelTotalApplied;
+        }
+
+        private Ticket CreateTicket(Session session, int seatsSelected)
+        {
+            Film film = session.getFilm();
+            Room room = session.getRoom();
+
+            ticket = new Ticket(
+                UserSession.Id,
+                film.Id,
+                room.Id,
+                DateTime.Now,
+                DateTime.Now,
+                session.StartHour,
+                seatsSelected,
+                film.Price,
+                Ticket.AmountDiscount(seatsSelected)
+            );
+
+            return ticket;
+        }
+
+        private void LoadTicketInfo(Ticket ticket)
+        {
+            Film film = ticket.getFilm();
+            Room room = ticket.getRoom();
+
+            txtMovie.Text = film.Name;
+            txtTypeHall.Text = room.Type;
+            txtName.Text = UserSession.Username;
+            txtShedule.Text = ticket.HourFilm.ToString();
+            txtDuration.Text = film.Duration.ToString();
+            txtSeats.Text = ticket.Quantity.ToString();
+            txtDiscounts.Text = $"{ticket.Discount} %";
+
+            lblTotalImport.Text = $"{ticket.TotalPriceWithoutDiscount():N} €";
+            lblDiscountImport.Text = $"{ticket.PriceDiscounted():N} €";
+            lblTotalImportApplied.Text = $"{ticket.TotalPrice():N} €";
         }
 
         private void FrmPayInfo_Load(object sender, EventArgs e)
@@ -54,6 +100,10 @@ namespace ProyectoGreenSpace
 
         private void btnPay_Click(object sender, EventArgs e)
         {
+            ticket.Create();
+
+            Session.ObtainSession(seats.SessionId).OccupySeats(seatsSelected);
+            seats.UploadSeatsStatus();
         }
 
         #region Diseño de barra minimizadora

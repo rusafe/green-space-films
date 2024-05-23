@@ -34,23 +34,21 @@
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnPay = new System.Windows.Forms.Button();
             this.lblTotalApplied = new System.Windows.Forms.Label();
-            this.TotalImportApplied = new System.Windows.Forms.Label();
+            this.lblTotalImportApplied = new System.Windows.Forms.Label();
             this.lblDiscount = new System.Windows.Forms.Label();
             this.lblDiscountImport = new System.Windows.Forms.Label();
             this.lblTotalImport = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
             this.grpInfo = new System.Windows.Forms.GroupBox();
-            this.nudSeat = new System.Windows.Forms.NumericUpDown();
             this.txtDiscounts = new System.Windows.Forms.TextBox();
             this.txtTypeHall = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
             this.txtShedule = new System.Windows.Forms.TextBox();
             this.txtDuration = new System.Windows.Forms.TextBox();
-            this.txtTickets = new System.Windows.Forms.TextBox();
+            this.txtSeats = new System.Windows.Forms.TextBox();
             this.txtMovie = new System.Windows.Forms.TextBox();
-            this.lblSeating = new System.Windows.Forms.Label();
             this.lblDiscounts = new System.Windows.Forms.Label();
-            this.lblTickets = new System.Windows.Forms.Label();
+            this.lblSeats = new System.Windows.Forms.Label();
             this.lblDuration = new System.Windows.Forms.Label();
             this.lblShedule = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
@@ -65,7 +63,6 @@
             this.pibClose = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.grpInfo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudSeat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctMovie)).BeginInit();
             this.g2Bar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pibMinimize)).BeginInit();
@@ -119,16 +116,16 @@
             this.lblTotalApplied.TabIndex = 50;
             this.lblTotalApplied.Text = "TOTAL APLICADO:";
             // 
-            // TotalImportApplied
+            // lblTotalImportApplied
             // 
-            this.TotalImportApplied.AutoSize = true;
-            this.TotalImportApplied.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalImportApplied.Location = new System.Drawing.Point(1135, 549);
-            this.TotalImportApplied.Name = "TotalImportApplied";
-            this.TotalImportApplied.Size = new System.Drawing.Size(21, 23);
-            this.TotalImportApplied.TabIndex = 49;
-            this.TotalImportApplied.Text = "€";
-            this.TotalImportApplied.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lblTotalImportApplied.AutoSize = true;
+            this.lblTotalImportApplied.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalImportApplied.Location = new System.Drawing.Point(1135, 549);
+            this.lblTotalImportApplied.Name = "lblTotalImportApplied";
+            this.lblTotalImportApplied.Size = new System.Drawing.Size(21, 23);
+            this.lblTotalImportApplied.TabIndex = 49;
+            this.lblTotalImportApplied.Text = "€";
+            this.lblTotalImportApplied.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // lblDiscount
             // 
@@ -174,17 +171,15 @@
             // 
             // grpInfo
             // 
-            this.grpInfo.Controls.Add(this.nudSeat);
             this.grpInfo.Controls.Add(this.txtDiscounts);
             this.grpInfo.Controls.Add(this.txtTypeHall);
-            this.grpInfo.Controls.Add(this.textBox1);
+            this.grpInfo.Controls.Add(this.txtName);
             this.grpInfo.Controls.Add(this.txtShedule);
             this.grpInfo.Controls.Add(this.txtDuration);
-            this.grpInfo.Controls.Add(this.txtTickets);
+            this.grpInfo.Controls.Add(this.txtSeats);
             this.grpInfo.Controls.Add(this.txtMovie);
-            this.grpInfo.Controls.Add(this.lblSeating);
             this.grpInfo.Controls.Add(this.lblDiscounts);
-            this.grpInfo.Controls.Add(this.lblTickets);
+            this.grpInfo.Controls.Add(this.lblSeats);
             this.grpInfo.Controls.Add(this.lblDuration);
             this.grpInfo.Controls.Add(this.lblShedule);
             this.grpInfo.Controls.Add(this.lblName);
@@ -197,24 +192,6 @@
             this.grpInfo.Size = new System.Drawing.Size(631, 395);
             this.grpInfo.TabIndex = 44;
             this.grpInfo.TabStop = false;
-            // 
-            // nudSeat
-            // 
-            this.nudSeat.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudSeat.Location = new System.Drawing.Point(485, 340);
-            this.nudSeat.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.nudSeat.Name = "nudSeat";
-            this.nudSeat.Size = new System.Drawing.Size(120, 36);
-            this.nudSeat.TabIndex = 34;
-            this.nudSeat.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
             // 
             // txtDiscounts
             // 
@@ -236,15 +213,15 @@
             this.txtTypeHall.Size = new System.Drawing.Size(193, 43);
             this.txtTypeHall.TabIndex = 32;
             // 
-            // textBox1
+            // txtName
             // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(17, 225);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(170, 43);
-            this.textBox1.TabIndex = 31;
+            this.txtName.BackColor = System.Drawing.Color.White;
+            this.txtName.Enabled = false;
+            this.txtName.Location = new System.Drawing.Point(17, 225);
+            this.txtName.Multiline = true;
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(170, 43);
+            this.txtName.TabIndex = 31;
             // 
             // txtShedule
             // 
@@ -266,15 +243,15 @@
             this.txtDuration.Size = new System.Drawing.Size(93, 43);
             this.txtDuration.TabIndex = 29;
             // 
-            // txtTickets
+            // txtSeats
             // 
-            this.txtTickets.BackColor = System.Drawing.Color.White;
-            this.txtTickets.Enabled = false;
-            this.txtTickets.Location = new System.Drawing.Point(524, 221);
-            this.txtTickets.Multiline = true;
-            this.txtTickets.Name = "txtTickets";
-            this.txtTickets.Size = new System.Drawing.Size(81, 43);
-            this.txtTickets.TabIndex = 28;
+            this.txtSeats.BackColor = System.Drawing.Color.White;
+            this.txtSeats.Enabled = false;
+            this.txtSeats.Location = new System.Drawing.Point(524, 221);
+            this.txtSeats.Multiline = true;
+            this.txtSeats.Name = "txtSeats";
+            this.txtSeats.Size = new System.Drawing.Size(81, 43);
+            this.txtSeats.TabIndex = 28;
             // 
             // txtMovie
             // 
@@ -285,16 +262,6 @@
             this.txtMovie.Name = "txtMovie";
             this.txtMovie.Size = new System.Drawing.Size(294, 43);
             this.txtMovie.TabIndex = 27;
-            // 
-            // lblSeating
-            // 
-            this.lblSeating.AutoSize = true;
-            this.lblSeating.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSeating.Location = new System.Drawing.Point(481, 307);
-            this.lblSeating.Name = "lblSeating";
-            this.lblSeating.Size = new System.Drawing.Size(99, 23);
-            this.lblSeating.TabIndex = 26;
-            this.lblSeating.Text = "BUTACAS";
             // 
             // lblDiscounts
             // 
@@ -307,16 +274,16 @@
             this.lblDiscounts.TabIndex = 25;
             this.lblDiscounts.Text = "DESCUENTOS";
             // 
-            // lblTickets
+            // lblSeats
             // 
-            this.lblTickets.AutoSize = true;
-            this.lblTickets.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTickets.ForeColor = System.Drawing.Color.White;
-            this.lblTickets.Location = new System.Drawing.Point(525, 195);
-            this.lblTickets.Name = "lblTickets";
-            this.lblTickets.Size = new System.Drawing.Size(80, 23);
-            this.lblTickets.TabIndex = 24;
-            this.lblTickets.Text = "TICKETS";
+            this.lblSeats.AutoSize = true;
+            this.lblSeats.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSeats.ForeColor = System.Drawing.Color.White;
+            this.lblSeats.Location = new System.Drawing.Point(525, 195);
+            this.lblSeats.Name = "lblSeats";
+            this.lblSeats.Size = new System.Drawing.Size(63, 23);
+            this.lblSeats.TabIndex = 24;
+            this.lblSeats.Text = "SEATS";
             // 
             // lblDuration
             // 
@@ -474,7 +441,7 @@
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnPay);
             this.Controls.Add(this.lblTotalApplied);
-            this.Controls.Add(this.TotalImportApplied);
+            this.Controls.Add(this.lblTotalImportApplied);
             this.Controls.Add(this.lblDiscount);
             this.Controls.Add(this.lblDiscountImport);
             this.Controls.Add(this.lblTotalImport);
@@ -488,7 +455,6 @@
             this.Load += new System.EventHandler(this.FrmPayInfo_Load);
             this.grpInfo.ResumeLayout(false);
             this.grpInfo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudSeat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctMovie)).EndInit();
             this.g2Bar.ResumeLayout(false);
             this.g2Bar.PerformLayout();
@@ -506,7 +472,7 @@
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnPay;
         private System.Windows.Forms.Label lblTotalApplied;
-        private System.Windows.Forms.Label TotalImportApplied;
+        private System.Windows.Forms.Label lblTotalImportApplied;
         private System.Windows.Forms.Label lblDiscount;
         private System.Windows.Forms.Label lblDiscountImport;
         private System.Windows.Forms.Label lblTotalImport;
@@ -514,14 +480,13 @@
         private System.Windows.Forms.GroupBox grpInfo;
         private System.Windows.Forms.TextBox txtDiscounts;
         private System.Windows.Forms.TextBox txtTypeHall;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.TextBox txtShedule;
         private System.Windows.Forms.TextBox txtDuration;
-        private System.Windows.Forms.TextBox txtTickets;
+        private System.Windows.Forms.TextBox txtSeats;
         private System.Windows.Forms.TextBox txtMovie;
-        private System.Windows.Forms.Label lblSeating;
         private System.Windows.Forms.Label lblDiscounts;
-        private System.Windows.Forms.Label lblTickets;
+        private System.Windows.Forms.Label lblSeats;
         private System.Windows.Forms.Label lblDuration;
         private System.Windows.Forms.Label lblShedule;
         private System.Windows.Forms.Label lblName;
@@ -529,7 +494,6 @@
         private System.Windows.Forms.Label lblMovie;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.PictureBox pctMovie;
-        private System.Windows.Forms.NumericUpDown nudSeat;
         private Guna.UI2.WinForms.Guna2Panel g2Bar;
         private Guna.UI2.WinForms.Guna2HtmlLabel g2lblTitle;
         private Guna.UI2.WinForms.Guna2PictureBox pibMinimize;

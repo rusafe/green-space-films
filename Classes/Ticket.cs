@@ -101,6 +101,7 @@ namespace ProyectoGreenSpace.Classes
             command.Parameters.AddWithValue("@dateBought", dateBought);
             command.Parameters.AddWithValue("@dateFilm", dateFilm);
             command.Parameters.AddWithValue("@hourFilm", hourFilm);
+            command.Parameters.AddWithValue("@quantity", quantity);
             command.Parameters.AddWithValue("@individualPrice", individualPrice);
             command.Parameters.AddWithValue("@discount", discount);
 
@@ -159,14 +160,17 @@ namespace ProyectoGreenSpace.Classes
 
         public double TotalPrice()
         {
-            double price = TotalPriceWithoutDiscount();
-
-            return price - (price / DiscountDivided());
+            return TotalPriceWithoutDiscount() - PriceDiscounted();
+        }
+        
+        public double PriceDiscounted()
+        {
+            return TotalPriceWithoutDiscount() * DiscountDivided();
         }
 
         public double DiscountDivided()
         {
-            return discount / 100;
+            return discount / 100d;
         }
 
         /// <summary>
@@ -367,7 +371,7 @@ namespace ProyectoGreenSpace.Classes
         /// <returns>Porcentaje / 100 de descuento</returns>
         public static double DiscountDivided(int amountTickets)
         {
-            return AmountDiscount(amountTickets) / 100;
+            return AmountDiscount(amountTickets) / 100d;
         }
 
         /// <summary>

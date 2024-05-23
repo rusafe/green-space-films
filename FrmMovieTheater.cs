@@ -197,13 +197,6 @@ namespace ProyectoGreenSpace
             AccessSelectSeats(Convert.ToInt32(lblSessionId5.Text));
         }
 
-        private void AccessPayInfo()
-        {
-            FrmPayInfo frmPayInfo = new FrmPayInfo();
-            frmPayInfo.Show();
-            this.Close();
-        }
-
         private void btnTicketOffice_Click_1(object sender, EventArgs e)
         {
             AccessFilms();

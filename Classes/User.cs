@@ -154,7 +154,7 @@ namespace ProyectoGreenSpace
                         reader["username"].ToString(),
                         reader["password"].ToString(),
                         reader["mail"].ToString(),
-                        ImagesDB.BytesToImage((byte[])reader["pfp"]),
+                        reader.GetSafeImage(5),
                         Convert.ToBoolean(reader["admin"])
                     );
                 }

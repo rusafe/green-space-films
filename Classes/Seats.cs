@@ -20,11 +20,18 @@ namespace ProyectoGreenSpace.Classes
         private int sessionId;
 
         public Seat[,] SeatsArray { get { return seatsArray; } }
+        public int SessionId { get { return sessionId; } }
 
         public Seats(int sessionId)
         {
             this.sessionId = sessionId;
             LoadSeatsArray();
+        }
+
+        public Seats(int sessionId, Seat[,] seatsArray)
+        {
+            this.sessionId = sessionId;
+            this.seatsArray = seatsArray;
         }
 
         public Seat getSeat(int rowIndex, int colIndex)
@@ -39,8 +46,6 @@ namespace ProyectoGreenSpace.Classes
             MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
             command.Parameters.AddWithValue("@sessionId", sessionId);
             command.Parameters.AddWithValue("@seatsStatus", ImagesDB.BitmapToBytes(CreateSeatsStatusImage()));
-
-            Session.ObtainSession(sessionId).OccupySeats(AmountSelected());
 
             ConnectionBD.OpenConnection();
 
@@ -69,6 +74,23 @@ namespace ProyectoGreenSpace.Classes
             return amount;
         }
 
+        public Bitmap CreateSeatsStatusImage()
+        {
+            Bitmap seatsStatus = new Bitmap(SEATS_COL, SEATS_ROW);
+
+            for (int y = 0; y < seatsArray.GetLength(0); y++)
+            {
+                for (int x = 0; x < seatsArray.GetLength(1); x++)
+                {
+                    Color seatColor = seatsArray[y, x].Selected || seatsArray[y, x].Occupied ? Color.Red : Color.Green;
+
+                    seatsStatus.SetPixel(x, y, seatColor);
+                }
+            }
+
+            return seatsStatus;
+        }
+
         public static Bitmap CreateDefaultSeatsStatus()
         {
             Bitmap seatsStatus = new Bitmap(SEATS_COL, SEATS_ROW);
@@ -84,9 +106,9 @@ namespace ProyectoGreenSpace.Classes
             return seatsStatus;
         }
 
-        private void LoadSeatsArray()
+        public static Seat[,] CreateSeatsArrayFromBitmap(Bitmap seatsStatus)
         {
-            Bitmap seatsStatus = ObtainSessionImage();
+            Seat[,] seats = new Seat[SEATS_ROW, SEATS_COL];
 
             for (int y = 0; y < seatsStatus.Height; y++)
             {
@@ -94,9 +116,16 @@ namespace ProyectoGreenSpace.Classes
                 {
                     Color seatColor = seatsStatus.GetPixel(x, y);
 
-                    seatsArray[y, x] = new Seat(seatColor.R == 255);
+                    seats[y, x] = new Seat(seatColor.R == 255);
                 }
             }
+
+            return seats;
+        }
+
+        private void LoadSeatsArray()
+        {
+            seatsArray = CreateSeatsArrayFromBitmap(ObtainSessionImage());
         }
 
         private Bitmap ObtainSessionImage()
@@ -111,23 +140,6 @@ namespace ProyectoGreenSpace.Classes
             Bitmap seatsStatus = ImagesDB.BytesToBitmap((byte[])command.ExecuteScalar());
 
             ConnectionBD.CloseConnection();
-
-            return seatsStatus;
-        }
-
-        private Bitmap CreateSeatsStatusImage()
-        {
-            Bitmap seatsStatus = new Bitmap(SEATS_COL, SEATS_ROW);
-
-            for (int y = 0; y < seatsArray.GetLength(0); y++)
-            {
-                for (int x = 0; x < seatsArray.GetLength(1); x++)
-                {
-                    Color seatColor = seatsArray[y, x].Selected || seatsArray[y, x].Occupied ? Color.Red : Color.Green;
-
-                    seatsStatus.SetPixel(x, y, seatColor);
-                }
-            }
 
             return seatsStatus;
         }

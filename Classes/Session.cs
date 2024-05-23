@@ -23,6 +23,8 @@ namespace ProyectoGreenSpace.Classes
         private int occupiedSeats;
 
         public int Id { get { return id; } }
+        public int FilmId { get { return filmId; } }
+        public int RoomId { get { return roomId; } }
         public TimeSpan StartHour { get { return startHour; } }
         public int TotalSeats { get { return totalSeats; } }
         public int OccupiedSeats { get { return occupiedSeats; } }

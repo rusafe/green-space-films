@@ -26,13 +26,13 @@ namespace ProyectoGreenSpace
 
         private void LoadSeatsPictures()
         {
-            for (int i = 0; i < seats.SeatsArray.GetLength(0); i++)
+            for (int y = 0; y < seats.SeatsArray.GetLength(0); y++)
             {
-                for (int j = 0; j < seats.SeatsArray.GetLength(1); j++)
+                for (int x = 0; x < seats.SeatsArray.GetLength(1); x++)
                 {
-                    PictureBox pcbSeat = (PictureBox)this.Controls.Find($"pictureBox{i}{j + 1}", true)[0];
+                    PictureBox pcbSeat = (PictureBox)this.Controls.Find($"pictureBox{y}{x + 1}", true)[0];
 
-                    pcbSeat.Image = seats.SeatOccupied(i, j) ? Resources.seat_red : Resources.seat_green;
+                    pcbSeat.Image = seats.SeatOccupied(y, x) ? Resources.seat_red : Resources.seat_green;
                 }
             }
         }
@@ -105,7 +105,9 @@ namespace ProyectoGreenSpace
 
         private void button1_Click(object sender, EventArgs e)
         {
-            seats.UploadSeatsStatus();
+            FrmPayInfo frmPayInfo = new FrmPayInfo(seats.SessionId, seats.CreateSeatsStatusImage(), seats.AmountSelected());
+            frmPayInfo.Show();
+            this.Close();
         }
     }
 }

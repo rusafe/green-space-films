@@ -60,12 +60,12 @@ namespace ProyectoGreenSpace
                     $"Sala {room.Id}",
                     user.Username,
                     film.Name,
-                    ticket.HourFilm,
                     ticket.DateFilm.ToShortDateString(),
+                    ticket.HourFilm,
                     film.Duration,
                     ticket.Quantity,
-                    ticket.IndividualPrice,
-                    ticket.Discount,
+                    ticket.TotalPriceWithoutDiscount(),
+                    $"{ticket.Discount} %",
                     ticket.TotalPrice()
                 );
             }
