@@ -405,5 +405,32 @@
   <ItemGroup>
     <None Include="Resources\close %281%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ladder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ladder %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lineReverse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spotlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\line %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\door.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-door-opened.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
