@@ -12,9 +12,9 @@ namespace ProyectoGreenSpace.Classes
 {
     internal class Seats
     {
-        public const int SEATS_PER_SESSION = 8;
-        public const int SEATS_ROW = 2;
-        public const int SEATS_COL = 4;
+        public const int SEATS_PER_SESSION = 36;
+        public const int SEATS_ROW = 4;
+        public const int SEATS_COL = 9;
 
         private Seat[,] seatsArray = new Seat[SEATS_ROW, SEATS_COL];
         private int sessionId;
