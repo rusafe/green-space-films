@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmUser));
             this.btnAccount = new System.Windows.Forms.Button();
             this.btnAdmin = new System.Windows.Forms.Button();
@@ -47,6 +48,7 @@
             this.pibMinimize = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pibMaximize = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pibClose = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictBoxPhotoPerfil)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictBoxIcono)).BeginInit();
             this.g2Bar.SuspendLayout();
@@ -179,7 +181,7 @@
             // pictBoxIcono
             // 
             this.pictBoxIcono.BackColor = System.Drawing.Color.Transparent;
-            this.pictBoxIcono.Image = ((System.Drawing.Image)(resources.GetObject("pictBoxIcono.Image")));
+            this.pictBoxIcono.Image = global::ProyectoGreenSpace.Properties.Resources.logo1;
             this.pictBoxIcono.Location = new System.Drawing.Point(27, 407);
             this.pictBoxIcono.Name = "pictBoxIcono";
             this.pictBoxIcono.Size = new System.Drawing.Size(207, 172);
@@ -274,6 +276,12 @@
             this.pibClose.TabStop = false;
             this.pibClose.Click += new System.EventHandler(this.pibClose_Click);
             // 
+            // guna2DragControl1
+            // 
+            this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl1.TargetControl = this.g2Bar;
+            this.guna2DragControl1.UseTransparentDrag = true;
+            // 
             // FrmUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -330,5 +338,6 @@
         private Guna.UI2.WinForms.Guna2PictureBox pibMinimize;
         private Guna.UI2.WinForms.Guna2PictureBox pibMaximize;
         private Guna.UI2.WinForms.Guna2PictureBox pibClose;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
     }
 }
