@@ -424,7 +424,7 @@
             this.g2Bar.Controls.Add(this.pibCloseFrm);
             this.g2Bar.Location = new System.Drawing.Point(0, 0);
             this.g2Bar.Name = "g2Bar";
-            this.g2Bar.Size = new System.Drawing.Size(1125, 42);
+            this.g2Bar.Size = new System.Drawing.Size(1104, 42);
             this.g2Bar.TabIndex = 65;
             // 
             // g2lblTitle
@@ -443,7 +443,7 @@
             this.pibMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pibMinimize.Image = ((System.Drawing.Image)(resources.GetObject("pibMinimize.Image")));
             this.pibMinimize.ImageRotate = 0F;
-            this.pibMinimize.Location = new System.Drawing.Point(992, 8);
+            this.pibMinimize.Location = new System.Drawing.Point(971, 8);
             this.pibMinimize.Name = "pibMinimize";
             this.pibMinimize.Size = new System.Drawing.Size(35, 25);
             this.pibMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -457,7 +457,7 @@
             this.pibMaximize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pibMaximize.Image = global::ProyectoGreenSpace.Properties.Resources.maximizar;
             this.pibMaximize.ImageRotate = 0F;
-            this.pibMaximize.Location = new System.Drawing.Point(1034, 8);
+            this.pibMaximize.Location = new System.Drawing.Point(1013, 8);
             this.pibMaximize.Name = "pibMaximize";
             this.pibMaximize.Size = new System.Drawing.Size(34, 25);
             this.pibMaximize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -471,7 +471,7 @@
             this.pibCloseFrm.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pibCloseFrm.Image = ((System.Drawing.Image)(resources.GetObject("pibCloseFrm.Image")));
             this.pibCloseFrm.ImageRotate = 0F;
-            this.pibCloseFrm.Location = new System.Drawing.Point(1073, 3);
+            this.pibCloseFrm.Location = new System.Drawing.Point(1052, 3);
             this.pibCloseFrm.Name = "pibCloseFrm";
             this.pibCloseFrm.Size = new System.Drawing.Size(39, 33);
             this.pibCloseFrm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -495,6 +495,7 @@
             this.grpReview4.Size = new System.Drawing.Size(928, 327);
             this.grpReview4.TabIndex = 64;
             this.grpReview4.TabStop = false;
+            this.grpReview4.Visible = false;
             // 
             // pictureBox5
             // 
@@ -586,6 +587,7 @@
             this.grpReview3.Size = new System.Drawing.Size(928, 317);
             this.grpReview3.TabIndex = 63;
             this.grpReview3.TabStop = false;
+            this.grpReview3.Visible = false;
             // 
             // pictureBox4
             // 
@@ -736,6 +738,7 @@
             this.grpReview1.Size = new System.Drawing.Size(928, 317);
             this.grpReview1.TabIndex = 61;
             this.grpReview1.TabStop = false;
+            this.grpReview1.Visible = false;
             // 
             // pctStarsReview1
             // 
@@ -827,6 +830,7 @@
             this.grpReview2.Size = new System.Drawing.Size(928, 314);
             this.grpReview2.TabIndex = 62;
             this.grpReview2.TabStop = false;
+            this.grpReview2.Visible = false;
             // 
             // pictureBox3
             // 

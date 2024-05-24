@@ -85,7 +85,7 @@ namespace ProyectoGreenSpace.Classes
         /// </summary>
         /// <param name="filmId">El ID de la pelicula</param>
         /// <returns>Lista con las reseñas</returns>
-        public List<Review> ObtainReviews(int filmId)
+        public static List<Review> ObtainReviews(int filmId)
         {
             List<Review> reviews = new List<Review>();
 
@@ -122,7 +122,7 @@ namespace ProyectoGreenSpace.Classes
         /// <param name="filmId">El ID de la pelicula</param>
         /// <param name="maxReviews">Cantidad máxima de reseñas</param>
         /// <returns>Lista con las reseñas</returns>
-        public List<Review> ObtainReviews(int filmId, int maxReviews)
+        public static List<Review> ObtainReviews(int filmId, int maxReviews)
         {
             List<Review> reviews = new List<Review>();
 
