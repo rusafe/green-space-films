@@ -43,12 +43,23 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.btnWriteReview = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.pibClose = new System.Windows.Forms.PictureBox();
+            this.lblLogOut = new System.Windows.Forms.Label();
+            this.txtJoinApp = new System.Windows.Forms.TextBox();
+            this.lblJoinApp = new System.Windows.Forms.Label();
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.lblUsername = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.btnUser = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.btnSettings = new System.Windows.Forms.Button();
             this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
             this.pnlReviews = new System.Windows.Forms.Panel();
+            this.g2Bar = new Guna.UI2.WinForms.Guna2Panel();
+            this.g2lblTitle = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.pibMinimize = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.pibMaximize = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pctSpace = new System.Windows.Forms.PictureBox();
             this.grpReview = new System.Windows.Forms.GroupBox();
             this.btnReset = new System.Windows.Forms.Button();
@@ -71,12 +82,7 @@
             this.cklStars = new System.Windows.Forms.CheckedListBox();
             this.lblTitleReview = new System.Windows.Forms.Label();
             this.rtxReview1 = new System.Windows.Forms.RichTextBox();
-            this.pibClose = new System.Windows.Forms.PictureBox();
-            this.lblLogOut = new System.Windows.Forms.Label();
-            this.txtJoinApp = new System.Windows.Forms.TextBox();
-            this.lblJoinApp = new System.Windows.Forms.Label();
-            this.txtUsername = new System.Windows.Forms.TextBox();
-            this.lblUsername = new System.Windows.Forms.Label();
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.sidebar.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -84,9 +90,14 @@
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pibClose)).BeginInit();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
             this.pnlReviews.SuspendLayout();
+            this.g2Bar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pibMinimize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibMaximize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctSpace)).BeginInit();
             this.grpReview.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctStar15)).BeginInit();
@@ -104,7 +115,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pctStar3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctStar2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctStar1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pibClose)).BeginInit();
             this.SuspendLayout();
             // 
             // sidebar
@@ -260,6 +270,67 @@
             this.panel6.Size = new System.Drawing.Size(239, 210);
             this.panel6.TabIndex = 5;
             // 
+            // pibClose
+            // 
+            this.pibClose.Image = global::ProyectoGreenSpace.Properties.Resources.cancel;
+            this.pibClose.Location = new System.Drawing.Point(189, 8);
+            this.pibClose.Name = "pibClose";
+            this.pibClose.Size = new System.Drawing.Size(35, 33);
+            this.pibClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pibClose.TabIndex = 11;
+            this.pibClose.TabStop = false;
+            this.pibClose.Click += new System.EventHandler(this.pibClose_Click);
+            // 
+            // lblLogOut
+            // 
+            this.lblLogOut.AutoSize = true;
+            this.lblLogOut.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLogOut.Location = new System.Drawing.Point(76, 179);
+            this.lblLogOut.Name = "lblLogOut";
+            this.lblLogOut.Size = new System.Drawing.Size(134, 23);
+            this.lblLogOut.TabIndex = 10;
+            this.lblLogOut.Text = "Cerrar sesión";
+            // 
+            // txtJoinApp
+            // 
+            this.txtJoinApp.Enabled = false;
+            this.txtJoinApp.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtJoinApp.Location = new System.Drawing.Point(19, 127);
+            this.txtJoinApp.Name = "txtJoinApp";
+            this.txtJoinApp.ReadOnly = true;
+            this.txtJoinApp.Size = new System.Drawing.Size(182, 32);
+            this.txtJoinApp.TabIndex = 9;
+            // 
+            // lblJoinApp
+            // 
+            this.lblJoinApp.AutoSize = true;
+            this.lblJoinApp.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblJoinApp.Location = new System.Drawing.Point(15, 92);
+            this.lblJoinApp.Name = "lblJoinApp";
+            this.lblJoinApp.Size = new System.Drawing.Size(176, 23);
+            this.lblJoinApp.TabIndex = 8;
+            this.lblJoinApp.Text = "Miembros desde:";
+            // 
+            // txtUsername
+            // 
+            this.txtUsername.Enabled = false;
+            this.txtUsername.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsername.Location = new System.Drawing.Point(19, 47);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.ReadOnly = true;
+            this.txtUsername.Size = new System.Drawing.Size(182, 32);
+            this.txtUsername.TabIndex = 7;
+            // 
+            // lblUsername
+            // 
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsername.Location = new System.Drawing.Point(15, 17);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(119, 23);
+            this.lblUsername.TabIndex = 6;
+            this.lblUsername.Text = "Username: ";
+            // 
             // panel7
             // 
             this.panel7.Controls.Add(this.btnUser);
@@ -314,6 +385,7 @@
             // 
             this.pnlReviews.AutoScroll = true;
             this.pnlReviews.BackColor = System.Drawing.Color.White;
+            this.pnlReviews.Controls.Add(this.g2Bar);
             this.pnlReviews.Controls.Add(this.pctSpace);
             this.pnlReviews.Controls.Add(this.grpReview);
             this.pnlReviews.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -321,6 +393,68 @@
             this.pnlReviews.Name = "pnlReviews";
             this.pnlReviews.Size = new System.Drawing.Size(1079, 716);
             this.pnlReviews.TabIndex = 41;
+            // 
+            // g2Bar
+            // 
+            this.g2Bar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.g2Bar.Controls.Add(this.g2lblTitle);
+            this.g2Bar.Controls.Add(this.pibMinimize);
+            this.g2Bar.Controls.Add(this.pibMaximize);
+            this.g2Bar.Controls.Add(this.guna2PictureBox1);
+            this.g2Bar.Location = new System.Drawing.Point(0, 0);
+            this.g2Bar.Name = "g2Bar";
+            this.g2Bar.Size = new System.Drawing.Size(1058, 42);
+            this.g2Bar.TabIndex = 62;
+            // 
+            // g2lblTitle
+            // 
+            this.g2lblTitle.BackColor = System.Drawing.Color.Transparent;
+            this.g2lblTitle.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.g2lblTitle.Location = new System.Drawing.Point(13, 8);
+            this.g2lblTitle.Name = "g2lblTitle";
+            this.g2lblTitle.Size = new System.Drawing.Size(194, 25);
+            this.g2lblTitle.TabIndex = 36;
+            this.g2lblTitle.Text = "GREEN SPACE FILMS";
+            // 
+            // pibMinimize
+            // 
+            this.pibMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pibMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pibMinimize.Image = ((System.Drawing.Image)(resources.GetObject("pibMinimize.Image")));
+            this.pibMinimize.ImageRotate = 0F;
+            this.pibMinimize.Location = new System.Drawing.Point(925, 8);
+            this.pibMinimize.Name = "pibMinimize";
+            this.pibMinimize.Size = new System.Drawing.Size(35, 25);
+            this.pibMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pibMinimize.TabIndex = 35;
+            this.pibMinimize.TabStop = false;
+            // 
+            // pibMaximize
+            // 
+            this.pibMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pibMaximize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pibMaximize.Image = global::ProyectoGreenSpace.Properties.Resources.maximizar;
+            this.pibMaximize.ImageRotate = 0F;
+            this.pibMaximize.Location = new System.Drawing.Point(967, 8);
+            this.pibMaximize.Name = "pibMaximize";
+            this.pibMaximize.Size = new System.Drawing.Size(34, 25);
+            this.pibMaximize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pibMaximize.TabIndex = 34;
+            this.pibMaximize.TabStop = false;
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(1006, 3);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(39, 33);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.TabIndex = 33;
+            this.guna2PictureBox1.TabStop = false;
             // 
             // pctSpace
             // 
@@ -354,9 +488,9 @@
             this.grpReview.Controls.Add(this.lblTitleReview);
             this.grpReview.Controls.Add(this.rtxReview1);
             this.grpReview.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpReview.Location = new System.Drawing.Point(97, 42);
+            this.grpReview.Location = new System.Drawing.Point(97, 69);
             this.grpReview.Name = "grpReview";
-            this.grpReview.Size = new System.Drawing.Size(928, 687);
+            this.grpReview.Size = new System.Drawing.Size(928, 660);
             this.grpReview.TabIndex = 61;
             this.grpReview.TabStop = false;
             // 
@@ -574,66 +708,11 @@
             this.rtxReview1.TabIndex = 47;
             this.rtxReview1.Text = "";
             // 
-            // pibClose
+            // guna2DragControl1
             // 
-            this.pibClose.Image = global::ProyectoGreenSpace.Properties.Resources.cancel;
-            this.pibClose.Location = new System.Drawing.Point(189, 8);
-            this.pibClose.Name = "pibClose";
-            this.pibClose.Size = new System.Drawing.Size(35, 33);
-            this.pibClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pibClose.TabIndex = 11;
-            this.pibClose.TabStop = false;
-            this.pibClose.Click += new System.EventHandler(this.pibClose_Click);
-            // 
-            // lblLogOut
-            // 
-            this.lblLogOut.AutoSize = true;
-            this.lblLogOut.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLogOut.Location = new System.Drawing.Point(76, 179);
-            this.lblLogOut.Name = "lblLogOut";
-            this.lblLogOut.Size = new System.Drawing.Size(134, 23);
-            this.lblLogOut.TabIndex = 10;
-            this.lblLogOut.Text = "Cerrar sesión";
-            // 
-            // txtJoinApp
-            // 
-            this.txtJoinApp.Enabled = false;
-            this.txtJoinApp.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtJoinApp.Location = new System.Drawing.Point(19, 127);
-            this.txtJoinApp.Name = "txtJoinApp";
-            this.txtJoinApp.ReadOnly = true;
-            this.txtJoinApp.Size = new System.Drawing.Size(182, 32);
-            this.txtJoinApp.TabIndex = 9;
-            // 
-            // lblJoinApp
-            // 
-            this.lblJoinApp.AutoSize = true;
-            this.lblJoinApp.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblJoinApp.Location = new System.Drawing.Point(15, 92);
-            this.lblJoinApp.Name = "lblJoinApp";
-            this.lblJoinApp.Size = new System.Drawing.Size(176, 23);
-            this.lblJoinApp.TabIndex = 8;
-            this.lblJoinApp.Text = "Miembros desde:";
-            // 
-            // txtUsername
-            // 
-            this.txtUsername.Enabled = false;
-            this.txtUsername.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.Location = new System.Drawing.Point(19, 47);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.ReadOnly = true;
-            this.txtUsername.Size = new System.Drawing.Size(182, 32);
-            this.txtUsername.TabIndex = 7;
-            // 
-            // lblUsername
-            // 
-            this.lblUsername.AutoSize = true;
-            this.lblUsername.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsername.Location = new System.Drawing.Point(15, 17);
-            this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(119, 23);
-            this.lblUsername.TabIndex = 6;
-            this.lblUsername.Text = "Username: ";
+            this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl1.TargetControl = this.g2Bar;
+            this.guna2DragControl1.UseTransparentDrag = true;
             // 
             // FrmWriteReview
             // 
@@ -642,6 +721,7 @@
             this.ClientSize = new System.Drawing.Size(1321, 716);
             this.Controls.Add(this.pnlReviews);
             this.Controls.Add(this.sidebar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmWriteReview";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmWriteReview";
@@ -655,9 +735,15 @@
             this.panel5.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pibClose)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.pnlReviews.ResumeLayout(false);
+            this.g2Bar.ResumeLayout(false);
+            this.g2Bar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pibMinimize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibMaximize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctSpace)).EndInit();
             this.grpReview.ResumeLayout(false);
             this.grpReview.PerformLayout();
@@ -676,7 +762,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pctStar3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctStar2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctStar1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pibClose)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -730,5 +815,11 @@
         private System.Windows.Forms.Label lblJoinApp;
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.Label lblUsername;
+        private Guna.UI2.WinForms.Guna2Panel g2Bar;
+        private Guna.UI2.WinForms.Guna2HtmlLabel g2lblTitle;
+        private Guna.UI2.WinForms.Guna2PictureBox pibMinimize;
+        private Guna.UI2.WinForms.Guna2PictureBox pibMaximize;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
     }
 }
