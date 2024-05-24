@@ -38,7 +38,7 @@ namespace ProyectoGreenSpace
 
         private void AccessSelectSeats(int sessionId)
         {
-            FrmSelectSeats frmSelectSeats = new FrmSelectSeats(sessionId);
+            FrmSelectSeats frmSelectSeats = new FrmSelectSeats(sessionId, film.Name);
             frmSelectSeats.Show();
             this.Close();
         }

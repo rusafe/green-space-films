@@ -867,6 +867,7 @@
             this.btnBack.TabIndex = 69;
             this.btnBack.Text = "Atrás";
             this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // FrmSelectSeats
             // 

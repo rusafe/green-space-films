@@ -1,4 +1,5 @@
-﻿using ProyectoGreenSpace.LangResources;
+﻿using ProyectoGreenSpace.Classes;
+using ProyectoGreenSpace.LangResources;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -110,6 +111,14 @@ namespace ProyectoGreenSpace
             lblLogOut.Visible = false;
         }
 
+        private void SetFilmsNames()
+        {
+            foreach (var values in Film.GetIdentifyingInfoReview(UserSession.Id))
+            {
+                cmbFilms.Items.Add(values.name);
+            }
+        }
+
         private void btnUser_Click(object sender, EventArgs e)
         {
             pibClose.Visible = true;
@@ -130,6 +139,8 @@ namespace ProyectoGreenSpace
 
             txtUsername.Text = UserSession.Username;
             txtJoinApp.Text = UserSession.CreationDateTime.ToString("dd/MM/yyyy");
+
+            SetFilmsNames();
         }
 
         private void sidebarTimer_Tick(object sender, EventArgs e)
@@ -188,7 +199,15 @@ namespace ProyectoGreenSpace
 
         private void btnSend_Click(object sender, EventArgs e)
         {
-            // Enviar a la base de datos
+            Review review = new Review(
+                UserSession.Id,
+                Film.InfoFilm(cmbFilms.Text).Id,
+                rtxReview1.Text,
+                Convert.ToInt32(cklStars.Text),
+                DateTime.Now
+            );
+
+            review.Create();
         }
 
         private void pibClose_Click(object sender, EventArgs e)
