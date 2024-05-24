@@ -934,6 +934,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmSelectSeats";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmSelectSeats";
             this.Load += new System.EventHandler(this.FrmSelectSeats_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pibExit)).EndInit();
