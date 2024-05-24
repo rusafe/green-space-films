@@ -100,6 +100,8 @@ namespace ProyectoGreenSpace
             ApplyLanguage();
             LoadActualTicketsDGV();
             LoadPastTicketsDGV();
+            lblNumActualTickets.Text = Ticket.AmountActualTickets(UserSession.Id).ToString();
+            lblNumPastTickets.Text = Ticket.AmountActualTickets(UserSession.Id).ToString();
         }
         private void ApplyLanguage()
         {
