@@ -108,6 +108,12 @@ namespace ProyectoGreenSpace
 
             Session.ObtainSession(seats.SessionId).OccupySeats(seatsSelected);
             seats.UploadSeatsStatus();
+
+            MessageBox.Show("Entradas compradas con éxito", "Compra exitosa", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+            FrmFilms frmFilms = new FrmFilms();
+            frmFilms.Show();
+            this.Dispose();
         }
 
         #region Diseño de barra minimizadora

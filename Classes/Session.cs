@@ -245,7 +245,7 @@ namespace ProyectoGreenSpace.Classes
         /// </summary>
         public static void RestartSessions()
         {
-            string query = "UPDATE sessions SET seats_status = @seatsStatus";
+            string query = "UPDATE sessions SET seats_status = @seatsStatus, occupied_seats = '0'";
 
             MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
             command.Parameters.AddWithValue("seatsStatus", ImagesDB.BitmapToBytes(Seats.CreateDefaultSeatsStatus()));
@@ -257,6 +257,10 @@ namespace ProyectoGreenSpace.Classes
             ConnectionBD.CloseConnection();
         }
 
+        /// <summary>
+        /// Obtiene todas las sesiones de la base de datos
+        /// </summary>
+        /// <returns>Lista con todas las sesiones</returns>
         public static List<Session> ObtainAll()
         {
             List<Session> sessions = new List<Session>();
