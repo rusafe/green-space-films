@@ -147,6 +147,12 @@
   <data name="buttonAdmin" xml:space="preserve">
     <value>Admin.</value>
   </data>
+  <data name="buttonBack" xml:space="preserve">
+    <value>Return</value>
+  </data>
+  <data name="buttonCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
   <data name="buttonChangeName" xml:space="preserve">
     <value>Change nick</value>
   </data>
@@ -173,6 +179,9 @@
   </data>
   <data name="buttonLogin" xml:space="preserve">
     <value>Log in</value>
+  </data>
+  <data name="buttonPay" xml:space="preserve">
+    <value>Pay</value>
   </data>
   <data name="buttonRegister" xml:space="preserve">
     <value>Register</value>

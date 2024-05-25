@@ -186,7 +186,7 @@
             // pictBoxIcono
             // 
             this.pictBoxIcono.BackColor = System.Drawing.Color.Transparent;
-            this.pictBoxIcono.Image = ((System.Drawing.Image)(resources.GetObject("pictBoxIcono.Image")));
+            this.pictBoxIcono.Image = global::ProyectoGreenSpace.Properties.Resources.logo1;
             this.pictBoxIcono.Location = new System.Drawing.Point(61, 391);
             this.pictBoxIcono.Name = "pictBoxIcono";
             this.pictBoxIcono.Size = new System.Drawing.Size(186, 160);
