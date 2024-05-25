@@ -133,6 +133,8 @@ namespace ProyectoGreenSpace
             btnModifyFrm.Text = StringResources.btnModifyFrm;
             btnDeleteFrm.Text = StringResources.btnDeleteFrm;
             btnUpload.Text = StringResources.btnUpload;
+            btnBack.Text = StringResources.buttonExit;
+            btnInsertSessions.Text = StringResources.btnAccessSessions;
         }
 
         private void FrmMovieMaintenance_Load(object sender, EventArgs e)

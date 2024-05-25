@@ -78,6 +78,9 @@
             this.cklStars = new System.Windows.Forms.CheckedListBox();
             this.lblTitleReview = new System.Windows.Forms.Label();
             this.rtxReview1 = new System.Windows.Forms.RichTextBox();
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.lblFilm = new System.Windows.Forms.Label();
+            this.cmbFilms = new System.Windows.Forms.ComboBox();
             this.sidebar.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -287,6 +290,7 @@
             // lblLogOut
             // 
             this.lblLogOut.AutoSize = true;
+            this.lblLogOut.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblLogOut.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLogOut.Location = new System.Drawing.Point(57, 145);
             this.lblLogOut.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -294,6 +298,7 @@
             this.lblLogOut.Size = new System.Drawing.Size(108, 21);
             this.lblLogOut.TabIndex = 10;
             this.lblLogOut.Text = "Cerrar sesión";
+            this.lblLogOut.Click += new System.EventHandler(this.lblLogOut_Click);
             // 
             // txtJoinApp
             // 
@@ -429,8 +434,6 @@
             this.grpReview.Padding = new System.Windows.Forms.Padding(2);
             this.grpReview.Size = new System.Drawing.Size(696, 536);
             this.grpReview.TabIndex = 62;
-            this.grpReview.TabStop = false;
-            // 
             // cmbFilms
             // 
             this.cmbFilms.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -450,6 +453,8 @@
             this.lblFilm.Size = new System.Drawing.Size(69, 21);
             this.lblFilm.TabIndex = 84;
             this.lblFilm.Text = "Pelicula";
+            // 
+            this.grpReview.TabStop = false;
             // 
             // btnReset
             // 
@@ -680,7 +685,7 @@
             this.rtxReview1.Name = "rtxReview1";
             this.rtxReview1.Size = new System.Drawing.Size(624, 268);
             this.rtxReview1.TabIndex = 47;
-            this.rtxReview1.Text = "";
+            this.cmbFilms.TabIndex = 85;
             // 
             // FrmWriteReview
             // 

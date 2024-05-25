@@ -1,4 +1,5 @@
 ﻿using ProyectoGreenSpace.Classes;
+using ProyectoGreenSpace.LangResources;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -31,6 +32,16 @@ namespace ProyectoGreenSpace
             }
         }
 
+        private void ApplyLanguage()
+        {
+            lblFilm.Text = StringResources.lblFilm;
+            btnInsert.Text = StringResources.btnInsert;
+            btnModifyFrm.Text = StringResources.btnModifyFrm;
+            btnDeleteFrm.Text = StringResources.btnDeleteFrm;
+            btnBack.Text = StringResources.buttonExit;
+            btnInsertFrm.Text = StringResources.btnInsertFrm;
+        }
+
         private void SetFilmsIdentifyingValues()
         {
             foreach (var values in Film.GetIdentifyingInfoPremiering())
@@ -59,6 +70,8 @@ namespace ProyectoGreenSpace
             g2Bar.BackColor = Color.FromArgb(76, 80, 144);
             g2lblTitle.ForeColor = Color.FromArgb(168, 228, 116);
             dtpHour.Value = DateTime.Now;
+            
+            ApplyLanguage();
 
             SetFilmsIdentifyingValues();
             SetRoomsIdentifyingValues();

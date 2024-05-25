@@ -322,6 +322,7 @@
             this.lblLogOut.Size = new System.Drawing.Size(108, 21);
             this.lblLogOut.TabIndex = 10;
             this.lblLogOut.Text = "Cerrar sesión";
+            this.lblLogOut.Click += new System.EventHandler(this.lblLogOut_Click);
             // 
             // txtJoinApp
             // 

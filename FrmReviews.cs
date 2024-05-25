@@ -211,6 +211,12 @@ namespace ProyectoGreenSpace
             txtJoinApp.Visible = true;
             lblLogOut.Visible = true;
         }
+        private void lblLogOut_Click(object sender, EventArgs e)
+        {
+            FrmLogin frmLogin = new FrmLogin();
+            frmLogin.Show();
+            this.Close();
+        }
 
         #region Acceso a formularios desde menú desplegable
         private void btnTicketOffice_Click(object sender, EventArgs e)
