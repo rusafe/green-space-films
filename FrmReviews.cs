@@ -1,4 +1,5 @@
-﻿using ProyectoGreenSpace.LangResources;
+﻿using ProyectoGreenSpace.Classes;
+using ProyectoGreenSpace.LangResources;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -50,6 +51,46 @@ namespace ProyectoGreenSpace
                 btnSettings.BackColor = Color.FromArgb(176, 164, 180);
                 btnWriteReview.BackColor = Color.FromArgb(176, 164, 180);
                 pnlReviews.BackColor = Color.FromArgb(32, 146, 14);
+            }
+        }
+
+        private void LoadFilmReviews(string filmName)
+        {
+            List<Review> reviews = Review.ObtainReviews(Film.InfoFilm(filmName).Id, 4);
+
+            for (int i = 0; i < reviews.Count; i++)
+            {
+                string grbReviewName = $"grbReview{i + 1}";
+                string lblTitleReviewName = $"lblTitleReview{i + 1}";
+                string rtxReviewName = $"rtxReview{i + 1}";
+                string lblNameReviewName = $"lblNameReview{i + 1}";
+                string lblAntiquityReviewName = $"lblAntiquityReview{i + 1}";
+                string lblPunctuationReviewName = $"lblPunctuationReview{i + 1}";
+                string lblDateReviewName = $"lblDateReview{i + 1}";
+                string pctReviewName = $"pctReview{i + 1}";
+
+                GroupBox grbSession = (GroupBox)this.Controls.Find(grbReviewName, true)[0];
+                grbSession.Visible = true;
+
+                //Label lblSessionId = (Label)grbSession.Controls.Find(lblSessionIdName, true)[0];
+                //lblSessionId.Text = sessions[i].Id.ToString();
+
+                //TextBox txtSessionHour = (TextBox)grbSession.Controls.Find(txtHourName, true)[0];
+                //txtSessionHour.Text = sessions[i].StartHour.ToString();
+
+                //Room room = sessions[i].getRoom();
+
+                //TextBox txtSessionHall = (TextBox)grbSession.Controls.Find(txtHallName, true)[0];
+                //txtSessionHall.Text = $"Sala {room.Id}";
+
+                //TextBox txtSessionHallType = (TextBox)grbSession.Controls.Find(txtHallTypeName, true)[0];
+                //txtSessionHallType.Text = room.Type;
+
+                //Label lblAmountFreeSeats = (Label)grbSession.Controls.Find(lblFreeSeatsName, true)[0];
+                //lblAmountFreeSeats.Text = sessions[i].FreeSeats().ToString();
+
+                //Label lblAmountOccupiedSeats = (Label)grbSession.Controls.Find(lblOccupiedSeatsName, true)[0];
+                //lblAmountOccupiedSeats.Text = sessions[i].OccupiedSeats.ToString();
             }
         }
 

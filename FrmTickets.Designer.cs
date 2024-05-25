@@ -77,10 +77,10 @@
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.g2Bar = new Guna.UI2.WinForms.Guna2Panel();
-            this.g2lblTitle = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.pibMinimize = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pibMaximize = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.pibClose = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.pibCloseFrm = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.g2lblTitle = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.sidebar.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -93,9 +93,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvActualTickets)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPastTickets)).BeginInit();
             this.g2Bar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pibMinimize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pibMaximize)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pibClose)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibCloseFrm)).BeginInit();
             this.SuspendLayout();
             // 
             // sidebar
@@ -563,37 +563,27 @@
             // 
             this.g2Bar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.g2Bar.Controls.Add(this.g2lblTitle);
-            this.g2Bar.Controls.Add(this.pibMinimize);
+            this.g2Bar.Controls.Add(this.guna2PictureBox1);
             this.g2Bar.Controls.Add(this.pibMaximize);
-            this.g2Bar.Controls.Add(this.pibClose);
+            this.g2Bar.Controls.Add(this.pibCloseFrm);
+            this.g2Bar.Controls.Add(this.g2lblTitle);
             this.g2Bar.Location = new System.Drawing.Point(241, 0);
             this.g2Bar.Name = "g2Bar";
             this.g2Bar.Size = new System.Drawing.Size(1092, 42);
             this.g2Bar.TabIndex = 49;
             // 
-            // g2lblTitle
+            // guna2PictureBox1
             // 
-            this.g2lblTitle.BackColor = System.Drawing.Color.Transparent;
-            this.g2lblTitle.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.g2lblTitle.Location = new System.Drawing.Point(13, 8);
-            this.g2lblTitle.Name = "g2lblTitle";
-            this.g2lblTitle.Size = new System.Drawing.Size(194, 25);
-            this.g2lblTitle.TabIndex = 36;
-            this.g2lblTitle.Text = "GREEN SPACE FILMS";
-            // 
-            // pibMinimize
-            // 
-            this.pibMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pibMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pibMinimize.Image = ((System.Drawing.Image)(resources.GetObject("pibMinimize.Image")));
-            this.pibMinimize.ImageRotate = 0F;
-            this.pibMinimize.Location = new System.Drawing.Point(959, 8);
-            this.pibMinimize.Name = "pibMinimize";
-            this.pibMinimize.Size = new System.Drawing.Size(35, 25);
-            this.pibMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pibMinimize.TabIndex = 35;
-            this.pibMinimize.TabStop = false;
+            this.guna2PictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(960, 8);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(35, 25);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.TabIndex = 39;
+            this.guna2PictureBox1.TabStop = false;
             // 
             // pibMaximize
             // 
@@ -605,21 +595,31 @@
             this.pibMaximize.Name = "pibMaximize";
             this.pibMaximize.Size = new System.Drawing.Size(34, 25);
             this.pibMaximize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pibMaximize.TabIndex = 34;
+            this.pibMaximize.TabIndex = 38;
             this.pibMaximize.TabStop = false;
             // 
-            // pibClose
+            // pibCloseFrm
             // 
-            this.pibClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pibClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pibClose.Image = ((System.Drawing.Image)(resources.GetObject("pibClose.Image")));
-            this.pibClose.ImageRotate = 0F;
-            this.pibClose.Location = new System.Drawing.Point(1040, 3);
-            this.pibClose.Name = "pibClose";
-            this.pibClose.Size = new System.Drawing.Size(39, 33);
-            this.pibClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pibClose.TabIndex = 33;
-            this.pibClose.TabStop = false;
+            this.pibCloseFrm.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pibCloseFrm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pibCloseFrm.Image = ((System.Drawing.Image)(resources.GetObject("pibCloseFrm.Image")));
+            this.pibCloseFrm.ImageRotate = 0F;
+            this.pibCloseFrm.Location = new System.Drawing.Point(1041, 3);
+            this.pibCloseFrm.Name = "pibCloseFrm";
+            this.pibCloseFrm.Size = new System.Drawing.Size(39, 33);
+            this.pibCloseFrm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pibCloseFrm.TabIndex = 37;
+            this.pibCloseFrm.TabStop = false;
+            // 
+            // g2lblTitle
+            // 
+            this.g2lblTitle.BackColor = System.Drawing.Color.Transparent;
+            this.g2lblTitle.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.g2lblTitle.Location = new System.Drawing.Point(13, 8);
+            this.g2lblTitle.Name = "g2lblTitle";
+            this.g2lblTitle.Size = new System.Drawing.Size(194, 25);
+            this.g2lblTitle.TabIndex = 36;
+            this.g2lblTitle.Text = "GREEN SPACE FILMS";
             // 
             // guna2DragControl1
             // 
@@ -661,9 +661,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvPastTickets)).EndInit();
             this.g2Bar.ResumeLayout(false);
             this.g2Bar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pibMinimize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pibMaximize)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pibClose)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibCloseFrm)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -719,9 +719,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
         private Guna.UI2.WinForms.Guna2Panel g2Bar;
         private Guna.UI2.WinForms.Guna2HtmlLabel g2lblTitle;
-        private Guna.UI2.WinForms.Guna2PictureBox pibMinimize;
-        private Guna.UI2.WinForms.Guna2PictureBox pibMaximize;
-        private Guna.UI2.WinForms.Guna2PictureBox pibClose;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2PictureBox pibMaximize;
+        private Guna.UI2.WinForms.Guna2PictureBox pibCloseFrm;
     }
 }

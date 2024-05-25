@@ -22,6 +22,15 @@ namespace ProyectoGreenSpace.Classes
         public double Score { get { return score; } }
         public DateTime ReviewDateTime { get { return reviewDateTime; } }
 
+        public Review(int userId, int filmId, string reviewMessage, double score, DateTime reviewDateTime)
+        {
+            this.userId = userId;
+            this.filmId = filmId;
+            this.reviewMessage = reviewMessage;
+            this.score = score;
+            this.reviewDateTime = reviewDateTime;
+        }
+
         public Review(int id, int userId, int filmId, string reviewMessage, double score, DateTime reviewDateTime)
         {
             this.id = id;
@@ -55,7 +64,7 @@ namespace ProyectoGreenSpace.Classes
         /// </summary>
         public void Create()
         {
-            string query = "INSERT INTO reviews (userId, filmId, reviewMessage, score, reviewDateTime) VALUES (@userId, @filmId, @reviewMessage, @score, @reviewDateTime)";
+            string query = "INSERT INTO reviews (userId, filmId, review_message, score, reviewDateTime) VALUES (@userId, @filmId, @reviewMessage, @score, @reviewDateTime)";
 
             MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
             command.Parameters.AddWithValue("@userId", userId);
@@ -76,7 +85,7 @@ namespace ProyectoGreenSpace.Classes
         /// </summary>
         /// <param name="filmId">El ID de la pelicula</param>
         /// <returns>Lista con las reseñas</returns>
-        public List<Review> ObtainReviews(int filmId)
+        public static List<Review> ObtainReviews(int filmId)
         {
             List<Review> reviews = new List<Review>();
 
@@ -113,7 +122,7 @@ namespace ProyectoGreenSpace.Classes
         /// <param name="filmId">El ID de la pelicula</param>
         /// <param name="maxReviews">Cantidad máxima de reseñas</param>
         /// <returns>Lista con las reseñas</returns>
-        public List<Review> ObtainReviews(int filmId, int maxReviews)
+        public static List<Review> ObtainReviews(int filmId, int maxReviews)
         {
             List<Review> reviews = new List<Review>();
 

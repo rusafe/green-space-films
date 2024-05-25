@@ -16,12 +16,14 @@ namespace ProyectoGreenSpace
     public partial class FrmSelectSeats : Form
     {
         private Seats seats;
+        private string filmName;
 
-        public FrmSelectSeats(int sessionId)
+        public FrmSelectSeats(int sessionId, string filmName)
         {
             InitializeComponent();
 
             this.seats = new Seats(sessionId);
+            this.filmName = filmName;
             LoadSeatsPictures();
         }
 
@@ -290,6 +292,13 @@ namespace ProyectoGreenSpace
         private void seatPicture39_Click(object sender, EventArgs e)
         {
             SeatClicked(3, 8);
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            FrmMovieTheater frmMovieTheater = new FrmMovieTheater(filmName);
+            frmMovieTheater.Show();
+            this.Close();
         }
     }
 }
