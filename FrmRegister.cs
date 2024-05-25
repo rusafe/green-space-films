@@ -106,7 +106,7 @@ namespace ProyectoGreenSpace
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message + "\n" + ex.StackTrace);
+                    MessageBox.Show(ex.Message);
                 }
             }
         }
