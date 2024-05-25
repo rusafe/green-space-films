@@ -25,6 +25,22 @@ namespace ProyectoGreenSpace
             grpReview2.BackColor = Color.White;
             grpReview3.BackColor = Color.White;
             grpReview4.BackColor = Color.White;
+
+            SetFilmsNames();
+        }
+
+        public FrmReviews(string filmName)
+        {
+            InitializeComponent();
+
+            ApplyTheme();
+            grpReview1.BackColor = Color.White;
+            grpReview2.BackColor = Color.White;
+            grpReview3.BackColor = Color.White;
+            grpReview4.BackColor = Color.White;
+
+            SetFilmsNames();
+            cmbMovies.Text = filmName;
         }
 
         private void ApplyTheme()
@@ -54,6 +70,14 @@ namespace ProyectoGreenSpace
             }
         }
 
+        private void HideReviews()
+        {
+            grpReview1.Visible = false;
+            grpReview2.Visible = false;
+            grpReview3.Visible = false;
+            grpReview4.Visible = false;
+        }
+
         private void SetFilmsNames()
         {
             foreach (var values in Film.GetIdentifyingInfoPremiering())
@@ -69,7 +93,7 @@ namespace ProyectoGreenSpace
                 User user = reviews[i].getUser();
                 Film film = reviews[i].getFilm();
 
-                string grbReviewName = $"grbReview{i + 1}";
+                string grbReviewName = $"grpReview{i + 1}";
                 string lblFilmTitleName = $"lblFilmTitle{i + 1}";
                 string rtxReviewName = $"rtxReview{i + 1}";
                 string lblNameReviewName = $"lblNameReview{i + 1}";
@@ -87,20 +111,23 @@ namespace ProyectoGreenSpace
                 RichTextBox rtxReview = (RichTextBox)grbReview.Controls.Find(rtxReviewName, true)[0];
                 rtxReview.Text = reviews[i].ReviewMessage;
 
-                TextBox lblNameReview = (TextBox)grbReview.Controls.Find(lblNameReviewName, true)[0];
+                Label lblNameReview = (Label)grbReview.Controls.Find(lblNameReviewName, true)[0];
                 lblNameReview.Text = user.Username;
 
-                TextBox lblAntiquityReview = (TextBox)grbReview.Controls.Find(lblAntiquityReviewName, true)[0];
+                Label lblAntiquityReview = (Label)grbReview.Controls.Find(lblAntiquityReviewName, true)[0];
                 lblAntiquityReview.Text = user.CreationDateTime.ToShortDateString();
 
                 Label lblPunctuationReview = (Label)grbReview.Controls.Find(lblPunctuationReviewName, true)[0];
-                lblPunctuationReview.Text = reviews[i].Score.ToString();
+                lblPunctuationReview.Text = $"{reviews[i].Score} / 5";
 
                 Label lblDateReview = (Label)grbReview.Controls.Find(lblDateReviewName, true)[0];
                 lblDateReview.Text = reviews[i].ReviewDateTime.ToShortDateString();
 
-                Label pctReview = (Label)grbReview.Controls.Find(pctReviewName, true)[0];
-                pctReview.Image = user.Pfp;
+                if (!(user.Pfp is null))
+                {
+                    PictureBox pctReview = (PictureBox)grbReview.Controls.Find(pctReviewName, true)[0];
+                    pctReview.Image = user.Pfp;
+                }
             }
         }
 
@@ -115,6 +142,7 @@ namespace ProyectoGreenSpace
 
             string filmName = Film.Exists(cmbMovies.Text) ? cmbMovies.Text : null;
 
+            HideReviews();
             LoadFilmReviews(Review.ObtainReviews(score, filmName, cmbOrder.Text, 4));
         }
 
@@ -129,7 +157,7 @@ namespace ProyectoGreenSpace
             txtUsername.Text = UserSession.Username;
             txtJoinApp.Text = UserSession.CreationDateTime.ToString("dd/MM/yyyy");
 
-            SetFilmsNames();
+            SearchReviewsFiltered();
         }
 
         private void sidebarTimer_Tick(object sender, EventArgs e)

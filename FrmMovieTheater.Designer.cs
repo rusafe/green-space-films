@@ -163,9 +163,11 @@
             this.grbInfo4.Controls.Add(this.txtHall4);
             this.grbInfo4.Controls.Add(this.txtHour4);
             this.grbInfo4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.grbInfo4.Location = new System.Drawing.Point(973, 457);
+            this.grbInfo4.Location = new System.Drawing.Point(730, 371);
+            this.grbInfo4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grbInfo4.Name = "grbInfo4";
-            this.grbInfo4.Size = new System.Drawing.Size(295, 166);
+            this.grbInfo4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbInfo4.Size = new System.Drawing.Size(221, 135);
             this.grbInfo4.TabIndex = 50;
             this.grbInfo4.TabStop = false;
             this.grbInfo4.Visible = false;
@@ -174,9 +176,10 @@
             // lblSessionId4
             // 
             this.lblSessionId4.AutoSize = true;
-            this.lblSessionId4.Location = new System.Drawing.Point(94, 54);
+            this.lblSessionId4.Location = new System.Drawing.Point(70, 44);
+            this.lblSessionId4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSessionId4.Name = "lblSessionId4";
-            this.lblSessionId4.Size = new System.Drawing.Size(44, 16);
+            this.lblSessionId4.Size = new System.Drawing.Size(35, 13);
             this.lblSessionId4.TabIndex = 36;
             this.lblSessionId4.Text = "label2";
             this.lblSessionId4.Visible = false;
@@ -185,9 +188,10 @@
             // 
             this.lblAmountOccupiedSeats4.AutoSize = true;
             this.lblAmountOccupiedSeats4.ForeColor = System.Drawing.Color.White;
-            this.lblAmountOccupiedSeats4.Location = new System.Drawing.Point(197, 128);
+            this.lblAmountOccupiedSeats4.Location = new System.Drawing.Point(148, 104);
+            this.lblAmountOccupiedSeats4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAmountOccupiedSeats4.Name = "lblAmountOccupiedSeats4";
-            this.lblAmountOccupiedSeats4.Size = new System.Drawing.Size(44, 16);
+            this.lblAmountOccupiedSeats4.Size = new System.Drawing.Size(35, 13);
             this.lblAmountOccupiedSeats4.TabIndex = 35;
             this.lblAmountOccupiedSeats4.Text = "label1";
             // 
@@ -195,9 +199,10 @@
             // 
             this.lblAmountFreeSeats4.AutoSize = true;
             this.lblAmountFreeSeats4.ForeColor = System.Drawing.Color.White;
-            this.lblAmountFreeSeats4.Location = new System.Drawing.Point(197, 39);
+            this.lblAmountFreeSeats4.Location = new System.Drawing.Point(148, 32);
+            this.lblAmountFreeSeats4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAmountFreeSeats4.Name = "lblAmountFreeSeats4";
-            this.lblAmountFreeSeats4.Size = new System.Drawing.Size(44, 16);
+            this.lblAmountFreeSeats4.Size = new System.Drawing.Size(35, 13);
             this.lblAmountFreeSeats4.TabIndex = 34;
             this.lblAmountFreeSeats4.Text = "label1";
             // 
@@ -205,9 +210,10 @@
             // 
             this.pctBusy5.BackColor = System.Drawing.Color.Silver;
             this.pctBusy5.Image = global::ProyectoGreenSpace.Properties.Resources.silla__4_1;
-            this.pctBusy5.Location = new System.Drawing.Point(247, 96);
+            this.pctBusy5.Location = new System.Drawing.Point(185, 78);
+            this.pctBusy5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pctBusy5.Name = "pctBusy5";
-            this.pctBusy5.Size = new System.Drawing.Size(42, 46);
+            this.pctBusy5.Size = new System.Drawing.Size(32, 37);
             this.pctBusy5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctBusy5.TabIndex = 26;
             this.pctBusy5.TabStop = false;
@@ -216,9 +222,10 @@
             // 
             this.pctFree5.BackColor = System.Drawing.Color.Silver;
             this.pctFree5.Image = global::ProyectoGreenSpace.Properties.Resources.silla1;
-            this.pctFree5.Location = new System.Drawing.Point(247, 10);
+            this.pctFree5.Location = new System.Drawing.Point(185, 8);
+            this.pctFree5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pctFree5.Name = "pctFree5";
-            this.pctFree5.Size = new System.Drawing.Size(42, 46);
+            this.pctFree5.Size = new System.Drawing.Size(32, 37);
             this.pctFree5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctFree5.TabIndex = 26;
             this.pctFree5.TabStop = false;
@@ -229,10 +236,11 @@
             this.txtSeats5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSeats5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSeats5.ForeColor = System.Drawing.Color.Black;
-            this.txtSeats5.Location = new System.Drawing.Point(180, 1);
+            this.txtSeats5.Location = new System.Drawing.Point(135, 1);
+            this.txtSeats5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtSeats5.Multiline = true;
             this.txtSeats5.Name = "txtSeats5";
-            this.txtSeats5.Size = new System.Drawing.Size(115, 159);
+            this.txtSeats5.Size = new System.Drawing.Size(86, 129);
             this.txtSeats5.TabIndex = 29;
             this.txtSeats5.Text = "Libres\r\n\r\n\r\nOcu\r\npados";
             // 
@@ -242,10 +250,11 @@
             this.txtTypeHall4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTypeHall4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTypeHall4.ForeColor = System.Drawing.Color.White;
-            this.txtTypeHall4.Location = new System.Drawing.Point(6, 114);
+            this.txtTypeHall4.Location = new System.Drawing.Point(4, 93);
+            this.txtTypeHall4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTypeHall4.Multiline = true;
             this.txtTypeHall4.Name = "txtTypeHall4";
-            this.txtTypeHall4.Size = new System.Drawing.Size(168, 46);
+            this.txtTypeHall4.Size = new System.Drawing.Size(126, 37);
             this.txtTypeHall4.TabIndex = 28;
             this.txtTypeHall4.Text = "Tipo Sala";
             this.txtTypeHall4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -256,10 +265,11 @@
             this.txtHall4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtHall4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHall4.ForeColor = System.Drawing.Color.White;
-            this.txtHall4.Location = new System.Drawing.Point(6, 73);
+            this.txtHall4.Location = new System.Drawing.Point(4, 59);
+            this.txtHall4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtHall4.Multiline = true;
             this.txtHall4.Name = "txtHall4";
-            this.txtHall4.Size = new System.Drawing.Size(147, 46);
+            this.txtHall4.Size = new System.Drawing.Size(110, 37);
             this.txtHall4.TabIndex = 27;
             this.txtHall4.Text = "nº sala";
             this.txtHall4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -270,10 +280,11 @@
             this.txtHour4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtHour4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHour4.ForeColor = System.Drawing.Color.White;
-            this.txtHour4.Location = new System.Drawing.Point(6, 21);
+            this.txtHour4.Location = new System.Drawing.Point(4, 17);
+            this.txtHour4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtHour4.Multiline = true;
             this.txtHour4.Name = "txtHour4";
-            this.txtHour4.Size = new System.Drawing.Size(147, 46);
+            this.txtHour4.Size = new System.Drawing.Size(110, 37);
             this.txtHour4.TabIndex = 26;
             this.txtHour4.Text = "Horario";
             this.txtHour4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -291,9 +302,11 @@
             this.grbInfo2.Controls.Add(this.txtHall2);
             this.grbInfo2.Controls.Add(this.txtHour2);
             this.grbInfo2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.grbInfo2.Location = new System.Drawing.Point(973, 282);
+            this.grbInfo2.Location = new System.Drawing.Point(730, 229);
+            this.grbInfo2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grbInfo2.Name = "grbInfo2";
-            this.grbInfo2.Size = new System.Drawing.Size(295, 166);
+            this.grbInfo2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbInfo2.Size = new System.Drawing.Size(221, 135);
             this.grbInfo2.TabIndex = 49;
             this.grbInfo2.TabStop = false;
             this.grbInfo2.Visible = false;
@@ -302,9 +315,10 @@
             // lblSessionId2
             // 
             this.lblSessionId2.AutoSize = true;
-            this.lblSessionId2.Location = new System.Drawing.Point(94, 51);
+            this.lblSessionId2.Location = new System.Drawing.Point(70, 41);
+            this.lblSessionId2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSessionId2.Name = "lblSessionId2";
-            this.lblSessionId2.Size = new System.Drawing.Size(44, 16);
+            this.lblSessionId2.Size = new System.Drawing.Size(35, 13);
             this.lblSessionId2.TabIndex = 34;
             this.lblSessionId2.Text = "label2";
             this.lblSessionId2.Visible = false;
@@ -313,9 +327,10 @@
             // 
             this.lblAmountOccupiedSeats2.AutoSize = true;
             this.lblAmountOccupiedSeats2.ForeColor = System.Drawing.Color.White;
-            this.lblAmountOccupiedSeats2.Location = new System.Drawing.Point(197, 126);
+            this.lblAmountOccupiedSeats2.Location = new System.Drawing.Point(148, 102);
+            this.lblAmountOccupiedSeats2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAmountOccupiedSeats2.Name = "lblAmountOccupiedSeats2";
-            this.lblAmountOccupiedSeats2.Size = new System.Drawing.Size(44, 16);
+            this.lblAmountOccupiedSeats2.Size = new System.Drawing.Size(35, 13);
             this.lblAmountOccupiedSeats2.TabIndex = 33;
             this.lblAmountOccupiedSeats2.Text = "label1";
             // 
@@ -323,9 +338,10 @@
             // 
             this.lblAmountFreeSeats2.AutoSize = true;
             this.lblAmountFreeSeats2.ForeColor = System.Drawing.Color.White;
-            this.lblAmountFreeSeats2.Location = new System.Drawing.Point(197, 37);
+            this.lblAmountFreeSeats2.Location = new System.Drawing.Point(148, 30);
+            this.lblAmountFreeSeats2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAmountFreeSeats2.Name = "lblAmountFreeSeats2";
-            this.lblAmountFreeSeats2.Size = new System.Drawing.Size(44, 16);
+            this.lblAmountFreeSeats2.Size = new System.Drawing.Size(35, 13);
             this.lblAmountFreeSeats2.TabIndex = 32;
             this.lblAmountFreeSeats2.Text = "label1";
             // 
@@ -333,9 +349,10 @@
             // 
             this.pctBusy4.BackColor = System.Drawing.Color.Silver;
             this.pctBusy4.Image = global::ProyectoGreenSpace.Properties.Resources.silla__4_1;
-            this.pctBusy4.Location = new System.Drawing.Point(247, 96);
+            this.pctBusy4.Location = new System.Drawing.Point(185, 78);
+            this.pctBusy4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pctBusy4.Name = "pctBusy4";
-            this.pctBusy4.Size = new System.Drawing.Size(42, 46);
+            this.pctBusy4.Size = new System.Drawing.Size(32, 37);
             this.pctBusy4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctBusy4.TabIndex = 26;
             this.pctBusy4.TabStop = false;
@@ -344,9 +361,10 @@
             // 
             this.pctFree4.BackColor = System.Drawing.Color.Silver;
             this.pctFree4.Image = global::ProyectoGreenSpace.Properties.Resources.silla1;
-            this.pctFree4.Location = new System.Drawing.Point(247, 10);
+            this.pctFree4.Location = new System.Drawing.Point(185, 8);
+            this.pctFree4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pctFree4.Name = "pctFree4";
-            this.pctFree4.Size = new System.Drawing.Size(42, 46);
+            this.pctFree4.Size = new System.Drawing.Size(32, 37);
             this.pctFree4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctFree4.TabIndex = 26;
             this.pctFree4.TabStop = false;
@@ -357,10 +375,11 @@
             this.txtSeats4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSeats4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSeats4.ForeColor = System.Drawing.Color.Black;
-            this.txtSeats4.Location = new System.Drawing.Point(180, 1);
+            this.txtSeats4.Location = new System.Drawing.Point(135, 1);
+            this.txtSeats4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtSeats4.Multiline = true;
             this.txtSeats4.Name = "txtSeats4";
-            this.txtSeats4.Size = new System.Drawing.Size(115, 159);
+            this.txtSeats4.Size = new System.Drawing.Size(86, 129);
             this.txtSeats4.TabIndex = 29;
             this.txtSeats4.Text = "Libres\r\n\r\n\r\nOcu\r\npados";
             // 
@@ -370,10 +389,11 @@
             this.txtTypeHall2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTypeHall2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTypeHall2.ForeColor = System.Drawing.Color.White;
-            this.txtTypeHall2.Location = new System.Drawing.Point(6, 114);
+            this.txtTypeHall2.Location = new System.Drawing.Point(4, 93);
+            this.txtTypeHall2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTypeHall2.Multiline = true;
             this.txtTypeHall2.Name = "txtTypeHall2";
-            this.txtTypeHall2.Size = new System.Drawing.Size(168, 46);
+            this.txtTypeHall2.Size = new System.Drawing.Size(126, 37);
             this.txtTypeHall2.TabIndex = 28;
             this.txtTypeHall2.Text = "Tipo Sala";
             this.txtTypeHall2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -384,10 +404,11 @@
             this.txtHall2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtHall2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHall2.ForeColor = System.Drawing.Color.White;
-            this.txtHall2.Location = new System.Drawing.Point(6, 73);
+            this.txtHall2.Location = new System.Drawing.Point(4, 59);
+            this.txtHall2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtHall2.Multiline = true;
             this.txtHall2.Name = "txtHall2";
-            this.txtHall2.Size = new System.Drawing.Size(147, 46);
+            this.txtHall2.Size = new System.Drawing.Size(110, 37);
             this.txtHall2.TabIndex = 27;
             this.txtHall2.Text = "nº sala";
             this.txtHall2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -398,10 +419,11 @@
             this.txtHour2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtHour2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHour2.ForeColor = System.Drawing.Color.White;
-            this.txtHour2.Location = new System.Drawing.Point(6, 21);
+            this.txtHour2.Location = new System.Drawing.Point(4, 17);
+            this.txtHour2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtHour2.Multiline = true;
             this.txtHour2.Name = "txtHour2";
-            this.txtHour2.Size = new System.Drawing.Size(147, 46);
+            this.txtHour2.Size = new System.Drawing.Size(110, 37);
             this.txtHour2.TabIndex = 26;
             this.txtHour2.Text = "Horario";
             this.txtHour2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -419,9 +441,11 @@
             this.grbInfo5.Controls.Add(this.txtHall5);
             this.grbInfo5.Controls.Add(this.txtHour5);
             this.grbInfo5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.grbInfo5.Location = new System.Drawing.Point(632, 557);
+            this.grbInfo5.Location = new System.Drawing.Point(474, 453);
+            this.grbInfo5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grbInfo5.Name = "grbInfo5";
-            this.grbInfo5.Size = new System.Drawing.Size(295, 166);
+            this.grbInfo5.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbInfo5.Size = new System.Drawing.Size(221, 135);
             this.grbInfo5.TabIndex = 48;
             this.grbInfo5.TabStop = false;
             this.grbInfo5.Visible = false;
@@ -430,9 +454,10 @@
             // lblSessionId5
             // 
             this.lblSessionId5.AutoSize = true;
-            this.lblSessionId5.Location = new System.Drawing.Point(74, 54);
+            this.lblSessionId5.Location = new System.Drawing.Point(56, 44);
+            this.lblSessionId5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSessionId5.Name = "lblSessionId5";
-            this.lblSessionId5.Size = new System.Drawing.Size(44, 16);
+            this.lblSessionId5.Size = new System.Drawing.Size(35, 13);
             this.lblSessionId5.TabIndex = 36;
             this.lblSessionId5.Text = "label2";
             this.lblSessionId5.Visible = false;
@@ -441,9 +466,10 @@
             // 
             this.lblAmountOccupiedSeats5.AutoSize = true;
             this.lblAmountOccupiedSeats5.ForeColor = System.Drawing.Color.White;
-            this.lblAmountOccupiedSeats5.Location = new System.Drawing.Point(196, 129);
+            this.lblAmountOccupiedSeats5.Location = new System.Drawing.Point(147, 105);
+            this.lblAmountOccupiedSeats5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAmountOccupiedSeats5.Name = "lblAmountOccupiedSeats5";
-            this.lblAmountOccupiedSeats5.Size = new System.Drawing.Size(44, 16);
+            this.lblAmountOccupiedSeats5.Size = new System.Drawing.Size(35, 13);
             this.lblAmountOccupiedSeats5.TabIndex = 35;
             this.lblAmountOccupiedSeats5.Text = "label1";
             // 
@@ -451,9 +477,10 @@
             // 
             this.lblAmountFreeSeats5.AutoSize = true;
             this.lblAmountFreeSeats5.ForeColor = System.Drawing.Color.White;
-            this.lblAmountFreeSeats5.Location = new System.Drawing.Point(196, 40);
+            this.lblAmountFreeSeats5.Location = new System.Drawing.Point(147, 32);
+            this.lblAmountFreeSeats5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAmountFreeSeats5.Name = "lblAmountFreeSeats5";
-            this.lblAmountFreeSeats5.Size = new System.Drawing.Size(44, 16);
+            this.lblAmountFreeSeats5.Size = new System.Drawing.Size(35, 13);
             this.lblAmountFreeSeats5.TabIndex = 34;
             this.lblAmountFreeSeats5.Text = "label1";
             // 
@@ -461,9 +488,10 @@
             // 
             this.pctBusy3.BackColor = System.Drawing.Color.Silver;
             this.pctBusy3.Image = global::ProyectoGreenSpace.Properties.Resources.silla__4_1;
-            this.pctBusy3.Location = new System.Drawing.Point(247, 96);
+            this.pctBusy3.Location = new System.Drawing.Point(185, 78);
+            this.pctBusy3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pctBusy3.Name = "pctBusy3";
-            this.pctBusy3.Size = new System.Drawing.Size(42, 46);
+            this.pctBusy3.Size = new System.Drawing.Size(32, 37);
             this.pctBusy3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctBusy3.TabIndex = 26;
             this.pctBusy3.TabStop = false;
@@ -472,9 +500,10 @@
             // 
             this.pctFree3.BackColor = System.Drawing.Color.Silver;
             this.pctFree3.Image = global::ProyectoGreenSpace.Properties.Resources.silla1;
-            this.pctFree3.Location = new System.Drawing.Point(247, 10);
+            this.pctFree3.Location = new System.Drawing.Point(185, 8);
+            this.pctFree3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pctFree3.Name = "pctFree3";
-            this.pctFree3.Size = new System.Drawing.Size(42, 46);
+            this.pctFree3.Size = new System.Drawing.Size(32, 37);
             this.pctFree3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctFree3.TabIndex = 26;
             this.pctFree3.TabStop = false;
@@ -485,10 +514,11 @@
             this.txtSeats3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSeats3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSeats3.ForeColor = System.Drawing.Color.Black;
-            this.txtSeats3.Location = new System.Drawing.Point(180, 1);
+            this.txtSeats3.Location = new System.Drawing.Point(135, 1);
+            this.txtSeats3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtSeats3.Multiline = true;
             this.txtSeats3.Name = "txtSeats3";
-            this.txtSeats3.Size = new System.Drawing.Size(115, 159);
+            this.txtSeats3.Size = new System.Drawing.Size(86, 129);
             this.txtSeats3.TabIndex = 29;
             this.txtSeats3.Text = "Libres\r\n\r\n\r\nOcu\r\npados";
             // 
@@ -498,10 +528,11 @@
             this.txtTypeHall5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTypeHall5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTypeHall5.ForeColor = System.Drawing.Color.White;
-            this.txtTypeHall5.Location = new System.Drawing.Point(6, 114);
+            this.txtTypeHall5.Location = new System.Drawing.Point(4, 93);
+            this.txtTypeHall5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTypeHall5.Multiline = true;
             this.txtTypeHall5.Name = "txtTypeHall5";
-            this.txtTypeHall5.Size = new System.Drawing.Size(168, 46);
+            this.txtTypeHall5.Size = new System.Drawing.Size(126, 37);
             this.txtTypeHall5.TabIndex = 28;
             this.txtTypeHall5.Text = "Tipo Sala";
             this.txtTypeHall5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -512,10 +543,11 @@
             this.txtHall5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtHall5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHall5.ForeColor = System.Drawing.Color.White;
-            this.txtHall5.Location = new System.Drawing.Point(6, 73);
+            this.txtHall5.Location = new System.Drawing.Point(4, 59);
+            this.txtHall5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtHall5.Multiline = true;
             this.txtHall5.Name = "txtHall5";
-            this.txtHall5.Size = new System.Drawing.Size(147, 46);
+            this.txtHall5.Size = new System.Drawing.Size(110, 37);
             this.txtHall5.TabIndex = 27;
             this.txtHall5.Text = "nº sala";
             this.txtHall5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -526,10 +558,11 @@
             this.txtHour5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtHour5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHour5.ForeColor = System.Drawing.Color.White;
-            this.txtHour5.Location = new System.Drawing.Point(6, 21);
+            this.txtHour5.Location = new System.Drawing.Point(4, 17);
+            this.txtHour5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtHour5.Multiline = true;
             this.txtHour5.Name = "txtHour5";
-            this.txtHour5.Size = new System.Drawing.Size(147, 46);
+            this.txtHour5.Size = new System.Drawing.Size(110, 37);
             this.txtHour5.TabIndex = 26;
             this.txtHour5.Text = "Horario";
             this.txtHour5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -547,9 +580,11 @@
             this.grbInfo3.Controls.Add(this.txtHall3);
             this.grbInfo3.Controls.Add(this.txtHour3);
             this.grbInfo3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.grbInfo3.Location = new System.Drawing.Point(632, 382);
+            this.grbInfo3.Location = new System.Drawing.Point(474, 310);
+            this.grbInfo3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grbInfo3.Name = "grbInfo3";
-            this.grbInfo3.Size = new System.Drawing.Size(295, 166);
+            this.grbInfo3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbInfo3.Size = new System.Drawing.Size(221, 135);
             this.grbInfo3.TabIndex = 47;
             this.grbInfo3.TabStop = false;
             this.grbInfo3.Visible = false;
@@ -558,9 +593,10 @@
             // lblSessionId3
             // 
             this.lblSessionId3.AutoSize = true;
-            this.lblSessionId3.Location = new System.Drawing.Point(74, 54);
+            this.lblSessionId3.Location = new System.Drawing.Point(56, 44);
+            this.lblSessionId3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSessionId3.Name = "lblSessionId3";
-            this.lblSessionId3.Size = new System.Drawing.Size(44, 16);
+            this.lblSessionId3.Size = new System.Drawing.Size(35, 13);
             this.lblSessionId3.TabIndex = 34;
             this.lblSessionId3.Text = "label2";
             this.lblSessionId3.Visible = false;
@@ -569,9 +605,10 @@
             // 
             this.lblAmountOccupiedSeats3.AutoSize = true;
             this.lblAmountOccupiedSeats3.ForeColor = System.Drawing.Color.White;
-            this.lblAmountOccupiedSeats3.Location = new System.Drawing.Point(196, 125);
+            this.lblAmountOccupiedSeats3.Location = new System.Drawing.Point(147, 102);
+            this.lblAmountOccupiedSeats3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAmountOccupiedSeats3.Name = "lblAmountOccupiedSeats3";
-            this.lblAmountOccupiedSeats3.Size = new System.Drawing.Size(44, 16);
+            this.lblAmountOccupiedSeats3.Size = new System.Drawing.Size(35, 13);
             this.lblAmountOccupiedSeats3.TabIndex = 33;
             this.lblAmountOccupiedSeats3.Text = "label1";
             // 
@@ -579,9 +616,10 @@
             // 
             this.lblAmountFreeSeats3.AutoSize = true;
             this.lblAmountFreeSeats3.ForeColor = System.Drawing.Color.White;
-            this.lblAmountFreeSeats3.Location = new System.Drawing.Point(196, 36);
+            this.lblAmountFreeSeats3.Location = new System.Drawing.Point(147, 29);
+            this.lblAmountFreeSeats3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAmountFreeSeats3.Name = "lblAmountFreeSeats3";
-            this.lblAmountFreeSeats3.Size = new System.Drawing.Size(44, 16);
+            this.lblAmountFreeSeats3.Size = new System.Drawing.Size(35, 13);
             this.lblAmountFreeSeats3.TabIndex = 32;
             this.lblAmountFreeSeats3.Text = "label1";
             // 
@@ -589,9 +627,10 @@
             // 
             this.pctBusy2.BackColor = System.Drawing.Color.Silver;
             this.pctBusy2.Image = global::ProyectoGreenSpace.Properties.Resources.silla__4_1;
-            this.pctBusy2.Location = new System.Drawing.Point(247, 96);
+            this.pctBusy2.Location = new System.Drawing.Point(185, 78);
+            this.pctBusy2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pctBusy2.Name = "pctBusy2";
-            this.pctBusy2.Size = new System.Drawing.Size(42, 46);
+            this.pctBusy2.Size = new System.Drawing.Size(32, 37);
             this.pctBusy2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctBusy2.TabIndex = 26;
             this.pctBusy2.TabStop = false;
@@ -600,9 +639,10 @@
             // 
             this.pctFree2.BackColor = System.Drawing.Color.Silver;
             this.pctFree2.Image = global::ProyectoGreenSpace.Properties.Resources.silla1;
-            this.pctFree2.Location = new System.Drawing.Point(247, 10);
+            this.pctFree2.Location = new System.Drawing.Point(185, 8);
+            this.pctFree2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pctFree2.Name = "pctFree2";
-            this.pctFree2.Size = new System.Drawing.Size(42, 46);
+            this.pctFree2.Size = new System.Drawing.Size(32, 37);
             this.pctFree2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctFree2.TabIndex = 26;
             this.pctFree2.TabStop = false;
@@ -613,10 +653,11 @@
             this.txtSeats2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSeats2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSeats2.ForeColor = System.Drawing.Color.Black;
-            this.txtSeats2.Location = new System.Drawing.Point(180, 1);
+            this.txtSeats2.Location = new System.Drawing.Point(135, 1);
+            this.txtSeats2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtSeats2.Multiline = true;
             this.txtSeats2.Name = "txtSeats2";
-            this.txtSeats2.Size = new System.Drawing.Size(115, 159);
+            this.txtSeats2.Size = new System.Drawing.Size(86, 129);
             this.txtSeats2.TabIndex = 29;
             this.txtSeats2.Text = "Libres\r\n\r\n\r\nOcu\r\npados";
             // 
@@ -626,10 +667,11 @@
             this.txtTypeHall3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTypeHall3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTypeHall3.ForeColor = System.Drawing.Color.White;
-            this.txtTypeHall3.Location = new System.Drawing.Point(6, 114);
+            this.txtTypeHall3.Location = new System.Drawing.Point(4, 93);
+            this.txtTypeHall3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTypeHall3.Multiline = true;
             this.txtTypeHall3.Name = "txtTypeHall3";
-            this.txtTypeHall3.Size = new System.Drawing.Size(168, 46);
+            this.txtTypeHall3.Size = new System.Drawing.Size(126, 37);
             this.txtTypeHall3.TabIndex = 28;
             this.txtTypeHall3.Text = "Tipo Sala";
             this.txtTypeHall3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -640,10 +682,11 @@
             this.txtHall3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtHall3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHall3.ForeColor = System.Drawing.Color.White;
-            this.txtHall3.Location = new System.Drawing.Point(6, 73);
+            this.txtHall3.Location = new System.Drawing.Point(4, 59);
+            this.txtHall3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtHall3.Multiline = true;
             this.txtHall3.Name = "txtHall3";
-            this.txtHall3.Size = new System.Drawing.Size(147, 46);
+            this.txtHall3.Size = new System.Drawing.Size(110, 37);
             this.txtHall3.TabIndex = 27;
             this.txtHall3.Text = "nº sala";
             this.txtHall3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -654,10 +697,11 @@
             this.txtHour3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtHour3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHour3.ForeColor = System.Drawing.Color.White;
-            this.txtHour3.Location = new System.Drawing.Point(6, 21);
+            this.txtHour3.Location = new System.Drawing.Point(4, 17);
+            this.txtHour3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtHour3.Multiline = true;
             this.txtHour3.Name = "txtHour3";
-            this.txtHour3.Size = new System.Drawing.Size(147, 46);
+            this.txtHour3.Size = new System.Drawing.Size(110, 37);
             this.txtHour3.TabIndex = 26;
             this.txtHour3.Text = "Horario";
             this.txtHour3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -666,9 +710,10 @@
             // 
             this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnBack.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(1125, 686);
+            this.btnBack.Location = new System.Drawing.Point(844, 557);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(137, 45);
+            this.btnBack.Size = new System.Drawing.Size(103, 37);
             this.btnBack.TabIndex = 46;
             this.btnBack.Text = "Atrás";
             this.btnBack.UseVisualStyleBackColor = false;
@@ -678,9 +723,10 @@
             // 
             this.btnAccessRevews.BackColor = System.Drawing.Color.Violet;
             this.btnAccessRevews.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAccessRevews.Location = new System.Drawing.Point(973, 668);
+            this.btnAccessRevews.Location = new System.Drawing.Point(730, 543);
+            this.btnAccessRevews.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAccessRevews.Name = "btnAccessRevews";
-            this.btnAccessRevews.Size = new System.Drawing.Size(138, 45);
+            this.btnAccessRevews.Size = new System.Drawing.Size(104, 37);
             this.btnAccessRevews.TabIndex = 45;
             this.btnAccessRevews.Text = "Reseñas";
             this.btnAccessRevews.UseVisualStyleBackColor = false;
@@ -690,9 +736,10 @@
             // 
             this.btnQuestion.BackColor = System.Drawing.Color.Khaki;
             this.btnQuestion.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQuestion.Location = new System.Drawing.Point(994, 209);
+            this.btnQuestion.Location = new System.Drawing.Point(746, 170);
+            this.btnQuestion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnQuestion.Name = "btnQuestion";
-            this.btnQuestion.Size = new System.Drawing.Size(274, 39);
+            this.btnQuestion.Size = new System.Drawing.Size(206, 32);
             this.btnQuestion.TabIndex = 44;
             this.btnQuestion.Text = "¿Qué significa...?";
             this.btnQuestion.UseVisualStyleBackColor = false;
@@ -711,9 +758,11 @@
             this.grbInfo1.Controls.Add(this.txtHall1);
             this.grbInfo1.Controls.Add(this.txtHour1);
             this.grbInfo1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.grbInfo1.Location = new System.Drawing.Point(632, 209);
+            this.grbInfo1.Location = new System.Drawing.Point(474, 170);
+            this.grbInfo1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grbInfo1.Name = "grbInfo1";
-            this.grbInfo1.Size = new System.Drawing.Size(295, 166);
+            this.grbInfo1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbInfo1.Size = new System.Drawing.Size(221, 135);
             this.grbInfo1.TabIndex = 43;
             this.grbInfo1.TabStop = false;
             this.grbInfo1.Visible = false;
@@ -722,9 +771,10 @@
             // lblSessionId1
             // 
             this.lblSessionId1.AutoSize = true;
-            this.lblSessionId1.Location = new System.Drawing.Point(74, 51);
+            this.lblSessionId1.Location = new System.Drawing.Point(56, 41);
+            this.lblSessionId1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSessionId1.Name = "lblSessionId1";
-            this.lblSessionId1.Size = new System.Drawing.Size(44, 16);
+            this.lblSessionId1.Size = new System.Drawing.Size(35, 13);
             this.lblSessionId1.TabIndex = 33;
             this.lblSessionId1.Text = "label2";
             this.lblSessionId1.Visible = false;
@@ -732,9 +782,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(123, 39);
+            this.label1.Location = new System.Drawing.Point(92, 32);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 16);
+            this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 32;
             this.label1.Text = "label1";
             // 
@@ -742,9 +793,10 @@
             // 
             this.lblAmountOccupiedSeats1.AutoSize = true;
             this.lblAmountOccupiedSeats1.ForeColor = System.Drawing.Color.White;
-            this.lblAmountOccupiedSeats1.Location = new System.Drawing.Point(196, 129);
+            this.lblAmountOccupiedSeats1.Location = new System.Drawing.Point(147, 105);
+            this.lblAmountOccupiedSeats1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAmountOccupiedSeats1.Name = "lblAmountOccupiedSeats1";
-            this.lblAmountOccupiedSeats1.Size = new System.Drawing.Size(44, 16);
+            this.lblAmountOccupiedSeats1.Size = new System.Drawing.Size(35, 13);
             this.lblAmountOccupiedSeats1.TabIndex = 31;
             this.lblAmountOccupiedSeats1.Text = "label1";
             // 
@@ -752,9 +804,10 @@
             // 
             this.lblAmountFreeSeats1.AutoSize = true;
             this.lblAmountFreeSeats1.ForeColor = System.Drawing.Color.White;
-            this.lblAmountFreeSeats1.Location = new System.Drawing.Point(196, 40);
+            this.lblAmountFreeSeats1.Location = new System.Drawing.Point(147, 32);
+            this.lblAmountFreeSeats1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAmountFreeSeats1.Name = "lblAmountFreeSeats1";
-            this.lblAmountFreeSeats1.Size = new System.Drawing.Size(44, 16);
+            this.lblAmountFreeSeats1.Size = new System.Drawing.Size(35, 13);
             this.lblAmountFreeSeats1.TabIndex = 30;
             this.lblAmountFreeSeats1.Text = "label1";
             // 
@@ -762,9 +815,10 @@
             // 
             this.pctBusy1.BackColor = System.Drawing.Color.Silver;
             this.pctBusy1.Image = global::ProyectoGreenSpace.Properties.Resources.silla__4_1;
-            this.pctBusy1.Location = new System.Drawing.Point(247, 96);
+            this.pctBusy1.Location = new System.Drawing.Point(185, 78);
+            this.pctBusy1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pctBusy1.Name = "pctBusy1";
-            this.pctBusy1.Size = new System.Drawing.Size(42, 46);
+            this.pctBusy1.Size = new System.Drawing.Size(32, 37);
             this.pctBusy1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctBusy1.TabIndex = 26;
             this.pctBusy1.TabStop = false;
@@ -773,9 +827,10 @@
             // 
             this.pctFree1.BackColor = System.Drawing.Color.Silver;
             this.pctFree1.Image = global::ProyectoGreenSpace.Properties.Resources.silla1;
-            this.pctFree1.Location = new System.Drawing.Point(247, 10);
+            this.pctFree1.Location = new System.Drawing.Point(185, 8);
+            this.pctFree1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pctFree1.Name = "pctFree1";
-            this.pctFree1.Size = new System.Drawing.Size(42, 46);
+            this.pctFree1.Size = new System.Drawing.Size(32, 37);
             this.pctFree1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctFree1.TabIndex = 26;
             this.pctFree1.TabStop = false;
@@ -786,10 +841,11 @@
             this.txtSeats1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSeats1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSeats1.ForeColor = System.Drawing.Color.Black;
-            this.txtSeats1.Location = new System.Drawing.Point(180, 1);
+            this.txtSeats1.Location = new System.Drawing.Point(135, 1);
+            this.txtSeats1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtSeats1.Multiline = true;
             this.txtSeats1.Name = "txtSeats1";
-            this.txtSeats1.Size = new System.Drawing.Size(115, 159);
+            this.txtSeats1.Size = new System.Drawing.Size(86, 129);
             this.txtSeats1.TabIndex = 29;
             this.txtSeats1.Text = "Libres\r\n\r\n\r\nOcu\r\npados";
             // 
@@ -799,10 +855,11 @@
             this.txtTypeHall1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTypeHall1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTypeHall1.ForeColor = System.Drawing.Color.White;
-            this.txtTypeHall1.Location = new System.Drawing.Point(6, 114);
+            this.txtTypeHall1.Location = new System.Drawing.Point(4, 93);
+            this.txtTypeHall1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTypeHall1.Multiline = true;
             this.txtTypeHall1.Name = "txtTypeHall1";
-            this.txtTypeHall1.Size = new System.Drawing.Size(168, 46);
+            this.txtTypeHall1.Size = new System.Drawing.Size(126, 37);
             this.txtTypeHall1.TabIndex = 28;
             this.txtTypeHall1.Text = "Tipo Sala";
             this.txtTypeHall1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -813,10 +870,11 @@
             this.txtHall1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtHall1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHall1.ForeColor = System.Drawing.Color.White;
-            this.txtHall1.Location = new System.Drawing.Point(6, 73);
+            this.txtHall1.Location = new System.Drawing.Point(4, 59);
+            this.txtHall1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtHall1.Multiline = true;
             this.txtHall1.Name = "txtHall1";
-            this.txtHall1.Size = new System.Drawing.Size(147, 46);
+            this.txtHall1.Size = new System.Drawing.Size(110, 37);
             this.txtHall1.TabIndex = 27;
             this.txtHall1.Text = "nº sala";
             this.txtHall1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -827,10 +885,11 @@
             this.txtHour1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtHour1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHour1.ForeColor = System.Drawing.Color.White;
-            this.txtHour1.Location = new System.Drawing.Point(6, 21);
+            this.txtHour1.Location = new System.Drawing.Point(4, 17);
+            this.txtHour1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtHour1.Multiline = true;
             this.txtHour1.Name = "txtHour1";
-            this.txtHour1.Size = new System.Drawing.Size(147, 46);
+            this.txtHour1.Size = new System.Drawing.Size(110, 37);
             this.txtHour1.TabIndex = 26;
             this.txtHour1.Text = "Horario";
             this.txtHour1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -838,25 +897,29 @@
             // txtHandicapped
             // 
             this.txtHandicapped.BackColor = System.Drawing.Color.Turquoise;
+            this.txtHandicapped.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtHandicapped.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHandicapped.ForeColor = System.Drawing.Color.Black;
-            this.txtHandicapped.Location = new System.Drawing.Point(662, 137);
+            this.txtHandicapped.Location = new System.Drawing.Point(496, 111);
+            this.txtHandicapped.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtHandicapped.Multiline = true;
             this.txtHandicapped.Name = "txtHandicapped";
             this.txtHandicapped.ReadOnly = true;
-            this.txtHandicapped.Size = new System.Drawing.Size(138, 53);
+            this.txtHandicapped.Size = new System.Drawing.Size(104, 44);
             this.txtHandicapped.TabIndex = 41;
             // 
             // txtGender2
             // 
             this.txtGender2.BackColor = System.Drawing.Color.PaleGreen;
-            this.txtGender2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGender2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtGender2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGender2.ForeColor = System.Drawing.Color.Black;
-            this.txtGender2.Location = new System.Drawing.Point(1130, 68);
+            this.txtGender2.Location = new System.Drawing.Point(848, 55);
+            this.txtGender2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtGender2.Multiline = true;
             this.txtGender2.Name = "txtGender2";
             this.txtGender2.ReadOnly = true;
-            this.txtGender2.Size = new System.Drawing.Size(138, 53);
+            this.txtGender2.Size = new System.Drawing.Size(104, 44);
             this.txtGender2.TabIndex = 40;
             this.txtGender2.Text = "Genero 2";
             this.txtGender2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -864,13 +927,15 @@
             // txtGender1
             // 
             this.txtGender1.BackColor = System.Drawing.Color.PaleGreen;
-            this.txtGender1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGender1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtGender1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGender1.ForeColor = System.Drawing.Color.Black;
-            this.txtGender1.Location = new System.Drawing.Point(973, 68);
+            this.txtGender1.Location = new System.Drawing.Point(730, 55);
+            this.txtGender1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtGender1.Multiline = true;
             this.txtGender1.Name = "txtGender1";
             this.txtGender1.ReadOnly = true;
-            this.txtGender1.Size = new System.Drawing.Size(138, 53);
+            this.txtGender1.Size = new System.Drawing.Size(104, 44);
             this.txtGender1.TabIndex = 39;
             this.txtGender1.Text = "Genero 1";
             this.txtGender1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -878,13 +943,15 @@
             // txtAge
             // 
             this.txtAge.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.txtAge.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAge.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtAge.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAge.ForeColor = System.Drawing.Color.Black;
-            this.txtAge.Location = new System.Drawing.Point(819, 68);
+            this.txtAge.Location = new System.Drawing.Point(614, 55);
+            this.txtAge.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtAge.Multiline = true;
             this.txtAge.Name = "txtAge";
             this.txtAge.ReadOnly = true;
-            this.txtAge.Size = new System.Drawing.Size(138, 53);
+            this.txtAge.Size = new System.Drawing.Size(104, 44);
             this.txtAge.TabIndex = 38;
             this.txtAge.Text = "Edad ";
             this.txtAge.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -892,13 +959,15 @@
             // txtDuration
             // 
             this.txtDuration.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.txtDuration.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDuration.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDuration.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDuration.ForeColor = System.Drawing.Color.Black;
-            this.txtDuration.Location = new System.Drawing.Point(662, 68);
+            this.txtDuration.Location = new System.Drawing.Point(496, 55);
+            this.txtDuration.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtDuration.Multiline = true;
             this.txtDuration.Name = "txtDuration";
             this.txtDuration.ReadOnly = true;
-            this.txtDuration.Size = new System.Drawing.Size(138, 53);
+            this.txtDuration.Size = new System.Drawing.Size(104, 44);
             this.txtDuration.TabIndex = 37;
             this.txtDuration.Text = "Duración";
             this.txtDuration.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -907,41 +976,45 @@
             // 
             this.lblSynopsis.AutoSize = true;
             this.lblSynopsis.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSynopsis.Location = new System.Drawing.Point(248, 387);
+            this.lblSynopsis.Location = new System.Drawing.Point(186, 314);
+            this.lblSynopsis.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSynopsis.Name = "lblSynopsis";
-            this.lblSynopsis.Size = new System.Drawing.Size(138, 34);
+            this.lblSynopsis.Size = new System.Drawing.Size(111, 25);
             this.lblSynopsis.TabIndex = 36;
             this.lblSynopsis.Text = "SINOPSIS:";
             // 
             // txtInfoMovie
             // 
             this.txtInfoMovie.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtInfoMovie.Location = new System.Drawing.Point(254, 424);
+            this.txtInfoMovie.Location = new System.Drawing.Point(190, 344);
+            this.txtInfoMovie.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtInfoMovie.Multiline = true;
             this.txtInfoMovie.Name = "txtInfoMovie";
             this.txtInfoMovie.ReadOnly = true;
             this.txtInfoMovie.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtInfoMovie.Size = new System.Drawing.Size(343, 282);
+            this.txtInfoMovie.Size = new System.Drawing.Size(258, 230);
             this.txtInfoMovie.TabIndex = 35;
             this.txtInfoMovie.Text = "\r\n\r\n\r\n\r\nInformación";
-            this.txtInfoMovie.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // grbMovie1
             // 
             this.grbMovie1.BackColor = System.Drawing.Color.White;
             this.grbMovie1.Controls.Add(this.pcbMovie1);
-            this.grbMovie1.Location = new System.Drawing.Point(250, 67);
+            this.grbMovie1.Location = new System.Drawing.Point(188, 54);
+            this.grbMovie1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grbMovie1.Name = "grbMovie1";
-            this.grbMovie1.Size = new System.Drawing.Size(343, 271);
+            this.grbMovie1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbMovie1.Size = new System.Drawing.Size(257, 220);
             this.grbMovie1.TabIndex = 34;
             this.grbMovie1.TabStop = false;
             // 
             // pcbMovie1
             // 
             this.pcbMovie1.Image = global::ProyectoGreenSpace.Properties.Resources.galeria_de_imagenes;
-            this.pcbMovie1.Location = new System.Drawing.Point(29, 21);
+            this.pcbMovie1.Location = new System.Drawing.Point(22, 17);
+            this.pcbMovie1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pcbMovie1.Name = "pcbMovie1";
-            this.pcbMovie1.Size = new System.Drawing.Size(273, 216);
+            this.pcbMovie1.Size = new System.Drawing.Size(205, 176);
             this.pcbMovie1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbMovie1.TabIndex = 9;
             this.pcbMovie1.TabStop = false;
@@ -956,9 +1029,10 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Turquoise;
             this.pictureBox1.Image = global::ProyectoGreenSpace.Properties.Resources.people_wheelchair_accessible_icon_1483821;
-            this.pictureBox1.Location = new System.Drawing.Point(708, 139);
+            this.pictureBox1.Location = new System.Drawing.Point(531, 113);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(42, 46);
+            this.pictureBox1.Size = new System.Drawing.Size(32, 37);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 42;
             this.pictureBox1.TabStop = false;
@@ -975,19 +1049,21 @@
             this.sidebar.Controls.Add(this.panel8);
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebar.Location = new System.Drawing.Point(0, 0);
-            this.sidebar.MaximumSize = new System.Drawing.Size(242, 747);
-            this.sidebar.MinimumSize = new System.Drawing.Size(75, 747);
+            this.sidebar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.sidebar.MaximumSize = new System.Drawing.Size(182, 607);
+            this.sidebar.MinimumSize = new System.Drawing.Size(56, 607);
             this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(242, 747);
+            this.sidebar.Size = new System.Drawing.Size(182, 607);
             this.sidebar.TabIndex = 53;
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.btnMenu);
             this.panel2.Controls.Add(this.lblMenu);
-            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Location = new System.Drawing.Point(2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(239, 100);
+            this.panel2.Size = new System.Drawing.Size(179, 81);
             this.panel2.TabIndex = 0;
             // 
             // btnMenu
@@ -995,9 +1071,10 @@
             this.btnMenu.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnMenu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMenu.Image = global::ProyectoGreenSpace.Properties.Resources.menu_three_outlined_rounded_lines_symbol_icon_icons_com_73215;
-            this.btnMenu.Location = new System.Drawing.Point(10, 39);
+            this.btnMenu.Location = new System.Drawing.Point(8, 32);
+            this.btnMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(54, 53);
+            this.btnMenu.Size = new System.Drawing.Size(40, 43);
             this.btnMenu.TabIndex = 23;
             this.btnMenu.Text = "   ";
             this.btnMenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1008,18 +1085,20 @@
             // 
             this.lblMenu.AutoSize = true;
             this.lblMenu.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMenu.Location = new System.Drawing.Point(84, 51);
+            this.lblMenu.Location = new System.Drawing.Point(63, 41);
+            this.lblMenu.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblMenu.Name = "lblMenu";
-            this.lblMenu.Size = new System.Drawing.Size(66, 23);
+            this.lblMenu.Size = new System.Drawing.Size(53, 19);
             this.lblMenu.TabIndex = 2;
             this.lblMenu.Text = "MENU";
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.btnTicketOffice);
-            this.panel1.Location = new System.Drawing.Point(3, 109);
+            this.panel1.Location = new System.Drawing.Point(2, 87);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(239, 61);
+            this.panel1.Size = new System.Drawing.Size(179, 50);
             this.panel1.TabIndex = 1;
             // 
             // btnTicketOffice
@@ -1027,9 +1106,10 @@
             this.btnTicketOffice.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTicketOffice.Image = ((System.Drawing.Image)(resources.GetObject("btnTicketOffice.Image")));
             this.btnTicketOffice.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTicketOffice.Location = new System.Drawing.Point(10, 3);
+            this.btnTicketOffice.Location = new System.Drawing.Point(8, 2);
+            this.btnTicketOffice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnTicketOffice.Name = "btnTicketOffice";
-            this.btnTicketOffice.Size = new System.Drawing.Size(226, 52);
+            this.btnTicketOffice.Size = new System.Drawing.Size(170, 42);
             this.btnTicketOffice.TabIndex = 22;
             this.btnTicketOffice.Text = "               Taquilla";
             this.btnTicketOffice.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1039,9 +1119,10 @@
             // panel3
             // 
             this.panel3.Controls.Add(this.btnReviewTickets);
-            this.panel3.Location = new System.Drawing.Point(3, 176);
+            this.panel3.Location = new System.Drawing.Point(2, 141);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(239, 54);
+            this.panel3.Size = new System.Drawing.Size(179, 44);
             this.panel3.TabIndex = 2;
             // 
             // btnReviewTickets
@@ -1049,9 +1130,10 @@
             this.btnReviewTickets.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReviewTickets.Image = ((System.Drawing.Image)(resources.GetObject("btnReviewTickets.Image")));
             this.btnReviewTickets.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReviewTickets.Location = new System.Drawing.Point(9, 1);
+            this.btnReviewTickets.Location = new System.Drawing.Point(7, 1);
+            this.btnReviewTickets.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnReviewTickets.Name = "btnReviewTickets";
-            this.btnReviewTickets.Size = new System.Drawing.Size(227, 53);
+            this.btnReviewTickets.Size = new System.Drawing.Size(170, 43);
             this.btnReviewTickets.TabIndex = 23;
             this.btnReviewTickets.Text = "          Revisar Tickets";
             this.btnReviewTickets.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1061,9 +1143,10 @@
             // panel4
             // 
             this.panel4.Controls.Add(this.btnReviews);
-            this.panel4.Location = new System.Drawing.Point(3, 236);
+            this.panel4.Location = new System.Drawing.Point(2, 189);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(239, 62);
+            this.panel4.Size = new System.Drawing.Size(179, 50);
             this.panel4.TabIndex = 3;
             // 
             // btnReviews
@@ -1071,9 +1154,10 @@
             this.btnReviews.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReviews.Image = ((System.Drawing.Image)(resources.GetObject("btnReviews.Image")));
             this.btnReviews.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReviews.Location = new System.Drawing.Point(8, 5);
+            this.btnReviews.Location = new System.Drawing.Point(6, 4);
+            this.btnReviews.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnReviews.Name = "btnReviews";
-            this.btnReviews.Size = new System.Drawing.Size(228, 54);
+            this.btnReviews.Size = new System.Drawing.Size(171, 44);
             this.btnReviews.TabIndex = 24;
             this.btnReviews.Text = "            Ver Reseñas";
             this.btnReviews.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1083,9 +1167,10 @@
             // panel5
             // 
             this.panel5.Controls.Add(this.btnWriteReview);
-            this.panel5.Location = new System.Drawing.Point(3, 304);
+            this.panel5.Location = new System.Drawing.Point(2, 243);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(239, 68);
+            this.panel5.Size = new System.Drawing.Size(179, 55);
             this.panel5.TabIndex = 4;
             // 
             // btnWriteReview
@@ -1093,9 +1178,10 @@
             this.btnWriteReview.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnWriteReview.Image = ((System.Drawing.Image)(resources.GetObject("btnWriteReview.Image")));
             this.btnWriteReview.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnWriteReview.Location = new System.Drawing.Point(9, 7);
+            this.btnWriteReview.Location = new System.Drawing.Point(7, 6);
+            this.btnWriteReview.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnWriteReview.Name = "btnWriteReview";
-            this.btnWriteReview.Size = new System.Drawing.Size(227, 58);
+            this.btnWriteReview.Size = new System.Drawing.Size(170, 47);
             this.btnWriteReview.TabIndex = 24;
             this.btnWriteReview.Text = "          Escribir Reseña";
             this.btnWriteReview.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1104,17 +1190,19 @@
             // 
             // panel6
             // 
-            this.panel6.Location = new System.Drawing.Point(3, 378);
+            this.panel6.Location = new System.Drawing.Point(2, 302);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(239, 203);
+            this.panel6.Size = new System.Drawing.Size(179, 165);
             this.panel6.TabIndex = 5;
             // 
             // panel7
             // 
             this.panel7.Controls.Add(this.btnUser);
-            this.panel7.Location = new System.Drawing.Point(3, 587);
+            this.panel7.Location = new System.Drawing.Point(2, 471);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(239, 56);
+            this.panel7.Size = new System.Drawing.Size(179, 46);
             this.panel7.TabIndex = 6;
             // 
             // btnUser
@@ -1123,9 +1211,10 @@
             this.btnUser.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUser.Image = ((System.Drawing.Image)(resources.GetObject("btnUser.Image")));
             this.btnUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUser.Location = new System.Drawing.Point(9, 2);
+            this.btnUser.Location = new System.Drawing.Point(7, 2);
+            this.btnUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnUser.Name = "btnUser";
-            this.btnUser.Size = new System.Drawing.Size(227, 52);
+            this.btnUser.Size = new System.Drawing.Size(170, 42);
             this.btnUser.TabIndex = 24;
             this.btnUser.Text = "               Usuario";
             this.btnUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1134,9 +1223,10 @@
             // panel8
             // 
             this.panel8.Controls.Add(this.btnSettings);
-            this.panel8.Location = new System.Drawing.Point(3, 649);
+            this.panel8.Location = new System.Drawing.Point(2, 521);
+            this.panel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(239, 64);
+            this.panel8.Size = new System.Drawing.Size(179, 52);
             this.panel8.TabIndex = 7;
             // 
             // btnSettings
@@ -1144,9 +1234,10 @@
             this.btnSettings.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSettings.Image = ((System.Drawing.Image)(resources.GetObject("btnSettings.Image")));
             this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSettings.Location = new System.Drawing.Point(9, 3);
+            this.btnSettings.Location = new System.Drawing.Point(7, 2);
+            this.btnSettings.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Size = new System.Drawing.Size(227, 52);
+            this.btnSettings.Size = new System.Drawing.Size(170, 42);
             this.btnSettings.TabIndex = 24;
             this.btnSettings.Text = "         Configuración";
             this.btnSettings.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1162,17 +1253,19 @@
             this.g2Bar.Controls.Add(this.pibMaximize);
             this.g2Bar.Controls.Add(this.pibClose);
             this.g2Bar.Location = new System.Drawing.Point(0, 0);
+            this.g2Bar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.g2Bar.Name = "g2Bar";
-            this.g2Bar.Size = new System.Drawing.Size(1299, 41);
+            this.g2Bar.Size = new System.Drawing.Size(974, 33);
             this.g2Bar.TabIndex = 54;
             // 
             // g2lblTitle
             // 
             this.g2lblTitle.BackColor = System.Drawing.Color.Transparent;
             this.g2lblTitle.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.g2lblTitle.Location = new System.Drawing.Point(13, 8);
+            this.g2lblTitle.Location = new System.Drawing.Point(10, 6);
+            this.g2lblTitle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.g2lblTitle.Name = "g2lblTitle";
-            this.g2lblTitle.Size = new System.Drawing.Size(194, 25);
+            this.g2lblTitle.Size = new System.Drawing.Size(152, 23);
             this.g2lblTitle.TabIndex = 36;
             this.g2lblTitle.Text = "GREEN SPACE FILMS";
             // 
@@ -1182,9 +1275,10 @@
             this.pibMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pibMinimize.Image = ((System.Drawing.Image)(resources.GetObject("pibMinimize.Image")));
             this.pibMinimize.ImageRotate = 0F;
-            this.pibMinimize.Location = new System.Drawing.Point(1166, 8);
+            this.pibMinimize.Location = new System.Drawing.Point(874, 6);
+            this.pibMinimize.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pibMinimize.Name = "pibMinimize";
-            this.pibMinimize.Size = new System.Drawing.Size(35, 25);
+            this.pibMinimize.Size = new System.Drawing.Size(26, 20);
             this.pibMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pibMinimize.TabIndex = 35;
             this.pibMinimize.TabStop = false;
@@ -1196,9 +1290,10 @@
             this.pibMaximize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pibMaximize.Image = global::ProyectoGreenSpace.Properties.Resources.maximizar;
             this.pibMaximize.ImageRotate = 0F;
-            this.pibMaximize.Location = new System.Drawing.Point(1208, 8);
+            this.pibMaximize.Location = new System.Drawing.Point(906, 6);
+            this.pibMaximize.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pibMaximize.Name = "pibMaximize";
-            this.pibMaximize.Size = new System.Drawing.Size(34, 25);
+            this.pibMaximize.Size = new System.Drawing.Size(26, 20);
             this.pibMaximize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pibMaximize.TabIndex = 34;
             this.pibMaximize.TabStop = false;
@@ -1210,9 +1305,10 @@
             this.pibClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pibClose.Image = ((System.Drawing.Image)(resources.GetObject("pibClose.Image")));
             this.pibClose.ImageRotate = 0F;
-            this.pibClose.Location = new System.Drawing.Point(1247, 3);
+            this.pibClose.Location = new System.Drawing.Point(935, 2);
+            this.pibClose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pibClose.Name = "pibClose";
-            this.pibClose.Size = new System.Drawing.Size(39, 33);
+            this.pibClose.Size = new System.Drawing.Size(29, 27);
             this.pibClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pibClose.TabIndex = 33;
             this.pibClose.TabStop = false;
@@ -1226,9 +1322,9 @@
             // 
             // FrmMovieTheater
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1298, 747);
+            this.ClientSize = new System.Drawing.Size(974, 607);
             this.Controls.Add(this.g2Bar);
             this.Controls.Add(this.sidebar);
             this.Controls.Add(this.grbInfo4);
@@ -1249,6 +1345,7 @@
             this.Controls.Add(this.txtInfoMovie);
             this.Controls.Add(this.grbMovie1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmMovieTheater";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmMovieTheater";

@@ -127,7 +127,7 @@ namespace ProyectoGreenSpace.Classes
         {
             List<Review> reviews = new List<Review>();
 
-            string query = "SELECT * FROM reviews WHERE filmId = @filmId LIMIT @maxReviews";
+            string query = "SELECT * FROM reviews WHERE filmId = @filmId ORDER BY reviewDateTime DESC LIMIT @limit";
 
             MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
             command.Parameters.AddWithValue("@filmId", filmId);

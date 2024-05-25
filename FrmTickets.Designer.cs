@@ -110,19 +110,21 @@
             this.sidebar.Controls.Add(this.panel8);
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebar.Location = new System.Drawing.Point(0, 0);
-            this.sidebar.MaximumSize = new System.Drawing.Size(242, 700);
-            this.sidebar.MinimumSize = new System.Drawing.Size(75, 700);
+            this.sidebar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.sidebar.MaximumSize = new System.Drawing.Size(182, 569);
+            this.sidebar.MinimumSize = new System.Drawing.Size(56, 569);
             this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(242, 700);
+            this.sidebar.Size = new System.Drawing.Size(182, 569);
             this.sidebar.TabIndex = 30;
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.btnMenu);
             this.panel2.Controls.Add(this.lblMenu);
-            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Location = new System.Drawing.Point(2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(239, 100);
+            this.panel2.Size = new System.Drawing.Size(179, 81);
             this.panel2.TabIndex = 0;
             // 
             // btnMenu
@@ -130,9 +132,10 @@
             this.btnMenu.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnMenu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMenu.Image = global::ProyectoGreenSpace.Properties.Resources.menu_three_outlined_rounded_lines_symbol_icon_icons_com_73215;
-            this.btnMenu.Location = new System.Drawing.Point(9, 27);
+            this.btnMenu.Location = new System.Drawing.Point(7, 22);
+            this.btnMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(54, 53);
+            this.btnMenu.Size = new System.Drawing.Size(40, 43);
             this.btnMenu.TabIndex = 23;
             this.btnMenu.Text = "   ";
             this.btnMenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -144,18 +147,20 @@
             // 
             this.lblMenu.AutoSize = true;
             this.lblMenu.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMenu.Location = new System.Drawing.Point(85, 39);
+            this.lblMenu.Location = new System.Drawing.Point(64, 32);
+            this.lblMenu.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblMenu.Name = "lblMenu";
-            this.lblMenu.Size = new System.Drawing.Size(66, 23);
+            this.lblMenu.Size = new System.Drawing.Size(53, 19);
             this.lblMenu.TabIndex = 2;
             this.lblMenu.Text = "MENU";
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.btnTicketOffice);
-            this.panel1.Location = new System.Drawing.Point(3, 109);
+            this.panel1.Location = new System.Drawing.Point(2, 87);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(239, 61);
+            this.panel1.Size = new System.Drawing.Size(179, 50);
             this.panel1.TabIndex = 1;
             // 
             // btnTicketOffice
@@ -163,9 +168,10 @@
             this.btnTicketOffice.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTicketOffice.Image = ((System.Drawing.Image)(resources.GetObject("btnTicketOffice.Image")));
             this.btnTicketOffice.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTicketOffice.Location = new System.Drawing.Point(3, 3);
+            this.btnTicketOffice.Location = new System.Drawing.Point(2, 2);
+            this.btnTicketOffice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnTicketOffice.Name = "btnTicketOffice";
-            this.btnTicketOffice.Size = new System.Drawing.Size(233, 52);
+            this.btnTicketOffice.Size = new System.Drawing.Size(175, 42);
             this.btnTicketOffice.TabIndex = 22;
             this.btnTicketOffice.Text = "               Taquilla";
             this.btnTicketOffice.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -175,9 +181,10 @@
             // panel3
             // 
             this.panel3.Controls.Add(this.btnReviewTickets);
-            this.panel3.Location = new System.Drawing.Point(3, 176);
+            this.panel3.Location = new System.Drawing.Point(2, 141);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(239, 54);
+            this.panel3.Size = new System.Drawing.Size(179, 44);
             this.panel3.TabIndex = 2;
             // 
             // btnReviewTickets
@@ -185,9 +192,10 @@
             this.btnReviewTickets.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReviewTickets.Image = ((System.Drawing.Image)(resources.GetObject("btnReviewTickets.Image")));
             this.btnReviewTickets.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReviewTickets.Location = new System.Drawing.Point(3, 0);
+            this.btnReviewTickets.Location = new System.Drawing.Point(2, 0);
+            this.btnReviewTickets.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnReviewTickets.Name = "btnReviewTickets";
-            this.btnReviewTickets.Size = new System.Drawing.Size(233, 53);
+            this.btnReviewTickets.Size = new System.Drawing.Size(175, 43);
             this.btnReviewTickets.TabIndex = 23;
             this.btnReviewTickets.Text = "          Revisar Tickets";
             this.btnReviewTickets.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -197,9 +205,10 @@
             // panel4
             // 
             this.panel4.Controls.Add(this.btnReviews);
-            this.panel4.Location = new System.Drawing.Point(3, 236);
+            this.panel4.Location = new System.Drawing.Point(2, 189);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(239, 62);
+            this.panel4.Size = new System.Drawing.Size(179, 50);
             this.panel4.TabIndex = 3;
             // 
             // btnReviews
@@ -207,9 +216,10 @@
             this.btnReviews.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReviews.Image = ((System.Drawing.Image)(resources.GetObject("btnReviews.Image")));
             this.btnReviews.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReviews.Location = new System.Drawing.Point(3, 5);
+            this.btnReviews.Location = new System.Drawing.Point(2, 4);
+            this.btnReviews.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnReviews.Name = "btnReviews";
-            this.btnReviews.Size = new System.Drawing.Size(233, 54);
+            this.btnReviews.Size = new System.Drawing.Size(175, 44);
             this.btnReviews.TabIndex = 24;
             this.btnReviews.Text = "            Ver Reseñas";
             this.btnReviews.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -219,9 +229,10 @@
             // panel5
             // 
             this.panel5.Controls.Add(this.btnWriteReview);
-            this.panel5.Location = new System.Drawing.Point(3, 304);
+            this.panel5.Location = new System.Drawing.Point(2, 243);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(239, 68);
+            this.panel5.Size = new System.Drawing.Size(179, 55);
             this.panel5.TabIndex = 4;
             // 
             // btnWriteReview
@@ -229,9 +240,10 @@
             this.btnWriteReview.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnWriteReview.Image = ((System.Drawing.Image)(resources.GetObject("btnWriteReview.Image")));
             this.btnWriteReview.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnWriteReview.Location = new System.Drawing.Point(3, 7);
+            this.btnWriteReview.Location = new System.Drawing.Point(2, 6);
+            this.btnWriteReview.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnWriteReview.Name = "btnWriteReview";
-            this.btnWriteReview.Size = new System.Drawing.Size(233, 58);
+            this.btnWriteReview.Size = new System.Drawing.Size(175, 47);
             this.btnWriteReview.TabIndex = 24;
             this.btnWriteReview.Text = "          Escribir Reseña";
             this.btnWriteReview.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -240,17 +252,19 @@
             // 
             // panel6
             // 
-            this.panel6.Location = new System.Drawing.Point(3, 378);
+            this.panel6.Location = new System.Drawing.Point(2, 302);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(239, 176);
+            this.panel6.Size = new System.Drawing.Size(179, 143);
             this.panel6.TabIndex = 5;
             // 
             // panel7
             // 
             this.panel7.Controls.Add(this.btnUser);
-            this.panel7.Location = new System.Drawing.Point(3, 560);
+            this.panel7.Location = new System.Drawing.Point(2, 449);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(239, 56);
+            this.panel7.Size = new System.Drawing.Size(179, 46);
             this.panel7.TabIndex = 6;
             // 
             // btnUser
@@ -259,9 +273,10 @@
             this.btnUser.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUser.Image = ((System.Drawing.Image)(resources.GetObject("btnUser.Image")));
             this.btnUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUser.Location = new System.Drawing.Point(3, 2);
+            this.btnUser.Location = new System.Drawing.Point(2, 2);
+            this.btnUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnUser.Name = "btnUser";
-            this.btnUser.Size = new System.Drawing.Size(233, 52);
+            this.btnUser.Size = new System.Drawing.Size(175, 42);
             this.btnUser.TabIndex = 24;
             this.btnUser.Text = "               Usuario";
             this.btnUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -270,9 +285,10 @@
             // panel8
             // 
             this.panel8.Controls.Add(this.btnSettings);
-            this.panel8.Location = new System.Drawing.Point(3, 622);
+            this.panel8.Location = new System.Drawing.Point(2, 499);
+            this.panel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(239, 54);
+            this.panel8.Size = new System.Drawing.Size(179, 44);
             this.panel8.TabIndex = 7;
             // 
             // btnSettings
@@ -280,9 +296,10 @@
             this.btnSettings.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSettings.Image = ((System.Drawing.Image)(resources.GetObject("btnSettings.Image")));
             this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSettings.Location = new System.Drawing.Point(3, 3);
+            this.btnSettings.Location = new System.Drawing.Point(2, 2);
+            this.btnSettings.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Size = new System.Drawing.Size(233, 48);
+            this.btnSettings.Size = new System.Drawing.Size(175, 39);
             this.btnSettings.TabIndex = 24;
             this.btnSettings.Text = "          Configuración";
             this.btnSettings.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -299,9 +316,10 @@
             // 
             this.lblActualTickets.AutoSize = true;
             this.lblActualTickets.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblActualTickets.Location = new System.Drawing.Point(293, 70);
+            this.lblActualTickets.Location = new System.Drawing.Point(220, 57);
+            this.lblActualTickets.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblActualTickets.Name = "lblActualTickets";
-            this.lblActualTickets.Size = new System.Drawing.Size(175, 23);
+            this.lblActualTickets.Size = new System.Drawing.Size(142, 21);
             this.lblActualTickets.TabIndex = 31;
             this.lblActualTickets.Text = "Tickets actuales: ";
             // 
@@ -309,9 +327,10 @@
             // 
             this.lblNumActualTickets.AutoSize = true;
             this.lblNumActualTickets.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumActualTickets.Location = new System.Drawing.Point(483, 70);
+            this.lblNumActualTickets.Location = new System.Drawing.Point(362, 57);
+            this.lblNumActualTickets.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNumActualTickets.Name = "lblNumActualTickets";
-            this.lblNumActualTickets.Size = new System.Drawing.Size(29, 23);
+            this.lblNumActualTickets.Size = new System.Drawing.Size(26, 21);
             this.lblNumActualTickets.TabIndex = 32;
             this.lblNumActualTickets.Text = "nº";
             // 
@@ -319,9 +338,10 @@
             // 
             this.lblPastTickets.AutoSize = true;
             this.lblPastTickets.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPastTickets.Location = new System.Drawing.Point(293, 368);
+            this.lblPastTickets.Location = new System.Drawing.Point(220, 299);
+            this.lblPastTickets.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPastTickets.Name = "lblPastTickets";
-            this.lblPastTickets.Size = new System.Drawing.Size(174, 23);
+            this.lblPastTickets.Size = new System.Drawing.Size(140, 21);
             this.lblPastTickets.TabIndex = 33;
             this.lblPastTickets.Text = "Tickets pasados: ";
             // 
@@ -329,27 +349,30 @@
             // 
             this.lblNumPastTickets.AutoSize = true;
             this.lblNumPastTickets.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumPastTickets.Location = new System.Drawing.Point(483, 368);
+            this.lblNumPastTickets.Location = new System.Drawing.Point(362, 299);
+            this.lblNumPastTickets.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNumPastTickets.Name = "lblNumPastTickets";
-            this.lblNumPastTickets.Size = new System.Drawing.Size(29, 23);
+            this.lblNumPastTickets.Size = new System.Drawing.Size(26, 21);
             this.lblNumPastTickets.TabIndex = 34;
             this.lblNumPastTickets.Text = "nº";
             // 
             // txtSearch
             // 
-            this.txtSearch.Location = new System.Drawing.Point(1093, 57);
+            this.txtSearch.Location = new System.Drawing.Point(820, 46);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtSearch.Multiline = true;
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(207, 36);
+            this.txtSearch.Size = new System.Drawing.Size(156, 30);
             this.txtSearch.TabIndex = 35;
             // 
             // btnSearch
             // 
             this.btnSearch.BackColor = System.Drawing.Color.White;
             this.btnSearch.Image = global::ProyectoGreenSpace.Properties.Resources.lupa;
-            this.btnSearch.Location = new System.Drawing.Point(1050, 55);
+            this.btnSearch.Location = new System.Drawing.Point(788, 45);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(53, 39);
+            this.btnSearch.Size = new System.Drawing.Size(40, 32);
             this.btnSearch.TabIndex = 36;
             this.btnSearch.UseVisualStyleBackColor = false;
             // 
@@ -368,12 +391,13 @@
             this.priceWithoutDiscount,
             this.discount,
             this.total});
-            this.dgvActualTickets.Location = new System.Drawing.Point(262, 109);
+            this.dgvActualTickets.Location = new System.Drawing.Point(196, 89);
+            this.dgvActualTickets.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvActualTickets.Name = "dgvActualTickets";
             this.dgvActualTickets.ReadOnly = true;
             this.dgvActualTickets.RowHeadersWidth = 51;
             this.dgvActualTickets.RowTemplate.Height = 24;
-            this.dgvActualTickets.Size = new System.Drawing.Size(1038, 210);
+            this.dgvActualTickets.Size = new System.Drawing.Size(778, 171);
             this.dgvActualTickets.TabIndex = 37;
             // 
             // numHall
@@ -471,12 +495,13 @@
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewTextBoxColumn8,
             this.dataGridViewTextBoxColumn9});
-            this.dgvPastTickets.Location = new System.Drawing.Point(262, 409);
+            this.dgvPastTickets.Location = new System.Drawing.Point(196, 332);
+            this.dgvPastTickets.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvPastTickets.Name = "dgvPastTickets";
             this.dgvPastTickets.ReadOnly = true;
             this.dgvPastTickets.RowHeadersWidth = 51;
             this.dgvPastTickets.RowTemplate.Height = 24;
-            this.dgvPastTickets.Size = new System.Drawing.Size(1038, 291);
+            this.dgvPastTickets.Size = new System.Drawing.Size(778, 236);
             this.dgvPastTickets.TabIndex = 38;
             // 
             // dataGridViewTextBoxColumn1
@@ -567,9 +592,10 @@
             this.g2Bar.Controls.Add(this.pibMaximize);
             this.g2Bar.Controls.Add(this.pibCloseFrm);
             this.g2Bar.Controls.Add(this.g2lblTitle);
-            this.g2Bar.Location = new System.Drawing.Point(241, 0);
+            this.g2Bar.Location = new System.Drawing.Point(181, 0);
+            this.g2Bar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.g2Bar.Name = "g2Bar";
-            this.g2Bar.Size = new System.Drawing.Size(1092, 42);
+            this.g2Bar.Size = new System.Drawing.Size(819, 34);
             this.g2Bar.TabIndex = 49;
             // 
             // guna2PictureBox1
@@ -578,9 +604,10 @@
             this.guna2PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(960, 8);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(720, 6);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(35, 25);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(26, 20);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 39;
             this.guna2PictureBox1.TabStop = false;
@@ -591,9 +618,10 @@
             this.pibMaximize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pibMaximize.Image = global::ProyectoGreenSpace.Properties.Resources.maximizar;
             this.pibMaximize.ImageRotate = 0F;
-            this.pibMaximize.Location = new System.Drawing.Point(1001, 8);
+            this.pibMaximize.Location = new System.Drawing.Point(751, 6);
+            this.pibMaximize.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pibMaximize.Name = "pibMaximize";
-            this.pibMaximize.Size = new System.Drawing.Size(34, 25);
+            this.pibMaximize.Size = new System.Drawing.Size(26, 20);
             this.pibMaximize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pibMaximize.TabIndex = 38;
             this.pibMaximize.TabStop = false;
@@ -604,9 +632,10 @@
             this.pibCloseFrm.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pibCloseFrm.Image = ((System.Drawing.Image)(resources.GetObject("pibCloseFrm.Image")));
             this.pibCloseFrm.ImageRotate = 0F;
-            this.pibCloseFrm.Location = new System.Drawing.Point(1041, 3);
+            this.pibCloseFrm.Location = new System.Drawing.Point(781, 2);
+            this.pibCloseFrm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pibCloseFrm.Name = "pibCloseFrm";
-            this.pibCloseFrm.Size = new System.Drawing.Size(39, 33);
+            this.pibCloseFrm.Size = new System.Drawing.Size(29, 27);
             this.pibCloseFrm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pibCloseFrm.TabIndex = 37;
             this.pibCloseFrm.TabStop = false;
@@ -615,9 +644,10 @@
             // 
             this.g2lblTitle.BackColor = System.Drawing.Color.Transparent;
             this.g2lblTitle.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.g2lblTitle.Location = new System.Drawing.Point(13, 8);
+            this.g2lblTitle.Location = new System.Drawing.Point(10, 6);
+            this.g2lblTitle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.g2lblTitle.Name = "g2lblTitle";
-            this.g2lblTitle.Size = new System.Drawing.Size(194, 25);
+            this.g2lblTitle.Size = new System.Drawing.Size(152, 23);
             this.g2lblTitle.TabIndex = 36;
             this.g2lblTitle.Text = "GREEN SPACE FILMS";
             // 
@@ -629,10 +659,10 @@
             // 
             // FrmTickets
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1333, 715);
+            this.ClientSize = new System.Drawing.Size(1000, 581);
             this.Controls.Add(this.g2Bar);
             this.Controls.Add(this.dgvPastTickets);
             this.Controls.Add(this.dgvActualTickets);
@@ -644,6 +674,7 @@
             this.Controls.Add(this.lblActualTickets);
             this.Controls.Add(this.sidebar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmTickets";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmTickets";
