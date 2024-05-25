@@ -54,14 +54,23 @@ namespace ProyectoGreenSpace
             }
         }
 
-        private void LoadFilmReviews(string filmName)
+        private void SetFilmsNames()
         {
-            List<Review> reviews = Review.ObtainReviews(Film.InfoFilm(filmName).Id, 4);
+            foreach (var values in Film.GetIdentifyingInfoPremiering())
+            {
+                cmbMovies.Items.Add(values.name);
+            }
+        }
 
+        private void LoadFilmReviews(List<Review> reviews)
+        {
             for (int i = 0; i < reviews.Count; i++)
             {
+                User user = reviews[i].getUser();
+                Film film = reviews[i].getFilm();
+
                 string grbReviewName = $"grbReview{i + 1}";
-                string lblTitleReviewName = $"lblTitleReview{i + 1}";
+                string lblFilmTitleName = $"lblFilmTitle{i + 1}";
                 string rtxReviewName = $"rtxReview{i + 1}";
                 string lblNameReviewName = $"lblNameReview{i + 1}";
                 string lblAntiquityReviewName = $"lblAntiquityReview{i + 1}";
@@ -69,29 +78,44 @@ namespace ProyectoGreenSpace
                 string lblDateReviewName = $"lblDateReview{i + 1}";
                 string pctReviewName = $"pctReview{i + 1}";
 
-                GroupBox grbSession = (GroupBox)this.Controls.Find(grbReviewName, true)[0];
-                grbSession.Visible = true;
+                GroupBox grbReview = (GroupBox)this.Controls.Find(grbReviewName, true)[0];
+                grbReview.Visible = true;
 
-                Label lblSessionId = (Label)grbSession.Controls.Find(lblSessionIdName, true)[0];
-                lblSessionId.Text = sessions[i].Id.ToString();
+                Label lblFilmTitle = (Label)grbReview.Controls.Find(lblFilmTitleName, true)[0];
+                lblFilmTitle.Text = film.Name;
 
-                TextBox txtSessionHour = (TextBox)grbSession.Controls.Find(txtHourName, true)[0];
-                txtSessionHour.Text = sessions[i].StartHour.ToString();
+                RichTextBox rtxReview = (RichTextBox)grbReview.Controls.Find(rtxReviewName, true)[0];
+                rtxReview.Text = reviews[i].ReviewMessage;
 
-                Room room = sessions[i].getRoom();
+                TextBox lblNameReview = (TextBox)grbReview.Controls.Find(lblNameReviewName, true)[0];
+                lblNameReview.Text = user.Username;
 
-                TextBox txtSessionHall = (TextBox)grbSession.Controls.Find(txtHallName, true)[0];
-                txtSessionHall.Text = $"Sala {room.Id}";
+                TextBox lblAntiquityReview = (TextBox)grbReview.Controls.Find(lblAntiquityReviewName, true)[0];
+                lblAntiquityReview.Text = user.CreationDateTime.ToShortDateString();
 
-                TextBox txtSessionHallType = (TextBox)grbSession.Controls.Find(txtHallTypeName, true)[0];
-                txtSessionHallType.Text = room.Type;
+                Label lblPunctuationReview = (Label)grbReview.Controls.Find(lblPunctuationReviewName, true)[0];
+                lblPunctuationReview.Text = reviews[i].Score.ToString();
 
-                Label lblAmountFreeSeats = (Label)grbSession.Controls.Find(lblFreeSeatsName, true)[0];
-                lblAmountFreeSeats.Text = sessions[i].FreeSeats().ToString();
+                Label lblDateReview = (Label)grbReview.Controls.Find(lblDateReviewName, true)[0];
+                lblDateReview.Text = reviews[i].ReviewDateTime.ToShortDateString();
 
-                Label lblAmountOccupiedSeats = (Label)grbSession.Controls.Find(lblOccupiedSeatsName, true)[0];
-                lblAmountOccupiedSeats.Text = sessions[i].OccupiedSeats.ToString();
+                Label pctReview = (Label)grbReview.Controls.Find(pctReviewName, true)[0];
+                pctReview.Image = user.Pfp;
             }
+        }
+
+        private void SearchReviewsFiltered()
+        {
+            int? score = null;
+
+            if (!string.IsNullOrEmpty(cmbStars.Text))
+            {
+                score = Convert.ToInt32(cmbStars.Text.Split(' ')[0]);
+            }
+
+            string filmName = Film.Exists(cmbMovies.Text) ? cmbMovies.Text : null;
+
+            LoadFilmReviews(Review.ObtainReviews(score, filmName, cmbOrder.Text, 4));
         }
 
         private void FrmReviews_Load(object sender, EventArgs e)
@@ -104,6 +128,8 @@ namespace ProyectoGreenSpace
 
             txtUsername.Text = UserSession.Username;
             txtJoinApp.Text = UserSession.CreationDateTime.ToString("dd/MM/yyyy");
+
+            SetFilmsNames();
         }
 
         private void sidebarTimer_Tick(object sender, EventArgs e)
@@ -256,5 +282,20 @@ namespace ProyectoGreenSpace
             }
         }
         #endregion
+
+        private void cmbStars_SelectedValueChanged(object sender, EventArgs e)
+        {
+            SearchReviewsFiltered();
+        }
+
+        private void cmbMovies_SelectedValueChanged(object sender, EventArgs e)
+        {
+            SearchReviewsFiltered();
+        }
+
+        private void cmbOrder_SelectedValueChanged(object sender, EventArgs e)
+        {
+            SearchReviewsFiltered();
+        }
     }
 }

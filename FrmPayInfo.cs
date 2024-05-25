@@ -63,6 +63,7 @@ namespace ProyectoGreenSpace
             Film film = ticket.getFilm();
             Room room = ticket.getRoom();
 
+            pctMovie.Image = film.Cover;
             txtMovie.Text = film.Name;
             txtTypeHall.Text = room.Type;
             txtName.Text = UserSession.Username;
