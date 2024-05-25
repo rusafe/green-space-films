@@ -1344,6 +1344,7 @@
             this.Controls.Add(this.lblSynopsis);
             this.Controls.Add(this.txtInfoMovie);
             this.Controls.Add(this.grbMovie1);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmMovieTheater";

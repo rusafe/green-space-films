@@ -883,13 +883,46 @@ namespace ProyectoGreenSpace.LangResources {
         }
 
         /// <summary>
-        ///   Busca una cadena traducida similar a Acceso sesiones
+        ///   Busca una cadena traducida similar a Cambiar nombre de usuario
         /// </summary>
         internal static string labelNewUsername
         {
             get
             {
                 return ResourceManager.GetString("labelNewUsername", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Pagar
+        /// </summary>
+        internal static string buttonPay
+        {
+            get
+            {
+                return ResourceManager.GetString("buttonPay", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Cancelar
+        /// </summary>
+        internal static string buttonCancel
+        {
+            get
+            {
+                return ResourceManager.GetString("buttonCancel", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a atrás
+        /// </summary>
+        internal static string buttonBack
+        {
+            get
+            {
+                return ResourceManager.GetString("buttonBack", resourceCulture);
             }
         }
     }

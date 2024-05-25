@@ -36,6 +36,9 @@ namespace ProyectoGreenSpace
             lblDiscount.Text = StringResources.labelDiscount;
             lblTotal.Text = StringResources.labelTotal;
             lblTotalApplied.Text = StringResources.labelTotalApplied;
+            btnBack.Text = StringResources.buttonBack;
+            btnCancel.Text = StringResources.buttonCancel;
+            btnPay.Text = StringResources.buttonPay;
         }
 
         private Ticket CreateTicket(Session session, int seatsSelected)

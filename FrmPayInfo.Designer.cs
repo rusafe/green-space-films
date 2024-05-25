@@ -74,7 +74,7 @@
             // 
             this.btnBack.BackColor = System.Drawing.Color.SkyBlue;
             this.btnBack.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(709, 593);
+            this.btnBack.Location = new System.Drawing.Point(657, 593);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(137, 45);
             this.btnBack.TabIndex = 53;
@@ -86,7 +86,7 @@
             // 
             this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnCancel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(867, 593);
+            this.btnCancel.Location = new System.Drawing.Point(817, 593);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(137, 45);
             this.btnCancel.TabIndex = 52;
@@ -98,7 +98,7 @@
             // 
             this.btnPay.BackColor = System.Drawing.Color.PaleGreen;
             this.btnPay.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPay.Location = new System.Drawing.Point(1028, 593);
+            this.btnPay.Location = new System.Drawing.Point(970, 593);
             this.btnPay.Name = "btnPay";
             this.btnPay.Size = new System.Drawing.Size(138, 45);
             this.btnPay.TabIndex = 51;
@@ -110,7 +110,7 @@
             // 
             this.lblTotalApplied.AutoSize = true;
             this.lblTotalApplied.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalApplied.Location = new System.Drawing.Point(910, 549);
+            this.lblTotalApplied.Location = new System.Drawing.Point(889, 547);
             this.lblTotalApplied.Name = "lblTotalApplied";
             this.lblTotalApplied.Size = new System.Drawing.Size(182, 23);
             this.lblTotalApplied.TabIndex = 50;
@@ -120,7 +120,7 @@
             // 
             this.lblTotalImportApplied.AutoSize = true;
             this.lblTotalImportApplied.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalImportApplied.Location = new System.Drawing.Point(1135, 549);
+            this.lblTotalImportApplied.Location = new System.Drawing.Point(1114, 547);
             this.lblTotalImportApplied.Name = "lblTotalImportApplied";
             this.lblTotalImportApplied.Size = new System.Drawing.Size(21, 23);
             this.lblTotalImportApplied.TabIndex = 49;
@@ -131,7 +131,7 @@
             // 
             this.lblDiscount.AutoSize = true;
             this.lblDiscount.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDiscount.Location = new System.Drawing.Point(953, 516);
+            this.lblDiscount.Location = new System.Drawing.Point(932, 514);
             this.lblDiscount.Name = "lblDiscount";
             this.lblDiscount.Size = new System.Drawing.Size(131, 23);
             this.lblDiscount.TabIndex = 48;
@@ -141,7 +141,7 @@
             // 
             this.lblDiscountImport.AutoSize = true;
             this.lblDiscountImport.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDiscountImport.Location = new System.Drawing.Point(1135, 516);
+            this.lblDiscountImport.Location = new System.Drawing.Point(1114, 514);
             this.lblDiscountImport.Name = "lblDiscountImport";
             this.lblDiscountImport.Size = new System.Drawing.Size(21, 23);
             this.lblDiscountImport.TabIndex = 47;
@@ -152,7 +152,7 @@
             // 
             this.lblTotalImport.AutoSize = true;
             this.lblTotalImport.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalImport.Location = new System.Drawing.Point(1135, 482);
+            this.lblTotalImport.Location = new System.Drawing.Point(1114, 480);
             this.lblTotalImport.Name = "lblTotalImport";
             this.lblTotalImport.Size = new System.Drawing.Size(21, 23);
             this.lblTotalImport.TabIndex = 46;
@@ -163,7 +163,7 @@
             // 
             this.lblTotal.AutoSize = true;
             this.lblTotal.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotal.Location = new System.Drawing.Point(953, 482);
+            this.lblTotal.Location = new System.Drawing.Point(932, 480);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(72, 23);
             this.lblTotal.TabIndex = 45;
@@ -200,17 +200,17 @@
             this.txtDiscounts.Location = new System.Drawing.Point(17, 333);
             this.txtDiscounts.Multiline = true;
             this.txtDiscounts.Name = "txtDiscounts";
-            this.txtDiscounts.Size = new System.Drawing.Size(232, 43);
+            this.txtDiscounts.Size = new System.Drawing.Size(232, 39);
             this.txtDiscounts.TabIndex = 33;
             // 
             // txtTypeHall
             // 
             this.txtTypeHall.BackColor = System.Drawing.Color.White;
             this.txtTypeHall.Enabled = false;
-            this.txtTypeHall.Location = new System.Drawing.Point(412, 108);
+            this.txtTypeHall.Location = new System.Drawing.Point(412, 112);
             this.txtTypeHall.Multiline = true;
             this.txtTypeHall.Name = "txtTypeHall";
-            this.txtTypeHall.Size = new System.Drawing.Size(193, 43);
+            this.txtTypeHall.Size = new System.Drawing.Size(193, 39);
             this.txtTypeHall.TabIndex = 32;
             // 
             // txtName
@@ -220,37 +220,37 @@
             this.txtName.Location = new System.Drawing.Point(17, 225);
             this.txtName.Multiline = true;
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(170, 43);
+            this.txtName.Size = new System.Drawing.Size(185, 39);
             this.txtName.TabIndex = 31;
             // 
             // txtShedule
             // 
             this.txtShedule.BackColor = System.Drawing.Color.White;
             this.txtShedule.Enabled = false;
-            this.txtShedule.Location = new System.Drawing.Point(235, 225);
+            this.txtShedule.Location = new System.Drawing.Point(257, 225);
             this.txtShedule.Multiline = true;
             this.txtShedule.Name = "txtShedule";
-            this.txtShedule.Size = new System.Drawing.Size(93, 43);
+            this.txtShedule.Size = new System.Drawing.Size(133, 39);
             this.txtShedule.TabIndex = 30;
             // 
             // txtDuration
             // 
             this.txtDuration.BackColor = System.Drawing.Color.White;
             this.txtDuration.Enabled = false;
-            this.txtDuration.Location = new System.Drawing.Point(386, 221);
+            this.txtDuration.Location = new System.Drawing.Point(435, 225);
             this.txtDuration.Multiline = true;
             this.txtDuration.Name = "txtDuration";
-            this.txtDuration.Size = new System.Drawing.Size(93, 43);
+            this.txtDuration.Size = new System.Drawing.Size(144, 39);
             this.txtDuration.TabIndex = 29;
             // 
             // txtSeats
             // 
             this.txtSeats.BackColor = System.Drawing.Color.White;
             this.txtSeats.Enabled = false;
-            this.txtSeats.Location = new System.Drawing.Point(524, 221);
+            this.txtSeats.Location = new System.Drawing.Point(309, 333);
             this.txtSeats.Multiline = true;
             this.txtSeats.Name = "txtSeats";
-            this.txtSeats.Size = new System.Drawing.Size(81, 43);
+            this.txtSeats.Size = new System.Drawing.Size(81, 39);
             this.txtSeats.TabIndex = 28;
             // 
             // txtMovie
@@ -260,7 +260,7 @@
             this.txtMovie.Location = new System.Drawing.Point(17, 112);
             this.txtMovie.Multiline = true;
             this.txtMovie.Name = "txtMovie";
-            this.txtMovie.Size = new System.Drawing.Size(294, 43);
+            this.txtMovie.Size = new System.Drawing.Size(294, 39);
             this.txtMovie.TabIndex = 27;
             // 
             // lblDiscounts
@@ -279,7 +279,7 @@
             this.lblSeats.AutoSize = true;
             this.lblSeats.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSeats.ForeColor = System.Drawing.Color.White;
-            this.lblSeats.Location = new System.Drawing.Point(525, 195);
+            this.lblSeats.Location = new System.Drawing.Point(305, 307);
             this.lblSeats.Name = "lblSeats";
             this.lblSeats.Size = new System.Drawing.Size(63, 23);
             this.lblSeats.TabIndex = 24;
@@ -290,7 +290,7 @@
             this.lblDuration.AutoSize = true;
             this.lblDuration.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDuration.ForeColor = System.Drawing.Color.White;
-            this.lblDuration.Location = new System.Drawing.Point(372, 195);
+            this.lblDuration.Location = new System.Drawing.Point(431, 199);
             this.lblDuration.Name = "lblDuration";
             this.lblDuration.Size = new System.Drawing.Size(118, 23);
             this.lblDuration.TabIndex = 23;
@@ -301,7 +301,7 @@
             this.lblShedule.AutoSize = true;
             this.lblShedule.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblShedule.ForeColor = System.Drawing.Color.White;
-            this.lblShedule.Location = new System.Drawing.Point(231, 199);
+            this.lblShedule.Location = new System.Drawing.Point(253, 199);
             this.lblShedule.Name = "lblShedule";
             this.lblShedule.Size = new System.Drawing.Size(103, 23);
             this.lblShedule.TabIndex = 22;

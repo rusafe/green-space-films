@@ -1129,6 +1129,7 @@
             this.ClientSize = new System.Drawing.Size(1281, 796);
             this.Controls.Add(this.pnlFilms);
             this.Controls.Add(this.sidebar);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmFilms";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
