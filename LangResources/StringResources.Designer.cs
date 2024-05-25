@@ -925,5 +925,38 @@ namespace ProyectoGreenSpace.LangResources {
                 return ResourceManager.GetString("buttonBack", resourceCulture);
             }
         }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a atrás
+        /// </summary>
+        internal static string buttonResetSession
+        {
+            get
+            {
+                return ResourceManager.GetString("buttonResetSession", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a atrás
+        /// </summary>
+        internal static string btnHour
+        {
+            get
+            {
+                return ResourceManager.GetString("btnHour", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a atrás
+        /// </summary>
+        internal static string labelRoomsFilms
+        {
+            get
+            {
+                return ResourceManager.GetString("labelRoomsFilms", resourceCulture);
+            }
+        }
     }
 }

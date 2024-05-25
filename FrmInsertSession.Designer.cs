@@ -36,7 +36,7 @@
             this.dtpHour = new System.Windows.Forms.DateTimePicker();
             this.lblHour = new System.Windows.Forms.Label();
             this.cmbRoomsFilms = new System.Windows.Forms.ComboBox();
-            this.roomsFilms = new System.Windows.Forms.Label();
+            this.lblRoomsFilms = new System.Windows.Forms.Label();
             this.cmbFilmsIds = new System.Windows.Forms.ComboBox();
             this.cmbFilms = new System.Windows.Forms.ComboBox();
             this.lblFilm = new System.Windows.Forms.Label();
@@ -50,6 +50,7 @@
             this.pibMaximize = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pibClose = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.btnResetSession = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSessions)).BeginInit();
             this.grpInsertSessions.SuspendLayout();
             this.g2Bar.SuspendLayout();
@@ -74,7 +75,7 @@
             this.grpInsertSessions.Controls.Add(this.dtpHour);
             this.grpInsertSessions.Controls.Add(this.lblHour);
             this.grpInsertSessions.Controls.Add(this.cmbRoomsFilms);
-            this.grpInsertSessions.Controls.Add(this.roomsFilms);
+            this.grpInsertSessions.Controls.Add(this.lblRoomsFilms);
             this.grpInsertSessions.Controls.Add(this.cmbFilmsIds);
             this.grpInsertSessions.Controls.Add(this.cmbFilms);
             this.grpInsertSessions.Controls.Add(this.lblFilm);
@@ -91,7 +92,7 @@
             this.btnInsert.Location = new System.Drawing.Point(49, 238);
             this.btnInsert.Margin = new System.Windows.Forms.Padding(2);
             this.btnInsert.Name = "btnInsert";
-            this.btnInsert.Size = new System.Drawing.Size(208, 32);
+            this.btnInsert.Size = new System.Drawing.Size(208, 43);
             this.btnInsert.TabIndex = 28;
             this.btnInsert.Text = "Insertar";
             this.btnInsert.UseVisualStyleBackColor = true;
@@ -125,14 +126,14 @@
             this.cmbRoomsFilms.Size = new System.Drawing.Size(108, 29);
             this.cmbRoomsFilms.TabIndex = 25;
             // 
-            // roomsFilms
+            // lblRoomsFilms
             // 
-            this.roomsFilms.AutoSize = true;
-            this.roomsFilms.Location = new System.Drawing.Point(17, 136);
-            this.roomsFilms.Name = "roomsFilms";
-            this.roomsFilms.Size = new System.Drawing.Size(57, 21);
-            this.roomsFilms.TabIndex = 24;
-            this.roomsFilms.Text = "Salas:";
+            this.lblRoomsFilms.AutoSize = true;
+            this.lblRoomsFilms.Location = new System.Drawing.Point(17, 136);
+            this.lblRoomsFilms.Name = "lblRoomsFilms";
+            this.lblRoomsFilms.Size = new System.Drawing.Size(57, 21);
+            this.lblRoomsFilms.TabIndex = 24;
+            this.lblRoomsFilms.Text = "Salas:";
             // 
             // cmbFilmsIds
             // 
@@ -281,11 +282,24 @@
             this.guna2DragControl1.TargetControl = this.g2Bar;
             this.guna2DragControl1.UseTransparentDrag = true;
             // 
+            // btnResetSession
+            // 
+            this.btnResetSession.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnResetSession.Location = new System.Drawing.Point(359, 700);
+            this.btnResetSession.Margin = new System.Windows.Forms.Padding(2);
+            this.btnResetSession.Name = "btnResetSession";
+            this.btnResetSession.Size = new System.Drawing.Size(199, 50);
+            this.btnResetSession.TabIndex = 50;
+            this.btnResetSession.Text = "Reiniciar sesión";
+            this.btnResetSession.UseVisualStyleBackColor = true;
+            this.btnResetSession.Click += new System.EventHandler(this.btnResetSession_Click);
+            // 
             // FrmInsertSession
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(605, 721);
+            this.ClientSize = new System.Drawing.Size(605, 775);
+            this.Controls.Add(this.btnResetSession);
             this.Controls.Add(this.g2Bar);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnInsertFrm);
@@ -294,6 +308,7 @@
             this.Controls.Add(this.grpInsertSessions);
             this.Controls.Add(this.dgvSessions);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmInsertSession";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GREEN SPACE FILMS";
@@ -319,7 +334,7 @@
         private System.Windows.Forms.Button btnInsertFrm;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.ComboBox cmbRoomsFilms;
-        private System.Windows.Forms.Label roomsFilms;
+        private System.Windows.Forms.Label lblRoomsFilms;
         private System.Windows.Forms.ComboBox cmbFilmsIds;
         private System.Windows.Forms.ComboBox cmbFilms;
         private System.Windows.Forms.Label lblFilm;
@@ -332,5 +347,6 @@
         private Guna.UI2.WinForms.Guna2PictureBox pibMaximize;
         private Guna.UI2.WinForms.Guna2PictureBox pibClose;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
+        private System.Windows.Forms.Button btnResetSession;
     }
 }

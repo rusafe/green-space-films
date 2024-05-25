@@ -35,7 +35,6 @@
             this.btnUser = new System.Windows.Forms.Button();
             this.pictBoxIcono = new System.Windows.Forms.PictureBox();
             this.grpBoxAdmin = new System.Windows.Forms.GroupBox();
-            this.linklblForgotPass = new System.Windows.Forms.LinkLabel();
             this.lblPassword = new System.Windows.Forms.Label();
             this.lblMailUser = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
@@ -99,7 +98,7 @@
             // 
             this.pictBoxIcono.BackColor = System.Drawing.Color.Transparent;
             this.pictBoxIcono.Image = ((System.Drawing.Image)(resources.GetObject("pictBoxIcono.Image")));
-            this.pictBoxIcono.Location = new System.Drawing.Point(51, 364);
+            this.pictBoxIcono.Location = new System.Drawing.Point(27, 351);
             this.pictBoxIcono.Name = "pictBoxIcono";
             this.pictBoxIcono.Size = new System.Drawing.Size(190, 151);
             this.pictBoxIcono.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -109,7 +108,6 @@
             // grpBoxAdmin
             // 
             this.grpBoxAdmin.BackColor = System.Drawing.Color.White;
-            this.grpBoxAdmin.Controls.Add(this.linklblForgotPass);
             this.grpBoxAdmin.Controls.Add(this.lblPassword);
             this.grpBoxAdmin.Controls.Add(this.lblMailUser);
             this.grpBoxAdmin.Controls.Add(this.btnLogin);
@@ -119,21 +117,9 @@
             this.grpBoxAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpBoxAdmin.Location = new System.Drawing.Point(346, 79);
             this.grpBoxAdmin.Name = "grpBoxAdmin";
-            this.grpBoxAdmin.Size = new System.Drawing.Size(471, 333);
+            this.grpBoxAdmin.Size = new System.Drawing.Size(471, 297);
             this.grpBoxAdmin.TabIndex = 18;
             this.grpBoxAdmin.TabStop = false;
-            // 
-            // linklblForgotPass
-            // 
-            this.linklblForgotPass.AutoSize = true;
-            this.linklblForgotPass.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linklblForgotPass.LinkColor = System.Drawing.Color.SlateBlue;
-            this.linklblForgotPass.Location = new System.Drawing.Point(60, 206);
-            this.linklblForgotPass.Name = "linklblForgotPass";
-            this.linklblForgotPass.Size = new System.Drawing.Size(308, 23);
-            this.linklblForgotPass.TabIndex = 22;
-            this.linklblForgotPass.TabStop = true;
-            this.linklblForgotPass.Text = "¿Has olvidado la contraseña?";
             // 
             // lblPassword
             // 
@@ -162,7 +148,7 @@
             this.btnLogin.BackColor = System.Drawing.Color.SlateBlue;
             this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(51, 257);
+            this.btnLogin.Location = new System.Drawing.Point(52, 216);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(364, 35);
             this.btnLogin.TabIndex = 2;
@@ -192,7 +178,7 @@
             this.btnExit.BackColor = System.Drawing.Color.LightCoral;
             this.btnExit.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnExit.Location = new System.Drawing.Point(649, 461);
+            this.btnExit.Location = new System.Drawing.Point(649, 449);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(168, 53);
             this.btnExit.TabIndex = 45;
@@ -276,7 +262,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(843, 529);
+            this.ClientSize = new System.Drawing.Size(843, 518);
             this.Controls.Add(this.g2Bar);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnUser);
@@ -285,6 +271,7 @@
             this.Controls.Add(this.pictBoxIcono);
             this.Controls.Add(this.grpBoxAdmin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GREEN SPACE FILMS";
@@ -307,7 +294,6 @@
         private System.Windows.Forms.Button btnUser;
         private System.Windows.Forms.PictureBox pictBoxIcono;
         private System.Windows.Forms.GroupBox grpBoxAdmin;
-        private System.Windows.Forms.LinkLabel linklblForgotPass;
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.Label lblMailUser;
         private System.Windows.Forms.Button btnLogin;

@@ -126,6 +126,9 @@
   <data name="btnDeleteFrm" xml:space="preserve">
     <value>Acceso eliminaciones</value>
   </data>
+  <data name="btnHour" xml:space="preserve">
+    <value>Hora de inicio:</value>
+  </data>
   <data name="btnInsert" xml:space="preserve">
     <value>Insertar</value>
   </data>
@@ -188,6 +191,9 @@
   </data>
   <data name="buttonReset" xml:space="preserve">
     <value>Reestablecer</value>
+  </data>
+  <data name="buttonResetSession" xml:space="preserve">
+    <value>Reiniciar sesiones</value>
   </data>
   <data name="buttonReviews" xml:space="preserve">
     <value>Reseñas</value>
@@ -296,6 +302,9 @@
   </data>
   <data name="labelRepeatPassword" xml:space="preserve">
     <value>Repetir Contraseña</value>
+  </data>
+  <data name="labelRoomsFilms" xml:space="preserve">
+    <value>Salas:</value>
   </data>
   <data name="labelSchedule" xml:space="preserve">
     <value>HORARIO</value>

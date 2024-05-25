@@ -211,6 +211,7 @@
             this.Controls.Add(this.mtbDigit1);
             this.Controls.Add(this.btnSend);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmInsertCode";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GREEN SPACE FILMS";

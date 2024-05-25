@@ -155,6 +155,7 @@
             this.Controls.Add(this.txtNewUsername);
             this.Controls.Add(this.lblNewUsername);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmChangeUsername";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmChangeUsername";

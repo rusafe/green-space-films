@@ -319,6 +319,7 @@
             this.Controls.Add(this.lblChangeLanguage);
             this.Controls.Add(this.pictBoxIcono);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmAccount";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmCuenta";
