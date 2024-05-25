@@ -54,10 +54,7 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.btnSettings = new System.Windows.Forms.Button();
             this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
-            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.grpReview = new System.Windows.Forms.GroupBox();
-            this.cmbFilms = new System.Windows.Forms.ComboBox();
-            this.lblFilm = new System.Windows.Forms.Label();
             this.btnReset = new System.Windows.Forms.Button();
             this.pctStar15 = new System.Windows.Forms.PictureBox();
             this.pctStar14 = new System.Windows.Forms.PictureBox();

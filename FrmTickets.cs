@@ -79,12 +79,12 @@ namespace ProyectoGreenSpace
                 Film film = ticket.getFilm();
                 Room room = ticket.getRoom();
 
-                dgvActualTickets.Rows.Add(
+                dgvPastTickets.Rows.Add(
                     room.Id,
                     user.Username,
                     film.Name,
-                    ticket.HourFilm,
                     ticket.DateFilm.ToShortDateString(),
+                    ticket.HourFilm,
                     film.Duration,
                     ticket.Quantity,
                     ticket.IndividualPrice,
