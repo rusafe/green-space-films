@@ -45,6 +45,17 @@ namespace ProyectoGreenSpace
             btnResetSession.Text = StringResources.buttonResetSession;
         }
 
+        private void ClearInputs()
+        {
+            cmbFilmsIds.Items.Clear();
+            cmbFilms.Items.Clear();
+            cmbRoomsFilms.Items.Clear();
+            dtpHour.Value = DateTime.Now;
+
+            SetFilmsIdentifyingValues();
+            SetRoomsIdentifyingValues();
+        }
+
         private void SetFilmsIdentifyingValues()
         {
             foreach (var values in Film.GetIdentifyingInfoPremiering())
@@ -128,6 +139,8 @@ namespace ProyectoGreenSpace
 
                 session.Create();
                 LoadListSessions();
+
+                ClearInputs();
             } catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
