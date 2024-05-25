@@ -116,6 +116,7 @@
             this.btnUpload.TabIndex = 37;
             this.btnUpload.Text = "Cargar foto";
             this.btnUpload.UseVisualStyleBackColor = true;
+            this.btnUpload.Click += new System.EventHandler(this.btnUpload_Click);
             // 
             // lblUsername
             // 

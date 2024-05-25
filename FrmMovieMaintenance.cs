@@ -50,20 +50,15 @@ namespace ProyectoGreenSpace
                 godrickElInjertado = false;
                 errorProvider1.SetError(rtbSynopsis, "Inserta una sinopsis.");
             }
-            else if (String.IsNullOrEmpty(txtDuration.Text))
+            else if (String.IsNullOrEmpty(dtpHour.Text))
             {
                 godrickElInjertado = false;
-                errorProvider1.SetError(txtDuration, "Inserta la duración.");
+                errorProvider1.SetError(dtpHour, "Inserta la duración.");
             }
             else if (String.IsNullOrEmpty(txtPrice.Text))
             {
                 godrickElInjertado = false;
                 errorProvider1.SetError(txtPrice, "Inserta el precio.");
-            }
-            else if (String.IsNullOrEmpty(txtDuration.Text))
-            {
-                godrickElInjertado = false;
-                errorProvider1.SetError(txtDuration, "Inserta la duración.");
             }
             else if (String.IsNullOrEmpty(cmbGenre1.Text))
             {
@@ -111,7 +106,7 @@ namespace ProyectoGreenSpace
         {
             txtFilm.Text = string.Empty;
             rtbSynopsis.Text = string.Empty;
-            txtDuration.Text = string.Empty;
+            dtpHour.Text = "12:00:00";
             txtPrice.Text = string.Empty;
             nudMinAge.Value = 0;
             cmbGenre1.Text = string.Empty;
@@ -149,6 +144,7 @@ namespace ProyectoGreenSpace
             LoadListMovies();
             ApplyLanguage();
 
+            dtpHour.Text = "12:00";
             lblClock.Text = DateTime.Now.ToString("HH:mm:ss");
             lblDate.Text = DateTime.Now.ToString("dd/MM/yyyy");
 
@@ -189,7 +185,7 @@ namespace ProyectoGreenSpace
                     txtFilm.Text,
                     rtbSynopsis.Text,
                     pibImage.Image,
-                    TimeSpan.Parse(txtDuration.Text),
+                    TimeSpan.Parse(dtpHour.Text),
                     (int)nudMinAge.Value,
                     Convert.ToDouble(txtPrice.Text),
                     genres,

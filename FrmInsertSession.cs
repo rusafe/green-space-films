@@ -72,7 +72,7 @@ namespace ProyectoGreenSpace
         {
             g2Bar.BackColor = Color.FromArgb(76, 80, 144);
             g2lblTitle.ForeColor = Color.FromArgb(168, 228, 116);
-            dtpHour.Value = DateTime.Now;
+            dtpHour.Text = "12:00";
             
             ApplyLanguage();
 
@@ -154,6 +154,12 @@ namespace ProyectoGreenSpace
         {
             dgvSessions.DataSource = Session.ObtainAll();
         }
+        private void btnModifyFrm_Click(object sender, EventArgs e)
+        {
+            FrmMovieModify frmMovieModify = new FrmMovieModify();
+            frmMovieModify.Show();
+            this.Close();
+        }
         #region Diseño de barra minimizadora
         private void pibMinimize_Click(object sender, EventArgs e)
         {
@@ -186,6 +192,5 @@ namespace ProyectoGreenSpace
             }
         }
         #endregion
-
     }
 }

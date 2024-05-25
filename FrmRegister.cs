@@ -78,22 +78,22 @@ namespace ProyectoGreenSpace
                     user.Mail = txtMail.Text;
 
                     Controller control = new Controller();
-                    string respuesta = control.ControllerRegister(user);
+                    string answer = control.ControllerRegister(user);
 
-                    if (respuesta.Length > 0)
+                    if (answer.Length > 0)
                     {
-                        MessageBox.Show(respuesta, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show(answer, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
-                        MessageBox.Show("Usuario registrado", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        Mail enviarMail = new Mail();
+                        MessageBox.Show("Enviando código de verificación, revise su correo.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Mail sendMail = new Mail();
                         if (ValidarDatos())
                         {
-                            int code = enviarMail.SendVerificationCode("floadm123@gmail.com", "AdminFlo123", user.Mail);
+                            int code = sendMail.SendVerificationCode("floadm123@gmail.com", "AdminFlo123", user.Mail);
                             if (code != -1)
                             {
-                                LimpiarDatos();
+                                CleanData();
                                 FrmInsertCode frmInsertCode = new FrmInsertCode(code);
                                 frmInsertCode.Show();
                             }
@@ -119,7 +119,7 @@ namespace ProyectoGreenSpace
         /// <summary>
         /// Eliminar los datos de los campos.
         /// </summary>
-        private void LimpiarDatos()
+        private void CleanData()
         {
             txtUsername.Text = string.Empty;
             txtMail.Text = string.Empty;
@@ -216,7 +216,7 @@ namespace ProyectoGreenSpace
         #endregion
 
         #region Cargar foto usuario
-        private void btnCargarFoto_Click(object sender, EventArgs e)
+        private void btnUpload_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofdSeleccionar = new OpenFileDialog();
             ofdSeleccionar.Filter = "Imagenes|*.jpg; *.png"; // Imagenes --> Leyenda|Filtrar solo por estas extensiones 
@@ -228,8 +228,6 @@ namespace ProyectoGreenSpace
                 pibImage.Image = Image.FromFile(ofdSeleccionar.FileName); // Agregar el archivo seleccionado y mostrarlo en el cuadro.
             }
         }
-
-
         #endregion
 
         #region Acceder a formularios de Configuración
@@ -287,5 +285,7 @@ namespace ProyectoGreenSpace
             }
         }
         #endregion
+
+
     }
 }

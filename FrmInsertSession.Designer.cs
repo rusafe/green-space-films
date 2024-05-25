@@ -106,6 +106,7 @@
             this.dtpHour.ShowUpDown = true;
             this.dtpHour.Size = new System.Drawing.Size(110, 28);
             this.dtpHour.TabIndex = 27;
+            this.dtpHour.Value = new System.DateTime(2024, 5, 25, 12, 0, 0, 0);
             // 
             // lblHour
             // 
@@ -175,6 +176,7 @@
             this.btnModifyFrm.TabIndex = 18;
             this.btnModifyFrm.Text = "Acceso modificaciones";
             this.btnModifyFrm.UseVisualStyleBackColor = true;
+            this.btnModifyFrm.Click += new System.EventHandler(this.btnModifyFrm_Click);
             // 
             // btnDeleteFrm
             // 
