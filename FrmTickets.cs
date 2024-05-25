@@ -48,9 +48,11 @@ namespace ProyectoGreenSpace
         }
 
         #region DGVs
-        private void LoadActualTicketsDGV()
+        private void LoadActualTicketsDGV(List<Ticket> tickets)
         {
-            foreach (Ticket ticket in Ticket.ActualTickets(UserSession.Id))
+            dgvActualTickets.Rows.Clear();
+
+            foreach (Ticket ticket in tickets)
             {
                 User user = ticket.getUser();
                 Film film = ticket.getFilm();
@@ -64,16 +66,18 @@ namespace ProyectoGreenSpace
                     ticket.HourFilm,
                     film.Duration,
                     ticket.Quantity,
-                    ticket.TotalPriceWithoutDiscount(),
+                    $"{ticket.IndividualPrice} €",
                     $"{ticket.Discount} %",
-                    ticket.TotalPrice()
+                    $"{ticket.TotalPrice()} €"
                 );
             }
         }
 
-        private void LoadPastTicketsDGV()
+        private void LoadPastTicketsDGV(List<Ticket> tickets)
         {
-            foreach (Ticket ticket in Ticket.PastTickets(UserSession.Id))
+            dgvPastTickets.Rows.Clear();
+
+            foreach (Ticket ticket in tickets)
             {
                 User user = ticket.getUser();
                 Film film = ticket.getFilm();
@@ -87,9 +91,9 @@ namespace ProyectoGreenSpace
                     ticket.HourFilm,
                     film.Duration,
                     ticket.Quantity,
-                    ticket.IndividualPrice,
-                    ticket.Discount,
-                    ticket.TotalPrice()
+                    $"{ticket.IndividualPrice} €",
+                    $"{ticket.Discount} %",
+                    $"{ticket.TotalPrice()} €"
                 );
             }
         }
@@ -101,8 +105,8 @@ namespace ProyectoGreenSpace
             g2lblTitle.ForeColor = Color.FromArgb(168, 228, 116);
 
             ApplyLanguage();
-            LoadActualTicketsDGV();
-            LoadPastTicketsDGV();
+            LoadActualTicketsDGV(Ticket.ActualTickets(UserSession.Id));
+            LoadPastTicketsDGV(Ticket.PastTickets(UserSession.Id));
             lblNumActualTickets.Text = Ticket.AmountActualTickets(UserSession.Id).ToString();
             lblNumPastTickets.Text = Ticket.AmountPastTickets(UserSession.Id).ToString();
         }
@@ -200,5 +204,11 @@ namespace ProyectoGreenSpace
             }
         }
         #endregion
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            LoadActualTicketsDGV(Ticket.ActualTickets(UserSession.Id, txtSearch.Text));
+            LoadPastTicketsDGV(Ticket.PastTickets(UserSession.Id, txtSearch.Text));
+        }
     }
 }

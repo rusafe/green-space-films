@@ -254,6 +254,43 @@ namespace ProyectoGreenSpace.Classes
             return tickets;
         }
 
+        public static List<Ticket> ActualTickets(int userId, string filmName)
+        {
+            List<Ticket> tickets = new List<Ticket>();
+
+            string query = "SELECT * FROM tickets WHERE userId = @userId AND dateFilm >= @date AND filmId IN (SELECT id FROM films WHERE name LIKE @filmName)";
+
+            MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
+            command.Parameters.AddWithValue("@userId", userId);
+            command.Parameters.AddWithValue("@date", DateTime.Now.ToString("yyyy-MM-dd"));
+            command.Parameters.AddWithValue("@filmName", $"%{filmName}%");
+
+            ConnectionBD.OpenConnection();
+
+            using (MySqlDataReader reader = command.ExecuteReader()) // Abrir y cerrar la conexión del dataReader --> Tabla virtual
+            {
+                while (reader.Read())
+                {
+                    tickets.Add(new Ticket(
+                        reader.GetInt32(0),
+                        reader.GetInt32(1),
+                        reader.GetInt32(2),
+                        reader.GetInt32(3),
+                        reader.GetDateTime(4),
+                        reader.GetDateTime(5),
+                        reader.GetTimeSpan(6),
+                        reader.GetInt32(7),
+                        reader.GetDouble(8),
+                        reader.GetInt32(9)
+                    ));
+                }
+            }
+
+            ConnectionBD.CloseConnection();
+
+            return tickets;
+        }
+
         /// <summary>
         /// Recupera todos los tickets de un usuario de las peliculas que ya han pasado la fecha de visualizacion
         /// </summary>
@@ -295,12 +332,49 @@ namespace ProyectoGreenSpace.Classes
             return tickets;
         }
 
-        /// <summary>
-        /// Obtiene la cantidad de tickets actuales que tiene un usuario
-        /// </summary>
-        /// <param name="userId">El ID del usuario</param>
-        /// <returns>Cantidad de tickets</returns>
-        public static int AmountActualTickets(int userId)
+        public static List<Ticket> PastTickets(int userId, string filmName)
+        {
+            List<Ticket> tickets = new List<Ticket>();
+
+            string query = $"SELECT * FROM tickets WHERE userId = @userId AND dateFilm < @date AND filmId IN (SELECT id FROM films WHERE name LIKE @filmName)";
+
+            MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
+            command.Parameters.AddWithValue("@userId", userId);
+            command.Parameters.AddWithValue("@date", DateTime.Now.ToString("yyyy-MM-dd"));
+            command.Parameters.AddWithValue("@filmName", $"%{filmName}%");
+
+            ConnectionBD.OpenConnection();
+
+            using (MySqlDataReader reader = command.ExecuteReader()) // Abrir y cerrar la conexión del dataReader --> Tabla virtual
+            {
+                while (reader.Read())
+                {
+                    tickets.Add(new Ticket(
+                        reader.GetInt32(0),
+                        reader.GetInt32(1),
+                        reader.GetInt32(2),
+                        reader.GetInt32(3),
+                        reader.GetDateTime(4),
+                        reader.GetDateTime(5),
+                        reader.GetTimeSpan(6),
+                        reader.GetInt32(7),
+                        reader.GetDouble(8),
+                        reader.GetInt32(9)
+                    ));
+                }
+            }
+
+            ConnectionBD.CloseConnection();
+
+            return tickets;
+        }
+
+            /// <summary>
+            /// Obtiene la cantidad de tickets actuales que tiene un usuario
+            /// </summary>
+            /// <param name="userId">El ID del usuario</param>
+            /// <returns>Cantidad de tickets</returns>
+            public static int AmountActualTickets(int userId)
         {
             string query = "SELECT COUNT(*) FROM tickets WHERE userId = @userId AND dateFilm >= @date";
 
