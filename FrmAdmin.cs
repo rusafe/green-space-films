@@ -44,7 +44,6 @@ namespace ProyectoGreenSpace
             btnAccount.Text = StringResources.buttonAccount;
             lblMailUser.Text = StringResources.labelUser;
             lblPassword.Text = StringResources.labelPassword;
-            linklblForgotPass.Text = StringResources.labelForgottenPassword;
             btnLogin.Text = StringResources.buttonLogin;
             btnExit.Text = StringResources.buttonExit;
         }

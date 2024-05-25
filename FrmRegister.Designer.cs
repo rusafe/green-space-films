@@ -325,6 +325,7 @@
             this.Controls.Add(this.pibSpanish);
             this.Controls.Add(this.grpRegister);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmRegister";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GREEN SPACE FILMS";

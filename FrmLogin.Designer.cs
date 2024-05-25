@@ -42,11 +42,11 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.g2Bar = new Guna.UI2.WinForms.Guna2Panel();
             this.g2lblTitle = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.pibMinimize = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pibMaximize = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pibClose = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.pibBritish = new System.Windows.Forms.PictureBox();
             this.pibSpanish = new System.Windows.Forms.PictureBox();
             this.grpLogin.SuspendLayout();
@@ -182,17 +182,6 @@
             this.g2lblTitle.TabIndex = 36;
             this.g2lblTitle.Text = "GREEN SPACE FILMS";
             // 
-            // guna2DragControl1
-            // 
-            this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2DragControl1.TargetControl = this.g2Bar;
-            this.guna2DragControl1.UseTransparentDrag = true;
-            // 
-            // guna2Elipse1
-            // 
-            this.guna2Elipse1.BorderRadius = 12;
-            this.guna2Elipse1.TargetControl = this;
-            // 
             // pibMinimize
             // 
             this.pibMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -235,6 +224,17 @@
             this.pibClose.TabStop = false;
             this.pibClose.Click += new System.EventHandler(this.pibClose_Click);
             // 
+            // guna2DragControl1
+            // 
+            this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl1.TargetControl = this.g2Bar;
+            this.guna2DragControl1.UseTransparentDrag = true;
+            // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 12;
+            this.guna2Elipse1.TargetControl = this;
+            // 
             // pibBritish
             // 
             this.pibBritish.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -269,6 +269,7 @@
             this.Controls.Add(this.pibSpanish);
             this.Controls.Add(this.grpLogin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GREEN SPACE FILMS";

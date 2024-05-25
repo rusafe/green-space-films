@@ -129,7 +129,7 @@
             this.cmbGenre2.Location = new System.Drawing.Point(314, 463);
             this.cmbGenre2.Margin = new System.Windows.Forms.Padding(2);
             this.cmbGenre2.Name = "cmbGenre2";
-            this.cmbGenre2.Size = new System.Drawing.Size(102, 27);
+            this.cmbGenre2.Size = new System.Drawing.Size(102, 29);
             this.cmbGenre2.TabIndex = 17;
             // 
             // chbNextPremiering
@@ -138,7 +138,7 @@
             this.chbNextPremiering.Location = new System.Drawing.Point(30, 494);
             this.chbNextPremiering.Margin = new System.Windows.Forms.Padding(2);
             this.chbNextPremiering.Name = "chbNextPremiering";
-            this.chbNextPremiering.Size = new System.Drawing.Size(134, 23);
+            this.chbNextPremiering.Size = new System.Drawing.Size(160, 25);
             this.chbNextPremiering.TabIndex = 16;
             this.chbNextPremiering.Text = "Proximo Estreno";
             this.chbNextPremiering.UseVisualStyleBackColor = true;
@@ -149,7 +149,7 @@
             this.chbPremiering.Location = new System.Drawing.Point(30, 467);
             this.chbPremiering.Margin = new System.Windows.Forms.Padding(2);
             this.chbPremiering.Name = "chbPremiering";
-            this.chbPremiering.Size = new System.Drawing.Size(160, 23);
+            this.chbPremiering.Size = new System.Drawing.Size(190, 25);
             this.chbPremiering.TabIndex = 15;
             this.chbPremiering.Text = "Estreno de película";
             this.chbPremiering.UseVisualStyleBackColor = true;
@@ -161,7 +161,7 @@
             this.cmbGenre1.Location = new System.Drawing.Point(314, 416);
             this.cmbGenre1.Margin = new System.Windows.Forms.Padding(2);
             this.cmbGenre1.Name = "cmbGenre1";
-            this.cmbGenre1.Size = new System.Drawing.Size(102, 27);
+            this.cmbGenre1.Size = new System.Drawing.Size(102, 29);
             this.cmbGenre1.TabIndex = 13;
             // 
             // lblGenre
@@ -170,7 +170,7 @@
             this.lblGenre.Location = new System.Drawing.Point(269, 382);
             this.lblGenre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblGenre.Name = "lblGenre";
-            this.lblGenre.Size = new System.Drawing.Size(70, 19);
+            this.lblGenre.Size = new System.Drawing.Size(85, 21);
             this.lblGenre.TabIndex = 12;
             this.lblGenre.Text = "Géneros:";
             // 
@@ -179,7 +179,7 @@
             this.txtPrice.Location = new System.Drawing.Point(30, 415);
             this.txtPrice.Margin = new System.Windows.Forms.Padding(2);
             this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(205, 24);
+            this.txtPrice.Size = new System.Drawing.Size(205, 28);
             this.txtPrice.TabIndex = 11;
             // 
             // lblPrice
@@ -188,7 +188,7 @@
             this.lblPrice.Location = new System.Drawing.Point(26, 382);
             this.lblPrice.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(55, 19);
+            this.lblPrice.Size = new System.Drawing.Size(66, 21);
             this.lblPrice.TabIndex = 10;
             this.lblPrice.Text = "Precio:";
             // 
@@ -197,7 +197,7 @@
             this.nudMinAge.Location = new System.Drawing.Point(346, 330);
             this.nudMinAge.Margin = new System.Windows.Forms.Padding(2);
             this.nudMinAge.Name = "nudMinAge";
-            this.nudMinAge.Size = new System.Drawing.Size(69, 24);
+            this.nudMinAge.Size = new System.Drawing.Size(69, 28);
             this.nudMinAge.TabIndex = 9;
             // 
             // lblMinAge
@@ -206,7 +206,7 @@
             this.lblMinAge.Location = new System.Drawing.Point(269, 295);
             this.lblMinAge.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblMinAge.Name = "lblMinAge";
-            this.lblMinAge.Size = new System.Drawing.Size(104, 19);
+            this.lblMinAge.Size = new System.Drawing.Size(125, 21);
             this.lblMinAge.TabIndex = 8;
             this.lblMinAge.Text = "Años mínimos:";
             // 
@@ -215,7 +215,7 @@
             this.txtDuration.Location = new System.Drawing.Point(30, 329);
             this.txtDuration.Margin = new System.Windows.Forms.Padding(2);
             this.txtDuration.Name = "txtDuration";
-            this.txtDuration.Size = new System.Drawing.Size(205, 24);
+            this.txtDuration.Size = new System.Drawing.Size(205, 28);
             this.txtDuration.TabIndex = 7;
             // 
             // lblDuration
@@ -224,7 +224,7 @@
             this.lblDuration.Location = new System.Drawing.Point(26, 295);
             this.lblDuration.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDuration.Name = "lblDuration";
-            this.lblDuration.Size = new System.Drawing.Size(76, 19);
+            this.lblDuration.Size = new System.Drawing.Size(90, 21);
             this.lblDuration.TabIndex = 6;
             this.lblDuration.Text = "Duración:";
             // 
@@ -265,7 +265,7 @@
             this.lblSynopsis.Location = new System.Drawing.Point(26, 131);
             this.lblSynopsis.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSynopsis.Name = "lblSynopsis";
-            this.lblSynopsis.Size = new System.Drawing.Size(64, 19);
+            this.lblSynopsis.Size = new System.Drawing.Size(76, 21);
             this.lblSynopsis.TabIndex = 2;
             this.lblSynopsis.Text = "Sinopsis:";
             // 
@@ -274,7 +274,7 @@
             this.txtFilm.Location = new System.Drawing.Point(30, 80);
             this.txtFilm.Margin = new System.Windows.Forms.Padding(2);
             this.txtFilm.Name = "txtFilm";
-            this.txtFilm.Size = new System.Drawing.Size(205, 24);
+            this.txtFilm.Size = new System.Drawing.Size(205, 28);
             this.txtFilm.TabIndex = 1;
             // 
             // lblFilm
@@ -283,7 +283,7 @@
             this.lblFilm.Location = new System.Drawing.Point(26, 46);
             this.lblFilm.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFilm.Name = "lblFilm";
-            this.lblFilm.Size = new System.Drawing.Size(67, 19);
+            this.lblFilm.Size = new System.Drawing.Size(78, 21);
             this.lblFilm.TabIndex = 0;
             this.lblFilm.Text = "Película:";
             // 
@@ -294,7 +294,7 @@
             this.lblClock.Location = new System.Drawing.Point(70, 41);
             this.lblClock.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblClock.Name = "lblClock";
-            this.lblClock.Size = new System.Drawing.Size(69, 23);
+            this.lblClock.Size = new System.Drawing.Size(82, 27);
             this.lblClock.TabIndex = 2;
             this.lblClock.Text = "label3";
             // 
@@ -305,7 +305,7 @@
             this.lblDate.Location = new System.Drawing.Point(156, 41);
             this.lblDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(69, 23);
+            this.lblDate.Size = new System.Drawing.Size(82, 27);
             this.lblDate.TabIndex = 3;
             this.lblDate.Text = "label4";
             // 
@@ -422,7 +422,7 @@
             this.g2lblTitle.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.g2lblTitle.Location = new System.Drawing.Point(13, 8);
             this.g2lblTitle.Name = "g2lblTitle";
-            this.g2lblTitle.Size = new System.Drawing.Size(152, 23);
+            this.g2lblTitle.Size = new System.Drawing.Size(194, 25);
             this.g2lblTitle.TabIndex = 36;
             this.g2lblTitle.Text = "GREEN SPACE FILMS";
             // 
@@ -476,7 +476,7 @@
             // 
             // FrmMovieMaintenance
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1379, 681);
             this.Controls.Add(this.g2Bar);
@@ -489,6 +489,7 @@
             this.Controls.Add(this.grpMaintenance);
             this.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmMovieMaintenance";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

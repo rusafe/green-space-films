@@ -40,6 +40,9 @@ namespace ProyectoGreenSpace
             btnDeleteFrm.Text = StringResources.btnDeleteFrm;
             btnBack.Text = StringResources.buttonExit;
             btnInsertFrm.Text = StringResources.btnInsertFrm;
+            lblHour.Text = StringResources.btnHour;
+            lblRoomsFilms.Text = StringResources.labelRoomsFilms;
+            btnResetSession.Text = StringResources.buttonResetSession;
         }
 
         private void SetFilmsIdentifyingValues()
@@ -73,6 +76,7 @@ namespace ProyectoGreenSpace
             
             ApplyLanguage();
 
+            LoadListSessions();
             SetFilmsIdentifyingValues();
             SetRoomsIdentifyingValues();
         }
@@ -109,18 +113,25 @@ namespace ProyectoGreenSpace
 
         private void btnInsert_Click(object sender, EventArgs e)
         {
-            DateTime dt = dtpHour.Value;
-            int hour = dt.Hour;
-            int minute = dt.Minute;
-            int second = dt.Second;
+            try
+            {
+                DateTime dt = dtpHour.Value;
+                int hour = dt.Hour;
+                int minute = dt.Minute;
+                int second = dt.Second;
 
-            Session session = new Session(
-                Convert.ToInt32(cmbFilmsIds.Text),
-                Convert.ToInt32(cmbRoomsFilms.Text),
-                new TimeSpan(hour, minute, second)
-            );
+                Session session = new Session(
+                    Convert.ToInt32(cmbFilmsIds.Text),
+                    Convert.ToInt32(cmbRoomsFilms.Text),
+                    new TimeSpan(hour, minute, second)
+                );
 
-            session.Create();
+                session.Create();
+                LoadListSessions();
+            } catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void cmbFilmsIds_SelectedValueChanged(object sender, EventArgs e)
@@ -133,6 +144,16 @@ namespace ProyectoGreenSpace
             UpdateFilmInfoFields(Film.InfoFilm(cmbFilms.Text));
         }
 
+        private void btnResetSession_Click(object sender, EventArgs e)
+        {
+            Session.RestartSessions();
+            MessageBox.Show("Todas las sesiones han sido restauradas", "Restaurar sesiones", 
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+        private void LoadListSessions()
+        {
+            dgvSessions.DataSource = Session.ObtainAll();
+        }
         #region Diseño de barra minimizadora
         private void pibMinimize_Click(object sender, EventArgs e)
         {
@@ -165,5 +186,6 @@ namespace ProyectoGreenSpace
             }
         }
         #endregion
+
     }
 }

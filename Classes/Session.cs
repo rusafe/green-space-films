@@ -240,5 +240,35 @@ namespace ProyectoGreenSpace.Classes
 
             ConnectionBD.CloseConnection();
         }
+
+        public static List<Session> ObtainAll()
+        {
+            List<Session> sessions = new List<Session>();
+
+            string query = "SELECT * FROM sessions";
+
+            MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
+
+            ConnectionBD.OpenConnection();
+
+            using (MySqlDataReader reader = command.ExecuteReader()) // Abrir y cerrar la conexión del dataReader --> Tabla virtual
+            {
+                while (reader.Read())
+                {
+                    sessions.Add(new Session(
+                        reader.GetInt32(0),
+                        reader.GetInt32(1),
+                        reader.GetInt32(2),
+                        reader.GetTimeSpan(3),
+                        reader.GetInt32(4),
+                        reader.GetInt32(5)
+                    ));
+                }
+            }
+
+            ConnectionBD.CloseConnection();
+
+            return sessions;
+        }
     }
 }
