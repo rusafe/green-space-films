@@ -21,6 +21,11 @@ namespace ProyectoGreenSpace.Classes
             this.type = type;
         }
 
+        /// <summary>
+        /// Obtiene la sala con el id especificado
+        /// </summary>
+        /// <param name="id">El id de la sala</param>
+        /// <returns>Un objeto sala</returns>
         public static Room InfoRoom(int id)
         {
             string query = "SELECT * FROM rooms WHERE id LIKE @id";
@@ -45,6 +50,10 @@ namespace ProyectoGreenSpace.Classes
             return room;
         }
 
+        /// <summary>
+        /// Obtiene los identificadores de las salas de la base de datos
+        /// </summary>
+        /// <returns>Lista con los identificadores</returns>
         public static List<int> GetIdentifyingInfo()
         {
             List<int> list = new List<int>();

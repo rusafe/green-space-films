@@ -34,11 +34,20 @@ namespace ProyectoGreenSpace.Classes
             this.seatsArray = seatsArray;
         }
 
+        /// <summary>
+        /// Obtiene el asiento en la posicion indicada
+        /// </summary>
+        /// <param name="rowIndex">Fila del asiento</param>
+        /// <param name="colIndex">Columna del asiento</param>
+        /// <returns>El asiento especificado</returns>
         public Seat getSeat(int rowIndex, int colIndex)
         {
             return seatsArray[rowIndex, colIndex];
         }
 
+        /// <summary>
+        /// Actualiza la base de datos con el estado actual de los asientos
+        /// </summary>
         public void UploadSeatsStatus()
         {
             string query = "UPDATE sessions SET seats_status = @seatsStatus WHERE id = @sessionId";
@@ -54,11 +63,21 @@ namespace ProyectoGreenSpace.Classes
             ConnectionBD.CloseConnection();
         }
 
+        /// <summary>
+        /// Obtiene si el asiento especificado esta ocupado
+        /// </summary>
+        /// <param name="seatRow">Fila del asiento</param>
+        /// <param name="seatCol">Columna del asiento</param>
+        /// <returns>Booleano</returns>
         public bool SeatOccupied(int seatRow, int seatCol)
         {
             return seatsArray[seatRow, seatCol].Occupied;
         }
 
+        /// <summary>
+        /// Obtiene la cantidad de asientos selecionados
+        /// </summary>
+        /// <returns>Cantidad de asientos selecionados</returns>
         public int AmountSelected()
         {
             int amount = 0;
@@ -74,6 +93,10 @@ namespace ProyectoGreenSpace.Classes
             return amount;
         }
 
+        /// <summary>
+        /// Crea una imagen con la informacion de los asientos almacenada en el array multidimensional
+        /// </summary>
+        /// <returns>Imagen con la informacion de los asientos</returns>
         public Bitmap CreateSeatsStatusImage()
         {
             Bitmap seatsStatus = new Bitmap(SEATS_COL, SEATS_ROW);
@@ -91,6 +114,10 @@ namespace ProyectoGreenSpace.Classes
             return seatsStatus;
         }
 
+        /// <summary>
+        /// Crea la imagen por defecto con todos los asientos libres
+        /// </summary>
+        /// <returns>Imagen por defecto de los asientos</returns>
         public static Bitmap CreateDefaultSeatsStatus()
         {
             Bitmap seatsStatus = new Bitmap(SEATS_COL, SEATS_ROW);
@@ -106,6 +133,11 @@ namespace ProyectoGreenSpace.Classes
             return seatsStatus;
         }
 
+        /// <summary>
+        /// Crea un array multidimensional que representa los asientos en base a una imagen
+        /// </summary>
+        /// <param name="seatsStatus">La imagen con el estado de los asientos</param>
+        /// <returns>Un array multidimensional</returns>
         public static Seat[,] CreateSeatsArrayFromBitmap(Bitmap seatsStatus)
         {
             Seat[,] seats = new Seat[SEATS_ROW, SEATS_COL];
@@ -123,11 +155,18 @@ namespace ProyectoGreenSpace.Classes
             return seats;
         }
 
+        /// <summary>
+        /// Carga el array multidimensional en base al estado de los asientos de la base de datos
+        /// </summary>
         private void LoadSeatsArray()
         {
             seatsArray = CreateSeatsArrayFromBitmap(ObtainSessionImage());
         }
 
+        /// <summary>
+        /// Obtiene la imagen con el estado de los asientos de la base de datos
+        /// </summary>
+        /// <returns>Una imagen con el estado de los asientos</returns>
         private Bitmap ObtainSessionImage()
         {
             string query = "SELECT seats_status FROM sessions WHERE id = @sessionId";

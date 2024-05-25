@@ -155,6 +155,14 @@ namespace ProyectoGreenSpace.Classes
             return reviews;
         }
 
+        /// <summary>
+        /// Obtiene un máximo de reseñas de la pelicula indicada con los filtros aplicados
+        /// </summary>
+        /// <param name="score">Puntuacion de la reseña</param>
+        /// <param name="filmName">Nombre de la pelicula</param>
+        /// <param name="sortOrder">Orden de las reseñas</param>
+        /// <param name="maxReviews">Cantidad maxima de reseñas</param>
+        /// <returns></returns>
         public static List<Review> ObtainReviews(int? score, string filmName, string sortOrder, int maxReviews)
         {
             List<Review> reviews = new List<Review>();
@@ -190,6 +198,11 @@ namespace ProyectoGreenSpace.Classes
             return reviews;
         }
 
+        /// <summary>
+        /// Obtiene la consulta para el orden de las reseñas
+        /// </summary>
+        /// <param name="sortOrder">Texto de la interfaz</param>
+        /// <returns>Consulta apropiada para la base de datos</returns>
         private static string ObtainSortOrderQuery(string sortOrder)
         {
             switch (sortOrder)

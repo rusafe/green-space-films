@@ -111,6 +111,11 @@ namespace ProyectoGreenSpace
             return exist;
         }
 
+        /// <summary>
+        /// Obtiene un usuario en base a su nombre
+        /// </summary>
+        /// <param name="username">Nombre del usuario</param>
+        /// <returns>Un objeto usuario</returns>
         public static User InfoUser(string username)
         {
             string query = "SELECT * FROM users WHERE username LIKE @username";
@@ -138,6 +143,11 @@ namespace ProyectoGreenSpace
             return user;
         }
 
+        /// <summary>
+        /// Obtiene un usuario en base a su id
+        /// </summary>
+        /// <param name="id">Id del usuario</param>
+        /// <returns>Un objeto usuario</returns>
         public static User InfoUser(int id)
         {
             string query = "SELECT * FROM users WHERE id = @id";
@@ -166,6 +176,11 @@ namespace ProyectoGreenSpace
             return user;
         }
 
+        /// <summary>
+        /// Actualiza la contraseña del usuario
+        /// </summary>
+        /// <param name="newPassword">Nueva contraseña</param>
+        /// <param name="reader">Objeto reader</param>
         public void UpdatePassword(string newPassword, MySqlDataReader reader)
         {
             string updateQuery = "UPDATE users SET password = @newPassword WHERE username = @username";
@@ -177,6 +192,12 @@ namespace ProyectoGreenSpace
             updateCommand.ExecuteNonQuery();
         }
 
+        /// <summary>
+        /// Comprueba si el usuario tiene la contraseña indicada
+        /// </summary>
+        /// <param name="username">Nombre del usuario</param>
+        /// <param name="password">Contraseña a comparar</param>
+        /// <returns>True o False</returns>
         public static bool CheckPassword(string username, string password)
         {
             bool check = false;
@@ -201,6 +222,11 @@ namespace ProyectoGreenSpace
             return check;
         }
 
+        /// <summary>
+        /// Comprueba si un usuario es administrador
+        /// </summary>
+        /// <param name="username">Nombre del usuario</param>
+        /// <returns>True o False</returns>
         public static bool IsAdministrator(string username)
         {
             bool isAdmin = false;
@@ -220,6 +246,10 @@ namespace ProyectoGreenSpace
             return isAdmin;
         }
 
+        /// <summary>
+        /// Borra la cuenta del usuario con el email introducido
+        /// </summary>
+        /// <param name="Mail">Email del usuario</param>
         public static void DeleteAccount(string Mail)
         {
             string query = "DELETE FROM users WHERE mail = @mail";
@@ -234,6 +264,11 @@ namespace ProyectoGreenSpace
             ConnectionBD.CloseConnection(); 
         }
 
+        /// <summary>
+        /// Actualiza el nombre de un usuario por otro nuevo
+        /// </summary>
+        /// <param name="username">Nombre actual del usuario</param>
+        /// <param name="newUsername">Nuevo nombre del usuario</param>
         public static void ChangeUsername(string username, string newUsername)
         {
             string updateQuery = "UPDATE users SET username = @newUsername WHERE username = @username";
