@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace ProyectoGreenSpace.Classes
 {
@@ -126,7 +127,7 @@ namespace ProyectoGreenSpace.Classes
         {
             List<Review> reviews = new List<Review>();
 
-            string query = "SELECT * FROM reviews WHERE filmId = @filmId LIMIT @maxReviews";
+            string query = "SELECT * FROM reviews WHERE filmId = @filmId ORDER BY reviewDateTime DESC LIMIT @limit";
 
             MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
             command.Parameters.AddWithValue("@filmId", filmId);
@@ -152,6 +153,58 @@ namespace ProyectoGreenSpace.Classes
             ConnectionBD.CloseConnection();
 
             return reviews;
+        }
+
+        public static List<Review> ObtainReviews(int? score, string filmName, string sortOrder, int maxReviews)
+        {
+            List<Review> reviews = new List<Review>();
+            
+            string scoreQuery = score is null ? "" : $"AND score = {score.Value}";
+            string filmNameQuery = string.IsNullOrEmpty(filmName) ? "" : $"AND filmId = {Film.InfoFilm(filmName).Id}";
+            string sortOrderQuery = ObtainSortOrderQuery(sortOrder);
+
+            string query = $"SELECT * FROM reviews WHERE id > 0 {scoreQuery} {filmNameQuery} {sortOrderQuery} LIMIT @limit";
+
+            MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
+            command.Parameters.AddWithValue("@limit", maxReviews);
+
+            ConnectionBD.OpenConnection();
+
+            using (MySqlDataReader reader = command.ExecuteReader()) // Abrir y cerrar la conexión del dataReader --> Tabla virtual
+            {
+                while (reader.Read())
+                {
+                    reviews.Add(new Review(
+                        reader.GetInt32(0),
+                        reader.GetInt32(1),
+                        reader.GetInt32(2),
+                        reader.GetString(3),
+                        reader.GetDouble(4),
+                        reader.GetDateTime(5)
+                    ));
+                }
+            }
+
+            ConnectionBD.CloseConnection();
+
+            return reviews;
+        }
+
+        private static string ObtainSortOrderQuery(string sortOrder)
+        {
+            switch (sortOrder)
+            {
+                case "Mas recientes":
+                    return "ORDER BY reviewDateTime DESC";
+                case "Menos recientes":
+                    return "ORDER BY reviewDateTime ASC";
+                case "Mas estrellas":
+                    return "ORDER BY score DESC";
+                case "Menos estrellas":
+                    return "ORDER BY score ASC";
+                default:
+                    return null;
+            }
         }
     }
 }

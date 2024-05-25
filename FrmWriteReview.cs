@@ -63,7 +63,7 @@ namespace ProyectoGreenSpace
                 btnUser.BackColor = Color.FromArgb(176, 164, 180);
                 btnSettings.BackColor = Color.FromArgb(176, 164, 180);
                 btnWriteReview.BackColor = Color.FromArgb(176, 164, 180);
-                pnlReviews.BackColor = Color.FromArgb(32, 146, 14);
+                this.BackColor = Color.FromArgb(32, 146, 14);
 
                 pctStar1.BackColor = Color.FromArgb(32, 146, 14);
                 pctStar2.BackColor = Color.FromArgb(32, 146, 14);
@@ -131,8 +131,8 @@ namespace ProyectoGreenSpace
 
         private void FrmWriteReview_Load(object sender, EventArgs e)
         {
-            g2Bar.BackColor = Color.FromArgb(76, 80, 144);
-            g2lblTitle.ForeColor = Color.FromArgb(168, 228, 116);
+            //g2Bar.BackColor = Color.FromArgb(76, 80, 144);ç
+            //g2lblTitle.ForeColor = Color.FromArgb(168, 228, 116);
 
             NotVisibleUserButtons();
             ApplyLanguage();

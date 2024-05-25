@@ -31,9 +31,10 @@ namespace ProyectoGreenSpace
         // Constructores
         public User() { }
 
-        public User(int id, string username, string password, string mail, Image pfp, bool admin)
+        public User(int id, DateTime creationDateTime, string username, string password, string mail, Image pfp, bool admin)
         {
             this.id = id;
+            this.creationDateTime = creationDateTime;
             this.username = username;
             this.password = password;
             this.mail = mail;
@@ -125,6 +126,7 @@ namespace ProyectoGreenSpace
                 {
                     user = new User();
                     user.username = reader["username"].ToString();
+                    user.CreationDateTime = reader.GetDateTime(1);
                     user.id = Convert.ToInt32(reader["id"]);
                     user.password = reader["password"].ToString();
                     user.mail = reader["mail"].ToString();
@@ -138,7 +140,7 @@ namespace ProyectoGreenSpace
 
         public static User InfoUser(int id)
         {
-            string query = "SELECT * FROM users WHERE id LIKE @id";
+            string query = "SELECT * FROM users WHERE id = @id";
             MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
             command.Parameters.AddWithValue("@id", id);
 
@@ -151,6 +153,7 @@ namespace ProyectoGreenSpace
                 {
                     user = new User(
                         Convert.ToInt32(reader["id"]),
+                        reader.GetDateTime(1),
                         reader["username"].ToString(),
                         reader["password"].ToString(),
                         reader["mail"].ToString(),
