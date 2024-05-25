@@ -870,5 +870,27 @@ namespace ProyectoGreenSpace.LangResources {
                 return ResourceManager.GetString("groupBoxDelete", resourceCulture);
             }
         }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Acceso sesiones
+        /// </summary>
+        internal static string btnAccessSessions
+        {
+            get
+            {
+                return ResourceManager.GetString("btnAccessSessions", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Busca una cadena traducida similar a Acceso sesiones
+        /// </summary>
+        internal static string labelNewUsername
+        {
+            get
+            {
+                return ResourceManager.GetString("labelNewUsername", resourceCulture);
+            }
+        }
     }
 }

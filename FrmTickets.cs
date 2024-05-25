@@ -191,28 +191,6 @@ namespace ProyectoGreenSpace
         #endregion
 
         #region Diseño de barra minimizadora
-        private void pibMinimize_Click(object sender, EventArgs e)
-        {
-            if (this.WindowState == FormWindowState.Normal)
-            {
-                this.WindowState = FormWindowState.Minimized;
-            }
-            else
-            {
-                this.WindowState = FormWindowState.Normal;
-            }
-        }
-        private void pibMaximize_Click(object sender, EventArgs e)
-        {
-            if (this.WindowState == FormWindowState.Normal)
-            {
-                this.WindowState = FormWindowState.Maximized;
-            }
-            else
-            {
-                this.WindowState = FormWindowState.Normal;
-            }
-        }
 
         private void pibClose_Click(object sender, EventArgs e)
         {

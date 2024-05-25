@@ -62,6 +62,8 @@
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pctSpace = new System.Windows.Forms.PictureBox();
             this.grpReview = new System.Windows.Forms.GroupBox();
+            this.cmbFilms = new System.Windows.Forms.ComboBox();
+            this.lblFilm = new System.Windows.Forms.Label();
             this.btnReset = new System.Windows.Forms.Button();
             this.pctStar15 = new System.Windows.Forms.PictureBox();
             this.pctStar14 = new System.Windows.Forms.PictureBox();
@@ -83,8 +85,6 @@
             this.lblTitleReview = new System.Windows.Forms.Label();
             this.rtxReview1 = new System.Windows.Forms.RichTextBox();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.lblFilm = new System.Windows.Forms.Label();
-            this.cmbFilms = new System.Windows.Forms.ComboBox();
             this.sidebar.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -286,12 +286,14 @@
             // lblLogOut
             // 
             this.lblLogOut.AutoSize = true;
+            this.lblLogOut.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblLogOut.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLogOut.Location = new System.Drawing.Point(76, 179);
             this.lblLogOut.Name = "lblLogOut";
             this.lblLogOut.Size = new System.Drawing.Size(134, 23);
             this.lblLogOut.TabIndex = 10;
             this.lblLogOut.Text = "Cerrar sesión";
+            this.lblLogOut.Click += new System.EventHandler(this.lblLogOut_Click);
             // 
             // txtJoinApp
             // 
@@ -406,7 +408,7 @@
             this.g2Bar.Controls.Add(this.guna2PictureBox1);
             this.g2Bar.Location = new System.Drawing.Point(0, 0);
             this.g2Bar.Name = "g2Bar";
-            this.g2Bar.Size = new System.Drawing.Size(1037, 42);
+            this.g2Bar.Size = new System.Drawing.Size(1079, 42);
             this.g2Bar.TabIndex = 62;
             // 
             // g2lblTitle
@@ -425,7 +427,7 @@
             this.pibMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pibMinimize.Image = ((System.Drawing.Image)(resources.GetObject("pibMinimize.Image")));
             this.pibMinimize.ImageRotate = 0F;
-            this.pibMinimize.Location = new System.Drawing.Point(904, 8);
+            this.pibMinimize.Location = new System.Drawing.Point(946, 8);
             this.pibMinimize.Name = "pibMinimize";
             this.pibMinimize.Size = new System.Drawing.Size(35, 25);
             this.pibMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -438,7 +440,7 @@
             this.pibMaximize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pibMaximize.Image = global::ProyectoGreenSpace.Properties.Resources.maximizar;
             this.pibMaximize.ImageRotate = 0F;
-            this.pibMaximize.Location = new System.Drawing.Point(946, 8);
+            this.pibMaximize.Location = new System.Drawing.Point(988, 8);
             this.pibMaximize.Name = "pibMaximize";
             this.pibMaximize.Size = new System.Drawing.Size(34, 25);
             this.pibMaximize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -451,7 +453,7 @@
             this.guna2PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(985, 3);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(1027, 3);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(39, 33);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -497,6 +499,23 @@
             this.grpReview.Size = new System.Drawing.Size(928, 660);
             this.grpReview.TabIndex = 61;
             this.grpReview.TabStop = false;
+            // 
+            // cmbFilms
+            // 
+            this.cmbFilms.FormattingEnabled = true;
+            this.cmbFilms.Location = new System.Drawing.Point(47, 55);
+            this.cmbFilms.Name = "cmbFilms";
+            this.cmbFilms.Size = new System.Drawing.Size(190, 31);
+            this.cmbFilms.TabIndex = 85;
+            // 
+            // lblFilm
+            // 
+            this.lblFilm.AutoSize = true;
+            this.lblFilm.Location = new System.Drawing.Point(43, 29);
+            this.lblFilm.Name = "lblFilm";
+            this.lblFilm.Size = new System.Drawing.Size(87, 23);
+            this.lblFilm.TabIndex = 84;
+            this.lblFilm.Text = "Pelicula";
             // 
             // btnReset
             // 
@@ -717,23 +736,6 @@
             this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2DragControl1.TargetControl = this.g2Bar;
             this.guna2DragControl1.UseTransparentDrag = true;
-            // 
-            // lblFilm
-            // 
-            this.lblFilm.AutoSize = true;
-            this.lblFilm.Location = new System.Drawing.Point(43, 29);
-            this.lblFilm.Name = "lblFilm";
-            this.lblFilm.Size = new System.Drawing.Size(87, 23);
-            this.lblFilm.TabIndex = 84;
-            this.lblFilm.Text = "Pelicula";
-            // 
-            // cmbFilms
-            // 
-            this.cmbFilms.FormattingEnabled = true;
-            this.cmbFilms.Location = new System.Drawing.Point(47, 55);
-            this.cmbFilms.Name = "cmbFilms";
-            this.cmbFilms.Size = new System.Drawing.Size(190, 31);
-            this.cmbFilms.TabIndex = 85;
             // 
             // FrmWriteReview
             // 

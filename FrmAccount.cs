@@ -1,4 +1,5 @@
-﻿using ProyectoGreenSpace.LangResources;
+﻿using ProyectoGreenSpace.Classes;
+using ProyectoGreenSpace.LangResources;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,6 +24,7 @@ namespace ProyectoGreenSpace
         {
             g2Bar.BackColor = Color.FromArgb(76, 80, 144);
             g2lblTitle.ForeColor = Color.FromArgb(168, 228, 116);
+            txtMail.Text = UserSession.Mail;
 
             ApplyLanguage();
             btnAccount.Focus();
@@ -54,7 +56,6 @@ namespace ProyectoGreenSpace
             btnDeleteAccount.Text = StringResources.buttonDeleteAccount;
             lblDeleteUser.Text = StringResources.labelMailAssociated;
             grpSwitchNightDay.Text = StringResources.grpSwitch;
-            btnPredet.Text = StringResources.buttonDefault;
             lblChangeLanguage.Text = StringResources.labelChangeLanguage;
         }
 
@@ -84,6 +85,34 @@ namespace ProyectoGreenSpace
             frmFilms.Show();
         }
         
+        private void cmbLanguage_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbLanguage.Text == "Castellano")
+            {
+                Language.LanguageSpanish();
+            }
+            else
+            {
+                Language.LanguageBritish();
+            }
+            ApplyLanguage();
+        }
+
+        private void btnDeleteAccount_Click(object sender, EventArgs e)
+        {
+            DialogResult answer = MessageBox.Show("Su cuenta será eliminada, ¿está seguro de realizar esta operación?", 
+                "Eliminación de cuenta", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (DialogResult.Yes == answer)
+            {
+                User.DeleteAccount(UserSession.Mail);
+                MessageBox.Show("Usuario eliminado con éxito, procediendo a cerrar sesión.", "Aviso", 
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                FrmLogin frmLogin = new FrmLogin();
+                frmLogin.Show();
+                this.Close();
+            }
+        }
+
         #region Acceder a formularios de Configuración
         private void btnAccount_Click(object sender, EventArgs e)
         {

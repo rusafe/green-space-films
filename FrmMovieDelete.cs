@@ -86,6 +86,8 @@ namespace ProyectoGreenSpace
             lblGenre.Text = StringResources.lblGenre;
             btnInsertFrm.Text = StringResources.btnInsertFrm;
             grpDelete.Text = StringResources.groupBoxDelete;
+            btnBack.Text = StringResources.buttonExit;
+            btnInsertSessions.Text = StringResources.btnAccessSessions;
         }
 
         private void timerClock_Tick(object sender, EventArgs e)

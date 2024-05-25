@@ -214,6 +214,12 @@ namespace ProyectoGreenSpace
         {
             NotVisibleUserButtons();
         }
+        private void lblLogOut_Click(object sender, EventArgs e)
+        {
+            FrmLogin frmLogin = new FrmLogin();
+            frmLogin.Show();
+            this.Close();
+        }
 
         #region Acceso a formularios desde menú desplegable
         private void btnTicketOffice_Click(object sender, EventArgs e)
@@ -284,5 +290,7 @@ namespace ProyectoGreenSpace
             }
         }
         #endregion
+
+
     }
 }

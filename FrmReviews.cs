@@ -72,25 +72,25 @@ namespace ProyectoGreenSpace
                 GroupBox grbSession = (GroupBox)this.Controls.Find(grbReviewName, true)[0];
                 grbSession.Visible = true;
 
-                Label lblSessionId = (Label)grbSession.Controls.Find(lblSessionIdName, true)[0];
-                lblSessionId.Text = sessions[i].Id.ToString();
+                //Label lblSessionId = (Label)grbSession.Controls.Find(lblSessionIdName, true)[0];
+                //lblSessionId.Text = sessions[i].Id.ToString();
 
-                TextBox txtSessionHour = (TextBox)grbSession.Controls.Find(txtHourName, true)[0];
-                txtSessionHour.Text = sessions[i].StartHour.ToString();
+                //TextBox txtSessionHour = (TextBox)grbSession.Controls.Find(txtHourName, true)[0];
+                //txtSessionHour.Text = sessions[i].StartHour.ToString();
 
-                Room room = sessions[i].getRoom();
+                //Room room = sessions[i].getRoom();
 
-                TextBox txtSessionHall = (TextBox)grbSession.Controls.Find(txtHallName, true)[0];
-                txtSessionHall.Text = $"Sala {room.Id}";
+                //TextBox txtSessionHall = (TextBox)grbSession.Controls.Find(txtHallName, true)[0];
+                //txtSessionHall.Text = $"Sala {room.Id}";
 
-                TextBox txtSessionHallType = (TextBox)grbSession.Controls.Find(txtHallTypeName, true)[0];
-                txtSessionHallType.Text = room.Type;
+                //TextBox txtSessionHallType = (TextBox)grbSession.Controls.Find(txtHallTypeName, true)[0];
+                //txtSessionHallType.Text = room.Type;
 
-                Label lblAmountFreeSeats = (Label)grbSession.Controls.Find(lblFreeSeatsName, true)[0];
-                lblAmountFreeSeats.Text = sessions[i].FreeSeats().ToString();
+                //Label lblAmountFreeSeats = (Label)grbSession.Controls.Find(lblFreeSeatsName, true)[0];
+                //lblAmountFreeSeats.Text = sessions[i].FreeSeats().ToString();
 
-                Label lblAmountOccupiedSeats = (Label)grbSession.Controls.Find(lblOccupiedSeatsName, true)[0];
-                lblAmountOccupiedSeats.Text = sessions[i].OccupiedSeats.ToString();
+                //Label lblAmountOccupiedSeats = (Label)grbSession.Controls.Find(lblOccupiedSeatsName, true)[0];
+                //lblAmountOccupiedSeats.Text = sessions[i].OccupiedSeats.ToString();
             }
         }
 
@@ -185,6 +185,12 @@ namespace ProyectoGreenSpace
             txtJoinApp.Visible = true;
             lblLogOut.Visible = true;
         }
+        private void lblLogOut_Click(object sender, EventArgs e)
+        {
+            FrmLogin frmLogin = new FrmLogin();
+            frmLogin.Show();
+            this.Close();
+        }
 
         #region Acceso a formularios desde menú desplegable
         private void btnTicketOffice_Click(object sender, EventArgs e)
@@ -256,5 +262,6 @@ namespace ProyectoGreenSpace
             }
         }
         #endregion
+
     }
 }

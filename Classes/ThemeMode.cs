@@ -12,14 +12,14 @@ namespace ProyectoGreenSpace
         
         public static bool Light { get { return light; } set { light = value; } }
 
-        public static bool UseThemeLight()
+        public static void UseThemeLight()
         {
-            return light = true;
+            light = true;
         }
 
-        public static bool UseThemeDark()
+        public static void UseThemeDark()
         {
-            return light = false;
+            light = false;
         }
     }
 }
