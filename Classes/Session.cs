@@ -226,5 +226,19 @@ namespace ProyectoGreenSpace.Classes
 
             return amount;
         }
+
+        public static void RestartSessions()
+        {
+            string query = "UPDATE sessions SET seats_status = @seatsStatus";
+
+            MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection);
+            command.Parameters.AddWithValue("seatsStatus", ImagesDB.BitmapToBytes(Seats.CreateDefaultSeatsStatus()));
+
+            ConnectionBD.OpenConnection();
+
+            command.ExecuteNonQuery();
+
+            ConnectionBD.CloseConnection();
+        }
     }
 }
