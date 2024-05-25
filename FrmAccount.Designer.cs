@@ -37,12 +37,8 @@
             this.pibLightDark = new System.Windows.Forms.PictureBox();
             this.pibDarkMode = new System.Windows.Forms.PictureBox();
             this.pibLightMode = new System.Windows.Forms.PictureBox();
-            this.lblDeleteAccount = new System.Windows.Forms.Label();
             this.btnDeleteAccount = new System.Windows.Forms.Button();
             this.lblDeleteUser = new System.Windows.Forms.Label();
-            this.btnPredet = new System.Windows.Forms.Button();
-            this.btnEnglish = new System.Windows.Forms.Button();
-            this.btnEspanol = new System.Windows.Forms.Button();
             this.lblChangeLanguage = new System.Windows.Forms.Label();
             this.pictBoxIcono = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.Button();
@@ -52,6 +48,8 @@
             this.pibMinimize = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pibMaximize = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pibClose = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.cmbLanguage = new System.Windows.Forms.ComboBox();
+            this.txtMail = new System.Windows.Forms.TextBox();
             this.grpSwitchNightDay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pibLightDark)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pibDarkMode)).BeginInit();
@@ -111,7 +109,7 @@
             this.grpSwitchNightDay.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpSwitchNightDay.Location = new System.Drawing.Point(384, 205);
             this.grpSwitchNightDay.Name = "grpSwitchNightDay";
-            this.grpSwitchNightDay.Size = new System.Drawing.Size(350, 150);
+            this.grpSwitchNightDay.Size = new System.Drawing.Size(366, 150);
             this.grpSwitchNightDay.TabIndex = 34;
             this.grpSwitchNightDay.TabStop = false;
             this.grpSwitchNightDay.Text = "Elige el tipo de modo:";
@@ -121,7 +119,7 @@
             this.pibLightDark.Image = global::ProyectoGreenSpace.Properties.Resources.light_mode;
             this.pibLightDark.Location = new System.Drawing.Point(115, 44);
             this.pibLightDark.Name = "pibLightDark";
-            this.pibLightDark.Size = new System.Drawing.Size(100, 80);
+            this.pibLightDark.Size = new System.Drawing.Size(123, 80);
             this.pibLightDark.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pibLightDark.TabIndex = 2;
             this.pibLightDark.TabStop = false;
@@ -130,7 +128,7 @@
             // 
             this.pibDarkMode.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pibDarkMode.Image = global::ProyectoGreenSpace.Properties.Resources.moon;
-            this.pibDarkMode.Location = new System.Drawing.Point(233, 54);
+            this.pibDarkMode.Location = new System.Drawing.Point(255, 54);
             this.pibDarkMode.Name = "pibDarkMode";
             this.pibDarkMode.Size = new System.Drawing.Size(73, 63);
             this.pibDarkMode.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -150,27 +148,18 @@
             this.pibLightMode.TabStop = false;
             this.pibLightMode.Click += new System.EventHandler(this.pibLightMode_Click);
             // 
-            // lblDeleteAccount
-            // 
-            this.lblDeleteAccount.AutoSize = true;
-            this.lblDeleteAccount.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDeleteAccount.Location = new System.Drawing.Point(505, 438);
-            this.lblDeleteAccount.Name = "lblDeleteAccount";
-            this.lblDeleteAccount.Size = new System.Drawing.Size(185, 23);
-            this.lblDeleteAccount.TabIndex = 33;
-            this.lblDeleteAccount.Text = "email@email.com";
-            // 
             // btnDeleteAccount
             // 
             this.btnDeleteAccount.BackColor = System.Drawing.Color.White;
             this.btnDeleteAccount.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeleteAccount.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnDeleteAccount.Location = new System.Drawing.Point(384, 486);
+            this.btnDeleteAccount.Location = new System.Drawing.Point(434, 488);
             this.btnDeleteAccount.Name = "btnDeleteAccount";
             this.btnDeleteAccount.Size = new System.Drawing.Size(204, 53);
             this.btnDeleteAccount.TabIndex = 32;
             this.btnDeleteAccount.Text = "Eliminar Cuenta";
             this.btnDeleteAccount.UseVisualStyleBackColor = false;
+            this.btnDeleteAccount.Click += new System.EventHandler(this.btnDeleteAccount_Click);
             // 
             // lblDeleteUser
             // 
@@ -182,42 +171,6 @@
             this.lblDeleteUser.Size = new System.Drawing.Size(297, 23);
             this.lblDeleteUser.TabIndex = 31;
             this.lblDeleteUser.Text = "Cuenta asociada de correo: ";
-            // 
-            // btnPredet
-            // 
-            this.btnPredet.BackColor = System.Drawing.Color.White;
-            this.btnPredet.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPredet.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnPredet.Location = new System.Drawing.Point(596, 47);
-            this.btnPredet.Name = "btnPredet";
-            this.btnPredet.Size = new System.Drawing.Size(155, 40);
-            this.btnPredet.TabIndex = 14;
-            this.btnPredet.Text = "Predet.";
-            this.btnPredet.UseVisualStyleBackColor = false;
-            // 
-            // btnEnglish
-            // 
-            this.btnEnglish.BackColor = System.Drawing.Color.White;
-            this.btnEnglish.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEnglish.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnEnglish.Location = new System.Drawing.Point(596, 139);
-            this.btnEnglish.Name = "btnEnglish";
-            this.btnEnglish.Size = new System.Drawing.Size(155, 39);
-            this.btnEnglish.TabIndex = 16;
-            this.btnEnglish.Text = "English";
-            this.btnEnglish.UseVisualStyleBackColor = false;
-            // 
-            // btnEspanol
-            // 
-            this.btnEspanol.BackColor = System.Drawing.Color.White;
-            this.btnEspanol.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEspanol.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnEspanol.Location = new System.Drawing.Point(596, 93);
-            this.btnEspanol.Name = "btnEspanol";
-            this.btnEspanol.Size = new System.Drawing.Size(155, 40);
-            this.btnEspanol.TabIndex = 15;
-            this.btnEspanol.Text = "Español";
-            this.btnEspanol.UseVisualStyleBackColor = false;
             // 
             // lblChangeLanguage
             // 
@@ -325,22 +278,42 @@
             this.pibClose.TabStop = false;
             this.pibClose.Click += new System.EventHandler(this.pibClose_Click);
             // 
+            // cmbLanguage
+            // 
+            this.cmbLanguage.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbLanguage.FormattingEnabled = true;
+            this.cmbLanguage.Items.AddRange(new object[] {
+            "Castellano",
+            "Inglés"});
+            this.cmbLanguage.Location = new System.Drawing.Point(607, 75);
+            this.cmbLanguage.Name = "cmbLanguage";
+            this.cmbLanguage.Size = new System.Drawing.Size(143, 31);
+            this.cmbLanguage.TabIndex = 49;
+            this.cmbLanguage.Text = "Castellano";
+            this.cmbLanguage.SelectedIndexChanged += new System.EventHandler(this.cmbLanguage_SelectedIndexChanged);
+            // 
+            // txtMail
+            // 
+            this.txtMail.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMail.Location = new System.Drawing.Point(411, 439);
+            this.txtMail.Name = "txtMail";
+            this.txtMail.Size = new System.Drawing.Size(256, 32);
+            this.txtMail.TabIndex = 53;
+            // 
             // FrmAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(786, 641);
+            this.Controls.Add(this.txtMail);
+            this.Controls.Add(this.cmbLanguage);
             this.Controls.Add(this.g2Bar);
             this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.btnEnglish);
-            this.Controls.Add(this.btnPredet);
-            this.Controls.Add(this.btnEspanol);
             this.Controls.Add(this.btnUser);
             this.Controls.Add(this.btnAdmin);
             this.Controls.Add(this.btnAccount);
             this.Controls.Add(this.grpSwitchNightDay);
-            this.Controls.Add(this.lblDeleteAccount);
             this.Controls.Add(this.btnDeleteAccount);
             this.Controls.Add(this.lblDeleteUser);
             this.Controls.Add(this.lblChangeLanguage);
@@ -370,12 +343,8 @@
         private System.Windows.Forms.Button btnAdmin;
         private System.Windows.Forms.Button btnUser;
         private System.Windows.Forms.GroupBox grpSwitchNightDay;
-        private System.Windows.Forms.Label lblDeleteAccount;
         private System.Windows.Forms.Button btnDeleteAccount;
         private System.Windows.Forms.Label lblDeleteUser;
-        private System.Windows.Forms.Button btnPredet;
-        private System.Windows.Forms.Button btnEnglish;
-        private System.Windows.Forms.Button btnEspanol;
         private System.Windows.Forms.Label lblChangeLanguage;
         private System.Windows.Forms.PictureBox pictBoxIcono;
         private System.Windows.Forms.PictureBox pibLightDark;
@@ -388,5 +357,7 @@
         private Guna.UI2.WinForms.Guna2PictureBox pibMinimize;
         private Guna.UI2.WinForms.Guna2PictureBox pibMaximize;
         private Guna.UI2.WinForms.Guna2PictureBox pibClose;
+        private System.Windows.Forms.ComboBox cmbLanguage;
+        private System.Windows.Forms.TextBox txtMail;
     }
 }

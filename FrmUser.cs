@@ -25,6 +25,8 @@ namespace ProyectoGreenSpace
             g2Bar.BackColor = Color.FromArgb(76, 80, 144);
             g2lblTitle.ForeColor = Color.FromArgb(168, 228, 116);
 
+            txtName.Text = UserSession.Username;
+            txtMail.Text = UserSession.Mail;
             ApplyLanguage();
         }
 
@@ -120,5 +122,17 @@ namespace ProyectoGreenSpace
             }
         }
         #endregion
+
+        private void btnChangeName_Click(object sender, EventArgs e)
+        {
+            DialogResult answer = MessageBox.Show("¿Desea cambiar el nombre de usuario?",
+               "Actualización nombre de usuario.", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (DialogResult.Yes == answer)
+            {
+                FrmChangeUsername frmChangeUsername = new FrmChangeUsername();
+                frmChangeUsername.Show();
+                this.Close();
+            }
+        }
     }
 }

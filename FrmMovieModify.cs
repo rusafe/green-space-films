@@ -200,7 +200,10 @@ namespace ProyectoGreenSpace
             btnDeleteFrm.Text = StringResources.btnDeleteFrm;
             btnUpload.Text = StringResources.btnUpload;
             grpModify.Text = StringResources.groupBoxModify;
+            btnBack.Text = StringResources.buttonExit;
+            btnInsertSessions.Text = StringResources.btnAccessSessions;
         }
+
         private void btnUpload_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofdSelect = new OpenFileDialog();

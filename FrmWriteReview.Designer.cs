@@ -284,12 +284,14 @@
             // lblLogOut
             // 
             this.lblLogOut.AutoSize = true;
+            this.lblLogOut.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblLogOut.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLogOut.Location = new System.Drawing.Point(76, 179);
             this.lblLogOut.Name = "lblLogOut";
             this.lblLogOut.Size = new System.Drawing.Size(134, 23);
             this.lblLogOut.TabIndex = 10;
             this.lblLogOut.Text = "Cerrar sesión";
+            this.lblLogOut.Click += new System.EventHandler(this.lblLogOut_Click);
             // 
             // txtJoinApp
             // 

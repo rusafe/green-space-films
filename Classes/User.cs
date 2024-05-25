@@ -26,7 +26,7 @@ namespace ProyectoGreenSpace
         public string Mail { get { return mail; } set { mail = value; } }
         public Image Pfp { get { return pfp; } set { pfp = value; } }
         public bool Admin { get { return admin; } set { admin = value; } }
-        public DateTime CreationDateTime { get { return creationDateTime; } set { creationDateTime = value; } } 
+        public DateTime CreationDateTime { get { return creationDateTime; } set { creationDateTime = value; } }
 
         // Constructores
         public User() { }
@@ -216,5 +216,34 @@ namespace ProyectoGreenSpace
             ConnectionBD.CloseConnection();
             return isAdmin;
         }
-}
+
+        public static void DeleteAccount(string Mail)
+        {
+            string query = "DELETE FROM users WHERE mail = @mail";
+            ConnectionBD.OpenConnection();
+
+            using (MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection))
+            {
+                command.Parameters.AddWithValue("@mail", Mail);
+                command.ExecuteNonQuery();
+            }
+
+            ConnectionBD.CloseConnection(); 
+        }
+
+        public static void ChangeUsername(string username, string newUsername)
+        {
+            string updateQuery = "UPDATE users SET username = @newUsername WHERE username = @username";
+            ConnectionBD.OpenConnection();
+
+            using (MySqlCommand updateCommand = new MySqlCommand(updateQuery, ConnectionBD.Connection))
+            {
+                updateCommand.Parameters.AddWithValue("@username", username);
+                updateCommand.Parameters.AddWithValue("@newUsername", newUsername);
+                updateCommand.ExecuteNonQuery();
+            }
+
+            ConnectionBD.CloseConnection();
+        }
+    }
 }

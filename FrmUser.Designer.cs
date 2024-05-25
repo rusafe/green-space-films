@@ -41,14 +41,15 @@
             this.lblNameUser = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
             this.pictBoxIcono = new System.Windows.Forms.PictureBox();
-            this.lblName = new System.Windows.Forms.Label();
-            this.lblEmail = new System.Windows.Forms.Label();
             this.g2Bar = new Guna.UI2.WinForms.Guna2Panel();
             this.g2lblTitle = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pibMinimize = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pibMaximize = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pibClose = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtMail = new System.Windows.Forms.TextBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictBoxPhotoPerfil)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictBoxIcono)).BeginInit();
             this.g2Bar.SuspendLayout();
@@ -107,10 +108,12 @@
             this.btnChangeName.TabIndex = 39;
             this.btnChangeName.Text = "Cambiar nombre";
             this.btnChangeName.UseVisualStyleBackColor = false;
+            this.btnChangeName.Click += new System.EventHandler(this.btnChangeName_Click);
             // 
             // btnChangePhoto
             // 
             this.btnChangePhoto.BackColor = System.Drawing.Color.White;
+            this.btnChangePhoto.Enabled = false;
             this.btnChangePhoto.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChangePhoto.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnChangePhoto.Location = new System.Drawing.Point(553, 258);
@@ -118,6 +121,7 @@
             this.btnChangePhoto.Size = new System.Drawing.Size(206, 53);
             this.btnChangePhoto.TabIndex = 38;
             this.btnChangePhoto.Text = "Cambiar Foto";
+            this.toolTip1.SetToolTip(this.btnChangePhoto, "Funcionalidad en proceso.");
             this.btnChangePhoto.UseVisualStyleBackColor = false;
             // 
             // lblMailAssociated
@@ -125,7 +129,7 @@
             this.lblMailAssociated.AutoSize = true;
             this.lblMailAssociated.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMailAssociated.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.lblMailAssociated.Location = new System.Drawing.Point(260, 370);
+            this.lblMailAssociated.Location = new System.Drawing.Point(249, 370);
             this.lblMailAssociated.Name = "lblMailAssociated";
             this.lblMailAssociated.Size = new System.Drawing.Size(297, 23);
             this.lblMailAssociated.TabIndex = 36;
@@ -145,13 +149,15 @@
             // btnChangePassword
             // 
             this.btnChangePassword.BackColor = System.Drawing.Color.White;
+            this.btnChangePassword.Enabled = false;
             this.btnChangePassword.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChangePassword.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnChangePassword.Location = new System.Drawing.Point(399, 445);
+            this.btnChangePassword.Location = new System.Drawing.Point(583, 370);
             this.btnChangePassword.Name = "btnChangePassword";
-            this.btnChangePassword.Size = new System.Drawing.Size(236, 53);
+            this.btnChangePassword.Size = new System.Drawing.Size(176, 69);
             this.btnChangePassword.TabIndex = 34;
             this.btnChangePassword.Text = "Cambiar Contraseña";
+            this.toolTip1.SetToolTip(this.btnChangePassword, "Funcionalidad en proceso.");
             this.btnChangePassword.UseVisualStyleBackColor = false;
             // 
             // lblNameUser
@@ -188,28 +194,6 @@
             this.pictBoxIcono.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictBoxIcono.TabIndex = 30;
             this.pictBoxIcono.TabStop = false;
-            // 
-            // lblName
-            // 
-            this.lblName.AutoSize = true;
-            this.lblName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.lblName.Location = new System.Drawing.Point(549, 111);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(96, 23);
-            this.lblName.TabIndex = 42;
-            this.lblName.Text = "Nombre ";
-            // 
-            // lblEmail
-            // 
-            this.lblEmail.AutoSize = true;
-            this.lblEmail.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.lblEmail.Location = new System.Drawing.Point(425, 407);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(185, 23);
-            this.lblEmail.TabIndex = 43;
-            this.lblEmail.Text = "email@email.com";
             // 
             // g2Bar
             // 
@@ -282,18 +266,34 @@
             this.guna2DragControl1.TargetControl = this.g2Bar;
             this.guna2DragControl1.UseTransparentDrag = true;
             // 
+            // txtName
+            // 
+            this.txtName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.Location = new System.Drawing.Point(579, 115);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(180, 32);
+            this.txtName.TabIndex = 51;
+            // 
+            // txtMail
+            // 
+            this.txtMail.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMail.Location = new System.Drawing.Point(278, 407);
+            this.txtMail.Name = "txtMail";
+            this.txtMail.Size = new System.Drawing.Size(256, 32);
+            this.txtMail.TabIndex = 52;
+            // 
             // FrmUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(796, 615);
+            this.Controls.Add(this.txtMail);
+            this.Controls.Add(this.txtName);
             this.Controls.Add(this.g2Bar);
             this.Controls.Add(this.btnUser);
             this.Controls.Add(this.btnAdmin);
             this.Controls.Add(this.btnAccount);
-            this.Controls.Add(this.lblEmail);
-            this.Controls.Add(this.lblName);
             this.Controls.Add(this.btnChangeName);
             this.Controls.Add(this.btnChangePhoto);
             this.Controls.Add(this.lblMailAssociated);
@@ -331,13 +331,14 @@
         private System.Windows.Forms.Label lblNameUser;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.PictureBox pictBoxIcono;
-        private System.Windows.Forms.Label lblName;
-        private System.Windows.Forms.Label lblEmail;
         private Guna.UI2.WinForms.Guna2Panel g2Bar;
         private Guna.UI2.WinForms.Guna2HtmlLabel g2lblTitle;
         private Guna.UI2.WinForms.Guna2PictureBox pibMinimize;
         private Guna.UI2.WinForms.Guna2PictureBox pibMaximize;
         private Guna.UI2.WinForms.Guna2PictureBox pibClose;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtMail;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
