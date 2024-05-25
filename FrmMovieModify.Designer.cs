@@ -51,7 +51,6 @@
             this.lblPrice = new System.Windows.Forms.Label();
             this.nudMinAge = new System.Windows.Forms.NumericUpDown();
             this.lblMinAge = new System.Windows.Forms.Label();
-            this.txtDuration = new System.Windows.Forms.TextBox();
             this.lblDuration = new System.Windows.Forms.Label();
             this.pibImage = new System.Windows.Forms.PictureBox();
             this.btnUpload = new System.Windows.Forms.Button();
@@ -68,6 +67,7 @@
             this.pibMinimize = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pibMaximize = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pibClose = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.dtpHour = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFilms)).BeginInit();
             this.grpClock.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -180,6 +180,7 @@
             // 
             // grpModify
             // 
+            this.grpModify.Controls.Add(this.dtpHour);
             this.grpModify.Controls.Add(this.cmbFilmsIds);
             this.grpModify.Controls.Add(this.cmbFilms);
             this.grpModify.Controls.Add(this.btnModify);
@@ -192,7 +193,6 @@
             this.grpModify.Controls.Add(this.lblPrice);
             this.grpModify.Controls.Add(this.nudMinAge);
             this.grpModify.Controls.Add(this.lblMinAge);
-            this.grpModify.Controls.Add(this.txtDuration);
             this.grpModify.Controls.Add(this.lblDuration);
             this.grpModify.Controls.Add(this.pibImage);
             this.grpModify.Controls.Add(this.btnUpload);
@@ -347,14 +347,6 @@
             this.lblMinAge.Size = new System.Drawing.Size(125, 21);
             this.lblMinAge.TabIndex = 8;
             this.lblMinAge.Text = "Años mínimos:";
-            // 
-            // txtDuration
-            // 
-            this.txtDuration.Location = new System.Drawing.Point(29, 368);
-            this.txtDuration.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtDuration.Name = "txtDuration";
-            this.txtDuration.Size = new System.Drawing.Size(265, 28);
-            this.txtDuration.TabIndex = 7;
             // 
             // lblDuration
             // 
@@ -517,6 +509,16 @@
             this.pibClose.TabStop = false;
             this.pibClose.Click += new System.EventHandler(this.pibClose_Click);
             // 
+            // dtpHour
+            // 
+            this.dtpHour.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtpHour.Location = new System.Drawing.Point(31, 369);
+            this.dtpHour.Name = "dtpHour";
+            this.dtpHour.ShowUpDown = true;
+            this.dtpHour.Size = new System.Drawing.Size(110, 28);
+            this.dtpHour.TabIndex = 28;
+            this.dtpHour.Value = new System.DateTime(2024, 5, 25, 12, 0, 0, 0);
+            // 
             // FrmMovieModify
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -579,7 +581,6 @@
         private System.Windows.Forms.Label lblPrice;
         private System.Windows.Forms.NumericUpDown nudMinAge;
         private System.Windows.Forms.Label lblMinAge;
-        private System.Windows.Forms.TextBox txtDuration;
         private System.Windows.Forms.Label lblDuration;
         private System.Windows.Forms.PictureBox pibImage;
         private System.Windows.Forms.Button btnUpload;
@@ -598,5 +599,6 @@
         private Guna.UI2.WinForms.Guna2PictureBox pibMinimize;
         private Guna.UI2.WinForms.Guna2PictureBox pibMaximize;
         private Guna.UI2.WinForms.Guna2PictureBox pibClose;
+        private System.Windows.Forms.DateTimePicker dtpHour;
     }
 }
