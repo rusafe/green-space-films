@@ -158,16 +158,28 @@ namespace ProyectoGreenSpace.Classes
             return individualPrice * quantity;
         }
 
+        /// <summary>
+        /// Obtiene el precio total con descuento del ticket
+        /// </summary>
+        /// <returns>Precio total</returns>
         public double TotalPrice()
         {
             return TotalPriceWithoutDiscount() - PriceDiscounted();
         }
         
+        /// <summary>
+        /// Obtiene la cantidad que se descuenta del ticket
+        /// </summary>
+        /// <returns>Cantidad que se descuenta</returns>
         public double PriceDiscounted()
         {
             return TotalPriceWithoutDiscount() * DiscountDivided();
         }
 
+        /// <summary>
+        /// Obtiene el descuento en formato operable (ej: 0.15)
+        /// </summary>
+        /// <returns>Descuento operable</returns>
         public double DiscountDivided()
         {
             return discount / 100d;
@@ -254,6 +266,12 @@ namespace ProyectoGreenSpace.Classes
             return tickets;
         }
 
+        /// <summary>
+        /// Recupera todos los tickets de un usuario de la pelicula especificada que todavia no han pasado la fecha de visualizacion
+        /// </summary>
+        /// <param name="userId">Id del usuario</param>
+        /// <param name="filmName">Id de la pelicula</param>
+        /// <returns>Lista con todos los tickets</returns>
         public static List<Ticket> ActualTickets(int userId, string filmName)
         {
             List<Ticket> tickets = new List<Ticket>();
@@ -332,6 +350,12 @@ namespace ProyectoGreenSpace.Classes
             return tickets;
         }
 
+        /// <summary>
+        /// Recupera todos los tickets de un usuario de la pelicula especificada que ya han pasado la fecha de visualizacion
+        /// </summary>
+        /// <param name="userId">Id del usuario</param>
+        /// <param name="filmName">Id de la pelicula</param>
+        /// <returns>Lista con todos los tickets</returns>
         public static List<Ticket> PastTickets(int userId, string filmName)
         {
             List<Ticket> tickets = new List<Ticket>();

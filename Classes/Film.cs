@@ -133,10 +133,10 @@ namespace ProyectoGreenSpace.Classes
         }
 
         /// <summary>
-        /// 
+        /// Gets all the identifying fields (id and name) of the films that a user can review and return them as a list of tuples that contain the identifying information for each film
         /// </summary>
-        /// <param name="userId"></param>
-        /// <returns></returns>
+        /// <param name="userId">The user Id</param>
+        /// <returns>List of tuples containing the film id and name</returns>
         public static List<(int id, string name)> GetIdentifyingInfoReview(int userId)
         {
             List<(int id, string name)> list = new List<(int id, string name)>();
@@ -237,6 +237,11 @@ namespace ProyectoGreenSpace.Classes
             ConnectionBD.CloseConnection();
         }
 
+        /// <summary>
+        /// Comprueba si existe una pelicula con el nombre en la base de datos
+        /// </summary>
+        /// <param name="name">Nombre de la pelicula</param>
+        /// <returns>Un booleano</returns>
         public static bool Exists(string name)
         {
             bool exists;
@@ -258,6 +263,10 @@ namespace ProyectoGreenSpace.Classes
             return exists;
         }
 
+        /// <summary>
+        /// Obtiene la puntuacion media de las reseñas de la pelicula
+        /// </summary>
+        /// <returns>Puntuacion media</returns>
         public double TotalScore()
         {
             string query = "SELECT AVG(score) FROM reviews WHERE fimlId = @film";
@@ -273,6 +282,11 @@ namespace ProyectoGreenSpace.Classes
             return score;
         }
 
+        /// <summary>
+        /// Obtiene la pelicula con el id especificado
+        /// </summary>
+        /// <param name="id">Id de la pelicula</param>
+        /// <returns>Un objeto pelicula</returns>
         public static Film InfoFilm(int id)
         {
             string query = "SELECT * FROM films WHERE id = @id";
@@ -304,6 +318,11 @@ namespace ProyectoGreenSpace.Classes
             return film;
         }
 
+        /// <summary>
+        /// Obtiene la pelicula con el nombre especificado
+        /// </summary>
+        /// <param name="name">Nombre de la pelicula</param>
+        /// <returns>Un objeto pelicula</returns>
         public static Film InfoFilm(string name)
         {
             string query = "SELECT * FROM films WHERE name = @name";
@@ -335,6 +354,10 @@ namespace ProyectoGreenSpace.Classes
             return film;
         }
 
+        /// <summary>
+        /// Obtiene todas las peliculas de la base de datos
+        /// </summary>
+        /// <returns>Lista con todas las peliculas</returns>
         public static List<Film> ObtainAll()
         {
             List<Film> premiering = new List<Film>();
@@ -369,6 +392,10 @@ namespace ProyectoGreenSpace.Classes
             return premiering;
         }
 
+        /// <summary>
+        /// Obtiene la cantidad de peliculas en la base de datos
+        /// </summary>
+        /// <returns>Cantidad de peliculas</returns>
         public static int Amount()
         {
             string query = "SELECT COUNT(*) FROM films";
@@ -384,6 +411,10 @@ namespace ProyectoGreenSpace.Classes
             return amount;
         }
 
+        /// <summary>
+        /// Obtiene todas las peliculas en estreno
+        /// </summary>
+        /// <returns>Lista de peliculas</returns>
         public static List<Film> ObtainAllPremiering()
         {
             List<Film> premiering = new List<Film>();
@@ -420,6 +451,10 @@ namespace ProyectoGreenSpace.Classes
             return premiering;
         }
 
+        /// <summary>
+        /// Obtiene la cantidad de peliculas en estreno
+        /// </summary>
+        /// <returns>Cantidad de peliculas</returns>
         public static int AmountPremiering()
         {
             string query = "SELECT COUNT(*) FROM films WHERE premiering = @premiering";
@@ -436,6 +471,10 @@ namespace ProyectoGreenSpace.Classes
             return amount;
         }
 
+        /// <summary>
+        /// Obtiene las peliculas que se van a estrenar
+        /// </summary>
+        /// <returns>Lista de peliculas</returns>
         public static List<Film> ObtainAllNextPremiering()
         {
             List<Film> premiering = new List<Film>();
@@ -472,6 +511,10 @@ namespace ProyectoGreenSpace.Classes
             return premiering;
         }
 
+        /// <summary>
+        /// Obtiene la cantidad de peliculas que se van a estrenar
+        /// </summary>
+        /// <returns>Cantidad de peliculas</returns>
         public static int AmountNextPremiering()
         {
             string query = "SELECT COUNT(*) FROM films WHERE next_premiering = @next_premiering";
@@ -487,6 +530,11 @@ namespace ProyectoGreenSpace.Classes
 
             return amount;
         }
+
+        /// <summary>
+        /// Obtiene los generos que pueden tener las peliculas
+        /// </summary>
+        /// <returns>Lista con los generos</returns>
         public static string[] ObtainGenres()
         {
             string query = "SELECT COLUMN_TYPE AS genres FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = 'greenspacefilms' AND TABLE_NAME = 'films' AND COLUMN_NAME = 'genres'";
@@ -506,6 +554,10 @@ namespace ProyectoGreenSpace.Classes
         #endregion
 
         #region Metodos de implementacion
+        /// <summary>
+        /// Transformar el array de generos a un string separados por ,
+        /// </summary>
+        /// <returns>String con los generos</returns>
         private string GenresToString()
         {
             string genresString = "";
@@ -517,6 +569,11 @@ namespace ProyectoGreenSpace.Classes
             return genresString;
         }
 
+        /// <summary>
+        /// Transforma el string de generos a un array
+        /// </summary>
+        /// <param name="genresString">String de los generos separados por ,</param>
+        /// <returns>Array de los generos</returns>
         private static string[] GenresStringToArray(string genresString)
         {
             return genresString.Split(',');

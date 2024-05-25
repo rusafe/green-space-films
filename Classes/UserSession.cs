@@ -24,7 +24,10 @@ namespace ProyectoGreenSpace
         public static bool Admin { get { return admin; } set { admin = value; } }
         public static string Mail { get { return mail; } set { mail = value; } }
         public static DateTime CreationDateTime { get {  return creationDateTime; } set {  creationDateTime = value; } }
-
+        
+        /// <summary>
+        /// Borra el usuario con la sesion iniciada de la base de datos
+        /// </summary>
         public static void DeleteUser()
         {
             User.Delete(id);

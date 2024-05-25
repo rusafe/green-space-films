@@ -10,13 +10,18 @@ namespace ProyectoGreenSpace.Classes
 {
     class Language
     {
-
+        /// <summary>
+        /// Establece el idioma de la aplicacion al español
+        /// </summary>
         public static void LanguageSpanish()
         {
             string culture = "ES-ES";
             Thread.CurrentThread.CurrentUICulture = new CultureInfo(culture);
         }
 
+        /// <summary>
+        /// Establece el idioma dela aplicacion al ingles
+        /// </summary>
         public static void LanguageBritish()
         {
             string culture = "EN-GB";

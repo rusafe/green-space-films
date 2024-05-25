@@ -49,6 +49,12 @@ namespace ProyectoGreenSpace
             return randomCode;
         }
 
+        /// <summary>
+        /// Envia un correo para recuperar la contraseña al usuario indicado
+        /// </summary>
+        /// <param name="mailTransmitter">Correo del administrador</param>
+        /// <param name="password">Contraseña del administrador</param>
+        /// <param name="mailReceiver">Usuario al que se le envia el correo</param>
         public void SendRecoveryPassword(string mailTransmitter, string password, string mailReceiver)
         {
             MailMessage message = new MailMessage();
@@ -79,6 +85,10 @@ namespace ProyectoGreenSpace
             }
         }
 
+        /// <summary>
+        /// Obtiene la contraseña del usuario con el nombre especificado
+        /// </summary>
+        /// <param name="username">Nombre del usuario</param>
         public void RecoverPassword(string username)
         {
             User recoverPassword = new User();
@@ -110,6 +120,10 @@ namespace ProyectoGreenSpace
             ConnectionBD.CloseConnection();
         }
 
+        /// <summary>
+        /// Genera una contraseña aleatoria
+        /// </summary>
+        /// <returns>La contraseña</returns>
         private string GenerateRandomPassword()
         {
             int length = 8;

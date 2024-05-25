@@ -32,6 +32,9 @@ namespace ProyectoGreenSpace.Classes
             this.selected = selected;
         }
 
+        /// <summary>
+        /// Cambia el estado del asiento entre seleccionado o no seleccionado
+        /// </summary>
         public void ChangeSelectedStatus()
         {
             selected = !selected;

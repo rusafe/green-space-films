@@ -64,6 +64,9 @@ namespace ProyectoGreenSpace.Classes
             return Room.InfoRoom(roomId);
         }
 
+        /// <summary>
+        /// Inserta la sesion en la base de datos
+        /// </summary>
         public void Create()
         {
             string query = "INSERT INTO sessions (filmId, roomId, startHour, total_seats, occupied_seats, seats_status) VALUES (@filmId, @roomId, @startHour, @totalSeats, @occupiedSeats, @seatsStatus)";
@@ -83,6 +86,11 @@ namespace ProyectoGreenSpace.Classes
             ConnectionBD.CloseConnection();
         }
 
+        /// <summary>
+        /// Obtiene la sesion con el id especificado
+        /// </summary>
+        /// <param name="id">El id de la sesion</param>
+        /// <returns>Un objeto sesion</returns>
         public static Session ObtainSession(int id)
         {
             string query = "SELECT * FROM sessions WHERE id = @id";
@@ -211,6 +219,11 @@ namespace ProyectoGreenSpace.Classes
             return sessions;
         }
 
+        /// <summary>
+        /// Obtiene la cantidad de sesiones para un pelicula
+        /// </summary>
+        /// <param name="filmId">Id de la pelicula</param>
+        /// <returns>Cantidad de sesiones</returns>
         public static int AmountSessions(int filmId)
         {
             string query = "SELECT COUNT(*) FROM sessions WHERE filmId = @filmId";
@@ -227,6 +240,9 @@ namespace ProyectoGreenSpace.Classes
             return amount;
         }
 
+        /// <summary>
+        /// Reinicia todas las sesiones de la base de datos
+        /// </summary>
         public static void RestartSessions()
         {
             string query = "UPDATE sessions SET seats_status = @seatsStatus";
