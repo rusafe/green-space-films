@@ -1,4 +1,5 @@
-﻿using ProyectoGreenSpace.LangResources;
+﻿using Microsoft.VisualBasic.ApplicationServices;
+using ProyectoGreenSpace.LangResources;
 using System;
 using System.Drawing;
 using System.Windows.Forms;
@@ -8,9 +9,16 @@ namespace ProyectoGreenSpace
     public partial class FrmInsertCode : Form
     {
         int verificationCode;
-        public FrmInsertCode(int code)
+        User user = new User();
+
+        public FrmInsertCode(string username, string password, string repeatPassword, string mail, Image pfp,int code)
         {
             InitializeComponent();
+            user.Username = username;
+            user.Password = password;
+            user.RepeatPassword = repeatPassword;
+            user.Mail = mail;
+            user.Pfp = pfp;
 
             verificationCode = code;
             ApplyTheme();
@@ -55,9 +63,17 @@ namespace ProyectoGreenSpace
         {
             string concatenatedCode = mtbDigit1.Text + mtbDigit2.Text + mtbDigit3.Text + mtbDigit4.Text + mtbDigit5.Text + mtbDigit6.Text;
             int obtainCode = Convert.ToInt32(concatenatedCode);
-
+            
             if (verificationCode == obtainCode)
             {
+                Controller control = new Controller();
+                string answer = control.ControllerRegister(user);
+
+                if (answer.Length > 0)
+                {
+                    MessageBox.Show(answer, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
                 MessageBox.Show("Verificación realizada con éxito.", "VERIFICACIÓN", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 FrmLogin frmLogin = new FrmLogin();
                 frmLogin.Show();

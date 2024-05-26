@@ -78,31 +78,32 @@ namespace ProyectoGreenSpace
                     user.Mail = txtMail.Text;
                     user.Pfp = pibImage.Image;
 
-                    Controller control = new Controller();
-                    string answer = control.ControllerRegister(user);
-
-                    if (answer.Length > 0)
+                    Mail sendMail = new Mail();
+                    if (!User.ExistMail(user.Mail))
                     {
-                        MessageBox.Show(answer, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
-                    else
-                    {
-                        MessageBox.Show("Enviando código de verificación, revise su correo.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        Mail sendMail = new Mail();
-                        if (ValidarDatos())
+                        int code = sendMail.SendVerificationCode("floadm123@gmail.com", "AdminFlo123", user.Mail);
+                        if (code != -1)
                         {
-                            int code = sendMail.SendVerificationCode("floadm123@gmail.com", "AdminFlo123", user.Mail);
-                            if (code != -1)
-                            {
-                                CleanData();
-                                FrmInsertCode frmInsertCode = new FrmInsertCode(code);
-                                frmInsertCode.Show();
-                            }
-                            else
-                            {
-                                MessageBox.Show("Código no enviado", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            }
+                            MessageBox.Show("Enviando código de verificación, revise su correo.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            CleanData();
+                            FrmInsertCode frmInsertCode = new FrmInsertCode(
+                                user.Username,
+                                user.Password,
+                                user.RepeatPassword,
+                                user.Mail,
+                                user.Pfp,
+                                code);
+                            frmInsertCode.Show();
+                            this.Close();
                         }
+                        else
+                        {
+                            MessageBox.Show("Código no enviado", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                    } else
+                    {
+                        MessageBox.Show("El correo introducido ya existe, introduza un correo diferente.", "Aviso", 
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
                 catch (Exception ex)
@@ -136,7 +137,7 @@ namespace ProyectoGreenSpace
         {
             FrmLogin formLogin = new FrmLogin();
             formLogin.Show();
-            this.Hide();
+            this.Close();
         }
 
         private bool ValidarDatos()
@@ -160,7 +161,7 @@ namespace ProyectoGreenSpace
             else if (String.IsNullOrEmpty(txtRepeat.Text))
             {
                 ok = false;
-                errorProvider1.SetError(txtRepeat, "Introduzca de nuevo la contraseá-");
+                errorProvider1.SetError(txtRepeat, "Introduzca de nuevo la contraseña.");
             }
             return ok;
         }
@@ -287,7 +288,6 @@ namespace ProyectoGreenSpace
             }
         }
         #endregion
-
 
     }
 }

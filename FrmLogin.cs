@@ -102,6 +102,7 @@ namespace ProyectoGreenSpace
         {
             FrmRegister frmRegister = new FrmRegister();
             frmRegister.Show();
+            this.Hide();
         }
 
         private void lkllblRecoverPassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
