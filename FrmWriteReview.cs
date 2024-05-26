@@ -219,8 +219,12 @@ namespace ProyectoGreenSpace
             );
 
             review.Create();
+            rtxReview1.Text = string.Empty;
         }
-
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            rtxReview1.Text = string.Empty;
+        }
         #region Acceso a formularios desde menú desplegable
         private void btnTicketOffice_Click(object sender, EventArgs e)
         {
@@ -290,5 +294,7 @@ namespace ProyectoGreenSpace
         }
 
         #endregion
+
+
     }
 }
