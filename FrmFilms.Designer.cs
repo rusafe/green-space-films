@@ -177,21 +177,22 @@
             this.sidebar.Controls.Add(this.panel8);
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebar.Location = new System.Drawing.Point(0, 0);
-            this.sidebar.Margin = new System.Windows.Forms.Padding(2);
-            this.sidebar.MaximumSize = new System.Drawing.Size(182, 647);
-            this.sidebar.MinimumSize = new System.Drawing.Size(56, 647);
+            this.sidebar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.sidebar.MaximumSize = new System.Drawing.Size(243, 796);
+            this.sidebar.MinimumSize = new System.Drawing.Size(75, 796);
             this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(182, 647);
+            this.sidebar.Size = new System.Drawing.Size(243, 796);
             this.sidebar.TabIndex = 29;
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.btnMenu);
             this.panel2.Controls.Add(this.lblMenu);
-            this.panel2.Location = new System.Drawing.Point(2, 2);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.panel2.Location = new System.Drawing.Point(3, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(179, 98);
+            this.panel2.Size = new System.Drawing.Size(239, 121);
             this.panel2.TabIndex = 0;
             // 
             // btnMenu
@@ -199,10 +200,10 @@
             this.btnMenu.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnMenu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMenu.Image = global::ProyectoGreenSpace.Properties.Resources.menu_three_outlined_rounded_lines_symbol_icon_icons_com_73215;
-            this.btnMenu.Location = new System.Drawing.Point(7, 41);
-            this.btnMenu.Margin = new System.Windows.Forms.Padding(2);
+            this.btnMenu.Location = new System.Drawing.Point(9, 50);
+            this.btnMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(40, 43);
+            this.btnMenu.Size = new System.Drawing.Size(53, 53);
             this.btnMenu.TabIndex = 23;
             this.btnMenu.Text = "   ";
             this.btnMenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -214,20 +215,19 @@
             // 
             this.lblMenu.AutoSize = true;
             this.lblMenu.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMenu.Location = new System.Drawing.Point(64, 51);
-            this.lblMenu.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblMenu.Location = new System.Drawing.Point(85, 63);
             this.lblMenu.Name = "lblMenu";
-            this.lblMenu.Size = new System.Drawing.Size(53, 19);
+            this.lblMenu.Size = new System.Drawing.Size(66, 23);
             this.lblMenu.TabIndex = 2;
             this.lblMenu.Text = "MENU";
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.btnTicketOffice);
-            this.panel1.Location = new System.Drawing.Point(2, 104);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Location = new System.Drawing.Point(3, 127);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(179, 50);
+            this.panel1.Size = new System.Drawing.Size(239, 62);
             this.panel1.TabIndex = 1;
             // 
             // btnTicketOffice
@@ -235,10 +235,10 @@
             this.btnTicketOffice.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTicketOffice.Image = ((System.Drawing.Image)(resources.GetObject("btnTicketOffice.Image")));
             this.btnTicketOffice.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTicketOffice.Location = new System.Drawing.Point(2, 2);
-            this.btnTicketOffice.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTicketOffice.Location = new System.Drawing.Point(3, 2);
+            this.btnTicketOffice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTicketOffice.Name = "btnTicketOffice";
-            this.btnTicketOffice.Size = new System.Drawing.Size(175, 42);
+            this.btnTicketOffice.Size = new System.Drawing.Size(233, 52);
             this.btnTicketOffice.TabIndex = 22;
             this.btnTicketOffice.Text = "               Taquilla";
             this.btnTicketOffice.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -248,10 +248,10 @@
             // panel3
             // 
             this.panel3.Controls.Add(this.btnReviewTickets);
-            this.panel3.Location = new System.Drawing.Point(2, 158);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
+            this.panel3.Location = new System.Drawing.Point(3, 193);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(179, 44);
+            this.panel3.Size = new System.Drawing.Size(239, 54);
             this.panel3.TabIndex = 2;
             // 
             // btnReviewTickets
@@ -259,10 +259,10 @@
             this.btnReviewTickets.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReviewTickets.Image = ((System.Drawing.Image)(resources.GetObject("btnReviewTickets.Image")));
             this.btnReviewTickets.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReviewTickets.Location = new System.Drawing.Point(2, 0);
-            this.btnReviewTickets.Margin = new System.Windows.Forms.Padding(2);
+            this.btnReviewTickets.Location = new System.Drawing.Point(3, 0);
+            this.btnReviewTickets.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnReviewTickets.Name = "btnReviewTickets";
-            this.btnReviewTickets.Size = new System.Drawing.Size(175, 43);
+            this.btnReviewTickets.Size = new System.Drawing.Size(233, 53);
             this.btnReviewTickets.TabIndex = 23;
             this.btnReviewTickets.Text = "          Revisar Tickets";
             this.btnReviewTickets.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -272,10 +272,10 @@
             // panel4
             // 
             this.panel4.Controls.Add(this.btnReviews);
-            this.panel4.Location = new System.Drawing.Point(2, 206);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2);
+            this.panel4.Location = new System.Drawing.Point(3, 251);
+            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(179, 50);
+            this.panel4.Size = new System.Drawing.Size(239, 62);
             this.panel4.TabIndex = 3;
             // 
             // btnReviews
@@ -283,10 +283,10 @@
             this.btnReviews.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReviews.Image = ((System.Drawing.Image)(resources.GetObject("btnReviews.Image")));
             this.btnReviews.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReviews.Location = new System.Drawing.Point(2, 4);
-            this.btnReviews.Margin = new System.Windows.Forms.Padding(2);
+            this.btnReviews.Location = new System.Drawing.Point(3, 5);
+            this.btnReviews.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnReviews.Name = "btnReviews";
-            this.btnReviews.Size = new System.Drawing.Size(175, 44);
+            this.btnReviews.Size = new System.Drawing.Size(233, 54);
             this.btnReviews.TabIndex = 24;
             this.btnReviews.Text = "            Ver Reseñas";
             this.btnReviews.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -296,10 +296,10 @@
             // panel5
             // 
             this.panel5.Controls.Add(this.btnWriteReview);
-            this.panel5.Location = new System.Drawing.Point(2, 260);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2);
+            this.panel5.Location = new System.Drawing.Point(3, 317);
+            this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(179, 55);
+            this.panel5.Size = new System.Drawing.Size(239, 68);
             this.panel5.TabIndex = 4;
             // 
             // btnWriteReview
@@ -307,10 +307,10 @@
             this.btnWriteReview.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnWriteReview.Image = ((System.Drawing.Image)(resources.GetObject("btnWriteReview.Image")));
             this.btnWriteReview.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnWriteReview.Location = new System.Drawing.Point(2, 6);
-            this.btnWriteReview.Margin = new System.Windows.Forms.Padding(2);
+            this.btnWriteReview.Location = new System.Drawing.Point(3, 7);
+            this.btnWriteReview.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnWriteReview.Name = "btnWriteReview";
-            this.btnWriteReview.Size = new System.Drawing.Size(175, 47);
+            this.btnWriteReview.Size = new System.Drawing.Size(233, 58);
             this.btnWriteReview.TabIndex = 24;
             this.btnWriteReview.Text = "          Escribir reseñas";
             this.btnWriteReview.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -325,19 +325,20 @@
             this.panel6.Controls.Add(this.lblJoinApp);
             this.panel6.Controls.Add(this.txtUsername);
             this.panel6.Controls.Add(this.lblUsername);
-            this.panel6.Location = new System.Drawing.Point(2, 319);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2);
+            this.panel6.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.panel6.Location = new System.Drawing.Point(3, 389);
+            this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(179, 182);
+            this.panel6.Size = new System.Drawing.Size(239, 224);
             this.panel6.TabIndex = 5;
             // 
             // pibClose
             // 
             this.pibClose.Image = global::ProyectoGreenSpace.Properties.Resources.cancel;
-            this.pibClose.Location = new System.Drawing.Point(148, 4);
-            this.pibClose.Margin = new System.Windows.Forms.Padding(2);
+            this.pibClose.Location = new System.Drawing.Point(197, 5);
+            this.pibClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pibClose.Name = "pibClose";
-            this.pibClose.Size = new System.Drawing.Size(26, 27);
+            this.pibClose.Size = new System.Drawing.Size(35, 33);
             this.pibClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pibClose.TabIndex = 5;
             this.pibClose.TabStop = false;
@@ -347,10 +348,9 @@
             // 
             this.lblLogOut.AutoSize = true;
             this.lblLogOut.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLogOut.Location = new System.Drawing.Point(64, 143);
-            this.lblLogOut.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblLogOut.Location = new System.Drawing.Point(85, 176);
             this.lblLogOut.Name = "lblLogOut";
-            this.lblLogOut.Size = new System.Drawing.Size(108, 21);
+            this.lblLogOut.Size = new System.Drawing.Size(134, 23);
             this.lblLogOut.TabIndex = 4;
             this.lblLogOut.Text = "Cerrar sesión";
             this.lblLogOut.Click += new System.EventHandler(this.lblLogOut_Click);
@@ -359,21 +359,20 @@
             // 
             this.txtJoinApp.Enabled = false;
             this.txtJoinApp.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtJoinApp.Location = new System.Drawing.Point(21, 101);
-            this.txtJoinApp.Margin = new System.Windows.Forms.Padding(2);
+            this.txtJoinApp.Location = new System.Drawing.Point(28, 124);
+            this.txtJoinApp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtJoinApp.Name = "txtJoinApp";
             this.txtJoinApp.ReadOnly = true;
-            this.txtJoinApp.Size = new System.Drawing.Size(138, 27);
+            this.txtJoinApp.Size = new System.Drawing.Size(183, 32);
             this.txtJoinApp.TabIndex = 3;
             // 
             // lblJoinApp
             // 
             this.lblJoinApp.AutoSize = true;
             this.lblJoinApp.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblJoinApp.Location = new System.Drawing.Point(18, 72);
-            this.lblJoinApp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblJoinApp.Location = new System.Drawing.Point(24, 89);
             this.lblJoinApp.Name = "lblJoinApp";
-            this.lblJoinApp.Size = new System.Drawing.Size(141, 21);
+            this.lblJoinApp.Size = new System.Drawing.Size(176, 23);
             this.lblJoinApp.TabIndex = 2;
             this.lblJoinApp.Text = "Miembros desde:";
             // 
@@ -381,31 +380,30 @@
             // 
             this.txtUsername.Enabled = false;
             this.txtUsername.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.Location = new System.Drawing.Point(21, 36);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(2);
+            this.txtUsername.Location = new System.Drawing.Point(28, 44);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.ReadOnly = true;
-            this.txtUsername.Size = new System.Drawing.Size(138, 27);
+            this.txtUsername.Size = new System.Drawing.Size(183, 32);
             this.txtUsername.TabIndex = 1;
             // 
             // lblUsername
             // 
             this.lblUsername.AutoSize = true;
             this.lblUsername.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsername.Location = new System.Drawing.Point(18, 11);
-            this.lblUsername.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblUsername.Location = new System.Drawing.Point(24, 14);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(96, 21);
+            this.lblUsername.Size = new System.Drawing.Size(119, 23);
             this.lblUsername.TabIndex = 0;
             this.lblUsername.Text = "Username: ";
             // 
             // panel7
             // 
             this.panel7.Controls.Add(this.btnUser);
-            this.panel7.Location = new System.Drawing.Point(2, 505);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2);
+            this.panel7.Location = new System.Drawing.Point(3, 617);
+            this.panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(179, 46);
+            this.panel7.Size = new System.Drawing.Size(239, 57);
             this.panel7.TabIndex = 6;
             // 
             // btnUser
@@ -413,10 +411,10 @@
             this.btnUser.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUser.Image = ((System.Drawing.Image)(resources.GetObject("btnUser.Image")));
             this.btnUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUser.Location = new System.Drawing.Point(2, 2);
-            this.btnUser.Margin = new System.Windows.Forms.Padding(2);
+            this.btnUser.Location = new System.Drawing.Point(3, 2);
+            this.btnUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnUser.Name = "btnUser";
-            this.btnUser.Size = new System.Drawing.Size(175, 42);
+            this.btnUser.Size = new System.Drawing.Size(233, 52);
             this.btnUser.TabIndex = 24;
             this.btnUser.Text = "               Usuario";
             this.btnUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -426,10 +424,10 @@
             // panel8
             // 
             this.panel8.Controls.Add(this.btnSettings);
-            this.panel8.Location = new System.Drawing.Point(2, 555);
-            this.panel8.Margin = new System.Windows.Forms.Padding(2);
+            this.panel8.Location = new System.Drawing.Point(3, 678);
+            this.panel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(179, 44);
+            this.panel8.Size = new System.Drawing.Size(239, 54);
             this.panel8.TabIndex = 7;
             // 
             // btnSettings
@@ -437,10 +435,10 @@
             this.btnSettings.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSettings.Image = ((System.Drawing.Image)(resources.GetObject("btnSettings.Image")));
             this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSettings.Location = new System.Drawing.Point(2, 2);
-            this.btnSettings.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSettings.Location = new System.Drawing.Point(3, 2);
+            this.btnSettings.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Size = new System.Drawing.Size(175, 39);
+            this.btnSettings.Size = new System.Drawing.Size(233, 48);
             this.btnSettings.TabIndex = 24;
             this.btnSettings.Text = "          Configuración";
             this.btnSettings.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -457,11 +455,11 @@
             // 
             this.grbMovie8.Controls.Add(this.lblInfor8);
             this.grbMovie8.Controls.Add(this.pcbMovie8);
-            this.grbMovie8.Location = new System.Drawing.Point(565, 353);
-            this.grbMovie8.Margin = new System.Windows.Forms.Padding(2);
+            this.grbMovie8.Location = new System.Drawing.Point(753, 434);
+            this.grbMovie8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbMovie8.Name = "grbMovie8";
-            this.grbMovie8.Padding = new System.Windows.Forms.Padding(2);
-            this.grbMovie8.Size = new System.Drawing.Size(150, 211);
+            this.grbMovie8.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grbMovie8.Size = new System.Drawing.Size(200, 260);
             this.grbMovie8.TabIndex = 38;
             this.grbMovie8.TabStop = false;
             this.grbMovie8.Visible = false;
@@ -470,10 +468,9 @@
             // 
             this.lblInfor8.AutoSize = true;
             this.lblInfor8.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInfor8.Location = new System.Drawing.Point(4, 186);
-            this.lblInfor8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblInfor8.Location = new System.Drawing.Point(5, 229);
             this.lblInfor8.Name = "lblInfor8";
-            this.lblInfor8.Size = new System.Drawing.Size(96, 21);
+            this.lblInfor8.Size = new System.Drawing.Size(118, 23);
             this.lblInfor8.TabIndex = 8;
             this.lblInfor8.Text = "Titulo peli 8";
             this.lblInfor8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -482,10 +479,10 @@
             // 
             this.pcbMovie8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pcbMovie8.Image = global::ProyectoGreenSpace.Properties.Resources.image_picture_icon_143003;
-            this.pcbMovie8.Location = new System.Drawing.Point(4, 0);
-            this.pcbMovie8.Margin = new System.Windows.Forms.Padding(2);
+            this.pcbMovie8.Location = new System.Drawing.Point(5, 0);
+            this.pcbMovie8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pcbMovie8.Name = "pcbMovie8";
-            this.pcbMovie8.Size = new System.Drawing.Size(141, 184);
+            this.pcbMovie8.Size = new System.Drawing.Size(188, 226);
             this.pcbMovie8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbMovie8.TabIndex = 8;
             this.pcbMovie8.TabStop = false;
@@ -496,11 +493,11 @@
             this.grbMovie4.BackColor = System.Drawing.Color.White;
             this.grbMovie4.Controls.Add(this.pcbMovie4);
             this.grbMovie4.Controls.Add(this.lblInfor4);
-            this.grbMovie4.Location = new System.Drawing.Point(565, 107);
-            this.grbMovie4.Margin = new System.Windows.Forms.Padding(2);
+            this.grbMovie4.Location = new System.Drawing.Point(753, 132);
+            this.grbMovie4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbMovie4.Name = "grbMovie4";
-            this.grbMovie4.Padding = new System.Windows.Forms.Padding(2);
-            this.grbMovie4.Size = new System.Drawing.Size(150, 211);
+            this.grbMovie4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grbMovie4.Size = new System.Drawing.Size(200, 260);
             this.grbMovie4.TabIndex = 37;
             this.grbMovie4.TabStop = false;
             this.grbMovie4.Visible = false;
@@ -509,10 +506,10 @@
             // 
             this.pcbMovie4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pcbMovie4.Image = global::ProyectoGreenSpace.Properties.Resources.image_picture_icon_143003;
-            this.pcbMovie4.Location = new System.Drawing.Point(4, 0);
-            this.pcbMovie4.Margin = new System.Windows.Forms.Padding(2);
+            this.pcbMovie4.Location = new System.Drawing.Point(5, 0);
+            this.pcbMovie4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pcbMovie4.Name = "pcbMovie4";
-            this.pcbMovie4.Size = new System.Drawing.Size(141, 184);
+            this.pcbMovie4.Size = new System.Drawing.Size(188, 226);
             this.pcbMovie4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbMovie4.TabIndex = 11;
             this.pcbMovie4.TabStop = false;
@@ -522,10 +519,9 @@
             // 
             this.lblInfor4.AutoSize = true;
             this.lblInfor4.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInfor4.Location = new System.Drawing.Point(4, 188);
-            this.lblInfor4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblInfor4.Location = new System.Drawing.Point(5, 231);
             this.lblInfor4.Name = "lblInfor4";
-            this.lblInfor4.Size = new System.Drawing.Size(96, 21);
+            this.lblInfor4.Size = new System.Drawing.Size(118, 23);
             this.lblInfor4.TabIndex = 8;
             this.lblInfor4.Text = "Titulo peli 4";
             this.lblInfor4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -534,11 +530,11 @@
             // 
             this.grbMovie7.Controls.Add(this.lblInfor7);
             this.grbMovie7.Controls.Add(this.pcbMovie7);
-            this.grbMovie7.Location = new System.Drawing.Point(394, 353);
-            this.grbMovie7.Margin = new System.Windows.Forms.Padding(2);
+            this.grbMovie7.Location = new System.Drawing.Point(525, 434);
+            this.grbMovie7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbMovie7.Name = "grbMovie7";
-            this.grbMovie7.Padding = new System.Windows.Forms.Padding(2);
-            this.grbMovie7.Size = new System.Drawing.Size(150, 211);
+            this.grbMovie7.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grbMovie7.Size = new System.Drawing.Size(200, 260);
             this.grbMovie7.TabIndex = 36;
             this.grbMovie7.TabStop = false;
             this.grbMovie7.Visible = false;
@@ -547,10 +543,9 @@
             // 
             this.lblInfor7.AutoSize = true;
             this.lblInfor7.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInfor7.Location = new System.Drawing.Point(4, 186);
-            this.lblInfor7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblInfor7.Location = new System.Drawing.Point(5, 229);
             this.lblInfor7.Name = "lblInfor7";
-            this.lblInfor7.Size = new System.Drawing.Size(96, 21);
+            this.lblInfor7.Size = new System.Drawing.Size(118, 23);
             this.lblInfor7.TabIndex = 8;
             this.lblInfor7.Text = "Titulo peli 7";
             this.lblInfor7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -559,10 +554,10 @@
             // 
             this.pcbMovie7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pcbMovie7.Image = global::ProyectoGreenSpace.Properties.Resources.image_picture_icon_143003;
-            this.pcbMovie7.Location = new System.Drawing.Point(4, 0);
-            this.pcbMovie7.Margin = new System.Windows.Forms.Padding(2);
+            this.pcbMovie7.Location = new System.Drawing.Point(5, 0);
+            this.pcbMovie7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pcbMovie7.Name = "pcbMovie7";
-            this.pcbMovie7.Size = new System.Drawing.Size(141, 184);
+            this.pcbMovie7.Size = new System.Drawing.Size(188, 226);
             this.pcbMovie7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbMovie7.TabIndex = 8;
             this.pcbMovie7.TabStop = false;
@@ -572,11 +567,11 @@
             // 
             this.grbMovie6.Controls.Add(this.pcbMovie6);
             this.grbMovie6.Controls.Add(this.lblInfor6);
-            this.grbMovie6.Location = new System.Drawing.Point(214, 353);
-            this.grbMovie6.Margin = new System.Windows.Forms.Padding(2);
+            this.grbMovie6.Location = new System.Drawing.Point(285, 434);
+            this.grbMovie6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbMovie6.Name = "grbMovie6";
-            this.grbMovie6.Padding = new System.Windows.Forms.Padding(2);
-            this.grbMovie6.Size = new System.Drawing.Size(150, 211);
+            this.grbMovie6.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grbMovie6.Size = new System.Drawing.Size(200, 260);
             this.grbMovie6.TabIndex = 35;
             this.grbMovie6.TabStop = false;
             this.grbMovie6.Visible = false;
@@ -585,10 +580,10 @@
             // 
             this.pcbMovie6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pcbMovie6.Image = global::ProyectoGreenSpace.Properties.Resources.image_picture_icon_143003;
-            this.pcbMovie6.Location = new System.Drawing.Point(4, 0);
-            this.pcbMovie6.Margin = new System.Windows.Forms.Padding(2);
+            this.pcbMovie6.Location = new System.Drawing.Point(5, 0);
+            this.pcbMovie6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pcbMovie6.Name = "pcbMovie6";
-            this.pcbMovie6.Size = new System.Drawing.Size(141, 184);
+            this.pcbMovie6.Size = new System.Drawing.Size(188, 226);
             this.pcbMovie6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbMovie6.TabIndex = 9;
             this.pcbMovie6.TabStop = false;
@@ -598,10 +593,9 @@
             // 
             this.lblInfor6.AutoSize = true;
             this.lblInfor6.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInfor6.Location = new System.Drawing.Point(4, 186);
-            this.lblInfor6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblInfor6.Location = new System.Drawing.Point(5, 229);
             this.lblInfor6.Name = "lblInfor6";
-            this.lblInfor6.Size = new System.Drawing.Size(96, 21);
+            this.lblInfor6.Size = new System.Drawing.Size(118, 23);
             this.lblInfor6.TabIndex = 9;
             this.lblInfor6.Text = "Titulo peli 6";
             this.lblInfor6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -611,11 +605,11 @@
             this.grbMovie5.BackColor = System.Drawing.Color.White;
             this.grbMovie5.Controls.Add(this.pcbMovie5);
             this.grbMovie5.Controls.Add(this.lblInfor5);
-            this.grbMovie5.Location = new System.Drawing.Point(32, 353);
-            this.grbMovie5.Margin = new System.Windows.Forms.Padding(2);
+            this.grbMovie5.Location = new System.Drawing.Point(43, 434);
+            this.grbMovie5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbMovie5.Name = "grbMovie5";
-            this.grbMovie5.Padding = new System.Windows.Forms.Padding(2);
-            this.grbMovie5.Size = new System.Drawing.Size(150, 211);
+            this.grbMovie5.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grbMovie5.Size = new System.Drawing.Size(200, 260);
             this.grbMovie5.TabIndex = 34;
             this.grbMovie5.TabStop = false;
             this.grbMovie5.Visible = false;
@@ -624,10 +618,10 @@
             // 
             this.pcbMovie5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pcbMovie5.Image = global::ProyectoGreenSpace.Properties.Resources.image_picture_icon_143003;
-            this.pcbMovie5.Location = new System.Drawing.Point(4, 0);
-            this.pcbMovie5.Margin = new System.Windows.Forms.Padding(2);
+            this.pcbMovie5.Location = new System.Drawing.Point(5, 0);
+            this.pcbMovie5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pcbMovie5.Name = "pcbMovie5";
-            this.pcbMovie5.Size = new System.Drawing.Size(141, 184);
+            this.pcbMovie5.Size = new System.Drawing.Size(188, 226);
             this.pcbMovie5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbMovie5.TabIndex = 10;
             this.pcbMovie5.TabStop = false;
@@ -637,10 +631,9 @@
             // 
             this.lblInfor5.AutoSize = true;
             this.lblInfor5.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInfor5.Location = new System.Drawing.Point(4, 186);
-            this.lblInfor5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblInfor5.Location = new System.Drawing.Point(5, 229);
             this.lblInfor5.Name = "lblInfor5";
-            this.lblInfor5.Size = new System.Drawing.Size(96, 21);
+            this.lblInfor5.Size = new System.Drawing.Size(118, 23);
             this.lblInfor5.TabIndex = 9;
             this.lblInfor5.Text = "Titulo peli 5";
             this.lblInfor5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -650,11 +643,11 @@
             this.grbMovie3.BackColor = System.Drawing.Color.White;
             this.grbMovie3.Controls.Add(this.pcbMovie3);
             this.grbMovie3.Controls.Add(this.lblInfor3);
-            this.grbMovie3.Location = new System.Drawing.Point(389, 107);
-            this.grbMovie3.Margin = new System.Windows.Forms.Padding(2);
+            this.grbMovie3.Location = new System.Drawing.Point(519, 132);
+            this.grbMovie3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbMovie3.Name = "grbMovie3";
-            this.grbMovie3.Padding = new System.Windows.Forms.Padding(2);
-            this.grbMovie3.Size = new System.Drawing.Size(150, 211);
+            this.grbMovie3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grbMovie3.Size = new System.Drawing.Size(200, 260);
             this.grbMovie3.TabIndex = 32;
             this.grbMovie3.TabStop = false;
             this.grbMovie3.Visible = false;
@@ -663,10 +656,10 @@
             // 
             this.pcbMovie3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pcbMovie3.Image = global::ProyectoGreenSpace.Properties.Resources.image_picture_icon_143003;
-            this.pcbMovie3.Location = new System.Drawing.Point(4, 0);
-            this.pcbMovie3.Margin = new System.Windows.Forms.Padding(2);
+            this.pcbMovie3.Location = new System.Drawing.Point(5, 0);
+            this.pcbMovie3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pcbMovie3.Name = "pcbMovie3";
-            this.pcbMovie3.Size = new System.Drawing.Size(141, 184);
+            this.pcbMovie3.Size = new System.Drawing.Size(188, 226);
             this.pcbMovie3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbMovie3.TabIndex = 11;
             this.pcbMovie3.TabStop = false;
@@ -676,10 +669,9 @@
             // 
             this.lblInfor3.AutoSize = true;
             this.lblInfor3.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInfor3.Location = new System.Drawing.Point(6, 188);
-            this.lblInfor3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblInfor3.Location = new System.Drawing.Point(8, 231);
             this.lblInfor3.Name = "lblInfor3";
-            this.lblInfor3.Size = new System.Drawing.Size(96, 21);
+            this.lblInfor3.Size = new System.Drawing.Size(118, 23);
             this.lblInfor3.TabIndex = 8;
             this.lblInfor3.Text = "Titulo peli 3";
             this.lblInfor3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -689,11 +681,11 @@
             this.grbMovie2.BackColor = System.Drawing.Color.White;
             this.grbMovie2.Controls.Add(this.pcbMovie2);
             this.grbMovie2.Controls.Add(this.lblInfor2);
-            this.grbMovie2.Location = new System.Drawing.Point(214, 107);
-            this.grbMovie2.Margin = new System.Windows.Forms.Padding(2);
+            this.grbMovie2.Location = new System.Drawing.Point(285, 132);
+            this.grbMovie2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbMovie2.Name = "grbMovie2";
-            this.grbMovie2.Padding = new System.Windows.Forms.Padding(2);
-            this.grbMovie2.Size = new System.Drawing.Size(150, 211);
+            this.grbMovie2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grbMovie2.Size = new System.Drawing.Size(200, 260);
             this.grbMovie2.TabIndex = 33;
             this.grbMovie2.TabStop = false;
             this.grbMovie2.Visible = false;
@@ -702,10 +694,10 @@
             // 
             this.pcbMovie2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pcbMovie2.Image = global::ProyectoGreenSpace.Properties.Resources.image_picture_icon_143003;
-            this.pcbMovie2.Location = new System.Drawing.Point(4, 0);
-            this.pcbMovie2.Margin = new System.Windows.Forms.Padding(2);
+            this.pcbMovie2.Location = new System.Drawing.Point(5, 0);
+            this.pcbMovie2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pcbMovie2.Name = "pcbMovie2";
-            this.pcbMovie2.Size = new System.Drawing.Size(141, 184);
+            this.pcbMovie2.Size = new System.Drawing.Size(188, 226);
             this.pcbMovie2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbMovie2.TabIndex = 9;
             this.pcbMovie2.TabStop = false;
@@ -715,10 +707,9 @@
             // 
             this.lblInfor2.AutoSize = true;
             this.lblInfor2.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInfor2.Location = new System.Drawing.Point(4, 188);
-            this.lblInfor2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblInfor2.Location = new System.Drawing.Point(5, 231);
             this.lblInfor2.Name = "lblInfor2";
-            this.lblInfor2.Size = new System.Drawing.Size(96, 21);
+            this.lblInfor2.Size = new System.Drawing.Size(118, 23);
             this.lblInfor2.TabIndex = 8;
             this.lblInfor2.Text = "Titulo peli 2";
             this.lblInfor2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -727,11 +718,11 @@
             // 
             this.grbMovie1.Controls.Add(this.lblInfor1);
             this.grbMovie1.Controls.Add(this.pcbMovie1);
-            this.grbMovie1.Location = new System.Drawing.Point(32, 107);
-            this.grbMovie1.Margin = new System.Windows.Forms.Padding(2);
+            this.grbMovie1.Location = new System.Drawing.Point(43, 132);
+            this.grbMovie1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbMovie1.Name = "grbMovie1";
-            this.grbMovie1.Padding = new System.Windows.Forms.Padding(2);
-            this.grbMovie1.Size = new System.Drawing.Size(150, 211);
+            this.grbMovie1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grbMovie1.Size = new System.Drawing.Size(200, 260);
             this.grbMovie1.TabIndex = 47;
             this.grbMovie1.TabStop = false;
             this.grbMovie1.Visible = false;
@@ -740,10 +731,9 @@
             // 
             this.lblInfor1.AutoSize = true;
             this.lblInfor1.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInfor1.Location = new System.Drawing.Point(4, 188);
-            this.lblInfor1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblInfor1.Location = new System.Drawing.Point(5, 231);
             this.lblInfor1.Name = "lblInfor1";
-            this.lblInfor1.Size = new System.Drawing.Size(96, 21);
+            this.lblInfor1.Size = new System.Drawing.Size(118, 23);
             this.lblInfor1.TabIndex = 10;
             this.lblInfor1.Text = "Titulo peli 1";
             this.lblInfor1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -752,10 +742,10 @@
             // 
             this.pcbMovie1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pcbMovie1.Image = global::ProyectoGreenSpace.Properties.Resources.image_picture_icon_143003;
-            this.pcbMovie1.Location = new System.Drawing.Point(4, 0);
-            this.pcbMovie1.Margin = new System.Windows.Forms.Padding(2);
+            this.pcbMovie1.Location = new System.Drawing.Point(5, 0);
+            this.pcbMovie1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pcbMovie1.Name = "pcbMovie1";
-            this.pcbMovie1.Size = new System.Drawing.Size(141, 184);
+            this.pcbMovie1.Size = new System.Drawing.Size(188, 226);
             this.pcbMovie1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbMovie1.TabIndex = 10;
             this.pcbMovie1.TabStop = false;
@@ -772,10 +762,9 @@
             // 
             this.lblTitleMonth.AutoSize = true;
             this.lblTitleMonth.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitleMonth.Location = new System.Drawing.Point(178, 54);
-            this.lblTitleMonth.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTitleMonth.Location = new System.Drawing.Point(237, 66);
             this.lblTitleMonth.Name = "lblTitleMonth";
-            this.lblTitleMonth.Size = new System.Drawing.Size(368, 26);
+            this.lblTitleMonth.Size = new System.Drawing.Size(482, 34);
             this.lblTitleMonth.TabIndex = 30;
             this.lblTitleMonth.Text = "ESTRENOS - PELÍCULAS MAYO 2024";
             // 
@@ -803,11 +792,12 @@
             this.pnlFilms.Controls.Add(this.grbMovie2);
             this.pnlFilms.Controls.Add(this.grbMovie5);
             this.pnlFilms.Controls.Add(this.grbMovie3);
+            this.pnlFilms.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.pnlFilms.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlFilms.Location = new System.Drawing.Point(182, 0);
-            this.pnlFilms.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlFilms.Location = new System.Drawing.Point(243, 0);
+            this.pnlFilms.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlFilms.Name = "pnlFilms";
-            this.pnlFilms.Size = new System.Drawing.Size(779, 647);
+            this.pnlFilms.Size = new System.Drawing.Size(1038, 796);
             this.pnlFilms.TabIndex = 39;
             // 
             // g2Bar
@@ -818,20 +808,20 @@
             this.g2Bar.Controls.Add(this.pibMinimize);
             this.g2Bar.Controls.Add(this.pibMaximize);
             this.g2Bar.Controls.Add(this.pibCloseFrm);
-            this.g2Bar.Location = new System.Drawing.Point(0, -2);
-            this.g2Bar.Margin = new System.Windows.Forms.Padding(2);
+            this.g2Bar.Location = new System.Drawing.Point(0, 0);
+            this.g2Bar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.g2Bar.Name = "g2Bar";
-            this.g2Bar.Size = new System.Drawing.Size(779, 34);
+            this.g2Bar.Size = new System.Drawing.Size(1038, 44);
             this.g2Bar.TabIndex = 49;
             // 
             // g2lblTitle
             // 
             this.g2lblTitle.BackColor = System.Drawing.Color.Transparent;
             this.g2lblTitle.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.g2lblTitle.Location = new System.Drawing.Point(10, 6);
-            this.g2lblTitle.Margin = new System.Windows.Forms.Padding(2);
+            this.g2lblTitle.Location = new System.Drawing.Point(13, 7);
+            this.g2lblTitle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.g2lblTitle.Name = "g2lblTitle";
-            this.g2lblTitle.Size = new System.Drawing.Size(152, 23);
+            this.g2lblTitle.Size = new System.Drawing.Size(194, 25);
             this.g2lblTitle.TabIndex = 36;
             this.g2lblTitle.Text = "GREEN SPACE FILMS";
             // 
@@ -841,10 +831,10 @@
             this.pibMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pibMinimize.Image = ((System.Drawing.Image)(resources.GetObject("pibMinimize.Image")));
             this.pibMinimize.ImageRotate = 0F;
-            this.pibMinimize.Location = new System.Drawing.Point(680, 6);
-            this.pibMinimize.Margin = new System.Windows.Forms.Padding(2);
+            this.pibMinimize.Location = new System.Drawing.Point(906, 7);
+            this.pibMinimize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pibMinimize.Name = "pibMinimize";
-            this.pibMinimize.Size = new System.Drawing.Size(26, 20);
+            this.pibMinimize.Size = new System.Drawing.Size(35, 25);
             this.pibMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pibMinimize.TabIndex = 35;
             this.pibMinimize.TabStop = false;
@@ -856,10 +846,10 @@
             this.pibMaximize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pibMaximize.Image = global::ProyectoGreenSpace.Properties.Resources.maximizar;
             this.pibMaximize.ImageRotate = 0F;
-            this.pibMaximize.Location = new System.Drawing.Point(711, 6);
-            this.pibMaximize.Margin = new System.Windows.Forms.Padding(2);
+            this.pibMaximize.Location = new System.Drawing.Point(947, 7);
+            this.pibMaximize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pibMaximize.Name = "pibMaximize";
-            this.pibMaximize.Size = new System.Drawing.Size(26, 20);
+            this.pibMaximize.Size = new System.Drawing.Size(35, 25);
             this.pibMaximize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pibMaximize.TabIndex = 34;
             this.pibMaximize.TabStop = false;
@@ -871,10 +861,10 @@
             this.pibCloseFrm.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pibCloseFrm.Image = ((System.Drawing.Image)(resources.GetObject("pibCloseFrm.Image")));
             this.pibCloseFrm.ImageRotate = 0F;
-            this.pibCloseFrm.Location = new System.Drawing.Point(740, 2);
-            this.pibCloseFrm.Margin = new System.Windows.Forms.Padding(2);
+            this.pibCloseFrm.Location = new System.Drawing.Point(986, 2);
+            this.pibCloseFrm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pibCloseFrm.Name = "pibCloseFrm";
-            this.pibCloseFrm.Size = new System.Drawing.Size(29, 27);
+            this.pibCloseFrm.Size = new System.Drawing.Size(39, 33);
             this.pibCloseFrm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pibCloseFrm.TabIndex = 33;
             this.pibCloseFrm.TabStop = false;
@@ -882,10 +872,10 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(317, 1262);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(423, 1553);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(95, 40);
+            this.pictureBox1.Size = new System.Drawing.Size(127, 49);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 46;
             this.pictureBox1.TabStop = false;
@@ -894,11 +884,11 @@
             // 
             this.grbNextMovie8.Controls.Add(this.lblNextInfo8);
             this.grbNextMovie8.Controls.Add(this.pcbNextMovie8);
-            this.grbNextMovie8.Location = new System.Drawing.Point(560, 921);
-            this.grbNextMovie8.Margin = new System.Windows.Forms.Padding(2);
+            this.grbNextMovie8.Location = new System.Drawing.Point(747, 1134);
+            this.grbNextMovie8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbNextMovie8.Name = "grbNextMovie8";
-            this.grbNextMovie8.Padding = new System.Windows.Forms.Padding(2);
-            this.grbNextMovie8.Size = new System.Drawing.Size(150, 211);
+            this.grbNextMovie8.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grbNextMovie8.Size = new System.Drawing.Size(200, 260);
             this.grbNextMovie8.TabIndex = 45;
             this.grbNextMovie8.TabStop = false;
             this.grbNextMovie8.Visible = false;
@@ -907,10 +897,9 @@
             // 
             this.lblNextInfo8.AutoSize = true;
             this.lblNextInfo8.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNextInfo8.Location = new System.Drawing.Point(4, 190);
-            this.lblNextInfo8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNextInfo8.Location = new System.Drawing.Point(5, 234);
             this.lblNextInfo8.Name = "lblNextInfo8";
-            this.lblNextInfo8.Size = new System.Drawing.Size(96, 21);
+            this.lblNextInfo8.Size = new System.Drawing.Size(118, 23);
             this.lblNextInfo8.TabIndex = 8;
             this.lblNextInfo8.Text = "Titulo peli 8";
             this.lblNextInfo8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -919,10 +908,10 @@
             // 
             this.pcbNextMovie8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pcbNextMovie8.Image = global::ProyectoGreenSpace.Properties.Resources.image_picture_icon_143003;
-            this.pcbNextMovie8.Location = new System.Drawing.Point(4, 0);
-            this.pcbNextMovie8.Margin = new System.Windows.Forms.Padding(2);
+            this.pcbNextMovie8.Location = new System.Drawing.Point(5, 0);
+            this.pcbNextMovie8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pcbNextMovie8.Name = "pcbNextMovie8";
-            this.pcbNextMovie8.Size = new System.Drawing.Size(141, 184);
+            this.pcbNextMovie8.Size = new System.Drawing.Size(188, 226);
             this.pcbNextMovie8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbNextMovie8.TabIndex = 8;
             this.pcbNextMovie8.TabStop = false;
@@ -932,11 +921,11 @@
             this.grbNextMovie1.BackColor = System.Drawing.Color.White;
             this.grbNextMovie1.Controls.Add(this.pcbNextMovie1);
             this.grbNextMovie1.Controls.Add(this.lblNextInfo1);
-            this.grbNextMovie1.Location = new System.Drawing.Point(28, 672);
-            this.grbNextMovie1.Margin = new System.Windows.Forms.Padding(2);
+            this.grbNextMovie1.Location = new System.Drawing.Point(37, 827);
+            this.grbNextMovie1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbNextMovie1.Name = "grbNextMovie1";
-            this.grbNextMovie1.Padding = new System.Windows.Forms.Padding(2);
-            this.grbNextMovie1.Size = new System.Drawing.Size(150, 211);
+            this.grbNextMovie1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grbNextMovie1.Size = new System.Drawing.Size(200, 260);
             this.grbNextMovie1.TabIndex = 38;
             this.grbNextMovie1.TabStop = false;
             this.grbNextMovie1.Visible = false;
@@ -945,10 +934,10 @@
             // 
             this.pcbNextMovie1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pcbNextMovie1.Image = global::ProyectoGreenSpace.Properties.Resources.image_picture_icon_143003;
-            this.pcbNextMovie1.Location = new System.Drawing.Point(4, 0);
-            this.pcbNextMovie1.Margin = new System.Windows.Forms.Padding(2);
+            this.pcbNextMovie1.Location = new System.Drawing.Point(5, 0);
+            this.pcbNextMovie1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pcbNextMovie1.Name = "pcbNextMovie1";
-            this.pcbNextMovie1.Size = new System.Drawing.Size(141, 184);
+            this.pcbNextMovie1.Size = new System.Drawing.Size(188, 226);
             this.pcbNextMovie1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbNextMovie1.TabIndex = 9;
             this.pcbNextMovie1.TabStop = false;
@@ -957,10 +946,9 @@
             // 
             this.lblNextInfo1.AutoSize = true;
             this.lblNextInfo1.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNextInfo1.Location = new System.Drawing.Point(4, 188);
-            this.lblNextInfo1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNextInfo1.Location = new System.Drawing.Point(5, 231);
             this.lblNextInfo1.Name = "lblNextInfo1";
-            this.lblNextInfo1.Size = new System.Drawing.Size(96, 21);
+            this.lblNextInfo1.Size = new System.Drawing.Size(118, 23);
             this.lblNextInfo1.TabIndex = 7;
             this.lblNextInfo1.Text = "Titulo peli 1";
             this.lblNextInfo1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -970,11 +958,11 @@
             this.grbNextMovie4.BackColor = System.Drawing.Color.White;
             this.grbNextMovie4.Controls.Add(this.pcbNextMovie4);
             this.grbNextMovie4.Controls.Add(this.lblNextInfo4);
-            this.grbNextMovie4.Location = new System.Drawing.Point(560, 670);
-            this.grbNextMovie4.Margin = new System.Windows.Forms.Padding(2);
+            this.grbNextMovie4.Location = new System.Drawing.Point(747, 825);
+            this.grbNextMovie4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbNextMovie4.Name = "grbNextMovie4";
-            this.grbNextMovie4.Padding = new System.Windows.Forms.Padding(2);
-            this.grbNextMovie4.Size = new System.Drawing.Size(150, 211);
+            this.grbNextMovie4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grbNextMovie4.Size = new System.Drawing.Size(200, 260);
             this.grbNextMovie4.TabIndex = 41;
             this.grbNextMovie4.TabStop = false;
             this.grbNextMovie4.Visible = false;
@@ -983,10 +971,10 @@
             // 
             this.pcbNextMovie4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pcbNextMovie4.Image = global::ProyectoGreenSpace.Properties.Resources.image_picture_icon_143003;
-            this.pcbNextMovie4.Location = new System.Drawing.Point(4, 0);
-            this.pcbNextMovie4.Margin = new System.Windows.Forms.Padding(2);
+            this.pcbNextMovie4.Location = new System.Drawing.Point(5, 0);
+            this.pcbNextMovie4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pcbNextMovie4.Name = "pcbNextMovie4";
-            this.pcbNextMovie4.Size = new System.Drawing.Size(141, 184);
+            this.pcbNextMovie4.Size = new System.Drawing.Size(188, 226);
             this.pcbNextMovie4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbNextMovie4.TabIndex = 11;
             this.pcbNextMovie4.TabStop = false;
@@ -995,10 +983,9 @@
             // 
             this.lblNextInfo4.AutoSize = true;
             this.lblNextInfo4.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNextInfo4.Location = new System.Drawing.Point(4, 188);
-            this.lblNextInfo4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNextInfo4.Location = new System.Drawing.Point(5, 231);
             this.lblNextInfo4.Name = "lblNextInfo4";
-            this.lblNextInfo4.Size = new System.Drawing.Size(96, 21);
+            this.lblNextInfo4.Size = new System.Drawing.Size(118, 23);
             this.lblNextInfo4.TabIndex = 8;
             this.lblNextInfo4.Text = "Titulo peli 4";
             this.lblNextInfo4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1007,11 +994,11 @@
             // 
             this.grbNextMovie7.Controls.Add(this.lblNextInfo7);
             this.grbNextMovie7.Controls.Add(this.pcbNextMovie7);
-            this.grbNextMovie7.Location = new System.Drawing.Point(385, 921);
-            this.grbNextMovie7.Margin = new System.Windows.Forms.Padding(2);
+            this.grbNextMovie7.Location = new System.Drawing.Point(513, 1134);
+            this.grbNextMovie7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbNextMovie7.Name = "grbNextMovie7";
-            this.grbNextMovie7.Padding = new System.Windows.Forms.Padding(2);
-            this.grbNextMovie7.Size = new System.Drawing.Size(150, 211);
+            this.grbNextMovie7.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grbNextMovie7.Size = new System.Drawing.Size(200, 260);
             this.grbNextMovie7.TabIndex = 44;
             this.grbNextMovie7.TabStop = false;
             this.grbNextMovie7.Visible = false;
@@ -1020,10 +1007,9 @@
             // 
             this.lblNextInfo7.AutoSize = true;
             this.lblNextInfo7.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNextInfo7.Location = new System.Drawing.Point(4, 190);
-            this.lblNextInfo7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNextInfo7.Location = new System.Drawing.Point(5, 234);
             this.lblNextInfo7.Name = "lblNextInfo7";
-            this.lblNextInfo7.Size = new System.Drawing.Size(96, 21);
+            this.lblNextInfo7.Size = new System.Drawing.Size(118, 23);
             this.lblNextInfo7.TabIndex = 8;
             this.lblNextInfo7.Text = "Titulo peli 7";
             this.lblNextInfo7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1032,10 +1018,10 @@
             // 
             this.pcbNextMovie7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pcbNextMovie7.Image = global::ProyectoGreenSpace.Properties.Resources.image_picture_icon_143003;
-            this.pcbNextMovie7.Location = new System.Drawing.Point(4, 0);
-            this.pcbNextMovie7.Margin = new System.Windows.Forms.Padding(2);
+            this.pcbNextMovie7.Location = new System.Drawing.Point(5, 0);
+            this.pcbNextMovie7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pcbNextMovie7.Name = "pcbNextMovie7";
-            this.pcbNextMovie7.Size = new System.Drawing.Size(141, 184);
+            this.pcbNextMovie7.Size = new System.Drawing.Size(188, 226);
             this.pcbNextMovie7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbNextMovie7.TabIndex = 8;
             this.pcbNextMovie7.TabStop = false;
@@ -1044,10 +1030,9 @@
             // 
             this.lblTitleNextMonth.AutoSize = true;
             this.lblTitleNextMonth.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitleNextMonth.Location = new System.Drawing.Point(154, 620);
-            this.lblTitleNextMonth.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTitleNextMonth.Location = new System.Drawing.Point(205, 763);
             this.lblTitleNextMonth.Name = "lblTitleNextMonth";
-            this.lblTitleNextMonth.Size = new System.Drawing.Size(484, 26);
+            this.lblTitleNextMonth.Size = new System.Drawing.Size(634, 34);
             this.lblTitleNextMonth.TabIndex = 40;
             this.lblTitleNextMonth.Text = "PRÓXIMOS ESTRENOS - PELÍCULAS JUNIO 2024";
             // 
@@ -1056,11 +1041,11 @@
             this.grbNextMovie2.BackColor = System.Drawing.Color.White;
             this.grbNextMovie2.Controls.Add(this.pcbNextMovie2);
             this.grbNextMovie2.Controls.Add(this.lblNextInfo2);
-            this.grbNextMovie2.Location = new System.Drawing.Point(209, 672);
-            this.grbNextMovie2.Margin = new System.Windows.Forms.Padding(2);
+            this.grbNextMovie2.Location = new System.Drawing.Point(279, 827);
+            this.grbNextMovie2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbNextMovie2.Name = "grbNextMovie2";
-            this.grbNextMovie2.Padding = new System.Windows.Forms.Padding(2);
-            this.grbNextMovie2.Size = new System.Drawing.Size(150, 211);
+            this.grbNextMovie2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grbNextMovie2.Size = new System.Drawing.Size(200, 260);
             this.grbNextMovie2.TabIndex = 40;
             this.grbNextMovie2.TabStop = false;
             this.grbNextMovie2.Visible = false;
@@ -1069,10 +1054,10 @@
             // 
             this.pcbNextMovie2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pcbNextMovie2.Image = global::ProyectoGreenSpace.Properties.Resources.image_picture_icon_143003;
-            this.pcbNextMovie2.Location = new System.Drawing.Point(4, -2);
-            this.pcbNextMovie2.Margin = new System.Windows.Forms.Padding(2);
+            this.pcbNextMovie2.Location = new System.Drawing.Point(5, -2);
+            this.pcbNextMovie2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pcbNextMovie2.Name = "pcbNextMovie2";
-            this.pcbNextMovie2.Size = new System.Drawing.Size(141, 184);
+            this.pcbNextMovie2.Size = new System.Drawing.Size(188, 226);
             this.pcbNextMovie2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbNextMovie2.TabIndex = 9;
             this.pcbNextMovie2.TabStop = false;
@@ -1081,10 +1066,9 @@
             // 
             this.lblNextInfo2.AutoSize = true;
             this.lblNextInfo2.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNextInfo2.Location = new System.Drawing.Point(4, 188);
-            this.lblNextInfo2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNextInfo2.Location = new System.Drawing.Point(5, 231);
             this.lblNextInfo2.Name = "lblNextInfo2";
-            this.lblNextInfo2.Size = new System.Drawing.Size(96, 21);
+            this.lblNextInfo2.Size = new System.Drawing.Size(118, 23);
             this.lblNextInfo2.TabIndex = 8;
             this.lblNextInfo2.Text = "Titulo peli 2";
             this.lblNextInfo2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1093,11 +1077,11 @@
             // 
             this.grbNextMovie6.Controls.Add(this.pcbNextMovie6);
             this.grbNextMovie6.Controls.Add(this.lblNextInfo6);
-            this.grbNextMovie6.Location = new System.Drawing.Point(209, 921);
-            this.grbNextMovie6.Margin = new System.Windows.Forms.Padding(2);
+            this.grbNextMovie6.Location = new System.Drawing.Point(279, 1134);
+            this.grbNextMovie6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbNextMovie6.Name = "grbNextMovie6";
-            this.grbNextMovie6.Padding = new System.Windows.Forms.Padding(2);
-            this.grbNextMovie6.Size = new System.Drawing.Size(150, 211);
+            this.grbNextMovie6.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grbNextMovie6.Size = new System.Drawing.Size(200, 260);
             this.grbNextMovie6.TabIndex = 43;
             this.grbNextMovie6.TabStop = false;
             this.grbNextMovie6.Visible = false;
@@ -1106,10 +1090,10 @@
             // 
             this.pcbNextMovie6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pcbNextMovie6.Image = global::ProyectoGreenSpace.Properties.Resources.image_picture_icon_143003;
-            this.pcbNextMovie6.Location = new System.Drawing.Point(4, 0);
-            this.pcbNextMovie6.Margin = new System.Windows.Forms.Padding(2);
+            this.pcbNextMovie6.Location = new System.Drawing.Point(5, 0);
+            this.pcbNextMovie6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pcbNextMovie6.Name = "pcbNextMovie6";
-            this.pcbNextMovie6.Size = new System.Drawing.Size(141, 184);
+            this.pcbNextMovie6.Size = new System.Drawing.Size(188, 226);
             this.pcbNextMovie6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbNextMovie6.TabIndex = 9;
             this.pcbNextMovie6.TabStop = false;
@@ -1118,10 +1102,9 @@
             // 
             this.lblNextInfo6.AutoSize = true;
             this.lblNextInfo6.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNextInfo6.Location = new System.Drawing.Point(4, 190);
-            this.lblNextInfo6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNextInfo6.Location = new System.Drawing.Point(5, 234);
             this.lblNextInfo6.Name = "lblNextInfo6";
-            this.lblNextInfo6.Size = new System.Drawing.Size(96, 21);
+            this.lblNextInfo6.Size = new System.Drawing.Size(118, 23);
             this.lblNextInfo6.TabIndex = 9;
             this.lblNextInfo6.Text = "Titulo peli 6";
             this.lblNextInfo6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1131,11 +1114,11 @@
             this.grbNextMovie3.BackColor = System.Drawing.Color.White;
             this.grbNextMovie3.Controls.Add(this.pcbNextMovie3);
             this.grbNextMovie3.Controls.Add(this.lblNextInfo3);
-            this.grbNextMovie3.Location = new System.Drawing.Point(385, 670);
-            this.grbNextMovie3.Margin = new System.Windows.Forms.Padding(2);
+            this.grbNextMovie3.Location = new System.Drawing.Point(513, 825);
+            this.grbNextMovie3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbNextMovie3.Name = "grbNextMovie3";
-            this.grbNextMovie3.Padding = new System.Windows.Forms.Padding(2);
-            this.grbNextMovie3.Size = new System.Drawing.Size(150, 211);
+            this.grbNextMovie3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grbNextMovie3.Size = new System.Drawing.Size(200, 260);
             this.grbNextMovie3.TabIndex = 39;
             this.grbNextMovie3.TabStop = false;
             this.grbNextMovie3.Visible = false;
@@ -1144,10 +1127,10 @@
             // 
             this.pcbNextMovie3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pcbNextMovie3.Image = global::ProyectoGreenSpace.Properties.Resources.image_picture_icon_143003;
-            this.pcbNextMovie3.Location = new System.Drawing.Point(4, 0);
-            this.pcbNextMovie3.Margin = new System.Windows.Forms.Padding(2);
+            this.pcbNextMovie3.Location = new System.Drawing.Point(5, 0);
+            this.pcbNextMovie3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pcbNextMovie3.Name = "pcbNextMovie3";
-            this.pcbNextMovie3.Size = new System.Drawing.Size(141, 184);
+            this.pcbNextMovie3.Size = new System.Drawing.Size(188, 226);
             this.pcbNextMovie3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbNextMovie3.TabIndex = 11;
             this.pcbNextMovie3.TabStop = false;
@@ -1156,10 +1139,9 @@
             // 
             this.lblNextInfo3.AutoSize = true;
             this.lblNextInfo3.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNextInfo3.Location = new System.Drawing.Point(4, 188);
-            this.lblNextInfo3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNextInfo3.Location = new System.Drawing.Point(5, 231);
             this.lblNextInfo3.Name = "lblNextInfo3";
-            this.lblNextInfo3.Size = new System.Drawing.Size(96, 21);
+            this.lblNextInfo3.Size = new System.Drawing.Size(118, 23);
             this.lblNextInfo3.TabIndex = 8;
             this.lblNextInfo3.Text = "Titulo peli 3";
             this.lblNextInfo3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1169,11 +1151,11 @@
             this.grbNextMovie5.BackColor = System.Drawing.Color.White;
             this.grbNextMovie5.Controls.Add(this.pcbNextMovie5);
             this.grbNextMovie5.Controls.Add(this.lblNextInfo5);
-            this.grbNextMovie5.Location = new System.Drawing.Point(28, 921);
-            this.grbNextMovie5.Margin = new System.Windows.Forms.Padding(2);
+            this.grbNextMovie5.Location = new System.Drawing.Point(37, 1134);
+            this.grbNextMovie5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbNextMovie5.Name = "grbNextMovie5";
-            this.grbNextMovie5.Padding = new System.Windows.Forms.Padding(2);
-            this.grbNextMovie5.Size = new System.Drawing.Size(150, 211);
+            this.grbNextMovie5.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grbNextMovie5.Size = new System.Drawing.Size(200, 260);
             this.grbNextMovie5.TabIndex = 42;
             this.grbNextMovie5.TabStop = false;
             this.grbNextMovie5.Visible = false;
@@ -1182,10 +1164,10 @@
             // 
             this.pcbNextMovie5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pcbNextMovie5.Image = global::ProyectoGreenSpace.Properties.Resources.image_picture_icon_143003;
-            this.pcbNextMovie5.Location = new System.Drawing.Point(4, 0);
-            this.pcbNextMovie5.Margin = new System.Windows.Forms.Padding(2);
+            this.pcbNextMovie5.Location = new System.Drawing.Point(5, 0);
+            this.pcbNextMovie5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pcbNextMovie5.Name = "pcbNextMovie5";
-            this.pcbNextMovie5.Size = new System.Drawing.Size(141, 184);
+            this.pcbNextMovie5.Size = new System.Drawing.Size(188, 226);
             this.pcbNextMovie5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbNextMovie5.TabIndex = 10;
             this.pcbNextMovie5.TabStop = false;
@@ -1194,10 +1176,9 @@
             // 
             this.lblNextInfo5.AutoSize = true;
             this.lblNextInfo5.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNextInfo5.Location = new System.Drawing.Point(4, 190);
-            this.lblNextInfo5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNextInfo5.Location = new System.Drawing.Point(5, 234);
             this.lblNextInfo5.Name = "lblNextInfo5";
-            this.lblNextInfo5.Size = new System.Drawing.Size(96, 21);
+            this.lblNextInfo5.Size = new System.Drawing.Size(118, 23);
             this.lblNextInfo5.TabIndex = 9;
             this.lblNextInfo5.Text = "Titulo peli 5";
             this.lblNextInfo5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1220,15 +1201,15 @@
             // 
             // FrmFilms
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(961, 647);
+            this.ClientSize = new System.Drawing.Size(1281, 796);
             this.Controls.Add(this.pnlFilms);
             this.Controls.Add(this.sidebar);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmFilms";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GREEN SPACE FILMS (Página principal)";
