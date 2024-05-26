@@ -753,6 +753,7 @@
             this.pibCloseFrm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pibCloseFrm.TabIndex = 33;
             this.pibCloseFrm.TabStop = false;
+            this.pibCloseFrm.Click += new System.EventHandler(this.pibCloseFrm_Click);
             // 
             // FrmWriteReview
             // 

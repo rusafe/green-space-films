@@ -110,7 +110,30 @@ namespace ProyectoGreenSpace
 
             return exist;
         }
+        /// <summary>
+        /// Comprueba en la base de datos si existe el correo electrónico
+        /// </summary>
+        /// <param name="connection"> Conexión a la base de datos. </param>
+        /// <returns> True si existe el usuario, false sino existe el usuario. </returns>
+        public static bool ExistMail(string mail)
+        {
+            string query = "SELECT id FROM users WHERE mail = @mail";
 
+            bool exist;
+
+            ConnectionBD.OpenConnection();
+            using (MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection))
+            {
+                command.Parameters.AddWithValue("@mail", mail);
+                using (MySqlDataReader reader = command.ExecuteReader())
+                {
+                    exist = reader.HasRows;
+                }
+            }
+            ConnectionBD.CloseConnection();
+
+            return exist;
+        }
         /// <summary>
         /// Obtiene un usuario en base a su nombre
         /// </summary>
