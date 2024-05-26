@@ -26,6 +26,7 @@ namespace ProyectoGreenSpace
             g2lblTitle.ForeColor = Color.FromArgb(168, 228, 116);
 
             txtName.Text = UserSession.Username;
+            pibUserPicture.Image = UserSession.Pfp;
             txtMail.Text = UserSession.Mail;
             ApplyLanguage();
         }

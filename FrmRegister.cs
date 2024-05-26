@@ -76,6 +76,7 @@ namespace ProyectoGreenSpace
                     user.Password = txtPassword.Text;
                     user.RepeatPassword = txtRepeat.Text;
                     user.Mail = txtMail.Text;
+                    user.Pfp = pibImage.Image;
 
                     Controller control = new Controller();
                     string answer = control.ControllerRegister(user);
@@ -125,6 +126,7 @@ namespace ProyectoGreenSpace
             txtMail.Text = string.Empty;
             txtPassword.Text = string.Empty;
             txtRepeat.Text = string.Empty;
+            pibImage.Image = null;
         }
 
         /// <summary>

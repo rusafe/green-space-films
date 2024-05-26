@@ -197,6 +197,17 @@ namespace ProyectoGreenSpace
             rtxReview1.Text = string.Empty;
         }
 
+        private void pibClose_Click(object sender, EventArgs e)
+        {
+            NotVisibleUserButtons();
+        }
+        private void lblLogOut_Click(object sender, EventArgs e)
+        {
+            FrmLogin frmLogin = new FrmLogin();
+            frmLogin.Show();
+            this.Close();
+        }
+
         private void btnSend_Click(object sender, EventArgs e)
         {
             Review review = new Review(
@@ -208,17 +219,6 @@ namespace ProyectoGreenSpace
             );
 
             review.Create();
-        }
-
-        private void pibClose_Click(object sender, EventArgs e)
-        {
-            NotVisibleUserButtons();
-        }
-        private void lblLogOut_Click(object sender, EventArgs e)
-        {
-            FrmLogin frmLogin = new FrmLogin();
-            frmLogin.Show();
-            this.Close();
         }
 
         #region Acceso a formularios desde menú desplegable
@@ -274,6 +274,5 @@ namespace ProyectoGreenSpace
         }
 
         #endregion
-
     }
 }

@@ -51,8 +51,10 @@ namespace ProyectoGreenSpace
         {
             int result;
 
-            string query = "INSERT INTO users (username, password, mail) " +
-            "VALUES (@username, @password, @mail)";
+            byte[] imageData = pfp is null ? null : ImagesDB.ImageToBytes(pfp);
+
+            string query = "INSERT INTO users (username, password, mail, pfp) " +
+            "VALUES (@username, @password, @mail, @pfp)";
 
             ConnectionBD.OpenConnection();
             using (MySqlCommand command = new MySqlCommand(query, ConnectionBD.Connection))
@@ -60,6 +62,7 @@ namespace ProyectoGreenSpace
                 command.Parameters.AddWithValue("@username", username);
                 command.Parameters.AddWithValue("@password", password);
                 command.Parameters.AddWithValue("@mail", mail);
+                command.Parameters.AddWithValue("@pfp", imageData);
                 // (2) Para registrar como usuario del sistema.
                 result = command.ExecuteNonQuery();
             }
@@ -135,6 +138,7 @@ namespace ProyectoGreenSpace
                     user.id = Convert.ToInt32(reader["id"]);
                     user.password = reader["password"].ToString();
                     user.mail = reader["mail"].ToString();
+                    user.pfp = reader.GetSafeImage(5);
                     user.admin = Convert.ToBoolean(reader["admin"]);
                     user.creationDateTime = Convert.ToDateTime(reader["creationDateTime"]);
                 }
