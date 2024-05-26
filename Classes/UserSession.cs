@@ -2,6 +2,7 @@
 using System.CodeDom;
 using System.Collections.Generic;
 using System.Deployment.Internal;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +16,7 @@ namespace ProyectoGreenSpace
         private static string password;
         private static bool admin;
         private static string mail;
+        private static Image pfp;
         private static DateTime creationDateTime;
 
 
@@ -23,6 +25,7 @@ namespace ProyectoGreenSpace
         public static string Password { get { return password; } set { password = value; } }
         public static bool Admin { get { return admin; } set { admin = value; } }
         public static string Mail { get { return mail; } set { mail = value; } }
+        public static Image Pfp { get { return pfp; } set { pfp = value; } }
         public static DateTime CreationDateTime { get {  return creationDateTime; } set {  creationDateTime = value; } }
         
         /// <summary>

@@ -77,6 +77,7 @@ namespace ProyectoGreenSpace
                         UserSession.Password = data.Password;
                         UserSession.Admin = data.Admin;
                         UserSession.Mail = data.Mail;
+                        UserSession.Pfp = data.Pfp;
                         UserSession.CreationDateTime = data.CreationDateTime;
                     }
                 }

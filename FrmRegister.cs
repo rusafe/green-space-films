@@ -127,6 +127,7 @@ namespace ProyectoGreenSpace
             txtMail.Text = string.Empty;
             txtPassword.Text = string.Empty;
             txtRepeat.Text = string.Empty;
+            pibImage.Image = null;
         }
 
         /// <summary>
